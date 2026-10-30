@@ -1,0 +1,58 @@
+{
+  "greenhouse_boards": [
+    {"name": "Coupang", "token": "coupang", "tier": 1, "regions": ["Tokyo", "Seoul", "Singapore", "Taipei"]},
+    {"name": "Adyen", "token": "adyen", "tier": 1, "regions": ["Amsterdam", "Singapore", "Tokyo", "Sydney"]},
+    {"name": "Celonis", "token": "celonis", "tier": 1, "regions": ["Munich", "Madrid", "Tokyo"]},
+    {"name": "Delivery Hero", "token": "deliveryhero", "tier": 1, "regions": ["Berlin", "Singapore", "Dubai"]},
+    {"name": "N26", "token": "n26", "tier": 1, "regions": ["Berlin", "Barcelona", "Vienna"]},
+    {"name": "Careem", "token": "careem", "tier": 1, "regions": ["Dubai", "UAE", "Riyadh"]},
+    {"name": "Databricks", "token": "databricks", "tier": 1, "regions": ["Amsterdam", "Berlin", "Singapore", "Tokyo"]},
+    {"name": "Cloudflare", "token": "cloudflare", "tier": 1, "regions": ["Lisbon", "Singapore", "Tokyo", "Sydney"]},
+    {"name": "Stripe", "token": "stripe", "tier": 1, "regions": ["Dublin", "Singapore", "Tokyo", "Sydney"]},
+    {"name": "Miro", "token": "miro", "tier": 1, "regions": ["Amsterdam", "Berlin", "Tokyo", "Sydney"]},
+    {"name": "Personio", "token": "personio", "tier": 1, "regions": ["Munich", "Madrid", "Amsterdam"]},
+    {"name": "Grab", "token": "grab", "tier": 1, "regions": ["Singapore", "Jakarta", "Kuala Lumpur"]},
+    {"name": "GitLab", "token": "gitlab", "tier": 1, "regions": ["Remote Worldwide"]},
+    {"name": "Automattic", "token": "automattic", "tier": 1, "regions": ["Remote Worldwide"]},
+    {"name": "Elastic", "token": "elastic", "tier": 1, "regions": ["Remote Worldwide", "Amsterdam", "Singapore"]},
+    {"name": "Figma", "token": "figma", "tier": 1, "regions": ["Tokyo", "Singapore", "Europe", "Remote"]},
+    {"name": "Airbnb", "token": "airbnb", "tier": 1, "regions": ["Singapore", "Tokyo", "Dublin"]},
+    {"name": "Robinhood", "token": "robinhood", "tier": 1, "regions": ["Remote", "Europe"]},
+    {"name": "Twilio", "token": "twilio", "tier": 1, "regions": ["Dublin", "Singapore", "Remote"]},
+    {"name": "Razorpay", "token": "razorpay", "tier": 1, "regions": ["India", "Southeast Asia"]},
+    {"name": "MongoDB", "token": "mongodb", "tier": 1, "regions": ["India", "Dublin", "Singapore", "Sydney"]}
+  ],
+  "lever_boards": [
+    {"name": "Spotify", "token": "spotify", "tier": 1, "regions": ["Sweden", "UK", "US", "Remote"]},
+    {"name": "Netflix", "token": "netflix", "tier": 1, "regions": ["Netherlands", "US", "Singapore"]},
+    {"name": "Palantir", "token": "palantir", "tier": 1, "regions": ["UK", "US", "UAE"]},
+    {"name": "Lyft", "token": "lyft", "tier": 1, "regions": ["US", "Canada", "Europe"]}
+  ],
+  "curated_github_sources": [
+    {
+      "name": "Jobright Product Management & APM",
+      "url": "https://raw.githubusercontent.com/jobright-ai/2026-Product-Management-Internship/master/README.md",
+      "category": "Product / APM"
+    },
+    {
+      "name": "Jobright Growth & Marketing",
+      "url": "https://raw.githubusercontent.com/jobright-ai/2026-Marketing-Internship/master/README.md",
+      "category": "Growth & Marketing"
+    },
+    {
+      "name": "Jobright Product & UX Design",
+      "url": "https://raw.githubusercontent.com/jobright-ai/2026-Design-Internship/master/README.md",
+      "category": "Design & UX"
+    },
+    {
+      "name": "Jobright Business & Operations",
+      "url": "https://raw.githubusercontent.com/jobright-ai/2026-Internship/master/README.md",
+      "category": "BizOps & Strategy"
+    },
+    {
+      "name": "Abby Bravo PM Recruiting Hub",
+      "url": "https://raw.githubusercontent.com/abbybravo/PM-Recruiting-Hub/main/README.md",
+      "category": "Product / APM"
+    }
+  ]
+}

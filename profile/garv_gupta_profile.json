@@ -1,0 +1,135 @@
+{
+  "name": "Garv Gupta",
+  "contact": {
+    "phone": "+91 7709732662",
+    "email": "garv.gupta07@gmail.com",
+    "portfolio": "https://garvgupta.app",
+    "linkedin": "https://linkedin.com/in/garv-gupta07",
+    "instagram": "@garvonpoint"
+  },
+  "tagline": "Operator at the intersection of AI, growth, and execution",
+  "education": [
+    {
+      "institution": "Indian Institute of Management Bangalore (IIM Bangalore)",
+      "degree": "BBA in Digital and Business Entrepreneurship",
+      "years": "2024 - 2027",
+      "tier": "Tier 1 Elite"
+    },
+    {
+      "institution": "MIT ADT University, Pune",
+      "degree": "BBA in Business Analytics",
+      "years": "2024 - 2025",
+      "cgpa": "8.25",
+      "note": "Transferred to IIM Bangalore"
+    }
+  ],
+  "target_roles": [
+    {
+      "category": "Product / APM",
+      "titles": [
+        "Associate Product Manager Intern",
+        "Product Management Intern",
+        "APM Intern",
+        "Product Operations Intern",
+        "Technical Product Manager Intern",
+        "Product Strategy Intern"
+      ],
+      "conversion_weight": 0.98
+    },
+    {
+      "category": "BizOps & Strategy",
+      "titles": [
+        "Business Operations Intern",
+        "Strategy & Operations Intern",
+        "Founder's Associate Intern",
+        "Chief of Staff Intern",
+        "Business Analyst Intern",
+        "Operations Lead Intern"
+      ],
+      "conversion_weight": 0.95
+    },
+    {
+      "category": "Growth & Marketing",
+      "titles": [
+        "Product Marketing Intern",
+        "Growth Marketing Intern",
+        "GTM Strategy Intern",
+        "Content & Brand Strategy Intern",
+        "Digital Marketing Intern"
+      ],
+      "conversion_weight": 0.92
+    },
+    {
+      "category": "Design & UX",
+      "titles": [
+        "Product Design Intern",
+        "UI/UX Design Intern",
+        "UX Research Intern"
+      ],
+      "conversion_weight": 0.88
+    }
+  ],
+  "negative_keywords": [
+    "software engineer",
+    "software engineering",
+    "software development",
+    "software developer",
+    "backend engineer",
+    "frontend engineer",
+    "full stack engineer",
+    "firmware",
+    "devops",
+    "infrastructure engineer",
+    "ml engineer",
+    "machine learning engineer",
+    "deep learning",
+    "nlp engineer",
+    "clinical",
+    "nursing",
+    "veterinary",
+    "biologist",
+    "chemist"
+  ],
+  "preferred_locations": [
+    {
+      "region": "India",
+      "cities": ["Bengaluru", "Bangalore", "Gurugram", "Gurgaon", "Hyderabad", "Mumbai", "Pune", "Delhi", "Remote"],
+      "priority": "High"
+    },
+    {
+      "region": "Europe (Safe Tech Hubs)",
+      "cities": ["Dublin", "Ireland", "Berlin", "Munich", "Germany", "Amsterdam", "Netherlands", "London", "UK", "Lisbon"],
+      "priority": "High"
+    },
+    {
+      "region": "Asia-Pacific",
+      "cities": ["Singapore", "Tokyo", "Japan"],
+      "priority": "High"
+    },
+    {
+      "region": "Middle East",
+      "cities": ["Dubai", "Abu Dhabi", "UAE"],
+      "priority": "High"
+    },
+    {
+      "region": "Global / Remote",
+      "cities": ["Remote", "Worldwide", "Anywhere", "Global"],
+      "priority": "Top"
+    },
+    {
+      "region": "US & Canada",
+      "cities": ["San Francisco", "New York", "Seattle", "Austin", "Toronto"],
+      "priority": "Medium (Flag visa/J-1 requirements)"
+    }
+  ],
+  "superpower_highlights": [
+    "Baidu Hackathon 2nd Place & Community Choice ($6,500 prize among 8,424 global participants)",
+    "IIM Bangalore institute-wide 1st Place Essay Competition (cited by Microsoft researcher)",
+    "Owner & Ops Lead at AnybodyCanBake: managing 10,000+ student business, full P&L, 5-7 team members",
+    "Top 10 of 500+ global participants in Zo Computers UI/UX competition ($1,000 prize)",
+    "Top 10 of 800+ in Anything.com UI/UX Remixathon",
+    "Solo built and shipped SlotSaver (AI WhatsApp MVP) in under 48 hours using Claude API & Twilio",
+    "200,000+ organic LinkedIn impressions building audience around AI & product execution",
+    "McKinsey Forward Program & LVMH Inside Program alumnus"
+  ]
+}

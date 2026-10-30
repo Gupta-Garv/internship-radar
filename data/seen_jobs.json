@@ -1,0 +1,2270 @@
+{
+  "3edf793b8e764d2caf2e5b97154f5e3b": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Figma",
+    "title": "Data Engineer Intern (2027)",
+    "score": 65
+  },
+  "52893561c51a0c244df324c55ff9069c": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Figma",
+    "title": "Data Science Intern (2027)",
+    "score": 65
+  },
+  "14be634625ace9d1c85b1012c90f77ab": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Figma",
+    "title": "PhD Intern, AI Applied Scientist (2027)",
+    "score": 65
+  },
+  "b86ce3b15f0c01ec35d41c3d4aa3f861": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Figma",
+    "title": "PhD Intern, Data Science (2027)",
+    "score": 65
+  },
+  "92bd32ba323135ffc8f72dc2eb28856f": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Figma",
+    "title": "Product Design Intern (2027)",
+    "score": 74
+  },
+  "d6ad78f13be2e5e23d2bcbe3e5954a7c": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Robinhood",
+    "title": "Fraud Operations Intern (Summer 2027)",
+    "score": 70
+  },
+  "385de3d6ad50d982e58583431288445a": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Robinhood",
+    "title": "Investment Analyst MBA Intern, Robinhood Ventures (Summer 2027)",
+    "score": 69
+  },
+  "d063a92b070e7703505c3c84a35f1cbf": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Airbnb",
+    "title": "NextStay Fellow, Tech Ops & Programs",
+    "score": 65
+  },
+  "351bd328ca9ebc111a0f6d4690c05731": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Airbnb",
+    "title": "Strategic Finance & Analytics Intern (MBA)",
+    "score": 69
+  },
+  "f9ddf00f9bfdaaf50e89a8b82e1e81b2": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Pinterest",
+    "title": "Machine Learning Intern 2027 (Dublin)",
+    "score": 78
+  },
+  "88864430ac024619e0c12406b51cb681": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Pinterest",
+    "title": "Machine Learning Intern 2027 (Toronto)",
+    "score": 65
+  },
+  "55dfe8916c5f196afe805d1d829a8c0c": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Pinterest",
+    "title": "Machine Learning Intern 2027 (Zurich)",
+    "score": 70
+  },
+  "6a9c68c658eede2743e8601f8ee15124": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Pinterest",
+    "title": "Master's Data Science Internship 2027 (USA)",
+    "score": 65
+  },
+  "5a45c47fe6ccf06022030e5b1fa38447": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Pinterest",
+    "title": "Master's Machine Learning Internship 2027 (USA)",
+    "score": 65
+  },
+  "a9530064d9d80458cbd16a9094297d6c": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Pinterest",
+    "title": "PhD Data Science Internship 2027 (USA)",
+    "score": 65
+  },
+  "c0bc83569deeb262d2c9aee2d7706dfc": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Pinterest",
+    "title": "PhD Machine Learning Internship 2027 (USA)",
+    "score": 65
+  },
+  "766977ef52a64e6c7ac8308cc2c528e7": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Pinterest",
+    "title": "Solutions Engineer Intern 2027 (USA)",
+    "score": 80
+  },
+  "6d5c6f6f5b2461b3420d780d14e5fae2": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Celonis",
+    "title": "AI & Management Consulting Intern (Value Engineering - DACH Market)",
+    "score": 78
+  },
+  "5e84b4878e37a105ec009bbfead0a30e": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Celonis",
+    "title": "AI & Management Consulting Intern (Value Engineering - UKI Market)",
+    "score": 78
+  },
+  "535e7e8723fbd3ef3b1aee7bd357b46e": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Celonis",
+    "title": "Intern AI & Management Consulting (Value Engineering)",
+    "score": 70
+  },
+  "d7180ae9ecb8b40ebfea359c747fd7c7": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Celonis",
+    "title": "Intern Applied AI Solution Consulting (Italy)",
+    "score": 70
+  },
+  "bd6fcb7faaaee6d5442b944d5858a32d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Celonis",
+    "title": "Intern Deployment Engineer - Data & AI",
+    "score": 78
+  },
+  "4d9fbfe82ae4abfad5109139062fc0a2": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Celonis",
+    "title": "Intern Technology Consultant - Data & AI",
+    "score": 78
+  },
+  "fc861963a1c9cacd8ca217517136fe85": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Celonis",
+    "title": "Intern Technology & Management Consulting (Value Engineering)",
+    "score": 70
+  },
+  "25a0633dbab3a53ff2a2dbe94fbd4c04": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Celonis",
+    "title": "Strategy & Operations Graduated Internship (12 months)",
+    "score": 93
+  },
+  "01a5961e09cb07b8dd9d9f63f1a34a4e": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Celonis",
+    "title": "Technology & Management Consulting Intern (Value Engineering - UKI Market)",
+    "score": 78
+  },
+  "e8a860ad3ec95ca4b8b02f933581c3e1": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Stripe",
+    "title": "Data Analyst, Intern",
+    "score": 65
+  },
+  "88cbea65a4eed2c0cea885940a4a303f": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Stripe",
+    "title": "Data Analyst, Intern",
+    "score": 65
+  },
+  "bd61ee7210262529edaa05536c17aa1d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Stripe",
+    "title": "Financial Data Analyst Intern, Technical Operations",
+    "score": 82
+  },
+  "00298008576ed67f9f93a3d3cf708a43": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Stripe",
+    "title": "Integration Reliability Engineer Intern, Technical Operations",
+    "score": 78
+  },
+  "1a757b184857737963a5c8106fa9c892": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Stripe",
+    "title": "PhD Data Scientist, Intern",
+    "score": 65
+  },
+  "0ed31663bfeeda6911ca2d6fb72072e0": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Stripe",
+    "title": "PhD Data Scientist, Intern",
+    "score": 65
+  },
+  "9a78f82cb7cf826e2644382296a975ae": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Cloudflare",
+    "title": "Product Manager Intern (2027) - Austin, TX",
+    "score": 86
+  },
+  "1fc93fe287d39c921bb6c5d227685945": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Cloudflare",
+    "title": "Product Manager Intern (2027) - Lisbon, PT",
+    "score": 86
+  },
+  "b92fc1698d265c56161b2ade0c77e841": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Cloudflare",
+    "title": "Product Manager Intern (2027) - London, UK",
+    "score": 86
+  },
+  "81cc37d7c4d8311231c64fa7f5dd669c": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Monzo",
+    "title": "Associate Data Scientist - Intern",
+    "score": 78
+  },
+  "553913a4bcd9e427d5808ae5d21b46f9": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Databricks",
+    "title": "Data Science Intern (2027 Start)",
+    "score": 65
+  },
+  "b6c730f12a98ad55e0045a104aab983f": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Databricks",
+    "title": "PhD GenAI Research Scientist Intern",
+    "score": 65
+  },
+  "d93e41051035f16e2bbf59d3ce07f37d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Databricks",
+    "title": "Product Design Intern (2027 Start)",
+    "score": 74
+  },
+  "05b16addb8d096ce655db6e14f6d73f1": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Databricks",
+    "title": "Product Management Intern (2027) - Amsterdam",
+    "score": 96
+  },
+  "9c60079c647ec029d47a45048e26c7e1": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Databricks",
+    "title": "Product Management Intern (2027) - Belgrade",
+    "score": 86
+  },
+  "2080452fea6b457d1a4d0b179374404e": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Databricks",
+    "title": "Product Management Intern (2027) - Berlin",
+    "score": 96
+  },
+  "380a6e42700d53d1b24594877f7c064d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Databricks",
+    "title": "Product Management Intern (Summer 2027)",
+    "score": 80
+  },
+  "da0b6b24f230bdd2d14b10f26ae63b78": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Snowflake",
+    "title": "Product Management Intern (Summer 2027)",
+    "score": 78
+  },
+  "177d28ea9b6c1c5732d97d7025ba4b42": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Teamworks",
+    "title": "Product MBA Intern",
+    "score": 78
+  },
+  "a36a845d1cb11bd622973cf8c8a4a950": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "IBM",
+    "title": "Product Manager Intern 2027",
+    "score": 78
+  },
+  "5fc8ff7c11a7845b0bdf68925146983a": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Northmere Solutions",
+    "title": "Development Product Management Intern",
+    "score": 78
+  },
+  "c0c2f0740d815b5caa7da52c06a0761b": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Astera Labs",
+    "title": "AI Product Management Intern",
+    "score": 78
+  },
+  "b59184c0f7c95b1b8d3210ded4276a0f": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Tencent",
+    "title": "Tencent Cloud CPaaS Product Management Intern",
+    "score": 78
+  },
+  "ab1b5c4bb58d6ea19beca17cacac1324": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Tencent Cloud CPaaS Product Management Intern",
+    "score": 78
+  },
+  "e391a7428109f7462f37721f3e0bbe8a": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Spectrum",
+    "title": "2027 Summer Intern: Internet Product",
+    "score": 78
+  },
+  "776fd021e550b091e42bd238a94f0028": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Lowe's Companies, Inc.",
+    "title": "Store Operations Technology \u2013 Undergrad Internship \u2013 Summer 2027",
+    "score": 78
+  },
+  "158e40170986447a3c406307d36d8e15": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Zurn Elkay Water Solutions",
+    "title": "Product Management Intern (Summer 2027)",
+    "score": 78
+  },
+  "3620a04af857854907a73aaea0ce13bf": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Jewelers Mutual Group",
+    "title": "Product Intern - Summer of 2027",
+    "score": 78
+  },
+  "35847a9d78d18cbe0660cffc8ce54b12": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Dell Technologies",
+    "title": "ISG Product Management Graduate Internship",
+    "score": 78
+  },
+  "b8e20b8df5c72b000bbd25b89650c7f3": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "T-Mobile",
+    "title": "Summer 2027 Assoc Product Manager Internship",
+    "score": 78
+  },
+  "df43b97f048d9de876de664018989025": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Behaviour Interactive",
+    "title": "Product Development Coordinator \u2013 Internship Winter 2027",
+    "score": 78
+  },
+  "8d07a33b83d155344092a056985cb7a4": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Rivian",
+    "title": "Technical Program Management Intern - Product Management Product Development (Spring 2027 Co-Op)",
+    "score": 78
+  },
+  "397b106c6a7979797139292e0a678821": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "IDEMIA",
+    "title": "Software Product Analyst Intern",
+    "score": 78
+  },
+  "e9ea71f381dc9487e620d8c20f042bc0": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Blue Ventis",
+    "title": "Development Product Management Intern",
+    "score": 78
+  },
+  "8b64cfda96c9adf54af6d2debf07396c": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "ICE",
+    "title": "Summer Internship Program 2027 - Title Data Analyst Intern",
+    "score": 78
+  },
+  "3476b5afd1a8bdac4c99831c6f2b98a6": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "SAP",
+    "title": "[SAP iXp Intern - Product Management, Digital Platforms & AI [Newtown Square, PA]](https://jobright.ai/jobs/info/6acf415a9f35fba28731f46c?utmcampaign=1047&utmsource=git)",
+    "score": 78
+  },
+  "c714baf0c461263831f15d6bc1c6616d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "[SAP iXp Intern - Product Management, Agile Delivery & PI\u00a0Planning [Newtown Square, PA]](https://jobright.ai/jobs/info/6abbeaf43217d1d13329bd2a?utmcampaign=1047&utmsource=git)",
+    "score": 78
+  },
+  "f286981d7278d2e388700f13ce5ceff2": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "IBM",
+    "title": "Product Manager Spring Co-op 2027",
+    "score": 78
+  },
+  "646621fda5b832181fdedbcd4ea85253": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Product Manager Intern 2027 - POUGHKEEPSIE",
+    "score": 78
+  },
+  "3ccc1fb3f3e2acf7c0aea3ab8fc23aae": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Product Manager Spring Co-op 2027",
+    "score": 78
+  },
+  "5a98c9fdf8010b708187e9afa35e024b": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Adobe",
+    "title": "2027 MBA Intern \u2013 Product Manager",
+    "score": 78
+  },
+  "424934e182bbdcc45b4800680ecd09ce": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Roblox",
+    "title": "[[Summer 2027] Product Management Intern](https://jobright.ai/jobs/info/6a985287c8ed473c5c7634c5?utmcampaign=1047&utmsource=git)",
+    "score": 78
+  },
+  "d0958d4fa59f37dae42cd81fa05ddf12": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Duolingo",
+    "title": "Product Manager, MBA Intern",
+    "score": 78
+  },
+  "76d312568cc82d4fa7ce1b20a988717c": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Walmart",
+    "title": "Summer 2027 Intern: Automation - Product Manager - Corporate Intern",
+    "score": 78
+  },
+  "32a9f40f65b19886a97cf824deb30276": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Renewables - Bazefield",
+    "title": "Product Designer/Developer Intern",
+    "score": 78
+  },
+  "ecc9c9d2c04d15d729eb02e1109827df": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Fortune Brands Innovations",
+    "title": "Product Manager Intern",
+    "score": 78
+  },
+  "adaf3e795beae4bb5d4a5d64657b8481": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Brunswick Corporation",
+    "title": "Merucry Marine: Product Management Intern \u2013 Parts & Accessories",
+    "score": 78
+  },
+  "4a9242f7527782f7948d8dd9be9ed938": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Signify",
+    "title": "Product Management Intern, Cooper Lighting Solutions - Spring 2027",
+    "score": 78
+  },
+  "4ccbf7be32cb6127640b93ccf077161d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Farmers Mutual Hail Insurance",
+    "title": "Product Owner Intern",
+    "score": 78
+  },
+  "4437363771c9456721914a0e3b338f1c": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Intuit",
+    "title": "Summer 2027 Product Manager Intern",
+    "score": 78
+  },
+  "73f185a4887768c4ffdacd722eb9256e": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Aspen Technology",
+    "title": "Product Owner Intern \u2014 Product Management  - Summer 2027",
+    "score": 78
+  },
+  "0efb82880d1cc348a677ad39f6c3d3b6": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "EnviroLogix",
+    "title": "New Product Development Intern - Summer 2027",
+    "score": 78
+  },
+  "d2dc122f204de398fbce8e9583a59616": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Copart",
+    "title": "Technology Product Analyst Intern",
+    "score": 78
+  },
+  "3a55917b8d59eae440cb8b0afc15bd7e": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Cloudflare",
+    "title": "Product Manager Intern (2027) - Austin, TX",
+    "score": 78
+  },
+  "7310f30730a852b6500879591c08d693": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Sonos, Inc.",
+    "title": "Software Product Management Intern (Seattle)",
+    "score": 78
+  },
+  "9ca83b39046866ca8e71f6dd4dc58901": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "McKesson",
+    "title": "Product Business Analyst Intern - Winter 2027",
+    "score": 78
+  },
+  "02a2a8e369ddd75bd42e72091dafcf34": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Brunswick Corporation",
+    "title": "Mercury Marine: Product Management Intern \u2013 Oils & Lubricants",
+    "score": 78
+  },
+  "b16af966eac6c83520bd2e82d66c5fd4": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Rubrik",
+    "title": "Product Growth Intern (MBA), Summer 2027",
+    "score": 78
+  },
+  "99e678d8354568321bccee7497949e17": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Nissan Motor Corporation",
+    "title": "Product Planning Intern - Summer 2027 - Franklin, TN",
+    "score": 78
+  },
+  "75747403fb46ed457601e835955e2238": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Digital Products & AI Strategy Intern - Summer 2027 - Franklin, TN",
+    "score": 78
+  },
+  "b4afe98c711ebc273da1914c09b43e68": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Vertiv",
+    "title": "DC Power Product Management MBA Intern (Summer 2027)",
+    "score": 78
+  },
+  "73a58510a349501cd2bdb748596fb505": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Dow Jones",
+    "title": "Summer 2027 Internship Program \u2013 Product Strategy Intern",
+    "score": 78
+  },
+  "fef040740d979332dd7a65fa1e225499": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Summer 2027 Internship Program \u2013 Business & Product Strategy Intern",
+    "score": 78
+  },
+  "04c33ce61cfe96e04a6759ca9a52e7f0": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Matrix Design Group LLC",
+    "title": "Product Development Intern - Mining",
+    "score": 78
+  },
+  "9aadcb7b60f360dfded1db3c164e5a77": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Waymo",
+    "title": "2027 Summer Intern, MBA, Salesforce Product Owner",
+    "score": 78
+  },
+  "aa58fbf7ed778f0c38eeba785940d568": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "SharkNinja",
+    "title": "Spring 2027: Product Strategy & Development Co-Op (January to June)",
+    "score": 78
+  },
+  "6b359a71472d1cbdb2695965d19aa645": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Dow Jones",
+    "title": "Summer 2027 Internship Program \u2013 Newswires Business Management Intern",
+    "score": 78
+  },
+  "476c6966a217f77f7b879943bda612a2": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Bass Pro Shops",
+    "title": "Product Development Intern Summer 2027",
+    "score": 78
+  },
+  "bdce6c83aaea250257207a65c39fad47": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Nationwide",
+    "title": "Summer 2027 State Product Analyst Intern - Personal Lines",
+    "score": 78
+  },
+  "a2749e7a525c842612f025ddd177da2e": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "TikTok",
+    "title": "Product Operations Intern (PGC) - 2027 Summer",
+    "score": 78
+  },
+  "67c22d5b78ad8c532902a68e161a44ba": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Clearwater Analytics",
+    "title": "Technical Product Management Intern",
+    "score": 78
+  },
+  "0887642ea5692091b9f0bd4bf57f493d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Product Management Intern",
+    "score": 78
+  },
+  "f8dfcabf57d395b3fe14113a6f8df90d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "TikTok",
+    "title": "Product Manager Intern (TikTok LIVE-AI & Ecosystem Governance) - 2027 Summer",
+    "score": 78
+  },
+  "5eba943e0689bc68b6fed5622f44c9af": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "T-Mobile",
+    "title": "Summer 2027 Associate Technical Product Manager Internship",
+    "score": 78
+  },
+  "13999a720b6af726a1f74e8d667bd1c7": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "tesa",
+    "title": "Product Development Intern (AWP)",
+    "score": 78
+  },
+  "205d4c1bfb4144a672dbf30d66520219": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Haworth",
+    "title": "Year-Round Product Sourcing Intern, Architectural Solutions",
+    "score": 78
+  },
+  "c77871564a92ec1535ec810ab552f3cf": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Skyworks Solutions, Inc.",
+    "title": "Product Management Intern",
+    "score": 78
+  },
+  "d7a6228ae36f949bfc956f26197e03e2": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Product Management Intern",
+    "score": 78
+  },
+  "00c42ca652048395d98ea3500e42e0e0": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Electronic Arts (EA)",
+    "title": "Product Management Intern, Fan Care Community Care - Summer 2027",
+    "score": 78
+  },
+  "06229ec0c6c26c6697c78df1ca3985a5": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Haleon",
+    "title": "2027 Summer Intern: Product Development",
+    "score": 78
+  },
+  "f67021cd9c2254e9baee1558d5853936": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "HERE",
+    "title": "Product Enablement Intern",
+    "score": 78
+  },
+  "2e87057a91c9ea291ecf5087d8d027c8": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Parallel",
+    "title": "Product Management Intern",
+    "score": 78
+  },
+  "71147d6284db01cf386199dab11e48b6": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "NVIDIA",
+    "title": "Product Management MBA Intern, Laptop - Summer 2027",
+    "score": 78
+  },
+  "61acddc5b656d6c98a1f3f25866b6243": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Product Manager MBA Intern, Enterprise AI - Summer 2027",
+    "score": 78
+  },
+  "c6765dca66af2418df988febbfaf98a1": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Product Management MBA Intern, Gaming, Content Creation, and PC AI - Summer 2027",
+    "score": 78
+  },
+  "376b8fed301b9f72ec6d5e2ef467f6bf": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Cardinal Health",
+    "title": "Category Management Internship (Summer 2027)",
+    "score": 94
+  },
+  "27942057be05ff4394c6585fd153338b": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Arch Insurance Group Inc.",
+    "title": "Digital Product Management UI/UX Intern",
+    "score": 78
+  },
+  "36198c2719913c0ab02388d215c07a53": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Assurant",
+    "title": "Summer 2027 Intern: Manufactured Housing Product Analysis Intern",
+    "score": 78
+  },
+  "0a823a92ff5da28ec58120f94e1ba07b": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "BNY",
+    "title": "2027 BNY Summer Internship Program - Product Management (New York, NY)",
+    "score": 78
+  },
+  "ea12e07bd311041014bc8f2c3c8eaeca": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Blue Cross & Blue Shield of Rhode Island",
+    "title": "Intern - Business Systems Analyst",
+    "score": 78
+  },
+  "61f097f3f87992512f53dd939d159ad0": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "PrizePicks",
+    "title": "Product Analytics Internship - Spring 2027",
+    "score": 78
+  },
+  "573bde5f4d6f97dff209832c39cac519": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "GE Vernova",
+    "title": "GE Vernova Controls Product Management Intern - Summer 2027",
+    "score": 78
+  },
+  "bf6df18f4273677ec19b82b8f1cfc2c5": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Micron Technology",
+    "title": "Intern \u2013 AI & Product Management, Mobile Memory (LPDRAM)",
+    "score": 78
+  },
+  "c7fd2616905493c4c127dfc877ecf689": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Intern \u2013 CMBU Product Management",
+    "score": 78
+  },
+  "c097bcf744de61db563c4e8f87182756": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "TikTok",
+    "title": "Product Development Business Management Project Intern (TikTok Shop - US Operation) - 2026 Start (BS/MS)",
+    "score": 78
+  },
+  "5a6f917dc1713191079bee443adc4ab2": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Product Strategist Project Intern (Advertisement Team) - 2026 Start (MBA)",
+    "score": 84
+  },
+  "c8f2e1ce271a0e803acb0579d668910a": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Product Strategy and Operations Project Intern (PGC) - 2026 Start",
+    "score": 78
+  },
+  "dfeecb02682a2d220d61baf09c7e652c": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Product Manager Intern (PGC) - 2027 Summer",
+    "score": 78
+  },
+  "9b592c6f5472c3925e7ecf6a851f6a91": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Product Manager Intern (PGC) - 2027 Summer",
+    "score": 78
+  },
+  "dbbe10114c439d18317148d500ac5907": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Western National Insurance",
+    "title": "Insurance Product Development Intern",
+    "score": 78
+  },
+  "266bb904b6da55b5e3bafcbaa641c667": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Dreamwear",
+    "title": "Product Development Intern",
+    "score": 78
+  },
+  "725bc1a603f64c5a4f3eac8f9caa9cad": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "TikTok",
+    "title": "Product Solutions and Operations project Intern (Ads Interface and Platform Product ) - 2026 Start",
+    "score": 78
+  },
+  "2acb61a44ad0168fd719d78f38a94366": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "CVS Health",
+    "title": "Innovation & Technology Internship - Product & Agile Delivery \u2013 Summer 2027 (Undergraduate)",
+    "score": 78
+  },
+  "f9fe50a0d1f435a8504420204b23264c": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Haworth",
+    "title": "Product Management Intern - Office Seating",
+    "score": 78
+  },
+  "e227d87b560cccdd835e29d4bdc9fb3b": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Viget",
+    "title": "Project & Product Manager Intern (2027)",
+    "score": 78
+  },
+  "1fc4a6f22ce2a02b42e1432656f6fed4": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "TikTok",
+    "title": "Global Product Strategy & Operation Project Intern (Ads Interface and Platform Product) - 2026 Start",
+    "score": 78
+  },
+  "85beccc573737cde11f83dac084dcac3": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Visa",
+    "title": "Product Management Intern, Data and AI Team - Summer 2027",
+    "score": 78
+  },
+  "5cbc2ac86612bdb7cd1fa79877d37ce9": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Coinbase",
+    "title": "Associate Product Manager Intern",
+    "score": 78
+  },
+  "e32e326398a814a3b2476f15ebbc876e": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Visa",
+    "title": "Technical Product/Project Management Intern - 2027, Highlands Ranch, CO",
+    "score": 78
+  },
+  "59500491748afd2c6ee74c66d3306abb": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "TE Connectivity",
+    "title": "Product Manager Intern",
+    "score": 78
+  },
+  "7666f54d4bef06847e46a2bc4ca33094": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "A Igreja de Jesus Cristo dos Santos dos \u00daltimos Dias",
+    "title": "Product Management Intern",
+    "score": 78
+  },
+  "cd56009a7a124d1d64e6655325819e1a": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Aether Field",
+    "title": "Digital Product Designer Intern",
+    "score": 72
+  },
+  "bbbd190425f24da966786799af46e9e1": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "American Structurepoint",
+    "title": "Architecture Design - Part-Time Intern - Lisle, IL",
+    "score": 72
+  },
+  "2ecb8d2122117eb004d9e2655c9f5411": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "PAR, Inc.",
+    "title": "GRAPHIC DESIGN-PRODUCTION INTERN",
+    "score": 72
+  },
+  "f26702e38fecc0aa3443c5cbc720478e": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "L&M Corrugated Container Corporation",
+    "title": "Packaging Design Intern",
+    "score": 72
+  },
+  "fb2dd37ba3472db396f560a3c5253f98": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "FC Cincinnati",
+    "title": "Design Intern",
+    "score": 72
+  },
+  "cab49b66fad38596f53e28ca3fee2186": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Colony Brands, Inc.",
+    "title": "Web Design Internship",
+    "score": 72
+  },
+  "50354008fc5b6f02246d2d8da25a517d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Haworth",
+    "title": "Colors Materials Finishes (CMF) Industrial Design Intern",
+    "score": 72
+  },
+  "a6519ea93511ef44ee4632f83de6b23e": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Industrial Design Intern",
+    "score": 72
+  },
+  "4e7f762b300e78801d281af0f4d0c80b": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "SharkNinja",
+    "title": "Spring 2027: HW UX/UI Design Co-op (January through June)",
+    "score": 72
+  },
+  "f0eb13193aeb2adc322b941c98a86f1d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Starfire Studio",
+    "title": "Background Designer Intern",
+    "score": 72
+  },
+  "299bdf91aecfa1722cf5592706bf77ac": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Munich Re",
+    "title": "Graphic Design Intern - Summer 2027 Job Details / Munich Re Careers",
+    "score": 72
+  },
+  "8621beebb11350c425aa813cba30e0e2": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Graphic Design Intern - Summer 2027",
+    "score": 72
+  },
+  "7e4bcc62704e124412591cc0175dfcba": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Ibotta",
+    "title": "Product Design Intern",
+    "score": 72
+  },
+  "bb77b514bc87c54abaa1445576d811f6": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Lele Sadoughi",
+    "title": "Accessories Design intern",
+    "score": 72
+  },
+  "22fa8950e75335c6346403fa07f253d5": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Haggar Clothing Co.",
+    "title": "Creative Services Intern- Dallas",
+    "score": 72
+  },
+  "5b125a7691ad9410ae2f0844b6a2881d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Kimley-Horn",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "e8953d8104e9fe51151d6dfd4f550814": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "518e2a10c44d9c70a70f916f5b4009e1": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "392067ec8ed2135cfa9e3d4570f3c294": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Dodge Industrial",
+    "title": "CAD Designer Intern (Part-Time Starting Fall 2026 Semester)",
+    "score": 72
+  },
+  "e2429749c73ff6b3ce5a7264c1417cf0": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Moody's Corporation",
+    "title": "Data Visualization & Brand Design Summer Intern",
+    "score": 74
+  },
+  "f3598c504d64a3747c1baa7286be21c3": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Epic Games",
+    "title": "Game Design Intern",
+    "score": 72
+  },
+  "578a35b37bbb56f18c6b4a133454dbaa": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Langan Engineering & Environmental Services",
+    "title": "Intern/Co-op - Landscape Architecture & Planning (Summer 2027)",
+    "score": 72
+  },
+  "92e2f779be54fcbb01ec8b75ff6d3c1d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Jewelers Mutual Group",
+    "title": "UX Research Intern - Summer of 2027",
+    "score": 72
+  },
+  "dc3ad7f9219ec0f8ee1036f07933c2aa": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Trihydro Corporation",
+    "title": "Graphic Design Intern",
+    "score": 72
+  },
+  "0c7a1f19896d5dfce9e46ab0b5616b07": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "H Mart Manhattan",
+    "title": "Bilingual Graphic Design Intern (Korean/English)",
+    "score": 72
+  },
+  "1a13c92dff70868feeae39b610e53b16": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Ampact",
+    "title": "Graphic Design Intern",
+    "score": 72
+  },
+  "0f0353a6508a5a68431236f3b4ca46d9": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "State of Ohio",
+    "title": "Creative Services Intern, Office of Communications",
+    "score": 74
+  },
+  "407621361c227a0f3d92a4ab9fa49265": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Amazon",
+    "title": "UX Designer Intern \u2013 Summer 2027",
+    "score": 72
+  },
+  "339229abc62463beb311f2a2b580f8aa": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Biasly",
+    "title": "UX Design Internship",
+    "score": 72
+  },
+  "40108d16ce4c842915f4e479ad92b4f0": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Behaviour Interactive",
+    "title": "Product Graphic Designer \u2013 Internship Winter 2027",
+    "score": 72
+  },
+  "f768aa5923a0850c5f5db9a728ac1814": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Amazon",
+    "title": "UX Researcher Intern \u2013 Summer 2027",
+    "score": 72
+  },
+  "29d16db4c55d5ed2fe3bb1e0fc670dc1": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Philips",
+    "title": "Intern - Industrial Design - Murrysville, PA - Summer 2027",
+    "score": 72
+  },
+  "11fd9864aa0ea8299998c83e956bbe27": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Twelve",
+    "title": "Industrial Design Intern",
+    "score": 72
+  },
+  "551c0611a8792b44124dfb14ff33501c": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "STV",
+    "title": "Architecture Intern - Summer 2027",
+    "score": 72
+  },
+  "eb0ea74f15cd932c932e7b6041fc6a5d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Revvity",
+    "title": "UX Intern",
+    "score": 72
+  },
+  "6feb28bb999c23d8c54efef827fc46c6": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Omnicom",
+    "title": "Digital Intern",
+    "score": 72
+  },
+  "3343f54ed0d0a07dd57b8dba9ea222a6": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Biasly",
+    "title": "UX Design Internship at Biasly",
+    "score": 72
+  },
+  "c3468bcfb73e4e073b87b5f5f5598d61": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "AECOM",
+    "title": "Architecture Intern - Hiring Event with AECOM - Arlington, VA",
+    "score": 72
+  },
+  "5d434def6449484adc6ce2192747afad": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "SAS",
+    "title": "Summer 2027 \u2013 User Experience Design Intern",
+    "score": 72
+  },
+  "d257078e942df26f4fa03c308e66a3de": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Curious Plot",
+    "title": "Graphic Designer Intern",
+    "score": 72
+  },
+  "c99b0bea1a9e4503ab87b1e856fafb80": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Delta Air Lines",
+    "title": "Intern, Digital Service Designer (Summer 2027)",
+    "score": 72
+  },
+  "3c5a9e7b32bc3926e2426443130ccb52": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "PTC",
+    "title": "UI/UX Designer Intern (Summer 2027)",
+    "score": 72
+  },
+  "9e907208e4ce4889a1bdb282e9be1b7f": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Summer 2027 \u2013 User Experience Design Intern",
+    "score": 72
+  },
+  "86792d4e3b47d5b71a50d57b65ed61f8": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "BRR Architecture",
+    "title": "Design Staff (Internship)",
+    "score": 72
+  },
+  "c6ef1b29a084bc0b816b2c4155bb5eb8": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Crown Equipment Corporation",
+    "title": "Marketing Digital UX Co-Op - Summer 2027 Job Details / Crown Equipment Corporation",
+    "score": 74
+  },
+  "7634e65957d51663cf488ce1fa6fde47": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "The Bernard Group, Inc.",
+    "title": "Intern, 3D Designer",
+    "score": 72
+  },
+  "edac76444cb5b0c6df332c53677cc194": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Bombardier",
+    "title": "Intern, Interior Design Intern (Winter 2027)",
+    "score": 72
+  },
+  "a4446209b42e39395b8d4ee780391a11": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Schreiber Foods",
+    "title": "Creative Design Intern - year round - Green Bay, WI",
+    "score": 72
+  },
+  "c1e9d65770f15fa3bf449705c0b42746": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "FabCom - Unrivaled Strategic Marketing",
+    "title": "Junior Motion Graphics & Animation Artist Intern",
+    "score": 72
+  },
+  "fea5da0eb7d0c395958369570881468c": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Dewberry",
+    "title": "CAD Designer Intern",
+    "score": 72
+  },
+  "c8c0cb2c4039a8ef560ed6ecc88e08cc": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Brunswick Corporation",
+    "title": "Mercury Marine: Industrial Design Intern",
+    "score": 72
+  },
+  "2669df92e7a32691693a5d4862a8f8d4": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Dennis Entertainment",
+    "title": "Spring 2027 Creative Development Intern",
+    "score": 72
+  },
+  "93dfd73d49849184dc36ef1aa7803bb6": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "The Beck Group",
+    "title": "Architecture Intern",
+    "score": 72
+  },
+  "fae82656299a42a76bc7f75e88dfe2ac": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Architecture- Intern",
+    "score": 72
+  },
+  "bf51bb4a7ea226f2e2815ce4efb8c81a": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Kimley-Horn",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "1302e905eb0bb20367d482571faf0ffd": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "af990b93a4036265fef05a45984e5e6a": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "fc85c1493f5b1ca616cb0ee14aaf7d72": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "101848688fcd50ef44203ef0547e562e": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "58279613ef0a284098e12ba6f1d092d1": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "46e104e3a77fb9daa1e5916e347a0343": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "4d05237471a4cbdd060c722981fa98ce": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "83f762c6f5e96db88268b2b600b989d9": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "977dac85a8184bf351be8746f44d259b": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "9b157050cb894ffdeff52eb35069828e": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "5854a835fec326604ffb981c1bf64ece": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "e0be1841c2ac5616676e5cbb0a815086": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "a613000f4c2943e063897a2ae345bf9d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "aab15f5a8716a001c7db6dff27d6ce99": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "36bef8ffb90e44ff528906f2f7f00943": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "3b44d535e2e1f2a16fe78295433925b3": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 88
+  },
+  "44e31a8c0ee8c7161b495996034f9ec4": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "f41d36fce85563a9e6ac0e89327d040e": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "36ed726b9486bba69a4c998a590212e1": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "3e15b3641893d069e78e9a8962e4a872": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "d2a659e27c791e9738dfb9f43275796f": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "54adfd4846e129495007901cb7641672": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "d315050e8ece0388c7a2e5850c8583dd": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "48a1b18999c53d0957cbe35ca3a92ae8": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "efbbac11f101edcccacc03aaf81c9c44": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "562d4a41eba221e5ed5225538950101b": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "a43c41807e7c32f92901682d516f7f76": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "186a9fc3c16b1b2e9593ee134588e1f6": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "bd419342b643eebfab6fa40911cbc7b6": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "00541dbb3c745cf1d86cbee4d319bcfb": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "f037a17232ce06c7ea695171f3e7b8f7": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "80aff4b343f03f97059c9eaa178e4222": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "65e17d30b6812b70e5e36f37c0e957b5": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "1655b3330aebe27a6f5917e19d101ace": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Landscape Architecture Intern",
+    "score": 72
+  },
+  "31f9b34cb737a1867ac5a39b818ae78d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Kensington",
+    "title": "Intern - Design",
+    "score": 72
+  },
+  "18ff907c3ac33254894bef642b3d5cf5": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Wellabe",
+    "title": "Creative Brand Summer 2027 Internship-Onsite-Des Moines, IA",
+    "score": 74
+  },
+  "68285f763bc6448ad2e6fa52d46673bd": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Dewberry",
+    "title": "CAD Designer Intern",
+    "score": 72
+  },
+  "7517cd76b9cd68446cad5d78b1431a41": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Gemini",
+    "title": "Product Design Intern (Winter 2027)",
+    "score": 72
+  },
+  "f72ade15c46e890d279ce23792990642": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Signal Group DC",
+    "title": "Communications Internship (Spring 2027)",
+    "score": 74
+  },
+  "e05f4072235779e06a75afc6718f986f": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "National Pork Board",
+    "title": "2027 Consumer Digital Marketing Internship",
+    "score": 74
+  },
+  "0a482a87c3f98d7663d51e3164b53cf8": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Noise",
+    "title": "Social Media Content Creator Intern",
+    "score": 74
+  },
+  "ba2ee701ae3c55aaf489debe27d5e1ba": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "WHYY",
+    "title": "Fundraising Operations Intern",
+    "score": 74
+  },
+  "f2f4fce8fe3d48d50e44213fef73322d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Kensington",
+    "title": "Intern - Marketing Performance",
+    "score": 74
+  },
+  "21ea0ac901ebfb39a22b2d8f06e5d574": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Tria Federal (Tria)",
+    "title": "Summer Internship Program - Marketing",
+    "score": 74
+  },
+  "dae60d26032fbb097696f69495dcaa1b": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Bimbo Bakeries USA",
+    "title": "Marketing Intern",
+    "score": 74
+  },
+  "57bf357994b09a2efaa0115feb4b52a9": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "PT Indorama Petrochemical",
+    "title": "Polyester Specialty Fibers Marketing Intern 2027",
+    "score": 74
+  },
+  "3132f84892cce30e8c485c415ea4c867": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Samantha Siu New York",
+    "title": "Brand Communication Intern",
+    "score": 74
+  },
+  "3bc2a5774442737373ae72d8802608d0": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Colony Brands, Inc.",
+    "title": "Marketing Analytics Internship",
+    "score": 74
+  },
+  "4cdfbfa0773467bcd78de62fedd8ff83": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Three Oaks Hospice",
+    "title": "Social Media Intern",
+    "score": 74
+  },
+  "72f08aa4f73c63f0de4d9b64d57e12ea": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "LIFT, Inc.",
+    "title": "Communications Intern (Internal LIFT Applicants Only)",
+    "score": 74
+  },
+  "828822e5d7f5a288c6a3f0d4fa6bc26c": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "News Corp",
+    "title": "Summer 2027 Internship Program \u2013 Customer and Market Research Intern",
+    "score": 74
+  },
+  "be8da4170f287a737fdf4bbfd76e8a92": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Town of Apex",
+    "title": "Special Events Marketing Intern",
+    "score": 74
+  },
+  "c085ac75089656d40c0bb75ba7144c3d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Chartwells School Dining Services K12",
+    "title": "Marketing Intern, Chartwells K12 / Unified School District / Arkansas City, KS",
+    "score": 74
+  },
+  "7e3fc7d3cb94960d7fc963f4205013d9": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Snowflake",
+    "title": "Product Marketing- Agentic Analytics Intern (Spring 2027)",
+    "score": 74
+  },
+  "9e281a7e0b0f67c70ad1a97e5fbd6bfe": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Babbel",
+    "title": "Performance Marketing Intern",
+    "score": 74
+  },
+  "fbf384aa3ad527d1ffd4c756250b0fef": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Power Digital Marketing",
+    "title": "Public Relations Intern, Spring 2027",
+    "score": 74
+  },
+  "1f4f4f40145834e9a585ef699b978c12": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Buckingham Companies",
+    "title": "Sales & Marketing Internship / Summer 2027",
+    "score": 91
+  },
+  "c906eacb2402d3167399ab6b9ded70a9": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Insightful",
+    "title": "MBA Marketing Intern (MarOps)",
+    "score": 74
+  },
+  "14bbca0e0182c439f6a7722f95557efe": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Strada Education Foundation",
+    "title": "Strada Education Foundation Internship: Communication Intern",
+    "score": 91
+  },
+  "bc8283574c8ca29abdbd195fe3467f21": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Black Diamond Networks",
+    "title": "Marketing  Internship",
+    "score": 74
+  },
+  "23f4c7f69ca39811caa2fadc2c03df9b": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Bloomily",
+    "title": "Marketing Intern (Paid, Part-Time) \u2013 Social Media, Content & Ads",
+    "score": 74
+  },
+  "215edceffdd83bad333dc9f7769b2eb0": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Girls on the Run Minnesota",
+    "title": "Development & Communications Internship (Twin Cities)",
+    "score": 74
+  },
+  "97d88df084b38e51f86e842f4ebb4f59": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "LJA",
+    "title": "Intern - Marketing",
+    "score": 74
+  },
+  "6862164f06e4c9ba0231eeb42c950233": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Colony Brands, Inc.",
+    "title": "Performance Marketing Strategist Internship",
+    "score": 74
+  },
+  "39d85e54e69700e6b81c59eb34fec919": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Canyon Entertainment Group",
+    "title": "Social Media Content Creator and Account Manager Internship (Instagram, YouTube, Quora & Medium)",
+    "score": 74
+  },
+  "22afb403d4eb00f712fc8e631bef4524": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "RestoReach",
+    "title": "Marketing Intern (Part-Time)",
+    "score": 74
+  },
+  "980f6a5d3e7b595c10e0411e6d693136": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Dreamstate",
+    "title": "Marketing Fellowship Intern",
+    "score": 74
+  },
+  "c1c6fb12a3fd321a9e7e525e653f477e": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Docusign",
+    "title": "Growth Strategy & Operations Intern",
+    "score": 76
+  },
+  "523e8ef794883dfbba1632722a1ab91d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Autter",
+    "title": "Marketing Intern",
+    "score": 74
+  },
+  "eda9af457f437f1d6cb1e86d8a8b809d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Docusign",
+    "title": "Growth Strategy & Operations Intern",
+    "score": 76
+  },
+  "a33021fb186f5311d0bf72b45c4d3926": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Graco",
+    "title": "MBA Marketing Intern",
+    "score": 74
+  },
+  "502e3193c3799c312d20c5a2388ae0a8": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "BorderX Lab",
+    "title": "Intern of BeyondStyle Content Marketing",
+    "score": 74
+  },
+  "f7c66d391f8a9f2d243ce1659b6643c0": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Nissan Motor Corporation",
+    "title": "Market Intelligence (Customer Trends & Insights) Intern - Summer 2027 - Franklin, TN",
+    "score": 74
+  },
+  "69d811fcbb9fe6c8f282749ed2001ca5": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Venture Lark",
+    "title": "Digital Marketing Intern",
+    "score": 74
+  },
+  "07e28378dedcbed452c0e079a6900a64": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Stand Together",
+    "title": "KIP Spring 2027 - Free Speech America Intern - Media Research Center",
+    "score": 74
+  },
+  "49ad341119049f92743b1b50c8111e29": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Method Communications",
+    "title": "Graduate Associate, Public Relations (Paid Internship)",
+    "score": 74
+  },
+  "dc2d95e964e01fc01a7daf813981b68b": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Haggar Clothing Co.",
+    "title": "Merchandising Intern - Chicago",
+    "score": 74
+  },
+  "d9560cd44583b1a4417313ffd78e9f30": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Tenaska",
+    "title": "Market Insights Intern",
+    "score": 74
+  },
+  "d340b25d6f3e8d0c80bb4b6298ee7e17": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "American Clean Power Association (ACP)",
+    "title": "Intern, Growth Marketing",
+    "score": 74
+  },
+  "50d5a316ebe3c7a94f9f53537b14d1f9": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "RBC",
+    "title": "Summer 2027 Global Asset Management Distribution Internship - Boston, MA",
+    "score": 74
+  },
+  "ec6508ce70ce2d1352841d0a78d6d155": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "ai.moms",
+    "title": "Social Media Intern",
+    "score": 74
+  },
+  "4ca411f1fa0754809f4db127d88f8fc9": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Panasonic Energy Corporation of North America",
+    "title": "Internal Communications Intern",
+    "score": 74
+  },
+  "d39d958aff37a5ceac416634523497d5": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "7-Eleven",
+    "title": "Merchandising Intern",
+    "score": 74
+  },
+  "0fedbde612ca2af34eb1114583e64061": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "RBC",
+    "title": "Summer 2027 Global Asset Management Marketing Internship - Boston, MA",
+    "score": 74
+  },
+  "623adf389a1e471efe8c146541c2bce3": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Bass Pro Shops",
+    "title": "Merchandising Intern Summer 2027",
+    "score": 74
+  },
+  "1e257959256c4f29b23ecc4cf43ab31d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "WebFX",
+    "title": "Digital Marketing Strategy & Analytics Internship",
+    "score": 76
+  },
+  "3c3cd1e8c7a7b83ec3ad4e26e08f4224": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Janus Henderson Investors",
+    "title": "DEI Intern Job Details / Janus Henderson Investors",
+    "score": 74
+  },
+  "6069aa7d4116dfefd3da1b6ab10945d2": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "DEI Intern",
+    "score": 74
+  },
+  "73c020c0f555ed3908f8089438916aeb": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "TikTok",
+    "title": "User & Promotion Growth Product Project Intern (TikTok Shop - US Operation) - 2026 Start",
+    "score": 74
+  },
+  "f48c82a56f2d7aa7510f77794531038e": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Nutrabolt",
+    "title": "Influencer Gifting Intern",
+    "score": 74
+  },
+  "f2efe7adaf5a0aca7d3382e2355418fb": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "The Henry Ford",
+    "title": "Intern inHub Marketing",
+    "score": 74
+  },
+  "5ee64ba80390fdc897dc5f97485f3d93": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Girl Scouts Carolinas Peaks to Piedmont",
+    "title": "Equestrian Marketing Intern (Spring 2027)",
+    "score": 74
+  },
+  "f55e126bccff4f881711831ed3b849fa": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Alibaba Cloud",
+    "title": "Marketing Intern (North America Cloud & AI) - Sunnyvale",
+    "score": 74
+  },
+  "2c18638f23c3cb3eacd1e5e8fe6a3eba": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Lowe's Companies, Inc.",
+    "title": "Merchandising Field Execution \u2013 Undergrad Internship \u2013 Summer 2027",
+    "score": 74
+  },
+  "40a0074a97418e9f88ef706088c24749": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Second Harvest Food Bank of Central Florida",
+    "title": "Spring 2027 Marketing Internship- Career Pathways",
+    "score": 74
+  },
+  "2411eb18a322f5b528b6d6ad0b416839": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "KFC",
+    "title": "Intern, Marketing, Social and Influencer",
+    "score": 74
+  },
+  "9c60fc2ba78a2fb37e2571825330ff5f": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "TikTok",
+    "title": "Creator Marketing Project intern (TikTok Shop - US Operations) - 2026 Start",
+    "score": 74
+  },
+  "f1ff459e2f5311aeb5179de4832e757f": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Girl Scouts Carolinas Peaks to Piedmont",
+    "title": "Equestrian Marketing Intern (Summer 2027)",
+    "score": 74
+  },
+  "06f66c070780c042ae7f11f309faeaaa": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Sanofi",
+    "title": "2027 Summer Intern Commercial Graduate Program Associate, Specialty Care, Cambridge, MA",
+    "score": 74
+  },
+  "df341076bcc71329148b19c89b24926b": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Tri Delta",
+    "title": "Events Intern Spring 27",
+    "score": 74
+  },
+  "2fe94ba15e8558d11d60c05d69d2fbef": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Events Intern Spring 27",
+    "score": 74
+  },
+  "061a14e66159aeb883f14b7111bf9404": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "TikTok",
+    "title": "Category Management Project Intern (TikTok Shop - US Operation) - 2026 Start",
+    "score": 74
+  },
+  "9012c2035d759613bed48dfd73c66184": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Yamaha Corporation",
+    "title": "Video Production Marketing Intern",
+    "score": 74
+  },
+  "605f07a1e143a966cd91c40a2ad2632c": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Winds & Strings Marketing Intern",
+    "score": 74
+  },
+  "edc5377cf00a53928af6ca7ee8a6443a": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Drums and Percussion Marketing Intern",
+    "score": 74
+  },
+  "1422b22250b64324a57a05d5f06aa019": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "PT Indorama Petrochemical",
+    "title": "Communications Intern 2027",
+    "score": 74
+  },
+  "6f9b17379b1a41f6f6f49eb9541bd5a8": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Chartwells Higher Education Dining Services",
+    "title": "Marketing Intern, Chartwells Higher Ed / University of North Carolina - Greensboro",
+    "score": 74
+  },
+  "60ce3e98a6fb833ef778b286b8e3d5d5": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Sports Endeavors",
+    "title": "Experiential Marketing Internship (Summer 2027)",
+    "score": 74
+  },
+  "3f451b577dd4b10cb8d7bdf07d29110c": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Harborside Inc.",
+    "title": "Marketing Paid Internship (Part-Time) 3-6 months Months ($17.75 per hour)",
+    "score": 74
+  },
+  "809a3781e6b0ad80265b025a0acd5656": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Banneker-Douglass-Tubman Museum",
+    "title": "Spring 2027 Marketing & Communications Intern",
+    "score": 74
+  },
+  "40f2d7fc2eef6d1c2fa0b4edd4e26441": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "AMC911 Crawl Space & Foundation Repair",
+    "title": "Marketing Intern",
+    "score": 74
+  },
+  "1e589144ba11c335e2b08183d57afa32": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Interpret",
+    "title": "Market Research Intern-to-hire \u2013 Gaming & Technology Insights (Mandarin)",
+    "score": 74
+  },
+  "564f58336644e65a2c6caaaa107da6e3": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Chester County Intermediate Unit",
+    "title": "Communications School-Year College Intern - Spring 2027",
+    "score": 74
+  },
+  "6d4c70cf6194224b92820795e28bc7c9": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "State Farm Agent",
+    "title": "Intern - State Farm Agent Team Member",
+    "score": 74
+  },
+  "d5f4fdd7a0aa9ef6050ac405a8469036": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Intern - State Farm Agent Team Member",
+    "score": 74
+  },
+  "522c2e42f466a8f1171d056a00459859": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Future Opening:  Intern - State Farm Agent Team Member",
+    "score": 74
+  },
+  "bb05eeec13663729f205d93e43ac64ce": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Future Opening:  Intern - State Farm Agent Team Member",
+    "score": 74
+  },
+  "bcc92473ffee16519ba42e2d9b4d1a6d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Intern - State Farm Agent Team Member",
+    "score": 74
+  },
+  "ff4099d1fe9f8a3a540cc66da1efdb9c": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Intern - State Farm Agent Team Member",
+    "score": 74
+  },
+  "e881daf31ddb18b813a52c610037d822": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Chester County Intermediate Unit",
+    "title": "Marketing and Admissions Intern - Spring 2027",
+    "score": 74
+  },
+  "3abbf25c98619a4dfe1f19845989878f": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Haleon",
+    "title": "Summer MBA Marketing Internship",
+    "score": 74
+  },
+  "854a462ce1e15eca4cbfa7ae7d2e742b": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Philips",
+    "title": "Intern- eCommerce (Health Systems Marketing) \u2014 Cambridge, MA \u2014 Summer 2027",
+    "score": 74
+  },
+  "ce205acea034f45395d17881db023327": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Volvo Group",
+    "title": "Intern: Communications (Spring 2027)",
+    "score": 89
+  },
+  "12fa9ba71490bc88437d0916821cd4c1": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Stanley Black & Decker, Inc.",
+    "title": "Brand Marketing Activation Intern",
+    "score": 74
+  },
+  "4aff2bb619a3d53695fe6131629708c0": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Hyster-Yale Materials Handling",
+    "title": "Summer 2027 Business Marketing & Communications Intern",
+    "score": 74
+  },
+  "e5ba9cc47c1eaa6c28663b136afa934b": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Compass Group Canada",
+    "title": "Marketing Intern, Chartwells K12 / Unified School District / Arkansas City, KS",
+    "score": 74
+  },
+  "02237c82d79f2ac44f78a326cd206281": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "American Lung Association",
+    "title": "Development Intern - Spring 2027",
+    "score": 74
+  },
+  "9745e2d2fe879310e8b7bb2dd4dd3c8d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Development Intern",
+    "score": 74
+  },
+  "8d7ebaa219c14af5b792768e4e087066": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "\u21b3",
+    "title": "Development Intern",
+    "score": 74
+  },
+  "0c9a11c66a63012064062518c50b4d5d": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "SproutsAI",
+    "title": "Marketing Summer Intern",
+    "score": 74
+  },
+  "03630cc53092b5636d86072297870d43": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Nutrabolt",
+    "title": "TikTok Shop Intern",
+    "score": 74
+  },
+  "4885d6c85ba14431fc335ab1c6d44b47": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "WHOOP",
+    "title": "Product Designer Co-Op, Growth",
+    "score": 78
+  },
+  "78a365176e50630cc3317d77b1365cce": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "WHOOP",
+    "title": "Product Operations Co-op",
+    "score": 78
+  },
+  "1fbd18c181382c4650f0b093f6f044dc": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "WHOOP",
+    "title": "Program Management Co-Op",
+    "score": 78
+  },
+  "cdcf4cd8364ec7dec462a7a5b481afbc": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "AMD",
+    "title": "2027 Undergrad Program Management Intern/Co-op",
+    "score": 78
+  },
+  "904147eb6cb95fcd8f0acc3e6a5c8938": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Goldman Sachs",
+    "title": "2027  Americas  New York City Area AWM Product Management  Summer Analyst",
+    "score": 78
+  },
+  "159a0e9aa20ab7dc7fddc47368af2147": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Bank of America",
+    "title": "Strategy and Management Summer Analyst Program - 2027",
+    "score": 78
+  },
+  "aeb7692022d74bc5d5d1fe4e2570f994": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "IBM",
+    "title": "Product Manager Spring Co-op 2027",
+    "score": 78
+  },
+  "9acb3aabf526acd88a6b96a1e1e9b521": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "IBM",
+    "title": "Product Manager Intern 2027",
+    "score": 78
+  },
+  "0195f7f0123eed09ffddfc3d6ab830ca": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Microsoft",
+    "title": "Product Manager: Internship Opportunities",
+    "score": 78
+  },
+  "647b1a60f863e87505d646a7bd6a2e9b": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Microsoft",
+    "title": "Technical Program Manager: Internship Opportunities",
+    "score": 78
+  },
+  "092c5674370ab4bf8ff579134e610f5b": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Tesla",
+    "title": "Internship, Program Manager, North America Service Program & Project Management (Fall 2026) - Sales & Customer Support",
+    "score": 78
+  },
+  "c666e152e5c82c4a097dc0e69d9d1ea3": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Tesla",
+    "title": "Internship, Program Manager, North America Service Program & Project Management (Fall 2026) - Vehicle Service",
+    "score": 78
+  },
+  "fa5fc22202029daff31d5285bb7b4904": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "AMD",
+    "title": "2027 Undergrad Product Development Engineering Intern/Co-op",
+    "score": 78
+  },
+  "53fa744b5f1ca82b32afa233c7ce5dfd": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Capital One",
+    "title": "Business Analyst Intern - Summer 2027",
+    "score": 78
+  },
+  "63663d8f082b8295c2f6395e829ed6aa": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "salesforce",
+    "title": "Summer 2027 Intern - Associate Product Manager (APM)",
+    "score": 78
+  },
+  "05fa6eab7068be0b850e8efe20c1390a": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Palantir",
+    "title": "American Tech Fellowship",
+    "score": 65
+  },
+  "e58de18138f3a4b7420f153ac7ecf0e0": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Palantir",
+    "title": "Deployment Strategist, Internship",
+    "score": 70
+  },
+  "79543a82d800c29501cdfebd086840fd": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Palantir",
+    "title": "Deployment Strategist, Internship - US Government",
+    "score": 70
+  },
+  "b72a28a069489e6d0dd779a89c6fd4ae": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Palantir",
+    "title": "Deployment Strategist, Internship - Warp Speed",
+    "score": 65
+  },
+  "2101fb172652e1a430da97e8edcd1507": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Palantir",
+    "title": "Meritocracy Fellowship",
+    "score": 65
+  },
+  "54e72799cb2f8d267067e2448278b453": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Palantir",
+    "title": "Neurodivergent Fellowship",
+    "score": 65
+  },
+  "3a5550811f1c852c567a8c1356a96ad8": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Palantir",
+    "title": "Neurodivergent Fellowship",
+    "score": 70
+  },
+  "2f6d593cf9ecf70181c4b87ef19459f4": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Palantir",
+    "title": "Product Designer, Internship",
+    "score": 74
+  },
+  "3a4d03cc0a7252df8248bfe9c8345aa3": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Palantir",
+    "title": "Product Designer, Internship",
+    "score": 88
+  },
+  "b1ad5634b253ed50fd6b96d2b1bdbc43": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Palantir",
+    "title": "Product Designer, Internship - US Government",
+    "score": 74
+  },
+  "1a06dfe902322404e7300bcf379bbec6": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Palantir",
+    "title": "Product Designer, Internship - US Government",
+    "score": 74
+  },
+  "bfd57611572ef4d4dd332ca9ff8a979e": {
+    "first_seen": "2026-10-31T01:21:02.534101",
+    "company": "Palantir",
+    "title": "Product Designer, Internship - US Government",
+    "score": 79
+  },
+  "694dec459eaf7b1ea1a349895c8635cd": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "Parkland Corporation",
+    "title": "Intern, Low Carbon Strategy \u2013 January 2027 (8 or 12-Month Term)",
+    "score": 66
+  },
+  "e2909badf8388fc9663eaa44ca596b3e": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "The New York Times",
+    "title": "Audience Team Intern, NYT Wirecutter",
+    "score": 65
+  },
+  "59605e6678a3a2e645fae8bdc2e1e76a": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "\u21b3",
+    "title": "Advertising Revenue Operations Intern",
+    "score": 65
+  },
+  "bbb4187ecd01490483941e0ac9ebfd42": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "\u21b3",
+    "title": "Advertising Business Operations & Enablement Operations Intern",
+    "score": 66
+  },
+  "de541a0e13ec0b22a8f982e235380cf8": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "\u21b3",
+    "title": "Communications Intern",
+    "score": 65
+  },
+  "ca36fb00a041f5859f1aceba003cde47": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "\u21b3",
+    "title": "Growth Strategy & Operations Intern",
+    "score": 66
+  },
+  "2c445a5294a89a7180ce0544041112f2": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "Ecolab",
+    "title": "MBA Marketing Intern",
+    "score": 65
+  },
+  "f4ed7f7d412e729035fee8e893700202": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "\u21b3",
+    "title": "MBA Marketing Intern",
+    "score": 65
+  },
+  "bda4cdc385a92e6e56acb4d71f104ec0": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "Janus Henderson Investors",
+    "title": "DEI Intern",
+    "score": 65
+  },
+  "14ce32acb4019d0fa17b9278b05d6d9b": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "\u21b3",
+    "title": "DEI Intern Job Details / Janus Henderson Investors",
+    "score": 65
+  },
+  "5191aab68492dc22cea3205e2d336f73": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "State Farm Agent",
+    "title": "Intern - State Farm Agent Team Member",
+    "score": 65
+  },
+  "9ab0a7ebd41bebabe1c9024781cf3d4a": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "\u21b3",
+    "title": "Intern - State Farm Agent Team Member",
+    "score": 65
+  },
+  "08b3d340a02a502c75b19d9e54bd88b5": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "CIBC",
+    "title": "Product Analyst Co-op- Winter 2027",
+    "score": 69
+  },
+  "00a43728d9bf86708c33bbf576bf922d": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "SAP",
+    "title": "[SAP iXp Intern - Product Management, Agile Delivery & PI\u00a0Planning [Newtown Square, PA]](https://jobright.ai/jobs/info/6abbeaf43217d1d13329bd2a?utmcampaign=1047&utmsource=git)",
+    "score": 69
+  },
+  "f736edfb3f39df3bc1a3f31c4a4b9f83": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "\u21b3",
+    "title": "[SAP iXp Intern - Product Management, Digital Platforms & AI [Newtown Square, PA]](https://jobright.ai/jobs/info/6acf415a9f35fba28731f46c?utmcampaign=1047&utmsource=git)",
+    "score": 69
+  },
+  "ceb0170a3ebef5604c26e49f694abb39": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "IBM",
+    "title": "Product Manager Intern 2027 - POUGHKEEPSIE",
+    "score": 69
+  },
+  "51075731d77e72437b3010c30451b9d0": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "\u21b3",
+    "title": "Product Manager Spring Co-op 2027",
+    "score": 69
+  },
+  "0681cfcec19ffbeb465be1fdee652236": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "Clearwater Analytics",
+    "title": "Product Management Intern",
+    "score": 69
+  },
+  "31d76eac0607d6ce18d0807fc090f3e2": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "\u21b3",
+    "title": "Technical Product Management Intern",
+    "score": 69
+  },
+  "7bb02a07bd27fa9a0a3c2d895baa9488": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "TikTok",
+    "title": "Product Operations Intern (PGC) - 2027 Summer",
+    "score": 69
+  },
+  "d2216da00ac39e82c0b0f07c0f6b02cc": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "The New York Times",
+    "title": "Creative Development Intern, NYT Wirecutter",
+    "score": 63
+  },
+  "eb9313f6af583dec8fe0793e4c38828a": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "\u21b3",
+    "title": "Product Design Intern",
+    "score": 63
+  },
+  "43158488d0c99b97f28b895b918fff33": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "golden eyes project",
+    "title": "Content Design Intern",
+    "score": 65
+  },
+  "2a88eaecf6d4b80972e65ab882ad51c1": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "The Post and Courier",
+    "title": "The Post and Courier Marketing and Graphics Design Intern - Clemson",
+    "score": 65
+  },
+  "6db632f057b7097326fc6a7ed4761c94": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "Obsidian Entertainment",
+    "title": "Concept Artist - 2027 Summer Internship",
+    "score": 63
+  },
+  "e6feced31fd425b0d019f93ae2009e7a": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "\u21b3",
+    "title": "Architecture Intern - Summer 2027",
+    "score": 63
+  },
+  "4ec9c6a10ef1b12d8bbf3dac08e34f10": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "\u21b3",
+    "title": "Architecture Intern - Summer 2027",
+    "score": 63
+  },
+  "21ae7cf4775a9049e02f38cee4918335": {
+    "first_seen": "2026-10-31T01:57:57.575988",
+    "company": "\u21b3",
+    "title": "Architecture Intern - Summer 2027",
+    "score": 63
+  }
+}

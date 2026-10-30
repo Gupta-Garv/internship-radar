@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Radar • Clean Modern Ledger</title>
+  
+  <!-- Fonts: Geist Sans, Geist Mono, Silkscreen (Pixel Accent) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;450;500;600;700&family=Geist+Mono:wght@400;500;600&family=Silkscreen&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       CLEAN MODERN LEDGER DESIGN SYSTEM TOKENS
+       ========================================================================== */
+    :root {
+      --canvas: #0a0a0a;
+      --card-tray: #121212;
+      --card-sheet: #181818;
+      --card-sheet-hover: #1f1f1f;
+      --text-primary: #ededed;
+      --text-muted: #8e8e8e;
+      --text-dim: #555555;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(255, 255, 255, 0.16);
+      --ink: #ffffff;
+      --ink-inverse: #0a0a0a;
+      
+      /* Semantic Status */
+      --status-green: #34d399;
+      --status-green-bg: rgba(52, 211, 153, 0.1);
+      --status-blue: #60a5fa;
+      --status-blue-bg: rgba(96, 165, 250, 0.1);
+      --status-amber: #fbbf24;
+      --status-amber-bg: rgba(251, 191, 36, 0.1);
+
+      /* Cult UI / Ledger Elevation Scale */
+      --shadow-soft-sm: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 1px 2px rgba(0, 0, 0, 0.3);
+      --shadow-soft: 0 0 0 1px rgba(255, 255, 255, 0.07), 0 1px 2px -1px rgba(0, 0, 0, 0.4), 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+      --shadow-soft-md: 0 0 0 1px rgba(255, 255, 255, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.5), 0 8px 16px -2px rgba(0, 0, 0, 0.45);
+      --shadow-inspector: 0 0 0 1px rgba(255, 255, 255, 0.12), -10px 0 30px rgba(0, 0, 0, 0.7);
+
+      /* Typography */
+      --font-sans: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'Geist Mono', monospace;
+      --font-pixel: 'Silkscreen', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      background-color: var(--canvas);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 14px;
+      line-height: 1.5;
+      min-height: 100vh;
+      overflow-x: hidden;
+      padding-bottom: 120px;
+    }
+
+    /* Container */
+    .ledger-container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ==========================================================================
+       TOP FLOATING DOCK (CULT UI DYNAMIC ISLAND STYLE)
+       ========================================================================== */
+    .dock-wrapper {
+      position: sticky;
+      top: 18px;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+      pointer-events: none;
+    }
+
+    .dock-island {
+      pointer-events: auto;
+      background: rgba(18, 18, 18, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: var(--shadow-soft-md);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 9999px;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .dock-pill {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 450;
+      padding: 7px 16px;
+      border-radius: 9999px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      transition: all 0.16s ease;
+      white-space: nowrap;
+    }
+
+    .dock-pill:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .dock-pill.active {
+      background: var(--ink);
+      color: var(--ink-inverse);
+      font-weight: 500;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .dock-badge {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      padding: 1px 6px;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text-muted);
+      font-weight: 500;
+      tabular-nums: true;
+    }
+
+    .dock-pill.active .dock-badge {
+      background: rgba(0, 0, 0, 0.12);
+      color: var(--ink-inverse);
+    }
+
+    /* ==========================================================================
+       HERO: LEFT-ALIGNED LEDGER HEADER
+       ========================================================================== */
+    .ledger-hero {
+      padding-top: 20px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border-subtle);
+      margin-bottom: 36px;
+    }
+
+    .trust-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--card-tray);
+      box-shadow: var(--shadow-soft-sm);
+      border-radius: 9999px;
+      padding: 4px 12px 4px 6px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .trust-indicator {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--status-green);
+      box-shadow: 0 0 8px var(--status-green);
+    }
+
+    .trust-text {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+
+    .hero-title {
+      font-size: 40px;
+      font-weight: 450;
+      letter-spacing: -0.05em;
+      line-height: 1.05;
+      color: var(--text-primary);
+      margin-bottom: 14px;
+      max-width: 820px;
+    }
+
+    .pixel-phrase {
+      font-family: var(--font-pixel);
+      font-size: 0.85em;
+      letter-spacing: -0.02em;
+      color: #fff;
+      display: inline-block;
+      margin-left: 2px;
+    }
+
+    .two-tone-desc {
+      font-size: 17px;
+      line-height: 1.55;
+      letter-spacing: -0.01em;
+      max-width: 680px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    .two-tone-desc strong {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    /* Ledger Summary Strip */
+    .ledger-strip {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border-subtle);
+      flex-wrap: wrap;
+    }
+
+    .ledger-stat {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .stat-num {
+      font-family: var(--font-sans);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .stat-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       FILTER TRAY & SEARCH (CLEAN MODERN LEDGER)
+       ========================================================================== */
+    .filter-tray {
+      background: var(--card-tray);
+      border-radius: 24px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow-soft);
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .search-row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .search-box {
+      flex: 1;
+      background: var(--card-sheet);
+      border: 1px solid var(--border-subtle);
+      border-radius: 9999px;
+      padding: 9px 18px;
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      outline: none;
+      transition: all 0.16s ease;
+      box-shadow: var(--shadow-soft-sm);
+    }
+
+    .search-box:focus {
+      border-color: rgba(255, 255, 255, 0.25);
+      background: #1c1c1c;
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-dim);
+      margin-right: 4px;
+    }
+
+    .pill-filter {
+      background: transparent;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 450;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .pill-filter:hover {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .pill-filter.active {
+      background: var(--text-primary);
+      color: var(--canvas);
+      border-color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    /* ==========================================================================
+       CATALOG: BLOCK & PATTERN CARDS (CULT UI + LEDGER)
+       ========================================================================== */
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 20px;
+    }
+
+    .card-tray-wrapper {
+      background: var(--card-tray);
+      border-radius: 1.5rem;
+      padding: 8px;
+      box-shadow: var(--shadow-soft);
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+
+    .card-tray-wrapper:hover {
+      box-shadow: var(--shadow-soft-md);
+      transform: translateY(-2px);
+    }
+
+    .ledger-card {
+      background: var(--card-sheet);
+      border-radius: 1.25rem;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    .card-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .company-title-cluster {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .company-monogram {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .company-name-text {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .company-ats-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .score-chip {
+      font-family: var(--font-pixel);
+      font-size: 10px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      letter-spacing: 0.02em;
+    }
+
+    .score-chip.tier1 {
+      background: var(--status-green-bg);
+      color: var(--status-green);
+      border: 1px solid rgba(52, 211, 153, 0.25);
+    }
+
+    .score-chip.tier2 {
+      background: var(--status-blue-bg);
+      color: var(--status-blue);
+      border: 1px solid rgba(96, 165, 250, 0.25);
+    }
+
+    .card-role-title {
+      font-size: 16px;
+      font-weight: 450;
+      line-height: 1.35;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .tags-container {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .pixel-tag-chip {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+    }
+
+    .hook-preview-clamped {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 16px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      font-style: italic;
+    }
+
+    /* Card Hairline Footer */
+    .card-hairline-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-subtle);
+      margin-top: auto;
+    }
+
+    .view-affordance {
+      font-family: var(--font-pixel);
+      font-size: 10px;
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.15s;
+    }
+
+    .card-tray-wrapper:hover .view-affordance {
+      color: #fff;
+    }
+
+    .pill-cta-ink {
+      background: var(--ink);
+      color: var(--ink-inverse);
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: opacity 0.15s;
+    }
+
+    .pill-cta-ink:hover {
+      opacity: 0.9;
+    }
+
+    /* ==========================================================================
+       SLIDE-OVER INSPECTOR DRAWER (CULT UI SIDE-PANEL)
+       ========================================================================== */
+    .inspector-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(4px);
+      z-index: 2000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+
+    .inspector-backdrop.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .inspector-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 540px;
+      max-width: 90vw;
+      background: var(--card-sheet);
+      box-shadow: var(--shadow-inspector);
+      border-left: 1px solid var(--border-subtle);
+      z-index: 2001;
+      transform: translateX(100%);
+      transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      padding: 32px 36px;
+    }
+
+    .inspector-backdrop.open .inspector-drawer {
+      transform: translateX(0);
+    }
+
+    .inspector-close-btn {
+      align-self: flex-start;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      border-radius: 9999px;
+      padding: 5px 12px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-muted);
+      cursor: pointer;
+      margin-bottom: 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .inspector-close-btn:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .inspector-company-tag {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--status-blue);
+      margin-bottom: 6px;
+    }
+
+    .inspector-title {
+      font-size: 24px;
+      font-weight: 450;
+      letter-spacing: -0.03em;
+      line-height: 1.25;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+    }
+
+    .inspector-meta-strip {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .inspector-section-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-dim);
+      margin-bottom: 8px;
+    }
+
+    .pitch-copy-box {
+      background: var(--card-tray);
+      border-radius: 1rem;
+      padding: 16px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .pitch-text-content {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #d1d5db;
+      margin-bottom: 12px;
+      white-space: pre-wrap;
+    }
+
+    .copy-pill-action {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 14px;
+      border-radius: 9999px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s;
+    }
+
+    .copy-pill-action:hover {
+      background: var(--ink);
+      color: var(--ink-inverse);
+    }
+
+    /* ==========================================================================
+       PAGE VIEWS (MULTIPAGE SYSTEM)
+       ========================================================================== */
+    .ledger-page-view {
+      display: none;
+    }
+
+    .ledger-page-view.active {
+      display: block;
+      animation: ledgerFadeIn 0.18s ease;
+    }
+
+    @keyframes ledgerFadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ==========================================================================
+       PAGE 2: PIPELINE KANBAN (TACTILE LEDGER CARDS)
+       ========================================================================== */
+    .kanban-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      align-items: start;
+    }
+
+    .kanban-column-tray {
+      background: var(--card-tray);
+      border-radius: 1.5rem;
+      padding: 14px;
+      box-shadow: var(--shadow-soft);
+      min-height: 480px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .kanban-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 6px 12px 6px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .kanban-column-title {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .kanban-counter {
+      font-family: var(--font-pixel);
+      font-size: 10px;
+      color: var(--text-dim);
+    }
+
+    .kanban-item-card {
+      background: var(--card-sheet);
+      border-radius: 1rem;
+      padding: 14px;
+      box-shadow: var(--shadow-soft-sm);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .kanban-item-card:hover {
+      box-shadow: var(--shadow-soft);
+      transform: translateY(-1px);
+    }
+
+    /* ==========================================================================
+       PAGE 3: COLD PITCH STUDIO (MINIMALIST TYPEWRITER)
+       ========================================================================== */
+    .studio-wrapper {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 24px;
+    }
+
+    .studio-controls-sheet {
+      background: var(--card-tray);
+      border-radius: 1.5rem;
+      padding: 22px;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      height: fit-content;
+    }
+
+    .studio-field label {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-dim);
+      margin-bottom: 6px;
+    }
+
+    .studio-field input, .studio-field select {
+      width: 100%;
+      background: var(--card-sheet);
+      border: 1px solid var(--border-subtle);
+      border-radius: 9999px;
+      padding: 8px 14px;
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      outline: none;
+    }
+
+    .studio-field input:focus, .studio-field select:focus {
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    /* ==========================================================================
+       TOAST NOTIFICATION (CULT UI HALO TOAST)
+       ========================================================================== */
+    .halo-toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #1f1f1f;
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 9999px;
+      padding: 8px 20px;
+      font-size: 12px;
+      font-weight: 500;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+      z-index: 3000;
+      opacity: 0;
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .halo-toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div class="ledger-container">
+
+  <!-- ==========================================================================
+       TOP DOCK / FLOATING NAVIGATION (CULT UI STYLE)
+       ========================================================================== -->
+  <div class="dock-wrapper">
+    <nav class="dock-island">
+      <button class="dock-pill active" onclick="navigateLedger('radar')">
+        <span>Radar</span>
+        <span class="dock-badge" id="dock-count-radar">350</span>
+      </button>
+      <button class="dock-pill" onclick="navigateLedger('pipeline')">
+        <span>Pipeline</span>
+        <span class="dock-badge" id="dock-count-pipeline">0</span>
+      </button>
+      <button class="dock-pill" onclick="navigateLedger('studio')">
+        <span>Pitch Studio</span>
+      </button>
+      <button class="dock-pill" onclick="navigateLedger('hubs')">
+        <span>Global Hubs</span>
+      </button>
+      <button class="dock-pill" onclick="navigateLedger('dna')">
+        <span>Garv's DNA</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- ==========================================================================
+       HERO: LEFT-ALIGNED LEDGER HEADER
+       ========================================================================== -->
+  <header class="ledger-hero">
+    <div class="trust-chip">
+      <div class="trust-indicator"></div>
+      <span class="trust-text">Direct ATS Harvester // 75+ Elite Boards</span>
+    </div>
+
+    <h1 class="hero-title">
+      Internship Radar, <span class="pixel-phrase">unfiltered</span>.
+    </h1>
+
+    <p class="two-tone-desc">
+      <strong>Real-time postings scraped straight from Greenhouse, Lever, and Ashby APIs.</strong>
+      Bypassing 1,000+ applicant LinkedIn queues with verified direct links and tailored recruiter outreach for non-technical operators.
+    </p>
+
+    <!-- Ledger Metric Strip -->
+    <div class="ledger-strip">
+      <div class="ledger-stat">
+        <span class="stat-num" id="metric-total">350</span>
+        <span class="stat-label">Non-Tech Internships</span>
+      </div>
+      <div class="ledger-stat">
+        <span class="stat-num" id="metric-tier1" style="color:var(--status-green);">8</span>
+        <span class="stat-label">Tier 1 Fits (&gt;88%)</span>
+      </div>
+      <div class="ledger-stat">
+        <span class="stat-num" id="metric-visa" style="color:#34d399;">--</span>
+        <span class="stat-label">🛂 Visa / Relo Sponsored</span>
+      </div>
+      <div class="ledger-stat">
+        <span class="stat-num" id="metric-hubs" style="color:var(--status-blue);">19</span>
+        <span class="stat-label">Europe, Singapore &amp; Remote</span>
+      </div>
+      <div class="ledger-stat">
+        <span class="stat-num" id="metric-tracked" style="color:var(--status-amber);">0</span>
+        <span class="stat-label">Tracked In Pipeline</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       PAGE 1: LIVE RADAR (DISCOVERY CATALOG)
+       ========================================================================== -->
+  <section id="view-radar" class="ledger-page-view active">
+    
+    <!-- Filter & Search Tray -->
+    <div class="filter-tray">
+      <div class="search-row">
+        <input type="text" id="radar-search-input" class="search-box" placeholder="Filter by company, role title, or city (e.g. Cloudflare, Databricks, APM, London, Lisbon, Remote)...">
+      </div>
+
+      <!-- Sorting Controls -->
+      <div class="filter-group" id="filter-sorting">
+        <span class="filter-eyebrow">Sort:</span>
+        <button class="pill-filter active" data-sort="latest">⚡ Latest Published First (Default)</button>
+        <button class="pill-filter" data-sort="potential">🎯 Most Potential (Highest Fit %)</button>
+        <button class="pill-filter" data-sort="new">✨ Just Discovered</button>
+        <button class="pill-filter" data-sort="alpha">🏢 Company A–Z</button>
+      </div>
+
+      <!-- Quick Potential & Freshness Facets -->
+      <div class="filter-group" id="filter-facets">
+        <span class="filter-eyebrow">Quick Focus:</span>
+        <button class="pill-filter active" data-facet="all">All Postings</button>
+        <button class="pill-filter" data-facet="visa">🛂 Visa / Relocation Sponsored Only</button>
+        <button class="pill-filter" data-facet="tier1">⭐ Tier 1 (&gt;88% High Potential)</button>
+        <button class="pill-filter" data-facet="fresh">⚡ Fresh (&lt; 72 Hours)</button>
+        <button class="pill-filter" data-facet="direct">🟢 Direct ATS Only</button>
+      </div>
+
+      <!-- Role Tracks -->
+      <div class="filter-group" id="filter-tracks">
+        <span class="filter-eyebrow">Track:</span>
+        <button class="pill-filter active" data-cat="all">All Tracks</button>
+        <button class="pill-filter" data-cat="Product / APM">Product / APM</button>
+        <button class="pill-filter" data-cat="BizOps & Strategy">BizOps &amp; Strategy</button>
+        <button class="pill-filter" data-cat="Growth & Marketing">Growth &amp; Marketing</button>
+        <button class="pill-filter" data-cat="Design & UX">Product Design</button>
+        <button class="pill-filter" data-cat="Finance & Analytics">Finance &amp; Analytics</button>
+      </div>
+
+      <!-- Locations / Hubs -->
+      <div class="filter-group" id="filter-regions">
+        <span class="filter-eyebrow">Hub:</span>
+        <button class="pill-filter active" data-reg="all">All Locations</button>
+        <button class="pill-filter" data-reg="China / HK / TW">🇨🇳 China &amp; HK</button>
+        <button class="pill-filter" data-reg="Japan">🇯🇵 Japan (Tokyo)</button>
+        <button class="pill-filter" data-reg="Singapore">🇸🇬 Singapore</button>
+        <button class="pill-filter" data-reg="UAE / Middle East">🇦🇪 UAE (Dubai)</button>
+        <button class="pill-filter" data-reg="Germany">🇩🇪 Germany</button>
+        <button class="pill-filter" data-reg="Netherlands">🇳🇱 Netherlands</button>
+        <button class="pill-filter" data-reg="Ireland">🇮🇪 Ireland</button>
+        <button class="pill-filter" data-reg="Nordics / Swiss">🇨🇭 Nordics &amp; Swiss</button>
+        <button class="pill-filter" data-reg="Australia / NZ">🇦🇺 Australia &amp; NZ</button>
+        <button class="pill-filter" data-reg="Remote">🌐 Remote Global</button>
+        <button class="pill-filter" data-reg="India">🇮🇳 India</button>
+        <button class="pill-filter" data-reg="US / Canada">🇺🇸 US (Strict Visa)</button>
+      </div>
+    </div>
+
+    <!-- Active Filter Counter & Order Indicator -->
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; font-family:var(--font-mono); font-size:11px; color:var(--text-muted); padding:0 4px;">
+      <div>
+        Showing <strong id="filter-active-count" style="color:var(--text-primary);">350</strong> of <span id="filter-total-count">350</span> internships
+      </div>
+      <div id="filter-sort-label" style="color:var(--text-dim);">
+        Order: Latest Published on top
+      </div>
+    </div>
+
+    <!-- Catalog Grid -->
+    <div class="catalog-grid" id="radar-catalog">
+      <!-- Injected via JavaScript -->
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PAGE 2: PIPELINE KANBAN BOARD
+       ========================================================================== -->
+  <section id="view-pipeline" class="ledger-page-view">
+    <div class="kanban-grid">
+      <!-- 1. To Apply -->
+      <div class="kanban-column-tray">
+        <div class="kanban-header">
+          <span class="kanban-column-title">📌 To Apply</span>
+          <span class="kanban-counter" id="k-count-to_apply">0</span>
+        </div>
+        <div id="k-list-to_apply"></div>
+      </div>
+
+      <!-- 2. Applied -->
+      <div class="kanban-column-tray">
+        <div class="kanban-header">
+          <span class="kanban-column-title">📨 Applied</span>
+          <span class="kanban-counter" id="k-count-applied">0</span>
+        </div>
+        <div id="k-list-applied"></div>
+      </div>
+
+      <!-- 3. Interviewing -->
+      <div class="kanban-column-tray">
+        <div class="kanban-header">
+          <span class="kanban-column-title" style="color:var(--status-blue);">🎯 Interviewing</span>
+          <span class="kanban-counter" id="k-count-interviewing">0</span>
+        </div>
+        <div id="k-list-interviewing"></div>
+      </div>
+
+      <!-- 4. Offers -->
+      <div class="kanban-column-tray">
+        <div class="kanban-header">
+          <span class="kanban-column-title" style="color:var(--status-green);">🏆 Offer</span>
+          <span class="kanban-counter" id="k-count-offer">0</span>
+        </div>
+        <div id="k-list-offer"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PAGE 3: COLD PITCH STUDIO
+       ========================================================================== -->
+  <section id="view-studio" class="ledger-page-view">
+    <div class="studio-wrapper">
+      <div class="studio-controls-sheet">
+        <div class="studio-field">
+          <label>Target Company</label>
+          <input type="text" id="st-comp" value="Cloudflare">
+        </div>
+        <div class="studio-field">
+          <label>Role Title</label>
+          <input type="text" id="st-role" value="Product Manager Intern (2027)">
+        </div>
+        <div class="studio-field">
+          <label>Track Focus</label>
+          <select id="st-track">
+            <option value="product">Product Management / APM</option>
+            <option value="bizops">Business Operations &amp; Strategy</option>
+            <option value="growth">Growth &amp; Marketing</option>
+            <option value="design">Product Design</option>
+          </select>
+        </div>
+        <div class="studio-field">
+          <label>Recruiter Name</label>
+          <input type="text" id="st-name" value="Sarah">
+        </div>
+        <button class="pill-cta-ink" style="width:100%; justify-content:center; padding:9px 16px; margin-top:8px;" onclick="generateStudioPitches()">
+          Generate Pitches ⚡
+        </button>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:18px;">
+        <!-- LinkedIn Note -->
+        <div class="card-tray-wrapper">
+          <div class="ledger-card" style="padding:22px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span class="company-ats-label">1. LinkedIn Connection Note (&lt; 300 Chars)</span>
+              <button class="copy-pill-action" onclick="copySnippet('out-linkedin')">Copy Note</button>
+            </div>
+            <div class="pitch-text-content" id="out-linkedin">Generating...</div>
+          </div>
+        </div>
+
+        <!-- Full InMail -->
+        <div class="card-tray-wrapper">
+          <div class="ledger-card" style="padding:22px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span class="company-ats-label">2. Recruiter Cold Email / InMail</span>
+              <button class="copy-pill-action" onclick="copySnippet('out-email')">Copy Email</button>
+            </div>
+            <div class="pitch-text-content" id="out-email">Generating...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PAGE 4: GLOBAL HUBS INTEL
+       ========================================================================== -->
+  <section id="view-hubs" class="ledger-page-view">
+    <div class="catalog-grid">
+      <!-- China & HK -->
+      <div class="card-tray-wrapper">
+        <div class="ledger-card">
+          <div class="card-header-row">
+            <div>
+              <div class="company-name-text" style="font-size:16px;">China &amp; Hong Kong</div>
+              <div class="company-ats-label">Beijing, Shanghai, Shenzhen, HK</div>
+            </div>
+            <span class="score-chip tier1">Baidu Alumni Leverage</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:13px; line-height:1.6; margin:14px 0;">
+            Massive consumer AI &amp; hardware ecosystem. High respect for proven product builders. Global English tracks at Tencent, Baidu, DJI, ByteDance, and Hong Kong multinationals. Safe, ultra-modern tech infrastructure.
+          </p>
+          <div class="tags-container">
+            <span class="pixel-tag-chip">¥15,000 - ¥25,000/mo</span>
+            <span class="pixel-tag-chip">Baidu, Tencent, ByteDance, DJI, Shein</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Japan -->
+      <div class="card-tray-wrapper">
+        <div class="ledger-card">
+          <div class="card-header-row">
+            <div>
+              <div class="company-name-text" style="font-size:16px;">Japan (Tokyo)</div>
+              <div class="company-ats-label">English-First Global Tracks</div>
+            </div>
+            <span class="score-chip tier1">Corporate Relocation &amp; Housing</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:13px; line-height:1.6; margin:14px 0;">
+            Coupang, Mercari, Rakuten, and Line actively hire directly from India with full visa sponsorship, international flights, and corporate housing in Tokyo. World-class safety and public transit.
+          </p>
+          <div class="tags-container">
+            <span class="pixel-tag-chip">¥350,000 - ¥500,000/mo</span>
+            <span class="pixel-tag-chip">Coupang, Mercari, Rakuten, Line, Woven</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Singapore -->
+      <div class="card-tray-wrapper">
+        <div class="ledger-card">
+          <div class="card-header-row">
+            <div>
+              <div class="company-name-text" style="font-size:16px;">Singapore</div>
+              <div class="company-ats-label">Premier Southeast Asia Hub</div>
+            </div>
+            <span class="score-chip tier1">World #1 Safety</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:13px; line-height:1.6; margin:14px 0;">
+            Huge welcoming Indian diaspora, English native, zero street crime, high corporate stipends. Regional APAC headquarters for Grab, Stripe, Google, ByteDance, and Adyen.
+          </p>
+          <div class="tags-container">
+            <span class="pixel-tag-chip">S$2,200 - S$3,800/mo</span>
+            <span class="pixel-tag-chip">Grab, Stripe, Adyen, Coupang, Shopee</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- UAE (Dubai) -->
+      <div class="card-tray-wrapper">
+        <div class="ledger-card">
+          <div class="card-header-row">
+            <div>
+              <div class="company-name-text" style="font-size:16px;">United Arab Emirates</div>
+              <div class="company-ats-label">Dubai &amp; Abu Dhabi (DIFC / Hub71)</div>
+            </div>
+            <span class="score-chip tier1">0% Tax &bull; Fast Visas</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:13px; line-height:1.6; margin:14px 0;">
+            Extremely welcoming to Indian executives and students with massive Indian leadership presence. Fast visa processing, 0% personal income tax, and rapid fintech/crypto/AI expansion.
+          </p>
+          <div class="tags-container">
+            <span class="pixel-tag-chip">AED 6,000 - AED 12,000/mo</span>
+            <span class="pixel-tag-chip">Careem, Binance, Noon, Hub71, Talabat</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Germany -->
+      <div class="card-tray-wrapper">
+        <div class="ledger-card">
+          <div class="card-header-row">
+            <div>
+              <div class="company-name-text" style="font-size:16px;">Germany (Berlin &amp; Munich)</div>
+              <div class="company-ats-label">Opportunity Card (Chancenkarte)</div>
+            </div>
+            <span class="score-chip tier1">High Immigrant Climate</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:13px; line-height:1.6; margin:14px 0;">
+            Very welcoming to Indian engineering &amp; business graduates. English-first work environment in tech scaleups. High quality of life with clear residency and EU Blue Card tracks.
+          </p>
+          <div class="tags-container">
+            <span class="pixel-tag-chip">€1,800 - €2,800/mo</span>
+            <span class="pixel-tag-chip">Celonis, Delivery Hero, Personio, N26</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Netherlands -->
+      <div class="card-tray-wrapper">
+        <div class="ledger-card">
+          <div class="card-header-row">
+            <div>
+              <div class="company-name-text" style="font-size:16px;">Netherlands (Amsterdam)</div>
+              <div class="company-ats-label">Zoekjaar Orientation Visa</div>
+            </div>
+            <span class="score-chip tier1">95%+ English Fluency</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:13px; line-height:1.6; margin:14px 0;">
+            Home to Databricks, Adyen, Uber EMEA HQ, and Booking.com. Open, cosmopolitan culture with generous orientation visas for top global graduates.
+          </p>
+          <div class="tags-container">
+            <span class="pixel-tag-chip">€1,600 - €2,600/mo</span>
+            <span class="pixel-tag-chip">Databricks, Adyen, Uber, Booking, Miro</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Switzerland & Nordics -->
+      <div class="card-tray-wrapper">
+        <div class="ledger-card">
+          <div class="card-header-row">
+            <div>
+              <div class="company-name-text" style="font-size:16px;">Switzerland &amp; Nordics</div>
+              <div class="company-ats-label">Zurich, Stockholm, Copenhagen</div>
+            </div>
+            <span class="score-chip tier1">Highest Global Living Standards</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:13px; line-height:1.6; margin:14px 0;">
+            Progressive, ultra-safe, high English proficiency, and world-leading compensation. Home to Google Zurich, Spotify, Klarna, and top European biotech/software scales.
+          </p>
+          <div class="tags-container">
+            <span class="pixel-tag-chip">CHF 3,500+ / 30,000 SEK</span>
+            <span class="pixel-tag-chip">Spotify, Klarna, Google Zurich, On</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Australia & NZ -->
+      <div class="card-tray-wrapper">
+        <div class="ledger-card">
+          <div class="card-header-row">
+            <div>
+              <div class="company-name-text" style="font-size:16px;">Australia &amp; New Zealand</div>
+              <div class="company-ats-label">Sydney &amp; Melbourne</div>
+            </div>
+            <span class="score-chip tier1">Large Multicultural Community</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:13px; line-height:1.6; margin:14px 0;">
+            Large, vibrant Indian diaspora with exceptional climate and safety. Tech scaleup hubs anchored by Canva and Atlassian global headquarters.
+          </p>
+          <div class="tags-container">
+            <span class="pixel-tag-chip">A$4,000 - A$6,000/mo</span>
+            <span class="pixel-tag-chip">Canva, Atlassian, Adyen Sydney, Grab</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PAGE 5: CANDIDATE DNA
+       ========================================================================== -->
+  <section id="view-dna" class="ledger-page-view">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+      <div class="card-tray-wrapper">
+        <div class="ledger-card">
+          <span class="company-ats-label" style="margin-bottom:12px;">Candidate Moat</span>
+          <h3 style="font-size:18px; font-weight:450; margin-bottom:16px; color:#fff;">Global Benchmark Honors</h3>
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:14px; font-size:13px; color:var(--text-muted); line-height:1.55;">
+            <li><strong style="color:#fff;">🥈 Baidu MeDo Hackathon (2nd Place &amp; Community Choice):</strong> $6,500 prize pool won solo among 8,424 global participants.</li>
+            <li><strong style="color:#fff;">🥇 IIM Bangalore Essay Competition (1st Place):</strong> 446 institute-wide submissions; winning paper cited by a Microsoft researcher in an independent study.</li>
+            <li><strong style="color:#fff;">🎨 2x Global UI/UX Finalist:</strong> Top 10 in Zo Computers build competition ($1,000 prize) and Anything.com Remixathon.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card-tray-wrapper">
+        <div class="ledger-card">
+          <span class="company-ats-label" style="margin-bottom:12px;">Operational Proof</span>
+          <h3 style="font-size:18px; font-weight:450; margin-bottom:16px; color:#fff;">Execution &amp; P&amp;L Track Record</h3>
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:14px; font-size:13px; color:var(--text-muted); line-height:1.55;">
+            <li><strong style="color:#fff;">📈 Owner &amp; Operations Lead (AnybodyCanBake):</strong> Full legal &amp; P&amp;L ownership of a 10,000+ student education brand; leading 5-7 team members.</li>
+            <li><strong style="color:#fff;">⚡ Shipped AI MVP in &lt; 48 Hours:</strong> SlotSaver appointment automation using Claude API, Twilio, and WhatsApp Business API.</li>
+            <li><strong style="color:#fff;">📣 200,000+ Organic Impressions:</strong> High-signal audience built on LinkedIn and Instagram (@garvonpoint) covering AI product execution.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ==========================================================================
+     SLIDE-OVER INSPECTOR DRAWER (CULT UI SIDE-PANEL)
+     ========================================================================== -->
+<div class="inspector-backdrop" id="inspector-overlay" onclick="closeInspector(event)">
+  <div class="inspector-drawer" id="inspector-panel" onclick="event.stopPropagation()">
+    <button class="inspector-close-btn" onclick="closeInspector()">
+      <span>ESC</span> // Close
+    </button>
+
+    <div class="inspector-company-tag" id="ins-comp">Company</div>
+    <h2 class="inspector-title" id="ins-title">Job Title</h2>
+
+    <div class="inspector-meta-strip">
+      <span class="pixel-tag-chip" id="ins-loc">Location</span>
+      <span class="pixel-tag-chip" id="ins-cat">Track</span>
+      <span class="score-chip tier1" id="ins-score">Match Score</span>
+    </div>
+
+    <!-- Visa & Relocation Policy -->
+    <div class="inspector-section-label">🛂 Visa & Relocation Intelligence</div>
+    <div class="pitch-copy-box" style="margin-bottom:20px; background:rgba(52,211,153,0.05); border:1px solid rgba(52,211,153,0.22);">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+        <span style="font-weight:600; font-size:13px; color:#34d399;" id="ins-visa-tier">Visa Support Tier</span>
+        <span class="score-chip" style="background:rgba(52,211,153,0.15); color:#34d399;" id="ins-visa-badge">Badge</span>
+      </div>
+      <div class="pitch-text-content" style="color:#d1d5db; font-size:12px; margin-bottom:0;" id="ins-visa-note">Policy notes...</div>
+    </div>
+
+    <!-- 1-Click Pitch -->
+    <div class="inspector-section-label">⚡ 1-Click Recruiter Connection Note</div>
+    <div class="pitch-copy-box">
+      <div class="pitch-text-content" id="ins-pitch">Pitch Hook</div>
+      <button class="copy-pill-action" onclick="copyInspectorSnippet('ins-pitch')">
+        Copy Note
+      </button>
+    </div>
+
+    <!-- Status Selector & Direct Link -->
+    <div class="inspector-section-label">Application Pipeline Status</div>
+    <div style="display:flex; gap:10px; margin-bottom:28px;">
+      <select id="ins-status-select" class="search-box" style="width:160px; padding:7px 12px; border-radius:9999px;">
+        <option value="to_apply">📌 To Apply</option>
+        <option value="saved">⭐ Saved</option>
+        <option value="applied">📨 Applied</option>
+        <option value="interviewing">🎯 Interviewing</option>
+        <option value="offer">🏆 Offer</option>
+      </select>
+      <a href="#" id="ins-apply-link" target="_blank" rel="noopener noreferrer" class="pill-cta-ink" style="padding:8px 20px;">
+        Direct Apply ↗
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Cult UI Halo Toast -->
+<div class="halo-toast" id="toast">
+  <span>✓</span> Copied to clipboard
+</div>
+
+<!-- Jobs Data -->
+<script src="jobs_data.js"></script>
+<script>
+  let allJobs = [];
+  let userStatus = JSON.parse(localStorage.getItem('garv_job_status') || '{}');
+  let currentActiveJobId = null;
+
+  // Multi-page navigation
+  function navigateLedger(pageId) {
+    document.querySelectorAll('.ledger-page-view').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.dock-pill').forEach(b => b.classList.remove('active'));
+
+    const targetView = document.getElementById(`view-${pageId}`);
+    if (targetView) targetView.classList.add('active');
+
+    const pills = document.querySelectorAll('.dock-pill');
+    pills.forEach(p => {
+      if (p.getAttribute('onclick') && p.getAttribute('onclick').includes(pageId)) {
+        p.classList.add('active');
+      }
+    });
+
+    if (pageId === 'pipeline') renderKanban();
+    if (pageId === 'studio') generateStudioPitches();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // Load Data
+  function loadData() {
+    if (window.RADAR_JOBS_DATA && window.RADAR_JOBS_DATA.length > 0) {
+      allJobs = window.RADAR_JOBS_DATA;
+    }
+    renderRadar();
+    updateLedgerMetrics();
+  }
+
+  function updateLedgerMetrics() {
+    const total = allJobs.length;
+    const tier1 = allJobs.filter(j => j.match_score >= 88).length;
+    const visaCount = allJobs.filter(j => j.visa_info && j.visa_info.is_sponsored).length;
+    const safeHubList = ['China / HK / TW', 'Japan', 'Singapore', 'UAE / Middle East', 'Germany', 'Netherlands', 'Ireland', 'Nordics / Swiss', 'Australia / NZ', 'Remote', 'Southern / Central Europe'];
+    const hubs = allJobs.filter(j => j.location_info && safeHubList.includes(j.location_info.region)).length;
+    const tracked = Object.values(userStatus).length;
+
+    document.getElementById('metric-total').innerText = total;
+    document.getElementById('metric-tier1').innerText = tier1;
+    const metricVisa = document.getElementById('metric-visa');
+    if (metricVisa) metricVisa.innerText = visaCount;
+    document.getElementById('metric-hubs').innerText = hubs;
+    document.getElementById('metric-tracked').innerText = tracked;
+
+    document.getElementById('dock-count-radar').innerText = total;
+    document.getElementById('dock-count-pipeline').innerText = tracked;
+  }
+
+  // Render Catalog (Page 1) with Dynamic Sorting & Facet Filters
+  function renderRadar() {
+    const searchVal = document.getElementById('radar-search-input').value.toLowerCase();
+    const activeSort = document.querySelector('#filter-sorting .pill-filter.active')?.dataset.sort || 'latest';
+    const activeFacet = document.querySelector('#filter-facets .pill-filter.active')?.dataset.facet || 'all';
+    const activeCat = document.querySelector('#filter-tracks .pill-filter.active')?.dataset.cat || 'all';
+    const activeReg = document.querySelector('#filter-regions .pill-filter.active')?.dataset.reg || 'all';
+
+    const nowSec = Math.floor(Date.now() / 1000);
+
+    // 1. Filter
+    let filtered = allJobs.filter(j => {
+      const matchSearch = j.company.toLowerCase().includes(searchVal) || 
+                          j.title.toLowerCase().includes(searchVal) ||
+                          j.location.toLowerCase().includes(searchVal);
+      const matchCat = (activeCat === 'all') || (j.category === activeCat);
+      const matchReg = (activeReg === 'all') || (j.location_info && j.location_info.region === activeReg);
+
+      // Facet filter
+      let matchFacet = true;
+      if (activeFacet === 'visa') {
+        matchFacet = j.visa_info && j.visa_info.is_sponsored;
+      } else if (activeFacet === 'tier1') {
+        matchFacet = j.match_score >= 88;
+      } else if (activeFacet === 'fresh') {
+        matchFacet = j.is_new || (j.timestamp && (nowSec - j.timestamp < 72 * 3600));
+      } else if (activeFacet === 'direct') {
+        matchFacet = j.source && j.source.includes('Direct ATS');
+      }
+
+      return matchSearch && matchCat && matchReg && matchFacet;
+    });
+
+    // 2. Sort
+    filtered.sort((a, b) => {
+      if (activeSort === 'latest') {
+        // Latest published timestamp first
+        return (b.timestamp || 0) - (a.timestamp || 0) || (b.match_score - a.match_score);
+      } else if (activeSort === 'potential') {
+        // Highest match score first
+        return (b.match_score - a.match_score) || (b.timestamp || 0) - (a.timestamp || 0);
+      } else if (activeSort === 'new') {
+        // Unseen / Just discovered first
+        const aNew = a.is_new ? 1 : 0;
+        const bNew = b.is_new ? 1 : 0;
+        return (bNew - aNew) || (b.timestamp || 0) - (a.timestamp || 0);
+      } else if (activeSort === 'alpha') {
+        return a.company.localeCompare(b.company);
+      }
+      return 0;
+    });
+
+    // Update Counter & Sort Indicator
+    const countElem = document.getElementById('filter-active-count');
+    if (countElem) countElem.innerText = filtered.length;
+    const totalElem = document.getElementById('filter-total-count');
+    if (totalElem) totalElem.innerText = allJobs.length;
+
+    const sortLabelElem = document.getElementById('filter-sort-label');
+    if (sortLabelElem) {
+      const sortNames = {
+        'latest': 'Latest Published on top',
+        'potential': 'Most Potential (Highest Match %) on top',
+        'new': 'Just Discovered on top',
+        'alpha': 'Alphabetical (A–Z)'
+      };
+      sortLabelElem.innerText = `Order: ${sortNames[activeSort] || 'Latest on top'}`;
+    }
+
+    const container = document.getElementById('radar-catalog');
+    if (filtered.length === 0) {
+      container.innerHTML = '<div style="grid-column:1/-1; padding:60px; text-align:center; color:var(--text-muted); font-size:13px;">No internships match your active filters. Try broadening your criteria.</div>';
+      return;
+    }
+
+    container.innerHTML = filtered.map(j => {
+      const initial = j.company.charAt(0).toUpperCase();
+      const isTier1 = j.match_score >= 88;
+      const isFresh = j.is_new || (j.timestamp && (nowSec - j.timestamp < 72 * 3600));
+      const locBadge = j.location_info ? j.location_info.badge : '📍 Global';
+      const visaBadge = j.visa_info && j.visa_info.is_sponsored 
+        ? `<span class="score-chip" style="background:rgba(52,211,153,0.12); color:#34d399; border:1px solid rgba(52,211,153,0.3);">${j.visa_info.badge}</span>` 
+        : '';
+
+      return `
+        <div class="card-tray-wrapper" onclick="openInspector('${j.id}')">
+          <div class="ledger-card">
+            <div>
+              <div class="card-header-row">
+                <div class="company-title-cluster">
+                  <div class="company-monogram">${initial}</div>
+                  <div>
+                    <div class="company-name-text">${j.company}</div>
+                    <div class="company-ats-label">${j.source}</div>
+                  </div>
+                </div>
+                <div style="display:flex; gap:5px; align-items:center; flex-wrap:wrap;">
+                  ${visaBadge}
+                  ${isFresh ? '<span class="score-chip" style="background:rgba(251,191,36,0.12); color:#fbbf24; border:1px solid rgba(251,191,36,0.3);">⚡ FRESH</span>' : ''}
+                  <span class="score-chip ${isTier1 ? 'tier1' : 'tier2'}">★ ${j.match_score}%</span>
+                </div>
+              </div>
+
+              <div class="card-role-title">${j.title}</div>
+
+              <div class="tags-container">
+                <span class="pixel-tag-chip">${locBadge}</span>
+                <span class="pixel-tag-chip">📅 ${j.date_posted}</span>
+                <span class="pixel-tag-chip">${j.category}</span>
+              </div>
+
+              <div class="hook-preview-clamped">"${j.recruiter_pitch}"</div>
+            </div>
+
+            <div class="card-hairline-footer">
+              <span class="view-affordance">Inspect & Pitch →</span>
+              <a href="${j.url}" target="_blank" rel="noopener noreferrer" class="pill-cta-ink" onclick="event.stopPropagation()">
+                Apply ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // Slide-over Inspector
+  function openInspector(jobId) {
+    const job = allJobs.find(j => j.id === jobId);
+    if (!job) return;
+
+    currentActiveJobId = jobId;
+    document.getElementById('ins-comp').innerText = job.company;
+    document.getElementById('ins-title').innerText = job.title;
+    document.getElementById('ins-loc').innerText = job.location_info ? job.location_info.badge : job.location;
+    document.getElementById('ins-cat').innerText = job.category;
+    document.getElementById('ins-score').innerText = `★ ${job.match_score}% Match`;
+    document.getElementById('ins-pitch').innerText = job.recruiter_pitch;
+    document.getElementById('ins-apply-link').href = job.url;
+
+    // Visa Policy Info
+    const visa = job.visa_info || { tier: 'Standard', badge: '📍 Self-Check', note: 'Policy not explicitly specified.' };
+    document.getElementById('ins-visa-tier').innerText = visa.tier || 'Visa / Relocation Support';
+    document.getElementById('ins-visa-badge').innerText = visa.badge || 'Standard';
+    document.getElementById('ins-visa-note').innerText = visa.note || 'Contact recruiter to verify visa sponsorship.';
+
+    const select = document.getElementById('ins-status-select');
+    select.value = userStatus[jobId] || 'to_apply';
+    select.onchange = (e) => {
+      userStatus[jobId] = e.target.value;
+      localStorage.setItem('garv_job_status', JSON.stringify(userStatus));
+      updateLedgerMetrics();
+      showToast('Status updated');
+    };
+
+    document.getElementById('inspector-overlay').classList.add('open');
+  }
+
+  function closeInspector(e) {
+    if (e && e.target !== document.getElementById('inspector-overlay') && !e.target.classList.contains('inspector-close-btn')) return;
+    document.getElementById('inspector-overlay').classList.remove('open');
+  }
+
+  // Kanban (Page 2)
+  function renderKanban() {
+    const cols = {
+      'to_apply': document.getElementById('k-list-to_apply'),
+      'applied': document.getElementById('k-list-applied'),
+      'interviewing': document.getElementById('k-list-interviewing'),
+      'offer': document.getElementById('k-list-offer')
+    };
+    Object.values(cols).forEach(c => c.innerHTML = '');
+    const counts = { 'to_apply': 0, 'applied': 0, 'interviewing': 0, 'offer': 0 };
+
+    allJobs.forEach(j => {
+      const st = userStatus[j.id];
+      if (st && cols[st]) {
+        counts[st]++;
+        cols[st].innerHTML += `
+          <div class="kanban-item-card" onclick="openInspector('${j.id}')">
+            <div style="font-weight:500; color:#fff; font-size:13px; margin-bottom:4px;">${j.company}</div>
+            <div style="font-size:12px; color:var(--text-muted); line-height:1.35; margin-bottom:8px;">${j.title}</div>
+            <div style="display:flex; justify-content:space-between; align-items:center; font-family:var(--font-mono); font-size:10px;">
+              <span style="color:var(--status-blue);">★ ${j.match_score}%</span>
+              <span style="color:var(--text-dim);">${j.date_posted}</span>
+            </div>
+          </div>
+        `;
+      }
+    });
+
+    Object.keys(counts).forEach(k => {
+      document.getElementById(`k-count-${k}`).innerText = counts[k];
+      if (counts[k] === 0) {
+        cols[k].innerHTML = '<div style="font-size:11px; color:var(--text-dim); text-align:center; padding:20px;">Empty</div>';
+      }
+    });
+  }
+
+  // Pitch Studio (Page 3)
+  function generateStudioPitches() {
+    const comp = document.getElementById('st-comp').value || 'Target Company';
+    const role = document.getElementById('st-role').value || 'Intern';
+    const name = document.getElementById('st-name').value || 'there';
+    const track = document.getElementById('st-track').value;
+
+    let liNote = '';
+    let emailNote = '';
+
+    if (track === 'product') {
+      liNote = `Hi ${name}! Saw ${comp}'s ${role} opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally in Baidu's 8,400+ participant AI hackathon ($6.5k prize), I'd love to bring this execution speed to ${comp}! Portfolio: garvgupta.app`;
+      emailNote = `Subject: Application: ${role} - Garv Gupta (IIM Bangalore / Baidu Hackathon 2nd Place)\n\nHi ${name},\n\nI recently submitted my application for the ${role} opening at ${comp}.\n\nAs an undergraduate at IIM Bangalore studying Digital & Business Entrepreneurship, I don't just study product theory—I execute. I solo-built and shipped SlotSaver (an AI WhatsApp scheduling MVP) in under 48 hours using Claude API and Twilio, and placed 2nd globally among 8,424 participants in Baidu's AI hackathon ($6,500 prize pool).\n\nAdditionally, I placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), allowing me to bridge product roadmaps directly with high-fidelity Figma prototypes.\n\nI would love the opportunity to contribute to ${comp}'s product team this summer. You can review my shipped builds at https://garvgupta.app.\n\nBest regards,\nGarv Gupta\n+91 7709732662 | linkedin.com/in/garv-gupta07`;
+    } else {
+      liNote = `Hi ${name}! Noticed the ${role} opening at ${comp}. I currently manage full P&L and cross-functional operations for a 10,000+ student education brand (AnybodyCanBake) with 5-7 team members alongside my degree at IIM Bangalore. Would love to bring proven execution to ${comp}!`;
+      emailNote = `Subject: Application: ${role} - Garv Gupta (IIM Bangalore / Operations Lead)\n\nHi ${name},\n\nI saw ${comp}'s opening for the ${role} and wanted to reach out directly.\n\nAlongside studying Digital & Business Entrepreneurship at IIM Bangalore, I currently serve as the Owner & Operations Lead at AnybodyCanBake, where I took legal ownership of a 10,000-student brand, managing full P&L, 5-7 team members, and course GTM logistics.\n\nHaving also generated 200,000+ organic LinkedIn impressions and organized 800+ attendee summits, I bridge high-level business strategy with granular operational execution.\n\nI'd welcome the chance to support ${comp}'s operations and growth.\n\nBest,\nGarv Gupta\nhttps://garvgupta.app`;
+    }
+
+    document.getElementById('out-linkedin').innerText = liNote;
+    document.getElementById('out-email').innerText = emailNote;
+  }
+
+  // Toast & Copy
+  function showToast(msg) {
+    const toast = document.getElementById('toast');
+    toast.innerHTML = `<span>✓</span> ${msg}`;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 2200);
+  }
+
+  function copySnippet(elementId) {
+    const text = document.getElementById(elementId).innerText;
+    navigator.clipboard.writeText(text).then(() => showToast('Copied to clipboard'));
+  }
+
+  function copyInspectorSnippet(elementId) {
+    const text = document.getElementById(elementId).innerText;
+    navigator.clipboard.writeText(text).then(() => showToast('Note copied to clipboard'));
+  }
+
+  // Event Listeners
+  document.getElementById('radar-search-input').addEventListener('input', renderRadar);
+
+  // Sorting Listener
+  document.querySelectorAll('#filter-sorting .pill-filter').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      document.querySelectorAll('#filter-sorting .pill-filter').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      renderRadar();
+    });
+  });
+
+  // Facet Filters Listener (Tier 1, Fresh, Direct ATS)
+  document.querySelectorAll('#filter-facets .pill-filter').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      document.querySelectorAll('#filter-facets .pill-filter').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      renderRadar();
+    });
+  });
+
+  document.querySelectorAll('#filter-tracks .pill-filter').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      document.querySelectorAll('#filter-tracks .pill-filter').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      renderRadar();
+    });
+  });
+
+  document.querySelectorAll('#filter-regions .pill-filter').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      document.querySelectorAll('#filter-regions .pill-filter').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      renderRadar();
+    });
+  });
+
+  // ESC key to close inspector
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeInspector();
+  });
+
+  loadData();
+</script>
+</body>
+</html>
