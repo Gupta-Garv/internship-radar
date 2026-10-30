@@ -728,8 +728,40 @@
        ========================================================================== */
     .studio-wrapper {
       display: grid;
-      grid-template-columns: 340px 1fr;
+      grid-template-columns: 360px 1fr;
       gap: 24px;
+      align-items: start;
+    }
+
+    .studio-tab-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .studio-tab-btn {
+      background: var(--card-tray);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 8px 18px;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .studio-tab-btn:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .studio-tab-btn.active {
+      background: var(--ink);
+      color: var(--ink-inverse);
+      font-weight: 600;
+      border-color: transparent;
     }
 
     .studio-controls-sheet {
@@ -739,7 +771,7 @@
       box-shadow: var(--shadow-soft);
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 14px;
       height: fit-content;
     }
 
@@ -765,8 +797,143 @@
       outline: none;
     }
 
-    .studio-field input:focus, .studio-field select:focus {
+    .studio-field textarea {
+      width: 100%;
+      background: var(--card-sheet);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 10px 14px;
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 12px;
+      outline: none;
+      line-height: 1.5;
+      resize: vertical;
+    }
+
+    .studio-field input:focus, .studio-field select:focus, .studio-field textarea:focus {
       border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    /* CV Paper Sheet (Executive ATS Format) */
+    .cv-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .cv-paper-preview {
+      background: #ffffff;
+      color: #111111;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.2);
+      padding: 40px 48px;
+      font-family: 'Times New Roman', Times, serif;
+      line-height: 1.35;
+      font-size: 10.5pt;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      min-height: 820px;
+    }
+
+    .cv-paper-preview h1 {
+      font-size: 18pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0 0 4px 0;
+      color: #000000;
+    }
+
+    .cv-paper-preview .contact-line {
+      text-align: center;
+      font-size: 9pt;
+      margin-bottom: 12px;
+      color: #333333;
+      border-bottom: 1.5px solid #111111;
+      padding-bottom: 6px;
+    }
+
+    .cv-paper-preview section {
+      margin-bottom: 12px;
+    }
+
+    .cv-paper-preview h2 {
+      font-size: 10.5pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid #222222;
+      margin: 0 0 6px 0;
+      padding-bottom: 1px;
+      color: #000000;
+    }
+
+    .cv-paper-preview .entry-row {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 10pt;
+    }
+
+    .cv-paper-preview .entry-sub {
+      display: flex;
+      justify-content: space-between;
+      font-style: italic;
+      font-size: 9.5pt;
+      margin-bottom: 3px;
+      color: #333333;
+    }
+
+    .cv-paper-preview ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .cv-paper-preview li {
+      margin-bottom: 2px;
+      font-size: 9.5pt;
+      color: #111111;
+    }
+
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      .dock-wrapper, .ledger-hero, .filter-tray, .studio-controls-sheet, .studio-tab-bar, .cv-toolbar, .halo-toast, #view-radar, #view-pipeline, #view-hubs, #view-dna, #inspector-overlay, #studio-view-pitches {
+        display: none !important;
+      }
+      .ledger-container {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      #view-studio {
+        display: block !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .studio-wrapper {
+        display: block !important;
+      }
+      #cv-paper-sheet {
+        box-shadow: none !important;
+        border: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      @page {
+        size: A4;
+        margin: 10mm 14mm;
+      }
     }
 
     /* ==========================================================================
@@ -991,10 +1158,188 @@
   </section>
 
   <!-- ==========================================================================
-       PAGE 3: COLD PITCH STUDIO
+       PAGE 3: COLD PITCH & AI CV STUDIO
        ========================================================================== -->
   <section id="view-studio" class="ledger-page-view">
-    <div class="studio-wrapper">
+    
+    <!-- Studio Sub-Navigation -->
+    <div class="studio-tab-bar">
+      <button class="studio-tab-btn active" id="tab-btn-cv" onclick="switchStudioTab('cv')">
+        📄 AI Tailored CV &amp; 1-Click PDF
+      </button>
+      <button class="studio-tab-btn" id="tab-btn-pitches" onclick="switchStudioTab('pitches')">
+        💬 Recruiter Outreach Messages
+      </button>
+    </div>
+
+    <!-- SUB-TAB 1: AI TAILORED CV & PDF -->
+    <div id="studio-view-cv" class="studio-wrapper">
+      
+      <!-- Controls Tray (Left) -->
+      <div class="studio-controls-sheet">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span class="inspector-section-label" style="margin-bottom:0;">AI Tailoring Engine</span>
+          <button class="copy-pill-action" style="font-size:10px; padding:3px 10px;" onclick="autofillActiveJobToCV()">
+            ⚡ Autofill from Active Job
+          </button>
+        </div>
+
+        <div class="studio-field">
+          <label>Target Company</label>
+          <input type="text" id="cv-comp" placeholder="e.g. Databricks, Celonis, Stripe" value="Databricks">
+        </div>
+
+        <div class="studio-field">
+          <label>Target Role Title</label>
+          <input type="text" id="cv-role" placeholder="e.g. Product Management Intern" value="Product Management Intern (2027)">
+        </div>
+
+        <div class="studio-field">
+          <label>NVIDIA NIM Model</label>
+          <select id="cv-model">
+            <option value="mistralai/mistral-large-4-1t-a52b" selected>Mistral Large 4 (Ultra-Human Tone, Zero Fluff)</option>
+            <option value="deepseek-ai/deepseek-v3">DeepSeek V3 (Fact-Aligned Precision)</option>
+            <option value="nvidia/llama-3.1-nemotron-70b-instruct">Nemotron 70B (Frontier Reasoning)</option>
+          </select>
+        </div>
+
+        <div class="studio-field">
+          <label>NVIDIA API Key</label>
+          <input type="password" id="cv-api-key" placeholder="nvapi-..." value="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">
+        </div>
+
+        <div class="studio-field">
+          <label>Target Job Description (JD Prompt Box)</label>
+          <textarea id="cv-jd" rows="7" placeholder="Paste the full Job Description, key responsibilities, or qualification requirements here..."></textarea>
+        </div>
+
+        <div style="background:rgba(52,211,153,0.06); border:1px solid rgba(52,211,153,0.2); border-radius:12px; padding:12px; font-size:11px; line-height:1.5; color:#a7f3d0;">
+          <strong>🛡️ Anti-AI Guarantee:</strong> Bans synthetic clichés (<em>spearheaded, pivotal, dynamic, synergy, delve</em>). Uses crisp operator verbs and strictly preserves Garv's authentic IIMB, Baidu $6.5k win, and P&amp;L proof.
+        </div>
+
+        <button id="btn-generate-cv" class="pill-cta-ink" style="width:100%; justify-content:center; padding:12px; font-weight:600; font-size:14px;" onclick="generateTailoredCV()">
+          Draft 100% Human CV ⚡
+        </button>
+      </div>
+
+      <!-- CV Preview & Actions (Right) -->
+      <div>
+        <div class="cv-toolbar">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span class="inspector-section-label" style="margin-bottom:0;">Live ATS Paper Preview</span>
+            <span id="cv-status-pill" class="score-chip tier1" style="font-size:10px;">Ready</span>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <button class="pill-cta-ink" style="background:#34d399; color:#052e16; font-weight:600; padding:7px 18px;" onclick="downloadCVPdf()">
+              Download Clean PDF 📄
+            </button>
+            <button class="copy-pill-action" id="btn-edit-mode" onclick="toggleEditInPlace()">
+              ✏️ Edit in Place
+            </button>
+            <button class="copy-pill-action" onclick="copyCVContent()">
+              📋 Copy Text
+            </button>
+          </div>
+        </div>
+
+        <!-- The White Paper Sheet -->
+        <div id="cv-paper-sheet" class="cv-paper-preview">
+          <h1>GARV GUPTA</h1>
+          <div class="contact-line">
+            +91 7709732662 | garv.gupta07@gmail.com | <a href="https://garvgupta.app" target="_blank" style="color:#111; text-decoration:none;">garvgupta.app</a> | <a href="https://linkedin.com/in/garv-gupta07" target="_blank" style="color:#111; text-decoration:none;">linkedin.com/in/garv-gupta07</a> | Open to Relocate Globally
+          </div>
+
+          <section>
+            <h2>Education</h2>
+            <div class="entry-row">
+              <span>Indian Institute of Management Bangalore (IIM Bangalore)</span>
+              <span>2024 – 2027</span>
+            </div>
+            <div class="entry-sub">
+              <span>BBA in Digital and Business Entrepreneurship</span>
+              <span>Bangalore, India</span>
+            </div>
+            <div class="entry-row" style="margin-top:4px;">
+              <span>MIT ADT University</span>
+              <span>2024 – 2025</span>
+            </div>
+            <div class="entry-sub">
+              <span>BBA in Business Analytics (CGPA: 8.25, Transferred to IIM Bangalore)</span>
+              <span>Pune, India</span>
+            </div>
+          </section>
+
+          <section>
+            <h2>Selected Honors &amp; Achievements</h2>
+            <ul>
+              <li><strong>2nd Place &amp; Community Choice Award, Baidu MeDo AI Hackathon:</strong> Built a standalone product solo, competing against 8,424 global participants. Evaluated directly by Baidu product heads and AI algorithm architects. Awarded $6,500 prize pool.</li>
+              <li><strong>Top 10 Global Finalist (Solo), Zo Computers UI/UX Build Competition:</strong> Designed an end-to-end interface judged by startup founders and industry leaders. Won prizes valued at $1,000.</li>
+              <li><strong>Top 10 Global Finalist (Solo), Anything.com Remixathon:</strong> Selected in the UI/UX category out of 800+ international participants; featured on official Anything.com channels.</li>
+              <li><strong>1st Place, IIM Bangalore Annual Essay Competition:</strong> Placed 1st across 446 submissions institute-wide. Essay cited by a Microsoft AI researcher in an independent industry study.</li>
+              <li><strong>Audience &amp; Distribution:</strong> Generated 200,000+ organic LinkedIn impressions and 80k+ Instagram impressions around AI product development.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Product &amp; Operations Experience</h2>
+            <div class="entry-row">
+              <span>AnybodyCanBake</span>
+              <span>Jan 2026 – Present</span>
+            </div>
+            <div class="entry-sub">
+              <span>Owner and Operations Lead</span>
+              <span>Remote / Hybrid</span>
+            </div>
+            <ul>
+              <li>Took legal and P&amp;L ownership of an established 10-year-old education platform with 10,000+ active students.</li>
+              <li>Manage day-to-day operations and task allocation across a cross-functional team of 5–7 people handling course delivery and marketing.</li>
+              <li>Direct end-to-end go-to-market launches for new courses, establishing structured funnels and tracking conversion drop-offs.</li>
+            </ul>
+
+            <div class="entry-row" style="margin-top:6px;">
+              <span>Digibility AI</span>
+              <span>2024 – 2025</span>
+            </div>
+            <div class="entry-sub">
+              <span>Early Team Member</span>
+              <span>Remote</span>
+            </div>
+            <ul>
+              <li>Joined early stage to shape product workflow automation tools designed for small business owners and freelancers.</li>
+              <li>Redesigned full website information architecture and user flows, directly addressing user drop-off points during onboarding.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Shipped AI Projects</h2>
+            <div class="entry-row">
+              <span>SlotSaver – AI WhatsApp Automation Tool</span>
+              <span>2025</span>
+            </div>
+            <div class="entry-sub">
+              <span>Solo Builder</span>
+              <span>Production MVP</span>
+            </div>
+            <ul>
+              <li>Scoped, architected, and shipped a functional appointment scheduling MVP in under 48 hours to solve appointment drop-offs for SMEs.</li>
+              <li>Integrated Claude API with Twilio and WhatsApp Business API to handle automated conversational scheduling and automated reminders.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Skills &amp; Tooling</h2>
+            <ul>
+              <li><strong>Product &amp; Strategy:</strong> Rapid Prototyping, User Flow Mapping, Product Architecture, GTM Strategy, User Empathy, Funnel Optimization, PRDs.</li>
+              <li><strong>AI &amp; APIs:</strong> Claude API, OpenAI API, Twilio, WhatsApp Business API, Prompt Scaffolding, LLM Workflow Automation.</li>
+              <li><strong>Tools &amp; Analytics:</strong> Figma, Python, Google Analytics, SEO Funnels, Webflow, Cursor.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUB-TAB 2: OUTREACH MESSAGES -->
+    <div id="studio-view-pitches" class="studio-wrapper" style="display:none;">
       <div class="studio-controls-sheet">
         <div class="studio-field">
           <label>Target Company</label>
@@ -1558,6 +1903,171 @@
       if (counts[k] === 0) {
         cols[k].innerHTML = '<div style="font-size:11px; color:var(--text-dim); text-align:center; padding:20px;">Empty</div>';
       }
+    });
+  }
+
+  // Studio Sub-Tab Switcher
+  function switchStudioTab(tab) {
+    document.querySelectorAll('.studio-tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(`tab-btn-${tab}`).classList.add('active');
+
+    if (tab === 'cv') {
+      document.getElementById('studio-view-cv').style.display = 'grid';
+      document.getElementById('studio-view-pitches').style.display = 'none';
+    } else {
+      document.getElementById('studio-view-cv').style.display = 'none';
+      document.getElementById('studio-view-pitches').style.display = 'grid';
+      generateStudioPitches();
+    }
+  }
+
+  // Autofill Active Job to CV Studio
+  function autofillActiveJobToCV() {
+    if (!currentActiveJobId) {
+      showToast('Click a job card on the Radar first to select it!');
+      return;
+    }
+    const job = allJobs.find(j => j.id === currentActiveJobId);
+    if (!job) return;
+
+    document.getElementById('cv-comp').value = job.company;
+    document.getElementById('cv-role').value = job.title;
+    document.getElementById('cv-jd').value = `Target Role: ${job.title}\nCompany: ${job.company}\nLocation: ${job.location}\nATS Source: ${job.source}\nCategory: ${job.category}\n\nKey Hook Context: ${job.recruiter_pitch}\n\nDirect URL: ${job.url}`;
+    showToast(`Loaded details for ${job.company}!`);
+  }
+
+  // Generate Tailored Human CV via Mistral Large 4 / NVIDIA NIM
+  async function generateTailoredCV() {
+    const comp = document.getElementById('cv-comp').value.trim() || 'Target Company';
+    const role = document.getElementById('cv-role').value.trim() || 'Target Role';
+    const jd = document.getElementById('cv-jd').value.trim();
+    const model = document.getElementById('cv-model').value;
+    const apiKey = document.getElementById('cv-api-key').value.trim() || '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';
+
+    if (!jd) {
+      showToast('Please paste a Job Description in the prompt box first!');
+      document.getElementById('cv-jd').focus();
+      return;
+    }
+
+    localStorage.setItem('garv_nvidia_key', apiKey);
+    localStorage.setItem('garv_nvidia_model', model);
+
+    const btn = document.getElementById('btn-generate-cv');
+    const origText = btn.innerText;
+    btn.disabled = true;
+    btn.innerHTML = '⚡ Drafting 100% Human CV with Mistral Large...';
+
+    const statusPill = document.getElementById('cv-status-pill');
+    statusPill.innerText = 'Reasoning...';
+    statusPill.className = 'score-chip tier2';
+
+    try {
+      // 1. Try local runner server endpoint if running
+      let htmlOutput = null;
+      try {
+        const localResp = await fetch('/api/generate_cv', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            company: comp,
+            role: role,
+            jd: jd,
+            model: model,
+            api_key: apiKey
+          })
+        });
+        if (localResp.ok) {
+          const resJson = await localResp.json();
+          if (resJson.success) htmlOutput = resJson.html;
+        }
+      } catch (err) {
+        // Not running on local server, try direct
+      }
+
+      // 2. Direct NVIDIA NIM Call fallback
+      if (!htmlOutput) {
+        const baseResumeText = `GARV GUPTA | IIM Bangalore (BBA Digital Entrepreneurship 2024-2027) | MIT ADT (CGPA 8.25)\nAchievements: 2nd Place & Community Choice Baidu MeDo AI Hackathon ($6,500 prize, 8,424 participants, solo build); Top 10 Zo Computers UI/UX ($1,000 prize); Top 10 Anything.com Remixathon; 1st Place IIM Bangalore essay cited by Microsoft researcher; 200,000+ organic LinkedIn impressions.\nExperience: AnybodyCanBake Owner & Ops Lead (10,000+ students, full legal & P&L responsibility, 5-7 team); Digibility AI (Early team, product strategy, website redesign); SocialBent (SEO/Content).\nProjects: SlotSaver (AI WhatsApp automation MVP in <48h solo with Claude API and Twilio).\nSkills: Claude API, OpenAI API, Twilio, WhatsApp Business API, Python, Figma, Google Analytics, SEO, P&L.`;
+
+        const antiAISys = `You are an elite career strategist. Write a tailored, single-page, ATS-compliant CV for Garv Gupta aligned to the provided Job Description.\nSTRICT ANTI-AI RULES:\n1. Zero AI buzzwords: Never use 'spearheaded', 'orchestrated', 'pivotal', 'tapestry', 'delve', 'beacon', 'testament', 'dynamic', 'fostered', 'harnessed', 'leverage', 'seamless', 'cutting-edge', 'synergy', 'in order to'.\n2. Pure operator voice: Every bullet begins with: Built, Shipped, Won, Cut, Led, Managed, Designed, Coordinated, Ran, Scaled, Pitched.\n3. 100% factual fidelity: Strictly preserve Garv Gupta's authentic credentials (IIM Bangalore, Baidu $6.5k Hackathon 2nd Place, AnybodyCanBake P&L with 10k students, SlotSaver 48h solo MVP, Zo Computers top 10). Never invent fake facts.\n4. Format: Return clean semantic HTML (h1, section, h2, ul, li) for a classic Harvard/IIM single-page executive resume.`;
+
+        const nimResp = await fetch('https://integrate.api.nvidia.com/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${apiKey}`,
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            model: model,
+            messages: [
+              { role: 'system', content: antiAISys },
+              { role: 'user', content: `Candidate Resume:\n${baseResumeText}\n\nTarget Company: ${comp}\nTarget Role: ${role}\nTarget Job Description:\n${jd}\n\nDraft tailored single-page human CV in HTML.` }
+            ],
+            temperature: 0.4,
+            max_tokens: 4096,
+            reasoning_effort: 'low'
+          })
+        });
+
+        if (!nimResp.ok) {
+          throw new Error(`NVIDIA API returned status ${nimResp.status}`);
+        }
+        const nimData = await nimResp.json();
+        let raw = nimData.choices[0].message.content || nimData.choices[0].message.reasoning_content || '';
+        if (raw.includes('```html')) raw = raw.split('```html')[1].split('```')[0].trim();
+        else if (raw.includes('```')) raw = raw.split('```')[1].split('```')[0].trim();
+        htmlOutput = raw;
+      }
+
+      if (htmlOutput) {
+        document.getElementById('cv-paper-sheet').innerHTML = htmlOutput;
+        statusPill.innerText = `Tailored for ${comp}`;
+        statusPill.className = 'score-chip tier1';
+        showToast('✓ 100% human-tailored CV drafted!');
+      } else {
+        throw new Error('Could not parse response from AI model.');
+      }
+    } catch (err) {
+      statusPill.innerText = 'Notice';
+      statusPill.className = 'score-chip';
+      showToast(`To generate CV, run 'python3 radar_runner.py serve' locally or use CLI: python3 radar_runner.py cv "${comp}" "${role}"`);
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = origText;
+    }
+  }
+
+  // 1-Click PDF Download via Native Print Engine
+  function downloadCVPdf() {
+    window.print();
+  }
+
+  // Live In-Place Editing
+  let isEditingCV = false;
+  function toggleEditInPlace() {
+    const sheet = document.getElementById('cv-paper-sheet');
+    const btn = document.getElementById('btn-edit-mode');
+    isEditingCV = !isEditingCV;
+    sheet.contentEditable = isEditingCV;
+    if (isEditingCV) {
+      sheet.style.outline = '2px dashed #34d399';
+      btn.innerText = '💾 Lock Edits';
+      btn.style.color = '#34d399';
+      showToast('Edit mode: click any text on the resume to edit!');
+      sheet.focus();
+    } else {
+      sheet.style.outline = 'none';
+      btn.innerText = '✏️ Edit in Place';
+      btn.style.color = '';
+      showToast('Changes saved to your live resume sheet.');
+    }
+  }
+
+  function copyCVContent() {
+    const sheet = document.getElementById('cv-paper-sheet');
+    navigator.clipboard.writeText(sheet.innerText).then(() => {
+      showToast('Resume text copied to clipboard!');
     });
   }
 

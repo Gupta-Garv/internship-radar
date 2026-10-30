@@ -2,6 +2,7 @@
 import os
 import sys
 import json
+import subprocess
 import http.server
 import socketserver
 import webbrowser
@@ -14,6 +15,7 @@ sys.path.insert(0, BASE_DIR)
 from engine.harvester import run_harvest
 from engine.scorer import score_job
 from engine.notifier import process_alerts, send_macos_notification
+from engine.cv_generator import generate_tailored_cv, export_html_to_pdf
 
 CONFIG_FILE = os.path.join(BASE_DIR, "config", "companies.json")
 PROFILE_FILE = os.path.join(BASE_DIR, "profile", "garv_gupta_profile.json")
@@ -70,9 +72,65 @@ def run_scan():
     print("✅ Dashboard updated at: /Users/apple/.gemini/internship-radar/dashboard/index.html")
     print("👉 To open the visual dashboard: python3 radar_runner.py serve")
 
+class RadarHandler(http.server.SimpleHTTPRequestHandler):
+    def end_headers(self):
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type, Authorization")
+        super().end_headers()
+
+    def do_OPTIONS(self):
+        self.send_response(200)
+        self.end_headers()
+
+    def do_POST(self):
+        if self.path == "/api/generate_cv":
+            length = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(length)
+            try:
+                data = json.loads(body.decode("utf-8"))
+                jd = data.get("jd", "")
+                comp = data.get("company", "")
+                role = data.get("role", "")
+                key = data.get("api_key", "")
+                model = data.get("model", "mistralai/mistral-large-4-1t-a52b")
+                
+                result = generate_tailored_cv(jd, company=comp, role=role, api_key=key, model=model)
+                
+                self.send_response(200 if result.get("success") else 500)
+                self.send_header("Content-Type", "application/json")
+                self.end_headers()
+                self.wfile.write(json.dumps(result).encode("utf-8"))
+            except Exception as e:
+                self.send_response(500)
+                self.send_header("Content-Type", "application/json")
+                self.end_headers()
+                self.wfile.write(json.dumps({"success": False, "error": str(e)}).encode("utf-8"))
+        elif self.path == "/api/export_pdf":
+            length = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(length)
+            try:
+                data = json.loads(body.decode("utf-8"))
+                html = data.get("html", "")
+                filename = data.get("filename", "Garv_Gupta_Resume.pdf")
+                out_path = os.path.join(BASE_DIR, "data", filename)
+                ok = export_html_to_pdf(html, out_path)
+                
+                self.send_response(200 if ok else 500)
+                self.send_header("Content-Type", "application/json")
+                self.end_headers()
+                self.wfile.write(json.dumps({"success": ok, "file_path": out_path}).encode("utf-8"))
+            except Exception as e:
+                self.send_response(500)
+                self.send_header("Content-Type", "application/json")
+                self.end_headers()
+                self.wfile.write(json.dumps({"success": False, "error": str(e)}).encode("utf-8"))
+        else:
+            super().do_POST()
+
 def start_server(port=8080):
     os.chdir(BASE_DIR)
-    Handler = http.server.SimpleHTTPRequestHandler
+    Handler = RadarHandler
     
     # Allow port reuse
     socketserver.TCPServer.allow_reuse_address = True
@@ -80,7 +138,7 @@ def start_server(port=8080):
         with socketserver.TCPServer(("", port), Handler) as httpd:
             url = f"http://localhost:{port}/dashboard/index.html"
             print("=" * 60)
-            print(f"🚀 Internship Radar Dashboard is live at: {url}")
+            print(f"🚀 Internship Radar Dashboard & AI Studio is live at: {url}")
             print("=" * 60)
             print("Press Ctrl+C to stop the server.")
             try:
@@ -94,6 +152,23 @@ def start_server(port=8080):
         else:
             raise e
 
+def run_cv_cli(company, role, jd_file_or_text):
+    jd = jd_file_or_text
+    if os.path.exists(jd_file_or_text):
+        with open(jd_file_or_text, "r") as f:
+            jd = f.read()
+            
+    print(f"🧠 Generating tailored human CV for {company} - {role} using Mistral Large...")
+    res = generate_tailored_cv(jd, company=company, role=role)
+    if res.get("success"):
+        out_name = f"Garv_Gupta_Resume_{company.replace(' ', '_')}.pdf"
+        out_path = os.path.join(BASE_DIR, "data", out_name)
+        export_html_to_pdf(res["html"], out_path)
+        print(f"✅ Success! PDF saved to: {out_path}")
+        subprocess.run(["open", out_path])
+    else:
+        print(f"❌ Error: {res.get('error')}")
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "scan"
     
@@ -102,9 +177,14 @@ if __name__ == "__main__":
     elif cmd == "serve":
         port = int(sys.argv[2]) if len(sys.argv) > 2 else 8080
         start_server(port)
+    elif cmd == "cv":
+        comp = sys.argv[2] if len(sys.argv) > 2 else "Target Company"
+        role = sys.argv[3] if len(sys.argv) > 3 else "Product Intern"
+        jd = sys.argv[4] if len(sys.argv) > 4 else "Product management and execution role."
+        run_cv_cli(comp, role, jd)
     elif cmd == "test-alert":
         send_macos_notification("🚀 Test Notification", "Internship Radar", "Testing desktop notification for Garv Gupta")
         print("Sent test notification.")
     else:
-        print("Usage: python3 radar_runner.py [scan|serve|test-alert]")
+        print("Usage: python3 radar_runner.py [scan|serve|cv|test-alert]")
 
