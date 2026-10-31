@@ -358,12 +358,16 @@ def evaluate_compensation(job):
     }
 
 def score_job(job, profile):
-    from engine.harvester import requires_foreign_language
+    from engine.harvester import requires_foreign_language, is_non_tech_internship
     from engine.trash_analyzer import is_job_disqualified_by_trash_patterns
     title = job["title"]
     
     # Strictly reject any job with a hard 3rd language requirement (Garv speaks English & Hindi only)
     if requires_foreign_language(title, job.get("salary_raw", "")):
+        return None
+
+    # Strict multi-layer disqualification check (MBA/PhD, physical design, hard engineering, foreign domain/language, US regional onsite, clearance)
+    if not is_non_tech_internship(title, job.get("salary_raw", ""), job.get("url", ""), job.get("location", ""), job.get("company", "")):
         return None
 
     # Strictly reject any job disqualified by trash patterns or overly technical indicators

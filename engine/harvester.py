@@ -14,8 +14,23 @@ NEGATIVE_KEYWORDS = [
     'research engineer', 'data scientist', 'deep learning engineer',
     'clinical', 'nursing', 'veterinary', 'physician', 'biologist',
     'chemist', 'hardware engineer', 'silicon', 'embedded system',
-    'security engineer', 'internal audit'
+    'security engineer', 'internal audit', 'data engineer',
+    'marketing engineer', 'reliability engineer', 'systems engineer',
+    'packaging engineer', 'manufacturing engineer', 'civil engineer',
+    'mechanical engineer', 'chemical engineer', 'product development engineering'
 ]
+
+# Non-digital / Physical design roles to strictly disqualify
+PHYSICAL_DESIGN_REGEX = re.compile(
+    r'\b(landscape architecture|architectural|interior design|industrial design|cmf|cad designer|apparel|textile|fashion|garment|environmental designer)\b',
+    re.IGNORECASE
+)
+
+# Degree & Enrollment restrictions (Garv is an Undergrad BBA student, NOT an MBA or PhD candidate)
+DEGREE_RESTRICTION_REGEX = re.compile(
+    r'\b(mba|phd|ph\.d\.|doctoral|postdoc|graduate student|graduated internship|graduate internship|master\'s only|masters only|ms only|postgraduate)\b',
+    re.IGNORECASE
+)
 
 # Foreign languages to strictly disqualify (Garv Gupta is fluent in English and Hindi ONLY)
 FOREIGN_LANGUAGES = [
@@ -26,6 +41,29 @@ FOREIGN_LANGUAGES = [
     'vietnamese', 'thai', 'bahasa', 'indonesian', 'malay', 'hebrew', 'greek',
     'czech', 'hungarian', 'tagalog', 'romanian'
 ]
+
+# Foreign LinkedIn regional domains and terms
+FOREIGN_DOMAINS_REGEX = re.compile(
+    r'https?://(es|fr|de|it|nl|pt|br|pl|ru|jp)\.linkedin\.com',
+    re.IGNORECASE
+)
+
+FOREIGN_MARKET_TERMS_REGEX = re.compile(
+    r'\b(de coches|prácticas|practicas|becario|becaria|pasantía|pasantia|stagiaire|stage|alternance|contrat pro|praktikum|praktikant|werkstudent|abschlussarbeit|tirocinio|tirocinante|estágio|estagio)\b',
+    re.IGNORECASE
+)
+
+# Citizenship, clearance, and local matriculation restrictions
+CITIZENSHIP_RESTRICTION_REGEX = re.compile(
+    r'\b(us citizen|citizenship required|security clearance|secret clearance|us government|government defense|uae nationals?|emiratis? only|saudi nationals?|singaporeans? only|nationals only|singaporeans/prs only|term-time internship|term time|front office|front desk|housekeeping|culinary|chef|barista|f&b|waiter|concierge)\b',
+    re.IGNORECASE
+)
+
+# US Regional states that do not support international undergrad sponsorship for on-site roles
+US_NON_SPONSOR_STATES = re.compile(
+    r'\b(al|ak|az|ar|co|ct|de|fl|ga|hi|id|il|in|ia|ks|ky|la|me|md|ma|mi|mn|ms|mo|mt|ne|nv|nh|nj|nm|nc|nd|oh|ok|or|pa|ri|sc|sd|tn|tx|ut|vt|va|wv|wi|wy|holland|roanoke|greensboro|terrell|fort mill|simpsonville|st\. paul|saint paul|buffalo|orlando|murrysville|fond du lac)\b',
+    re.IGNORECASE
+)
 
 _LANG_OR_PATTERN = '|'.join(FOREIGN_LANGUAGES)
 
@@ -111,21 +149,58 @@ def generate_job_id(company, title, location):
     raw = f"{company.strip().lower()}_{title.strip().lower()}_{str(location).strip().lower()}"
     return hashlib.md5(raw.encode('utf-8')).hexdigest()
 
-def is_non_tech_internship(title, text=""):
+def is_non_tech_internship(title, text="", url="", location="", company=""):
     lower_title = title.lower()
+    full_text = f"{title} {company} {location} {text}".lower()
 
-    # Must match intern pattern
+    # 1. Must match intern pattern
     if not INTERN_PATTERN.search(lower_title):
         return False
 
-    # Must NOT contain hard technical/engineering/medical keywords
+    # 2. Reject MBA, PhD, and Graduate-only degree restrictions
+    if DEGREE_RESTRICTION_REGEX.search(lower_title) or DEGREE_RESTRICTION_REGEX.search(text[:600]):
+        return False
+
+    # 3. Reject physical / non-digital / hardware design
+    if PHYSICAL_DESIGN_REGEX.search(lower_title):
+        return False
+
+    # 4. Reject engineering / hardware / data engineering / reliability keywords
     for neg in NEGATIVE_KEYWORDS:
         if neg in lower_title:
             return False
 
-    # Must NOT require a 3rd language (Garv only speaks English and Hindi)
+    # 5. Reject foreign LinkedIn domains (es., fr., de., it., etc.)
+    if url and FOREIGN_DOMAINS_REGEX.search(url):
+        return False
+
+    # 6. Reject foreign market terms
+    if FOREIGN_MARKET_TERMS_REGEX.search(full_text):
+        return False
+
+    # 7. Check foreign language text density
+    sp_cnt = len(re.findall(r'\b(para|con|por|como|del|las|los|requisitos|experiencia|renting)\b', full_text))
+    fr_cnt = len(re.findall(r'\b(pour|dans|avec|les|des|missions|profil)\b', full_text))
+    de_cnt = len(re.findall(r'\b(und|fuer|für|mit|wir|uns|aufgaben|bewerbung)\b', full_text))
+    if sp_cnt >= 3 or fr_cnt >= 3 or de_cnt >= 3:
+        return False
+
+    # 8. Must NOT require a 3rd language (Garv only speaks English and Hindi)
     if requires_foreign_language(title, text):
         return False
+
+    # 9. Reject Citizenship / Security clearance / local term-time restrictions
+    if CITIZENSHIP_RESTRICTION_REGEX.search(full_text):
+        return False
+
+    # 10. Reject US Local On-Site at non-sponsoring regional firms (Requires US CPT/OPT work auth)
+    is_us = bool(re.search(r'\b(united states|usa|us)\b', location.lower()) or US_NON_SPONSOR_STATES.search(location.lower()))
+    is_onsite = bool(re.search(r'\b(on site|onsite|in-person|in person)\b', text.lower()) or 'on site' in text.lower())
+    is_remote = bool(re.search(r'\b(remote|work from home|anywhere)\b', location.lower()))
+    if is_us and is_onsite and not is_remote:
+        # Require explicit visa sponsorship mention for US on-site roles
+        if not re.search(r'\b(visa sponsorship|international applicants welcome|j-1)\b', text.lower()):
+            return False
 
     return True
 
@@ -143,9 +218,9 @@ def fetch_greenhouse_board(board_info):
             for j in data.get("jobs", []):
                 title = j.get("title", "")
                 raw_content = html.unescape(j.get("content", ""))
-                if is_non_tech_internship(title, raw_content):
-                    loc_name = j.get("location", {}).get("name", "Remote / Unspecified")
-                    job_url = j.get("absolute_url", "")
+                loc_name = j.get("location", {}).get("name", "Remote / Unspecified")
+                job_url = j.get("absolute_url", "")
+                if is_non_tech_internship(title, raw_content, job_url, loc_name, company):
                     job_id = generate_job_id(company, title, loc_name)
                     
                     # Parse timestamp
@@ -190,9 +265,9 @@ def fetch_lever_board(board_info):
             for p in postings:
                 title = p.get("text", "")
                 raw_desc = (p.get("descriptionPlain", "") + " " + p.get("additionalPlain", ""))
-                if is_non_tech_internship(title, raw_desc):
-                    loc_name = p.get("categories", {}).get("location", "Remote / Unspecified")
-                    job_url = p.get("hostedUrl", "")
+                loc_name = p.get("categories", {}).get("location", "Remote / Unspecified")
+                job_url = p.get("hostedUrl", "")
+                if is_non_tech_internship(title, raw_desc, job_url, loc_name, company):
                     job_id = generate_job_id(company, title, loc_name)
                     
                     # Parse Lever createdAt (ms)
@@ -236,9 +311,9 @@ def fetch_ashby_board(board_info):
             for j in data.get("jobs", []):
                 title = j.get("title", "")
                 desc_plain = j.get("descriptionPlain", "")
-                if is_non_tech_internship(title, desc_plain):
-                    loc_name = j.get("location") or "Remote / Unspecified"
-                    job_url = j.get("jobUrl") or j.get("applyUrl") or ""
+                loc_name = j.get("location") or "Remote / Unspecified"
+                job_url = j.get("jobUrl") or j.get("applyUrl") or ""
+                if is_non_tech_internship(title, desc_plain, job_url, loc_name, company):
                     job_id = generate_job_id(company, title, loc_name)
                     
                     # Parse publishedAt timestamp
@@ -308,7 +383,7 @@ def fetch_linkedin_guest(query_info):
                     job_url = link_m.group(1).split("?")[0]  # clean tracking params
                     salary_raw = salary_m.group(1).strip() if salary_m else ""
                     
-                    if is_non_tech_internship(title, f"{title} {chunk}"):
+                    if is_non_tech_internship(title, f"{title} {chunk}", job_url, loc_name, company):
                         job_id = generate_job_id(company, title, loc_name)
                         jobs.append({
                             "id": job_id,
@@ -336,6 +411,7 @@ def fetch_github_markdown_table(source_info):
         r = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=6)
         if r.status_code == 200:
             lines = r.text.split("\n")
+            last_company = ""
             for line in lines:
                 if not line.startswith("|") or "---" in line or "Company" in line:
                     continue
@@ -345,6 +421,10 @@ def fetch_github_markdown_table(source_info):
                     raw_comp = parts[0]
                     comp_match = re.search(r'\[([^\]]+)\]', raw_comp)
                     company = comp_match.group(1) if comp_match else re.sub(r'[*_]', '', raw_comp)
+                    if company in ['↳', '->', '»', ''] or not company.strip():
+                        company = last_company
+                    else:
+                        last_company = company
                     
                     # Clean title & link
                     raw_title = parts[1]
@@ -365,7 +445,7 @@ def fetch_github_markdown_table(source_info):
                     if not job_url or not title or not company:
                         continue
                         
-                    if is_non_tech_internship(title, line):
+                    if is_non_tech_internship(title, line, job_url, location, company):
                         job_id = generate_job_id(company, title, location)
                         
                         # Parse date string like 'Oct 30'

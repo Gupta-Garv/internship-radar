@@ -79,6 +79,15 @@
       "Turkish", "Polish", "Vietnamese", "Thai", "Bahasa"
     ]
   },
+  "disqualified_degree_types": [
+    "MBA", "PhD", "Ph.D.", "Doctoral", "Postdoc", "Graduate Student", "Graduated Internship", "Master's Only", "MS Only"
+  ],
+  "disqualified_physical_design": [
+    "Landscape Architecture", "Architectural", "Interior Design", "Industrial Design", "CMF", "CAD Designer", "Apparel", "Textile", "Fashion", "Garment", "Environmental Designer"
+  ],
+  "disqualified_work_authorization": [
+    "US Citizen Only", "Security Clearance Required", "Secret Clearance", "Singaporeans/PRs Only", "Local Term-Time Matriculation", "US Regional On-Site without international sponsorship"
+  ],
   "disqualified_technical_keywords": [
     "c++", "cpp", "cuda", "fpga", "verilog", "vhdl", "firmware", "kernel", "asic",
     "microcontroller", "embedded", "pcb", "rtos", "arm", "dsp", "soc", "rfic",

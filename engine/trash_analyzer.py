@@ -214,3 +214,4 @@ if __name__ == "__main__":
     if res.get("recommended_negatives"):
         print(f"\nRecommended Negative Filters: {', '.join(res['recommended_negatives'])}")
     print("=" * 60 + "\n")
+
