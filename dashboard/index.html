@@ -337,7 +337,7 @@
        ========================================================================== */
     .catalog-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
       gap: 20px;
     }
 
@@ -981,94 +981,122 @@
     /* ==========================================================================
        PAGE 4: HACKATHONS ARENA & TICKING COUNTDOWN TIMERS
        ========================================================================== */
+    .hackathon-tray {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hackathon-card {
+      background: var(--card-sheet);
+      border-radius: 1.25rem;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      box-sizing: border-box;
+      cursor: default;
+    }
+
+    .hackathon-card-body {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hackathon-eyebrow-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
     .hackathon-prize-hero {
       background: rgba(251, 191, 36, 0.12);
-      border: 1px solid rgba(251, 191, 36, 0.28);
+      border: 1px solid rgba(251, 191, 36, 0.3);
       color: #fbbf24;
       font-family: var(--font-mono);
       font-weight: 700;
-      font-size: 14px;
-      padding: 5px 12px;
-      border-radius: 8px;
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 6px;
       letter-spacing: 0.02em;
-      display: inline-block;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
-    .hackathon-prize-badge {
-      display: inline-flex;
+    .hackathon-card-title {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.35;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin: 0 0 10px 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: 42px;
+    }
+
+    .hackathon-prize-callout {
+      display: flex;
       align-items: center;
-      gap: 6px;
-      background: linear-gradient(135deg, rgba(236, 72, 153, 0.12), rgba(168, 85, 247, 0.16));
-      border: 1px solid rgba(236, 72, 153, 0.35);
+      gap: 7px;
+      background: linear-gradient(135deg, rgba(236, 72, 153, 0.12), rgba(168, 85, 247, 0.14));
+      border: 1px solid rgba(236, 72, 153, 0.32);
+      border-radius: 8px;
+      padding: 6px 10px;
+      margin-bottom: 12px;
       color: #f472b6;
       font-family: var(--font-mono);
       font-weight: 600;
-      font-size: 11px;
-      padding: 4px 10px;
-      border-radius: 999px;
-      letter-spacing: 0.02em;
-      margin-top: 6px;
+      font-size: 11.5px;
+      letter-spacing: 0.01em;
+      box-sizing: border-box;
+      width: 100%;
     }
 
-    .non-cash-perks-box {
-      background: rgba(168, 85, 247, 0.06);
-      border: 1px dashed rgba(168, 85, 247, 0.28);
-      border-radius: 10px;
-      padding: 10px 12px;
-      margin-bottom: 12px;
+    .hackathon-prize-callout .callout-sparkle {
+      color: #f472b6;
+      font-size: 12px;
+      flex-shrink: 0;
     }
 
-    .perks-label {
-      font-family: var(--font-mono);
-      font-size: 9.5px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #c084fc;
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      font-weight: 600;
-    }
-
-    .perks-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-
-    .perk-pill {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 6px;
-      padding: 2.5px 8px;
-      font-size: 11px;
-      color: #f1f5f9;
-      font-weight: 500;
+    .hackathon-prize-callout .callout-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
       white-space: nowrap;
+      flex: 1;
     }
 
     .hackathon-countdown-pill {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 8px;
       background: rgba(15, 23, 42, 0.65);
       border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 12px;
-      padding: 9px 14px;
-      margin: 12px 0 14px 0;
+      border-radius: 10px;
+      padding: 8px 12px;
+      margin-bottom: 12px;
       font-family: var(--font-mono);
+      box-sizing: border-box;
+      width: 100%;
       transition: all 0.2s ease;
     }
 
     .hackathon-countdown-pill .timer-digits {
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.04em;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
       color: #38bdf8;
       display: flex;
       align-items: center;
-      gap: 7px;
+      gap: 6px;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .hackathon-countdown-pill.urgent {
@@ -1102,63 +1130,137 @@
     }
 
     @keyframes pulse-urgent {
-
-      0%,
-      100% {
-        opacity: 1;
-      }
-
-      50% {
-        opacity: 0.6;
-      }
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
     }
 
     .hackathon-countdown-pill .deadline-note {
-      font-size: 11px;
+      font-size: 10.5px;
       color: var(--text-dim);
       white-space: nowrap;
       flex-shrink: 0;
+      text-align: right;
     }
 
     .brief-box {
       background: rgba(255, 255, 255, 0.02);
       border: 1px solid rgba(255, 255, 255, 0.06);
       border-radius: 10px;
-      padding: 12px 14px;
+      padding: 10px 12px;
       margin-bottom: 12px;
+      box-sizing: border-box;
+      width: 100%;
     }
 
     .brief-label {
       font-family: var(--font-mono);
-      font-size: 10px;
+      font-size: 9.5px;
       text-transform: uppercase;
       letter-spacing: 0.06em;
       color: var(--text-dim);
-      margin-bottom: 6px;
+      margin-bottom: 5px;
       display: flex;
       align-items: center;
       gap: 5px;
     }
 
     .brief-text {
-      font-size: 13px;
-      line-height: 1.55;
+      font-size: 12px;
+      line-height: 1.5;
       color: var(--text-muted);
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: 54px;
+    }
+
+    .non-cash-perks-box {
+      background: rgba(168, 85, 247, 0.05);
+      border: 1px dashed rgba(168, 85, 247, 0.28);
+      border-radius: 10px;
+      padding: 9px 12px;
+      margin-bottom: 12px;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    .perks-label {
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #c084fc;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: 600;
+    }
+
+    .perks-list {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .perk-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      font-size: 11px;
+      line-height: 1.35;
+      color: #f1f5f9;
+      word-break: break-word;
+    }
+
+    .perk-bullet {
+      color: #c084fc;
+      font-size: 10.5px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .perk-text {
+      flex: 1;
+    }
+
+    .perk-more {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: #a78bfa;
+      margin-top: 2px;
     }
 
     .stack-box {
       background: rgba(99, 102, 241, 0.06);
       border: 1px solid rgba(99, 102, 241, 0.16);
       border-radius: 8px;
-      padding: 8px 12px;
-      margin-bottom: 14px;
+      padding: 7px 11px;
+      margin-bottom: 12px;
       font-family: var(--font-mono);
-      font-size: 11px;
+      font-size: 10.5px;
       color: #c7d2fe;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 6px;
-      overflow-x: auto;
+      line-height: 1.4;
+      box-sizing: border-box;
+      width: 100%;
+      word-break: break-word;
+    }
+
+    .stack-box .stack-label {
+      opacity: 0.75;
+      font-size: 9.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .stack-box .stack-content {
+      flex: 1;
     }
 
     .vibe-tag {
@@ -1169,6 +1271,16 @@
       font-size: 10px;
       padding: 3px 8px;
       border-radius: 6px;
+      white-space: nowrap;
+    }
+
+    .hackathon-card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      margin-top: auto;
     }
 
     @media print {
@@ -3093,7 +3205,7 @@ STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
 
       if (isNaN(target) || diff <= 0) {
         return {
-          text: "00d : 00h : 00m : 00s",
+          text: "00d 00h 00m 00s",
           closed: true,
           urgent: false,
           soon: false,
@@ -3107,7 +3219,7 @@ STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
       const secs = Math.floor((diff % (1000 * 60)) / 1000);
 
       const pad = (n) => String(n).padStart(2, '0');
-      const text = `${pad(days)}d : ${pad(hours)}h : ${pad(mins)}m : ${pad(secs)}s`;
+      const text = `${pad(days)}d ${pad(hours)}h ${pad(mins)}m ${pad(secs)}s`;
 
       const totalHours = diff / (1000 * 60 * 60);
       const urgent = totalHours <= 48; // Under 48 hours: Pulsing Red/Amber
@@ -3254,37 +3366,58 @@ STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
         else if (cd.urgent) urgencyClass = 'urgent';
         else if (cd.soon) urgencyClass = 'soon';
 
-        const hasNonCash = h.non_cash_perks && h.non_cash_perks.length > 0;
-        const perksHtml = hasNonCash ? `
+        let capitalPillText = '';
+        if (h.prize_usd >= 1000000) {
+          capitalPillText = `🏆 $${(h.prize_usd / 1000000).toFixed(1)}M Capital`;
+        } else if (h.prize_usd >= 1000) {
+          capitalPillText = `🏆 $${Math.round(h.prize_usd / 1000)}k Capital`;
+        } else if (h.prize_pool && h.prize_pool.startsWith('$')) {
+          capitalPillText = `🏆 ${h.prize_pool}`;
+        } else {
+          capitalPillText = `🎁 Hardware Pool`;
+        }
+
+        const prizeCalloutHtml = (h.prize_badge || h.prize_pool) ? `
+          <div class="hackathon-prize-callout">
+            <span class="callout-sparkle">✦</span>
+            <span class="callout-text" title="${escapeHtml(h.prize_badge || h.prize_pool)}">${escapeHtml(h.prize_badge || h.prize_pool)}</span>
+          </div>
+        ` : '';
+
+        const perksHtml = (h.non_cash_perks && h.non_cash_perks.length > 0) ? `
           <div class="non-cash-perks-box">
             <div class="perks-label">
-              <span>🎁</span> ELITE REWARDS &amp; FAST-TRACK
+              <span>🎁</span> KEY REWARDS &amp; FAST-TRACK
             </div>
-            <div class="perks-tags">
-              ${h.non_cash_perks.map(p => `<span class="perk-pill">✦ ${escapeHtml(p)}</span>`).join('')}
+            <div class="perks-list">
+              ${h.non_cash_perks.slice(0, 3).map(p => `
+                <div class="perk-row">
+                  <span class="perk-bullet">✦</span>
+                  <span class="perk-text">${escapeHtml(p)}</span>
+                </div>
+              `).join('')}
+              ${h.non_cash_perks.length > 3 ? `
+                <div class="perk-more">+ ${h.non_cash_perks.length - 3} more perks (click Vibe Strategy)</div>
+              ` : ''}
             </div>
           </div>
         ` : '';
 
-        const prizeBadgeHtml = h.prize_badge ? `
-          <div class="hackathon-prize-badge">✦ ${escapeHtml(h.prize_badge)}</div>
-        ` : '';
-
         return `
-        <div class="card-tray-wrapper">
-          <div class="ledger-card" style="cursor:default;">
-            <div>
-              <div class="card-header-row">
-                <div style="padding-right:12px;">
-                  <div class="company-ats-label">${escapeHtml(h.platform.toUpperCase())} // ${escapeHtml(h.organizer.toUpperCase())}</div>
-                  <h3 class="card-role-title" style="margin: 6px 0 6px 0; font-size:16px; font-weight:500;">${escapeHtml(h.title)}</h3>
-                  ${prizeBadgeHtml}
-                </div>
-                <div style="text-align:right; flex-shrink:0;">
-                  <div class="hackathon-prize-hero">🏆 ${escapeHtml(h.prize_pool)}</div>
-                  <div style="font-size:10px; color:var(--text-dim); margin-top:4px; font-family:var(--font-mono); text-transform:uppercase;">Estimated Value / Pool</div>
-                </div>
+        <div class="card-tray-wrapper hackathon-tray">
+          <div class="hackathon-card">
+            <div class="hackathon-card-body">
+              <!-- Eyebrow Row: Platform on left, Short Capital Pill on right -->
+              <div class="hackathon-eyebrow-row">
+                <div class="company-ats-label">${escapeHtml(h.platform.toUpperCase())} // ${escapeHtml(h.organizer.toUpperCase())}</div>
+                <div class="hackathon-prize-hero">${capitalPillText}</div>
               </div>
+
+              <!-- Full-Width Title: No squishing, no 8-letter truncation -->
+              <h3 class="hackathon-card-title">${escapeHtml(h.title)}</h3>
+
+              <!-- Full-Width Prize Callout -->
+              ${prizeCalloutHtml}
 
               <!-- Live Ticking Countdown Bar -->
               <div class="hackathon-countdown-pill ${urgencyClass}" id="timer-${h.id}" data-deadline="${h.deadline_iso}">
@@ -3308,20 +3441,20 @@ STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
 
               <!-- Recommended Vibe Coder Stack -->
               <div class="stack-box">
-                <span style="opacity:0.75; font-size:10px; text-transform:uppercase;">Stack:</span>
-                <span>${escapeHtml(h.recommended_stack || 'Claude API + Cursor + Next.js')}</span>
+                <span class="stack-label">STACK:</span>
+                <span class="stack-content">${escapeHtml(h.recommended_stack || 'Claude API + Cursor + Next.js')}</span>
               </div>
 
               <!-- Tags Container -->
-              <div class="tags-container" style="margin-bottom:16px;">
+              <div class="tags-container" style="margin-bottom:14px;">
                 <span class="vibe-tag">✓ ${escapeHtml(h.vibe_coder_score || '100% Vibe Coder Friendly')}</span>
                 <span class="pixel-tag-chip" style="color:#34d399; border-color:rgba(52,211,153,0.3);">🌏 ${escapeHtml(h.eligibility)}</span>
-                ${(h.tags || []).map(t => `<span class="pixel-tag-chip">${escapeHtml(t)}</span>`).join('')}
+                ${(h.tags || []).slice(0, 2).map(t => `<span class="pixel-tag-chip">${escapeHtml(t)}</span>`).join('')}
               </div>
             </div>
 
-            <!-- Action Footer -->
-            <div style="display:flex; justify-content:space-between; align-items:center; padding-top:14px; border-top:1px solid rgba(255,255,255,0.06); margin-top:8px;">
+            <!-- Action Footer Pinned to Bottom -->
+            <div class="hackathon-card-footer">
               <button class="pill-cta-muted" style="padding:6px 14px; font-size:12px; font-weight:500; border-radius:999px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); color:#fff; cursor:pointer;" onclick="openHackathonStrategy('${h.id}')">
                 💡 Vibe Strategy
               </button>
