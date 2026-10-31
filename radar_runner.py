@@ -225,11 +225,25 @@ if __name__ == "__main__":
             print("=" * 60 + "\n")
         else:
             print("❌ Error:", res.get("error"))
+    elif cmd in ["trash", "analyze-trash"]:
+        from engine.trash_analyzer import analyze_trashed_patterns
+        res = analyze_trashed_patterns(update_profile=True)
+        print("\n" + "=" * 60)
+        print("🧠 TRASH COMPARTMENT ANALYSIS REPORT")
+        print("=" * 60)
+        print(f"Total Trashed Jobs Analyzed: {res.get('trashed_count', 0)}")
+        if res.get("top_technical_flags"):
+            print("\nTop Technical Red Flags Detected:")
+            for kw, cnt in res["top_technical_flags"]:
+                print(f"  • {kw}: {cnt} occurrence(s)")
+        if res.get("recommended_negatives"):
+            print(f"\nRecommended Negative Filters Added to Profile:\n  {', '.join(res['recommended_negatives'])}")
+        print("=" * 60 + "\n")
     elif cmd == "test-alert":
         send_macos_notification("🚀 Test Notification", "Internship Radar", "Testing desktop notification for Garv Gupta")
         print("Sent test notification.")
     elif cmd == "hackathons":
         scout_all_hackathons()
     else:
-        print("Usage: python3 radar_runner.py [scan|serve|cv|qa|hackathons|test-alert]")
+        print("Usage: python3 radar_runner.py [scan|serve|cv|qa|hackathons|trash|test-alert]")
 

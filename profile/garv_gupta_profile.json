@@ -79,6 +79,18 @@
       "Turkish", "Polish", "Vietnamese", "Thai", "Bahasa"
     ]
   },
+  "disqualified_technical_keywords": [
+    "c++", "cpp", "cuda", "fpga", "verilog", "vhdl", "firmware", "kernel", "asic",
+    "microcontroller", "embedded", "pcb", "rtos", "arm", "dsp", "soc", "rfic",
+    "hardware engineer", "silicon", "semiconductor", "device driver",
+    "compiler", "distributed systems", "concurrency", "low-level", "systems software",
+    "microservices", "kubernetes", "k8s", "docker container",
+    "computer vision", "slam", "lidar", "deep learning research", "phd", "reinforcement learning",
+    "pytorch internals", "tensorrt", "cuda kernels", "diffusion models research", "robotics engineer",
+    "motion planning", "autonomous driving", "perception engineer",
+    "software engineer intern", "software development intern", "full stack engineer intern",
+    "backend engineer intern", "frontend engineer intern", "systems engineer intern"
+  ],
   "negative_keywords": [
     "software engineer",
     "software engineering",

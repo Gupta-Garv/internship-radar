@@ -359,10 +359,16 @@ def evaluate_compensation(job):
 
 def score_job(job, profile):
     from engine.harvester import requires_foreign_language
+    from engine.trash_analyzer import is_job_disqualified_by_trash_patterns
     title = job["title"]
     
     # Strictly reject any job with a hard 3rd language requirement (Garv speaks English & Hindi only)
     if requires_foreign_language(title, job.get("salary_raw", "")):
+        return None
+
+    # Strictly reject any job disqualified by trash patterns or overly technical indicators
+    is_disq, _ = is_job_disqualified_by_trash_patterns(job, profile)
+    if is_disq:
         return None
         
     category = categorize_role(title, job.get("raw_department", ""))

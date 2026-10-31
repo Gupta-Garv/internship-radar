@@ -568,6 +568,17 @@
       color: #fff;
     }
 
+    .card-action-btn.btn-trash {
+      color: var(--text-dim);
+      padding: 5px 8px;
+    }
+
+    .card-action-btn.btn-trash:hover {
+      background: rgba(244, 63, 94, 0.15);
+      border-color: rgba(244, 63, 94, 0.4);
+      color: #fb7185;
+    }
+
     /* ==========================================================================
        SLIDE-OVER INSPECTOR DRAWER (CULT UI SIDE-PANEL)
        ========================================================================== */
@@ -1218,6 +1229,11 @@
           <span>🏆 Hackathons</span>
           <span class="dock-badge" id="dock-count-hackathons"
             style="background:rgba(251,191,36,0.18); color:#fbbf24;">16</span>
+        </button>
+        <button class="dock-pill" onclick="navigateLedger('trash')">
+          <span>🗑️ Trash</span>
+          <span class="dock-badge" id="dock-count-trash"
+            style="background:rgba(244,63,94,0.18); color:#fb7185;">0</span>
         </button>
         <button class="dock-pill" onclick="navigateLedger('dna')">
           <span>Garv's DNA</span>
@@ -1873,6 +1889,93 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
     </section>
 
     <!-- ==========================================================================
+       PAGE: TRASH COMPARTMENT (MANUAL DISQUALIFICATIONS & NEGATIVE LEARNING)
+       ========================================================================== -->
+    <section id="view-trash" class="ledger-page-view">
+      <div style="margin-bottom: 30px;">
+        <div class="trust-chip" style="margin-bottom:12px;">
+          <div class="trust-indicator" style="background:#f43f5e; box-shadow:0 0 10px rgba(244,63,94,0.5);"></div>
+          <span class="trust-text" style="color:#fb7185;">Trained Negative Rejection // AI Feedback Loop</span>
+        </div>
+        <h2
+          style="font-size:32px; font-weight:450; letter-spacing:-0.04em; margin-bottom:10px; color:var(--text-primary);">
+          Trash Compartment, <span class="pixel-phrase" style="color:#fb7185;">disqualified</span>.
+        </h2>
+        <p style="color:var(--text-muted); font-size:15px; line-height:1.6; max-width:850px; margin-bottom:24px;">
+          <span style="color:var(--text-primary); font-weight:500;">Listings manually trashed as unaligned or overly technical.</span>
+          Every role you dismiss is cataloged here and parsed to extract low-level engineering jargon and mismatched requirements so our automated harvester stops recommending them in future sweeps.
+        </p>
+
+        <!-- Metric Strip for Trash -->
+        <div class="ledger-strip" style="margin-bottom:24px;">
+          <div class="ledger-stat">
+            <span class="stat-num" id="trash-stat-total" style="color:#fb7185;">0</span>
+            <span class="stat-label">Trashed Roles</span>
+          </div>
+          <div class="ledger-stat">
+            <span class="stat-num" id="trash-stat-tech" style="color:#f59e0b;">0</span>
+            <span class="stat-label">Overly Technical</span>
+          </div>
+          <div class="ledger-stat">
+            <span class="stat-num" id="trash-stat-patterns" style="color:#60a5fa;">0</span>
+            <span class="stat-label">Learned Negative Signals</span>
+          </div>
+          <div class="ledger-stat">
+            <span class="stat-num" style="color:#34d399;">Active</span>
+            <span class="stat-label">Negative Guard Status</span>
+          </div>
+        </div>
+
+        <!-- AI Pattern Intelligence Banner -->
+        <div class="card-tray-wrapper" style="margin-bottom:24px; padding:20px; border-radius:24px; background:var(--card-tray); border:1px solid rgba(244,63,94,0.18);">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px; margin-bottom:14px;">
+            <div>
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+                <span style="font-size:16px;">🧠</span>
+                <span style="font-size:14px; font-weight:600; color:#fff;">Negative Pattern Intelligence Engine</span>
+                <span class="pixel-tag-chip" style="color:#34d399; background:rgba(52,211,153,0.1);">Auto-Learning Active</span>
+              </div>
+              <p style="font-size:12px; color:var(--text-muted); line-height:1.5; max-width:650px;">
+                Identifies recurring low-level engineering jargon (e.g. C++, embedded, kernel, CUDA, ROS) from your trashed listings and feeds them directly into the harvester's negative exclusion list.
+              </p>
+            </div>
+            <div style="display:flex; gap:10px; align-items:center;">
+              <button class="pill-cta-ink" onclick="exportTrashDataset()" style="font-size:11px; padding:6px 14px; background:#fff; color:#000;">
+                📥 Export Trashed JSON
+              </button>
+              <button class="card-action-btn" onclick="restoreAllTrashed()" style="font-size:11px; padding:5px 12px; border-color:rgba(255,255,255,0.15);">
+                ↩️ Restore All
+              </button>
+            </div>
+          </div>
+
+          <!-- Detected Technical Keywords Strip -->
+          <div style="padding-top:12px; border-top:1px solid rgba(255,255,255,0.06);">
+            <div style="font-family:var(--font-mono); font-size:10px; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-dim); margin-bottom:8px;">
+              Learned Disqualification Signals &amp; Tech Indicators:
+            </div>
+            <div id="trash-learned-tags" style="display:flex; gap:6px; flex-wrap:wrap;">
+              <!-- Populated by renderTrashCompartment() -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter & Search Tray for Trash -->
+        <div class="filter-tray" style="margin-bottom:24px;">
+          <div class="search-row">
+            <input type="text" id="trash-search-input" class="search-box"
+              placeholder="Search trashed roles by company, title, or rejected technology...">
+          </div>
+        </div>
+      </div>
+
+      <!-- Trashed Jobs Grid -->
+      <div class="catalog-grid" id="trash-catalog-grid">
+        <!-- Populated dynamically by renderTrashCompartment() -->
+      </div>
+    </section>
+
+    <!-- ==========================================================================
        PAGE 5: CANDIDATE DNA
        ========================================================================== -->
     <section id="view-dna" class="ledger-page-view">
@@ -1977,6 +2080,9 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
         <button class="card-action-btn" style="padding:7px 14px; font-size:12px;" onclick="markActiveJobStatus('to_apply')">
           📌 Save to Pipeline (To Apply)
         </button>
+        <button class="card-action-btn btn-trash" style="padding:7px 14px; font-size:12px;" onclick="markActiveJobStatus('trashed'); closeInspector();">
+          🗑️ Trash
+        </button>
       </div>
 
       <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:10px 14px; background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); border-radius:12px;">
@@ -1988,6 +2094,7 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
             <option value="to_apply">📌 To Apply (In Pipeline)</option>
             <option value="interviewing">🎯 Interviewing (In Pipeline)</option>
             <option value="offer">🏆 Offer (In Pipeline)</option>
+            <option value="trashed">🗑️ Trashed / Disqualified</option>
           </select>
         </div>
         <a href="#" id="ins-apply-link" target="_blank" rel="noopener noreferrer" class="pill-cta-ink" style="padding:7px 16px; font-size:12px;">
@@ -2102,12 +2209,13 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
 
       const mainHero = document.getElementById('main-ledger-hero');
       if (mainHero) {
-        mainHero.style.display = (pageId === 'hackathons') ? 'none' : 'block';
+        mainHero.style.display = (pageId === 'hackathons' || pageId === 'trash') ? 'none' : 'block';
       }
 
       if (pageId === 'pipeline') renderKanban();
       if (pageId === 'studio') generateStudioPitches();
       if (pageId === 'hackathons') renderHackathons();
+      if (pageId === 'trash') renderTrashCompartment();
       try {
         history.replaceState(null, null, '#' + pageId);
       } catch (e) { }
@@ -2128,79 +2236,92 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
       updateLedgerMetrics();
 
       const hash = window.location.hash.replace('#view-', '').replace('#', '');
-      if (hash && ['radar', 'pipeline', 'studio', 'hackathons', 'dna'].includes(hash)) {
+      if (hash && ['radar', 'pipeline', 'studio', 'hackathons', 'dna', 'trash'].includes(hash)) {
         navigateLedger(hash);
       }
     }
 
     function updateLedgerMetrics() {
-      const total = allJobs.length;
+      const untracked = allJobs.filter(j => !userStatus[j.id] || userStatus[j.id] === 'untracked').length;
       const tier1 = allJobs.filter(j => j.match_score >= 88).length;
       const visaCount = allJobs.filter(j => j.visa_info && j.visa_info.is_sponsored).length;
-      const tracked = Object.values(userStatus).length;
+      const pipelineCount = Object.keys(userStatus).filter(id => userStatus[id] && userStatus[id] !== 'untracked' && userStatus[id] !== 'trashed').length;
+      const trashedCount = Object.keys(userStatus).filter(id => userStatus[id] === 'trashed').length;
       const hackCount = allHackathons.length;
-      const hackCapital = allHackathons.reduce((acc, h) => acc + (h.prize_usd || 0), 0);
 
-  function updateLedgerMetrics() {
-    const untracked = allJobs.filter(j => !userStatus[j.id] || userStatus[j.id] === 'untracked').length;
-    const tier1 = allJobs.filter(j => j.match_score >= 88).length;
-    const visaCount = allJobs.filter(j => j.visa_info && j.visa_info.is_sponsored).length;
-    const tracked = Object.keys(userStatus).filter(id => userStatus[id] && userStatus[id] !== 'untracked').length;
-    const hackCount = allHackathons.length;
-    const hackCapital = allHackathons.reduce((acc, h) => acc + (h.prize_usd || 0), 0);
+      const metricTotal = document.getElementById('metric-total');
+      if (metricTotal) metricTotal.innerText = untracked;
+      const metricTier1 = document.getElementById('metric-tier1');
+      if (metricTier1) metricTier1.innerText = tier1;
+      const metricVisa = document.getElementById('metric-visa');
+      if (metricVisa) metricVisa.innerText = visaCount;
+      const metricTracked = document.getElementById('metric-tracked');
+      if (metricTracked) metricTracked.innerText = pipelineCount;
 
-    document.getElementById('metric-total').innerText = untracked;
-    document.getElementById('metric-tier1').innerText = tier1;
-    const metricVisa = document.getElementById('metric-visa');
-    if (metricVisa) metricVisa.innerText = visaCount;
-
-      document.getElementById('dock-count-radar').innerText = total;
-      document.getElementById('dock-count-pipeline').innerText = tracked;
+      const dockRadar = document.getElementById('dock-count-radar');
+      if (dockRadar) dockRadar.innerText = untracked;
+      const dockPipeline = document.getElementById('dock-count-pipeline');
+      if (dockPipeline) dockPipeline.innerText = pipelineCount;
       const dockHack = document.getElementById('dock-count-hackathons');
       if (dockHack) dockHack.innerText = hackCount;
+      const dockTrash = document.getElementById('dock-count-trash');
+      if (dockTrash) dockTrash.innerText = trashedCount;
     }
 
-    document.getElementById('dock-count-radar').innerText = untracked;
-    document.getElementById('dock-count-pipeline').innerText = tracked;
-    const dockHack = document.getElementById('dock-count-hackathons');
-    if (dockHack) dockHack.innerText = hackCount;
-  }
+    // Mark Job Status (Move to pipeline, trash, or restore to radar)
+    function markJobStatus(jobId, status) {
+      const job = allJobs.find(j => j.id === jobId);
+      const compName = job ? job.company : 'Job';
 
-  // Mark Job Status (Move to pipeline or restore to radar)
-  function markJobStatus(jobId, status) {
-    const job = allJobs.find(j => j.id === jobId);
-    const compName = job ? job.company : 'Job';
+      let trashedRecords = JSON.parse(localStorage.getItem('garv_trashed_records') || '{}');
 
-    if (status === 'untracked') {
-      delete userStatus[jobId];
-    } else {
-      userStatus[jobId] = status;
+      if (status === 'untracked') {
+        delete userStatus[jobId];
+        delete trashedRecords[jobId];
+      } else if (status === 'trashed') {
+        userStatus[jobId] = 'trashed';
+        if (job) {
+          trashedRecords[jobId] = {
+            ...job,
+            trashed_at: new Date().toISOString()
+          };
+        }
+      } else {
+        userStatus[jobId] = status;
+        delete trashedRecords[jobId];
+      }
+      localStorage.setItem('garv_job_status', JSON.stringify(userStatus));
+      localStorage.setItem('garv_trashed_records', JSON.stringify(trashedRecords));
+
+      updateLedgerMetrics();
+      renderRadar();
+      renderKanban();
+      if (document.getElementById('view-trash')?.classList.contains('active')) {
+        renderTrashCompartment();
+      }
+
+      if (currentActiveJobId === jobId) {
+        const select = document.getElementById('ins-status-select');
+        if (select) select.value = status;
+      }
+
+      const stageLabels = {
+        'applied': 'Applied 📨',
+        'to_apply': 'To Apply 📌',
+        'interviewing': 'Interviewing 🎯',
+        'offer': 'Offer 🏆',
+        'trashed': 'Trash 🗑️',
+        'untracked': 'Radar Discovery ↩️'
+      };
+
+      if (status === 'untracked') {
+        showToast(`↩️ ${compName} restored to Radar discovery`);
+      } else if (status === 'trashed') {
+        showToast(`🗑️ ${compName} moved to Trash & pattern learned`);
+      } else {
+        showToast(`✓ ${compName} moved to Pipeline (${stageLabels[status] || status})`);
+      }
     }
-    localStorage.setItem('garv_job_status', JSON.stringify(userStatus));
-
-    updateLedgerMetrics();
-    renderRadar();
-    renderKanban();
-
-    if (currentActiveJobId === jobId) {
-      const select = document.getElementById('ins-status-select');
-      if (select) select.value = status;
-    }
-
-    const stageLabels = {
-      'applied': 'Applied 📨',
-      'to_apply': 'To Apply 📌',
-      'interviewing': 'Interviewing 🎯',
-      'offer': 'Offer 🏆',
-      'untracked': 'Radar Discovery ↩️'
-    };
-
-    if (status === 'untracked') {
-      showToast(`↩️ ${compName} restored to Radar discovery`);
-    } else {
-      showToast(`✓ ${compName} moved to Pipeline (${stageLabels[status] || status})`);
-    }
-  }
 
   function markActiveJobStatus(status) {
     if (!currentActiveJobId) {
@@ -2222,7 +2343,11 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
 
     // 1. Filter
     let filtered = allJobs.filter(j => {
-      const isTracked = !!(userStatus[j.id] && userStatus[j.id] !== 'untracked');
+      const st = userStatus[j.id];
+      const isTrashed = st === 'trashed';
+      const isTracked = !!(st && st !== 'untracked' && st !== 'trashed');
+
+      if (isTrashed) return false;
 
       if (activeFacet === 'tracked') {
         if (!isTracked) return false;
@@ -2359,6 +2484,9 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
                   <button class="card-action-btn" title="Save to Pipeline to apply later" onclick="event.stopPropagation(); markJobStatus('${j.id}', 'to_apply');">
                     📌 Pipeline
                   </button>
+                  <button class="card-action-btn btn-trash" title="Trash listing (Not aligned / Too technical)" onclick="event.stopPropagation(); markJobStatus('${j.id}', 'trashed');">
+                    🗑️
+                  </button>
                 `}
               </div>
               <a href="${j.url}" target="_blank" rel="noopener noreferrer" class="pill-cta-ink" onclick="event.stopPropagation()">
@@ -2446,6 +2574,7 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
                 <option value="applied" ${st === 'applied' ? 'selected' : ''}>📨 Applied</option>
                 <option value="interviewing" ${st === 'interviewing' ? 'selected' : ''}>🎯 Interview</option>
                 <option value="offer" ${st === 'offer' ? 'selected' : ''}>🏆 Offer</option>
+                <option value="trashed">🗑️ Trash</option>
                 <option value="untracked">↩️ Back to Radar</option>
               </select>
               <a href="${j.url}" target="_blank" rel="noopener noreferrer" class="pill-cta-ink" style="padding:4px 10px; font-size:10px;">
@@ -3163,6 +3292,217 @@ Task:
         renderHackathons();
       });
     });
+
+    // ==========================================================================
+    // TRASH COMPARTMENT & NEGATIVE LEARNING ENGINE
+    // ==========================================================================
+    const TECHNICAL_LEARNING_INDICATORS = [
+      "c++", "cpp", "cuda", "fpga", "verilog", "vhdl", "firmware", "kernel", "asic", 
+      "microcontroller", "embedded", "pcb", "rtos", "arm", "dsp", "soc", "rfic",
+      "hardware", "silicon", "semiconductor", "device driver",
+      "compiler", "distributed systems", "concurrency", "low-level", "systems software",
+      "microservices", "kubernetes", "k8s", "docker container",
+      "computer vision", "slam", "lidar", "deep learning research", "phd", "reinforcement learning",
+      "pytorch", "tensorrt", "robotics", "motion planning", "autonomous driving",
+      "software engineer intern", "software development", "backend engineer", "frontend engineer"
+    ];
+
+    function CounterMap() {
+      this.map = {};
+      this.add = function(k) { this.map[k] = (this.map[k] || 0) + 1; };
+      this.size = function() { return Object.keys(this.map).length; };
+      this.top = function(n) {
+        return Object.entries(this.map).sort((a,b) => b[1] - a[1]).slice(0, n);
+      };
+    }
+
+    function renderTrashCompartment() {
+      const searchVal = (document.getElementById('trash-search-input')?.value || '').toLowerCase();
+      const trashedContainer = document.getElementById('trash-catalog-grid');
+      const tagsContainer = document.getElementById('trash-learned-tags');
+      if (!trashedContainer) return;
+
+      let trashedRecords = JSON.parse(localStorage.getItem('garv_trashed_records') || '{}');
+
+      // Merge any jobs in allJobs marked as trashed in userStatus
+      allJobs.forEach(j => {
+        if (userStatus[j.id] === 'trashed' && !trashedRecords[j.id]) {
+          trashedRecords[j.id] = {
+            ...j,
+            trashed_at: new Date().toISOString()
+          };
+        }
+      });
+
+      const allTrashed = Object.values(trashedRecords);
+
+      // Analyze detected patterns across all trashed
+      const detectedPatterns = new CounterMap();
+      let techFlaggedCount = 0;
+
+      allTrashed.forEach(j => {
+        const fullText = `${j.title} ${j.salary_raw || ''} ${j.category || ''} ${j.raw_department || ''}`.toLowerCase();
+        let hasTech = false;
+        TECHNICAL_LEARNING_INDICATORS.forEach(ind => {
+          if (ind === "c++" || ind === "cpp") {
+            if (/\b(c\+\+|cpp)\b/.test(fullText)) {
+              detectedPatterns.add(ind);
+              hasTech = true;
+            }
+          } else if (["asic", "dsp", "soc", "arm", "slam", "k8s"].includes(ind)) {
+            if (new RegExp('\\b' + ind + '\\b').test(fullText)) {
+              detectedPatterns.add(ind);
+              hasTech = true;
+            }
+          } else if (fullText.includes(ind)) {
+            detectedPatterns.add(ind);
+            hasTech = true;
+          }
+        });
+        if (hasTech) techFlaggedCount++;
+      });
+
+      // Update metrics
+      const elTotal = document.getElementById('trash-stat-total');
+      if (elTotal) elTotal.innerText = allTrashed.length;
+      const elTech = document.getElementById('trash-stat-tech');
+      if (elTech) elTech.innerText = techFlaggedCount;
+      const elPatterns = document.getElementById('trash-stat-patterns');
+      if (elPatterns) elPatterns.innerText = detectedPatterns.size();
+
+      // Render learned signals
+      if (tagsContainer) {
+        if (detectedPatterns.size() === 0) {
+          tagsContainer.innerHTML = `<span style="font-size:11px; color:var(--text-dim); font-family:var(--font-mono);">No technical signals detected yet. Trashing unaligned listings will populate learned signals here.</span>`;
+        } else {
+          const topPatterns = detectedPatterns.top(12);
+          tagsContainer.innerHTML = topPatterns.map(([tag, count]) => `
+            <span class="pixel-tag-chip" style="color:#fb7185; background:rgba(244,63,94,0.12); border:1px solid rgba(244,63,94,0.3); padding:3px 8px;">
+              ✕ ${escapeHtml(tag.toUpperCase())} <span style="opacity:0.75; font-size:9px;">(${count})</span>
+            </span>
+          `).join('');
+        }
+      }
+
+      // Filter by search
+      const filtered = allTrashed.filter(j => {
+        if (!searchVal) return true;
+        return (j.company || '').toLowerCase().includes(searchVal) ||
+               (j.title || '').toLowerCase().includes(searchVal) ||
+               (j.category || '').toLowerCase().includes(searchVal);
+      });
+
+      if (filtered.length === 0) {
+        trashedContainer.innerHTML = `
+          <div style="grid-column: 1 / -1; padding: 60px 20px; text-align: center; background: var(--card-sheet); border-radius: 24px; border: 1px dashed rgba(255,255,255,0.1);">
+            <div style="font-size: 32px; margin-bottom: 12px;">🗑️</div>
+            <div style="font-size: 15px; font-weight: 500; color: #fff; margin-bottom: 6px;">Trash Compartment is Clean</div>
+            <div style="font-size: 13px; color: var(--text-muted); max-width: 480px; margin: 0 auto; line-height: 1.5;">
+              When you see an internship in Radar that feels unaligned with your goals or too technical, click the <strong>🗑️</strong> button on its card. It will immediately move here, train the negative filter, and vanish from your active discovery view.
+            </div>
+          </div>
+        `;
+        return;
+      }
+
+      trashedContainer.innerHTML = filtered.map(j => {
+        const fullText = `${j.title} ${j.salary_raw || ''} ${j.category || ''}`.toLowerCase();
+        const matchedIndicators = TECHNICAL_LEARNING_INDICATORS.filter(ind => {
+          if (ind === "c++" || ind === "cpp") return /\b(c\+\+|cpp)\b/.test(fullText);
+          return fullText.includes(ind);
+        }).slice(0, 3);
+
+        const locBadge = j.location_info ? j.location_info.badge : (j.location || 'Global');
+
+        return `
+          <div class="card-tray-wrapper" style="opacity: 0.88; transition: opacity 0.2s;" onmouseenter="this.style.opacity='1'" onmouseleave="this.style.opacity='0.88'">
+            <div class="ledger-card" style="border: 1px solid rgba(244,63,94,0.18);">
+              <div>
+                <div class="card-header-row">
+                  <div class="company-logo-well" style="border:1px solid rgba(244,63,94,0.2);">${escapeHtml(j.company ? j.company.charAt(0) : 'J')}</div>
+                  <div class="company-meta-col">
+                    <div class="company-name-text">${escapeHtml(j.company || 'Unknown')}</div>
+                    <div class="company-source-chip">${escapeHtml(j.source || 'Scouted Job')}</div>
+                  </div>
+                  <div class="card-badges-right">
+                    <span class="score-chip" style="background:rgba(244,63,94,0.12); color:#fb7185; border:1px solid rgba(244,63,94,0.3);">
+                      🚫 TRASHED
+                    </span>
+                  </div>
+                </div>
+
+                <div class="card-role-title" style="color:var(--text-primary);">${escapeHtml(j.title || 'Role')}</div>
+
+                <div class="tags-container">
+                  <span class="pixel-tag-chip">${locBadge}</span>
+                  <span class="pixel-tag-chip">📅 ${escapeHtml(j.date_posted || 'Recent')}</span>
+                  <span class="pixel-tag-chip">${escapeHtml(j.category || 'General')}</span>
+                </div>
+
+                <!-- Rejection Analysis Badge -->
+                <div style="margin-bottom:14px; padding:8px 10px; background:rgba(0,0,0,0.3); border-radius:8px; border-left:2px solid #fb7185;">
+                  <div style="font-family:var(--font-mono); font-size:10px; color:#fb7185; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:2px;">
+                    ${matchedIndicators.length > 0 ? '⚠️ Disqualification Signal' : '👤 Manual Disqualification'}
+                  </div>
+                  <div style="font-size:11px; color:var(--text-muted); line-height:1.4;">
+                    ${matchedIndicators.length > 0 ? 
+                      `Flagged for technical keywords: <strong style="color:#fff;">${matchedIndicators.join(', ')}</strong>` : 
+                      `Manually rejected as unaligned by operator.`}
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-hairline-footer">
+                <div class="card-footer-actions">
+                  <button class="card-action-btn" title="Restore to Radar discovery catalog" onclick="event.stopPropagation(); markJobStatus('${j.id}', 'untracked');">
+                    ↩️ Restore to Radar
+                  </button>
+                </div>
+                <a href="${j.url}" target="_blank" rel="noopener noreferrer" class="pill-cta-ink" onclick="event.stopPropagation()" style="background:#262626; color:#fff; border:1px solid rgba(255,255,255,0.1);">
+                  View Listing ↗
+                </a>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function exportTrashDataset() {
+      let trashedRecords = JSON.parse(localStorage.getItem('garv_trashed_records') || '{}');
+      const dataList = Object.values(trashedRecords);
+      if (dataList.length === 0) {
+        showToast('Trash compartment is empty. Nothing to export.');
+        return;
+      }
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(dataList, null, 2));
+      const a = document.createElement('a');
+      a.setAttribute("href", dataStr);
+      a.setAttribute("download", "trashed_jobs.json");
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      showToast(`📥 Exported ${dataList.length} trashed jobs (trashed_jobs.json)`);
+    }
+
+    function restoreAllTrashed() {
+      let trashedIds = Object.keys(userStatus).filter(id => userStatus[id] === 'trashed');
+      if (trashedIds.length === 0) {
+        showToast("Trash compartment is already empty");
+        return;
+      }
+      trashedIds.forEach(id => {
+        delete userStatus[id];
+      });
+      localStorage.setItem('garv_job_status', JSON.stringify(userStatus));
+      localStorage.removeItem('garv_trashed_records');
+      updateLedgerMetrics();
+      renderRadar();
+      renderTrashCompartment();
+      showToast(`↩️ Restored ${trashedIds.length} listings back to Radar`);
+    }
+
+    document.getElementById('trash-search-input')?.addEventListener('input', renderTrashCompartment);
 
     // ESC key to close inspector & strategy modal
     window.addEventListener('keydown', (e) => {
