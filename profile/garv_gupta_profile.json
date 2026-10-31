@@ -69,6 +69,16 @@
       "conversion_weight": 0.88
     }
   ],
+  "languages": {
+    "fluent": ["English", "Hindi"],
+    "notes": "Garv speaks English and Hindi only. Any job requiring a 3rd language (Arabic, German, French, Spanish, Italian, Japanese, Korean, Mandarin, Dutch, etc.) is strictly disqualified.",
+    "hard_disqualify_languages": [
+      "Arabic", "German", "French", "Spanish", "Italian", "Dutch", 
+      "Japanese", "Mandarin", "Chinese", "Korean", "Portuguese", 
+      "Russian", "Swedish", "Danish", "Norwegian", "Finnish", 
+      "Turkish", "Polish", "Vietnamese", "Thai", "Bahasa"
+    ]
+  },
   "negative_keywords": [
     "software engineer",
     "software engineering",
@@ -84,11 +94,21 @@
     "machine learning engineer",
     "deep learning",
     "nlp engineer",
+    "research engineer",
+    "data scientist",
     "clinical",
     "nursing",
     "veterinary",
     "biologist",
-    "chemist"
+    "chemist",
+    "arabic-speaking",
+    "german-speaking",
+    "french-speaking",
+    "spanish-speaking",
+    "korean-speaking",
+    "bilingual korean",
+    "bilingual spanish",
+    "bilingual french"
   ],
   "preferred_locations": [
     {

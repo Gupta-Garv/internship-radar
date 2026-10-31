@@ -358,7 +358,13 @@ def evaluate_compensation(job):
     }
 
 def score_job(job, profile):
+    from engine.harvester import requires_foreign_language
     title = job["title"]
+    
+    # Strictly reject any job with a hard 3rd language requirement (Garv speaks English & Hindi only)
+    if requires_foreign_language(title, job.get("salary_raw", "")):
+        return None
+        
     category = categorize_role(title, job.get("raw_department", ""))
     loc_eval = evaluate_location(job["location"], title)
     visa_eval = evaluate_visa_sponsorship(job, loc_eval)

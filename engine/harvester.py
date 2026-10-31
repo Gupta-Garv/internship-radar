@@ -11,10 +11,97 @@ NEGATIVE_KEYWORDS = [
     'devops', 'infrastructure engineer', 'site reliability', 'sre',
     'ml engineer', 'machine learning engineer', 'deep learning',
     'nlp engineer', 'computer vision', 'robotics engineer',
+    'research engineer', 'data scientist', 'deep learning engineer',
     'clinical', 'nursing', 'veterinary', 'physician', 'biologist',
     'chemist', 'hardware engineer', 'silicon', 'embedded system',
     'security engineer', 'internal audit'
 ]
+
+# Foreign languages to strictly disqualify (Garv Gupta is fluent in English and Hindi ONLY)
+FOREIGN_LANGUAGES = [
+    'arabic', 'german', 'deutsch', 'french', 'français', 'spanish', 'español',
+    'italian', 'italiano', 'dutch', 'nederlands', 'japanese', 'mandarin',
+    'chinese', 'cantonese', 'korean', 'swedish', 'danish', 'norwegian',
+    'finnish', 'portuguese', 'português', 'russian', 'turkish', 'polish',
+    'vietnamese', 'thai', 'bahasa', 'indonesian', 'malay', 'hebrew', 'greek',
+    'czech', 'hungarian', 'tagalog', 'romanian'
+]
+
+_LANG_OR_PATTERN = '|'.join(FOREIGN_LANGUAGES)
+
+TITLE_LANG_REGEX = re.compile(
+    rf'''(?x)
+    (?:
+        \b(?:{_LANG_OR_PATTERN})\s*[-–/]\s*(?:fluent|speaking|speaker|bilingual|required|native)\b
+        |
+        \bbilingual\s*[-–/]?\s*(?:{_LANG_OR_PATTERN})\b
+        |
+        \((?:{_LANG_OR_PATTERN})\s*/\s*english\)
+        |
+        \(\s*english\s*/\s*(?:{_LANG_OR_PATTERN})\)
+        |
+        \b(?:{_LANG_OR_PATTERN})\s+(?:speaking|speaker|fluent)\b
+        |
+        \bfluent\s+in\s+(?:{_LANG_OR_PATTERN})\b
+    )
+    ''',
+    re.IGNORECASE
+)
+
+DESC_HARD_LANG_REGEX = re.compile(
+    rf'''(?x)
+    (?:
+        # fluent in X / fluent in English and X / fluent in X and English
+        \b(?:fluent|fluency|business\s+fluent|native|proficient|proficiency)\s+(?:in|of)?\s*(?:both\s+)?(?:english\s+(?:and|&)\s+)?(?:{_LANG_OR_PATTERN})\b
+        |
+        \b(?:english\s+(?:and|&)\s+({_LANG_OR_PATTERN}))\b
+        |
+        \b(?:({_LANG_OR_PATTERN})\s+(?:and|&)\s+english)\b
+        |
+        \b(?:{_LANG_OR_PATTERN})\s+(?:language\s+skills?\s+)?(?:is\s+)?(?:required|mandatory|essential|a\s+must)\b
+        |
+        \b(?:spoken\s+and\s+written|written\s+and\s+spoken)\s+(?:{_LANG_OR_PATTERN})\b
+        |
+        \b(?:{_LANG_OR_PATTERN})\s*\((?:written\s+and\s+spoken|spoken\s+and\s+written|verbal\s+and\s+written)\)
+        |
+        \b(?:jlpt\s*n[1-3]|hsk\s*[4-6]|(?:german|french|spanish|italian)\s+[bc][12])\b
+        |
+        \b(?:verhandlungssicher|fließend\s+deutsch|deutschkenntnisse|langue\s+maternelle|courant\s+en\s+français)\b
+        |
+        \b(?:must\s+speak|must\s+be\s+fluent\s+in)\s+(?:{_LANG_OR_PATTERN})\b
+    )
+    ''',
+    re.IGNORECASE
+)
+
+def requires_foreign_language(title, text=""):
+    """
+    Checks if a job posting has a hard requirement for a 3rd language (non-English, non-Hindi).
+    Returns True if disqualified, False otherwise.
+    """
+    if TITLE_LANG_REGEX.search(title):
+        return True
+
+    if text:
+        clean_text = text.replace('\n', ' ').replace('\r', ' ')
+        for m in DESC_HARD_LANG_REGEX.finditer(clean_text):
+            matched_str = m.group(0).lower()
+            # Guard against English verb 'polish'
+            if 'polish' in matched_str and not ('polish language' in matched_str or 'fluent in polish' in matched_str):
+                continue
+
+            start, end = m.span()
+            ctx_start = max(0, start - 60)
+            ctx_end = min(len(clean_text), end + 60)
+            surrounding = clean_text[ctx_start:ctx_end].lower()
+
+            # Skip if explicitly optional/bonus/plus
+            if any(opt in surrounding for opt in ['plus', 'bonus', 'nice to have', 'advantageous', 'not required', 'optional', 'preferred but not', 'not a must']):
+                continue
+
+            return True
+
+    return False
 
 INTERN_PATTERN = re.compile(r'\b(intern|internship|co-op|coop|apm|fellow|fellowship|summer analyst)\b', re.IGNORECASE)
 
@@ -24,18 +111,22 @@ def generate_job_id(company, title, location):
     raw = f"{company.strip().lower()}_{title.strip().lower()}_{str(location).strip().lower()}"
     return hashlib.md5(raw.encode('utf-8')).hexdigest()
 
-def is_non_tech_internship(title):
+def is_non_tech_internship(title, text=""):
     lower_title = title.lower()
-    
+
     # Must match intern pattern
     if not INTERN_PATTERN.search(lower_title):
         return False
-        
+
     # Must NOT contain hard technical/engineering/medical keywords
     for neg in NEGATIVE_KEYWORDS:
         if neg in lower_title:
             return False
-            
+
+    # Must NOT require a 3rd language (Garv only speaks English and Hindi)
+    if requires_foreign_language(title, text):
+        return False
+
     return True
 
 def fetch_greenhouse_board(board_info):
@@ -51,7 +142,8 @@ def fetch_greenhouse_board(board_info):
             data = r.json()
             for j in data.get("jobs", []):
                 title = j.get("title", "")
-                if is_non_tech_internship(title):
+                raw_content = html.unescape(j.get("content", ""))
+                if is_non_tech_internship(title, raw_content):
                     loc_name = j.get("location", {}).get("name", "Remote / Unspecified")
                     job_url = j.get("absolute_url", "")
                     job_id = generate_job_id(company, title, loc_name)
@@ -68,8 +160,6 @@ def fetch_greenhouse_board(board_info):
                             date_display = dt.strftime("%b %d, %Y")
                         except Exception:
                             pass
-                    
-                    raw_content = html.unescape(j.get("content", ""))
                     
                     jobs.append({
                         "id": job_id,
@@ -99,7 +189,8 @@ def fetch_lever_board(board_info):
             postings = r.json()
             for p in postings:
                 title = p.get("text", "")
-                if is_non_tech_internship(title):
+                raw_desc = (p.get("descriptionPlain", "") + " " + p.get("additionalPlain", ""))
+                if is_non_tech_internship(title, raw_desc):
                     loc_name = p.get("categories", {}).get("location", "Remote / Unspecified")
                     job_url = p.get("hostedUrl", "")
                     job_id = generate_job_id(company, title, loc_name)
@@ -116,8 +207,6 @@ def fetch_lever_board(board_info):
                         except Exception:
                             pass
                             
-                    raw_desc = (p.get("descriptionPlain", "") + " " + p.get("additionalPlain", ""))
-                    
                     jobs.append({
                         "id": job_id,
                         "company": company,
@@ -146,7 +235,8 @@ def fetch_ashby_board(board_info):
             data = r.json()
             for j in data.get("jobs", []):
                 title = j.get("title", "")
-                if is_non_tech_internship(title):
+                desc_plain = j.get("descriptionPlain", "")
+                if is_non_tech_internship(title, desc_plain):
                     loc_name = j.get("location") or "Remote / Unspecified"
                     job_url = j.get("jobUrl") or j.get("applyUrl") or ""
                     job_id = generate_job_id(company, title, loc_name)
@@ -164,8 +254,6 @@ def fetch_ashby_board(board_info):
                         except Exception:
                             pass
                             
-                    desc_plain = j.get("descriptionPlain", "")
-                    
                     jobs.append({
                         "id": job_id,
                         "company": company,
@@ -220,7 +308,7 @@ def fetch_linkedin_guest(query_info):
                     job_url = link_m.group(1).split("?")[0]  # clean tracking params
                     salary_raw = salary_m.group(1).strip() if salary_m else ""
                     
-                    if is_non_tech_internship(title):
+                    if is_non_tech_internship(title, f"{title} {chunk}"):
                         job_id = generate_job_id(company, title, loc_name)
                         jobs.append({
                             "id": job_id,
@@ -277,7 +365,7 @@ def fetch_github_markdown_table(source_info):
                     if not job_url or not title or not company:
                         continue
                         
-                    if is_non_tech_internship(title):
+                    if is_non_tech_internship(title, line):
                         job_id = generate_job_id(company, title, location)
                         
                         # Parse date string like 'Oct 30'

@@ -44,8 +44,9 @@ def run_scan():
     scored_jobs = []
     for j in raw_jobs:
         score_data = score_job(j, profile)
-        j.update(score_data)
-        scored_jobs.append(j)
+        if score_data is not None:
+            j.update(score_data)
+            scored_jobs.append(j)
 
     print("🔔 Processing net-new alerts and desktop notifications...")
     new_alerts = process_alerts(scored_jobs)
