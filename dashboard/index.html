@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Internship Radar • Clean Modern Ledger</title>
-  
+
   <!-- Fonts: Geist Sans, Geist Mono, Silkscreen (Pixel Accent) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;450;500;600;700&family=Geist+Mono:wght@400;500;600&family=Silkscreen&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;450;500;600;700&family=Geist+Mono:wght@400;500;600&family=Silkscreen&display=swap"
+    rel="stylesheet">
 
   <style>
     /* ==========================================================================
@@ -26,7 +29,7 @@
       --border-hover: rgba(255, 255, 255, 0.16);
       --ink: #ffffff;
       --ink-inverse: #0a0a0a;
-      
+
       /* Semantic Status */
       --status-green: #34d399;
       --status-green-bg: rgba(52, 211, 153, 0.1);
@@ -471,19 +474,29 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-top: 14px;
+      gap: 8px;
+      padding-top: 13px;
       border-top: 1px solid var(--border-subtle);
       margin-top: auto;
     }
 
+    .card-footer-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: nowrap;
+    }
+
     .view-affordance {
-      font-family: var(--font-pixel);
+      font-family: var(--font-mono);
       font-size: 10px;
       color: var(--text-muted);
       display: inline-flex;
       align-items: center;
       gap: 4px;
-      transition: color 0.15s;
+      margin-bottom: 12px;
+      letter-spacing: 0.02em;
+      transition: color 0.15s ease;
     }
 
     .card-tray-wrapper:hover .view-affordance {
@@ -494,31 +507,44 @@
       background: var(--ink);
       color: var(--ink-inverse);
       font-family: var(--font-sans);
-      font-size: 12px;
-      font-weight: 500;
+      font-size: 11px;
+      font-weight: 600;
       padding: 6px 14px;
       border-radius: 9999px;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 4px;
-      transition: opacity 0.15s;
+      white-space: nowrap !important;
+      flex-shrink: 0;
+      line-height: 1.2;
+      transition: opacity 0.15s, transform 0.15s;
     }
 
     .pill-cta-ink:hover {
-      opacity: 0.9;
+      opacity: 0.92;
+      transform: translateY(-0.5px);
+    }
+
+    .pill-cta-ink:active {
+      transform: scale(0.98);
     }
 
     .card-action-btn {
       font-family: var(--font-sans);
       font-size: 11px;
       font-weight: 500;
-      padding: 4px 10px;
+      padding: 5px 11px;
       border-radius: 9999px;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 4px;
+      white-space: nowrap !important;
+      flex-shrink: 0;
+      line-height: 1.2;
       transition: all 0.15s ease;
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid var(--border-subtle);
@@ -694,8 +720,15 @@
     }
 
     @keyframes ledgerFadeIn {
-      from { opacity: 0; transform: translateY(4px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(4px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     /* ==========================================================================
@@ -818,7 +851,8 @@
       margin-bottom: 6px;
     }
 
-    .studio-field input, .studio-field select {
+    .studio-field input,
+    .studio-field select {
       width: 100%;
       background: var(--card-sheet);
       border: 1px solid var(--border-subtle);
@@ -844,7 +878,9 @@
       resize: vertical;
     }
 
-    .studio-field input:focus, .studio-field select:focus, .studio-field textarea:focus {
+    .studio-field input:focus,
+    .studio-field select:focus,
+    .studio-field textarea:focus {
       border-color: rgba(255, 255, 255, 0.25);
     }
 
@@ -1001,8 +1037,15 @@
     }
 
     @keyframes pulse-urgent {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.6; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.6;
+      }
     }
 
     .hackathon-countdown-pill .deadline-note {
@@ -1070,22 +1113,40 @@
         margin: 0 !important;
         padding: 0 !important;
       }
-      .dock-wrapper, .ledger-hero, .filter-tray, .studio-controls-sheet, .studio-tab-bar, .cv-toolbar, .halo-toast, #view-radar, #view-pipeline, #view-hackathons, #view-dna, #inspector-overlay, #strategy-overlay, #studio-view-pitches {
+
+      .dock-wrapper,
+      .ledger-hero,
+      .filter-tray,
+      .studio-controls-sheet,
+      .studio-tab-bar,
+      .cv-toolbar,
+      .halo-toast,
+      #view-radar,
+      #view-pipeline,
+      #view-hackathons,
+      #view-dna,
+      #inspector-overlay,
+      #strategy-overlay,
+      #studio-view-pitches {
         display: none !important;
       }
+
       .ledger-container {
         max-width: 100% !important;
         padding: 0 !important;
         margin: 0 !important;
       }
+
       #view-studio {
         display: block !important;
         padding: 0 !important;
         margin: 0 !important;
       }
+
       .studio-wrapper {
         display: block !important;
       }
+
       #cv-paper-sheet {
         box-shadow: none !important;
         border: none !important;
@@ -1095,6 +1156,7 @@
         width: 100% !important;
         max-width: 100% !important;
       }
+
       @page {
         size: A4;
         margin: 10mm 14mm;
@@ -1131,99 +1193,94 @@
     }
   </style>
 </head>
+
 <body>
 
-<div class="ledger-container">
+  <div class="ledger-container">
 
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        TOP DOCK / FLOATING NAVIGATION (CULT UI STYLE)
        ========================================================================== -->
-  <div class="dock-wrapper">
-    <nav class="dock-island">
-      <button class="dock-pill active" onclick="navigateLedger('radar')">
-        <span>Radar</span>
-        <span class="dock-badge" id="dock-count-radar">350</span>
-      </button>
-      <button class="dock-pill" onclick="navigateLedger('pipeline')">
-        <span>Pipeline</span>
-        <span class="dock-badge" id="dock-count-pipeline">0</span>
-      </button>
-      <button class="dock-pill" onclick="navigateLedger('studio')">
-        <span>Pitch Studio</span>
-      </button>
-      <button class="dock-pill" onclick="navigateLedger('hackathons')">
-        <span>🏆 Hackathons</span>
-        <span class="dock-badge" id="dock-count-hackathons" style="background:rgba(251,191,36,0.18); color:#fbbf24;">16</span>
-      </button>
-      <button class="dock-pill" onclick="navigateLedger('dna')">
-        <span>Garv's DNA</span>
-      </button>
-    </nav>
-  </div>
+    <div class="dock-wrapper">
+      <nav class="dock-island">
+        <button class="dock-pill active" onclick="navigateLedger('radar')">
+          <span>Radar</span>
+          <span class="dock-badge" id="dock-count-radar">350</span>
+        </button>
+        <button class="dock-pill" onclick="navigateLedger('pipeline')">
+          <span>Pipeline</span>
+          <span class="dock-badge" id="dock-count-pipeline">0</span>
+        </button>
+        <button class="dock-pill" onclick="navigateLedger('studio')">
+          <span>Pitch Studio</span>
+        </button>
+        <button class="dock-pill" onclick="navigateLedger('hackathons')">
+          <span>🏆 Hackathons</span>
+          <span class="dock-badge" id="dock-count-hackathons"
+            style="background:rgba(251,191,36,0.18); color:#fbbf24;">16</span>
+        </button>
+        <button class="dock-pill" onclick="navigateLedger('dna')">
+          <span>Garv's DNA</span>
+        </button>
+      </nav>
+    </div>
 
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        HERO: LEFT-ALIGNED LEDGER HEADER
        ========================================================================== -->
-  <header class="ledger-hero" id="main-ledger-hero">
-    <div class="trust-chip">
-      <div class="trust-indicator"></div>
-      <span class="trust-text">Direct ATS Harvester // 75+ Elite Boards</span>
-    </div>
+    <header class="ledger-hero" id="main-ledger-hero">
+      <div class="trust-chip">
+        <div class="trust-indicator"></div>
+        <span class="trust-text">Direct ATS Harvester // 75+ Elite Boards</span>
+      </div>
 
-    <h1 class="hero-title">
-      Internship Radar, <span class="pixel-phrase">unfiltered</span>.
-    </h1>
+      <h1 class="hero-title">
+        Internship Radar, <span class="pixel-phrase">unfiltered</span>.
+      </h1>
 
-    <p class="two-tone-desc">
-      <strong>Real-time postings scraped straight from Greenhouse, Lever, and Ashby APIs.</strong>
-      Bypassing 1,000+ applicant LinkedIn queues with verified direct links and tailored recruiter outreach for non-technical operators.
-    </p>
+      <p class="two-tone-desc">
+        <strong>Real-time postings scraped straight from Greenhouse, Lever, and Ashby APIs.</strong>
+        Bypassing 1,000+ applicant LinkedIn queues with verified direct links and tailored recruiter outreach for
+        non-technical operators.
+      </p>
 
-    <!-- Ledger Metric Strip -->
-    <div class="ledger-strip">
-      <div class="ledger-stat">
-        <span class="stat-num" id="metric-total">392</span>
-        <span class="stat-label">Non-Tech Internships</span>
+      <!-- Ledger Metric Strip -->
+      <div class="ledger-strip">
+        <div class="ledger-stat">
+          <span class="stat-num" id="metric-total">392</span>
+          <span class="stat-label">Non-Tech Internships</span>
+        </div>
+        <div class="ledger-stat">
+          <span class="stat-num" id="metric-tier1" style="color:var(--status-green);">19</span>
+          <span class="stat-label">Tier 1 Fits (&gt;88%)</span>
+        </div>
+        <div class="ledger-stat">
+          <span class="stat-num" id="metric-visa" style="color:#34d399;">41</span>
+          <span class="stat-label">🛂 Visa / Relo Sponsored</span>
+        </div>
+        <div class="ledger-stat" onclick="navigateLedger('hackathons')" style="cursor:pointer;"
+          title="View Live Hackathon Arena">
+          <span class="stat-num" id="metric-hackathons" style="color:#fbbf24;">$2.67M</span>
+          <span class="stat-label">🏆 Live Hackathon Capital</span>
+        </div>
+        <div class="ledger-stat">
+          <span class="stat-num" id="metric-tracked" style="color:var(--status-amber);">0</span>
+          <span class="stat-label">Tracked In Pipeline</span>
+        </div>
       </div>
-      <div class="ledger-stat">
-        <span class="stat-num" id="metric-tier1" style="color:var(--status-green);">19</span>
-        <span class="stat-label">Tier 1 Fits (&gt;88%)</span>
-      </div>
-      <div class="ledger-stat">
-        <span class="stat-num" id="metric-visa" style="color:#34d399;">41</span>
-        <span class="stat-label">🛂 Visa / Relo Sponsored</span>
-      </div>
-      <div class="ledger-stat" onclick="navigateLedger('hackathons')" style="cursor:pointer;" title="View Live Hackathon Arena">
-        <span class="stat-num" id="metric-hackathons" style="color:#fbbf24;">$2.67M</span>
-        <span class="stat-label">🏆 Live Hackathon Capital</span>
-      </div>
-      <div class="ledger-stat">
-        <span class="stat-num" id="metric-tracked" style="color:var(--status-amber);">0</span>
-        <span class="stat-label">Tracked In Pipeline</span>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        PAGE 1: LIVE RADAR (DISCOVERY CATALOG)
        ========================================================================== -->
-  <section id="view-radar" class="ledger-page-view active">
-    
-    <!-- Filter & Search Tray -->
-    <div class="filter-tray">
-      <div class="search-row">
-        <input type="text" id="radar-search-input" class="search-box" placeholder="Filter by company, role title, or city (e.g. Cloudflare, Databricks, APM, London, Lisbon, Remote)...">
-      </div>
+    <section id="view-radar" class="ledger-page-view active">
 
-      <!-- Sorting Controls -->
-      <div class="filter-group" id="filter-sorting">
-        <span class="filter-eyebrow">Sort:</span>
-        <button class="pill-filter active" data-sort="latest">⚡ Latest Published First (Default)</button>
-        <button class="pill-filter" data-sort="pay">💰 Highest Pay First</button>
-        <button class="pill-filter" data-sort="potential">🎯 Most Potential (Highest Fit %)</button>
-        <button class="pill-filter" data-sort="new">✨ Just Discovered</button>
-        <button class="pill-filter" data-sort="alpha">🏢 Company A–Z</button>
-      </div>
+      <!-- Filter & Search Tray -->
+      <div class="filter-tray">
+        <div class="search-row">
+          <input type="text" id="radar-search-input" class="search-box"
+            placeholder="Filter by company, role title, or city (e.g. Cloudflare, Databricks, APM, London, Lisbon, Remote)...">
+        </div>
 
       <!-- Quick Potential & Freshness Facets -->
       <div class="filter-group" id="filter-facets">
@@ -1238,594 +1295,677 @@
       </div>
 
       <!-- Role Tracks -->
-      <div class="filter-group" id="filter-tracks">
-        <span class="filter-eyebrow">Track:</span>
-        <button class="pill-filter active" data-cat="all">All Tracks</button>
-        <button class="pill-filter" data-cat="Product / APM">Product / APM</button>
-        <button class="pill-filter" data-cat="BizOps & Strategy">BizOps &amp; Strategy</button>
-        <button class="pill-filter" data-cat="Growth & Marketing">Growth &amp; Marketing</button>
-        <button class="pill-filter" data-cat="Design & UX">Product Design</button>
-        <button class="pill-filter" data-cat="Finance & Analytics">Finance &amp; Analytics</button>
+        <div class="filter-group" id="filter-tracks">
+          <span class="filter-eyebrow">Track:</span>
+          <button class="pill-filter active" data-cat="all">All Tracks</button>
+          <button class="pill-filter" data-cat="Product / APM">Product / APM</button>
+          <button class="pill-filter" data-cat="BizOps & Strategy">BizOps &amp; Strategy</button>
+          <button class="pill-filter" data-cat="Growth & Marketing">Growth &amp; Marketing</button>
+          <button class="pill-filter" data-cat="Design & UX">Product Design</button>
+          <button class="pill-filter" data-cat="Finance & Analytics">Finance &amp; Analytics</button>
+        </div>
+
+        <!-- Locations / Hubs -->
+        <div class="filter-group" id="filter-regions">
+          <span class="filter-eyebrow">Hub:</span>
+          <button class="pill-filter active" data-reg="all">All Locations</button>
+          <button class="pill-filter" data-reg="China / HK / TW">🇨🇳 China &amp; HK</button>
+          <button class="pill-filter" data-reg="Japan">🇯🇵 Japan (Tokyo)</button>
+          <button class="pill-filter" data-reg="Singapore">🇸🇬 Singapore</button>
+          <button class="pill-filter" data-reg="UAE / Middle East">🇦🇪 UAE (Dubai)</button>
+          <button class="pill-filter" data-reg="Germany">🇩🇪 Germany</button>
+          <button class="pill-filter" data-reg="Netherlands">🇳🇱 Netherlands</button>
+          <button class="pill-filter" data-reg="Ireland">🇮🇪 Ireland</button>
+          <button class="pill-filter" data-reg="Nordics / Swiss">🇨🇭 Nordics &amp; Swiss</button>
+          <button class="pill-filter" data-reg="Australia / NZ">🇦🇺 Australia &amp; NZ</button>
+          <button class="pill-filter" data-reg="Remote">🌐 Remote Global</button>
+          <button class="pill-filter" data-reg="India">🇮🇳 India</button>
+          <button class="pill-filter" data-reg="US / Canada">🇺🇸 US (Strict Visa)</button>
+        </div>
       </div>
 
-      <!-- Locations / Hubs -->
-      <div class="filter-group" id="filter-regions">
-        <span class="filter-eyebrow">Hub:</span>
-        <button class="pill-filter active" data-reg="all">All Locations</button>
-        <button class="pill-filter" data-reg="China / HK / TW">🇨🇳 China &amp; HK</button>
-        <button class="pill-filter" data-reg="Japan">🇯🇵 Japan (Tokyo)</button>
-        <button class="pill-filter" data-reg="Singapore">🇸🇬 Singapore</button>
-        <button class="pill-filter" data-reg="UAE / Middle East">🇦🇪 UAE (Dubai)</button>
-        <button class="pill-filter" data-reg="Germany">🇩🇪 Germany</button>
-        <button class="pill-filter" data-reg="Netherlands">🇳🇱 Netherlands</button>
-        <button class="pill-filter" data-reg="Ireland">🇮🇪 Ireland</button>
-        <button class="pill-filter" data-reg="Nordics / Swiss">🇨🇭 Nordics &amp; Swiss</button>
-        <button class="pill-filter" data-reg="Australia / NZ">🇦🇺 Australia &amp; NZ</button>
-        <button class="pill-filter" data-reg="Remote">🌐 Remote Global</button>
-        <button class="pill-filter" data-reg="India">🇮🇳 India</button>
-        <button class="pill-filter" data-reg="US / Canada">🇺🇸 US (Strict Visa)</button>
+      <!-- Active Filter Counter & Order Indicator -->
+      <div
+        style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; font-family:var(--font-mono); font-size:11px; color:var(--text-muted); padding:0 4px;">
+        <div>
+          Showing <strong id="filter-active-count" style="color:var(--text-primary);">392</strong> of <span
+            id="filter-total-count">392</span> internships
+        </div>
+        <div id="filter-sort-label" style="color:var(--text-dim);">
+          Order: Latest Published on top
+        </div>
       </div>
-    </div>
 
-    <!-- Active Filter Counter & Order Indicator -->
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; font-family:var(--font-mono); font-size:11px; color:var(--text-muted); padding:0 4px;">
-      <div>
-        Showing <strong id="filter-active-count" style="color:var(--text-primary);">392</strong> of <span id="filter-total-count">392</span> internships
+      <!-- Catalog Grid -->
+      <div class="catalog-grid" id="radar-catalog">
+        <!-- Injected via JavaScript -->
       </div>
-      <div id="filter-sort-label" style="color:var(--text-dim);">
-        Order: Latest Published on top
-      </div>
-    </div>
+    </section>
 
-    <!-- Catalog Grid -->
-    <div class="catalog-grid" id="radar-catalog">
-      <!-- Injected via JavaScript -->
-    </div>
-  </section>
-
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        PAGE 2: PIPELINE KANBAN BOARD
        ========================================================================== -->
-  <section id="view-pipeline" class="ledger-page-view">
-    <div class="kanban-grid">
-      <!-- 1. To Apply -->
-      <div class="kanban-column-tray">
-        <div class="kanban-header">
-          <span class="kanban-column-title">📌 To Apply</span>
-          <span class="kanban-counter" id="k-count-to_apply">0</span>
+    <section id="view-pipeline" class="ledger-page-view">
+      <div class="kanban-grid">
+        <!-- 1. To Apply -->
+        <div class="kanban-column-tray">
+          <div class="kanban-header">
+            <span class="kanban-column-title">📌 To Apply</span>
+            <span class="kanban-counter" id="k-count-to_apply">0</span>
+          </div>
+          <div id="k-list-to_apply"></div>
         </div>
-        <div id="k-list-to_apply"></div>
-      </div>
 
-      <!-- 2. Applied -->
-      <div class="kanban-column-tray">
-        <div class="kanban-header">
-          <span class="kanban-column-title">📨 Applied</span>
-          <span class="kanban-counter" id="k-count-applied">0</span>
+        <!-- 2. Applied -->
+        <div class="kanban-column-tray">
+          <div class="kanban-header">
+            <span class="kanban-column-title">📨 Applied</span>
+            <span class="kanban-counter" id="k-count-applied">0</span>
+          </div>
+          <div id="k-list-applied"></div>
         </div>
-        <div id="k-list-applied"></div>
-      </div>
 
-      <!-- 3. Interviewing -->
-      <div class="kanban-column-tray">
-        <div class="kanban-header">
-          <span class="kanban-column-title" style="color:var(--status-blue);">🎯 Interviewing</span>
-          <span class="kanban-counter" id="k-count-interviewing">0</span>
+        <!-- 3. Interviewing -->
+        <div class="kanban-column-tray">
+          <div class="kanban-header">
+            <span class="kanban-column-title" style="color:var(--status-blue);">🎯 Interviewing</span>
+            <span class="kanban-counter" id="k-count-interviewing">0</span>
+          </div>
+          <div id="k-list-interviewing"></div>
         </div>
-        <div id="k-list-interviewing"></div>
-      </div>
 
-      <!-- 4. Offers -->
-      <div class="kanban-column-tray">
-        <div class="kanban-header">
-          <span class="kanban-column-title" style="color:var(--status-green);">🏆 Offer</span>
-          <span class="kanban-counter" id="k-count-offer">0</span>
+        <!-- 4. Offers -->
+        <div class="kanban-column-tray">
+          <div class="kanban-header">
+            <span class="kanban-column-title" style="color:var(--status-green);">🏆 Offer</span>
+            <span class="kanban-counter" id="k-count-offer">0</span>
+          </div>
+          <div id="k-list-offer"></div>
         </div>
-        <div id="k-list-offer"></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        PAGE 3: COLD PITCH & AI CV STUDIO
        ========================================================================== -->
-  <section id="view-studio" class="ledger-page-view">
-    
-    <!-- Studio Sub-Navigation -->
-    <div class="studio-tab-bar">
-      <button class="studio-tab-btn active" id="tab-btn-cv" onclick="switchStudioTab('cv')">
-        📄 AI Tailored CV &amp; 1-Click PDF
-      </button>
-      <button class="studio-tab-btn" id="tab-btn-qa" onclick="switchStudioTab('qa')">
-        ✍️ Application Q&amp;A Solver (Human Voice)
-      </button>
-      <button class="studio-tab-btn" id="tab-btn-pitches" onclick="switchStudioTab('pitches')">
-        💬 Recruiter Outreach Messages
-      </button>
-    </div>
+    <section id="view-studio" class="ledger-page-view">
 
-    <!-- SUB-TAB 1: AI TAILORED CV & PDF -->
-    <div id="studio-view-cv" class="studio-wrapper">
-      
-      <!-- Controls Tray (Left) -->
-      <div class="studio-controls-sheet">
-        <div style="display:flex; justify-content:space-between; align-items:center;">
-          <span class="inspector-section-label" style="margin-bottom:0;">AI Tailoring Engine</span>
-          <button class="copy-pill-action" style="font-size:10px; padding:3px 10px;" onclick="autofillActiveJobToCV()">
-            ⚡ Autofill from Active Job
+      <!-- Studio Sub-Navigation -->
+      <div class="studio-tab-bar">
+        <button class="studio-tab-btn active" id="tab-btn-cv" onclick="switchStudioTab('cv')">
+          📄 AI Tailored CV &amp; 1-Click PDF
+        </button>
+        <button class="studio-tab-btn" id="tab-btn-qa" onclick="switchStudioTab('qa')">
+          ✍️ Application Q&amp;A Solver (Human Voice)
+        </button>
+        <button class="studio-tab-btn" id="tab-btn-pitches" onclick="switchStudioTab('pitches')">
+          💬 Recruiter Outreach Messages
+        </button>
+      </div>
+
+      <!-- SUB-TAB 1: AI TAILORED CV & PDF -->
+      <div id="studio-view-cv" class="studio-wrapper">
+
+        <!-- Controls Tray (Left) -->
+        <div class="studio-controls-sheet">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="inspector-section-label" style="margin-bottom:0;">AI Tailoring Engine</span>
+            <button class="copy-pill-action" style="font-size:10px; padding:3px 10px;"
+              onclick="autofillActiveJobToCV()">
+              ⚡ Autofill from Active Job
+            </button>
+          </div>
+
+          <div class="studio-field">
+            <label>Target Company</label>
+            <input type="text" id="cv-comp" placeholder="e.g. Databricks, Celonis, Stripe" value="Databricks">
+          </div>
+
+          <div class="studio-field">
+            <label>Target Role Title</label>
+            <input type="text" id="cv-role" placeholder="e.g. Product Management Intern"
+              value="Product Management Intern (2027)">
+          </div>
+
+          <div class="studio-field">
+            <label>NVIDIA NIM Model</label>
+            <select id="cv-model">
+              <option value="mistralai/mistral-large-4-1t-a52b" selected>Mistral Large 4 (Ultra-Human Tone, Zero Fluff)
+              </option>
+              <option value="deepseek-ai/deepseek-v3">DeepSeek V3 (Fact-Aligned Precision)</option>
+              <option value="nvidia/llama-3.1-nemotron-70b-instruct">Nemotron 70B (Frontier Reasoning)</option>
+            </select>
+          </div>
+
+          <div class="studio-field">
+            <label>NVIDIA API Key</label>
+            <input type="password" id="cv-api-key" placeholder="nvapi-..."
+              value="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">
+          </div>
+
+          <div class="studio-field">
+            <label>Target Job Description (JD Prompt Box)</label>
+            <textarea id="cv-jd" rows="7"
+              placeholder="Paste the full Job Description, key responsibilities, or qualification requirements here..."></textarea>
+          </div>
+
+          <div
+            style="background:rgba(52,211,153,0.06); border:1px solid rgba(52,211,153,0.2); border-radius:12px; padding:12px; font-size:11px; line-height:1.5; color:#a7f3d0;">
+            <strong>🛡️ Anti-AI Guarantee:</strong> Bans synthetic clichés (<em>spearheaded, pivotal, dynamic, synergy,
+              delve</em>). Uses crisp operator verbs and strictly preserves Garv's authentic IIMB, Baidu $6.5k win, and
+            P&amp;L proof.
+          </div>
+
+          <button id="btn-generate-cv" class="pill-cta-ink"
+            style="width:100%; justify-content:center; padding:12px; font-weight:600; font-size:14px;"
+            onclick="generateTailoredCV()">
+            Draft 100% Human CV ⚡
           </button>
         </div>
 
-        <div class="studio-field">
-          <label>Target Company</label>
-          <input type="text" id="cv-comp" placeholder="e.g. Databricks, Celonis, Stripe" value="Databricks">
-        </div>
-
-        <div class="studio-field">
-          <label>Target Role Title</label>
-          <input type="text" id="cv-role" placeholder="e.g. Product Management Intern" value="Product Management Intern (2027)">
-        </div>
-
-        <div class="studio-field">
-          <label>NVIDIA NIM Model</label>
-          <select id="cv-model">
-            <option value="mistralai/mistral-large-4-1t-a52b" selected>Mistral Large 4 (Ultra-Human Tone, Zero Fluff)</option>
-            <option value="deepseek-ai/deepseek-v3">DeepSeek V3 (Fact-Aligned Precision)</option>
-            <option value="nvidia/llama-3.1-nemotron-70b-instruct">Nemotron 70B (Frontier Reasoning)</option>
-          </select>
-        </div>
-
-        <div class="studio-field">
-          <label>NVIDIA API Key</label>
-          <input type="password" id="cv-api-key" placeholder="nvapi-..." value="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">
-        </div>
-
-        <div class="studio-field">
-          <label>Target Job Description (JD Prompt Box)</label>
-          <textarea id="cv-jd" rows="7" placeholder="Paste the full Job Description, key responsibilities, or qualification requirements here..."></textarea>
-        </div>
-
-        <div style="background:rgba(52,211,153,0.06); border:1px solid rgba(52,211,153,0.2); border-radius:12px; padding:12px; font-size:11px; line-height:1.5; color:#a7f3d0;">
-          <strong>🛡️ Anti-AI Guarantee:</strong> Bans synthetic clichés (<em>spearheaded, pivotal, dynamic, synergy, delve</em>). Uses crisp operator verbs and strictly preserves Garv's authentic IIMB, Baidu $6.5k win, and P&amp;L proof.
-        </div>
-
-        <button id="btn-generate-cv" class="pill-cta-ink" style="width:100%; justify-content:center; padding:12px; font-weight:600; font-size:14px;" onclick="generateTailoredCV()">
-          Draft 100% Human CV ⚡
-        </button>
-      </div>
-
-      <!-- CV Preview & Actions (Right) -->
-      <div>
-        <div class="cv-toolbar">
-          <div style="display:flex; align-items:center; gap:8px;">
-            <span class="inspector-section-label" style="margin-bottom:0;">Live ATS Paper Preview</span>
-            <span id="cv-status-pill" class="score-chip tier1" style="font-size:10px;">Ready</span>
-          </div>
-          <div style="display:flex; gap:8px;">
-            <button class="pill-cta-ink" style="background:#34d399; color:#052e16; font-weight:600; padding:7px 18px;" onclick="downloadCVPdf()">
-              Download Clean PDF 📄
-            </button>
-            <button class="copy-pill-action" id="btn-edit-mode" onclick="toggleEditInPlace()">
-              ✏️ Edit in Place
-            </button>
-            <button class="copy-pill-action" onclick="copyCVContent()">
-              📋 Copy Text
-            </button>
-          </div>
-        </div>
-
-        <!-- The White Paper Sheet -->
-        <div id="cv-paper-sheet" class="cv-paper-preview">
-          <h1>GARV GUPTA</h1>
-          <div class="contact-line">
-            +91 7709732662 | garv.gupta07@gmail.com | <a href="https://garvgupta.app" target="_blank" style="color:#111; text-decoration:none;">garvgupta.app</a> | <a href="https://linkedin.com/in/garv-gupta07" target="_blank" style="color:#111; text-decoration:none;">linkedin.com/in/garv-gupta07</a> | Open to Relocate Globally
+        <!-- CV Preview & Actions (Right) -->
+        <div>
+          <div class="cv-toolbar">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="inspector-section-label" style="margin-bottom:0;">Live ATS Paper Preview</span>
+              <span id="cv-status-pill" class="score-chip tier1" style="font-size:10px;">Ready</span>
+            </div>
+            <div style="display:flex; gap:8px;">
+              <button class="pill-cta-ink" style="background:#34d399; color:#052e16; font-weight:600; padding:7px 18px;"
+                onclick="downloadCVPdf()">
+                Download Clean PDF 📄
+              </button>
+              <button class="copy-pill-action" id="btn-edit-mode" onclick="toggleEditInPlace()">
+                ✏️ Edit in Place
+              </button>
+              <button class="copy-pill-action" onclick="copyCVContent()">
+                📋 Copy Text
+              </button>
+            </div>
           </div>
 
-          <section>
-            <h2>Education</h2>
-            <div class="entry-row">
-              <span>Indian Institute of Management Bangalore (IIM Bangalore)</span>
-              <span>2024 – 2027</span>
+          <!-- The White Paper Sheet -->
+          <div id="cv-paper-sheet" class="cv-paper-preview">
+            <h1>GARV GUPTA</h1>
+            <div class="contact-line">
+              +91 7709732662 | garv.gupta07@gmail.com | <a href="https://garvgupta.app" target="_blank"
+                style="color:#111; text-decoration:none;">garvgupta.app</a> | <a
+                href="https://linkedin.com/in/garv-gupta07" target="_blank"
+                style="color:#111; text-decoration:none;">linkedin.com/in/garv-gupta07</a> | Open to Relocate Globally
             </div>
-            <div class="entry-sub">
-              <span>BBA in Digital and Business Entrepreneurship</span>
-              <span>Bangalore, India</span>
-            </div>
-            <div class="entry-row" style="margin-top:4px;">
-              <span>MIT ADT University</span>
-              <span>2024 – 2025</span>
-            </div>
-            <div class="entry-sub">
-              <span>BBA in Business Analytics (CGPA: 8.25, Transferred to IIM Bangalore)</span>
-              <span>Pune, India</span>
-            </div>
-          </section>
 
-          <section>
-            <h2>Selected Honors &amp; Achievements</h2>
-            <ul>
-              <li><strong>2nd Place &amp; Community Choice Award, Baidu MeDo AI Hackathon:</strong> Built a standalone product solo, competing against 8,424 global participants. Evaluated directly by Baidu product heads and AI algorithm architects. Awarded $6,500 prize pool.</li>
-              <li><strong>Top 10 Global Finalist (Solo), Zo Computers UI/UX Build Competition:</strong> Designed an end-to-end interface judged by startup founders and industry leaders. Won prizes valued at $1,000.</li>
-              <li><strong>Top 10 Global Finalist (Solo), Anything.com Remixathon:</strong> Selected in the UI/UX category out of 800+ international participants; featured on official Anything.com channels.</li>
-              <li><strong>1st Place, IIM Bangalore Annual Essay Competition:</strong> Placed 1st across 446 submissions institute-wide. Essay cited by a Microsoft AI researcher in an independent industry study.</li>
-              <li><strong>Audience &amp; Distribution:</strong> Generated 200,000+ organic LinkedIn impressions and 80k+ Instagram impressions around AI product development.</li>
-            </ul>
-          </section>
+            <section>
+              <h2>Education</h2>
+              <div class="entry-row">
+                <span>Indian Institute of Management Bangalore (IIM Bangalore)</span>
+                <span>2024 – 2027</span>
+              </div>
+              <div class="entry-sub">
+                <span>BBA in Digital and Business Entrepreneurship</span>
+                <span>Bangalore, India</span>
+              </div>
+              <div class="entry-row" style="margin-top:4px;">
+                <span>MIT ADT University</span>
+                <span>2024 – 2025</span>
+              </div>
+              <div class="entry-sub">
+                <span>BBA in Business Analytics (CGPA: 8.25, Transferred to IIM Bangalore)</span>
+                <span>Pune, India</span>
+              </div>
+            </section>
 
-          <section>
-            <h2>Product &amp; Operations Experience</h2>
-            <div class="entry-row">
-              <span>AnybodyCanBake</span>
-              <span>Jan 2026 – Present</span>
-            </div>
-            <div class="entry-sub">
-              <span>Owner and Operations Lead</span>
-              <span>Remote / Hybrid</span>
-            </div>
-            <ul>
-              <li>Took legal and P&amp;L ownership of an established 10-year-old education platform with 10,000+ active students.</li>
-              <li>Manage day-to-day operations and task allocation across a cross-functional team of 5–7 people handling course delivery and marketing.</li>
-              <li>Direct end-to-end go-to-market launches for new courses, establishing structured funnels and tracking conversion drop-offs.</li>
-            </ul>
+            <section>
+              <h2>Selected Honors &amp; Achievements</h2>
+              <ul>
+                <li><strong>2nd Place &amp; Community Choice Award, Baidu MeDo AI Hackathon:</strong> Built a standalone
+                  product solo, competing against 8,424 global participants. Evaluated directly by Baidu product heads
+                  and AI algorithm architects. Awarded $6,500 prize pool.</li>
+                <li><strong>Top 10 Global Finalist (Solo), Zo Computers UI/UX Build Competition:</strong> Designed an
+                  end-to-end interface judged by startup founders and industry leaders. Won prizes valued at $1,000.
+                </li>
+                <li><strong>Top 10 Global Finalist (Solo), Anything.com Remixathon:</strong> Selected in the UI/UX
+                  category out of 800+ international participants; featured on official Anything.com channels.</li>
+                <li><strong>1st Place, IIM Bangalore Annual Essay Competition:</strong> Placed 1st across 446
+                  submissions institute-wide. Essay cited by a Microsoft AI researcher in an independent industry study.
+                </li>
+                <li><strong>Audience &amp; Distribution:</strong> Generated 200,000+ organic LinkedIn impressions and
+                  80k+ Instagram impressions around AI product development.</li>
+              </ul>
+            </section>
 
-            <div class="entry-row" style="margin-top:6px;">
-              <span>Digibility AI</span>
-              <span>2024 – 2025</span>
-            </div>
-            <div class="entry-sub">
-              <span>Early Team Member</span>
-              <span>Remote</span>
-            </div>
-            <ul>
-              <li>Joined early stage to shape product workflow automation tools designed for small business owners and freelancers.</li>
-              <li>Redesigned full website information architecture and user flows, directly addressing user drop-off points during onboarding.</li>
-            </ul>
-          </section>
+            <section>
+              <h2>Product &amp; Operations Experience</h2>
+              <div class="entry-row">
+                <span>AnybodyCanBake</span>
+                <span>Jan 2026 – Present</span>
+              </div>
+              <div class="entry-sub">
+                <span>Owner and Operations Lead</span>
+                <span>Remote / Hybrid</span>
+              </div>
+              <ul>
+                <li>Took legal and P&amp;L ownership of an established 10-year-old education platform with 10,000+
+                  active students.</li>
+                <li>Manage day-to-day operations and task allocation across a cross-functional team of 5–7 people
+                  handling course delivery and marketing.</li>
+                <li>Direct end-to-end go-to-market launches for new courses, establishing structured funnels and
+                  tracking conversion drop-offs.</li>
+              </ul>
 
-          <section>
-            <h2>Shipped AI Projects</h2>
-            <div class="entry-row">
-              <span>SlotSaver – AI WhatsApp Automation Tool</span>
-              <span>2025</span>
-            </div>
-            <div class="entry-sub">
-              <span>Solo Builder</span>
-              <span>Production MVP</span>
-            </div>
-            <ul>
-              <li>Scoped, architected, and shipped a functional appointment scheduling MVP in under 48 hours to solve appointment drop-offs for SMEs.</li>
-              <li>Integrated Claude API with Twilio and WhatsApp Business API to handle automated conversational scheduling and automated reminders.</li>
-            </ul>
-          </section>
+              <div class="entry-row" style="margin-top:6px;">
+                <span>Digibility AI</span>
+                <span>2024 – 2025</span>
+              </div>
+              <div class="entry-sub">
+                <span>Early Team Member</span>
+                <span>Remote</span>
+              </div>
+              <ul>
+                <li>Joined early stage to shape product workflow automation tools designed for small business owners and
+                  freelancers.</li>
+                <li>Redesigned full website information architecture and user flows, directly addressing user drop-off
+                  points during onboarding.</li>
+              </ul>
+            </section>
 
-          <section>
-            <h2>Skills &amp; Tooling</h2>
-            <ul>
-              <li><strong>Product &amp; Strategy:</strong> Rapid Prototyping, User Flow Mapping, Product Architecture, GTM Strategy, User Empathy, Funnel Optimization, PRDs.</li>
-              <li><strong>AI &amp; APIs:</strong> Claude API, OpenAI API, Twilio, WhatsApp Business API, Prompt Scaffolding, LLM Workflow Automation.</li>
-              <li><strong>Tools &amp; Analytics:</strong> Figma, Python, Google Analytics, SEO Funnels, Webflow, Cursor.</li>
-            </ul>
-          </section>
-        </div>
-      </div>
-    </div>
+            <section>
+              <h2>Shipped AI Projects</h2>
+              <div class="entry-row">
+                <span>SlotSaver – AI WhatsApp Automation Tool</span>
+                <span>2025</span>
+              </div>
+              <div class="entry-sub">
+                <span>Solo Builder</span>
+                <span>Production MVP</span>
+              </div>
+              <ul>
+                <li>Scoped, architected, and shipped a functional appointment scheduling MVP in under 48 hours to solve
+                  appointment drop-offs for SMEs.</li>
+                <li>Integrated Claude API with Twilio and WhatsApp Business API to handle automated conversational
+                  scheduling and automated reminders.</li>
+              </ul>
+            </section>
 
-    <!-- SUB-TAB 2: OUTREACH MESSAGES -->
-    <div id="studio-view-pitches" class="studio-wrapper" style="display:none;">
-      <div class="studio-controls-sheet">
-        <div class="studio-field">
-          <label>Target Company</label>
-          <input type="text" id="st-comp" value="Cloudflare">
-        </div>
-        <div class="studio-field">
-          <label>Role Title</label>
-          <input type="text" id="st-role" value="Product Manager Intern (2027)">
-        </div>
-        <div class="studio-field">
-          <label>Track Focus</label>
-          <select id="st-track">
-            <option value="product">Product Management / APM</option>
-            <option value="bizops">Business Operations &amp; Strategy</option>
-            <option value="growth">Growth &amp; Marketing</option>
-            <option value="design">Product Design</option>
-          </select>
-        </div>
-        <div class="studio-field">
-          <label>Recruiter Name</label>
-          <input type="text" id="st-name" value="Sarah">
-        </div>
-        <button class="pill-cta-ink" style="width:100%; justify-content:center; padding:9px 16px; margin-top:8px;" onclick="generateStudioPitches()">
-          Generate Pitches ⚡
-        </button>
-      </div>
-
-      <div style="display:flex; flex-direction:column; gap:18px;">
-        <!-- LinkedIn Note -->
-        <div class="card-tray-wrapper">
-          <div class="ledger-card" style="padding:22px;">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-              <span class="company-ats-label">1. LinkedIn Connection Note (&lt; 300 Chars)</span>
-              <button class="copy-pill-action" onclick="copySnippet('out-linkedin')">Copy Note</button>
-            </div>
-            <div class="pitch-text-content" id="out-linkedin">Generating...</div>
-          </div>
-        </div>
-
-        <!-- Full InMail -->
-        <div class="card-tray-wrapper">
-          <div class="ledger-card" style="padding:22px;">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-              <span class="company-ats-label">2. Recruiter Cold Email / InMail</span>
-              <button class="copy-pill-action" onclick="copySnippet('out-email')">Copy Email</button>
-            </div>
-            <div class="pitch-text-content" id="out-email">Generating...</div>
+            <section>
+              <h2>Skills &amp; Tooling</h2>
+              <ul>
+                <li><strong>Product &amp; Strategy:</strong> Rapid Prototyping, User Flow Mapping, Product Architecture,
+                  GTM Strategy, User Empathy, Funnel Optimization, PRDs.</li>
+                <li><strong>AI &amp; APIs:</strong> Claude API, OpenAI API, Twilio, WhatsApp Business API, Prompt
+                  Scaffolding, LLM Workflow Automation.</li>
+                <li><strong>Tools &amp; Analytics:</strong> Figma, Python, Google Analytics, SEO Funnels, Webflow,
+                  Cursor.</li>
+              </ul>
+            </section>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- SUB-TAB 3: APPLICATION Q&A SOLVER (HUMAN OPERATOR VOICE) -->
-    <div id="studio-view-qa" class="studio-wrapper" style="display:none;">
-      
-      <!-- Controls Tray (Left) -->
-      <div class="studio-controls-sheet">
-        <div style="display:flex; justify-content:space-between; align-items:center;">
-          <span class="inspector-section-label" style="margin-bottom:0;">Human Voice Q&amp;A Engine</span>
-          <button class="copy-pill-action" style="font-size:10px; padding:3px 10px;" onclick="autofillActiveJobToQA()">
-            ⚡ Autofill from Active Job
+      <!-- SUB-TAB 2: OUTREACH MESSAGES -->
+      <div id="studio-view-pitches" class="studio-wrapper" style="display:none;">
+        <div class="studio-controls-sheet">
+          <div class="studio-field">
+            <label>Target Company</label>
+            <input type="text" id="st-comp" value="Cloudflare">
+          </div>
+          <div class="studio-field">
+            <label>Role Title</label>
+            <input type="text" id="st-role" value="Product Manager Intern (2027)">
+          </div>
+          <div class="studio-field">
+            <label>Track Focus</label>
+            <select id="st-track">
+              <option value="product">Product Management / APM</option>
+              <option value="bizops">Business Operations &amp; Strategy</option>
+              <option value="growth">Growth &amp; Marketing</option>
+              <option value="design">Product Design</option>
+            </select>
+          </div>
+          <div class="studio-field">
+            <label>Recruiter Name</label>
+            <input type="text" id="st-name" value="Sarah">
+          </div>
+          <button class="pill-cta-ink" style="width:100%; justify-content:center; padding:9px 16px; margin-top:8px;"
+            onclick="generateStudioPitches()">
+            Generate Pitches ⚡
           </button>
         </div>
 
-        <div class="studio-field">
-          <label>Target Company</label>
-          <input type="text" id="qa-comp" placeholder="e.g. Databricks, Coupang, Stripe" value="Databricks">
-        </div>
+        <div style="display:flex; flex-direction:column; gap:18px;">
+          <!-- LinkedIn Note -->
+          <div class="card-tray-wrapper">
+            <div class="ledger-card" style="padding:22px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                <span class="company-ats-label">1. LinkedIn Connection Note (&lt; 300 Chars)</span>
+                <button class="copy-pill-action" onclick="copySnippet('out-linkedin')">Copy Note</button>
+              </div>
+              <div class="pitch-text-content" id="out-linkedin">Generating...</div>
+            </div>
+          </div>
 
-        <div class="studio-field">
-          <label>Target Role Title</label>
-          <input type="text" id="qa-role" placeholder="e.g. APM Intern, BizOps Intern" value="Product Management Intern (2027)">
-        </div>
-
-        <div class="studio-field">
-          <label>Application Form Question</label>
-          <textarea id="qa-question" rows="4" placeholder="Paste the exact question from the job application form (e.g. Why Databricks? Describe a difficult project under tight deadlines...)" style="font-size:13px; line-height:1.5;">Why are you interested in joining Databricks as a Product Management Intern?</textarea>
-        </div>
-
-        <!-- Quick Question Prompts -->
-        <div style="margin-top:-6px; margin-bottom:12px;">
-          <div style="font-size:10px; font-family:var(--font-mono); color:var(--text-muted); margin-bottom:6px; text-transform:uppercase; letter-spacing:0.05em;">Quick Load Common Prompts:</div>
-          <div style="display:flex; flex-wrap:wrap; gap:5px;">
-            <button class="copy-pill-action" style="font-size:10px; padding:3px 8px;" onclick="loadQuickQuestion('why_company')">&quot;Why this company?&quot;</button>
-            <button class="copy-pill-action" style="font-size:10px; padding:3px 8px;" onclick="loadQuickQuestion('deadline')">&quot;Tight deadline / challenge&quot;</button>
-            <button class="copy-pill-action" style="font-size:10px; padding:3px 8px;" onclick="loadQuickQuestion('ownership')">&quot;End-to-end ownership&quot;</button>
-            <button class="copy-pill-action" style="font-size:10px; padding:3px 8px;" onclick="loadQuickQuestion('standout')">&quot;Why should we hire you?&quot;</button>
+          <!-- Full InMail -->
+          <div class="card-tray-wrapper">
+            <div class="ledger-card" style="padding:22px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                <span class="company-ats-label">2. Recruiter Cold Email / InMail</span>
+                <button class="copy-pill-action" onclick="copySnippet('out-email')">Copy Email</button>
+              </div>
+              <div class="pitch-text-content" id="out-email">Generating...</div>
+            </div>
           </div>
         </div>
-
-        <div class="studio-field">
-          <label>Target Length</label>
-          <select id="qa-length">
-            <option value="concise" selected>Standard Form Box (~120–160 words, 2-3 tight paragraphs)</option>
-            <option value="short">Short &amp; Punchy (~60–80 words, 1 dense paragraph)</option>
-            <option value="detailed">In-Depth Essay (~220–280 words, 3 detailed paragraphs)</option>
-          </select>
-        </div>
-
-        <div class="studio-field">
-          <label>Role / JD Context (Optional)</label>
-          <input type="text" id="qa-jd-context" placeholder="Optional context or key requirement" value="Focus on AI products, developer ecosystem, and high execution speed">
-        </div>
-
-        <div style="background:rgba(52,211,153,0.06); border:1px solid rgba(52,211,153,0.2); border-radius:12px; padding:12px; font-size:11px; line-height:1.5; color:#a7f3d0;">
-          <strong>🛡️ Anti-AI Operator Doctrine:</strong>
-          <ul style="margin:6px 0 0 14px; padding:0;">
-            <li>Zero em dashes (—) and zero double hyphens</li>
-            <li>Zero purple prose (<em>spearheaded, pivotal, tapestry, delve</em>)</li>
-            <li>Natural human contractions (<em>I&#39;ve, didn&#39;t, that&#39;s, we&#39;d</em>)</li>
-            <li>100% grounded in Garv&#39;s real IIMB, AnybodyCanBake P&amp;L, Baidu $6.5k win &amp; SlotSaver MVP</li>
-          </ul>
-        </div>
-
-        <button id="btn-generate-qa" class="pill-cta-ink" style="width:100%; justify-content:center; padding:12px; font-weight:600; font-size:14px; margin-top:4px;" onclick="generateHumanQAAnswer()">
-          Draft 100% Human Answer ⚡
-        </button>
       </div>
 
-      <!-- Drafted Answer Sheet & Metrics (Right) -->
-      <div>
-        <div class="cv-toolbar">
-          <div style="display:flex; align-items:center; gap:8px;">
-            <span class="inspector-section-label" style="margin-bottom:0;">Drafted Human Answer</span>
-            <span id="qa-status-pill" class="score-chip tier1" style="font-size:10px;">100% Human Voice</span>
-          </div>
-          <div style="display:flex; gap:8px;">
-            <button class="pill-cta-ink" style="background:#34d399; color:#052e16; font-weight:600; padding:7px 18px;" onclick="copyQAAnswer()">
-              📋 Copy Answer
-            </button>
-            <button class="copy-pill-action" onclick="generateHumanQAAnswer()">
-              🔄 Re-roll Angle
+      <!-- SUB-TAB 3: APPLICATION Q&A SOLVER (HUMAN OPERATOR VOICE) -->
+      <div id="studio-view-qa" class="studio-wrapper" style="display:none;">
+
+        <!-- Controls Tray (Left) -->
+        <div class="studio-controls-sheet">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="inspector-section-label" style="margin-bottom:0;">Human Voice Q&amp;A Engine</span>
+            <button class="copy-pill-action" style="font-size:10px; padding:3px 10px;"
+              onclick="autofillActiveJobToQA()">
+              ⚡ Autofill from Active Job
             </button>
           </div>
+
+          <div class="studio-field">
+            <label>Target Company</label>
+            <input type="text" id="qa-comp" placeholder="e.g. Databricks, Coupang, Stripe" value="Databricks">
+          </div>
+
+          <div class="studio-field">
+            <label>Target Role Title</label>
+            <input type="text" id="qa-role" placeholder="e.g. APM Intern, BizOps Intern"
+              value="Product Management Intern (2027)">
+          </div>
+
+          <div class="studio-field">
+            <label>Application Form Question</label>
+            <textarea id="qa-question" rows="4"
+              placeholder="Paste the exact question from the job application form (e.g. Why Databricks? Describe a difficult project under tight deadlines...)"
+              style="font-size:13px; line-height:1.5;">Why are you interested in joining Databricks as a Product Management Intern?</textarea>
+          </div>
+
+          <!-- Quick Question Prompts -->
+          <div style="margin-top:-6px; margin-bottom:12px;">
+            <div
+              style="font-size:10px; font-family:var(--font-mono); color:var(--text-muted); margin-bottom:6px; text-transform:uppercase; letter-spacing:0.05em;">
+              Quick Load Common Prompts:</div>
+            <div style="display:flex; flex-wrap:wrap; gap:5px;">
+              <button class="copy-pill-action" style="font-size:10px; padding:3px 8px;"
+                onclick="loadQuickQuestion('why_company')">&quot;Why this company?&quot;</button>
+              <button class="copy-pill-action" style="font-size:10px; padding:3px 8px;"
+                onclick="loadQuickQuestion('deadline')">&quot;Tight deadline / challenge&quot;</button>
+              <button class="copy-pill-action" style="font-size:10px; padding:3px 8px;"
+                onclick="loadQuickQuestion('ownership')">&quot;End-to-end ownership&quot;</button>
+              <button class="copy-pill-action" style="font-size:10px; padding:3px 8px;"
+                onclick="loadQuickQuestion('standout')">&quot;Why should we hire you?&quot;</button>
+            </div>
+          </div>
+
+          <div class="studio-field">
+            <label>Target Length</label>
+            <select id="qa-length">
+              <option value="concise" selected>Standard Form Box (~120–160 words, 2-3 tight paragraphs)</option>
+              <option value="short">Short &amp; Punchy (~60–80 words, 1 dense paragraph)</option>
+              <option value="detailed">In-Depth Essay (~220–280 words, 3 detailed paragraphs)</option>
+            </select>
+          </div>
+
+          <div class="studio-field">
+            <label>Role / JD Context (Optional)</label>
+            <input type="text" id="qa-jd-context" placeholder="Optional context or key requirement"
+              value="Focus on AI products, developer ecosystem, and high execution speed">
+          </div>
+
+          <div
+            style="background:rgba(52,211,153,0.06); border:1px solid rgba(52,211,153,0.2); border-radius:12px; padding:12px; font-size:11px; line-height:1.5; color:#a7f3d0;">
+            <strong>🛡️ Anti-AI Operator Doctrine:</strong>
+            <ul style="margin:6px 0 0 14px; padding:0;">
+              <li>Zero em dashes (—) and zero double hyphens</li>
+              <li>Zero purple prose (<em>spearheaded, pivotal, tapestry, delve</em>)</li>
+              <li>Natural human contractions (<em>I&#39;ve, didn&#39;t, that&#39;s, we&#39;d</em>)</li>
+              <li>100% grounded in Garv&#39;s real IIMB, AnybodyCanBake P&amp;L, Baidu $6.5k win &amp; SlotSaver MVP
+              </li>
+            </ul>
+          </div>
+
+          <button id="btn-generate-qa" class="pill-cta-ink"
+            style="width:100%; justify-content:center; padding:12px; font-weight:600; font-size:14px; margin-top:4px;"
+            onclick="generateHumanQAAnswer()">
+            Draft 100% Human Answer ⚡
+          </button>
         </div>
 
-        <div class="card-tray-wrapper" style="margin-bottom:16px;">
-          <div class="ledger-card" style="padding:24px;">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; font-family:var(--font-mono); font-size:11px; color:var(--text-muted); border-bottom:1px solid var(--border-subtle); padding-bottom:10px;">
-              <div id="qa-stats-row">
-                <strong id="qa-word-count" style="color:var(--text-primary); font-size:13px;">148</strong> words &bull; ~<span id="qa-read-time">45</span>s read
-              </div>
-              <div style="display:flex; gap:6px;">
-                <span class="score-chip tier1" style="font-size:9px; background:rgba(52,211,153,0.12); color:#34d399;">✓ 0 Em dashes</span>
-                <span class="score-chip tier1" style="font-size:9px; background:rgba(52,211,153,0.12); color:#34d399;">✓ Natural contractions</span>
-                <span class="score-chip tier1" style="font-size:9px; background:rgba(52,211,153,0.12); color:#34d399;">✓ Verified Facts</span>
-              </div>
+        <!-- Drafted Answer Sheet & Metrics (Right) -->
+        <div>
+          <div class="cv-toolbar">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="inspector-section-label" style="margin-bottom:0;">Drafted Human Answer</span>
+              <span id="qa-status-pill" class="score-chip tier1" style="font-size:10px;">100% Human Voice</span>
             </div>
+            <div style="display:flex; gap:8px;">
+              <button class="pill-cta-ink" style="background:#34d399; color:#052e16; font-weight:600; padding:7px 18px;"
+                onclick="copyQAAnswer()">
+                📋 Copy Answer
+              </button>
+              <button class="copy-pill-action" onclick="generateHumanQAAnswer()">
+                🔄 Re-roll Angle
+              </button>
+            </div>
+          </div>
 
-            <!-- Editable Answer Box -->
-            <textarea id="qa-answer-text" rows="11" style="width:100%; background:transparent; border:none; outline:none; color:var(--text-primary); font-family:var(--font-sans); font-size:14px; line-height:1.7; resize:vertical;" placeholder="Your human-written answer will appear here...">I want to join Databricks because it&#39;s where raw data infrastructure meets practical product execution. You&#39;re not just building another SaaS tool; you&#39;re creating the Lakehouse platform that thousands of teams rely on to run real AI applications.
+          <div class="card-tray-wrapper" style="margin-bottom:16px;">
+            <div class="ledger-card" style="padding:24px;">
+              <div
+                style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; font-family:var(--font-mono); font-size:11px; color:var(--text-muted); border-bottom:1px solid var(--border-subtle); padding-bottom:10px;">
+                <div id="qa-stats-row">
+                  <strong id="qa-word-count" style="color:var(--text-primary); font-size:13px;">148</strong> words
+                  &bull; ~<span id="qa-read-time">45</span>s read
+                </div>
+                <div style="display:flex; gap:6px;">
+                  <span class="score-chip tier1"
+                    style="font-size:9px; background:rgba(52,211,153,0.12); color:#34d399;">✓ 0 Em dashes</span>
+                  <span class="score-chip tier1"
+                    style="font-size:9px; background:rgba(52,211,153,0.12); color:#34d399;">✓ Natural
+                    contractions</span>
+                  <span class="score-chip tier1"
+                    style="font-size:9px; background:rgba(52,211,153,0.12); color:#34d399;">✓ Verified Facts</span>
+                </div>
+              </div>
+
+              <!-- Editable Answer Box -->
+              <textarea id="qa-answer-text" rows="11"
+                style="width:100%; background:transparent; border:none; outline:none; color:var(--text-primary); font-family:var(--font-sans); font-size:14px; line-height:1.7; resize:vertical;"
+                placeholder="Your human-written answer will appear here...">I want to join Databricks because it&#39;s where raw data infrastructure meets practical product execution. You&#39;re not just building another SaaS tool; you&#39;re creating the Lakehouse platform that thousands of teams rely on to run real AI applications.
 
 As an operator, I care deeply about making complex systems simple. I run operations for AnybodyCanBake, managing the full P&amp;L and a team of 6 for 10,000+ students. When workflows break or conversion drops, there&#39;s no hiding behind theory; you fix the pipeline. I also build fast: I shipped SlotSaver solo in 48 hours using Claude and Twilio to solve appointment scheduling, and placed 2nd globally out of 8,424 participants in Baidu&#39;s AI hackathon. 
 
 Databricks moves with that same builder velocity at global scale. I&#39;d love to bring this execution speed and user-first operational empathy to your product team as an APM intern.</textarea>
 
-            <div style="margin-top:16px; padding-top:12px; border-top:1px solid var(--border-subtle); display:flex; justify-content:space-between; align-items:center;">
-              <span style="font-size:11px; color:var(--text-dim);">💡 Tip: You can edit or tweak any sentence directly in this box before copying.</span>
-              <button class="pill-cta-ink" style="padding:6px 14px; font-size:12px;" onclick="copyQAAnswer()">Copy to Clipboard ↗</button>
+              <div
+                style="margin-top:16px; padding-top:12px; border-top:1px solid var(--border-subtle); display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:11px; color:var(--text-dim);">💡 Tip: You can edit or tweak any sentence directly
+                  in this box before copying.</span>
+                <button class="pill-cta-ink" style="padding:6px 14px; font-size:12px;" onclick="copyQAAnswer()">Copy to
+                  Clipboard ↗</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        PAGE 4: HACKATHONS & CHALLENGES SCOUT (LIVE ARENA)
        ========================================================================== -->
-  <section id="view-hackathons" class="ledger-page-view">
-    <div style="margin-bottom:28px;">
-      <div class="trust-chip" style="margin-bottom:12px;">
-        <div class="trust-indicator" style="background:#fbbf24; box-shadow:0 0 10px rgba(251,191,36,0.6);"></div>
-        <span class="trust-text">Live Scout // Devpost &bull; Lablab.ai &bull; DoraHacks &bull; Flagship AI Challenges</span>
+    <section id="view-hackathons" class="ledger-page-view">
+      <div style="margin-bottom:28px;">
+        <div class="trust-chip" style="margin-bottom:12px;">
+          <div class="trust-indicator" style="background:#fbbf24; box-shadow:0 0 10px rgba(251,191,36,0.6);"></div>
+          <span class="trust-text">Live Scout // Devpost &bull; Lablab.ai &bull; DoraHacks &bull; Flagship AI
+            Challenges</span>
+        </div>
+        <h2
+          style="font-size:32px; font-weight:450; letter-spacing:-0.04em; margin-bottom:10px; color:var(--text-primary);">
+          Hackathon Arena, <span class="pixel-phrase" style="color:#fbbf24;">live</span>.
+        </h2>
+        <p style="color:var(--text-muted); font-size:15px; line-height:1.6; max-width:800px; margin-bottom:24px;">
+          <span style="color:var(--text-primary); font-weight:500;">High-prize competitions curated for vibe
+            coders.</span>
+          Every challenge features a prize pool of <strong style="color:#fff;">$5,000 to $1,000,000+</strong>, is
+          verified <strong style="color:#34d399;">open to India</strong>, and rewards rapid execution — AI agent MVPs,
+          Claude API wrappers, and polished web prototypes over low-level algorithmic complexity.
+        </p>
+
+        <!-- Hackathon Metric Bar -->
+        <div class="ledger-strip" style="margin-bottom:24px;">
+          <div class="ledger-stat">
+            <span class="stat-num" id="hack-stat-total" style="color:#fbbf24;">16</span>
+            <span class="stat-label">Active Competitions</span>
+          </div>
+          <div class="ledger-stat">
+            <span class="stat-num" id="hack-stat-capital" style="color:#34d399;">$2.67M</span>
+            <span class="stat-label">Total Prize Capital</span>
+          </div>
+          <div class="ledger-stat">
+            <span class="stat-num" id="hack-stat-urgent" style="color:#f87171;">2</span>
+            <span class="stat-label">Closing in &lt; 48 Hours</span>
+          </div>
+          <div class="ledger-stat">
+            <span class="stat-num" style="color:#60a5fa;">100%</span>
+            <span class="stat-label">Vibe Coder Friendly</span>
+          </div>
+        </div>
+
+        <!-- Filter & Search Tray for Hackathons -->
+        <div class="filter-tray" style="margin-bottom:30px;">
+          <div class="search-row">
+            <input type="text" id="hackathon-search-input" class="search-box"
+              placeholder="Filter hackathons by title, sponsor, track, or stack (e.g. Gemini, Solana, Agent, Devpost, Mistral)...">
+          </div>
+
+          <!-- Sorting Controls -->
+          <div class="filter-group" id="hackathon-sorting">
+            <span class="filter-eyebrow" style="min-width:76px; display:inline-block;">Sort:</span>
+            <button class="pill-filter active" data-sort="urgent">⏳ Deadline Approaching</button>
+            <button class="pill-filter" data-sort="prize">💰 Highest Prize Pool</button>
+            <button class="pill-filter" data-sort="vibe">⚡ Vibe Coder Top Pick</button>
+          </div>
+
+          <!-- Platform Controls -->
+          <div class="filter-group" id="hackathon-platforms">
+            <span class="filter-eyebrow" style="min-width:76px; display:inline-block;">Platform:</span>
+            <button class="pill-filter active" data-platform="all">All Sources</button>
+            <button class="pill-filter" data-platform="devpost">Devpost</button>
+            <button class="pill-filter" data-platform="flagship">Flagship / Google</button>
+            <button class="pill-filter" data-platform="lablab">Lablab.ai</button>
+            <button class="pill-filter" data-platform="web3">Web3 / DoraHacks</button>
+          </div>
+        </div>
       </div>
-      <h2 style="font-size:32px; font-weight:450; letter-spacing:-0.04em; margin-bottom:10px; color:var(--text-primary);">
-        Hackathon Arena, <span class="pixel-phrase" style="color:#fbbf24;">live</span>.
-      </h2>
-      <p style="color:var(--text-muted); font-size:15px; line-height:1.6; max-width:800px; margin-bottom:24px;">
-        <span style="color:var(--text-primary); font-weight:500;">High-prize competitions curated for vibe coders.</span>
-        Every challenge features a prize pool of <strong style="color:#fff;">$5,000 to $1,000,000+</strong>, is verified <strong style="color:#34d399;">open to India</strong>, and rewards rapid execution — AI agent MVPs, Claude API wrappers, and polished web prototypes over low-level algorithmic complexity.
-      </p>
 
-      <!-- Hackathon Metric Bar -->
-      <div class="ledger-strip" style="margin-bottom:24px;">
-        <div class="ledger-stat">
-          <span class="stat-num" id="hack-stat-total" style="color:#fbbf24;">16</span>
-          <span class="stat-label">Active Competitions</span>
-        </div>
-        <div class="ledger-stat">
-          <span class="stat-num" id="hack-stat-capital" style="color:#34d399;">$2.67M</span>
-          <span class="stat-label">Total Prize Capital</span>
-        </div>
-        <div class="ledger-stat">
-          <span class="stat-num" id="hack-stat-urgent" style="color:#f87171;">2</span>
-          <span class="stat-label">Closing in &lt; 48 Hours</span>
-        </div>
-        <div class="ledger-stat">
-          <span class="stat-num" style="color:#60a5fa;">100%</span>
-          <span class="stat-label">Vibe Coder Friendly</span>
-        </div>
+      <!-- Hackathons Grid -->
+      <div class="catalog-grid" id="hackathons-catalog-grid">
+        <!-- Populated dynamically by renderHackathons() -->
       </div>
+    </section>
 
-      <!-- Filter & Search Tray for Hackathons -->
-      <div class="filter-tray" style="margin-bottom:30px;">
-        <div class="search-row">
-          <input type="text" id="hackathon-search-input" class="search-box" placeholder="Filter hackathons by title, sponsor, track, or stack (e.g. Gemini, Solana, Agent, Devpost, Mistral)...">
-        </div>
-
-        <!-- Sorting Controls -->
-        <div class="filter-group" id="hackathon-sorting">
-          <span class="filter-eyebrow" style="min-width:76px; display:inline-block;">Sort:</span>
-          <button class="pill-filter active" data-sort="urgent">⏳ Deadline Approaching</button>
-          <button class="pill-filter" data-sort="prize">💰 Highest Prize Pool</button>
-          <button class="pill-filter" data-sort="vibe">⚡ Vibe Coder Top Pick</button>
-        </div>
-
-        <!-- Platform Controls -->
-        <div class="filter-group" id="hackathon-platforms">
-          <span class="filter-eyebrow" style="min-width:76px; display:inline-block;">Platform:</span>
-          <button class="pill-filter active" data-platform="all">All Sources</button>
-          <button class="pill-filter" data-platform="devpost">Devpost</button>
-          <button class="pill-filter" data-platform="flagship">Flagship / Google</button>
-          <button class="pill-filter" data-platform="lablab">Lablab.ai</button>
-          <button class="pill-filter" data-platform="web3">Web3 / DoraHacks</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Hackathons Grid -->
-    <div class="catalog-grid" id="hackathons-catalog-grid">
-      <!-- Populated dynamically by renderHackathons() -->
-    </div>
-  </section>
-
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        PAGE 5: CANDIDATE DNA
        ========================================================================== -->
-  <section id="view-dna" class="ledger-page-view">
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
-      <div class="card-tray-wrapper">
-        <div class="ledger-card">
-          <span class="company-ats-label" style="margin-bottom:12px;">Candidate Moat</span>
-          <h3 style="font-size:18px; font-weight:450; margin-bottom:16px; color:#fff;">Global Benchmark Honors</h3>
-          <ul style="list-style:none; display:flex; flex-direction:column; gap:14px; font-size:13px; color:var(--text-muted); line-height:1.55;">
-            <li><strong style="color:#fff;">🥈 Baidu MeDo Hackathon (2nd Place &amp; Community Choice):</strong> $6,500 prize pool won solo among 8,424 global participants.</li>
-            <li><strong style="color:#fff;">🥇 IIM Bangalore Essay Competition (1st Place):</strong> 446 institute-wide submissions; winning paper cited by a Microsoft researcher in an independent study.</li>
-            <li><strong style="color:#fff;">🎨 2x Global UI/UX Finalist:</strong> Top 10 in Zo Computers build competition ($1,000 prize) and Anything.com Remixathon.</li>
-          </ul>
+    <section id="view-dna" class="ledger-page-view">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+        <div class="card-tray-wrapper">
+          <div class="ledger-card">
+            <span class="company-ats-label" style="margin-bottom:12px;">Candidate Moat</span>
+            <h3 style="font-size:18px; font-weight:450; margin-bottom:16px; color:#fff;">Global Benchmark Honors</h3>
+            <ul
+              style="list-style:none; display:flex; flex-direction:column; gap:14px; font-size:13px; color:var(--text-muted); line-height:1.55;">
+              <li><strong style="color:#fff;">🥈 Baidu MeDo Hackathon (2nd Place &amp; Community Choice):</strong>
+                $6,500 prize pool won solo among 8,424 global participants.</li>
+              <li><strong style="color:#fff;">🥇 IIM Bangalore Essay Competition (1st Place):</strong> 446
+                institute-wide submissions; winning paper cited by a Microsoft researcher in an independent study.</li>
+              <li><strong style="color:#fff;">🎨 2x Global UI/UX Finalist:</strong> Top 10 in Zo Computers build
+                competition ($1,000 prize) and Anything.com Remixathon.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card-tray-wrapper">
+          <div class="ledger-card">
+            <span class="company-ats-label" style="margin-bottom:12px;">Operational Proof</span>
+            <h3 style="font-size:18px; font-weight:450; margin-bottom:16px; color:#fff;">Execution &amp; P&amp;L Track
+              Record</h3>
+            <ul
+              style="list-style:none; display:flex; flex-direction:column; gap:14px; font-size:13px; color:var(--text-muted); line-height:1.55;">
+              <li><strong style="color:#fff;">📈 Owner &amp; Operations Lead (AnybodyCanBake):</strong> Full legal &amp;
+                P&amp;L ownership of a 10,000+ student education brand; leading 5-7 team members.</li>
+              <li><strong style="color:#fff;">⚡ Shipped AI MVP in &lt; 48 Hours:</strong> SlotSaver appointment
+                automation using Claude API, Twilio, and WhatsApp Business API.</li>
+              <li><strong style="color:#fff;">📣 200,000+ Organic Impressions:</strong> High-signal audience built on
+                LinkedIn and Instagram (@garvonpoint) covering AI product execution.</li>
+            </ul>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="card-tray-wrapper">
-        <div class="ledger-card">
-          <span class="company-ats-label" style="margin-bottom:12px;">Operational Proof</span>
-          <h3 style="font-size:18px; font-weight:450; margin-bottom:16px; color:#fff;">Execution &amp; P&amp;L Track Record</h3>
-          <ul style="list-style:none; display:flex; flex-direction:column; gap:14px; font-size:13px; color:var(--text-muted); line-height:1.55;">
-            <li><strong style="color:#fff;">📈 Owner &amp; Operations Lead (AnybodyCanBake):</strong> Full legal &amp; P&amp;L ownership of a 10,000+ student education brand; leading 5-7 team members.</li>
-            <li><strong style="color:#fff;">⚡ Shipped AI MVP in &lt; 48 Hours:</strong> SlotSaver appointment automation using Claude API, Twilio, and WhatsApp Business API.</li>
-            <li><strong style="color:#fff;">📣 200,000+ Organic Impressions:</strong> High-signal audience built on LinkedIn and Instagram (@garvonpoint) covering AI product execution.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
 
-</div>
-
-<!-- ==========================================================================
+  <!-- ==========================================================================
      SLIDE-OVER INSPECTOR DRAWER (CULT UI SIDE-PANEL)
      ========================================================================== -->
-<div class="inspector-backdrop" id="inspector-overlay" onclick="closeInspector(event)">
-  <div class="inspector-drawer" id="inspector-panel" onclick="event.stopPropagation()">
-    <button class="inspector-close-btn" onclick="closeInspector()">
-      <span>ESC</span> // Close
-    </button>
-
-    <div class="inspector-company-tag" id="ins-comp">Company</div>
-    <h2 class="inspector-title" id="ins-title">Job Title</h2>
-
-    <div class="inspector-meta-strip">
-      <span class="pixel-tag-chip" id="ins-loc">Location</span>
-      <span class="pixel-tag-chip" id="ins-cat">Track</span>
-      <span class="score-chip tier1" id="ins-score">Match Score</span>
-    </div>
-
-    <!-- Compensation & Pay -->
-    <div class="inspector-section-label">💰 Compensation &amp; Pay</div>
-    <div class="pitch-copy-box" style="margin-bottom:20px; background:rgba(52,211,153,0.05); border:1px solid rgba(52,211,153,0.22);">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-        <span style="font-weight:600; font-size:13px; color:#34d399;" id="ins-pay-display">Pay Rate</span>
-        <span class="score-chip" style="background:rgba(52,211,153,0.15); color:#34d399;" id="ins-pay-badge">Status</span>
-      </div>
-      <div class="pitch-text-content" style="color:#d1d5db; font-size:12px; margin-bottom:0;" id="ins-pay-note">Salary details...</div>
-    </div>
-
-    <!-- Visa & Relocation Policy -->
-    <div class="inspector-section-label">🛂 Visa & Relocation Intelligence</div>
-    <div class="pitch-copy-box" style="margin-bottom:20px; background:rgba(52,211,153,0.05); border:1px solid rgba(52,211,153,0.22);">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-        <span style="font-weight:600; font-size:13px; color:#34d399;" id="ins-visa-tier">Visa Support Tier</span>
-        <span class="score-chip" style="background:rgba(52,211,153,0.15); color:#34d399;" id="ins-visa-badge">Badge</span>
-      </div>
-      <div class="pitch-text-content" style="color:#d1d5db; font-size:12px; margin-bottom:0;" id="ins-visa-note">Policy notes...</div>
-    </div>
-
-    <!-- 1-Click Pitch -->
-    <div class="inspector-section-label">⚡ 1-Click Recruiter Connection Note</div>
-    <div class="pitch-copy-box">
-      <div class="pitch-text-content" id="ins-pitch">Pitch Hook</div>
-      <button class="copy-pill-action" onclick="copyInspectorSnippet('ins-pitch')">
-        Copy Note
+  <div class="inspector-backdrop" id="inspector-overlay" onclick="closeInspector(event)">
+    <div class="inspector-drawer" id="inspector-panel" onclick="event.stopPropagation()">
+      <button class="inspector-close-btn" onclick="closeInspector()">
+        <span>ESC</span> // Close
       </button>
-    </div>
+
+      <div class="inspector-company-tag" id="ins-comp">Company</div>
+      <h2 class="inspector-title" id="ins-title">Job Title</h2>
+
+      <div class="inspector-meta-strip">
+        <span class="pixel-tag-chip" id="ins-loc">Location</span>
+        <span class="pixel-tag-chip" id="ins-cat">Track</span>
+        <span class="score-chip tier1" id="ins-score">Match Score</span>
+      </div>
+
+      <!-- Compensation & Pay -->
+      <div class="inspector-section-label">💰 Compensation &amp; Pay</div>
+      <div class="pitch-copy-box"
+        style="margin-bottom:20px; background:rgba(52,211,153,0.05); border:1px solid rgba(52,211,153,0.22);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+          <span style="font-weight:600; font-size:13px; color:#34d399;" id="ins-pay-display">Pay Rate</span>
+          <span class="score-chip" style="background:rgba(52,211,153,0.15); color:#34d399;"
+            id="ins-pay-badge">Status</span>
+        </div>
+        <div class="pitch-text-content" style="color:#d1d5db; font-size:12px; margin-bottom:0;" id="ins-pay-note">Salary
+          details...</div>
+      </div>
+
+      <!-- Visa & Relocation Policy -->
+      <div class="inspector-section-label">🛂 Visa & Relocation Intelligence</div>
+      <div class="pitch-copy-box"
+        style="margin-bottom:20px; background:rgba(52,211,153,0.05); border:1px solid rgba(52,211,153,0.22);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+          <span style="font-weight:600; font-size:13px; color:#34d399;" id="ins-visa-tier">Visa Support Tier</span>
+          <span class="score-chip" style="background:rgba(52,211,153,0.15); color:#34d399;"
+            id="ins-visa-badge">Badge</span>
+        </div>
+        <div class="pitch-text-content" style="color:#d1d5db; font-size:12px; margin-bottom:0;" id="ins-visa-note">
+          Policy notes...</div>
+      </div>
+
+      <!-- 1-Click Pitch -->
+      <div class="inspector-section-label">⚡ 1-Click Recruiter Connection Note</div>
+      <div class="pitch-copy-box">
+        <div class="pitch-text-content" id="ins-pitch">Pitch Hook</div>
+        <button class="copy-pill-action" onclick="copyInspectorSnippet('ins-pitch')">
+          Copy Note
+        </button>
+      </div>
 
     <!-- Pipeline Actions & Status -->
     <div class="inspector-section-label">Pipeline Actions &amp; Status</div>
@@ -1856,130 +1996,150 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
       </div>
     </div>
   </div>
-</div>
 
-<!-- Hackathon Vibe Coder Strategy Drawer -->
-<div class="inspector-backdrop" id="strategy-overlay" onclick="closeStrategyModal(event)">
-  <div class="inspector-drawer" id="strategy-panel" onclick="event.stopPropagation()">
-    <button class="inspector-close-btn" onclick="closeStrategyModal()">
-      <span>ESC</span> // Close
-    </button>
-
-    <div class="inspector-company-tag" id="strat-platform">DEVPOST // SPONSOR</div>
-    <h2 class="inspector-title" id="strat-title" style="margin-bottom:8px;">Challenge Title</h2>
-
-    <div class="inspector-meta-strip" style="margin-bottom:20px;">
-      <span class="score-chip" style="background:rgba(251,191,36,0.15); color:#fbbf24; font-weight:700; font-size:12px; font-family:var(--font-mono);" id="strat-prize">$100,000 Prize</span>
-      <span class="pixel-tag-chip" id="strat-deadline">Dec 04, 2026</span>
-      <span class="score-chip tier1" id="strat-vibe">100% Vibe Coder</span>
-    </div>
-
-    <!-- What to Build Brief -->
-    <div class="inspector-section-label">💡 Challenge Brief</div>
-    <div class="pitch-copy-box" style="margin-bottom:20px;">
-      <p class="pitch-text-content" id="strat-brief" style="font-size:13px; line-height:1.6; color:#d1d5db; margin-bottom:0;"></p>
-    </div>
-
-    <!-- Winning Vibe Coder Playbook -->
-    <div class="inspector-section-label">⚡ Garv's Operator Edge &amp; Playbook</div>
-    <div class="pitch-copy-box" style="margin-bottom:20px; background:rgba(251,191,36,0.04); border:1px solid rgba(251,191,36,0.22);">
-      <div style="font-weight:600; font-size:13px; color:#fbbf24; margin-bottom:8px;">🎯 Why You Win This:</div>
-      <p class="pitch-text-content" id="strat-playbook" style="font-size:13px; line-height:1.6; color:#f8fafc; margin-bottom:12px;"></p>
-      <div style="font-weight:600; font-size:11px; text-transform:uppercase; font-family:var(--font-mono); color:var(--text-dim); margin-bottom:6px;">Recommended Fast-Sprint Stack:</div>
-      <code id="strat-stack" style="display:block; background:rgba(0,0,0,0.5); padding:8px 12px; border-radius:6px; font-family:var(--font-mono); font-size:11px; color:#38bdf8;"></code>
-    </div>
-
-    <!-- Scaffold Prompt for Cursor / Claude -->
-    <div class="inspector-section-label">🤖 48-Hour Cursor / Claude Scaffold Prompt</div>
-    <div class="pitch-copy-box" style="margin-bottom:24px;">
-      <p class="pitch-text-content" id="strat-prompt" style="font-family:var(--font-mono); font-size:11px; line-height:1.55; color:#94a3b8; white-space:pre-wrap; margin-bottom:10px;"></p>
-      <button class="pill-cta-muted" style="font-size:11px; padding:5px 14px; cursor:pointer;" onclick="copyStrategyPrompt()">
-        📋 Copy Prompt to Clipboard
+  <!-- Hackathon Vibe Coder Strategy Drawer -->
+  <div class="inspector-backdrop" id="strategy-overlay" onclick="closeStrategyModal(event)">
+    <div class="inspector-drawer" id="strategy-panel" onclick="event.stopPropagation()">
+      <button class="inspector-close-btn" onclick="closeStrategyModal()">
+        <span>ESC</span> // Close
       </button>
-    </div>
 
-    <div style="display:flex; justify-content:space-between; align-items:center; padding-top:14px; border-top:1px solid rgba(255,255,255,0.08);">
-      <button class="pill-cta-muted" onclick="closeStrategyModal()" style="cursor:pointer;">Close</button>
-      <a id="strat-link" href="#" target="_blank" rel="noopener noreferrer" class="pill-cta-ink" style="padding:9px 20px; font-size:13px; text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
-        Register &amp; Open Challenge ↗
-      </a>
+      <div class="inspector-company-tag" id="strat-platform">DEVPOST // SPONSOR</div>
+      <h2 class="inspector-title" id="strat-title" style="margin-bottom:8px;">Challenge Title</h2>
+
+      <div class="inspector-meta-strip" style="margin-bottom:20px;">
+        <span class="score-chip"
+          style="background:rgba(251,191,36,0.15); color:#fbbf24; font-weight:700; font-size:12px; font-family:var(--font-mono);"
+          id="strat-prize">$100,000 Prize</span>
+        <span class="pixel-tag-chip" id="strat-deadline">Dec 04, 2026</span>
+        <span class="score-chip tier1" id="strat-vibe">100% Vibe Coder</span>
+      </div>
+
+      <!-- What to Build Brief -->
+      <div class="inspector-section-label">💡 Challenge Brief</div>
+      <div class="pitch-copy-box" style="margin-bottom:20px;">
+        <p class="pitch-text-content" id="strat-brief"
+          style="font-size:13px; line-height:1.6; color:#d1d5db; margin-bottom:0;"></p>
+      </div>
+
+      <!-- Winning Vibe Coder Playbook -->
+      <div class="inspector-section-label">⚡ Garv's Operator Edge &amp; Playbook</div>
+      <div class="pitch-copy-box"
+        style="margin-bottom:20px; background:rgba(251,191,36,0.04); border:1px solid rgba(251,191,36,0.22);">
+        <div style="font-weight:600; font-size:13px; color:#fbbf24; margin-bottom:8px;">🎯 Why You Win This:</div>
+        <p class="pitch-text-content" id="strat-playbook"
+          style="font-size:13px; line-height:1.6; color:#f8fafc; margin-bottom:12px;"></p>
+        <div
+          style="font-weight:600; font-size:11px; text-transform:uppercase; font-family:var(--font-mono); color:var(--text-dim); margin-bottom:6px;">
+          Recommended Fast-Sprint Stack:</div>
+        <code id="strat-stack"
+          style="display:block; background:rgba(0,0,0,0.5); padding:8px 12px; border-radius:6px; font-family:var(--font-mono); font-size:11px; color:#38bdf8;"></code>
+      </div>
+
+      <!-- Scaffold Prompt for Cursor / Claude -->
+      <div class="inspector-section-label">🤖 48-Hour Cursor / Claude Scaffold Prompt</div>
+      <div class="pitch-copy-box" style="margin-bottom:24px;">
+        <p class="pitch-text-content" id="strat-prompt"
+          style="font-family:var(--font-mono); font-size:11px; line-height:1.55; color:#94a3b8; white-space:pre-wrap; margin-bottom:10px;">
+        </p>
+        <button class="pill-cta-muted" style="font-size:11px; padding:5px 14px; cursor:pointer;"
+          onclick="copyStrategyPrompt()">
+          📋 Copy Prompt to Clipboard
+        </button>
+      </div>
+
+      <div
+        style="display:flex; justify-content:space-between; align-items:center; padding-top:14px; border-top:1px solid rgba(255,255,255,0.08);">
+        <button class="pill-cta-muted" onclick="closeStrategyModal()" style="cursor:pointer;">Close</button>
+        <a id="strat-link" href="#" target="_blank" rel="noopener noreferrer" class="pill-cta-ink"
+          style="padding:9px 20px; font-size:13px; text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
+          Register &amp; Open Challenge ↗
+        </a>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Cult UI Halo Toast -->
-<div class="halo-toast" id="toast">
-  <span>✓</span> Copied to clipboard
-</div>
+  <!-- Cult UI Halo Toast -->
+  <div class="halo-toast" id="toast">
+    <span>✓</span> Copied to clipboard
+  </div>
 
-<!-- Jobs & Hackathons Data -->
-<script src="jobs_data.js"></script>
-<script src="hackathons_data.js"></script>
-<script>
-  let allJobs = [];
-  let allHackathons = [];
-  let currentHackSort = 'urgent';
-  let currentHackPlatform = 'all';
-  let userStatus = JSON.parse(localStorage.getItem('garv_job_status') || '{}');
-  let currentActiveJobId = null;
+  <!-- Jobs & Hackathons Data -->
+  <script src="jobs_data.js"></script>
+  <script src="hackathons_data.js"></script>
+  <script>
+    let allJobs = [];
+    let allHackathons = [];
+    let currentHackSort = 'urgent';
+    let currentHackPlatform = 'all';
+    let userStatus = JSON.parse(localStorage.getItem('garv_job_status') || '{}');
+    let currentActiveJobId = null;
 
-  function escapeHtml(str) {
-    if (!str) return '';
-    return String(str)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#039;');
-  }
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
 
-  // Multi-page navigation
-  function navigateLedger(pageId) {
-    document.querySelectorAll('.ledger-page-view').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.dock-pill').forEach(b => b.classList.remove('active'));
+    // Multi-page navigation
+    function navigateLedger(pageId) {
+      document.querySelectorAll('.ledger-page-view').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.dock-pill').forEach(b => b.classList.remove('active'));
 
-    const targetView = document.getElementById(`view-${pageId}`);
-    if (targetView) targetView.classList.add('active');
+      const targetView = document.getElementById(`view-${pageId}`);
+      if (targetView) targetView.classList.add('active');
 
-    const pills = document.querySelectorAll('.dock-pill');
-    pills.forEach(p => {
-      if (p.getAttribute('onclick') && p.getAttribute('onclick').includes(pageId)) {
-        p.classList.add('active');
+      const pills = document.querySelectorAll('.dock-pill');
+      pills.forEach(p => {
+        if (p.getAttribute('onclick') && p.getAttribute('onclick').includes(pageId)) {
+          p.classList.add('active');
+        }
+      });
+
+      const mainHero = document.getElementById('main-ledger-hero');
+      if (mainHero) {
+        mainHero.style.display = (pageId === 'hackathons') ? 'none' : 'block';
       }
-    });
 
-    const mainHero = document.getElementById('main-ledger-hero');
-    if (mainHero) {
-      mainHero.style.display = (pageId === 'hackathons') ? 'none' : 'block';
+      if (pageId === 'pipeline') renderKanban();
+      if (pageId === 'studio') generateStudioPitches();
+      if (pageId === 'hackathons') renderHackathons();
+      try {
+        history.replaceState(null, null, '#' + pageId);
+      } catch (e) { }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    if (pageId === 'pipeline') renderKanban();
-    if (pageId === 'studio') generateStudioPitches();
-    if (pageId === 'hackathons') renderHackathons();
-    try {
-      history.replaceState(null, null, '#' + pageId);
-    } catch(e) {}
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+    // Load Data
+    function loadData() {
+      if (window.RADAR_JOBS_DATA && window.RADAR_JOBS_DATA.length > 0) {
+        allJobs = window.RADAR_JOBS_DATA;
+      }
+      if (window.RADAR_HACKATHONS_DATA && window.RADAR_HACKATHONS_DATA.length > 0) {
+        allHackathons = window.RADAR_HACKATHONS_DATA;
+      }
+      renderRadar();
+      renderHackathons();
+      startCountdownTicker();
+      updateLedgerMetrics();
 
-  // Load Data
-  function loadData() {
-    if (window.RADAR_JOBS_DATA && window.RADAR_JOBS_DATA.length > 0) {
-      allJobs = window.RADAR_JOBS_DATA;
+      const hash = window.location.hash.replace('#view-', '').replace('#', '');
+      if (hash && ['radar', 'pipeline', 'studio', 'hackathons', 'dna'].includes(hash)) {
+        navigateLedger(hash);
+      }
     }
-    if (window.RADAR_HACKATHONS_DATA && window.RADAR_HACKATHONS_DATA.length > 0) {
-      allHackathons = window.RADAR_HACKATHONS_DATA;
-    }
-    renderRadar();
-    renderHackathons();
-    startCountdownTicker();
-    updateLedgerMetrics();
 
-    const hash = window.location.hash.replace('#view-', '').replace('#', '');
-    if (hash && ['radar', 'pipeline', 'studio', 'hackathons', 'dna'].includes(hash)) {
-      navigateLedger(hash);
-    }
-  }
+    function updateLedgerMetrics() {
+      const total = allJobs.length;
+      const tier1 = allJobs.filter(j => j.match_score >= 88).length;
+      const visaCount = allJobs.filter(j => j.visa_info && j.visa_info.is_sponsored).length;
+      const tracked = Object.values(userStatus).length;
+      const hackCount = allHackathons.length;
+      const hackCapital = allHackathons.reduce((acc, h) => acc + (h.prize_usd || 0), 0);
 
   function updateLedgerMetrics() {
     const untracked = allJobs.filter(j => !userStatus[j.id] || userStatus[j.id] === 'untracked').length;
@@ -1994,15 +2154,11 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
     const metricVisa = document.getElementById('metric-visa');
     if (metricVisa) metricVisa.innerText = visaCount;
 
-    const metricHack = document.getElementById('metric-hackathons');
-    if (metricHack) {
-      if (hackCapital >= 1000000) {
-        metricHack.innerText = `$${(hackCapital / 1000000).toFixed(2)}M`;
-      } else {
-        metricHack.innerText = `$${Math.round(hackCapital / 1000)}k`;
-      }
+      document.getElementById('dock-count-radar').innerText = total;
+      document.getElementById('dock-count-pipeline').innerText = tracked;
+      const dockHack = document.getElementById('dock-count-hackathons');
+      if (dockHack) dockHack.innerText = hackCount;
     }
-    document.getElementById('metric-tracked').innerText = tracked;
 
     document.getElementById('dock-count-radar').innerText = untracked;
     document.getElementById('dock-count-pipeline').innerText = tracked;
@@ -2100,18 +2256,14 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
     // 2. Sort
     filtered.sort((a, b) => {
       if (activeSort === 'latest') {
-        // Latest published timestamp first
         return (b.timestamp || 0) - (a.timestamp || 0) || (b.match_score - a.match_score);
       } else if (activeSort === 'pay') {
-        // Highest compensation ($ / month equivalent) on top
         const payA = (a.pay_info && a.pay_info.pay_monthly_usd) || 0;
         const payB = (b.pay_info && b.pay_info.pay_monthly_usd) || 0;
         return (payB - payA) || (b.match_score - a.match_score) || ((b.timestamp || 0) - (a.timestamp || 0));
       } else if (activeSort === 'potential') {
-        // Highest match score first
         return (b.match_score - a.match_score) || (b.timestamp || 0) - (a.timestamp || 0);
       } else if (activeSort === 'new') {
-        // Unseen / Just discovered first
         const aNew = a.is_new ? 1 : 0;
         const bNew = b.is_new ? 1 : 0;
         return (bNew - aNew) || (b.timestamp || 0) - (a.timestamp || 0);
@@ -2191,29 +2343,27 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
               </div>
 
               <div class="hook-preview-clamped">"${j.recruiter_pitch}"</div>
+              <div class="view-affordance">Inspect Details &amp; Pitches →</div>
             </div>
 
             <div class="card-hairline-footer">
-              <div style="display:flex; align-items:center; gap:6px;">
+              <div class="card-footer-actions">
                 ${isTrackedCard ? `
                   <button class="card-action-btn" title="Restore to Radar discovery catalog" onclick="event.stopPropagation(); markJobStatus('${j.id}', 'untracked');">
                     ↩️ Back to Radar
                   </button>
                 ` : `
-                  <button class="card-action-btn btn-applied" title="Mark applied and move to Pipeline" onclick="event.stopPropagation(); markJobStatus('${j.id}', 'applied');">
-                    ✓ Mark Applied
+                  <button class="card-action-btn btn-applied" title="Mark applied &amp; move to Pipeline" onclick="event.stopPropagation(); markJobStatus('${j.id}', 'applied');">
+                    ✓ Applied
                   </button>
                   <button class="card-action-btn" title="Save to Pipeline to apply later" onclick="event.stopPropagation(); markJobStatus('${j.id}', 'to_apply');">
                     📌 Pipeline
                   </button>
                 `}
               </div>
-              <div style="display:flex; align-items:center; gap:8px;">
-                <span class="view-affordance">Inspect →</span>
-                <a href="${j.url}" target="_blank" rel="noopener noreferrer" class="pill-cta-ink" onclick="event.stopPropagation()">
-                  Apply ↗
-                </a>
-              </div>
+              <a href="${j.url}" target="_blank" rel="noopener noreferrer" class="pill-cta-ink" onclick="event.stopPropagation()">
+                Apply ↗
+              </a>
             </div>
           </div>
         </div>
@@ -2221,32 +2371,32 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
     }).join('');
   }
 
-  // Slide-over Inspector
-  function openInspector(jobId) {
-    const job = allJobs.find(j => j.id === jobId);
-    if (!job) return;
+    // Slide-over Inspector
+    function openInspector(jobId) {
+      const job = allJobs.find(j => j.id === jobId);
+      if (!job) return;
 
-    currentActiveJobId = jobId;
-    document.getElementById('ins-comp').innerText = job.company;
-    document.getElementById('ins-title').innerText = job.title;
-    document.getElementById('ins-loc').innerText = job.location_info ? job.location_info.badge : job.location;
-    document.getElementById('ins-cat').innerText = job.category;
-    document.getElementById('ins-score').innerText = `★ ${job.match_score}% Match`;
-    document.getElementById('ins-pitch').innerText = job.recruiter_pitch;
-    document.getElementById('ins-apply-link').href = job.url;
+      currentActiveJobId = jobId;
+      document.getElementById('ins-comp').innerText = job.company;
+      document.getElementById('ins-title').innerText = job.title;
+      document.getElementById('ins-loc').innerText = job.location_info ? job.location_info.badge : job.location;
+      document.getElementById('ins-cat').innerText = job.category;
+      document.getElementById('ins-score').innerText = `★ ${job.match_score}% Match`;
+      document.getElementById('ins-pitch').innerText = job.recruiter_pitch;
+      document.getElementById('ins-apply-link').href = job.url;
 
-    // Compensation & Pay Info
-    const pay = job.pay_info || { pay_display: 'Not mentioned', is_disclosed: false, note: 'Compensation is not publicly disclosed in the posting.' };
-    document.getElementById('ins-pay-display').innerText = pay.pay_display;
-    document.getElementById('ins-pay-badge').innerText = pay.is_disclosed ? 'Publicly Disclosed' : 'Not Mentioned';
-    document.getElementById('ins-pay-badge').style.color = pay.is_disclosed ? '#34d399' : 'var(--text-dim)';
-    document.getElementById('ins-pay-note').innerText = pay.note || (pay.is_disclosed ? `Estimated monthly rate: ${pay.pay_display}` : 'Compensation is not publicly disclosed in this job description. Verify during initial HR screen.');
+      // Compensation & Pay Info
+      const pay = job.pay_info || { pay_display: 'Not mentioned', is_disclosed: false, note: 'Compensation is not publicly disclosed in the posting.' };
+      document.getElementById('ins-pay-display').innerText = pay.pay_display;
+      document.getElementById('ins-pay-badge').innerText = pay.is_disclosed ? 'Publicly Disclosed' : 'Not Mentioned';
+      document.getElementById('ins-pay-badge').style.color = pay.is_disclosed ? '#34d399' : 'var(--text-dim)';
+      document.getElementById('ins-pay-note').innerText = pay.note || (pay.is_disclosed ? `Estimated monthly rate: ${pay.pay_display}` : 'Compensation is not publicly disclosed in this job description. Verify during initial HR screen.');
 
-    // Visa Policy Info
-    const visa = job.visa_info || { tier: 'Standard', badge: '📍 Self-Check', note: 'Policy not explicitly specified.' };
-    document.getElementById('ins-visa-tier').innerText = visa.tier || 'Visa / Relocation Support';
-    document.getElementById('ins-visa-badge').innerText = visa.badge || 'Standard';
-    document.getElementById('ins-visa-note').innerText = visa.note || 'Contact recruiter to verify visa sponsorship.';
+      // Visa Policy Info
+      const visa = job.visa_info || { tier: 'Standard', badge: '📍 Self-Check', note: 'Policy not explicitly specified.' };
+      document.getElementById('ins-visa-tier').innerText = visa.tier || 'Visa / Relocation Support';
+      document.getElementById('ins-visa-badge').innerText = visa.badge || 'Standard';
+      document.getElementById('ins-visa-note').innerText = visa.note || 'Contact recruiter to verify visa sponsorship.';
 
     const select = document.getElementById('ins-status-select');
     select.value = userStatus[jobId] || 'untracked';
@@ -2254,30 +2404,30 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
       markJobStatus(jobId, e.target.value);
     };
 
-    document.getElementById('inspector-overlay').classList.add('open');
-  }
+      document.getElementById('inspector-overlay').classList.add('open');
+    }
 
-  function closeInspector(e) {
-    if (e && e.target !== document.getElementById('inspector-overlay') && !e.target.classList.contains('inspector-close-btn')) return;
-    document.getElementById('inspector-overlay').classList.remove('open');
-  }
+    function closeInspector(e) {
+      if (e && e.target !== document.getElementById('inspector-overlay') && !e.target.classList.contains('inspector-close-btn')) return;
+      document.getElementById('inspector-overlay').classList.remove('open');
+    }
 
-  // Kanban (Page 2)
-  function renderKanban() {
-    const cols = {
-      'to_apply': document.getElementById('k-list-to_apply'),
-      'applied': document.getElementById('k-list-applied'),
-      'interviewing': document.getElementById('k-list-interviewing'),
-      'offer': document.getElementById('k-list-offer')
-    };
-    Object.values(cols).forEach(c => c.innerHTML = '');
-    const counts = { 'to_apply': 0, 'applied': 0, 'interviewing': 0, 'offer': 0 };
+    // Kanban (Page 2)
+    function renderKanban() {
+      const cols = {
+        'to_apply': document.getElementById('k-list-to_apply'),
+        'applied': document.getElementById('k-list-applied'),
+        'interviewing': document.getElementById('k-list-interviewing'),
+        'offer': document.getElementById('k-list-offer')
+      };
+      Object.values(cols).forEach(c => c.innerHTML = '');
+      const counts = { 'to_apply': 0, 'applied': 0, 'interviewing': 0, 'offer': 0 };
 
-    allJobs.forEach(j => {
-      const st = userStatus[j.id];
-      if (st && cols[st]) {
-        counts[st]++;
-        cols[st].innerHTML += `
+      allJobs.forEach(j => {
+        const st = userStatus[j.id];
+        if (st && cols[st]) {
+          counts[st]++;
+          cols[st].innerHTML += `
           <div class="kanban-item-card" onclick="openInspector('${j.id}')">
             <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:4px;">
               <div style="font-weight:600; color:#fff; font-size:13px;">${j.company}</div>
@@ -2304,8 +2454,8 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
             </div>
           </div>
         `;
-      }
-    });
+        }
+      });
 
     Object.keys(counts).forEach(k => {
       document.getElementById(`k-count-${k}`).innerText = counts[k];
@@ -2315,113 +2465,113 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
     });
   }
 
-  // Studio Sub-Tab Switcher
-  function switchStudioTab(tab) {
-    document.querySelectorAll('.studio-tab-btn').forEach(b => b.classList.remove('active'));
-    document.getElementById(`tab-btn-${tab}`).classList.add('active');
+    // Studio Sub-Tab Switcher
+    function switchStudioTab(tab) {
+      document.querySelectorAll('.studio-tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(`tab-btn-${tab}`).classList.add('active');
 
-    document.getElementById('studio-view-cv').style.display = 'none';
-    document.getElementById('studio-view-pitches').style.display = 'none';
-    document.getElementById('studio-view-qa').style.display = 'none';
+      document.getElementById('studio-view-cv').style.display = 'none';
+      document.getElementById('studio-view-pitches').style.display = 'none';
+      document.getElementById('studio-view-qa').style.display = 'none';
 
-    if (tab === 'cv') {
-      document.getElementById('studio-view-cv').style.display = 'grid';
-    } else if (tab === 'pitches') {
-      document.getElementById('studio-view-pitches').style.display = 'grid';
-      generateStudioPitches();
-    } else if (tab === 'qa') {
-      document.getElementById('studio-view-qa').style.display = 'grid';
-    }
-  }
-
-  // Autofill Active Job to Q&A Studio
-  function autofillActiveJobToQA() {
-    if (!currentActiveJobId) {
-      showToast('Click a job card on the Radar first to select it!');
-      return;
-    }
-    const job = allJobs.find(j => j.id === currentActiveJobId);
-    if (!job) return;
-
-    document.getElementById('qa-comp').value = job.company;
-    document.getElementById('qa-role').value = job.title;
-    document.getElementById('qa-jd-context').value = `${job.category} focus. Location: ${job.location}. Context: ${job.recruiter_pitch}`;
-    showToast(`Loaded ${job.company} into Q&A solver!`);
-  }
-
-  // Quick Question Loader
-  function loadQuickQuestion(type) {
-    const comp = document.getElementById('qa-comp').value.trim() || 'this company';
-    const role = document.getElementById('qa-role').value.trim() || 'the position';
-    const qBox = document.getElementById('qa-question');
-
-    if (type === 'why_company') {
-      qBox.value = `Why are you interested in joining ${comp} for the ${role} position?`;
-    } else if (type === 'deadline') {
-      qBox.value = `Tell us about a time you had to deliver a complex project under tight deadlines with limited resources.`;
-    } else if (type === 'ownership') {
-      qBox.value = `Describe a project or initiative where you took complete end-to-end ownership from idea to launch.`;
-    } else if (type === 'standout') {
-      qBox.value = `What makes you stand out from other candidates applying for the ${role} role at ${comp}?`;
-    }
-    showToast('Loaded prompt template!');
-    qBox.focus();
-  }
-
-  // Generate Human QA Answer
-  async function generateHumanQAAnswer() {
-    const comp = document.getElementById('qa-comp').value.trim() || 'Target Company';
-    const role = document.getElementById('qa-role').value.trim() || 'Target Role';
-    const question = document.getElementById('qa-question').value.trim();
-    const length = document.getElementById('qa-length').value || 'concise';
-    const jdContext = document.getElementById('qa-jd-context').value.trim();
-    const model = localStorage.getItem('garv_nvidia_model') || 'mistralai/mistral-large-4-1t-a52b';
-    const apiKey = localStorage.getItem('garv_nvidia_key') || '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';
-
-    if (!question) {
-      showToast('Please enter an application question first!');
-      document.getElementById('qa-question').focus();
-      return;
+      if (tab === 'cv') {
+        document.getElementById('studio-view-cv').style.display = 'grid';
+      } else if (tab === 'pitches') {
+        document.getElementById('studio-view-pitches').style.display = 'grid';
+        generateStudioPitches();
+      } else if (tab === 'qa') {
+        document.getElementById('studio-view-qa').style.display = 'grid';
+      }
     }
 
-    const btn = document.getElementById('btn-generate-qa');
-    const origText = btn.innerText;
-    btn.disabled = true;
-    btn.innerHTML = '⚡ Drafting 100% Human Answer with Mistral Large...';
+    // Autofill Active Job to Q&A Studio
+    function autofillActiveJobToQA() {
+      if (!currentActiveJobId) {
+        showToast('Click a job card on the Radar first to select it!');
+        return;
+      }
+      const job = allJobs.find(j => j.id === currentActiveJobId);
+      if (!job) return;
 
-    const statusPill = document.getElementById('qa-status-pill');
-    statusPill.innerText = 'Drafting in Operator Voice...';
-    statusPill.className = 'score-chip tier2';
+      document.getElementById('qa-comp').value = job.company;
+      document.getElementById('qa-role').value = job.title;
+      document.getElementById('qa-jd-context').value = `${job.category} focus. Location: ${job.location}. Context: ${job.recruiter_pitch}`;
+      showToast(`Loaded ${job.company} into Q&A solver!`);
+    }
 
-    try {
-      let answerText = null;
+    // Quick Question Loader
+    function loadQuickQuestion(type) {
+      const comp = document.getElementById('qa-comp').value.trim() || 'this company';
+      const role = document.getElementById('qa-role').value.trim() || 'the position';
+      const qBox = document.getElementById('qa-question');
 
-      // 1. Try local runner server endpoint if running
-      try {
-        const localResp = await fetch('/api/generate_qa', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            question: question,
-            company: comp,
-            role: role,
-            jd_context: jdContext,
-            length: length,
-            model: model,
-            api_key: apiKey
-          })
-        });
-        if (localResp.ok) {
-          const resJson = await localResp.json();
-          if (resJson.success) answerText = resJson.answer;
-        }
-      } catch (err) {
-        // Not running on local server, try direct NVIDIA NIM
+      if (type === 'why_company') {
+        qBox.value = `Why are you interested in joining ${comp} for the ${role} position?`;
+      } else if (type === 'deadline') {
+        qBox.value = `Tell us about a time you had to deliver a complex project under tight deadlines with limited resources.`;
+      } else if (type === 'ownership') {
+        qBox.value = `Describe a project or initiative where you took complete end-to-end ownership from idea to launch.`;
+      } else if (type === 'standout') {
+        qBox.value = `What makes you stand out from other candidates applying for the ${role} role at ${comp}?`;
+      }
+      showToast('Loaded prompt template!');
+      qBox.focus();
+    }
+
+    // Generate Human QA Answer
+    async function generateHumanQAAnswer() {
+      const comp = document.getElementById('qa-comp').value.trim() || 'Target Company';
+      const role = document.getElementById('qa-role').value.trim() || 'Target Role';
+      const question = document.getElementById('qa-question').value.trim();
+      const length = document.getElementById('qa-length').value || 'concise';
+      const jdContext = document.getElementById('qa-jd-context').value.trim();
+      const model = localStorage.getItem('garv_nvidia_model') || 'mistralai/mistral-large-4-1t-a52b';
+      const apiKey = localStorage.getItem('garv_nvidia_key') || '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';
+
+      if (!question) {
+        showToast('Please enter an application question first!');
+        document.getElementById('qa-question').focus();
+        return;
       }
 
-      // 2. Direct NVIDIA NIM Fallback
-      if (!answerText) {
-        const antiAISys = `You are Garv Gupta writing in your authentic first-person voice ("I", "my team"). You are a 20-year-old operator studying Digital & Business Entrepreneurship at IIM Bangalore (MIT ADT transfer, 8.25 CGPA).
+      const btn = document.getElementById('btn-generate-qa');
+      const origText = btn.innerText;
+      btn.disabled = true;
+      btn.innerHTML = '⚡ Drafting 100% Human Answer with Mistral Large...';
+
+      const statusPill = document.getElementById('qa-status-pill');
+      statusPill.innerText = 'Drafting in Operator Voice...';
+      statusPill.className = 'score-chip tier2';
+
+      try {
+        let answerText = null;
+
+        // 1. Try local runner server endpoint if running
+        try {
+          const localResp = await fetch('/api/generate_qa', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              question: question,
+              company: comp,
+              role: role,
+              jd_context: jdContext,
+              length: length,
+              model: model,
+              api_key: apiKey
+            })
+          });
+          if (localResp.ok) {
+            const resJson = await localResp.json();
+            if (resJson.success) answerText = resJson.answer;
+          }
+        } catch (err) {
+          // Not running on local server, try direct NVIDIA NIM
+        }
+
+        // 2. Direct NVIDIA NIM Fallback
+        if (!answerText) {
+          const antiAISys = `You are Garv Gupta writing in your authentic first-person voice ("I", "my team"). You are a 20-year-old operator studying Digital & Business Entrepreneurship at IIM Bangalore (MIT ADT transfer, 8.25 CGPA).
 Draft an answer to an open-ended job application question for a top tech internship.
 
 STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
@@ -2439,445 +2589,445 @@ STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
    NEVER invent fake companies, degrees, or stats.
 6. START IN THE ACTION: Jump straight into the answer without throat-clearing fluff.`;
 
-        const lengthMap = {
-          'short': 'Keep it short & punchy (~60 to 80 words, 1 dense paragraph).',
-          'concise': 'Standard concise answer (~120 to 160 words, 2-3 focused paragraphs).',
-          'detailed': 'Detailed essay (~220 to 280 words, 3 detailed paragraphs with deep context).'
-        };
+          const lengthMap = {
+            'short': 'Keep it short & punchy (~60 to 80 words, 1 dense paragraph).',
+            'concise': 'Standard concise answer (~120 to 160 words, 2-3 focused paragraphs).',
+            'detailed': 'Detailed essay (~220 to 280 words, 3 detailed paragraphs with deep context).'
+          };
 
-        const nimResp = await fetch('https://integrate.api.nvidia.com/v1/chat/completions', {
-          method: 'POST',
-          headers: {
-            'Authorization': `Bearer ${apiKey}`,
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify({
-            model: model,
-            messages: [
-              { role: 'system', content: antiAISys },
-              { role: 'user', content: `Target Company: ${comp}\nTarget Role: ${role}\nContext: ${jdContext}\nLength: ${lengthMap[length] || lengthMap['concise']}\n\nApplication Question:\n"${question}"\n\nDraft 100% human answer:` }
-            ],
-            temperature: 0.45,
-            max_tokens: 4096,
-            reasoning_effort: 'low'
-          })
-        });
+          const nimResp = await fetch('https://integrate.api.nvidia.com/v1/chat/completions', {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${apiKey}`,
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+              model: model,
+              messages: [
+                { role: 'system', content: antiAISys },
+                { role: 'user', content: `Target Company: ${comp}\nTarget Role: ${role}\nContext: ${jdContext}\nLength: ${lengthMap[length] || lengthMap['concise']}\n\nApplication Question:\n"${question}"\n\nDraft 100% human answer:` }
+              ],
+              temperature: 0.45,
+              max_tokens: 4096,
+              reasoning_effort: 'low'
+            })
+          });
 
-        if (!nimResp.ok) throw new Error(`NVIDIA API returned ${nimResp.status}`);
-        const nimData = await nimResp.json();
-        let raw = nimData.choices[0].message.content || nimData.choices[0].message.reasoning_content || '';
-        // Clean anti-AI text
-        answerText = raw.replace(/—/g, ', ').replace(/--/g, '-').replace(/\s+,\s+/g, ', ').trim();
-        if (answerText.startsWith('"') && answerText.endsWith('"')) {
-          answerText = answerText.substring(1, answerText.length - 1).trim();
-        }
-      }
-
-      if (answerText) {
-        document.getElementById('qa-answer-text').value = answerText;
-        const words = answerText.split(/\s+/).filter(w => w.length > 0).length;
-        document.getElementById('qa-word-count').innerText = words;
-        document.getElementById('qa-read-time').innerText = Math.max(15, Math.round(words / 3.2));
-        statusPill.innerText = `100% Human Voice (${words} words)`;
-        statusPill.className = 'score-chip tier1';
-        showToast('✓ 100% human answer drafted!');
-      } else {
-        throw new Error('Could not parse response from AI model.');
-      }
-    } catch (err) {
-      statusPill.innerText = 'Notice';
-      statusPill.className = 'score-chip';
-      showToast(`To run AI answer solver, use CLI: python3 radar_runner.py qa "${comp}" "${role}" "${question.substring(0, 40)}"`);
-    } finally {
-      btn.disabled = false;
-      btn.innerHTML = origText;
-    }
-  }
-
-  // Copy QA Answer
-  function copyQAAnswer() {
-    const text = document.getElementById('qa-answer-text').value;
-    navigator.clipboard.writeText(text).then(() => {
-      showToast('✓ Answer copied to clipboard! Ready to paste into form.');
-    });
-  }
-
-  // Autofill Active Job to CV Studio
-  function autofillActiveJobToCV() {
-    if (!currentActiveJobId) {
-      showToast('Click a job card on the Radar first to select it!');
-      return;
-    }
-    const job = allJobs.find(j => j.id === currentActiveJobId);
-    if (!job) return;
-
-    document.getElementById('cv-comp').value = job.company;
-    document.getElementById('cv-role').value = job.title;
-    document.getElementById('cv-jd').value = `Target Role: ${job.title}\nCompany: ${job.company}\nLocation: ${job.location}\nATS Source: ${job.source}\nCategory: ${job.category}\n\nKey Hook Context: ${job.recruiter_pitch}\n\nDirect URL: ${job.url}`;
-    showToast(`Loaded details for ${job.company}!`);
-  }
-
-  // Generate Tailored Human CV via Mistral Large 4 / NVIDIA NIM
-  async function generateTailoredCV() {
-    const comp = document.getElementById('cv-comp').value.trim() || 'Target Company';
-    const role = document.getElementById('cv-role').value.trim() || 'Target Role';
-    const jd = document.getElementById('cv-jd').value.trim();
-    const model = document.getElementById('cv-model').value;
-    const apiKey = document.getElementById('cv-api-key').value.trim() || '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';
-
-    if (!jd) {
-      showToast('Please paste a Job Description in the prompt box first!');
-      document.getElementById('cv-jd').focus();
-      return;
-    }
-
-    localStorage.setItem('garv_nvidia_key', apiKey);
-    localStorage.setItem('garv_nvidia_model', model);
-
-    const btn = document.getElementById('btn-generate-cv');
-    const origText = btn.innerText;
-    btn.disabled = true;
-    btn.innerHTML = '⚡ Drafting 100% Human CV with Mistral Large...';
-
-    const statusPill = document.getElementById('cv-status-pill');
-    statusPill.innerText = 'Reasoning...';
-    statusPill.className = 'score-chip tier2';
-
-    try {
-      // 1. Try local runner server endpoint if running
-      let htmlOutput = null;
-      try {
-        const localResp = await fetch('/api/generate_cv', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            company: comp,
-            role: role,
-            jd: jd,
-            model: model,
-            api_key: apiKey
-          })
-        });
-        if (localResp.ok) {
-          const resJson = await localResp.json();
-          if (resJson.success) htmlOutput = resJson.html;
-        }
-      } catch (err) {
-        // Not running on local server, try direct
-      }
-
-      // 2. Direct NVIDIA NIM Call fallback
-      if (!htmlOutput) {
-        const baseResumeText = `GARV GUPTA | IIM Bangalore (BBA Digital Entrepreneurship 2024-2027) | MIT ADT (CGPA 8.25)\nAchievements: 2nd Place & Community Choice Baidu MeDo AI Hackathon ($6,500 prize, 8,424 participants, solo build); Top 10 Zo Computers UI/UX ($1,000 prize); Top 10 Anything.com Remixathon; 1st Place IIM Bangalore essay cited by Microsoft researcher; 200,000+ organic LinkedIn impressions.\nExperience: AnybodyCanBake Owner & Ops Lead (10,000+ students, full legal & P&L responsibility, 5-7 team); Digibility AI (Early team, product strategy, website redesign); SocialBent (SEO/Content).\nProjects: SlotSaver (AI WhatsApp automation MVP in <48h solo with Claude API and Twilio).\nSkills: Claude API, OpenAI API, Twilio, WhatsApp Business API, Python, Figma, Google Analytics, SEO, P&L.`;
-
-        const antiAISys = `You are an elite career strategist. Write a tailored, single-page, ATS-compliant CV for Garv Gupta aligned to the provided Job Description.\nSTRICT ANTI-AI RULES:\n1. Zero AI buzzwords: Never use 'spearheaded', 'orchestrated', 'pivotal', 'tapestry', 'delve', 'beacon', 'testament', 'dynamic', 'fostered', 'harnessed', 'leverage', 'seamless', 'cutting-edge', 'synergy', 'in order to'.\n2. Pure operator voice: Every bullet begins with: Built, Shipped, Won, Cut, Led, Managed, Designed, Coordinated, Ran, Scaled, Pitched.\n3. 100% factual fidelity: Strictly preserve Garv Gupta's authentic credentials (IIM Bangalore, Baidu $6.5k Hackathon 2nd Place, AnybodyCanBake P&L with 10k students, SlotSaver 48h solo MVP, Zo Computers top 10). Never invent fake facts.\n4. Format: Return clean semantic HTML (h1, section, h2, ul, li) for a classic Harvard/IIM single-page executive resume.`;
-
-        const nimResp = await fetch('https://integrate.api.nvidia.com/v1/chat/completions', {
-          method: 'POST',
-          headers: {
-            'Authorization': `Bearer ${apiKey}`,
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify({
-            model: model,
-            messages: [
-              { role: 'system', content: antiAISys },
-              { role: 'user', content: `Candidate Resume:\n${baseResumeText}\n\nTarget Company: ${comp}\nTarget Role: ${role}\nTarget Job Description:\n${jd}\n\nDraft tailored single-page human CV in HTML.` }
-            ],
-            temperature: 0.4,
-            max_tokens: 4096,
-            reasoning_effort: 'low'
-          })
-        });
-
-        if (!nimResp.ok) {
-          throw new Error(`NVIDIA API returned status ${nimResp.status}`);
-        }
-        const nimData = await nimResp.json();
-        let raw = nimData.choices[0].message.content || nimData.choices[0].message.reasoning_content || '';
-        if (raw.includes('```html')) raw = raw.split('```html')[1].split('```')[0].trim();
-        else if (raw.includes('```')) raw = raw.split('```')[1].split('```')[0].trim();
-        htmlOutput = raw;
-      }
-
-      if (htmlOutput) {
-        document.getElementById('cv-paper-sheet').innerHTML = htmlOutput;
-        statusPill.innerText = `Tailored for ${comp}`;
-        statusPill.className = 'score-chip tier1';
-        showToast('✓ 100% human-tailored CV drafted!');
-      } else {
-        throw new Error('Could not parse response from AI model.');
-      }
-    } catch (err) {
-      statusPill.innerText = 'Notice';
-      statusPill.className = 'score-chip';
-      showToast(`To generate CV, run 'python3 radar_runner.py serve' locally or use CLI: python3 radar_runner.py cv "${comp}" "${role}"`);
-    } finally {
-      btn.disabled = false;
-      btn.innerHTML = origText;
-    }
-  }
-
-  // 1-Click PDF Download via Native Print Engine
-  function downloadCVPdf() {
-    window.print();
-  }
-
-  // Live In-Place Editing
-  let isEditingCV = false;
-  function toggleEditInPlace() {
-    const sheet = document.getElementById('cv-paper-sheet');
-    const btn = document.getElementById('btn-edit-mode');
-    isEditingCV = !isEditingCV;
-    sheet.contentEditable = isEditingCV;
-    if (isEditingCV) {
-      sheet.style.outline = '2px dashed #34d399';
-      btn.innerText = '💾 Lock Edits';
-      btn.style.color = '#34d399';
-      showToast('Edit mode: click any text on the resume to edit!');
-      sheet.focus();
-    } else {
-      sheet.style.outline = 'none';
-      btn.innerText = '✏️ Edit in Place';
-      btn.style.color = '';
-      showToast('Changes saved to your live resume sheet.');
-    }
-  }
-
-  function copyCVContent() {
-    const sheet = document.getElementById('cv-paper-sheet');
-    navigator.clipboard.writeText(sheet.innerText).then(() => {
-      showToast('Resume text copied to clipboard!');
-    });
-  }
-
-  // Pitch Studio (Page 3)
-  function generateStudioPitches() {
-    const comp = document.getElementById('st-comp').value || 'Target Company';
-    const role = document.getElementById('st-role').value || 'Intern';
-    const name = document.getElementById('st-name').value || 'there';
-    const track = document.getElementById('st-track').value;
-
-    let liNote = '';
-    let emailNote = '';
-
-    if (track === 'product') {
-      liNote = `Hi ${name}! Saw ${comp}'s ${role} opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally in Baidu's 8,400+ participant AI hackathon ($6.5k prize), I'd love to bring this execution speed to ${comp}! Portfolio: garvgupta.app`;
-      emailNote = `Subject: Application: ${role} - Garv Gupta (IIM Bangalore / Baidu Hackathon 2nd Place)\n\nHi ${name},\n\nI recently submitted my application for the ${role} opening at ${comp}.\n\nAs an undergraduate at IIM Bangalore studying Digital & Business Entrepreneurship, I don't just study product theory—I execute. I solo-built and shipped SlotSaver (an AI WhatsApp scheduling MVP) in under 48 hours using Claude API and Twilio, and placed 2nd globally among 8,424 participants in Baidu's AI hackathon ($6,500 prize pool).\n\nAdditionally, I placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), allowing me to bridge product roadmaps directly with high-fidelity Figma prototypes.\n\nI would love the opportunity to contribute to ${comp}'s product team this summer. You can review my shipped builds at https://garvgupta.app.\n\nBest regards,\nGarv Gupta\n+91 7709732662 | linkedin.com/in/garv-gupta07`;
-    } else {
-      liNote = `Hi ${name}! Noticed the ${role} opening at ${comp}. I currently manage full P&L and cross-functional operations for a 10,000+ student education brand (AnybodyCanBake) with 5-7 team members alongside my degree at IIM Bangalore. Would love to bring proven execution to ${comp}!`;
-      emailNote = `Subject: Application: ${role} - Garv Gupta (IIM Bangalore / Operations Lead)\n\nHi ${name},\n\nI saw ${comp}'s opening for the ${role} and wanted to reach out directly.\n\nAlongside studying Digital & Business Entrepreneurship at IIM Bangalore, I currently serve as the Owner & Operations Lead at AnybodyCanBake, where I took legal ownership of a 10,000-student brand, managing full P&L, 5-7 team members, and course GTM logistics.\n\nHaving also generated 200,000+ organic LinkedIn impressions and organized 800+ attendee summits, I bridge high-level business strategy with granular operational execution.\n\nI'd welcome the chance to support ${comp}'s operations and growth.\n\nBest,\nGarv Gupta\nhttps://garvgupta.app`;
-    }
-
-    document.getElementById('out-linkedin').innerText = liNote;
-    document.getElementById('out-email').innerText = emailNote;
-  }
-
-  // Toast & Copy
-  function showToast(msg) {
-    const toast = document.getElementById('toast');
-    toast.innerHTML = `<span>✓</span> ${msg}`;
-    toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 2200);
-  }
-
-  function copySnippet(elementId) {
-    const text = document.getElementById(elementId).innerText;
-    navigator.clipboard.writeText(text).then(() => showToast('Copied to clipboard'));
-  }
-
-  function copyInspectorSnippet(elementId) {
-    const text = document.getElementById(elementId).innerText;
-    navigator.clipboard.writeText(text).then(() => showToast('Note copied to clipboard'));
-  }
-
-  // Event Listeners
-  document.getElementById('radar-search-input').addEventListener('input', renderRadar);
-
-  // Sorting Listener
-  document.querySelectorAll('#filter-sorting .pill-filter').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      document.querySelectorAll('#filter-sorting .pill-filter').forEach(b => b.classList.remove('active'));
-      e.target.classList.add('active');
-      renderRadar();
-    });
-  });
-
-  // Facet Filters Listener (Tier 1, Fresh, Direct ATS)
-  document.querySelectorAll('#filter-facets .pill-filter').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      document.querySelectorAll('#filter-facets .pill-filter').forEach(b => b.classList.remove('active'));
-      e.target.classList.add('active');
-      renderRadar();
-    });
-  });
-
-  document.querySelectorAll('#filter-tracks .pill-filter').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      document.querySelectorAll('#filter-tracks .pill-filter').forEach(b => b.classList.remove('active'));
-      e.target.classList.add('active');
-      renderRadar();
-    });
-  });
-
-  document.querySelectorAll('#filter-regions .pill-filter').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      document.querySelectorAll('#filter-regions .pill-filter').forEach(b => b.classList.remove('active'));
-      e.target.classList.add('active');
-      renderRadar();
-    });
-  });
-
-  // ==========================================================================
-  // HACKATHON ARENA & COUNTDOWN TICKER ENGINE
-  // ==========================================================================
-  function getCountdownData(deadlineIso) {
-    const target = new Date(deadlineIso).getTime();
-    const now = new Date().getTime();
-    const diff = target - now;
-
-    if (isNaN(target) || diff <= 0) {
-      return {
-        text: "00d : 00h : 00m : 00s",
-        closed: true,
-        urgent: false,
-        soon: false,
-        note: "Submission Period Ended"
-      };
-    }
-
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    const secs = Math.floor((diff % (1000 * 60)) / 1000);
-
-    const pad = (n) => String(n).padStart(2, '0');
-    const text = `${pad(days)}d : ${pad(hours)}h : ${pad(mins)}m : ${pad(secs)}s`;
-
-    const totalHours = diff / (1000 * 60 * 60);
-    const urgent = totalHours <= 48; // Under 48 hours: Pulsing Red/Amber
-    const soon = totalHours <= 168 && !urgent; // Under 7 days: Amber
-
-    return { text, closed: false, urgent, soon, days, hours, mins, secs };
-  }
-
-  let countdownTimerId = null;
-  function startCountdownTicker() {
-    if (countdownTimerId) clearInterval(countdownTimerId);
-    countdownTimerId = setInterval(() => {
-      document.querySelectorAll('.hackathon-countdown-pill').forEach(pill => {
-        const deadline = pill.getAttribute('data-deadline');
-        if (deadline) {
-          const cd = getCountdownData(deadline);
-          const timeSpan = pill.querySelector('.time-string');
-          if (timeSpan) timeSpan.innerText = cd.text;
-
-          pill.classList.remove('urgent', 'soon', 'closed');
-          if (cd.closed) {
-            pill.classList.add('closed');
-          } else if (cd.urgent) {
-            pill.classList.add('urgent');
-          } else if (cd.soon) {
-            pill.classList.add('soon');
+          if (!nimResp.ok) throw new Error(`NVIDIA API returned ${nimResp.status}`);
+          const nimData = await nimResp.json();
+          let raw = nimData.choices[0].message.content || nimData.choices[0].message.reasoning_content || '';
+          // Clean anti-AI text
+          answerText = raw.replace(/—/g, ', ').replace(/--/g, '-').replace(/\s+,\s+/g, ', ').trim();
+          if (answerText.startsWith('"') && answerText.endsWith('"')) {
+            answerText = answerText.substring(1, answerText.length - 1).trim();
           }
         }
-      });
-    }, 1000);
-  }
 
-  function renderHackathons() {
-    const searchVal = (document.getElementById('hackathon-search-input')?.value || '').toLowerCase().trim();
-
-    let filtered = allHackathons.filter(h => {
-      const matchSearch = !searchVal || 
-        h.title.toLowerCase().includes(searchVal) ||
-        h.organizer.toLowerCase().includes(searchVal) ||
-        h.platform.toLowerCase().includes(searchVal) ||
-        h.brief.toLowerCase().includes(searchVal) ||
-        (h.recommended_stack && h.recommended_stack.toLowerCase().includes(searchVal)) ||
-        (h.tags && h.tags.some(t => t.toLowerCase().includes(searchVal)));
-
-      let matchPlatform = true;
-      if (currentHackPlatform === 'devpost') {
-        matchPlatform = h.platform.toLowerCase().includes('devpost');
-      } else if (currentHackPlatform === 'flagship') {
-        matchPlatform = h.platform.toLowerCase().includes('google') || 
-                        h.platform.toLowerCase().includes('cloudflare') || 
-                        h.organizer.toLowerCase().includes('aws') || 
-                        h.organizer.toLowerCase().includes('meta');
-      } else if (currentHackPlatform === 'lablab') {
-        matchPlatform = h.platform.toLowerCase().includes('lablab') || 
-                        h.platform.toLowerCase().includes('supabase') || 
-                        h.platform.toLowerCase().includes('contra');
-      } else if (currentHackPlatform === 'web3') {
-        matchPlatform = h.platform.toLowerCase().includes('dora') || 
-                        h.platform.toLowerCase().includes('solana') || 
-                        (h.tags && h.tags.some(t => t.toLowerCase().includes('web3')));
-      }
-
-      return matchSearch && matchPlatform;
-    });
-
-    filtered.sort((a, b) => {
-      if (currentHackSort === 'urgent') {
-        const tA = new Date(a.deadline_iso).getTime() || 9999999999999;
-        const tB = new Date(b.deadline_iso).getTime() || 9999999999999;
-        return tA - tB;
-      } else if (currentHackSort === 'prize') {
-        return (b.prize_usd || 0) - (a.prize_usd || 0);
-      } else if (currentHackSort === 'vibe') {
-        const scoreA = parseInt(a.vibe_coder_score) || 90;
-        const scoreB = parseInt(b.vibe_coder_score) || 90;
-        return scoreB - scoreA || (b.prize_usd || 0) - (a.prize_usd || 0);
-      }
-      return 0;
-    });
-
-    // Update hackathon header metrics
-    const statTotal = document.getElementById('hack-stat-total');
-    if (statTotal) statTotal.innerText = filtered.length;
-    
-    const totalCap = filtered.reduce((acc, h) => acc + (h.prize_usd || 0), 0);
-    const statCap = document.getElementById('hack-stat-capital');
-    if (statCap) {
-      if (totalCap >= 1000000) {
-        statCap.innerText = `$${(totalCap / 1000000).toFixed(2)}M`;
-      } else {
-        statCap.innerText = `$${Math.round(totalCap / 1000)}k`;
+        if (answerText) {
+          document.getElementById('qa-answer-text').value = answerText;
+          const words = answerText.split(/\s+/).filter(w => w.length > 0).length;
+          document.getElementById('qa-word-count').innerText = words;
+          document.getElementById('qa-read-time').innerText = Math.max(15, Math.round(words / 3.2));
+          statusPill.innerText = `100% Human Voice (${words} words)`;
+          statusPill.className = 'score-chip tier1';
+          showToast('✓ 100% human answer drafted!');
+        } else {
+          throw new Error('Could not parse response from AI model.');
+        }
+      } catch (err) {
+        statusPill.innerText = 'Notice';
+        statusPill.className = 'score-chip';
+        showToast(`To run AI answer solver, use CLI: python3 radar_runner.py qa "${comp}" "${role}" "${question.substring(0, 40)}"`);
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = origText;
       }
     }
 
-    const urgentCount = filtered.filter(h => {
-      const diff = new Date(h.deadline_iso).getTime() - Date.now();
-      return diff > 0 && diff <= 48 * 3600 * 1000;
-    }).length;
-    const statUrgent = document.getElementById('hack-stat-urgent');
-    if (statUrgent) statUrgent.innerText = urgentCount;
+    // Copy QA Answer
+    function copyQAAnswer() {
+      const text = document.getElementById('qa-answer-text').value;
+      navigator.clipboard.writeText(text).then(() => {
+        showToast('✓ Answer copied to clipboard! Ready to paste into form.');
+      });
+    }
 
-    const grid = document.getElementById('hackathons-catalog-grid');
-    if (!grid) return;
+    // Autofill Active Job to CV Studio
+    function autofillActiveJobToCV() {
+      if (!currentActiveJobId) {
+        showToast('Click a job card on the Radar first to select it!');
+        return;
+      }
+      const job = allJobs.find(j => j.id === currentActiveJobId);
+      if (!job) return;
 
-    if (filtered.length === 0) {
-      grid.innerHTML = `
+      document.getElementById('cv-comp').value = job.company;
+      document.getElementById('cv-role').value = job.title;
+      document.getElementById('cv-jd').value = `Target Role: ${job.title}\nCompany: ${job.company}\nLocation: ${job.location}\nATS Source: ${job.source}\nCategory: ${job.category}\n\nKey Hook Context: ${job.recruiter_pitch}\n\nDirect URL: ${job.url}`;
+      showToast(`Loaded details for ${job.company}!`);
+    }
+
+    // Generate Tailored Human CV via Mistral Large 4 / NVIDIA NIM
+    async function generateTailoredCV() {
+      const comp = document.getElementById('cv-comp').value.trim() || 'Target Company';
+      const role = document.getElementById('cv-role').value.trim() || 'Target Role';
+      const jd = document.getElementById('cv-jd').value.trim();
+      const model = document.getElementById('cv-model').value;
+      const apiKey = document.getElementById('cv-api-key').value.trim() || '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';
+
+      if (!jd) {
+        showToast('Please paste a Job Description in the prompt box first!');
+        document.getElementById('cv-jd').focus();
+        return;
+      }
+
+      localStorage.setItem('garv_nvidia_key', apiKey);
+      localStorage.setItem('garv_nvidia_model', model);
+
+      const btn = document.getElementById('btn-generate-cv');
+      const origText = btn.innerText;
+      btn.disabled = true;
+      btn.innerHTML = '⚡ Drafting 100% Human CV with Mistral Large...';
+
+      const statusPill = document.getElementById('cv-status-pill');
+      statusPill.innerText = 'Reasoning...';
+      statusPill.className = 'score-chip tier2';
+
+      try {
+        // 1. Try local runner server endpoint if running
+        let htmlOutput = null;
+        try {
+          const localResp = await fetch('/api/generate_cv', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              company: comp,
+              role: role,
+              jd: jd,
+              model: model,
+              api_key: apiKey
+            })
+          });
+          if (localResp.ok) {
+            const resJson = await localResp.json();
+            if (resJson.success) htmlOutput = resJson.html;
+          }
+        } catch (err) {
+          // Not running on local server, try direct
+        }
+
+        // 2. Direct NVIDIA NIM Call fallback
+        if (!htmlOutput) {
+          const baseResumeText = `GARV GUPTA | IIM Bangalore (BBA Digital Entrepreneurship 2024-2027) | MIT ADT (CGPA 8.25)\nAchievements: 2nd Place & Community Choice Baidu MeDo AI Hackathon ($6,500 prize, 8,424 participants, solo build); Top 10 Zo Computers UI/UX ($1,000 prize); Top 10 Anything.com Remixathon; 1st Place IIM Bangalore essay cited by Microsoft researcher; 200,000+ organic LinkedIn impressions.\nExperience: AnybodyCanBake Owner & Ops Lead (10,000+ students, full legal & P&L responsibility, 5-7 team); Digibility AI (Early team, product strategy, website redesign); SocialBent (SEO/Content).\nProjects: SlotSaver (AI WhatsApp automation MVP in <48h solo with Claude API and Twilio).\nSkills: Claude API, OpenAI API, Twilio, WhatsApp Business API, Python, Figma, Google Analytics, SEO, P&L.`;
+
+          const antiAISys = `You are an elite career strategist. Write a tailored, single-page, ATS-compliant CV for Garv Gupta aligned to the provided Job Description.\nSTRICT ANTI-AI RULES:\n1. Zero AI buzzwords: Never use 'spearheaded', 'orchestrated', 'pivotal', 'tapestry', 'delve', 'beacon', 'testament', 'dynamic', 'fostered', 'harnessed', 'leverage', 'seamless', 'cutting-edge', 'synergy', 'in order to'.\n2. Pure operator voice: Every bullet begins with: Built, Shipped, Won, Cut, Led, Managed, Designed, Coordinated, Ran, Scaled, Pitched.\n3. 100% factual fidelity: Strictly preserve Garv Gupta's authentic credentials (IIM Bangalore, Baidu $6.5k Hackathon 2nd Place, AnybodyCanBake P&L with 10k students, SlotSaver 48h solo MVP, Zo Computers top 10). Never invent fake facts.\n4. Format: Return clean semantic HTML (h1, section, h2, ul, li) for a classic Harvard/IIM single-page executive resume.`;
+
+          const nimResp = await fetch('https://integrate.api.nvidia.com/v1/chat/completions', {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${apiKey}`,
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+              model: model,
+              messages: [
+                { role: 'system', content: antiAISys },
+                { role: 'user', content: `Candidate Resume:\n${baseResumeText}\n\nTarget Company: ${comp}\nTarget Role: ${role}\nTarget Job Description:\n${jd}\n\nDraft tailored single-page human CV in HTML.` }
+              ],
+              temperature: 0.4,
+              max_tokens: 4096,
+              reasoning_effort: 'low'
+            })
+          });
+
+          if (!nimResp.ok) {
+            throw new Error(`NVIDIA API returned status ${nimResp.status}`);
+          }
+          const nimData = await nimResp.json();
+          let raw = nimData.choices[0].message.content || nimData.choices[0].message.reasoning_content || '';
+          if (raw.includes('```html')) raw = raw.split('```html')[1].split('```')[0].trim();
+          else if (raw.includes('```')) raw = raw.split('```')[1].split('```')[0].trim();
+          htmlOutput = raw;
+        }
+
+        if (htmlOutput) {
+          document.getElementById('cv-paper-sheet').innerHTML = htmlOutput;
+          statusPill.innerText = `Tailored for ${comp}`;
+          statusPill.className = 'score-chip tier1';
+          showToast('✓ 100% human-tailored CV drafted!');
+        } else {
+          throw new Error('Could not parse response from AI model.');
+        }
+      } catch (err) {
+        statusPill.innerText = 'Notice';
+        statusPill.className = 'score-chip';
+        showToast(`To generate CV, run 'python3 radar_runner.py serve' locally or use CLI: python3 radar_runner.py cv "${comp}" "${role}"`);
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = origText;
+      }
+    }
+
+    // 1-Click PDF Download via Native Print Engine
+    function downloadCVPdf() {
+      window.print();
+    }
+
+    // Live In-Place Editing
+    let isEditingCV = false;
+    function toggleEditInPlace() {
+      const sheet = document.getElementById('cv-paper-sheet');
+      const btn = document.getElementById('btn-edit-mode');
+      isEditingCV = !isEditingCV;
+      sheet.contentEditable = isEditingCV;
+      if (isEditingCV) {
+        sheet.style.outline = '2px dashed #34d399';
+        btn.innerText = '💾 Lock Edits';
+        btn.style.color = '#34d399';
+        showToast('Edit mode: click any text on the resume to edit!');
+        sheet.focus();
+      } else {
+        sheet.style.outline = 'none';
+        btn.innerText = '✏️ Edit in Place';
+        btn.style.color = '';
+        showToast('Changes saved to your live resume sheet.');
+      }
+    }
+
+    function copyCVContent() {
+      const sheet = document.getElementById('cv-paper-sheet');
+      navigator.clipboard.writeText(sheet.innerText).then(() => {
+        showToast('Resume text copied to clipboard!');
+      });
+    }
+
+    // Pitch Studio (Page 3)
+    function generateStudioPitches() {
+      const comp = document.getElementById('st-comp').value || 'Target Company';
+      const role = document.getElementById('st-role').value || 'Intern';
+      const name = document.getElementById('st-name').value || 'there';
+      const track = document.getElementById('st-track').value;
+
+      let liNote = '';
+      let emailNote = '';
+
+      if (track === 'product') {
+        liNote = `Hi ${name}! Saw ${comp}'s ${role} opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally in Baidu's 8,400+ participant AI hackathon ($6.5k prize), I'd love to bring this execution speed to ${comp}! Portfolio: garvgupta.app`;
+        emailNote = `Subject: Application: ${role} - Garv Gupta (IIM Bangalore / Baidu Hackathon 2nd Place)\n\nHi ${name},\n\nI recently submitted my application for the ${role} opening at ${comp}.\n\nAs an undergraduate at IIM Bangalore studying Digital & Business Entrepreneurship, I don't just study product theory—I execute. I solo-built and shipped SlotSaver (an AI WhatsApp scheduling MVP) in under 48 hours using Claude API and Twilio, and placed 2nd globally among 8,424 participants in Baidu's AI hackathon ($6,500 prize pool).\n\nAdditionally, I placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), allowing me to bridge product roadmaps directly with high-fidelity Figma prototypes.\n\nI would love the opportunity to contribute to ${comp}'s product team this summer. You can review my shipped builds at https://garvgupta.app.\n\nBest regards,\nGarv Gupta\n+91 7709732662 | linkedin.com/in/garv-gupta07`;
+      } else {
+        liNote = `Hi ${name}! Noticed the ${role} opening at ${comp}. I currently manage full P&L and cross-functional operations for a 10,000+ student education brand (AnybodyCanBake) with 5-7 team members alongside my degree at IIM Bangalore. Would love to bring proven execution to ${comp}!`;
+        emailNote = `Subject: Application: ${role} - Garv Gupta (IIM Bangalore / Operations Lead)\n\nHi ${name},\n\nI saw ${comp}'s opening for the ${role} and wanted to reach out directly.\n\nAlongside studying Digital & Business Entrepreneurship at IIM Bangalore, I currently serve as the Owner & Operations Lead at AnybodyCanBake, where I took legal ownership of a 10,000-student brand, managing full P&L, 5-7 team members, and course GTM logistics.\n\nHaving also generated 200,000+ organic LinkedIn impressions and organized 800+ attendee summits, I bridge high-level business strategy with granular operational execution.\n\nI'd welcome the chance to support ${comp}'s operations and growth.\n\nBest,\nGarv Gupta\nhttps://garvgupta.app`;
+      }
+
+      document.getElementById('out-linkedin').innerText = liNote;
+      document.getElementById('out-email').innerText = emailNote;
+    }
+
+    // Toast & Copy
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.innerHTML = `<span>✓</span> ${msg}`;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2200);
+    }
+
+    function copySnippet(elementId) {
+      const text = document.getElementById(elementId).innerText;
+      navigator.clipboard.writeText(text).then(() => showToast('Copied to clipboard'));
+    }
+
+    function copyInspectorSnippet(elementId) {
+      const text = document.getElementById(elementId).innerText;
+      navigator.clipboard.writeText(text).then(() => showToast('Note copied to clipboard'));
+    }
+
+    // Event Listeners
+    document.getElementById('radar-search-input').addEventListener('input', renderRadar);
+
+    // Sorting Listener
+    document.querySelectorAll('#filter-sorting .pill-filter').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('#filter-sorting .pill-filter').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        renderRadar();
+      });
+    });
+
+    // Facet Filters Listener (Tier 1, Fresh, Direct ATS)
+    document.querySelectorAll('#filter-facets .pill-filter').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('#filter-facets .pill-filter').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        renderRadar();
+      });
+    });
+
+    document.querySelectorAll('#filter-tracks .pill-filter').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('#filter-tracks .pill-filter').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        renderRadar();
+      });
+    });
+
+    document.querySelectorAll('#filter-regions .pill-filter').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('#filter-regions .pill-filter').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        renderRadar();
+      });
+    });
+
+    // ==========================================================================
+    // HACKATHON ARENA & COUNTDOWN TICKER ENGINE
+    // ==========================================================================
+    function getCountdownData(deadlineIso) {
+      const target = new Date(deadlineIso).getTime();
+      const now = new Date().getTime();
+      const diff = target - now;
+
+      if (isNaN(target) || diff <= 0) {
+        return {
+          text: "00d : 00h : 00m : 00s",
+          closed: true,
+          urgent: false,
+          soon: false,
+          note: "Submission Period Ended"
+        };
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+      const pad = (n) => String(n).padStart(2, '0');
+      const text = `${pad(days)}d : ${pad(hours)}h : ${pad(mins)}m : ${pad(secs)}s`;
+
+      const totalHours = diff / (1000 * 60 * 60);
+      const urgent = totalHours <= 48; // Under 48 hours: Pulsing Red/Amber
+      const soon = totalHours <= 168 && !urgent; // Under 7 days: Amber
+
+      return { text, closed: false, urgent, soon, days, hours, mins, secs };
+    }
+
+    let countdownTimerId = null;
+    function startCountdownTicker() {
+      if (countdownTimerId) clearInterval(countdownTimerId);
+      countdownTimerId = setInterval(() => {
+        document.querySelectorAll('.hackathon-countdown-pill').forEach(pill => {
+          const deadline = pill.getAttribute('data-deadline');
+          if (deadline) {
+            const cd = getCountdownData(deadline);
+            const timeSpan = pill.querySelector('.time-string');
+            if (timeSpan) timeSpan.innerText = cd.text;
+
+            pill.classList.remove('urgent', 'soon', 'closed');
+            if (cd.closed) {
+              pill.classList.add('closed');
+            } else if (cd.urgent) {
+              pill.classList.add('urgent');
+            } else if (cd.soon) {
+              pill.classList.add('soon');
+            }
+          }
+        });
+      }, 1000);
+    }
+
+    function renderHackathons() {
+      const searchVal = (document.getElementById('hackathon-search-input')?.value || '').toLowerCase().trim();
+
+      let filtered = allHackathons.filter(h => {
+        const matchSearch = !searchVal ||
+          h.title.toLowerCase().includes(searchVal) ||
+          h.organizer.toLowerCase().includes(searchVal) ||
+          h.platform.toLowerCase().includes(searchVal) ||
+          h.brief.toLowerCase().includes(searchVal) ||
+          (h.recommended_stack && h.recommended_stack.toLowerCase().includes(searchVal)) ||
+          (h.tags && h.tags.some(t => t.toLowerCase().includes(searchVal)));
+
+        let matchPlatform = true;
+        if (currentHackPlatform === 'devpost') {
+          matchPlatform = h.platform.toLowerCase().includes('devpost');
+        } else if (currentHackPlatform === 'flagship') {
+          matchPlatform = h.platform.toLowerCase().includes('google') ||
+            h.platform.toLowerCase().includes('cloudflare') ||
+            h.organizer.toLowerCase().includes('aws') ||
+            h.organizer.toLowerCase().includes('meta');
+        } else if (currentHackPlatform === 'lablab') {
+          matchPlatform = h.platform.toLowerCase().includes('lablab') ||
+            h.platform.toLowerCase().includes('supabase') ||
+            h.platform.toLowerCase().includes('contra');
+        } else if (currentHackPlatform === 'web3') {
+          matchPlatform = h.platform.toLowerCase().includes('dora') ||
+            h.platform.toLowerCase().includes('solana') ||
+            (h.tags && h.tags.some(t => t.toLowerCase().includes('web3')));
+        }
+
+        return matchSearch && matchPlatform;
+      });
+
+      filtered.sort((a, b) => {
+        if (currentHackSort === 'urgent') {
+          const tA = new Date(a.deadline_iso).getTime() || 9999999999999;
+          const tB = new Date(b.deadline_iso).getTime() || 9999999999999;
+          return tA - tB;
+        } else if (currentHackSort === 'prize') {
+          return (b.prize_usd || 0) - (a.prize_usd || 0);
+        } else if (currentHackSort === 'vibe') {
+          const scoreA = parseInt(a.vibe_coder_score) || 90;
+          const scoreB = parseInt(b.vibe_coder_score) || 90;
+          return scoreB - scoreA || (b.prize_usd || 0) - (a.prize_usd || 0);
+        }
+        return 0;
+      });
+
+      // Update hackathon header metrics
+      const statTotal = document.getElementById('hack-stat-total');
+      if (statTotal) statTotal.innerText = filtered.length;
+
+      const totalCap = filtered.reduce((acc, h) => acc + (h.prize_usd || 0), 0);
+      const statCap = document.getElementById('hack-stat-capital');
+      if (statCap) {
+        if (totalCap >= 1000000) {
+          statCap.innerText = `$${(totalCap / 1000000).toFixed(2)}M`;
+        } else {
+          statCap.innerText = `$${Math.round(totalCap / 1000)}k`;
+        }
+      }
+
+      const urgentCount = filtered.filter(h => {
+        const diff = new Date(h.deadline_iso).getTime() - Date.now();
+        return diff > 0 && diff <= 48 * 3600 * 1000;
+      }).length;
+      const statUrgent = document.getElementById('hack-stat-urgent');
+      if (statUrgent) statUrgent.innerText = urgentCount;
+
+      const grid = document.getElementById('hackathons-catalog-grid');
+      if (!grid) return;
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
         <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px;">
           <div style="font-size: 32px; margin-bottom: 12px;">🔍</div>
           <h3 style="font-size: 16px; font-weight: 500; color: #fff; margin-bottom: 6px;">No hackathons found</h3>
           <p style="color: var(--text-dim); font-size: 13px;">Try clearing your search query or switching source platform filters.</p>
         </div>
       `;
-      return;
-    }
+        return;
+      }
 
-    grid.innerHTML = filtered.map(h => {
-      const cd = getCountdownData(h.deadline_iso);
-      let urgencyClass = '';
-      if (cd.closed) urgencyClass = 'closed';
-      else if (cd.urgent) urgencyClass = 'urgent';
-      else if (cd.soon) urgencyClass = 'soon';
+      grid.innerHTML = filtered.map(h => {
+        const cd = getCountdownData(h.deadline_iso);
+        let urgencyClass = '';
+        if (cd.closed) urgencyClass = 'closed';
+        else if (cd.urgent) urgencyClass = 'urgent';
+        else if (cd.soon) urgencyClass = 'soon';
 
-      return `
+        return `
         <div class="card-tray-wrapper">
           <div class="ledger-card" style="cursor:default;">
             <div>
@@ -2935,24 +3085,24 @@ STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
           </div>
         </div>
       `;
-    }).join('');
-  }
+      }).join('');
+    }
 
-  function openHackathonStrategy(id) {
-    const h = allHackathons.find(x => x.id === id);
-    if (!h) return;
+    function openHackathonStrategy(id) {
+      const h = allHackathons.find(x => x.id === id);
+      if (!h) return;
 
-    document.getElementById('strat-platform').innerText = `${h.platform.toUpperCase()} // ${h.organizer.toUpperCase()}`;
-    document.getElementById('strat-title').innerText = h.title;
-    document.getElementById('strat-prize').innerText = `🏆 ${h.prize_pool} Prize Pool`;
-    document.getElementById('strat-deadline').innerText = `Deadline: ${h.deadline_display}`;
-    document.getElementById('strat-vibe').innerText = h.vibe_coder_score || '100% Vibe Coder Friendly';
+      document.getElementById('strat-platform').innerText = `${h.platform.toUpperCase()} // ${h.organizer.toUpperCase()}`;
+      document.getElementById('strat-title').innerText = h.title;
+      document.getElementById('strat-prize').innerText = `🏆 ${h.prize_pool} Prize Pool`;
+      document.getElementById('strat-deadline').innerText = `Deadline: ${h.deadline_display}`;
+      document.getElementById('strat-vibe').innerText = h.vibe_coder_score || '100% Vibe Coder Friendly';
 
-    document.getElementById('strat-brief').innerText = h.brief;
-    document.getElementById('strat-playbook').innerText = h.strategy || `Rapid prototyping edge: build a clean, working Next.js application with a 60-second video demo. As a Baidu AI hackathon 2nd place winner, emphasize instant user utility and zero-friction onboarding.`;
-    document.getElementById('strat-stack').innerText = h.recommended_stack || `Next.js 14 + Tailwind CSS + Claude / OpenAI API + Vercel`;
+      document.getElementById('strat-brief').innerText = h.brief;
+      document.getElementById('strat-playbook').innerText = h.strategy || `Rapid prototyping edge: build a clean, working Next.js application with a 60-second video demo. As a Baidu AI hackathon 2nd place winner, emphasize instant user utility and zero-friction onboarding.`;
+      document.getElementById('strat-stack').innerText = h.recommended_stack || `Next.js 14 + Tailwind CSS + Claude / OpenAI API + Vercel`;
 
-    const scaffoldPrompt = `You are a senior full-stack engineer and product lead pair-programming with Garv Gupta.
+      const scaffoldPrompt = `You are a senior full-stack engineer and product lead pair-programming with Garv Gupta.
 We are building a winning submission for '${h.title}' organized by ${h.organizer} with a ${h.prize_pool} prize pool.
 
 Challenge Brief:
@@ -2971,58 +3121,59 @@ Task:
 2. Draft the end-to-end user workflow that delivers immediate value in under 3 clicks.
 3. Generate the core API route integration and a modern, high-conversion landing page.`;
 
-    document.getElementById('strat-prompt').innerText = scaffoldPrompt;
-    document.getElementById('strat-link').href = h.url;
+      document.getElementById('strat-prompt').innerText = scaffoldPrompt;
+      document.getElementById('strat-link').href = h.url;
 
-    document.getElementById('strategy-overlay').classList.add('open');
-  }
-
-  function closeStrategyModal(e) {
-    if (e && e.target && e.target.id !== 'strategy-overlay' && !e.target.closest('.inspector-close-btn') && !e.target.classList.contains('pill-cta-muted')) {
-      return;
+      document.getElementById('strategy-overlay').classList.add('open');
     }
-    document.getElementById('strategy-overlay').classList.remove('open');
-  }
 
-  function copyStrategyPrompt() {
-    const text = document.getElementById('strat-prompt').innerText;
-    navigator.clipboard.writeText(text).then(() => showToast('Cursor scaffold prompt copied!'));
-  }
-
-  // Hackathon Event Listeners
-  document.getElementById('hackathon-search-input')?.addEventListener('input', renderHackathons);
-
-  document.querySelectorAll('#hackathon-sorting .pill-filter').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const target = e.target.closest('.pill-filter');
-      if (!target) return;
-      document.querySelectorAll('#hackathon-sorting .pill-filter').forEach(b => b.classList.remove('active'));
-      target.classList.add('active');
-      currentHackSort = target.dataset.sort;
-      renderHackathons();
-    });
-  });
-
-  document.querySelectorAll('#hackathon-platforms .pill-filter').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const target = e.target.closest('.pill-filter');
-      if (!target) return;
-      document.querySelectorAll('#hackathon-platforms .pill-filter').forEach(b => b.classList.remove('active'));
-      target.classList.add('active');
-      currentHackPlatform = target.dataset.platform;
-      renderHackathons();
-    });
-  });
-
-  // ESC key to close inspector & strategy modal
-  window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      closeInspector();
-      closeStrategyModal();
+    function closeStrategyModal(e) {
+      if (e && e.target && e.target.id !== 'strategy-overlay' && !e.target.closest('.inspector-close-btn') && !e.target.classList.contains('pill-cta-muted')) {
+        return;
+      }
+      document.getElementById('strategy-overlay').classList.remove('open');
     }
-  });
 
-  loadData();
-</script>
+    function copyStrategyPrompt() {
+      const text = document.getElementById('strat-prompt').innerText;
+      navigator.clipboard.writeText(text).then(() => showToast('Cursor scaffold prompt copied!'));
+    }
+
+    // Hackathon Event Listeners
+    document.getElementById('hackathon-search-input')?.addEventListener('input', renderHackathons);
+
+    document.querySelectorAll('#hackathon-sorting .pill-filter').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const target = e.target.closest('.pill-filter');
+        if (!target) return;
+        document.querySelectorAll('#hackathon-sorting .pill-filter').forEach(b => b.classList.remove('active'));
+        target.classList.add('active');
+        currentHackSort = target.dataset.sort;
+        renderHackathons();
+      });
+    });
+
+    document.querySelectorAll('#hackathon-platforms .pill-filter').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const target = e.target.closest('.pill-filter');
+        if (!target) return;
+        document.querySelectorAll('#hackathon-platforms .pill-filter').forEach(b => b.classList.remove('active'));
+        target.classList.add('active');
+        currentHackPlatform = target.dataset.platform;
+        renderHackathons();
+      });
+    });
+
+    // ESC key to close inspector & strategy modal
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeInspector();
+        closeStrategyModal();
+      }
+    });
+
+    loadData();
+  </script>
 </body>
+
 </html>
