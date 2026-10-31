@@ -16,6 +16,7 @@ from engine.harvester import run_harvest
 from engine.scorer import score_job
 from engine.notifier import process_alerts, send_macos_notification
 from engine.cv_generator import generate_tailored_cv, export_html_to_pdf
+from engine.qa_generator import generate_human_qa_answer
 
 CONFIG_FILE = os.path.join(BASE_DIR, "config", "companies.json")
 PROFILE_FILE = os.path.join(BASE_DIR, "profile", "garv_gupta_profile.json")
@@ -106,6 +107,30 @@ class RadarHandler(http.server.SimpleHTTPRequestHandler):
                 self.send_header("Content-Type", "application/json")
                 self.end_headers()
                 self.wfile.write(json.dumps({"success": False, "error": str(e)}).encode("utf-8"))
+        elif self.path == "/api/generate_qa":
+            length = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(length)
+            try:
+                data = json.loads(body.decode("utf-8"))
+                q = data.get("question", "")
+                comp = data.get("company", "")
+                role = data.get("role", "")
+                jd = data.get("jd_context", "")
+                ans_len = data.get("length", "concise")
+                key = data.get("api_key", "")
+                model = data.get("model", "mistralai/mistral-large-4-1t-a52b")
+                
+                result = generate_human_qa_answer(q, company=comp, role=role, jd_context=jd, length=ans_len, api_key=key, model=model)
+                
+                self.send_response(200 if result.get("success") else 500)
+                self.send_header("Content-Type", "application/json")
+                self.end_headers()
+                self.wfile.write(json.dumps(result).encode("utf-8"))
+            except Exception as e:
+                self.send_response(500)
+                self.send_header("Content-Type", "application/json")
+                self.end_headers()
+                self.wfile.write(json.dumps({"success": False, "error": str(e)}).encode("utf-8"))
         elif self.path == "/api/export_pdf":
             length = int(self.headers.get("Content-Length", 0))
             body = self.rfile.read(length)
@@ -182,6 +207,19 @@ if __name__ == "__main__":
         role = sys.argv[3] if len(sys.argv) > 3 else "Product Intern"
         jd = sys.argv[4] if len(sys.argv) > 4 else "Product management and execution role."
         run_cv_cli(comp, role, jd)
+    elif cmd == "qa":
+        comp = sys.argv[2] if len(sys.argv) > 2 else "Target Company"
+        role = sys.argv[3] if len(sys.argv) > 3 else "Product Intern"
+        q = sys.argv[4] if len(sys.argv) > 4 else "Why are you interested in this role?"
+        res = generate_human_qa_answer(q, company=comp, role=role)
+        if res.get("success"):
+            print("\n" + "=" * 60)
+            print(f"✍️ HUMAN OPERATOR ANSWER FOR {comp} ({res['word_count']} words):")
+            print("=" * 60)
+            print(res["answer"])
+            print("=" * 60 + "\n")
+        else:
+            print("❌ Error:", res.get("error"))
     elif cmd == "test-alert":
         send_macos_notification("🚀 Test Notification", "Internship Radar", "Testing desktop notification for Garv Gupta")
         print("Sent test notification.")
