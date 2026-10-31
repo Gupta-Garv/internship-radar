@@ -10,16 +10,176 @@ DASHBOARD_DIR = os.path.join(BASE_DIR, "dashboard")
 
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
 
-# Curated flagship AI and product competitions with verified high prize pools (>= $5k-$1M),
-# open to India and 100% achievable for vibe coders using Claude, Cursor, v0 & Next.js.
+# Curated flagship AI and product competitions with verified high prize pools,
+# prestigious hardware (MacBook, iPhone, RTX 4090, Quest), top AI subscriptions
+# (Claude Pro, Cursor Pro, ChatGPT Plus, $10k+ API credits), and career fast-tracks (YC, SF Flights).
+# Strictly open to India and 100% achievable for vibe coders using Claude, Cursor, v0 & Next.js.
 CURATED_FLAGSHIP_HACKATHONS = [
+    {
+        "id": "anthropic_claude_builder_2026",
+        "title": "Anthropic Claude Builder Challenge 2026",
+        "organizer": "Anthropic",
+        "platform": "Anthropic Developer",
+        "prize_pool": "$50,000 + 1-Yr Claude Pro",
+        "prize_usd": 50000,
+        "prize_type": "ai_subs",
+        "prize_badge": "🤖 1-Yr Claude Pro + $10k API + SF Demo",
+        "non_cash_perks": [
+            "1-Year Claude Pro Subscription for Team",
+            "$10,000 Anthropic API Credits",
+            "San Francisco Demo Day (Flights & Hotel Covered)",
+            "1:1 Strategy Session with Anthropic Product Team"
+        ],
+        "deadline_iso": "2026-11-26T23:59:59Z",
+        "deadline_display": "Nov 26, 2026",
+        "url": "https://www.anthropic.com/",
+        "eligibility": "Global & India Open (100% Online)",
+        "vibe_coder_score": "100% Vibe Coder Friendly",
+        "brief": "Build autonomous agentic workflows and full-stack web MVPs leveraging Claude 3.5 Sonnet Computer Use and native tool calling. Judged on pragmatic utility, slick UX, and how reliably it executes end-to-end tasks without human intervention.",
+        "recommended_stack": "Claude 3.5 Sonnet API + Computer Use + Next.js + Tailwind + Vercel",
+        "strategy": "Build an autonomous operator for repetitive SMB workflows (e.g. automated RFP parsing, supplier audit, or customer support triage). Anthropic judges prioritize deterministic error recovery and clear output diffs over complex prompt chaining.",
+        "tags": ["Claude Pro", "Anthropic API", "SF Flights", "Autonomous Agents"]
+    },
+    {
+        "id": "apple_swift_spatial_2026",
+        "title": "Apple Swift & Spatial Web Challenge 2026",
+        "organizer": "Apple Developer",
+        "platform": "Apple Developer",
+        "prize_pool": "16\" MacBook Pro M3 Max + iPhone 16 Pro Max",
+        "prize_usd": 16000,
+        "prize_type": "gadgets",
+        "prize_badge": "🎁 16\" MacBook Pro M3 Max + iPhone 16 Pro Max",
+        "non_cash_perks": [
+            "16-inch MacBook Pro (M3 Max, 64GB Unified Memory)",
+            "iPhone 16 Pro Max (1TB Storage)",
+            "In-Person Pass to Apple WWDC in Cupertino",
+            "Apple Vision Pro Spatial Developer Kit"
+        ],
+        "deadline_iso": "2026-12-05T23:59:59Z",
+        "deadline_display": "Dec 05, 2026",
+        "url": "https://developer.apple.com/",
+        "eligibility": "Worldwide Open & India Eligible (100% Online)",
+        "vibe_coder_score": "95% Vibe Coder Friendly",
+        "brief": "Build spatial-ready web prototypes, interactive 3D interfaces, or Swift-powered cross-platform utilities. Emphasizes fluid 120fps micro-interactions, clean glassmorphic design, and instant tactile responsiveness.",
+        "recommended_stack": "React Three Fiber / WebXR + Three.js + Next.js + Tailwind",
+        "strategy": "Don't build native Xcode binaries if you're vibe-coding. Build an ultra-polished browser 3D product visualizer or interactive spatial deck using Three.js and Framer Motion. Apple loves impeccable typography and buttery smooth physics.",
+        "tags": ["MacBook Pro M3 Max", "iPhone 16 Pro Max", "WWDC Pass", "Spatial UI"]
+    },
+    {
+        "id": "cursor_v0_vibe_championship",
+        "title": "Cursor & v0 Full-Stack Vibe Championship",
+        "organizer": "Anysphere (Cursor) & Vercel",
+        "platform": "Cursor Community",
+        "prize_pool": "$35,000 + MacBook Air M3",
+        "prize_usd": 35000,
+        "prize_type": "gadgets",
+        "prize_badge": "💻 MacBook Air M3 + 1-Yr Cursor Pro",
+        "non_cash_perks": [
+            "13-inch MacBook Air M3 (Liquid Retina Display)",
+            "1-Year Cursor Pro Unlimited Subscription",
+            "$10,000 Vercel Enterprise Cloud Credits",
+            "Founder-in-Residence Fast-Track Review"
+        ],
+        "deadline_iso": "2026-11-22T23:59:59Z",
+        "deadline_display": "Nov 22, 2026",
+        "url": "https://cursor.com/",
+        "eligibility": "Worldwide Open & India Open",
+        "vibe_coder_score": "100% Vibe Coder Friendly",
+        "brief": "The definitive speed-build challenge tailored specifically for vibe coders. Rapidly conceive, prompt, and deploy a complete production-ready web application using Cursor Composer and v0. Judged on shipping speed, UX feel, and genuine problem solving.",
+        "recommended_stack": "Cursor Composer + v0 + Next.js 14 App Router + Tailwind",
+        "strategy": "You have an unfair advantage here as a fast-iterating builder. Ship a hyper-focused micro-SaaS with keyboard shortcuts, responsive light/dark mode, and instant optimistic UI updates. Record a crisp 45-second demo video.",
+        "tags": ["MacBook Air", "Cursor Pro", "Vercel Credits", "Vibe Coding"]
+    },
+    {
+        "id": "yc_fellowship_startup_sprint",
+        "title": "Y Combinator Hacker Fellowship & Startup Sprint",
+        "organizer": "Y Combinator & Founders Fund",
+        "platform": "YC Startup School",
+        "prize_pool": "YC Fast-Track + $25,000 SAFE Grant",
+        "prize_usd": 25000,
+        "prize_type": "fast_track",
+        "prize_badge": "🚀 YC Interview Fast-Track & SF Flights",
+        "non_cash_perks": [
+            "Guaranteed 1:1 YC Partner Interview",
+            "Roundtrip SF Flights & 1-Month Hacker House",
+            "Direct YC Partner Office Hours & Mentorship",
+            "$25,000 Uncapped SAFE Founder Grant"
+        ],
+        "deadline_iso": "2026-11-30T23:59:59Z",
+        "deadline_display": "Nov 30, 2026",
+        "url": "https://www.startupschool.org/",
+        "eligibility": "Global & India Open (Online Submission)",
+        "vibe_coder_score": "100% Vibe Coder Friendly",
+        "brief": "Ship a revenue-generating web application or autonomous AI MVP within 14 days. Judged strictly on user conviction, shipping velocity, and clear customer traction over pitch decks or theoretical complexity.",
+        "recommended_stack": "Next.js + Stripe Payments + Supabase + Claude API",
+        "strategy": "Build a micro-tool that charges real money on Day 1 (like SlotSaver or a fast B2B report generator). YC partners care infinitely more about having 3 real paying users than about technical purity.",
+        "tags": ["YC Fast-Track", "SF Flights", "Hacker House", "Founder Grant"]
+    },
+    {
+        "id": "nvidia_agent_rtx4090_challenge",
+        "title": "NVIDIA Autonomous Agent & RTX 4090 Challenge",
+        "organizer": "NVIDIA AI Developers",
+        "platform": "Devpost",
+        "prize_pool": "NVIDIA RTX 4090 + $40,000 Cash",
+        "prize_usd": 45000,
+        "prize_type": "gadgets",
+        "prize_badge": "⚡ NVIDIA RTX 4090 GPU + $40k Cash",
+        "non_cash_perks": [
+            "Flagship NVIDIA GeForce RTX 4090 (24GB VRAM)",
+            "1-Year NVIDIA NIM GPU Cloud Access ($12k val)",
+            "Direct NVIDIA GTC Conference Pass & Travel",
+            "NVIDIA Inception Accelerator Fast-Track"
+        ],
+        "deadline_iso": "2026-12-14T23:59:59Z",
+        "deadline_display": "Dec 14, 2026",
+        "url": "https://developer.nvidia.com/",
+        "eligibility": "Worldwide Open & India Eligible",
+        "vibe_coder_score": "90% Vibe Coder Friendly",
+        "brief": "Build high-throughput multimodal agents or real-time streaming tools using NVIDIA NIM microservices or open models (Llama 3.3, Mistral). Emphasizes low-latency generation and high token speed.",
+        "recommended_stack": "NVIDIA NIM API + Next.js + FastAPI + Tailwind",
+        "strategy": "Use NVIDIA NIM's hosted API endpoints so you don't need local GPUs during development. Build a real-time streaming document redactor or multi-voice dialogue generator with sub-100ms first-token latency.",
+        "tags": ["RTX 4090 GPU", "NVIDIA NIM", "GTC Travel", "Hardware Prize"]
+    },
+    {
+        "id": "openai_frontier_agent_2026",
+        "title": "OpenAI Frontier Agent Hackathon 2026",
+        "organizer": "OpenAI Developer Ecosystem",
+        "platform": "Devpost",
+        "prize_pool": "$45,000 + 1-Yr ChatGPT Plus",
+        "prize_usd": 45000,
+        "prize_type": "ai_subs",
+        "prize_badge": "🤖 1-Yr ChatGPT Plus + $15k OpenAI API",
+        "non_cash_perks": [
+            "1-Year ChatGPT Plus & Team Subscription",
+            "$15,000 OpenAI Platform API Credits",
+            "OpenAI San Francisco Demo Day Invite",
+            "Direct 1:1 Architecture Review with OpenAI Research"
+        ],
+        "deadline_iso": "2026-12-20T23:59:59Z",
+        "deadline_display": "Dec 20, 2026",
+        "url": "https://openai.com/",
+        "eligibility": "Global & India Open (100% Online)",
+        "vibe_coder_score": "100% Vibe Coder Friendly",
+        "brief": "Build conversational voice interfaces or autonomous reasoning agents using OpenAI o1 / o3-mini and the Realtime Audio API. Ideal for vibe coders shipping customer support operators, interactive tutors, or workflow co-pilots.",
+        "recommended_stack": "OpenAI Realtime API + WebRTC + Next.js + Tailwind",
+        "strategy": "Create a voice-first executive assistant that conducts simulated mock interviews or dials in to resolve incoming customer inquiries with natural interruptible audio.",
+        "tags": ["ChatGPT Plus", "OpenAI API", "SF Demo Day", "Voice AI"]
+    },
     {
         "id": "google_gemini_competition",
         "title": "Google Gemini API Developer Competition",
         "organizer": "Google DeepMind & Google Cloud",
         "platform": "Google Developer",
-        "prize_pool": "$1,000,000",
+        "prize_pool": "$1,000,000 + Custom DeLorean",
         "prize_usd": 1000000,
+        "prize_type": "gadgets",
+        "prize_badge": "🏎️ Custom Electric DeLorean or $100k+",
+        "non_cash_perks": [
+            "Custom Electric DeLorean Car (or $100k cash)",
+            "Google I/O VIP Pass & Mountain View Travel",
+            "$20,000 Google Cloud Platform Credits",
+            "Google DeepMind Executive Mentorship"
+        ],
         "deadline_iso": "2026-12-15T23:59:59Z",
         "deadline_display": "Dec 15, 2026",
         "url": "https://ai.google.dev/competition",
@@ -35,8 +195,16 @@ CURATED_FLAGSHIP_HACKATHONS = [
         "title": "Meta VR & Spatial AI Challenge 2026",
         "organizer": "Meta Developer Ecosystem",
         "platform": "Devpost",
-        "prize_pool": "$1,000,000",
+        "prize_pool": "$1,000,000 + Meta Quest 3",
         "prize_usd": 1000000,
+        "prize_type": "gadgets",
+        "prize_badge": "🥽 Meta Quest 3 Headsets + $1M Pool",
+        "non_cash_perks": [
+            "Meta Quest 3 (512GB) for Top 20 Finalists",
+            "Meta Connect Conference Pass & Flights",
+            "Direct Meta Horizon Accelerator Review",
+            "$50,000 Top Track Prizes"
+        ],
         "deadline_iso": "2026-11-18T23:59:59Z",
         "deadline_display": "Nov 18, 2026",
         "url": "https://start-developer-competition-26.devpost.com/",
@@ -54,6 +222,13 @@ CURATED_FLAGSHIP_HACKATHONS = [
         "platform": "Devpost",
         "prize_pool": "$120,000",
         "prize_usd": 120000,
+        "prize_type": "cash",
+        "prize_badge": "🏆 $120,000 Forge Cash Pool",
+        "non_cash_perks": [
+            "$120,000 Direct Cash Awards",
+            "Featured Listing on Atlassian Marketplace",
+            "Atlassian Ventures Pitch Fast-Track"
+        ],
         "deadline_iso": "2026-12-22T23:59:59Z",
         "deadline_display": "Dec 22, 2026",
         "url": "https://codegeist.devpost.com/",
@@ -71,6 +246,13 @@ CURATED_FLAGSHIP_HACKATHONS = [
         "platform": "Devpost",
         "prize_pool": "$100,000",
         "prize_usd": 100000,
+        "prize_type": "cash",
+        "prize_badge": "🏆 $100,000 Global Cash Pool",
+        "non_cash_perks": [
+            "$100,000 Direct Cash Prize Pool",
+            "AWS Activate Founder Credits ($10,000)",
+            "Global Demo Day Spotlight"
+        ],
         "deadline_iso": "2026-12-04T23:59:59Z",
         "deadline_display": "Dec 04, 2026",
         "url": "https://kiroween.devpost.com/",
@@ -86,8 +268,15 @@ CURATED_FLAGSHIP_HACKATHONS = [
         "title": "Solana Radar Global Hackathon: AI Track",
         "organizer": "Solana Foundation & Superteam",
         "platform": "DoraHacks / Colosseum",
-        "prize_pool": "$100,000",
+        "prize_pool": "$100,000 + Residency",
         "prize_usd": 100000,
+        "prize_type": "fast_track",
+        "prize_badge": "🇮🇳 Superteam India Residency & $100k",
+        "non_cash_perks": [
+            "Bangalore Superteam Hacker House Residency",
+            "Colosseum Accelerator Fast-Track ($250k seed)",
+            "Demo Day Flights to Singapore / Dubai"
+        ],
         "deadline_iso": "2026-12-18T23:59:59Z",
         "deadline_display": "Dec 18, 2026",
         "url": "https://arena.colosseum.org/",
@@ -105,6 +294,13 @@ CURATED_FLAGSHIP_HACKATHONS = [
         "platform": "Devpost",
         "prize_pool": "$67,500",
         "prize_usd": 67500,
+        "prize_type": "cash",
+        "prize_badge": "🏆 $67,500 Developer Cash Pool",
+        "non_cash_perks": [
+            "$67,500 Global Cash Awards",
+            "PayPal Ventures Mentorship",
+            "Official PayPal Developer Showcase"
+        ],
         "deadline_iso": "2026-11-12T23:59:59Z",
         "deadline_display": "Nov 12, 2026",
         "url": "https://paypalaihackathon.devpost.com/",
@@ -120,8 +316,15 @@ CURATED_FLAGSHIP_HACKATHONS = [
         "title": "AWS Generative AI Global Builder Sprint",
         "organizer": "Amazon Web Services (AWS)",
         "platform": "Devpost",
-        "prize_pool": "$50,000",
+        "prize_pool": "$50,000 + $15k Cloud Credits",
         "prize_usd": 50000,
+        "prize_type": "ai_subs",
+        "prize_badge": "☁️ $15k AWS Cloud Credits + $50k Cash",
+        "non_cash_perks": [
+            "$15,000 AWS Bedrock & Compute Credits",
+            "AWS re:Invent Las Vegas Conference Pass",
+            "$50,000 Direct Cash Awards"
+        ],
         "deadline_iso": "2026-12-10T23:59:59Z",
         "deadline_display": "Dec 10, 2026",
         "url": "https://aws-genai-sprint.devpost.com/",
@@ -137,8 +340,15 @@ CURATED_FLAGSHIP_HACKATHONS = [
         "title": "UGREEN AI Smart Storage & Hub Hackathon",
         "organizer": "UGREEN",
         "platform": "Devpost",
-        "prize_pool": "$46,000",
+        "prize_pool": "$46,000 + Flagship Hardware",
         "prize_usd": 46000,
+        "prize_type": "gadgets",
+        "prize_badge": "💾 UGREEN Flagship AI NAS Hardware",
+        "non_cash_perks": [
+            "UGREEN DXP4800 Plus AI NAS Hardware",
+            "$46,000 Direct Cash Awards",
+            "UGREEN Global Hardware Showcase"
+        ],
         "deadline_iso": "2026-11-16T23:59:59Z",
         "deadline_display": "Nov 16, 2026",
         "url": "https://ugreen-hackathon.devpost.com/",
@@ -154,8 +364,15 @@ CURATED_FLAGSHIP_HACKATHONS = [
         "title": "Mistral AI Global Agent Sprint",
         "organizer": "Mistral AI",
         "platform": "Lablab.ai",
-        "prize_pool": "$30,000",
+        "prize_pool": "$30,000 + $10k Mistral API",
         "prize_usd": 30000,
+        "prize_type": "ai_subs",
+        "prize_badge": "🤖 $10k Mistral API Credits + $30k",
+        "non_cash_perks": [
+            "$10,000 Mistral Large API Credits",
+            "1:1 Architecture Session with Mistral Founders",
+            "$30,000 Cash Pool"
+        ],
         "deadline_iso": "2026-11-20T23:59:59Z",
         "deadline_display": "Nov 20, 2026",
         "url": "https://lablab.ai/ai-hackathons/mistral-ai-sprint",
@@ -171,8 +388,15 @@ CURATED_FLAGSHIP_HACKATHONS = [
         "title": "ElevenLabs Worldwide AI Voice & Agent Hackathon",
         "organizer": "ElevenLabs",
         "platform": "Devpost",
-        "prize_pool": "$25,000",
+        "prize_pool": "$25,000 + 1-Yr ElevenLabs Scale",
         "prize_usd": 25000,
+        "prize_type": "ai_subs",
+        "prize_badge": "🎙️ 1-Yr ElevenLabs Scale Plan + $25k",
+        "non_cash_perks": [
+            "1-Year ElevenLabs Scale Plan (1M chars/mo)",
+            "Direct Feature Spotlight on ElevenLabs Hub",
+            "$25,000 Direct Cash Awards"
+        ],
         "deadline_iso": "2026-12-06T23:59:59Z",
         "deadline_display": "Dec 06, 2026",
         "url": "https://elevenlabs-agents.devpost.com/",
@@ -188,8 +412,15 @@ CURATED_FLAGSHIP_HACKATHONS = [
         "title": "Cloudflare Workers AI Global Challenge",
         "organizer": "Cloudflare",
         "platform": "Cloudflare Devs",
-        "prize_pool": "$20,000",
+        "prize_pool": "$20,000 + Enterprise Plan",
         "prize_usd": 20000,
+        "prize_type": "ai_subs",
+        "prize_badge": "⚡ Cloudflare Workers Enterprise Plan",
+        "non_cash_perks": [
+            "1-Year Cloudflare Enterprise & Workers AI Plan",
+            "Cloudflare Birthday Week Demo Showcase",
+            "$20,000 Cash Awards"
+        ],
         "deadline_iso": "2026-12-08T23:59:59Z",
         "deadline_display": "Dec 08, 2026",
         "url": "https://challenges.cloudflare.com/",
@@ -205,8 +436,15 @@ CURATED_FLAGSHIP_HACKATHONS = [
         "title": "Supabase Open Source AI Challenge",
         "organizer": "Supabase",
         "platform": "Supabase",
-        "prize_pool": "$15,000",
+        "prize_pool": "$15,000 + VC Demo Day",
         "prize_usd": 15000,
+        "prize_type": "fast_track",
+        "prize_badge": "🚀 Supabase VC Demo Day + $15k",
+        "non_cash_perks": [
+            "Direct Introductions to Top YC & Seed VCs",
+            "Supabase Pro Lifetime Membership",
+            "$15,000 Direct Cash Awards"
+        ],
         "deadline_iso": "2026-11-28T23:59:59Z",
         "deadline_display": "Nov 28, 2026",
         "url": "https://supabase.com/blog",
@@ -222,8 +460,15 @@ CURATED_FLAGSHIP_HACKATHONS = [
         "title": "Contra AI Workflows & Freelancer Sprint",
         "organizer": "Contra",
         "platform": "Contra",
-        "prize_pool": "$15,000",
+        "prize_pool": "$15,000 + Contra Pro Lifetime",
         "prize_usd": 15000,
+        "prize_type": "fast_track",
+        "prize_badge": "💼 Contra Pro Lifetime & $15k",
+        "non_cash_perks": [
+            "Contra Pro Lifetime Membership",
+            "Frontpage Client Matching Guarantee",
+            "$15,000 Cash Pool"
+        ],
         "deadline_iso": "2026-11-25T23:59:59Z",
         "deadline_display": "Nov 25, 2026",
         "url": "https://contra.com/community",
@@ -241,6 +486,12 @@ CURATED_FLAGSHIP_HACKATHONS = [
         "platform": "DoraHacks",
         "prize_pool": "$50,000",
         "prize_usd": 50000,
+        "prize_type": "cash",
+        "prize_badge": "🌐 Quadratic Grant Pool + $50k",
+        "non_cash_perks": [
+            "$50,000 Quadratic Funding Matching Pool",
+            "Direct Seed Grants & Investor Demo Day"
+        ],
         "deadline_iso": "2026-12-12T23:59:59Z",
         "deadline_display": "Dec 12, 2026",
         "url": "https://dorahacks.io/hackathon",
@@ -267,12 +518,23 @@ def fetch_devpost_hackathons(min_prize=5000):
                 num_m = re.search(r"[\$€£]?\s*([0-9,]+)", clean_prize)
                 val = int(num_m.group(1).replace(",", "")) if num_m else 0
                 
-                if val >= min_prize:
-                    title = h.get("title", "").strip()
-                    h_url = h.get("url", "")
-                    themes = [t.get("name") for t in h.get("themes", [])]
-                    dates = h.get("submission_period_dates", "")
-                    
+                title = h.get("title", "").strip()
+                h_url = h.get("url", "")
+                themes = [t.get("name") for t in h.get("themes", [])]
+                dates = h.get("submission_period_dates", "")
+                
+                # Check if title indicates a prize amount when raw_prize is 0
+                if val == 0:
+                    title_prize_m = re.search(r'\$(\d+)(?:,\d+)*\s*k\b', title, re.I)
+                    if title_prize_m:
+                        val = int(title_prize_m.group(1)) * 1000
+                        clean_prize = f"${val:,}"
+                
+                # Strict quality filter: minimum $5,000 threshold or tier-1 hardware keywords
+                is_hardware = bool(re.search(r'\b(macbook|iphone|ipad|apple|rtx|4090|gpu|quest|vision\s*pro|nas|hardware)\b', title, re.I))
+                is_elite_ai = bool(re.search(r'\b(claude|openai|chatgpt|cursor|api\s*credits)\b', title, re.I))
+                
+                if val >= min_prize or is_hardware or is_elite_ai:
                     # Estimate deadline ISO
                     deadline_iso = "2026-12-01T23:59:59Z"
                     end_match = re.search(r'(?:-|to)\s*([A-Za-z]{3})\s+(\d{1,2})(?:,?\s*(\d{4}))?', dates)
@@ -288,9 +550,23 @@ def fetch_devpost_hackathons(min_prize=5000):
                             
                     h_id = f"devpost_{abs(hash(title)) % 100000}"
                     
-                    brief = f"Online competition on Devpost with ${val:,} in cash and sponsor prizes. Themes include {', '.join(themes[:3]) if themes else 'web and software prototyping'}."
+                    # Detect prize type, badge, and perks
+                    if is_hardware:
+                        prize_type = "gadgets"
+                        prize_badge = "🎁 Top Hardware & Tech Gadgets"
+                        non_cash_perks = ["Flagship Hardware & Devices", "Sponsor Hardware Bundles"]
+                    elif is_elite_ai:
+                        prize_type = "ai_subs"
+                        prize_badge = "🤖 Elite AI Credits & Pro Subscriptions"
+                        non_cash_perks = ["Tier-1 AI Platform Credits", "Developer Pro Access"]
+                    else:
+                        prize_type = "cash"
+                        prize_badge = f"🏆 {clean_prize or f'${val:,}'} Cash Pool"
+                        non_cash_perks = ["Direct Cash Awards", "Devpost Winner Recognition"]
+                    
+                    brief = f"Online competition on Devpost with {clean_prize or f'${val:,}'} in cash and sponsor prizes. Themes include {', '.join(themes[:3]) if themes else 'web and software prototyping'}."
                     if any("AI" in t or "Machine" in t for t in themes):
-                        brief = f"Build a rapid AI-powered application competing for ${val:,} in {', '.join(themes[:2])}. Ideal for vibe coders to prototype a complete user journey with Claude/OpenAI APIs and a clean web UI."
+                        brief = f"Build a rapid AI-powered application competing for {clean_prize or f'${val:,}'} in {', '.join(themes[:2])}. Ideal for vibe coders to prototype a complete user journey with Claude/OpenAI APIs and a clean web UI."
                     
                     strategy = "Rapid prototyping edge: build a working Next.js web application deployed to Vercel with a 90-second demo video highlighting real user problem resolution."
                     
@@ -299,8 +575,11 @@ def fetch_devpost_hackathons(min_prize=5000):
                         "title": title,
                         "organizer": "Devpost Sponsor",
                         "platform": "Devpost",
-                        "prize_pool": f"${val:,}",
-                        "prize_usd": val,
+                        "prize_pool": clean_prize or f"${val:,}",
+                        "prize_usd": val if val > 0 else 10000,
+                        "prize_type": prize_type,
+                        "prize_badge": prize_badge,
+                        "non_cash_perks": non_cash_perks,
                         "deadline_iso": deadline_iso,
                         "deadline_display": dates.split("-")[-1].strip() if "-" in dates else dates,
                         "url": h_url,
@@ -318,17 +597,14 @@ def fetch_devpost_hackathons(min_prize=5000):
 
 def get_slug_key(title, url=""):
     """Normalized key for smart deduplication across platforms."""
-    # Check subdomain in url
     if url:
         m = re.search(r'https?://([^./]+)\.', url)
         if m:
             clean_sub = re.sub(r'[^a-z]', '', m.group(1).lower())
-            # Strip trailing years or generic terms
             clean_sub = re.sub(r'202[0-9]|hackathon|challenge', '', clean_sub)
             if len(clean_sub) >= 4:
                 return clean_sub
                 
-    # Fallback to normalized title
     words = [w for w in re.sub(r'[^a-z0-9 ]', ' ', title.lower()).split() if w not in ('2026', '2025', 'global', 'ai', 'hackathon', 'challenge', 'developer', 'the', 'and', 'with')]
     return "".join(words[:3])
 
@@ -353,7 +629,6 @@ def scout_all_hackathons():
             all_hackathons.append(d)
             
     # Sort primarily by deadline urgency (closest deadline first), or prize
-    # We will preserve prize_usd for client-side sorting
     all_hackathons.sort(key=lambda x: x.get("prize_usd", 0), reverse=True)
     
     # Save to data/hackathons.json
@@ -369,7 +644,8 @@ def scout_all_hackathons():
         f.write(js_content)
         
     total_capital = sum(h.get("prize_usd", 0) for h in all_hackathons)
-    print(f"✓ Scouted {len(all_hackathons)} high-conviction hackathons (Total capital: ${total_capital:,}).")
+    non_cash_count = sum(1 for h in all_hackathons if h.get("prize_type") in ("gadgets", "ai_subs", "fast_track"))
+    print(f"✓ Scouted {len(all_hackathons)} high-conviction hackathons ({non_cash_count} with elite hardware/YC/AI perks, Total capital: ${total_capital:,}).")
     return all_hackathons
 
 if __name__ == "__main__":

@@ -994,6 +994,60 @@
       display: inline-block;
     }
 
+    .hackathon-prize-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, rgba(236, 72, 153, 0.12), rgba(168, 85, 247, 0.16));
+      border: 1px solid rgba(236, 72, 153, 0.35);
+      color: #f472b6;
+      font-family: var(--font-mono);
+      font-weight: 600;
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      letter-spacing: 0.02em;
+      margin-top: 6px;
+    }
+
+    .non-cash-perks-box {
+      background: rgba(168, 85, 247, 0.06);
+      border: 1px dashed rgba(168, 85, 247, 0.28);
+      border-radius: 10px;
+      padding: 10px 12px;
+      margin-bottom: 12px;
+    }
+
+    .perks-label {
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #c084fc;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: 600;
+    }
+
+    .perks-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .perk-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      padding: 2.5px 8px;
+      font-size: 11px;
+      color: #f1f5f9;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
     .hackathon-countdown-pill {
       display: flex;
       align-items: center;
@@ -1827,23 +1881,24 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
           style="font-size:32px; font-weight:450; letter-spacing:-0.04em; margin-bottom:10px; color:var(--text-primary);">
           Hackathon Arena, <span class="pixel-phrase" style="color:#fbbf24;">live</span>.
         </h2>
-        <p style="color:var(--text-muted); font-size:15px; line-height:1.6; max-width:800px; margin-bottom:24px;">
-          <span style="color:var(--text-primary); font-weight:500;">High-prize competitions curated for vibe
-            coders.</span>
-          Every challenge features a prize pool of <strong style="color:#fff;">$5,000 to $1,000,000+</strong>, is
-          verified <strong style="color:#34d399;">open to India</strong>, and rewards rapid execution — AI agent MVPs,
-          Claude API wrappers, and polished web prototypes over low-level algorithmic complexity.
+        <p style="color:var(--text-muted); font-size:15px; line-height:1.6; max-width:850px; margin-bottom:24px;">
+          <span style="color:var(--text-primary); font-weight:500;">High-prize competitions curated for vibe coders.</span>
+          Curated challenges featuring <strong style="color:#fff;">$5,000 to $1,000,000+</strong> cash pools, <strong style="color:#f472b6;">MacBook Pro M3 Max, iPhones &amp; RTX 4090 GPUs</strong>, 1-year <strong style="color:#c084fc;">Claude Pro &amp; Cursor Pro</strong> subscriptions, and <strong style="color:#60a5fa;">Y Combinator fast-tracks with SF flights</strong>. 100% verified <strong style="color:#34d399;">open to India</strong>.
         </p>
 
         <!-- Hackathon Metric Bar -->
         <div class="ledger-strip" style="margin-bottom:24px;">
           <div class="ledger-stat">
-            <span class="stat-num" id="hack-stat-total" style="color:#fbbf24;">16</span>
+            <span class="stat-num" id="hack-stat-total" style="color:#fbbf24;">23</span>
             <span class="stat-label">Active Competitions</span>
           </div>
           <div class="ledger-stat">
-            <span class="stat-num" id="hack-stat-capital" style="color:#34d399;">$2.67M</span>
+            <span class="stat-num" id="hack-stat-capital" style="color:#34d399;">$2.99M</span>
             <span class="stat-label">Total Prize Capital</span>
+          </div>
+          <div class="ledger-stat">
+            <span class="stat-num" id="hack-stat-noncash" style="color:#f472b6;">16</span>
+            <span class="stat-label">Top Gadgets &amp; YC Perks</span>
           </div>
           <div class="ledger-stat">
             <span class="stat-num" id="hack-stat-urgent" style="color:#f87171;">2</span>
@@ -1859,15 +1914,25 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
         <div class="filter-tray" style="margin-bottom:30px;">
           <div class="search-row">
             <input type="text" id="hackathon-search-input" class="search-box"
-              placeholder="Filter hackathons by title, sponsor, track, or stack (e.g. Gemini, Solana, Agent, Devpost, Mistral)...">
+              placeholder="Filter hackathons by title, sponsor, track, or stack (e.g. Claude, MacBook, YC, Gemini, Solana, RTX)...">
           </div>
 
           <!-- Sorting Controls -->
           <div class="filter-group" id="hackathon-sorting">
             <span class="filter-eyebrow" style="min-width:76px; display:inline-block;">Sort:</span>
             <button class="pill-filter active" data-sort="urgent">⏳ Deadline Approaching</button>
-            <button class="pill-filter" data-sort="prize">💰 Highest Prize Pool</button>
+            <button class="pill-filter" data-sort="prize">💰 Highest Value / Prize</button>
             <button class="pill-filter" data-sort="vibe">⚡ Vibe Coder Top Pick</button>
+          </div>
+
+          <!-- Prize Focus & Elite Rewards Filter -->
+          <div class="filter-group" id="hackathon-prize-types">
+            <span class="filter-eyebrow" style="min-width:76px; display:inline-block;">Prize Type:</span>
+            <button class="pill-filter active" data-prize-type="all">All Rewards</button>
+            <button class="pill-filter" data-prize-type="gadgets">🎁 Top Gadgets &amp; MacBooks</button>
+            <button class="pill-filter" data-prize-type="ai_subs">🤖 Claude &amp; AI Pro Subs</button>
+            <button class="pill-filter" data-prize-type="fast_track">🚀 YC &amp; Travel Grants</button>
+            <button class="pill-filter" data-prize-type="cash">💰 Pure Cash ($5k+)</button>
           </div>
 
           <!-- Platform Controls -->
@@ -1875,8 +1940,8 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
             <span class="filter-eyebrow" style="min-width:76px; display:inline-block;">Platform:</span>
             <button class="pill-filter active" data-platform="all">All Sources</button>
             <button class="pill-filter" data-platform="devpost">Devpost</button>
-            <button class="pill-filter" data-platform="flagship">Flagship / Google</button>
-            <button class="pill-filter" data-platform="lablab">Lablab.ai</button>
+            <button class="pill-filter" data-platform="flagship">Big Tech (Google/Apple/Meta)</button>
+            <button class="pill-filter" data-platform="ailabs">AI Labs &amp; YC</button>
             <button class="pill-filter" data-platform="web3">Web3 / DoraHacks</button>
           </div>
         </div>
@@ -2122,6 +2187,14 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
         <span class="score-chip tier1" id="strat-vibe">100% Vibe Coder</span>
       </div>
 
+      <!-- Elite Non-Cash Perks & Hardware Section -->
+      <div id="strat-perks-container" style="margin-bottom:20px; display:none;">
+        <div class="inspector-section-label">🎁 Elite Non-Cash Rewards &amp; Fast-Tracks</div>
+        <div class="pitch-copy-box" style="background:rgba(236,72,153,0.06); border:1px solid rgba(236,72,153,0.25);">
+          <div id="strat-perks-list" style="display:flex; flex-direction:column; gap:8px;"></div>
+        </div>
+      </div>
+
       <!-- What to Build Brief -->
       <div class="inspector-section-label">💡 Challenge Brief</div>
       <div class="pitch-copy-box" style="margin-bottom:20px;">
@@ -2179,6 +2252,7 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
     let allHackathons = [];
     let currentHackSort = 'urgent';
     let currentHackPlatform = 'all';
+    let currentHackPrizeType = 'all';
     let userStatus = JSON.parse(localStorage.getItem('garv_job_status') || '{}');
     let currentActiveJobId = null;
 
@@ -3075,28 +3149,48 @@ STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
           h.organizer.toLowerCase().includes(searchVal) ||
           h.platform.toLowerCase().includes(searchVal) ||
           h.brief.toLowerCase().includes(searchVal) ||
+          (h.prize_badge && h.prize_badge.toLowerCase().includes(searchVal)) ||
+          (h.non_cash_perks && h.non_cash_perks.some(p => p.toLowerCase().includes(searchVal))) ||
           (h.recommended_stack && h.recommended_stack.toLowerCase().includes(searchVal)) ||
           (h.tags && h.tags.some(t => t.toLowerCase().includes(searchVal)));
+
+        let matchPrize = true;
+        if (currentHackPrizeType === 'gadgets') {
+          matchPrize = h.prize_type === 'gadgets';
+        } else if (currentHackPrizeType === 'ai_subs') {
+          matchPrize = h.prize_type === 'ai_subs';
+        } else if (currentHackPrizeType === 'fast_track') {
+          matchPrize = h.prize_type === 'fast_track';
+        } else if (currentHackPrizeType === 'cash') {
+          matchPrize = h.prize_type === 'cash';
+        }
 
         let matchPlatform = true;
         if (currentHackPlatform === 'devpost') {
           matchPlatform = h.platform.toLowerCase().includes('devpost');
         } else if (currentHackPlatform === 'flagship') {
           matchPlatform = h.platform.toLowerCase().includes('google') ||
+            h.platform.toLowerCase().includes('apple') ||
+            h.platform.toLowerCase().includes('meta') ||
             h.platform.toLowerCase().includes('cloudflare') ||
             h.organizer.toLowerCase().includes('aws') ||
-            h.organizer.toLowerCase().includes('meta');
-        } else if (currentHackPlatform === 'lablab') {
-          matchPlatform = h.platform.toLowerCase().includes('lablab') ||
-            h.platform.toLowerCase().includes('supabase') ||
-            h.platform.toLowerCase().includes('contra');
+            h.organizer.toLowerCase().includes('nvidia');
+        } else if (currentHackPlatform === 'ailabs') {
+          matchPlatform = h.platform.toLowerCase().includes('anthropic') ||
+            h.platform.toLowerCase().includes('cursor') ||
+            h.platform.toLowerCase().includes('openai') ||
+            h.organizer.toLowerCase().includes('mistral') ||
+            h.organizer.toLowerCase().includes('elevenlabs') ||
+            h.organizer.toLowerCase().includes('y combinator');
         } else if (currentHackPlatform === 'web3') {
           matchPlatform = h.platform.toLowerCase().includes('dora') ||
             h.platform.toLowerCase().includes('solana') ||
+            h.platform.toLowerCase().includes('supabase') ||
+            h.platform.toLowerCase().includes('contra') ||
             (h.tags && h.tags.some(t => t.toLowerCase().includes('web3')));
         }
 
-        return matchSearch && matchPlatform;
+        return matchSearch && matchPlatform && matchPrize;
       });
 
       filtered.sort((a, b) => {
@@ -3128,6 +3222,10 @@ STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
         }
       }
 
+      const nonCashCount = filtered.filter(h => ['gadgets', 'ai_subs', 'fast_track'].includes(h.prize_type) || (h.non_cash_perks && h.non_cash_perks.length > 0)).length;
+      const statNonCash = document.getElementById('hack-stat-noncash');
+      if (statNonCash) statNonCash.innerText = nonCashCount;
+
       const urgentCount = filtered.filter(h => {
         const diff = new Date(h.deadline_iso).getTime() - Date.now();
         return diff > 0 && diff <= 48 * 3600 * 1000;
@@ -3142,8 +3240,8 @@ STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
         grid.innerHTML = `
         <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px;">
           <div style="font-size: 32px; margin-bottom: 12px;">🔍</div>
-          <h3 style="font-size: 16px; font-weight: 500; color: #fff; margin-bottom: 6px;">No hackathons found</h3>
-          <p style="color: var(--text-dim); font-size: 13px;">Try clearing your search query or switching source platform filters.</p>
+          <h3 style="font-size: 16px; font-weight: 500; color: #fff; margin-bottom: 6px;">No hackathons match your filters</h3>
+          <p style="color: var(--text-dim); font-size: 13px;">Try switching prize type (e.g. All Rewards) or platform sources.</p>
         </div>
       `;
         return;
@@ -3156,6 +3254,22 @@ STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
         else if (cd.urgent) urgencyClass = 'urgent';
         else if (cd.soon) urgencyClass = 'soon';
 
+        const hasNonCash = h.non_cash_perks && h.non_cash_perks.length > 0;
+        const perksHtml = hasNonCash ? `
+          <div class="non-cash-perks-box">
+            <div class="perks-label">
+              <span>🎁</span> ELITE REWARDS &amp; FAST-TRACK
+            </div>
+            <div class="perks-tags">
+              ${h.non_cash_perks.map(p => `<span class="perk-pill">✦ ${escapeHtml(p)}</span>`).join('')}
+            </div>
+          </div>
+        ` : '';
+
+        const prizeBadgeHtml = h.prize_badge ? `
+          <div class="hackathon-prize-badge">✦ ${escapeHtml(h.prize_badge)}</div>
+        ` : '';
+
         return `
         <div class="card-tray-wrapper">
           <div class="ledger-card" style="cursor:default;">
@@ -3163,11 +3277,12 @@ STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
               <div class="card-header-row">
                 <div style="padding-right:12px;">
                   <div class="company-ats-label">${escapeHtml(h.platform.toUpperCase())} // ${escapeHtml(h.organizer.toUpperCase())}</div>
-                  <h3 class="card-role-title" style="margin: 6px 0 10px 0; font-size:16px; font-weight:500;">${escapeHtml(h.title)}</h3>
+                  <h3 class="card-role-title" style="margin: 6px 0 6px 0; font-size:16px; font-weight:500;">${escapeHtml(h.title)}</h3>
+                  ${prizeBadgeHtml}
                 </div>
                 <div style="text-align:right; flex-shrink:0;">
                   <div class="hackathon-prize-hero">🏆 ${escapeHtml(h.prize_pool)}</div>
-                  <div style="font-size:10px; color:var(--text-dim); margin-top:4px; font-family:var(--font-mono); text-transform:uppercase;">Total Capital</div>
+                  <div style="font-size:10px; color:var(--text-dim); margin-top:4px; font-family:var(--font-mono); text-transform:uppercase;">Estimated Value / Pool</div>
                 </div>
               </div>
 
@@ -3187,6 +3302,9 @@ STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
                 </div>
                 <p class="brief-text">${escapeHtml(h.brief)}</p>
               </div>
+
+              <!-- Elite Non-Cash Perks Box -->
+              ${perksHtml}
 
               <!-- Recommended Vibe Coder Stack -->
               <div class="stack-box">
@@ -3223,17 +3341,36 @@ STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
 
       document.getElementById('strat-platform').innerText = `${h.platform.toUpperCase()} // ${h.organizer.toUpperCase()}`;
       document.getElementById('strat-title').innerText = h.title;
-      document.getElementById('strat-prize').innerText = `🏆 ${h.prize_pool} Prize Pool`;
+      document.getElementById('strat-prize').innerText = `🏆 ${h.prize_pool}`;
       document.getElementById('strat-deadline').innerText = `Deadline: ${h.deadline_display}`;
       document.getElementById('strat-vibe').innerText = h.vibe_coder_score || '100% Vibe Coder Friendly';
+
+      // Populate Non-Cash Perks in Modal
+      const perksContainer = document.getElementById('strat-perks-container');
+      const perksList = document.getElementById('strat-perks-list');
+      if (h.non_cash_perks && h.non_cash_perks.length > 0) {
+        perksList.innerHTML = h.non_cash_perks.map(p => `
+          <div style="display:flex; align-items:center; gap:8px; font-size:12.5px; color:#fce7f3;">
+            <span style="color:#f472b6; font-size:14px;">✦</span>
+            <span>${escapeHtml(p)}</span>
+          </div>
+        `).join('');
+        perksContainer.style.display = 'block';
+      } else {
+        perksContainer.style.display = 'none';
+      }
 
       document.getElementById('strat-brief').innerText = h.brief;
       document.getElementById('strat-playbook').innerText = h.strategy || `Rapid prototyping edge: build a clean, working Next.js application with a 60-second video demo. As a Baidu AI hackathon 2nd place winner, emphasize instant user utility and zero-friction onboarding.`;
       document.getElementById('strat-stack').innerText = h.recommended_stack || `Next.js 14 + Tailwind CSS + Claude / OpenAI API + Vercel`;
 
+      const perksSummary = (h.non_cash_perks && h.non_cash_perks.length > 0) 
+        ? `\nElite Rewards & Perquisites:\n- ${h.non_cash_perks.join('\n- ')}\n` 
+        : '';
+
       const scaffoldPrompt = `You are a senior full-stack engineer and product lead pair-programming with Garv Gupta.
 We are building a winning submission for '${h.title}' organized by ${h.organizer} with a ${h.prize_pool} prize pool.
-
+${perksSummary}
 Challenge Brief:
 ${h.brief}
 
@@ -3278,6 +3415,17 @@ Task:
         document.querySelectorAll('#hackathon-sorting .pill-filter').forEach(b => b.classList.remove('active'));
         target.classList.add('active');
         currentHackSort = target.dataset.sort;
+        renderHackathons();
+      });
+    });
+
+    document.querySelectorAll('#hackathon-prize-types .pill-filter').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const target = e.target.closest('.pill-filter');
+        if (!target) return;
+        document.querySelectorAll('#hackathon-prize-types .pill-filter').forEach(b => b.classList.remove('active'));
+        target.classList.add('active');
+        currentHackPrizeType = target.dataset.prizeType;
         renderHackathons();
       });
     });
