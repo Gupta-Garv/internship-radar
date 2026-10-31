@@ -17,6 +17,7 @@ from engine.scorer import score_job
 from engine.notifier import process_alerts, send_macos_notification
 from engine.cv_generator import generate_tailored_cv, export_html_to_pdf
 from engine.qa_generator import generate_human_qa_answer
+from engine.hackathon_scout import scout_all_hackathons
 
 CONFIG_FILE = os.path.join(BASE_DIR, "config", "companies.json")
 PROFILE_FILE = os.path.join(BASE_DIR, "profile", "garv_gupta_profile.json")
@@ -48,6 +49,9 @@ def run_scan():
 
     print("🔔 Processing net-new alerts and desktop notifications...")
     new_alerts = process_alerts(scored_jobs)
+
+    print("🏆 Scouting active high-prize hackathons & developer challenges...")
+    scouted_hacks = scout_all_hackathons()
 
     tier1_jobs = [j for j in scored_jobs if j["match_score"] >= 88]
     safe_hubs = ["China / HK / TW", "Japan", "Singapore", "UAE / Middle East", "Germany", "Netherlands", "Ireland", "Nordics / Swiss", "Australia / NZ", "Remote", "Southern / Central Europe"]
@@ -223,6 +227,8 @@ if __name__ == "__main__":
     elif cmd == "test-alert":
         send_macos_notification("🚀 Test Notification", "Internship Radar", "Testing desktop notification for Garv Gupta")
         print("Sent test notification.")
+    elif cmd == "hackathons":
+        scout_all_hackathons()
     else:
-        print("Usage: python3 radar_runner.py [scan|serve|cv|test-alert]")
+        print("Usage: python3 radar_runner.py [scan|serve|cv|qa|hackathons|test-alert]")
 

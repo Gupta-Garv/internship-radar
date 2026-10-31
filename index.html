@@ -898,6 +898,136 @@
       color: #111111;
     }
 
+    /* ==========================================================================
+       PAGE 4: HACKATHONS ARENA & TICKING COUNTDOWN TIMERS
+       ========================================================================== */
+    .hackathon-prize-hero {
+      background: rgba(251, 191, 36, 0.12);
+      border: 1px solid rgba(251, 191, 36, 0.28);
+      color: #fbbf24;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      font-size: 14px;
+      padding: 5px 12px;
+      border-radius: 8px;
+      letter-spacing: 0.02em;
+      display: inline-block;
+    }
+
+    .hackathon-countdown-pill {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(15, 23, 42, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 9px 14px;
+      margin: 12px 0 14px 0;
+      font-family: var(--font-mono);
+      transition: all 0.2s ease;
+    }
+
+    .hackathon-countdown-pill .timer-digits {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .hackathon-countdown-pill.urgent {
+      background: rgba(239, 68, 68, 0.14);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      box-shadow: 0 0 16px rgba(239, 68, 68, 0.22);
+    }
+
+    .hackathon-countdown-pill.urgent .timer-digits {
+      color: #f87171;
+      animation: pulse-urgent 1.5s infinite;
+    }
+
+    .hackathon-countdown-pill.soon {
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      box-shadow: 0 0 14px rgba(245, 158, 11, 0.15);
+    }
+
+    .hackathon-countdown-pill.soon .timer-digits {
+      color: #fbbf24;
+    }
+
+    .hackathon-countdown-pill.closed {
+      background: rgba(100, 116, 139, 0.1);
+      border: 1px solid rgba(100, 116, 139, 0.2);
+    }
+
+    .hackathon-countdown-pill.closed .timer-digits {
+      color: var(--text-dim);
+    }
+
+    @keyframes pulse-urgent {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
+
+    .hackathon-countdown-pill .deadline-note {
+      font-size: 11px;
+      color: var(--text-dim);
+    }
+
+    .brief-box {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+    }
+
+    .brief-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-dim);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .brief-text {
+      font-size: 13px;
+      line-height: 1.55;
+      color: var(--text-muted);
+    }
+
+    .stack-box {
+      background: rgba(99, 102, 241, 0.06);
+      border: 1px solid rgba(99, 102, 241, 0.16);
+      border-radius: 8px;
+      padding: 8px 12px;
+      margin-bottom: 14px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: #c7d2fe;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      overflow-x: auto;
+    }
+
+    .vibe-tag {
+      background: rgba(52, 211, 153, 0.1);
+      color: #34d399;
+      border: 1px solid rgba(52, 211, 153, 0.25);
+      font-family: var(--font-mono);
+      font-size: 10px;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+
     @media print {
       body {
         background: #ffffff !important;
@@ -905,7 +1035,7 @@
         margin: 0 !important;
         padding: 0 !important;
       }
-      .dock-wrapper, .ledger-hero, .filter-tray, .studio-controls-sheet, .studio-tab-bar, .cv-toolbar, .halo-toast, #view-radar, #view-pipeline, #view-hubs, #view-dna, #inspector-overlay, #studio-view-pitches {
+      .dock-wrapper, .ledger-hero, .filter-tray, .studio-controls-sheet, .studio-tab-bar, .cv-toolbar, .halo-toast, #view-radar, #view-pipeline, #view-hackathons, #view-dna, #inspector-overlay, #strategy-overlay, #studio-view-pitches {
         display: none !important;
       }
       .ledger-container {
@@ -986,8 +1116,9 @@
       <button class="dock-pill" onclick="navigateLedger('studio')">
         <span>Pitch Studio</span>
       </button>
-      <button class="dock-pill" onclick="navigateLedger('hubs')">
-        <span>Global Hubs</span>
+      <button class="dock-pill" onclick="navigateLedger('hackathons')">
+        <span>🏆 Hackathons</span>
+        <span class="dock-badge" id="dock-count-hackathons" style="background:rgba(251,191,36,0.18); color:#fbbf24;">16</span>
       </button>
       <button class="dock-pill" onclick="navigateLedger('dna')">
         <span>Garv's DNA</span>
@@ -1027,9 +1158,9 @@
         <span class="stat-num" id="metric-visa" style="color:#34d399;">41</span>
         <span class="stat-label">🛂 Visa / Relo Sponsored</span>
       </div>
-      <div class="ledger-stat">
-        <span class="stat-num" id="metric-hubs" style="color:var(--status-blue);">34</span>
-        <span class="stat-label">Europe, Singapore &amp; Remote</span>
+      <div class="ledger-stat" onclick="navigateLedger('hackathons')" style="cursor:pointer;" title="View Live Hackathon Arena">
+        <span class="stat-num" id="metric-hackathons" style="color:#fbbf24;">$2.67M</span>
+        <span class="stat-label">🏆 Live Hackathon Capital</span>
       </div>
       <div class="ledger-stat">
         <span class="stat-num" id="metric-tracked" style="color:var(--status-amber);">0</span>
@@ -1512,169 +1643,73 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
   </section>
 
   <!-- ==========================================================================
-       PAGE 4: GLOBAL HUBS INTEL
+       PAGE 4: HACKATHONS & CHALLENGES SCOUT (LIVE ARENA)
        ========================================================================== -->
-  <section id="view-hubs" class="ledger-page-view">
-    <div class="catalog-grid">
-      <!-- China & HK -->
-      <div class="card-tray-wrapper">
-        <div class="ledger-card">
-          <div class="card-header-row">
-            <div>
-              <div class="company-name-text" style="font-size:16px;">China &amp; Hong Kong</div>
-              <div class="company-ats-label">Beijing, Shanghai, Shenzhen, HK</div>
-            </div>
-            <span class="score-chip tier1">Baidu Alumni Leverage</span>
-          </div>
-          <p style="color:var(--text-muted); font-size:13px; line-height:1.6; margin:14px 0;">
-            Massive consumer AI &amp; hardware ecosystem. High respect for proven product builders. Global English tracks at Tencent, Baidu, DJI, ByteDance, and Hong Kong multinationals. Safe, ultra-modern tech infrastructure.
-          </p>
-          <div class="tags-container">
-            <span class="pixel-tag-chip">¥15,000 - ¥25,000/mo</span>
-            <span class="pixel-tag-chip">Baidu, Tencent, ByteDance, DJI, Shein</span>
-          </div>
+  <section id="view-hackathons" class="ledger-page-view">
+    <div style="margin-bottom:28px;">
+      <div class="trust-chip" style="margin-bottom:12px;">
+        <div class="trust-indicator" style="background:#fbbf24; box-shadow:0 0 10px rgba(251,191,36,0.6);"></div>
+        <span class="trust-text">Live Scout // Devpost &bull; Lablab.ai &bull; DoraHacks &bull; Flagship AI Challenges</span>
+      </div>
+      <h2 style="font-size:32px; font-weight:450; letter-spacing:-0.04em; margin-bottom:10px; color:var(--text-primary);">
+        Hackathon Arena, <span class="pixel-phrase" style="color:#fbbf24;">live</span>.
+      </h2>
+      <p style="color:var(--text-muted); font-size:15px; line-height:1.6; max-width:800px; margin-bottom:24px;">
+        <span style="color:var(--text-primary); font-weight:500;">High-prize competitions curated for vibe coders.</span>
+        Every challenge features a prize pool of <strong style="color:#fff;">$5,000 to $1,000,000+</strong>, is verified <strong style="color:#34d399;">open to India</strong>, and rewards rapid execution — AI agent MVPs, Claude API wrappers, and polished web prototypes over low-level algorithmic complexity.
+      </p>
+
+      <!-- Hackathon Metric Bar -->
+      <div class="ledger-strip" style="margin-bottom:24px;">
+        <div class="ledger-stat">
+          <span class="stat-num" id="hack-stat-total" style="color:#fbbf24;">16</span>
+          <span class="stat-label">Active Competitions</span>
+        </div>
+        <div class="ledger-stat">
+          <span class="stat-num" id="hack-stat-capital" style="color:#34d399;">$2.67M</span>
+          <span class="stat-label">Total Prize Capital</span>
+        </div>
+        <div class="ledger-stat">
+          <span class="stat-num" id="hack-stat-urgent" style="color:#f87171;">2</span>
+          <span class="stat-label">Closing in &lt; 48 Hours</span>
+        </div>
+        <div class="ledger-stat">
+          <span class="stat-num" style="color:#60a5fa;">100%</span>
+          <span class="stat-label">Vibe Coder Friendly</span>
         </div>
       </div>
 
-      <!-- Japan -->
-      <div class="card-tray-wrapper">
-        <div class="ledger-card">
-          <div class="card-header-row">
-            <div>
-              <div class="company-name-text" style="font-size:16px;">Japan (Tokyo)</div>
-              <div class="company-ats-label">English-First Global Tracks</div>
+      <!-- Filter & Search Tray for Hackathons -->
+      <div class="filter-tray" style="margin-bottom:24px;">
+        <div class="search-row">
+          <input type="text" id="hackathon-search-input" class="search-box" placeholder="Filter hackathons by title, sponsor, track, or stack (e.g. Gemini, Solana, Agent, Devpost, Mistral)...">
+        </div>
+        <div class="filter-controls-row">
+          <div class="filter-group">
+            <span class="filter-group-label">Sort By:</span>
+            <div class="pill-group" id="hackathon-sorting">
+              <button class="pill-filter active" data-sort="urgent">⏳ Deadline Approaching</button>
+              <button class="pill-filter" data-sort="prize">💰 Highest Prize Pool</button>
+              <button class="pill-filter" data-sort="vibe">⚡ Vibe Coder Top Pick</button>
             </div>
-            <span class="score-chip tier1">Corporate Relocation &amp; Housing</span>
           </div>
-          <p style="color:var(--text-muted); font-size:13px; line-height:1.6; margin:14px 0;">
-            Coupang, Mercari, Rakuten, and Line actively hire directly from India with full visa sponsorship, international flights, and corporate housing in Tokyo. World-class safety and public transit.
-          </p>
-          <div class="tags-container">
-            <span class="pixel-tag-chip">¥350,000 - ¥500,000/mo</span>
-            <span class="pixel-tag-chip">Coupang, Mercari, Rakuten, Line, Woven</span>
+          <div class="filter-group">
+            <span class="filter-group-label">Source Platform:</span>
+            <div class="pill-group" id="hackathon-platforms">
+              <button class="pill-filter active" data-platform="all">All Sources</button>
+              <button class="pill-filter" data-platform="devpost">Devpost</button>
+              <button class="pill-filter" data-platform="flagship">Flagship / Google</button>
+              <button class="pill-filter" data-platform="lablab">Lablab.ai</button>
+              <button class="pill-filter" data-platform="web3">Web3 / DoraHacks</button>
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Singapore -->
-      <div class="card-tray-wrapper">
-        <div class="ledger-card">
-          <div class="card-header-row">
-            <div>
-              <div class="company-name-text" style="font-size:16px;">Singapore</div>
-              <div class="company-ats-label">Premier Southeast Asia Hub</div>
-            </div>
-            <span class="score-chip tier1">World #1 Safety</span>
-          </div>
-          <p style="color:var(--text-muted); font-size:13px; line-height:1.6; margin:14px 0;">
-            Huge welcoming Indian diaspora, English native, zero street crime, high corporate stipends. Regional APAC headquarters for Grab, Stripe, Google, ByteDance, and Adyen.
-          </p>
-          <div class="tags-container">
-            <span class="pixel-tag-chip">S$2,200 - S$3,800/mo</span>
-            <span class="pixel-tag-chip">Grab, Stripe, Adyen, Coupang, Shopee</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- UAE (Dubai) -->
-      <div class="card-tray-wrapper">
-        <div class="ledger-card">
-          <div class="card-header-row">
-            <div>
-              <div class="company-name-text" style="font-size:16px;">United Arab Emirates</div>
-              <div class="company-ats-label">Dubai &amp; Abu Dhabi (DIFC / Hub71)</div>
-            </div>
-            <span class="score-chip tier1">0% Tax &bull; Fast Visas</span>
-          </div>
-          <p style="color:var(--text-muted); font-size:13px; line-height:1.6; margin:14px 0;">
-            Extremely welcoming to Indian executives and students with massive Indian leadership presence. Fast visa processing, 0% personal income tax, and rapid fintech/crypto/AI expansion.
-          </p>
-          <div class="tags-container">
-            <span class="pixel-tag-chip">AED 6,000 - AED 12,000/mo</span>
-            <span class="pixel-tag-chip">Careem, Binance, Noon, Hub71, Talabat</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Germany -->
-      <div class="card-tray-wrapper">
-        <div class="ledger-card">
-          <div class="card-header-row">
-            <div>
-              <div class="company-name-text" style="font-size:16px;">Germany (Berlin &amp; Munich)</div>
-              <div class="company-ats-label">Opportunity Card (Chancenkarte)</div>
-            </div>
-            <span class="score-chip tier1">High Immigrant Climate</span>
-          </div>
-          <p style="color:var(--text-muted); font-size:13px; line-height:1.6; margin:14px 0;">
-            Very welcoming to Indian engineering &amp; business graduates. English-first work environment in tech scaleups. High quality of life with clear residency and EU Blue Card tracks.
-          </p>
-          <div class="tags-container">
-            <span class="pixel-tag-chip">€1,800 - €2,800/mo</span>
-            <span class="pixel-tag-chip">Celonis, Delivery Hero, Personio, N26</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Netherlands -->
-      <div class="card-tray-wrapper">
-        <div class="ledger-card">
-          <div class="card-header-row">
-            <div>
-              <div class="company-name-text" style="font-size:16px;">Netherlands (Amsterdam)</div>
-              <div class="company-ats-label">Zoekjaar Orientation Visa</div>
-            </div>
-            <span class="score-chip tier1">95%+ English Fluency</span>
-          </div>
-          <p style="color:var(--text-muted); font-size:13px; line-height:1.6; margin:14px 0;">
-            Home to Databricks, Adyen, Uber EMEA HQ, and Booking.com. Open, cosmopolitan culture with generous orientation visas for top global graduates.
-          </p>
-          <div class="tags-container">
-            <span class="pixel-tag-chip">€1,600 - €2,600/mo</span>
-            <span class="pixel-tag-chip">Databricks, Adyen, Uber, Booking, Miro</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Switzerland & Nordics -->
-      <div class="card-tray-wrapper">
-        <div class="ledger-card">
-          <div class="card-header-row">
-            <div>
-              <div class="company-name-text" style="font-size:16px;">Switzerland &amp; Nordics</div>
-              <div class="company-ats-label">Zurich, Stockholm, Copenhagen</div>
-            </div>
-            <span class="score-chip tier1">Highest Global Living Standards</span>
-          </div>
-          <p style="color:var(--text-muted); font-size:13px; line-height:1.6; margin:14px 0;">
-            Progressive, ultra-safe, high English proficiency, and world-leading compensation. Home to Google Zurich, Spotify, Klarna, and top European biotech/software scales.
-          </p>
-          <div class="tags-container">
-            <span class="pixel-tag-chip">CHF 3,500+ / 30,000 SEK</span>
-            <span class="pixel-tag-chip">Spotify, Klarna, Google Zurich, On</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Australia & NZ -->
-      <div class="card-tray-wrapper">
-        <div class="ledger-card">
-          <div class="card-header-row">
-            <div>
-              <div class="company-name-text" style="font-size:16px;">Australia &amp; New Zealand</div>
-              <div class="company-ats-label">Sydney &amp; Melbourne</div>
-            </div>
-            <span class="score-chip tier1">Large Multicultural Community</span>
-          </div>
-          <p style="color:var(--text-muted); font-size:13px; line-height:1.6; margin:14px 0;">
-            Large, vibrant Indian diaspora with exceptional climate and safety. Tech scaleup hubs anchored by Canva and Atlassian global headquarters.
-          </p>
-          <div class="tags-container">
-            <span class="pixel-tag-chip">A$4,000 - A$6,000/mo</span>
-            <span class="pixel-tag-chip">Canva, Atlassian, Adyen Sydney, Grab</span>
-          </div>
-        </div>
-      </div>
+    <!-- Hackathons Grid -->
+    <div class="catalog-grid" id="hackathons-catalog-grid">
+      <!-- Populated dynamically by renderHackathons() -->
     </div>
   </section>
 
@@ -1775,17 +1810,80 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
   </div>
 </div>
 
+<!-- Hackathon Vibe Coder Strategy Drawer -->
+<div class="inspector-backdrop" id="strategy-overlay" onclick="closeStrategyModal(event)">
+  <div class="inspector-drawer" id="strategy-panel" onclick="event.stopPropagation()">
+    <button class="inspector-close-btn" onclick="closeStrategyModal()">
+      <span>ESC</span> // Close
+    </button>
+
+    <div class="inspector-company-tag" id="strat-platform">DEVPOST // SPONSOR</div>
+    <h2 class="inspector-title" id="strat-title" style="margin-bottom:8px;">Challenge Title</h2>
+
+    <div class="inspector-meta-strip" style="margin-bottom:20px;">
+      <span class="score-chip" style="background:rgba(251,191,36,0.15); color:#fbbf24; font-weight:700; font-size:12px; font-family:var(--font-mono);" id="strat-prize">$100,000 Prize</span>
+      <span class="pixel-tag-chip" id="strat-deadline">Dec 04, 2026</span>
+      <span class="score-chip tier1" id="strat-vibe">100% Vibe Coder</span>
+    </div>
+
+    <!-- What to Build Brief -->
+    <div class="inspector-section-label">💡 Challenge Brief</div>
+    <div class="pitch-copy-box" style="margin-bottom:20px;">
+      <p class="pitch-text-content" id="strat-brief" style="font-size:13px; line-height:1.6; color:#d1d5db; margin-bottom:0;"></p>
+    </div>
+
+    <!-- Winning Vibe Coder Playbook -->
+    <div class="inspector-section-label">⚡ Garv's Operator Edge &amp; Playbook</div>
+    <div class="pitch-copy-box" style="margin-bottom:20px; background:rgba(251,191,36,0.04); border:1px solid rgba(251,191,36,0.22);">
+      <div style="font-weight:600; font-size:13px; color:#fbbf24; margin-bottom:8px;">🎯 Why You Win This:</div>
+      <p class="pitch-text-content" id="strat-playbook" style="font-size:13px; line-height:1.6; color:#f8fafc; margin-bottom:12px;"></p>
+      <div style="font-weight:600; font-size:11px; text-transform:uppercase; font-family:var(--font-mono); color:var(--text-dim); margin-bottom:6px;">Recommended Fast-Sprint Stack:</div>
+      <code id="strat-stack" style="display:block; background:rgba(0,0,0,0.5); padding:8px 12px; border-radius:6px; font-family:var(--font-mono); font-size:11px; color:#38bdf8;"></code>
+    </div>
+
+    <!-- Scaffold Prompt for Cursor / Claude -->
+    <div class="inspector-section-label">🤖 48-Hour Cursor / Claude Scaffold Prompt</div>
+    <div class="pitch-copy-box" style="margin-bottom:24px;">
+      <p class="pitch-text-content" id="strat-prompt" style="font-family:var(--font-mono); font-size:11px; line-height:1.55; color:#94a3b8; white-space:pre-wrap; margin-bottom:10px;"></p>
+      <button class="pill-cta-muted" style="font-size:11px; padding:5px 14px; cursor:pointer;" onclick="copyStrategyPrompt()">
+        📋 Copy Prompt to Clipboard
+      </button>
+    </div>
+
+    <div style="display:flex; justify-content:space-between; align-items:center; padding-top:14px; border-top:1px solid rgba(255,255,255,0.08);">
+      <button class="pill-cta-muted" onclick="closeStrategyModal()" style="cursor:pointer;">Close</button>
+      <a id="strat-link" href="#" target="_blank" rel="noopener noreferrer" class="pill-cta-ink" style="padding:9px 20px; font-size:13px; text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
+        Register &amp; Open Challenge ↗
+      </a>
+    </div>
+  </div>
+</div>
+
 <!-- Cult UI Halo Toast -->
 <div class="halo-toast" id="toast">
   <span>✓</span> Copied to clipboard
 </div>
 
-<!-- Jobs Data -->
+<!-- Jobs & Hackathons Data -->
 <script src="jobs_data.js"></script>
+<script src="hackathons_data.js"></script>
 <script>
   let allJobs = [];
+  let allHackathons = [];
+  let currentHackSort = 'urgent';
+  let currentHackPlatform = 'all';
   let userStatus = JSON.parse(localStorage.getItem('garv_job_status') || '{}');
   let currentActiveJobId = null;
+
+  function escapeHtml(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
 
   // Multi-page navigation
   function navigateLedger(pageId) {
@@ -1804,6 +1902,7 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
 
     if (pageId === 'pipeline') renderKanban();
     if (pageId === 'studio') generateStudioPitches();
+    if (pageId === 'hackathons') renderHackathons();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
@@ -1812,7 +1911,12 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
     if (window.RADAR_JOBS_DATA && window.RADAR_JOBS_DATA.length > 0) {
       allJobs = window.RADAR_JOBS_DATA;
     }
+    if (window.RADAR_HACKATHONS_DATA && window.RADAR_HACKATHONS_DATA.length > 0) {
+      allHackathons = window.RADAR_HACKATHONS_DATA;
+    }
     renderRadar();
+    renderHackathons();
+    startCountdownTicker();
     updateLedgerMetrics();
   }
 
@@ -1820,19 +1924,29 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
     const total = allJobs.length;
     const tier1 = allJobs.filter(j => j.match_score >= 88).length;
     const visaCount = allJobs.filter(j => j.visa_info && j.visa_info.is_sponsored).length;
-    const safeHubList = ['China / HK / TW', 'Japan', 'Singapore', 'UAE / Middle East', 'Germany', 'Netherlands', 'Ireland', 'Nordics / Swiss', 'Australia / NZ', 'Remote', 'Southern / Central Europe'];
-    const hubs = allJobs.filter(j => j.location_info && safeHubList.includes(j.location_info.region)).length;
     const tracked = Object.values(userStatus).length;
+    const hackCount = allHackathons.length;
+    const hackCapital = allHackathons.reduce((acc, h) => acc + (h.prize_usd || 0), 0);
 
     document.getElementById('metric-total').innerText = total;
     document.getElementById('metric-tier1').innerText = tier1;
     const metricVisa = document.getElementById('metric-visa');
     if (metricVisa) metricVisa.innerText = visaCount;
-    document.getElementById('metric-hubs').innerText = hubs;
+
+    const metricHack = document.getElementById('metric-hackathons');
+    if (metricHack) {
+      if (hackCapital >= 1000000) {
+        metricHack.innerText = `$${(hackCapital / 1000000).toFixed(2)}M`;
+      } else {
+        metricHack.innerText = `$${Math.round(hackCapital / 1000)}k`;
+      }
+    }
     document.getElementById('metric-tracked').innerText = tracked;
 
     document.getElementById('dock-count-radar').innerText = total;
     document.getElementById('dock-count-pipeline').innerText = tracked;
+    const dockHack = document.getElementById('dock-count-hackathons');
+    if (dockHack) dockHack.innerText = hackCount;
   }
 
   // Render Catalog (Page 1) with Dynamic Sorting & Facet Filters
@@ -2468,9 +2582,292 @@ STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
     });
   });
 
-  // ESC key to close inspector
+  // ==========================================================================
+  // HACKATHON ARENA & COUNTDOWN TICKER ENGINE
+  // ==========================================================================
+  function getCountdownData(deadlineIso) {
+    const target = new Date(deadlineIso).getTime();
+    const now = new Date().getTime();
+    const diff = target - now;
+
+    if (isNaN(target) || diff <= 0) {
+      return {
+        text: "00d : 00h : 00m : 00s",
+        closed: true,
+        urgent: false,
+        soon: false,
+        note: "Submission Period Ended"
+      };
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+    const pad = (n) => String(n).padStart(2, '0');
+    const text = `${pad(days)}d : ${pad(hours)}h : ${pad(mins)}m : ${pad(secs)}s`;
+
+    const totalHours = diff / (1000 * 60 * 60);
+    const urgent = totalHours <= 48; // Under 48 hours: Pulsing Red/Amber
+    const soon = totalHours <= 168 && !urgent; // Under 7 days: Amber
+
+    return { text, closed: false, urgent, soon, days, hours, mins, secs };
+  }
+
+  let countdownTimerId = null;
+  function startCountdownTicker() {
+    if (countdownTimerId) clearInterval(countdownTimerId);
+    countdownTimerId = setInterval(() => {
+      document.querySelectorAll('.hackathon-countdown-pill').forEach(pill => {
+        const deadline = pill.getAttribute('data-deadline');
+        if (deadline) {
+          const cd = getCountdownData(deadline);
+          const timeSpan = pill.querySelector('.time-string');
+          if (timeSpan) timeSpan.innerText = cd.text;
+
+          pill.classList.remove('urgent', 'soon', 'closed');
+          if (cd.closed) {
+            pill.classList.add('closed');
+          } else if (cd.urgent) {
+            pill.classList.add('urgent');
+          } else if (cd.soon) {
+            pill.classList.add('soon');
+          }
+        }
+      });
+    }, 1000);
+  }
+
+  function renderHackathons() {
+    const searchVal = (document.getElementById('hackathon-search-input')?.value || '').toLowerCase().trim();
+
+    let filtered = allHackathons.filter(h => {
+      const matchSearch = !searchVal || 
+        h.title.toLowerCase().includes(searchVal) ||
+        h.organizer.toLowerCase().includes(searchVal) ||
+        h.platform.toLowerCase().includes(searchVal) ||
+        h.brief.toLowerCase().includes(searchVal) ||
+        (h.recommended_stack && h.recommended_stack.toLowerCase().includes(searchVal)) ||
+        (h.tags && h.tags.some(t => t.toLowerCase().includes(searchVal)));
+
+      let matchPlatform = true;
+      if (currentHackPlatform === 'devpost') {
+        matchPlatform = h.platform.toLowerCase().includes('devpost');
+      } else if (currentHackPlatform === 'flagship') {
+        matchPlatform = h.platform.toLowerCase().includes('google') || 
+                        h.platform.toLowerCase().includes('cloudflare') || 
+                        h.organizer.toLowerCase().includes('aws') || 
+                        h.organizer.toLowerCase().includes('meta');
+      } else if (currentHackPlatform === 'lablab') {
+        matchPlatform = h.platform.toLowerCase().includes('lablab') || 
+                        h.platform.toLowerCase().includes('supabase') || 
+                        h.platform.toLowerCase().includes('contra');
+      } else if (currentHackPlatform === 'web3') {
+        matchPlatform = h.platform.toLowerCase().includes('dora') || 
+                        h.platform.toLowerCase().includes('solana') || 
+                        (h.tags && h.tags.some(t => t.toLowerCase().includes('web3')));
+      }
+
+      return matchSearch && matchPlatform;
+    });
+
+    filtered.sort((a, b) => {
+      if (currentHackSort === 'urgent') {
+        const tA = new Date(a.deadline_iso).getTime() || 9999999999999;
+        const tB = new Date(b.deadline_iso).getTime() || 9999999999999;
+        return tA - tB;
+      } else if (currentHackSort === 'prize') {
+        return (b.prize_usd || 0) - (a.prize_usd || 0);
+      } else if (currentHackSort === 'vibe') {
+        const scoreA = parseInt(a.vibe_coder_score) || 90;
+        const scoreB = parseInt(b.vibe_coder_score) || 90;
+        return scoreB - scoreA || (b.prize_usd || 0) - (a.prize_usd || 0);
+      }
+      return 0;
+    });
+
+    // Update hackathon header metrics
+    const statTotal = document.getElementById('hack-stat-total');
+    if (statTotal) statTotal.innerText = filtered.length;
+    
+    const totalCap = filtered.reduce((acc, h) => acc + (h.prize_usd || 0), 0);
+    const statCap = document.getElementById('hack-stat-capital');
+    if (statCap) {
+      if (totalCap >= 1000000) {
+        statCap.innerText = `$${(totalCap / 1000000).toFixed(2)}M`;
+      } else {
+        statCap.innerText = `$${Math.round(totalCap / 1000)}k`;
+      }
+    }
+
+    const urgentCount = filtered.filter(h => {
+      const diff = new Date(h.deadline_iso).getTime() - Date.now();
+      return diff > 0 && diff <= 48 * 3600 * 1000;
+    }).length;
+    const statUrgent = document.getElementById('hack-stat-urgent');
+    if (statUrgent) statUrgent.innerText = urgentCount;
+
+    const grid = document.getElementById('hackathons-catalog-grid');
+    if (!grid) return;
+
+    if (filtered.length === 0) {
+      grid.innerHTML = `
+        <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px;">
+          <div style="font-size: 32px; margin-bottom: 12px;">🔍</div>
+          <h3 style="font-size: 16px; font-weight: 500; color: #fff; margin-bottom: 6px;">No hackathons found</h3>
+          <p style="color: var(--text-dim); font-size: 13px;">Try clearing your search query or switching source platform filters.</p>
+        </div>
+      `;
+      return;
+    }
+
+    grid.innerHTML = filtered.map(h => {
+      const cd = getCountdownData(h.deadline_iso);
+      let urgencyClass = '';
+      if (cd.closed) urgencyClass = 'closed';
+      else if (cd.urgent) urgencyClass = 'urgent';
+      else if (cd.soon) urgencyClass = 'soon';
+
+      return `
+        <div class="card-tray-wrapper">
+          <div class="ledger-card" style="cursor:default;">
+            <div>
+              <div class="card-header-row">
+                <div style="padding-right:12px;">
+                  <div class="company-ats-label">${escapeHtml(h.platform.toUpperCase())} // ${escapeHtml(h.organizer.toUpperCase())}</div>
+                  <h3 class="card-role-title" style="margin: 6px 0 10px 0; font-size:16px; font-weight:500;">${escapeHtml(h.title)}</h3>
+                </div>
+                <div style="text-align:right; flex-shrink:0;">
+                  <div class="hackathon-prize-hero">🏆 ${escapeHtml(h.prize_pool)}</div>
+                  <div style="font-size:10px; color:var(--text-dim); margin-top:4px; font-family:var(--font-mono); text-transform:uppercase;">Total Capital</div>
+                </div>
+              </div>
+
+              <!-- Live Ticking Countdown Bar -->
+              <div class="hackathon-countdown-pill ${urgencyClass}" id="timer-${h.id}" data-deadline="${h.deadline_iso}">
+                <div class="timer-digits">
+                  <span>⏳</span>
+                  <span class="time-string">${cd.text}</span>
+                </div>
+                <div class="deadline-note">${cd.closed ? 'Closed' : `Closes ${escapeHtml(h.deadline_display)}`}</div>
+              </div>
+
+              <!-- What to Build Brief -->
+              <div class="brief-box">
+                <div class="brief-label">
+                  <span>💡</span> WHAT TO BUILD
+                </div>
+                <p class="brief-text">${escapeHtml(h.brief)}</p>
+              </div>
+
+              <!-- Recommended Vibe Coder Stack -->
+              <div class="stack-box">
+                <span style="opacity:0.75; font-size:10px; text-transform:uppercase;">Stack:</span>
+                <span>${escapeHtml(h.recommended_stack || 'Claude API + Cursor + Next.js')}</span>
+              </div>
+
+              <!-- Tags Container -->
+              <div class="tags-container" style="margin-bottom:16px;">
+                <span class="vibe-tag">✓ ${escapeHtml(h.vibe_coder_score || '100% Vibe Coder Friendly')}</span>
+                <span class="pixel-tag-chip" style="color:#34d399; border-color:rgba(52,211,153,0.3);">🌏 ${escapeHtml(h.eligibility)}</span>
+                ${(h.tags || []).map(t => `<span class="pixel-tag-chip">${escapeHtml(t)}</span>`).join('')}
+              </div>
+            </div>
+
+            <!-- Action Footer -->
+            <div style="display:flex; justify-content:space-between; align-items:center; padding-top:14px; border-top:1px solid rgba(255,255,255,0.06); margin-top:8px;">
+              <button class="pill-cta-muted" style="padding:6px 14px; font-size:12px; font-weight:500; border-radius:999px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); color:#fff; cursor:pointer;" onclick="openHackathonStrategy('${h.id}')">
+                💡 Vibe Strategy
+              </button>
+              <a href="${escapeHtml(h.url)}" target="_blank" rel="noopener noreferrer" class="pill-cta-ink" style="padding:7px 16px; font-size:12px; font-weight:500; border-radius:999px; background:#fff; color:#000; text-decoration:none; display:inline-flex; align-items:center; gap:4px;">
+                Register &amp; Submit ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  function openHackathonStrategy(id) {
+    const h = allHackathons.find(x => x.id === id);
+    if (!h) return;
+
+    document.getElementById('strat-platform').innerText = `${h.platform.toUpperCase()} // ${h.organizer.toUpperCase()}`;
+    document.getElementById('strat-title').innerText = h.title;
+    document.getElementById('strat-prize').innerText = `🏆 ${h.prize_pool} Prize Pool`;
+    document.getElementById('strat-deadline').innerText = `Deadline: ${h.deadline_display}`;
+    document.getElementById('strat-vibe').innerText = h.vibe_coder_score || '100% Vibe Coder Friendly';
+
+    document.getElementById('strat-brief').innerText = h.brief;
+    document.getElementById('strat-playbook').innerText = h.strategy || `Rapid prototyping edge: build a clean, working Next.js application with a 60-second video demo. As a Baidu AI hackathon 2nd place winner, emphasize instant user utility and zero-friction onboarding.`;
+    document.getElementById('strat-stack').innerText = h.recommended_stack || `Next.js 14 + Tailwind CSS + Claude / OpenAI API + Vercel`;
+
+    const scaffoldPrompt = `You are a senior full-stack engineer and product lead pair-programming with Garv Gupta.
+We are building a winning submission for '${h.title}' organized by ${h.organizer} with a ${h.prize_pool} prize pool.
+
+Challenge Brief:
+${h.brief}
+
+Tech Stack:
+${h.recommended_stack}
+
+Candidate Moat & Assets:
+- Baidu Global AI Hackathon 2nd Place ($6,500 prize solo among 8,424 participants)
+- Shipped SlotSaver AI WhatsApp MVP in < 48 hours
+- 2x Global UI/UX build finalist (Zo Computers & Anything.com)
+
+Task:
+1. Provide the complete project structure for a Next.js App Router project with Tailwind CSS.
+2. Draft the end-to-end user workflow that delivers immediate value in under 3 clicks.
+3. Generate the core API route integration and a modern, high-conversion landing page.`;
+
+    document.getElementById('strat-prompt').innerText = scaffoldPrompt;
+    document.getElementById('strat-link').href = h.url;
+
+    document.getElementById('strategy-overlay').classList.add('open');
+  }
+
+  function closeStrategyModal(e) {
+    if (e && e.target && e.target.id !== 'strategy-overlay' && !e.target.closest('.inspector-close-btn') && !e.target.classList.contains('pill-cta-muted')) {
+      return;
+    }
+    document.getElementById('strategy-overlay').classList.remove('open');
+  }
+
+  function copyStrategyPrompt() {
+    const text = document.getElementById('strat-prompt').innerText;
+    navigator.clipboard.writeText(text).then(() => showToast('Cursor scaffold prompt copied!'));
+  }
+
+  // Hackathon Event Listeners
+  document.getElementById('hackathon-search-input')?.addEventListener('input', renderHackathons);
+
+  document.querySelectorAll('#hackathon-sorting .pill-filter').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      document.querySelectorAll('#hackathon-sorting .pill-filter').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      currentHackSort = e.target.dataset.sort;
+      renderHackathons();
+    });
+  });
+
+  document.querySelectorAll('#hackathon-platforms .pill-filter').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      document.querySelectorAll('#hackathon-platforms .pill-filter').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      currentHackPlatform = e.target.dataset.platform;
+      renderHackathons();
+    });
+  });
+
+  // ESC key to close inspector & strategy modal
   window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeInspector();
+    if (e.key === 'Escape') {
+      closeInspector();
+      closeStrategyModal();
+    }
   });
 
   loadData();
