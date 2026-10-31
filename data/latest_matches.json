@@ -1,125 +1,17 @@
 [
   {
-    "id": "4e7d564a9f31bebc043db2e585ec849f",
-    "company": "Aimazing",
-    "title": "Product Management Intern",
-    "location": "Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/product-management-intern-at-aimazing-4484888726",
+    "id": "bc8f20094ed84faaacc9190d020c4ca6",
+    "company": "White Path",
+    "title": "GTM &amp; Growth Intern (Content, Search &amp; Performance) [Remote]",
+    "location": "India",
+    "url": "https://in.linkedin.com/jobs/view/gtm-growth-intern-content-search-performance-remote-at-white-path-4485687272",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "Product / APM",
-    "match_score": 98,
-    "tier": "Tier 1 (High Conversion)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw Aimazing's Product Management Intern opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Aimazing's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "830d9cab90880b32a7cfe94b29693c5f",
-    "company": "Siemens",
-    "title": "TSP Strategy &amp; Analytics Intern, ASEAN",
-    "location": "Singapore, Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/tsp-strategy-analytics-intern-asean-at-siemens-4484887067",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "BizOps & Strategy",
-    "match_score": 95,
-    "tier": "Tier 1 (High Conversion)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I noticed the TSP Strategy &amp; Analytics Intern, ASEAN opening at Siemens. I currently run operations & full P&L for a 10,000+ student education brand (AnybodyCanBake) with 5-7 team members alongside my degree at IIM Bangalore. Would love to bring proven execution and problem-solving to Siemens.",
-    "is_new": false
-  },
-  {
-    "id": "7a28c59f72c481a60813479037ef866e",
-    "company": "Hobbeeme.com",
-    "title": "Digital Marketing &amp; Vendor Management Intern",
-    "location": "Dubai, United Arab Emirates",
-    "url": "https://ae.linkedin.com/jobs/view/digital-marketing-vendor-management-intern-at-hobbeeme-com-4484829830",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
+    "timestamp": 1793432547,
     "date_posted": "\u26a1 Oct 31",
     "raw_department": "General Business",
     "salary_raw": "",
     "category": "Growth & Marketing",
-    "match_score": 93,
-    "tier": "Tier 1 (High Conversion)",
-    "location_info": {
-      "region": "UAE / Middle East",
-      "score": 1.0,
-      "visa_note": "Very welcoming to Indians, 0% tax, rapid visa issuance",
-      "badge": "\ud83c\udde6\ud83c\uddea UAE (Dubai)"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in UAE / Middle East: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! Excited by Hobbeeme.com's Digital Marketing &amp; Vendor Management Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
-    "is_new": false
-  },
-  {
-    "id": "b2b17f1fc4d924d9a360f16c0e31e652",
-    "company": "Nynii",
-    "title": "Growth &amp; Strategy Intern",
-    "location": "Gurugram, Haryana, India",
-    "url": "https://in.linkedin.com/jobs/view/growth-strategy-intern-at-nynii-4485134565",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "BizOps & Strategy",
-    "match_score": 93,
+    "match_score": 91,
     "tier": "Tier 1 (High Conversion)",
     "location_info": {
       "region": "India",
@@ -139,8 +31,8 @@
       "is_disclosed": false,
       "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! I noticed the Growth &amp; Strategy Intern opening at Nynii. I currently run operations & full P&L for a 10,000+ student education brand (AnybodyCanBake) with 5-7 team members alongside my degree at IIM Bangalore. Would love to bring proven execution and problem-solving to Nynii.",
-    "is_new": false
+    "recruiter_pitch": "Hi! Excited by White Path's GTM &amp; Growth Intern (Content, Search &amp; Performance) [Remote] role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": true
   },
   {
     "id": "8ac1a9952501c3ce0f1a49671a98713d",
@@ -149,7 +41,7 @@
     "location": "Madrid, Community of Madrid, Spain",
     "url": "https://es.linkedin.com/jobs/view/intern-product-manager-at-revel-renting-de-coches-4483440278",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
+    "timestamp": 1793432547,
     "date_posted": "\u26a1 Oct 31",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -184,7 +76,7 @@
     "location": "Khairatabad, Telangana, India",
     "url": "https://in.linkedin.com/jobs/view/performance-marketing-intern-at-focus-diagnostics-4484871070",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
+    "timestamp": 1793432547,
     "date_posted": "\u26a1 Oct 31",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -219,7 +111,7 @@
     "location": "Dwarka, Delhi, India",
     "url": "https://in.linkedin.com/jobs/view/digital-marketing-intern-at-iidl-growth-lab-4484121202",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
+    "timestamp": 1793432547,
     "date_posted": "\u26a1 Oct 31",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -254,7 +146,7 @@
     "location": "Bengaluru, Karnataka, India",
     "url": "https://in.linkedin.com/jobs/view/performance-marketing-intern-at-sharechat-4485350206",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
+    "timestamp": 1793432547,
     "date_posted": "\u26a1 Oct 31",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -289,7 +181,7 @@
     "location": "Sydney, New South Wales, Australia",
     "url": "https://au.linkedin.com/jobs/view/marketing-intern-direct-to-consumer-growth-at-cover-genius-4477626987",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
+    "timestamp": 1793432547,
     "date_posted": "\u26a1 Oct 31",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -319,120 +211,13 @@
     "is_new": false
   },
   {
-    "id": "3b74fbeb5c1d63027da530f46e89a31b",
-    "company": "SJ Group",
-    "title": "Intern Environmental Designer",
-    "location": "Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/intern-environmental-designer-at-sj-group-4477400552",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "Design & UX",
-    "match_score": 90,
-    "tier": "Tier 1 (High Conversion)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! Saw SJ Group's Intern Environmental Designer post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "b0812f3b039cadcbf0dbc508e1d60f99",
-    "company": "Growify Digital",
-    "title": "AI UI/UX Designer Internship in Delhi",
-    "location": "Delhi, India",
-    "url": "https://in.linkedin.com/jobs/view/ai-ui-ux-designer-internship-in-delhi-at-growify-digital-4485649341",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "Design & UX",
-    "match_score": 88,
-    "tier": "Tier 1 (High Conversion)",
-    "location_info": {
-      "region": "India",
-      "score": 1.0,
-      "visa_note": "Domestic (Zero visa friction)",
-      "badge": "\ud83c\uddee\ud83c\uddf3 India"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! Saw Growify Digital's AI UI/UX Designer Internship in Delhi post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "aa790f885d8c752c4994d05eb628d37a",
-    "company": "OCBC",
-    "title": "Internship: Global Consumer Financial Services, GCFS Digital Business &amp; Transformation - GCFS Digital Business [Jan to Jun 2027]",
-    "location": "Singapore, Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/internship-global-consumer-financial-services-gcfs-digital-business-transformation-gcfs-digital-business-jan-to-jun-2027-at-ocbc-4477612890",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "Finance & Analytics",
-    "match_score": 84,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the Internship: Global Consumer Financial Services, GCFS Digital Business &amp; Transformation - GCFS Digital Business [Jan to Jun 2027] position at OCBC. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at OCBC. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
     "id": "fa5fc22202029daff31d5285bb7b4904",
     "company": "AMD",
     "title": "2027 Undergrad Product Development Engineering Intern/Co-op",
     "location": "Santa Clara, California; San Jose, California",
     "url": "https://careers.amd.com/careers-home/jobs/91227?lang=en-us",
     "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793430736,
+    "timestamp": 1793432547,
     "date_posted": "\ud83d\udfe2 Open",
     "raw_department": "Product / APM",
     "salary_raw": "| AMD | 2027 Undergrad Product Development Engineering Intern/Co-op | Santa Clara, California; San Jose, California | Spring 2027,Summer 2027 | \ud83d\udfe2 Open | closest to PM so far: https://careers.amd.com/careers-home/jobs/91227?lang=en-us |",
@@ -461,1114 +246,13 @@
     "is_new": false
   },
   {
-    "id": "7e3fafae905c1613e822d088519727bf",
-    "company": "Restaurant Brands International",
-    "title": "MBA Summer Internship Program - APAC",
-    "location": "Singapore, Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/mba-summer-internship-program-apac-at-restaurant-brands-international-4468640142",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the MBA Summer Internship Program - APAC position at Restaurant Brands International. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Restaurant Brands International. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "83b9df9e561c2cf572c5667e28cabdff",
-    "company": "Rolls-Royce",
-    "title": "Intern, Network and Distribution",
-    "location": "Singapore, Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/intern-network-and-distribution-at-rolls-royce-4484855083",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the Intern, Network and Distribution position at Rolls-Royce. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Rolls-Royce. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "707baa6b75b7ff3f0e269bcba2a00602",
-    "company": "Certis",
-    "title": "Robotics Market &amp; Partnership Intern",
-    "location": "Singapore, Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/robotics-market-partnership-intern-at-certis-4484818743",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the Robotics Market &amp; Partnership Intern position at Certis. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Certis. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "e3eada71a172852a2c56d0902f73a2b2",
-    "company": "Atome",
-    "title": "Intern (Loyalty Program)",
-    "location": "Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/intern-loyalty-program-at-atome-4472026472",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the Intern (Loyalty Program) position at Atome. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Atome. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "dff621e40f25c4e45eed5bd7c294f690",
-    "company": "CPF Board",
-    "title": "[2027 H1 Term-time Internship] Data Analytics Intern",
-    "location": "Singapore, Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/2027-h1-term-time-internship-data-analytics-intern-at-cpf-board-4456958036",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the [2027 H1 Term-time Internship] Data Analytics Intern position at CPF Board. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at CPF Board. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "0dc18482b3e1056e6d25248cdfb91c60",
-    "company": "Roche",
-    "title": "Intern - FMI Digital Customer Success",
-    "location": "Singapore, Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/intern-fmi-digital-customer-success-at-roche-4485322613",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the Intern - FMI Digital Customer Success position at Roche. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Roche. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "fe181b04f61a34561e17a69529bbd23d",
-    "company": "Rolls-Royce",
-    "title": "Intern, Order Management (MGOA)",
-    "location": "Singapore, Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/intern-order-management-mgoa-at-rolls-royce-4484863058",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the Intern, Order Management (MGOA) position at Rolls-Royce. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Rolls-Royce. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "106b70f390957e9ac5bd2ae6f2f721e9",
-    "company": "Seagate Technology",
-    "title": "Revenue Operations Account Management Intern, Supply &amp; Demand",
-    "location": "Singapore, Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/revenue-operations-account-management-intern-supply-demand-at-seagate-technology-4481403994",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the Revenue Operations Account Management Intern, Supply &amp; Demand position at Seagate Technology. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Seagate Technology. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "3a39e848e5642df623ad0166c6b73402",
-    "company": "Rolls-Royce",
-    "title": "Intern, Service Order Management",
-    "location": "Singapore, Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/intern-service-order-management-at-rolls-royce-4484869068",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the Intern, Service Order Management position at Rolls-Royce. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Rolls-Royce. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "b46b3c080625b561c52daaadcfba2b9d",
-    "company": "Bosch Building Technologies Europe",
-    "title": "Intern, Supply Chain Management",
-    "location": "Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/intern-supply-chain-management-at-bosch-building-technologies-europe-4483863463",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the Intern, Supply Chain Management position at Bosch Building Technologies Europe. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Bosch Building Technologies Europe. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "008a85930773d63807d296a8c9d894f4",
-    "company": "Coty",
-    "title": "Logistics Intern",
-    "location": "Singapore, Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/logistics-intern-at-coty-4475961439",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the Logistics Intern position at Coty. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Coty. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "234ae9053e7f78e73e4954993f29f65c",
-    "company": "Bosch Building Technologies Europe",
-    "title": "Intern, Supply Chain Project Assistant",
-    "location": "Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/intern-supply-chain-project-assistant-at-bosch-building-technologies-europe-4483848826",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the Intern, Supply Chain Project Assistant position at Bosch Building Technologies Europe. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Bosch Building Technologies Europe. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "e20f56300e8e1df905babe2f63ee2149",
-    "company": "Versuni",
-    "title": "D2C Commercial Intern",
-    "location": "Singapore, Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/d2c-commercial-intern-at-versuni-4485323336",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the D2C Commercial Intern position at Versuni. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Versuni. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "52f38880e4f11a4880317b8399b21761",
-    "company": "Louis Vuitton",
-    "title": "Merchandising &amp; Client Development Intern, Singapore",
-    "location": "Singapore, Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/merchandising-client-development-intern-singapore-at-louis-vuitton-4468248791",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the Merchandising &amp; Client Development Intern, Singapore position at Louis Vuitton. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Louis Vuitton. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "d92bb107ae27b57fbdbfcb664f0d9b0e",
-    "company": "Four Points by Sheraton",
-    "title": "Front Office Intern - Four Points by Sheraton Sheikh Zayed Road",
-    "location": "Dubai, Dubai, United Arab Emirates",
-    "url": "https://ae.linkedin.com/jobs/view/front-office-intern-four-points-by-sheraton-sheikh-zayed-road-at-four-points-by-sheraton-4484858902",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "UAE / Middle East",
-      "score": 1.0,
-      "visa_note": "Very welcoming to Indians, 0% tax, rapid visa issuance",
-      "badge": "\ud83c\udde6\ud83c\uddea UAE (Dubai)"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in UAE / Middle East: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the Front Office Intern - Four Points by Sheraton Sheikh Zayed Road position at Four Points by Sheraton. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Four Points by Sheraton. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "9ece6b1385b984eb07536dcc1b93d11a",
-    "company": "Standard Chartered",
-    "title": "Wealth &amp; Retail Banking Intern UAE 2027(UAE Nationals)",
-    "location": "Dubai, Dubai, United Arab Emirates",
-    "url": "https://ae.linkedin.com/jobs/view/wealth-retail-banking-intern-uae-2027-uae-nationals-at-standard-chartered-4485364190",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "UAE / Middle East",
-      "score": 1.0,
-      "visa_note": "Very welcoming to Indians, 0% tax, rapid visa issuance",
-      "badge": "\ud83c\udde6\ud83c\uddea UAE (Dubai)"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in UAE / Middle East: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the Wealth &amp; Retail Banking Intern UAE 2027(UAE Nationals) position at Standard Chartered. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Standard Chartered. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "ca9111509297df504d9b96ed3ee1af8c",
-    "company": "Epic",
-    "title": "User Experience Design Intern",
-    "location": "Lansing, MI",
-    "url": "https://www.linkedin.com/jobs/view/user-experience-design-intern-at-epic-4466653157",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "Design & UX",
-    "match_score": 77,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "International",
-      "score": 0.88,
-      "visa_note": "Open international location",
-      "badge": "\ud83c\udf0d Global"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! Saw Epic's User Experience Design Intern post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "bd8d7e7f22a2100fe55218f19b1f3883",
-    "company": "Epic",
-    "title": "User Experience Design Intern",
-    "location": "Madison, WI",
-    "url": "https://www.linkedin.com/jobs/view/user-experience-design-intern-at-epic-4466643379",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "Design & UX",
-    "match_score": 77,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "International",
-      "score": 0.88,
-      "visa_note": "Open international location",
-      "badge": "\ud83c\udf0d Global"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! Saw Epic's User Experience Design Intern post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "4885d6c85ba14431fc335ab1c6d44b47",
-    "company": "WHOOP",
-    "title": "Product Designer Co-Op, Growth",
-    "location": "Boston, Massachusetts",
-    "url": "https://jobs.ashbyhq.com/whoop/c1b719e5-6023-407a-a736-233ac032414b",
-    "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793430736,
-    "date_posted": "\ud83d\udfe2 Open",
-    "raw_department": "Product / APM",
-    "salary_raw": "| WHOOP | Product Designer Co-Op, Growth | Boston, Massachusetts | Spring 2027 | \ud83d\udfe2 Open | https://jobs.ashbyhq.com/whoop/c1b719e5-6023-407a-a736-233ac032414b |",
-    "category": "Product / APM",
-    "match_score": 69,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw WHOOP's Product Designer Co-Op, Growth opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to WHOOP's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "78a365176e50630cc3317d77b1365cce",
-    "company": "WHOOP",
-    "title": "Product Operations Co-op",
-    "location": "Boston, Massachusetts",
-    "url": "https://jobs.ashbyhq.com/whoop/41e12685-fa28-4902-aba6-1d3e7e470a7b",
-    "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793430736,
-    "date_posted": "\ud83d\udfe2 Open",
-    "raw_department": "Product / APM",
-    "salary_raw": "| WHOOP | Product Operations Co-op | Boston, Massachusetts | Spring 2027 | \ud83d\udfe2 Open | https://jobs.ashbyhq.com/whoop/41e12685-fa28-4902-aba6-1d3e7e470a7b |",
-    "category": "Product / APM",
-    "match_score": 69,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw WHOOP's Product Operations Co-op opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to WHOOP's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "1fbd18c181382c4650f0b093f6f044dc",
-    "company": "WHOOP",
-    "title": "Program Management Co-Op",
-    "location": "Boston, Massachusetts",
-    "url": "https://jobs.ashbyhq.com/whoop/09c888d5-3a2a-4d48-9e44-f28709611a06",
-    "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793430736,
-    "date_posted": "\ud83d\udfe2 Open",
-    "raw_department": "Product / APM",
-    "salary_raw": "| WHOOP | Program Management Co-Op | Boston, Massachusetts | Spring 2027 | \ud83d\udfe2 Open | https://jobs.ashbyhq.com/whoop/09c888d5-3a2a-4d48-9e44-f28709611a06 |",
-    "category": "Product / APM",
-    "match_score": 69,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw WHOOP's Program Management Co-Op opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to WHOOP's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "cdcf4cd8364ec7dec462a7a5b481afbc",
-    "company": "AMD",
-    "title": "2027 Undergrad Program Management Intern/Co-op",
-    "location": "Austin, Texas",
-    "url": "https://careers.amd.com/careers-home/jobs/92880",
-    "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793430736,
-    "date_posted": "\ud83d\udfe2 Open",
-    "raw_department": "Product / APM",
-    "salary_raw": "| AMD | 2027 Undergrad Program Management Intern/Co-op | Austin, Texas | Spring/Summer 2027,Summer 2027,Summer/Fall 2027 | \ud83d\udfe2 Open | https://careers.amd.com/careers-home/jobs/92880 |",
-    "category": "Product / APM",
-    "match_score": 69,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw AMD's 2027 Undergrad Program Management Intern/Co-op opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to AMD's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "904147eb6cb95fcd8f0acc3e6a5c8938",
-    "company": "Goldman Sachs",
-    "title": "2027  Americas  New York City Area AWM Product Management  Summer Analyst",
-    "location": "New York, NY, United States; Dallas, TX, United States",
-    "url": "https://higher.gs.com/roles/182389",
-    "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793430736,
-    "date_posted": "\ud83d\udfe2 Open",
-    "raw_department": "Product / APM",
-    "salary_raw": "| Goldman Sachs | 2027  Americas  New York City Area AWM Product Management  Summer Analyst | New York, NY, United States; Dallas, TX, United States | Summer 2027 | \ud83d\udfe2 Open | CAME OUT August 25th: https://higher.gs.com/roles/182389 |",
-    "category": "Product / APM",
-    "match_score": 69,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw Goldman Sachs's 2027  Americas  New York City Area AWM Product Management  Summer Analyst opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Goldman Sachs's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "aeb7692022d74bc5d5d1fe4e2570f994",
-    "company": "IBM",
-    "title": "Product Manager Spring Co-op 2027",
-    "location": "LOWELL; DURHAM; San Jose; Austin, Texas; North Carolina; Massachusetts; California; United States",
-    "url": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=128508&source=WEB_Intern_NA",
-    "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793430736,
-    "date_posted": "\ud83d\udfe2 Open",
-    "raw_department": "Product / APM",
-    "salary_raw": "| IBM | Product Manager Spring Co-op 2027 | LOWELL; DURHAM; San Jose; Austin, Texas; North Carolina; Massachusetts; California; United States | Spring 2027 | \ud83d\udfe2 Open | https://careers.ibm.com/en_US/careers/JobDetail?jobId=128508&source=WEB_Intern_NA |",
-    "category": "Product / APM",
-    "match_score": 69,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw IBM's Product Manager Spring Co-op 2027 opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to IBM's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "9acb3aabf526acd88a6b96a1e1e9b521",
-    "company": "IBM",
-    "title": "Product Manager Intern 2027",
-    "location": "LOWELL; DURHAM; San Jose; Austin, Texas; North Carolina; Massachusetts; California; United States",
-    "url": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=128509&source=WEB_Search_NA",
-    "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793430736,
-    "date_posted": "\ud83d\udfe2 Open",
-    "raw_department": "Product / APM",
-    "salary_raw": "| IBM | Product Manager Intern 2027 | LOWELL; DURHAM; San Jose; Austin, Texas; North Carolina; Massachusetts; California; United States | Summer 2027 | \ud83d\udfe2 Open | https://careers.ibm.com/en_US/careers/JobDetail?jobId=128509&source=WEB_Search_NA |",
-    "category": "Product / APM",
-    "match_score": 69,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw IBM's Product Manager Intern 2027 opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to IBM's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "0195f7f0123eed09ffddfc3d6ab830ca",
-    "company": "Microsoft",
-    "title": "Product Manager: Internship Opportunities",
-    "location": "United States, Washington, Redmond",
-    "url": "https://apply.careers.microsoft.com/careers/job/1970393556953113?domain=microsoft.com&hl=en",
-    "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793430736,
-    "date_posted": "\ud83d\udfe2 Open",
-    "raw_department": "Product / APM",
-    "salary_raw": "| Microsoft | Product Manager: Internship Opportunities | United States, Washington, Redmond | Summer 2027 | \ud83d\udfe2 Open | https://apply.careers.microsoft.com/careers/job/1970393556953113?domain=microsoft.com&hl=en |",
-    "category": "Product / APM",
-    "match_score": 69,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw Microsoft's Product Manager: Internship Opportunities opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Microsoft's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "647b1a60f863e87505d646a7bd6a2e9b",
-    "company": "Microsoft",
-    "title": "Technical Program Manager: Internship Opportunities",
-    "location": "United States, Washington, Redmond",
-    "url": "https://apply.careers.microsoft.com/careers/job/1970393556953114?domain=microsoft.com&hl=en",
-    "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793430736,
-    "date_posted": "\ud83d\udfe2 Open",
-    "raw_department": "Product / APM",
-    "salary_raw": "| Microsoft | Technical Program Manager: Internship Opportunities | United States, Washington, Redmond | Summer 2027 | \ud83d\udfe2 Open | https://apply.careers.microsoft.com/careers/job/1970393556953114?domain=microsoft.com&hl=en |",
-    "category": "Product / APM",
-    "match_score": 69,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw Microsoft's Technical Program Manager: Internship Opportunities opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Microsoft's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "092c5674370ab4bf8ff579134e610f5b",
-    "company": "Tesla",
-    "title": "Internship, Program Manager, North America Service Program & Project Management (Fall 2026) - Sales & Customer Support",
-    "location": "Austin, TX",
-    "url": "https://www.tesla.com/en_AE/careers/search/job/internship-program-manager-north-america-service-program-project-management-fall-2026-271874",
-    "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793430736,
-    "date_posted": "\ud83d\udfe2 Open",
-    "raw_department": "Product / APM",
-    "salary_raw": "| Tesla | Internship, Program Manager, North America Service Program & Project Management (Fall 2026) - Sales & Customer Support | Austin, TX | Fall 2026 | \ud83d\udfe2 Open | https://www.tesla.com/en_AE/careers/search/job/internship-program-manager-north-america-service-program-project-management-fall-2026-271874 |",
-    "category": "Product / APM",
-    "match_score": 69,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw Tesla's Internship, Program Manager, North America Service Program & Project Management (Fall 2026) - Sales & Customer Support opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Tesla's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "c666e152e5c82c4a097dc0e69d9d1ea3",
-    "company": "Tesla",
-    "title": "Internship, Program Manager, North America Service Program & Project Management (Fall 2026) - Vehicle Service",
-    "location": "Austin, TX",
-    "url": "https://www.tesla.com/en_AE/careers/search/job/internship-program-manager-north-america-service-program-project-management-fall-2026-271875",
-    "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793430736,
-    "date_posted": "\ud83d\udfe2 Open",
-    "raw_department": "Product / APM",
-    "salary_raw": "| Tesla | Internship, Program Manager, North America Service Program & Project Management (Fall 2026) - Vehicle Service | Austin, TX | Fall 2026 | \ud83d\udfe2 Open | https://www.tesla.com/en_AE/careers/search/job/internship-program-manager-north-america-service-program-project-management-fall-2026-271875 |",
-    "category": "Product / APM",
-    "match_score": 69,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw Tesla's Internship, Program Manager, North America Service Program & Project Management (Fall 2026) - Vehicle Service opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Tesla's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "53fa744b5f1ca82b32afa233c7ce5dfd",
-    "company": "Capital One",
-    "title": "Business Analyst Intern - Summer 2027",
-    "location": "McLean, Virginia; Richmond, Virginia; Plano, Texas; New York, New York; Chicago, Illinois",
-    "url": "https://www.capitalonecareers.com/job/mclean/business-analyst-intern-summer-2027/31238/99109660512",
-    "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793430736,
-    "date_posted": "\u203c\ufe0fClosing Soon\u203c\ufe0f They only take applications minimum 5 days!",
-    "raw_department": "Product / APM",
-    "salary_raw": "| Capital One | Business Analyst Intern - Summer 2027 | McLean, Virginia; Richmond, Virginia; Plano, Texas; New York, New York; Chicago, Illinois | Summer 2027 | \u203c\ufe0fClosing Soon\u203c\ufe0f They only take applications minimum 5 days! | https://www.capitalonecareers.com/job/mclean/business-analyst-intern-summer-2027/31238/99109660512 |",
-    "category": "Product / APM",
-    "match_score": 69,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw Capital One's Business Analyst Intern - Summer 2027 opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Capital One's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "63663d8f082b8295c2f6395e829ed6aa",
-    "company": "salesforce",
-    "title": "Summer 2027 Intern - Associate Product Manager (APM)",
-    "location": "San Francisco, California",
-    "url": "https://www.salesforce.com/company/careers/jobs/JR348039/summer-2027-intern-associate-product-manager-apm/",
-    "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793430736,
-    "date_posted": "\ud83d\udd34 Closed",
-    "raw_department": "Product / APM",
-    "salary_raw": "| salesforce | Summer 2027 Intern - Associate Product Manager (APM) | San Francisco, California | Summer 2027 | \ud83d\udd34 Closed | https://www.salesforce.com/company/careers/jobs/JR348039/summer-2027-intern-associate-product-manager-apm/ |",
-    "category": "Product / APM",
-    "match_score": 69,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw salesforce's Summer 2027 Intern - Associate Product Manager (APM) opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to salesforce's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
     "id": "220e9989ab9f13eba14fbfdb523a14b8",
     "company": "TikTok",
     "title": "Product Manager - Project Intern (Global Monetization Product and Technology) - 2027 Start",
     "location": "San Jose, CA",
     "url": "https://www.linkedin.com/jobs/view/product-manager-project-intern-global-monetization-product-and-technology-2027-start-at-tiktok-4485113428",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
+    "timestamp": 1793432547,
     "date_posted": "\u26a1 Oct 31",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -1603,7 +287,7 @@
     "location": "Seattle, WA",
     "url": "https://www.linkedin.com/jobs/view/product-manager-project-intern-global-monetization-product-and-technology-2027-start-at-tiktok-4485122432",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
+    "timestamp": 1793432547,
     "date_posted": "\u26a1 Oct 31",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -1638,7 +322,7 @@
     "location": "Menlo Park, CA",
     "url": "https://www.linkedin.com/jobs/view/product-management-intern-summer-2027-at-snowflake-4485386686",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
+    "timestamp": 1793432547,
     "date_posted": "\u26a1 Oct 31",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -1673,7 +357,7 @@
     "location": "Lowell, MA",
     "url": "https://www.linkedin.com/jobs/view/product-manager-intern-2027-lowell-at-ibm-4474856164",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
+    "timestamp": 1793432547,
     "date_posted": "\u26a1 Oct 31",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -1708,7 +392,7 @@
     "location": "Round Rock, TX",
     "url": "https://www.linkedin.com/jobs/view/isg-product-management-graduate-internship-at-dell-technologies-4484819756",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
+    "timestamp": 1793432547,
     "date_posted": "\u26a1 Oct 31",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -1737,13 +421,468 @@
     "is_new": false
   },
   {
+    "id": "4885d6c85ba14431fc335ab1c6d44b47",
+    "company": "WHOOP",
+    "title": "Product Designer Co-Op, Growth",
+    "location": "Boston, Massachusetts",
+    "url": "https://jobs.ashbyhq.com/whoop/c1b719e5-6023-407a-a736-233ac032414b",
+    "source": "Abby Bravo PM Recruiting Hub",
+    "timestamp": 1793432547,
+    "date_posted": "\ud83d\udfe2 Open",
+    "raw_department": "Product / APM",
+    "salary_raw": "| WHOOP | Product Designer Co-Op, Growth | Boston, Massachusetts | Spring 2027 | \ud83d\udfe2 Open | https://jobs.ashbyhq.com/whoop/c1b719e5-6023-407a-a736-233ac032414b |",
+    "category": "Product / APM",
+    "match_score": 69,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw WHOOP's Product Designer Co-Op, Growth opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to WHOOP's product team. My portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "78a365176e50630cc3317d77b1365cce",
+    "company": "WHOOP",
+    "title": "Product Operations Co-op",
+    "location": "Boston, Massachusetts",
+    "url": "https://jobs.ashbyhq.com/whoop/41e12685-fa28-4902-aba6-1d3e7e470a7b",
+    "source": "Abby Bravo PM Recruiting Hub",
+    "timestamp": 1793432547,
+    "date_posted": "\ud83d\udfe2 Open",
+    "raw_department": "Product / APM",
+    "salary_raw": "| WHOOP | Product Operations Co-op | Boston, Massachusetts | Spring 2027 | \ud83d\udfe2 Open | https://jobs.ashbyhq.com/whoop/41e12685-fa28-4902-aba6-1d3e7e470a7b |",
+    "category": "Product / APM",
+    "match_score": 69,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw WHOOP's Product Operations Co-op opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to WHOOP's product team. My portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "1fbd18c181382c4650f0b093f6f044dc",
+    "company": "WHOOP",
+    "title": "Program Management Co-Op",
+    "location": "Boston, Massachusetts",
+    "url": "https://jobs.ashbyhq.com/whoop/09c888d5-3a2a-4d48-9e44-f28709611a06",
+    "source": "Abby Bravo PM Recruiting Hub",
+    "timestamp": 1793432547,
+    "date_posted": "\ud83d\udfe2 Open",
+    "raw_department": "Product / APM",
+    "salary_raw": "| WHOOP | Program Management Co-Op | Boston, Massachusetts | Spring 2027 | \ud83d\udfe2 Open | https://jobs.ashbyhq.com/whoop/09c888d5-3a2a-4d48-9e44-f28709611a06 |",
+    "category": "Product / APM",
+    "match_score": 69,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw WHOOP's Program Management Co-Op opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to WHOOP's product team. My portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "cdcf4cd8364ec7dec462a7a5b481afbc",
+    "company": "AMD",
+    "title": "2027 Undergrad Program Management Intern/Co-op",
+    "location": "Austin, Texas",
+    "url": "https://careers.amd.com/careers-home/jobs/92880",
+    "source": "Abby Bravo PM Recruiting Hub",
+    "timestamp": 1793432547,
+    "date_posted": "\ud83d\udfe2 Open",
+    "raw_department": "Product / APM",
+    "salary_raw": "| AMD | 2027 Undergrad Program Management Intern/Co-op | Austin, Texas | Spring/Summer 2027,Summer 2027,Summer/Fall 2027 | \ud83d\udfe2 Open | https://careers.amd.com/careers-home/jobs/92880 |",
+    "category": "Product / APM",
+    "match_score": 69,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw AMD's 2027 Undergrad Program Management Intern/Co-op opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to AMD's product team. My portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "904147eb6cb95fcd8f0acc3e6a5c8938",
+    "company": "Goldman Sachs",
+    "title": "2027  Americas  New York City Area AWM Product Management  Summer Analyst",
+    "location": "New York, NY, United States; Dallas, TX, United States",
+    "url": "https://higher.gs.com/roles/182389",
+    "source": "Abby Bravo PM Recruiting Hub",
+    "timestamp": 1793432547,
+    "date_posted": "\ud83d\udfe2 Open",
+    "raw_department": "Product / APM",
+    "salary_raw": "| Goldman Sachs | 2027  Americas  New York City Area AWM Product Management  Summer Analyst | New York, NY, United States; Dallas, TX, United States | Summer 2027 | \ud83d\udfe2 Open | CAME OUT August 25th: https://higher.gs.com/roles/182389 |",
+    "category": "Product / APM",
+    "match_score": 69,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw Goldman Sachs's 2027  Americas  New York City Area AWM Product Management  Summer Analyst opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Goldman Sachs's product team. My portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "aeb7692022d74bc5d5d1fe4e2570f994",
+    "company": "IBM",
+    "title": "Product Manager Spring Co-op 2027",
+    "location": "LOWELL; DURHAM; San Jose; Austin, Texas; North Carolina; Massachusetts; California; United States",
+    "url": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=128508&source=WEB_Intern_NA",
+    "source": "Abby Bravo PM Recruiting Hub",
+    "timestamp": 1793432547,
+    "date_posted": "\ud83d\udfe2 Open",
+    "raw_department": "Product / APM",
+    "salary_raw": "| IBM | Product Manager Spring Co-op 2027 | LOWELL; DURHAM; San Jose; Austin, Texas; North Carolina; Massachusetts; California; United States | Spring 2027 | \ud83d\udfe2 Open | https://careers.ibm.com/en_US/careers/JobDetail?jobId=128508&source=WEB_Intern_NA |",
+    "category": "Product / APM",
+    "match_score": 69,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw IBM's Product Manager Spring Co-op 2027 opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to IBM's product team. My portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "9acb3aabf526acd88a6b96a1e1e9b521",
+    "company": "IBM",
+    "title": "Product Manager Intern 2027",
+    "location": "LOWELL; DURHAM; San Jose; Austin, Texas; North Carolina; Massachusetts; California; United States",
+    "url": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=128509&source=WEB_Search_NA",
+    "source": "Abby Bravo PM Recruiting Hub",
+    "timestamp": 1793432547,
+    "date_posted": "\ud83d\udfe2 Open",
+    "raw_department": "Product / APM",
+    "salary_raw": "| IBM | Product Manager Intern 2027 | LOWELL; DURHAM; San Jose; Austin, Texas; North Carolina; Massachusetts; California; United States | Summer 2027 | \ud83d\udfe2 Open | https://careers.ibm.com/en_US/careers/JobDetail?jobId=128509&source=WEB_Search_NA |",
+    "category": "Product / APM",
+    "match_score": 69,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw IBM's Product Manager Intern 2027 opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to IBM's product team. My portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "0195f7f0123eed09ffddfc3d6ab830ca",
+    "company": "Microsoft",
+    "title": "Product Manager: Internship Opportunities",
+    "location": "United States, Washington, Redmond",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393556953113?domain=microsoft.com&hl=en",
+    "source": "Abby Bravo PM Recruiting Hub",
+    "timestamp": 1793432547,
+    "date_posted": "\ud83d\udfe2 Open",
+    "raw_department": "Product / APM",
+    "salary_raw": "| Microsoft | Product Manager: Internship Opportunities | United States, Washington, Redmond | Summer 2027 | \ud83d\udfe2 Open | https://apply.careers.microsoft.com/careers/job/1970393556953113?domain=microsoft.com&hl=en |",
+    "category": "Product / APM",
+    "match_score": 69,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw Microsoft's Product Manager: Internship Opportunities opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Microsoft's product team. My portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "647b1a60f863e87505d646a7bd6a2e9b",
+    "company": "Microsoft",
+    "title": "Technical Program Manager: Internship Opportunities",
+    "location": "United States, Washington, Redmond",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393556953114?domain=microsoft.com&hl=en",
+    "source": "Abby Bravo PM Recruiting Hub",
+    "timestamp": 1793432547,
+    "date_posted": "\ud83d\udfe2 Open",
+    "raw_department": "Product / APM",
+    "salary_raw": "| Microsoft | Technical Program Manager: Internship Opportunities | United States, Washington, Redmond | Summer 2027 | \ud83d\udfe2 Open | https://apply.careers.microsoft.com/careers/job/1970393556953114?domain=microsoft.com&hl=en |",
+    "category": "Product / APM",
+    "match_score": 69,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw Microsoft's Technical Program Manager: Internship Opportunities opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Microsoft's product team. My portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "092c5674370ab4bf8ff579134e610f5b",
+    "company": "Tesla",
+    "title": "Internship, Program Manager, North America Service Program & Project Management (Fall 2026) - Sales & Customer Support",
+    "location": "Austin, TX",
+    "url": "https://www.tesla.com/en_AE/careers/search/job/internship-program-manager-north-america-service-program-project-management-fall-2026-271874",
+    "source": "Abby Bravo PM Recruiting Hub",
+    "timestamp": 1793432547,
+    "date_posted": "\ud83d\udfe2 Open",
+    "raw_department": "Product / APM",
+    "salary_raw": "| Tesla | Internship, Program Manager, North America Service Program & Project Management (Fall 2026) - Sales & Customer Support | Austin, TX | Fall 2026 | \ud83d\udfe2 Open | https://www.tesla.com/en_AE/careers/search/job/internship-program-manager-north-america-service-program-project-management-fall-2026-271874 |",
+    "category": "Product / APM",
+    "match_score": 69,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw Tesla's Internship, Program Manager, North America Service Program & Project Management (Fall 2026) - Sales & Customer Support opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Tesla's product team. My portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "c666e152e5c82c4a097dc0e69d9d1ea3",
+    "company": "Tesla",
+    "title": "Internship, Program Manager, North America Service Program & Project Management (Fall 2026) - Vehicle Service",
+    "location": "Austin, TX",
+    "url": "https://www.tesla.com/en_AE/careers/search/job/internship-program-manager-north-america-service-program-project-management-fall-2026-271875",
+    "source": "Abby Bravo PM Recruiting Hub",
+    "timestamp": 1793432547,
+    "date_posted": "\ud83d\udfe2 Open",
+    "raw_department": "Product / APM",
+    "salary_raw": "| Tesla | Internship, Program Manager, North America Service Program & Project Management (Fall 2026) - Vehicle Service | Austin, TX | Fall 2026 | \ud83d\udfe2 Open | https://www.tesla.com/en_AE/careers/search/job/internship-program-manager-north-america-service-program-project-management-fall-2026-271875 |",
+    "category": "Product / APM",
+    "match_score": 69,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw Tesla's Internship, Program Manager, North America Service Program & Project Management (Fall 2026) - Vehicle Service opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Tesla's product team. My portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "53fa744b5f1ca82b32afa233c7ce5dfd",
+    "company": "Capital One",
+    "title": "Business Analyst Intern - Summer 2027",
+    "location": "McLean, Virginia; Richmond, Virginia; Plano, Texas; New York, New York; Chicago, Illinois",
+    "url": "https://www.capitalonecareers.com/job/mclean/business-analyst-intern-summer-2027/31238/99109660512",
+    "source": "Abby Bravo PM Recruiting Hub",
+    "timestamp": 1793432547,
+    "date_posted": "\u203c\ufe0fClosing Soon\u203c\ufe0f They only take applications minimum 5 days!",
+    "raw_department": "Product / APM",
+    "salary_raw": "| Capital One | Business Analyst Intern - Summer 2027 | McLean, Virginia; Richmond, Virginia; Plano, Texas; New York, New York; Chicago, Illinois | Summer 2027 | \u203c\ufe0fClosing Soon\u203c\ufe0f They only take applications minimum 5 days! | https://www.capitalonecareers.com/job/mclean/business-analyst-intern-summer-2027/31238/99109660512 |",
+    "category": "Product / APM",
+    "match_score": 69,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw Capital One's Business Analyst Intern - Summer 2027 opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Capital One's product team. My portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "63663d8f082b8295c2f6395e829ed6aa",
+    "company": "salesforce",
+    "title": "Summer 2027 Intern - Associate Product Manager (APM)",
+    "location": "San Francisco, California",
+    "url": "https://www.salesforce.com/company/careers/jobs/JR348039/summer-2027-intern-associate-product-manager-apm/",
+    "source": "Abby Bravo PM Recruiting Hub",
+    "timestamp": 1793432547,
+    "date_posted": "\ud83d\udd34 Closed",
+    "raw_department": "Product / APM",
+    "salary_raw": "| salesforce | Summer 2027 Intern - Associate Product Manager (APM) | San Francisco, California | Summer 2027 | \ud83d\udd34 Closed | https://www.salesforce.com/company/careers/jobs/JR348039/summer-2027-intern-associate-product-manager-apm/ |",
+    "category": "Product / APM",
+    "match_score": 69,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw salesforce's Summer 2027 Intern - Associate Product Manager (APM) opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to salesforce's product team. My portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
     "id": "6809393484663640897a060f5dedf4f9",
     "company": "WebFX",
     "title": "Digital Marketing Strategy &amp; Analytics Internship",
     "location": "Harrisburg, PA",
     "url": "https://www.linkedin.com/jobs/view/digital-marketing-strategy-analytics-internship-at-webfx-4468298703",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
+    "timestamp": 1793432547,
     "date_posted": "\u26a1 Oct 31",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -1778,7 +917,7 @@
     "location": "Toronto, Ontario, Canada",
     "url": "https://ca.linkedin.com/jobs/view/intern-marketing-performance-at-kensington-4485371856",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
+    "timestamp": 1793432547,
     "date_posted": "\u26a1 Oct 31",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -1807,48 +946,13 @@
     "is_new": false
   },
   {
-    "id": "d8df655bbe22e90b84bf856975fa3635",
-    "company": "Ibotta",
-    "title": "Product Design Intern",
-    "location": "Denver, CO",
-    "url": "https://www.linkedin.com/jobs/view/product-design-intern-at-ibotta-4468344587",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
-    "date_posted": "\u26a1 Oct 31",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "Design & UX",
-    "match_score": 63,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! Saw Ibotta's Product Design Intern post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
     "id": "45ec554447f9457dce0fa84d2fadef12",
     "company": "Tencent",
     "title": "Tencent Cloud CPaaS Product Management Intern",
     "location": "Palo Alto, CA",
     "url": "https://www.linkedin.com/jobs/view/tencent-cloud-cpaas-product-management-intern-at-tencent-4462065368",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
+    "timestamp": 1793432547,
     "date_posted": "\u26a1 Oct 31",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -1884,7 +988,7 @@
     "location": "Los Angeles, CA",
     "url": "https://www.linkedin.com/jobs/view/tencent-cloud-cpaas-product-management-intern-at-tencent-4462062408",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793430736,
+    "timestamp": 1793432547,
     "date_posted": "\u26a1 Oct 31",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -1911,6 +1015,902 @@
       "note": "Compensation is not publicly disclosed in the posting."
     },
     "recruiter_pitch": "Hi! I saw Tencent's Tencent Cloud CPaaS Product Management Intern opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Tencent's product team. My portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "4e7d564a9f31bebc043db2e585ec849f",
+    "company": "Aimazing",
+    "title": "Product Management Intern",
+    "location": "Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/product-management-intern-at-aimazing-4484888726",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "Product / APM",
+    "match_score": 98,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw Aimazing's Product Management Intern opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Aimazing's product team. My portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "830d9cab90880b32a7cfe94b29693c5f",
+    "company": "Siemens",
+    "title": "TSP Strategy &amp; Analytics Intern, ASEAN",
+    "location": "Singapore, Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/tsp-strategy-analytics-intern-asean-at-siemens-4484887067",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "BizOps & Strategy",
+    "match_score": 95,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I noticed the TSP Strategy &amp; Analytics Intern, ASEAN opening at Siemens. I currently run operations & full P&L for a 10,000+ student education brand (AnybodyCanBake) with 5-7 team members alongside my degree at IIM Bangalore. Would love to bring proven execution and problem-solving to Siemens.",
+    "is_new": false
+  },
+  {
+    "id": "7a28c59f72c481a60813479037ef866e",
+    "company": "Hobbeeme.com",
+    "title": "Digital Marketing &amp; Vendor Management Intern",
+    "location": "Dubai, United Arab Emirates",
+    "url": "https://ae.linkedin.com/jobs/view/digital-marketing-vendor-management-intern-at-hobbeeme-com-4484829830",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "Growth & Marketing",
+    "match_score": 93,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "UAE / Middle East",
+      "score": 1.0,
+      "visa_note": "Very welcoming to Indians, 0% tax, rapid visa issuance",
+      "badge": "\ud83c\udde6\ud83c\uddea UAE (Dubai)"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in UAE / Middle East: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Excited by Hobbeeme.com's Digital Marketing &amp; Vendor Management Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": false
+  },
+  {
+    "id": "3b74fbeb5c1d63027da530f46e89a31b",
+    "company": "SJ Group",
+    "title": "Intern Environmental Designer",
+    "location": "Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/intern-environmental-designer-at-sj-group-4477400552",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "Design & UX",
+    "match_score": 90,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Saw SJ Group's Intern Environmental Designer post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "b0812f3b039cadcbf0dbc508e1d60f99",
+    "company": "Growify Digital",
+    "title": "AI UI/UX Designer Internship in Delhi",
+    "location": "Delhi, India",
+    "url": "https://in.linkedin.com/jobs/view/ai-ui-ux-designer-internship-in-delhi-at-growify-digital-4485649341",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "Design & UX",
+    "match_score": 88,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "India",
+      "score": 1.0,
+      "visa_note": "Domestic (Zero visa friction)",
+      "badge": "\ud83c\uddee\ud83c\uddf3 India"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Saw Growify Digital's AI UI/UX Designer Internship in Delhi post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "aa790f885d8c752c4994d05eb628d37a",
+    "company": "OCBC",
+    "title": "Internship: Global Consumer Financial Services, GCFS Digital Business &amp; Transformation - GCFS Digital Business [Jan to Jun 2027]",
+    "location": "Singapore, Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/internship-global-consumer-financial-services-gcfs-digital-business-transformation-gcfs-digital-business-jan-to-jun-2027-at-ocbc-4477612890",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "Finance & Analytics",
+    "match_score": 84,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the Internship: Global Consumer Financial Services, GCFS Digital Business &amp; Transformation - GCFS Digital Business [Jan to Jun 2027] position at OCBC. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at OCBC. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "7e3fafae905c1613e822d088519727bf",
+    "company": "Restaurant Brands International",
+    "title": "MBA Summer Internship Program - APAC",
+    "location": "Singapore, Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/mba-summer-internship-program-apac-at-restaurant-brands-international-4468640142",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the MBA Summer Internship Program - APAC position at Restaurant Brands International. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Restaurant Brands International. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "83b9df9e561c2cf572c5667e28cabdff",
+    "company": "Rolls-Royce",
+    "title": "Intern, Network and Distribution",
+    "location": "Singapore, Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/intern-network-and-distribution-at-rolls-royce-4484855083",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the Intern, Network and Distribution position at Rolls-Royce. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Rolls-Royce. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "707baa6b75b7ff3f0e269bcba2a00602",
+    "company": "Certis",
+    "title": "Robotics Market &amp; Partnership Intern",
+    "location": "Singapore, Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/robotics-market-partnership-intern-at-certis-4484818743",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the Robotics Market &amp; Partnership Intern position at Certis. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Certis. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "e3eada71a172852a2c56d0902f73a2b2",
+    "company": "Atome",
+    "title": "Intern (Loyalty Program)",
+    "location": "Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/intern-loyalty-program-at-atome-4472026472",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the Intern (Loyalty Program) position at Atome. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Atome. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "dff621e40f25c4e45eed5bd7c294f690",
+    "company": "CPF Board",
+    "title": "[2027 H1 Term-time Internship] Data Analytics Intern",
+    "location": "Singapore, Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/2027-h1-term-time-internship-data-analytics-intern-at-cpf-board-4456958036",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the [2027 H1 Term-time Internship] Data Analytics Intern position at CPF Board. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at CPF Board. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "0dc18482b3e1056e6d25248cdfb91c60",
+    "company": "Roche",
+    "title": "Intern - FMI Digital Customer Success",
+    "location": "Singapore, Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/intern-fmi-digital-customer-success-at-roche-4485322613",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the Intern - FMI Digital Customer Success position at Roche. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Roche. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "52f38880e4f11a4880317b8399b21761",
+    "company": "Louis Vuitton",
+    "title": "Merchandising &amp; Client Development Intern, Singapore",
+    "location": "Singapore, Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/merchandising-client-development-intern-singapore-at-louis-vuitton-4468248791",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the Merchandising &amp; Client Development Intern, Singapore position at Louis Vuitton. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Louis Vuitton. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "e20f56300e8e1df905babe2f63ee2149",
+    "company": "Versuni",
+    "title": "D2C Commercial Intern",
+    "location": "Singapore, Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/d2c-commercial-intern-at-versuni-4485323336",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the D2C Commercial Intern position at Versuni. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Versuni. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "fe181b04f61a34561e17a69529bbd23d",
+    "company": "Rolls-Royce",
+    "title": "Intern, Order Management (MGOA)",
+    "location": "Singapore, Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/intern-order-management-mgoa-at-rolls-royce-4484863058",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the Intern, Order Management (MGOA) position at Rolls-Royce. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Rolls-Royce. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "106b70f390957e9ac5bd2ae6f2f721e9",
+    "company": "Seagate Technology",
+    "title": "Revenue Operations Account Management Intern, Supply &amp; Demand",
+    "location": "Singapore, Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/revenue-operations-account-management-intern-supply-demand-at-seagate-technology-4481403994",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the Revenue Operations Account Management Intern, Supply &amp; Demand position at Seagate Technology. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Seagate Technology. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "3a39e848e5642df623ad0166c6b73402",
+    "company": "Rolls-Royce",
+    "title": "Intern, Service Order Management",
+    "location": "Singapore, Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/intern-service-order-management-at-rolls-royce-4484869068",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the Intern, Service Order Management position at Rolls-Royce. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Rolls-Royce. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "b46b3c080625b561c52daaadcfba2b9d",
+    "company": "Bosch Building Technologies Europe",
+    "title": "Intern, Supply Chain Management",
+    "location": "Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/intern-supply-chain-management-at-bosch-building-technologies-europe-4483863463",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the Intern, Supply Chain Management position at Bosch Building Technologies Europe. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Bosch Building Technologies Europe. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "008a85930773d63807d296a8c9d894f4",
+    "company": "Coty",
+    "title": "Logistics Intern",
+    "location": "Singapore, Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/logistics-intern-at-coty-4475961439",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the Logistics Intern position at Coty. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Coty. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "234ae9053e7f78e73e4954993f29f65c",
+    "company": "Bosch Building Technologies Europe",
+    "title": "Intern, Supply Chain Project Assistant",
+    "location": "Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/intern-supply-chain-project-assistant-at-bosch-building-technologies-europe-4483848826",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the Intern, Supply Chain Project Assistant position at Bosch Building Technologies Europe. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Bosch Building Technologies Europe. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "d92bb107ae27b57fbdbfcb664f0d9b0e",
+    "company": "Four Points by Sheraton",
+    "title": "Front Office Intern - Four Points by Sheraton Sheikh Zayed Road",
+    "location": "Dubai, Dubai, United Arab Emirates",
+    "url": "https://ae.linkedin.com/jobs/view/front-office-intern-four-points-by-sheraton-sheikh-zayed-road-at-four-points-by-sheraton-4484858902",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "UAE / Middle East",
+      "score": 1.0,
+      "visa_note": "Very welcoming to Indians, 0% tax, rapid visa issuance",
+      "badge": "\ud83c\udde6\ud83c\uddea UAE (Dubai)"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in UAE / Middle East: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the Front Office Intern - Four Points by Sheraton Sheikh Zayed Road position at Four Points by Sheraton. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Four Points by Sheraton. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "9ece6b1385b984eb07536dcc1b93d11a",
+    "company": "Standard Chartered",
+    "title": "Wealth &amp; Retail Banking Intern UAE 2027(UAE Nationals)",
+    "location": "Dubai, Dubai, United Arab Emirates",
+    "url": "https://ae.linkedin.com/jobs/view/wealth-retail-banking-intern-uae-2027-uae-nationals-at-standard-chartered-4485364190",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "UAE / Middle East",
+      "score": 1.0,
+      "visa_note": "Very welcoming to Indians, 0% tax, rapid visa issuance",
+      "badge": "\ud83c\udde6\ud83c\uddea UAE (Dubai)"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in UAE / Middle East: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the Wealth &amp; Retail Banking Intern UAE 2027(UAE Nationals) position at Standard Chartered. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Standard Chartered. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "ca9111509297df504d9b96ed3ee1af8c",
+    "company": "Epic",
+    "title": "User Experience Design Intern",
+    "location": "Lansing, MI",
+    "url": "https://www.linkedin.com/jobs/view/user-experience-design-intern-at-epic-4466653157",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "Design & UX",
+    "match_score": 77,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "International",
+      "score": 0.88,
+      "visa_note": "Open international location",
+      "badge": "\ud83c\udf0d Global"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Saw Epic's User Experience Design Intern post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "bd8d7e7f22a2100fe55218f19b1f3883",
+    "company": "Epic",
+    "title": "User Experience Design Intern",
+    "location": "Madison, WI",
+    "url": "https://www.linkedin.com/jobs/view/user-experience-design-intern-at-epic-4466643379",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "Design & UX",
+    "match_score": 77,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "International",
+      "score": 0.88,
+      "visa_note": "Open international location",
+      "badge": "\ud83c\udf0d Global"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Saw Epic's User Experience Design Intern post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "d8df655bbe22e90b84bf856975fa3635",
+    "company": "Ibotta",
+    "title": "Product Design Intern",
+    "location": "Denver, CO",
+    "url": "https://www.linkedin.com/jobs/view/product-design-intern-at-ibotta-4468344587",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793432546,
+    "date_posted": "\u26a1 Oct 31",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "Design & UX",
+    "match_score": 63,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Saw Ibotta's Product Design Intern post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
     "is_new": false
   },
   {
@@ -12005,112 +12005,6 @@
     "is_new": false
   },
   {
-    "id": "14be634625ace9d1c85b1012c90f77ab",
-    "company": "Figma",
-    "title": "PhD Intern, AI Applied Scientist (2027)",
-    "location": "San Francisco, CA \u2022 New York, NY",
-    "url": "https://boards.greenhouse.io/figma/jobs/6207801004?gh_jid=6207801004",
-    "source": "Greenhouse Direct ATS",
-    "timestamp": 1793122812,
-    "date_posted": "Oct 27, 2026",
-    "raw_department": "Early Career",
-    "salary_raw": "<div class=\"content-intro\"><p>Figma is growing our team of passionate creatives and builders on a mission to make design accessible to all. Figma\u2019s platform helps teams bring ideas to life\u2014whether you're brainstorming, creating a prototype, translating designs into code, or iterating with AI. From idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us!</p></div><p>The AI Research team at Figma is working on the cutting edge of AI and Design. We work on optimizing agentic systems for design quality and end user experience. We build robust evaluators for Design and post-train models. We are a very collaborative, close-knit and impact-focused team of researchers and research engineers working on some of the most challenging technical problems at the intersection of AI and creativity.</p>\n<p>We are seeking PhD interns with expertise in machine learning and artificial intelligence to develop innovative AI solutions for design and creative products. Through both fundamental and applied research, your work will contribute to new AI-driven features in Figma products.</p>\n<p>This internship can take place in Winter 2027 or Summer 2027 in San Francisco or New York.&nbsp;</p>\n<h4><strong>What you\u2019ll do at Figma:</strong></h4>\n<ul>\n<li>Drive fundamental and applied research in Generative AI with Figma product use cases in mind</li>\n<li>Formulate and implement new modeling approaches both to improve the effectiveness of Figma\u2019s current AI models as well as enable the launch of entirely new AI-powered product features</li>\n<li>Explore the boundaries of what is possible with the current technology set and experiment with novel ideas</li>\n<li>Depending on your project, you may have the opportunity to publish your research in leading AI/ML conferences</li>\n</ul>\n<h4><strong>We'd love to hear from you if you have:</strong></h4>\n<ul>\n<li>Are a 4th or 5th year senior Ph.D student in AI, Machine Learning, Computer Vision, Natural Language Processing, Human Computer Interaction or a related field</li>\n<li>Proven expertise in AI through publications on recent advancements in AI, such as Large Language Models or Agentic systems</li>\n<li>Track record in applying machine learning techniques to projects in academia or industry</li>\n<li>Experience in Python and machine learning frameworks (such as PyTorch, TensorFlow)</li>\n<li>Experience solving sophisticated problems and comparing alternative solutions, trade-offs, and diverse points of view to determine a path forward</li>\n</ul>\n<h4><strong>While it\u2019s not required, it\u2019s an added plus if you also have:</strong></h4>\n<ul>\n<li>Related industry experience via a past internship or full-time role</li>\n<li>Experience communicating your solutions effectively to different audiences</li>\n<li>Experience using AI-assisted development tools (e.g., GitHub Copilot, ChatGPT, Claude) to write, debug, and optimize code</li>\n</ul>\n<p>At Figma, one of our values is Grow as you go. We believe in hiring smart, curious people who are excited to learn and develop their skills. If you\u2019re excited about this role but your past experience doesn\u2019t align perfectly with the points outlined in the job description, we encourage you to apply anyways. You may be just the right candidate for this or other roles.</p><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p><strong><span style=\"font-size: 16px;\">Pay Transparency Disclosure</span></strong></p>\n<p>This internship role is based in either Figma\u2019s San Francisco or New York hub offices, and has the hourly base pay rate stated below.&nbsp; Figma also offers interns a housing stipend and travel reimbursement. Figma\u2019s compensation and benefits are subject to change and may be modified in the future.</p></div><div class=\"title\">Internship</div><div class=\"pay-range\"><span>$74</span><span class=\"divid",
-    "category": "General Business",
-    "match_score": 58,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the PhD Intern, AI Applied Scientist (2027) position at Figma. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Figma. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "b86ce3b15f0c01ec35d41c3d4aa3f861",
-    "company": "Figma",
-    "title": "PhD Intern, Data Science (2027)",
-    "location": "San Francisco, CA \u2022 New York, NY",
-    "url": "https://boards.greenhouse.io/figma/jobs/6200626004?gh_jid=6200626004",
-    "source": "Greenhouse Direct ATS",
-    "timestamp": 1793122812,
-    "date_posted": "Oct 27, 2026",
-    "raw_department": "Early Career",
-    "salary_raw": "<div class=\"content-intro\"><p>Figma is growing our team of passionate creatives and builders on a mission to make design accessible to all. Figma\u2019s platform helps teams bring ideas to life\u2014whether you're brainstorming, creating a prototype, translating designs into code, or iterating with AI. From idea to product, Figma empowers teams to streamline workflows, move faster, and work together in real time from anywhere in the world. If you're excited to shape the future of design and collaboration, join us!</p></div><p>Figma\u2019s Data Science team partners across product, engineering, design, marketing, sales, and operations to help Figma make better decisions with data. As a PhD Data Science Intern, you\u2019ll bring rigorous research training to some of Figma\u2019s most important and open-ended questions, from researching emerging product and user behaviors and Figma\u2019s broader ecosystem to developing new measurement methodologies, applying causal inference or machine learning, and building analytical systems. You\u2019ll own a data science project end-to-end: from framing the question and methodology to translating findings into insights that influence Figma\u2019s products, strategy, or data science practices; with the potential to continue toward publication after the internship.</p>\n<p>This internship will be based out of our San Francisco or New York hub.</p>\n<p><strong>What you\u2019ll do at Figma:</strong></p>\n<ul>\n<li>Partner with cross-functional teams to turn ambiguous product, platform, or business questions into well-defined data science problems</li>\n<li>Analyze user, product, or business data to uncover insights and recommend actions</li>\n<li>Design and evaluate experiments, metrics, statistical or machine learning models, and analytical frameworks</li>\n<li>Communicate assumptions, tradeoffs, limitations, and recommendations clearly to technical and non-technical partners</li>\n<li>Own a focused internship project end-to-end, from problem framing and technical execution through final recommendations, with potential to continue toward publication after the internship</li>\n</ul>\n<p><strong>We\u2019d love to hear from you if you have:</strong></p>\n<ul>\n<li>Currently pursuing a PhD in Data Science, Statistics, Computer Science, Human-Computer Interaction (HCI), Economics, Operations Research, Physics, Applied Mathematics, or a related quantitative field; with demonstrated experience conducting independent research (e.g. thesis or equivalent research milestone)</li>\n<li>Demonstrated fluency in one or more research methodologies or technical areas, such as statistics, experimentation, machine learning, causal inference, econometrics, optimization, user research methods, or AI/LLMs</li>\n<li>Experience using a scripting language such as Python or R, as well as proficiency with SQL, for analysis, modeling, or work with complex or large-scale datasets through research, internships, or applied projects</li>\n<li>Ability to explain technical concepts clearly and connect analysis to decisions, recommendations, or product/business impact</li>\n<li>A curious, rigorous, and self-starting mindset, with the ability to thrive in ambiguous, fast-moving environments and translate research into real-world impact</li>\n</ul>\n<p><strong>While it's not required, it's an added plus if you also have:</strong></p>\n<ul>\n<li>Prior industry or applied research experience with experimental design, causal inference, forecasting, product measurement, user research, or applied machine learning to influence product, business, platform, or stakeholder decisions</li>\n<li>Publications or research relevant to applied data science</li>\n<li>Experience or interest in AI product measurement, LLM analytics/evaluation, recommendation systems, search, personalization, or evaluating AI-powered features</li>\n</ul>\n<p>At Figma, one of our values is Grow as you go. We believe in hiring smart, curious people who are excited to learn and develop their skills. If you\u2019re excited about this role but your ",
-    "category": "General Business",
-    "match_score": 58,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the PhD Intern, Data Science (2027) position at Figma. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Figma. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "b6c730f12a98ad55e0045a104aab983f",
-    "company": "Databricks",
-    "title": "PhD GenAI Research Scientist Intern",
-    "location": "San Francisco, California",
-    "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7011263002",
-    "source": "Greenhouse Direct ATS",
-    "timestamp": 1793118036,
-    "date_posted": "Oct 27, 2026",
-    "raw_department": "University Recruiting - Engineering",
-    "salary_raw": "<p><strong>Company Description:</strong></p>\n<p>At Databricks, we are obsessed with enabling data teams to solve the world\u2019s toughest problems, from security threat detection to cancer drug development. We do this by building and running the world\u2019s best data and AI platform, so our customers can focus on the high value challenges that are central to their own missions.</p>\n<p>The Mosaic AI organization enables companies to develop AI models and systems using their own data, with technologies ranging from fine-tuning LLMs for enterprise domains, to a platform for building compound AI systems that use retrieval and agents. Mosaic AI is committed to the belief that a company\u2019s AI models are just as valuable as any other core IP, and that high-quality AI models should be available to all.</p>\n<p><strong>Job description:</strong></p>\n<p>Most of the world's data+AI problems lie in enterprise domains, behind closed doors. Our research team's goal is to push the frontier of \"domain adaptation\" - how can we develop LLMs and AI systems that work well for custom domains. To do this we are tackling open research problems on a range of topics, from how to scale/automate eval, fine tune with synthetic data, retrieval augmentation, fast/efficient inference and more.&nbsp;</p>\n<p>You will work with our research team on projects focused on adapting LLMs and AI systems towards enterprise domains. This may include:</p>\n<ul>\n<li>Adapting, improving, and evaluating a method from the literature.</li>\n<li>Designing an entirely new method for domain adaptation.</li>\n<li>Composing together multiple methods to create new recipes for efficient post-training.</li>\n<li>Evaluation of LLMs and AI systems.&nbsp;</li>\n</ul>\n<p><strong>Your qualifications and qualities:</strong></p>\n<ul>\n<li>&nbsp;Required:</li>\n<ul>\n<li>Research experience in and proficiency with the fundamentals of deep learning.</li>\n<li>Pursuing a PhD in computer science or related fields (electrical engineering, neuroscience, physics, math, etc.).</li>\n<li>Proficient software engineering skills, including with PyTorch.</li>\n</ul>\n</ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>&nbsp;</p>\n<p><strong>Pay Range Transparency</strong></p>\n<p><span style=\"font-weight: 400; font-size: 14px;\">Databricks is committed to fair and equitable compensation practices. The pay range(s) for this role is listed below and represents the expected salary range for non-commissionable roles or on-target earnings for commissionable roles.&nbsp; Actual compensation packages are based on several factors that are unique to each candidate, including but not limited to job-related skills, depth of experience, relevant certifications and training, and specific work location. Based on the factors above, Databricks anticipates utilizing the full width of the range. The total compensation package for this position may also include eligibility for annual performance bonus, equity, and the benefits listed above. For more information regarding which range your location is in visit our page <a href=\"https://www.databricks.com/sites/default/files/2024-08/us-pay-zone-mapping.pdf\">here</a>.<br></span></p>\n<p>&nbsp;</p></div><div class=\"title\">SF Bay Area Hourly Rate</div><div class=\"pay-range\"><span>$54</span><span class=\"divider\">&mdash;</span><span>$60 USD</span></div></div></div><div class=\"content-conclusion\"><p><strong>About Databricks</strong></p>\n<p><span style=\"font-family: arial, sans-serif;\">Databricks is the Data and AI company. More than 20,000 organizations worldwide \u2014 including adidas, AT&amp;T, Bayer, Block, Mastercard, Rivian, Unilever, and 70% of the Fortune 500 \u2014 rely on the Databricks Data + AI Platform to build and scale data and AI apps, analytics and agents. Headquartered in San Francisco with 30+ offices around the globe, Databricks offers a unified platform that includes Genie, Lakebase, Agent Bricks, Lakeflow, Lakehouse, and Unity Catalog. To learn more, fo",
-    "category": "Design & UX",
-    "match_score": 55,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "US Work Auth Required",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 Needs US Auth",
-      "note": "Databricks's US/Canada office requires existing local work authorization (CPT/OPT/Citizen) for undergraduate interns.",
-      "penalty": 10
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! Saw Databricks's PhD GenAI Research Scientist Intern post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
     "id": "dbbe10114c439d18317148d500ac5907",
     "company": "Western National Insurance",
     "title": "Insurance Product Development Intern",
@@ -12285,42 +12179,6 @@
       "note": "Disclosed monthly stipend/salary (~$6,700 USD/mo)."
     },
     "recruiter_pitch": "Hi! I'm applying for the Deployment Strategist, Internship - Warp Speed position at Palantir. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Palantir. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "553913a4bcd9e427d5808ae5d21b46f9",
-    "company": "Databricks",
-    "title": "Data Science Intern (2027 Start)",
-    "location": "Mountain View, California; San Francisco, California",
-    "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002",
-    "source": "Greenhouse Direct ATS",
-    "timestamp": 1792699039,
-    "date_posted": "Oct 22, 2026",
-    "raw_department": "University Recruiting - Engineering",
-    "salary_raw": "<p><small>(P-972)</small></p>\n<p>At Databricks, we are passionate about helping data teams solve the world's toughest problems \u2014 from making the next mode of transportation a reality to accelerating the development of medical breakthroughs. We do this by building and running the world's best data and AI infrastructure platform so our customers can use deep data insights to improve their business.</p>\n<p>As a Data Science Intern, you will join the Data team of data scientists and engineers to turn Databricks business and operations data into insights for product design, strategies for customer acquisition/retention, and optimizations to engineering system efficiency/stability/performance. The Data team also functions as an internal \"customer\" that dogfoods the Databricks platform and drives product improvements.</p>\n<p>We are hiring for the Mountain View &amp; San Francisco offices. We will discuss more with you as you move through the process!</p>\n<p><strong>The Impact You Will Have</strong></p>\n<ul>\n<li>Work with the Data team and internal stakeholders (Product, Customer Success, Engineering, Sales, Marketing and Finance) to use data to solve problems</li>\n<li>Apply your expertise in data science methodologies such as causal inference modeling and recommender systems to real data to deliver insights and/or deploy algorithms to the Databricks platform</li>\n<li>Manage your own project end-to-end from data exploration to presenting insights to stakeholders&nbsp; and/or deployment an algorithm in a product environment</li>\n</ul>\n<p><strong>What We Look For</strong></p>\n<ul>\n<li>You will graduate in fall 2027 or spring 2028 with a Master's or PhD degree in a quantitative field (e.g., Statistics, Math, Computer Science, Physics, Economics, Operational Research or Engineering)</li>\n<li>Proven ability to work with data in SQL and Python</li>\n<li>Experience with multiple statistical data analysis and machine learning methods such as generalized linear regression, regression and classification trees, unsupervised learning methods, causal inference, stochastic processes, time series forecasting</li>\n<li>You are excited to solve ambiguous problems with a collaborative team</li>\n</ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>&nbsp;</p>\n<p><strong>Pay Range Transparency</strong></p>\n<p><span style=\"font-weight: 400; font-size: 14px;\">Databricks is committed to fair and equitable compensation practices. The pay range(s) for this role is listed below and represents the expected salary range for non-commissionable roles or on-target earnings for commissionable roles.&nbsp; Actual compensation packages are based on several factors that are unique to each candidate, including but not limited to job-related skills, depth of experience, relevant certifications and training, and specific work location. Based on the factors above, Databricks anticipates utilizing the full width of the range. The total compensation package for this position may also include eligibility for annual performance bonus, equity, and the benefits listed above. For more information regarding which range your location is in visit our page <a href=\"https://www.databricks.com/sites/default/files/2024-08/us-pay-zone-mapping.pdf\">here</a>.<br></span></p>\n<p>&nbsp;</p></div><div class=\"title\">SF Bay Area Hourly Rate</div><div class=\"pay-range\"><span>$54</span><span class=\"divider\">&mdash;</span><span>$60 USD</span></div></div></div><div class=\"content-conclusion\"><p><strong>About Databricks</strong></p>\n<p><span style=\"font-family: arial, sans-serif;\">Databricks is the Data and AI company. More than 20,000 organizations worldwide \u2014 including adidas, AT&amp;T, Bayer, Block, Mastercard, Rivian, Unilever, and 70% of the Fortune 500 \u2014 rely on the Databricks Data + AI Platform to build and scale data and AI apps, analytics and agents. Headquartered in San Francisco with 30+ offices around the globe, Databricks offers a unified platform th",
-    "category": "Design & UX",
-    "match_score": 55,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "US Work Auth Required",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 Needs US Auth",
-      "note": "Databricks's US/Canada office requires existing local work authorization (CPT/OPT/Citizen) for undergraduate interns.",
-      "penalty": 10
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! Saw Databricks's Data Science Intern (2027 Start) post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
     "is_new": false
   },
   {
@@ -12786,41 +12644,6 @@
     "is_new": false
   },
   {
-    "id": "c3757d770e95833347bf2fc9fc2d29e3",
-    "company": "Ramp",
-    "title": "Applied Scientist Intern",
-    "location": "New York, NY (HQ)",
-    "url": "https://jobs.ashbyhq.com/ramp/b39ceb08-a0a7-4f8b-a760-2fb88e209956",
-    "source": "Ashby Direct ATS",
-    "timestamp": 1789436644,
-    "date_posted": "Sep 15, 2026",
-    "raw_department": "Data",
-    "salary_raw": "ABOUT RAMP\n\nRamp is building the smart infrastructure for finance teams, embedded in the transaction flow of every dollar a business spends. We automate how over $275B in annualized spend flows in and out of 85,000+ companies: authorizing payments, flagging risk, categorizing spend, and closing books.\n\nThe problems are high-stakes, data-dense, and unforgiving.\n\nWe hire people with high agency and high urgency. We look for slope over intercept. We care less about where you trained and more about what you\u2019ve built. At Ramp, everyone is a builder who owns problems end to end and makes consequential decisions that shape the outcome.\n\nThe median Ramp customer saves 7.5% and grows revenue 16% in their first year \u2013 far in excess of businesses operating without Ramp. We believe every ambitious company deserves the same.\n\nIf you want to build systems that directly shape how companies move and manage billions, Ramp is the place to do it.\n\n\n\n\nABOUT THE ROLE\n\nThe Applied Science team builds models and tools that solve Ramp\u2019s most critical problems: from underwriting businesses to combatting fraud to making spend management smarter. We\u2019re deeply embedded in the business and provide a quantitative foundation for decision making.\n\nAs an Applied Science intern, you\u2019ll be a fully integrated member of the team and own your project from start to finish. Working with engineers, product managers, and business stakeholders, you\u2019ll translate complex business needs into scalable machine-learning-driven solutions. This is a chance to apply ML concretely, ship code, and create genuine value for Ramp and our customers.\n\nYou will focus on exciting problems in areas like: credit, fraud, growth, or our core product.\n\n\u00a0\n\n\nWHAT YOU\u2019LL DO\n\n - End-to-End ML: own the model lifecycle from data exploration and feature engineering to training, benchmarking, deployment, and monitoring\n\n - State-of-the-Art AI: leverage the latest Large Language Models (LLMs) to solve novel problems and create new product capabilities for our customers\n\n - Versatile Techniques: apply the right tools to the right problems, whether it\u2019s deep learning, gradient boosting, or causal inference\n\n - Rigorous Experimentation: quantify the impact of your work through A/B tests and other statistical methods\n\n - Collaborate: partner closely with product and business leaders to translate models and insights into actionable strategy and user-facing features\n\n\u00a0\n\n\nWHAT YOU NEED\n\n - B.S., M.S. or Ph.D. Student: currently pursuing a degree in Data Science, Computer Science, Math, Physics, Economics, Statistics, or other quantitative fields with an expected graduation date between Dec 2027 - 2029. Graduate degrees are preferred, but not a must.\n\n - Strong ML Fundamentals: solid understanding of the mathematical foundations of machine learning, statistics, probability, and optimization\n\n - Strong Interest or Experience with AI: curiosity and drive to integrate cutting edge LLMs and agents into applied solutions\n\n - Python Proficiency: good grasp of common Data Science libraries (pandas, scikit-learn, NumPy, PyTorch, etc.)\n\n - SQL Knowledge: experience wrangling data in a modern data warehouse (e.g. Snowflake, BigQuery, Redshift, Clickhouse)\n\n - Practical Experience: track record of curating datasets and building/evaluating ML models\n\n - Strong Communication: ability to clearly explain complex concepts to both technical and non-technical audiences and use data to build a compelling narrative\n\n - Bias For Action: a comfort with ambiguity and desire to ship solutions quickly then iterate\n\n\u00a0\n\n\nNICE TO HAVES\n\n - Publications, Projects, or Previous Experience: relevant experience applying AI/ML and demonstrating your passion for the field\n\n - Production ML Mindset: knowledge of software engineering best practices applied to ML including version control (Git), testing, and writing maintainable code\n\n - Data Orchestration: experience with leveraging modern data orchestration platforms (Airflow, Dagster, Prefect",
-    "category": "General Business",
-    "match_score": 58,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the Applied Scientist Intern position at Ramp. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Ramp. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
     "id": "1a06dfe902322404e7300bcf379bbec6",
     "company": "Palantir",
     "title": "Product Designer, Internship - US Government",
@@ -12853,76 +12676,6 @@
       "note": "Disclosed monthly stipend/salary (~$8,500 USD/mo)."
     },
     "recruiter_pitch": "Hi! Saw Palantir's Product Designer, Internship - US Government post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "aad2b510ecc828afc5ac9b142485a040",
-    "company": "Modal Labs",
-    "title": "ML Research Intern",
-    "location": "New York",
-    "url": "https://jobs.ashbyhq.com/modal/38888294-6bc7-4dab-b072-6d0f0c2ed79a",
-    "source": "Ashby Direct ATS",
-    "timestamp": 1785276123,
-    "date_posted": "Jul 28, 2026",
-    "raw_department": "Engineering",
-    "salary_raw": "ABOUT US:\nAI NEEDS A NEW INFRASTRUCTURE LAYER. WE'RE BUILDING IT AT MODAL.\n\nEvery era of computing brought new workloads that previous infrastructure couldn't support: mainframes, databases, and the cloud. Each time, the company that rebuilt the layer underneath defined the decade. AI is no different, except it touches everything instead of one slice, and the window to build the layer underneath it is open right now.\n\n\nOur customers include category-defining companies like Ramp https://modal.com/blog/how-ramp-built-a-full-context-background-coding-agent-on-modal, Cognition, DoorDash, and Suno. They rely on Modal for instant GPU access, sub-second container starts, and native storage, so it's simple to serve low-latency inference, fine-tune models, and access production-ready sandboxes at scale.\n\n\nWe've passed $1B in annualized run rate, up 15x from a year ago. In October 2026 we raised a $750M Series D led by Accel at a $15.75B valuation.\n\n\nOur team includes creators of popular open-source projects (e.g.,Seaborn https://github.com/mwaskom/seaborn,Luigi https://github.com/spotify/luigi), academic researchers, international olympiad medalists, and experienced engineering and product leaders with decades of experience.\n\n\n\n\nTHE ROLE:\n\nWe are looking for PhD research interns with strong research experience in reinforcement learning, machine learning, and foundation models, including large language and multimodal models, to join our research team.\n\n\n\n\nWHAT YOU\u2019LL WORK ON:\n\n - Improve existing methods and develop new techniques for large-scale model training, optimization, and inference\n\n - Extend models to long-context and long-horizon tasks\n\n - Improve inference-time efficiency, reliability, and robustness in high-stakes real-world deployments\n\n\n\n\nYOU MAY BE A FIT IF:\n\n - You\u2019re currently pursuing a PhD in computer science, machine learning, or a related field\n\n - You have a demonstrated record of research in reinforcement learning, machine learning, foundation models, or related areas\n\n - You have experience developing and evaluating large-scale models or machine learning systems\n\n - You\u2019re familiar with distributed training, large-scale inference, or multi-GPU environments\n\n - You have publications at leading venues such as NeurIPS, ICML, ICLR, CVPR, CoRL, UAI, JMLR, or TMLR\n\n - You have strong programming and engineering skills and can translate research ideas into working implementations\n\n - You have a collaborative, mission-driven mindset and can work effectively across research and engineering teams",
-    "category": "General Business",
-    "match_score": 58,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the ML Research Intern position at Modal Labs. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Modal Labs. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "bb18ef5ddc68b02943d4cbed1ba882e9",
-    "company": "Baseten",
-    "title": "Base Labs Fellowship",
-    "location": "San Francisco",
-    "url": "https://jobs.ashbyhq.com/baseten/58d7d8e6-86ee-43a1-baec-3dddcb661d51",
-    "source": "Ashby Direct ATS",
-    "timestamp": 1783376648,
-    "date_posted": "Jul 06, 2026",
-    "raw_department": "EPD",
-    "salary_raw": "ABOUT BASETEN\n\nBaseten powers mission-critical inference for the world's most dynamic AI companies, like Cursor, Notion, OpenEvidence, Abridge, Clay, Gamma, and Writer. By uniting applied AI research, flexible infrastructure, and seamless developer tooling, we enable companies operating at the frontier of AI to bring cutting-edge models into production. We're growing quickly and recently raised our $1.5B Series F https://www.baseten.co/blog/announcing-our-series-f/, led by Altimeter Capital, Conviction Partners, and Spark Capital. Join us and help build the platform engineers turn to ship AI products.\n\n\n\nABOUT BASE LABS\n\nBase Labs is a research lab pushing the frontier of open-source LLMs. We think intelligence should be democratized, not controlled by a handful of closed labs and we think very few teams are actually positioned to do something about that.\n\nBacked by Baseten's training and inference infrastructure, we have the compute, resources, and talent to take on hard problems at the frontier and open-source what we learn along the way.\n\nOur mission is to help build a world where intelligence isn't concentrated, but spread across an ecosystem of models that anyone can build on. That mission shapes what we choose to work on, how we work on it, and who we want in the room.\n\nWe are accepting applications on a rolling basis for our first cohort of Base Labs Fellows.\n\n\n\nBASE LABS FELLOWSHIP OVERVIEW\n\nThe Base Labs Fellowship is designed to give researchers exposure to what frontier research looks like in industry. We provide funding, mentorship, and full support to our fellows, with the goal of producing rigorous, published research that shapes both the open-source ecosystem and Baseten's technical roadmap.\n\nWe run multiple cohorts of Fellows each year and review applications on a rolling basis. \n\n\n\nWHAT TO EXPECT\n\n - 3 months of full-time research from our San Francisco office\n\n - A dedicated 1:1 mentorship from a senior researcher\n\n - $18,750 Stipend (per month) / $225,000 annually\n\n - Funding for compute and other research expenses\n\n - Opportunities to publish and present at top venues, including ICML, NeurIPS, and ICLR\n\n - A clear path to a full-time offer for the strongest performers\n\n\nYOUR MENTORS\n\nEach fellow is matched 1:1 with one of three senior researchers.\n\nPotential mentors include:\n\n - Michael Psenka\n\n - Max Kirkby\n\n - Charles O\u2019Neill\n\nNote: You're welcome to research mentors' prior work, but all applications must go through the official process below, not the mentors directly.\n\n\n\n\nWHO WE'RE LOOKING FOR\n\nA quick note on our view on talent.\n\nMany of the labs that exist today run a credentialist talent model. Concentrate the most already-legible researchers, and assume the concentration compounds. The best researchers in this field are very often not yet legible. Research engineers who have spent years inside a production stack and developed insights no PhD program teaches; PhDs working on the wrong-shaped problem at the right-shaped lab; operators who have been close to real systems long enough to see things traditional researchers have never had to see. If you don\u2019t have the usual qualifications and are doing exceptional work, we\u2019d love to chat.\n\nFor the sake of providing some directional criteria for potential fits for this fellowship:\n\n - Are enrolled in or have recently completed a PhD in ML, AI, statistics, or a closely related field\n\n - Have a publication record or research portfolio that demonstrates original, rigorous thinking\n\n - Care about what your work is in service of - not just the problem, but why it matters\n\n - Want to operate with autonomy and don't need a defined roadmap to do your best work\n\n - Are excited to be in San Francisco for the duration of the program, fully embedded in the team\n\n - Are drawn to the idea of building a research culture, not just participating in one\n   \n   \n\nWHY BASE LABS?\n\n - 1:1 by design. Three fellows, three mentors. You will not get lost.\n\n - Real stakes. Your resear",
-    "category": "General Business",
-    "match_score": 58,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the Base Labs Fellowship position at Baseten. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Baseten. Portfolio: garvgupta.app",
     "is_new": false
   },
   {
@@ -13098,41 +12851,6 @@
       "note": "Disclosed monthly stipend/salary (~$8,500 USD/mo)."
     },
     "recruiter_pitch": "Hi! Saw Palantir's Product Designer, Internship - US Government post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "05fa6eab7068be0b850e8efe20c1390a",
-    "company": "Palantir",
-    "title": "American Tech Fellowship",
-    "location": "North America",
-    "url": "https://jobs.lever.co/palantir/0ccbe620-a3ef-41d1-a5c4-68e56b3c91d0",
-    "source": "Lever Direct ATS",
-    "timestamp": 1750119374,
-    "date_posted": "Jun 17, 2025",
-    "raw_department": "",
-    "salary_raw": "A World-Changing Company\n\u00a0\nPalantir builds the world\u2019s leading software for data-driven decisions and operations. By bringing the right data to the people who need it, our platforms empower our partners to develop lifesaving drugs, power decisions on the battlefield, locate missing children, and more.\n\u00a0\nApplications for the January 2027 cohort are open now through December 11, 2026. \n\u00a0\nThe Program\n\u00a0\nIn the 20th century, America pioneered mass production. We built the Arsenal of Democracy and won the war. Then we left this mighty Arsenal to rust. Silicon Valley, a product of Heartland work ethic, turned its back on the American worker.\n\nIt's time to reawaken the giant.\n\nThe same spirit of practical innovation that enabled America to dominate the previous century lives on in every American factory, workshop, and garage today. Some fear the proliferation of Artificial Intelligence, but we see the opportunity for a technological and industrial renaissance.\n\nPalantir is launching the American Tech Fellowship to arm Americans with the skills to deploy cutting-edge software in the workforce. You will have an opportunity to explore and build on Palantir's Artificial Intelligence Platform (AIP) and earn a professional certification in its use. Exceptional performers will earn an opportunity to interview for a role at Palantir or partner companies, where you can use your newfound skills to contribute to the revival of American industry.\n\nThis fellowship is about more than careers. It's about restoring the promise that hard work and determination can still change your life in America. It's an investment in American excellence, and evidence of our belief that America's greatest builders are still to be discovered.\n\nThe American worker, given the right tools and opportunity, remains our competitive advantage. It's time to prove it.\n\u00a0\nThe Role\n\u00a0\nIn this fellowship, you'll participate in a comprehensive training program with our partner, Ontologize, to level up your technical skills on Foundry and AIP. You'll learn how to deploy Palantir's advanced software to solve tough problems in enterprise settings and have the opportunity to engage directly with Palantir engineers and leadership.\n\nThe fellowship runs for 12 weeks, beginning on January 13, 2027. You are expected to attend live virtual sessions on two weeknights each week. We will also have optional sessions once a week and office hours throughout the duration of the program. Expect to spend 10 to 15 hours per week on instruction and project work throughout the fellowship. \n\nThis program provides valuable training to participants and is unpaid.\n\nThe window for submitting American Tech Fellowship applications is now through December 11, 2026.\n\u00a0\n Please note that you will never be asked to submit a payment or share financial information to participate in our interview process. If you suspect that you've been contacted by a scammer, we recommend you cease all communication with the individual and consider reporting them to the relevant authorities, such as the US\u00a0FBI Internet Crime Complaint Center (IC3).\n\nIf you would like to understand more about how your personal data will be processed by Palantir, please see our\u00a0Privacy Policy.\n",
-    "category": "General Business",
-    "match_score": 70,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "International",
-      "score": 0.88,
-      "visa_note": "Open international location",
-      "badge": "\ud83c\udf0d Global"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the American Tech Fellowship position at Palantir. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Palantir. Portfolio: garvgupta.app",
     "is_new": false
   },
   {
