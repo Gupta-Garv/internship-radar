@@ -975,6 +975,8 @@
     .hackathon-countdown-pill .deadline-note {
       font-size: 11px;
       color: var(--text-dim);
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .brief-box {
@@ -1129,7 +1131,7 @@
   <!-- ==========================================================================
        HERO: LEFT-ALIGNED LEDGER HEADER
        ========================================================================== -->
-  <header class="ledger-hero">
+  <header class="ledger-hero" id="main-ledger-hero">
     <div class="trust-chip">
       <div class="trust-indicator"></div>
       <span class="trust-text">Direct ATS Harvester // 75+ Elite Boards</span>
@@ -1680,29 +1682,27 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
       </div>
 
       <!-- Filter & Search Tray for Hackathons -->
-      <div class="filter-tray" style="margin-bottom:24px;">
+      <div class="filter-tray" style="margin-bottom:30px;">
         <div class="search-row">
           <input type="text" id="hackathon-search-input" class="search-box" placeholder="Filter hackathons by title, sponsor, track, or stack (e.g. Gemini, Solana, Agent, Devpost, Mistral)...">
         </div>
-        <div class="filter-controls-row">
-          <div class="filter-group">
-            <span class="filter-group-label">Sort By:</span>
-            <div class="pill-group" id="hackathon-sorting">
-              <button class="pill-filter active" data-sort="urgent">⏳ Deadline Approaching</button>
-              <button class="pill-filter" data-sort="prize">💰 Highest Prize Pool</button>
-              <button class="pill-filter" data-sort="vibe">⚡ Vibe Coder Top Pick</button>
-            </div>
-          </div>
-          <div class="filter-group">
-            <span class="filter-group-label">Source Platform:</span>
-            <div class="pill-group" id="hackathon-platforms">
-              <button class="pill-filter active" data-platform="all">All Sources</button>
-              <button class="pill-filter" data-platform="devpost">Devpost</button>
-              <button class="pill-filter" data-platform="flagship">Flagship / Google</button>
-              <button class="pill-filter" data-platform="lablab">Lablab.ai</button>
-              <button class="pill-filter" data-platform="web3">Web3 / DoraHacks</button>
-            </div>
-          </div>
+
+        <!-- Sorting Controls -->
+        <div class="filter-group" id="hackathon-sorting">
+          <span class="filter-eyebrow" style="min-width:76px; display:inline-block;">Sort:</span>
+          <button class="pill-filter active" data-sort="urgent">⏳ Deadline Approaching</button>
+          <button class="pill-filter" data-sort="prize">💰 Highest Prize Pool</button>
+          <button class="pill-filter" data-sort="vibe">⚡ Vibe Coder Top Pick</button>
+        </div>
+
+        <!-- Platform Controls -->
+        <div class="filter-group" id="hackathon-platforms">
+          <span class="filter-eyebrow" style="min-width:76px; display:inline-block;">Platform:</span>
+          <button class="pill-filter active" data-platform="all">All Sources</button>
+          <button class="pill-filter" data-platform="devpost">Devpost</button>
+          <button class="pill-filter" data-platform="flagship">Flagship / Google</button>
+          <button class="pill-filter" data-platform="lablab">Lablab.ai</button>
+          <button class="pill-filter" data-platform="web3">Web3 / DoraHacks</button>
         </div>
       </div>
     </div>
@@ -1900,9 +1900,17 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
       }
     });
 
+    const mainHero = document.getElementById('main-ledger-hero');
+    if (mainHero) {
+      mainHero.style.display = (pageId === 'hackathons') ? 'none' : 'block';
+    }
+
     if (pageId === 'pipeline') renderKanban();
     if (pageId === 'studio') generateStudioPitches();
     if (pageId === 'hackathons') renderHackathons();
+    try {
+      history.replaceState(null, null, '#' + pageId);
+    } catch(e) {}
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
@@ -1918,6 +1926,11 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
     renderHackathons();
     startCountdownTicker();
     updateLedgerMetrics();
+
+    const hash = window.location.hash.replace('#view-', '').replace('#', '');
+    if (hash && ['radar', 'pipeline', 'studio', 'hackathons', 'dna'].includes(hash)) {
+      navigateLedger(hash);
+    }
   }
 
   function updateLedgerMetrics() {
@@ -2846,18 +2859,22 @@ Task:
 
   document.querySelectorAll('#hackathon-sorting .pill-filter').forEach(btn => {
     btn.addEventListener('click', (e) => {
+      const target = e.target.closest('.pill-filter');
+      if (!target) return;
       document.querySelectorAll('#hackathon-sorting .pill-filter').forEach(b => b.classList.remove('active'));
-      e.target.classList.add('active');
-      currentHackSort = e.target.dataset.sort;
+      target.classList.add('active');
+      currentHackSort = target.dataset.sort;
       renderHackathons();
     });
   });
 
   document.querySelectorAll('#hackathon-platforms .pill-filter').forEach(btn => {
     btn.addEventListener('click', (e) => {
+      const target = e.target.closest('.pill-filter');
+      if (!target) return;
       document.querySelectorAll('#hackathon-platforms .pill-filter').forEach(b => b.classList.remove('active'));
-      e.target.classList.add('active');
-      currentHackPlatform = e.target.dataset.platform;
+      target.classList.add('active');
+      currentHackPlatform = target.dataset.platform;
       renderHackathons();
     });
   });
