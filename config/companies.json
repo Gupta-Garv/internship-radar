@@ -28,6 +28,41 @@
     {"name": "Palantir", "token": "palantir", "tier": 1, "regions": ["UK", "US", "UAE"]},
     {"name": "Lyft", "token": "lyft", "tier": 1, "regions": ["US", "Canada", "Europe"]}
   ],
+  "ashby_boards": [
+    {"name": "Ramp", "token": "ramp", "tier": 1, "regions": ["New York", "London", "Remote"]},
+    {"name": "Notion", "token": "notion", "tier": 1, "regions": ["San Francisco", "Tokyo", "Dublin", "Remote"]},
+    {"name": "Perplexity", "token": "perplexity", "tier": 1, "regions": ["San Francisco", "London", "Berlin", "Remote"]},
+    {"name": "Linear", "token": "linear", "tier": 1, "regions": ["Remote Worldwide", "San Francisco", "London"]},
+    {"name": "Supabase", "token": "supabase", "tier": 1, "regions": ["Remote Worldwide", "Singapore"]},
+    {"name": "Cursor", "token": "cursor", "tier": 1, "regions": ["San Francisco", "Remote"]},
+    {"name": "ElevenLabs", "token": "elevenlabs", "tier": 1, "regions": ["London", "Warsaw", "New York", "Remote"]},
+    {"name": "Modal Labs", "token": "modal", "tier": 1, "regions": ["New York", "Remote"]},
+    {"name": "Harvey AI", "token": "harvey", "tier": 1, "regions": ["San Francisco", "New York", "London"]},
+    {"name": "Cognition", "token": "cognition", "tier": 1, "regions": ["San Francisco", "New York", "Remote"]},
+    {"name": "Baseten", "token": "baseten", "tier": 1, "regions": ["San Francisco", "New York"]},
+    {"name": "Synthesia", "token": "synthesia", "tier": 1, "regions": ["London", "Amsterdam", "Remote"]},
+    {"name": "Runway", "token": "runway", "tier": 1, "regions": ["New York", "Remote"]},
+    {"name": "WHOOP", "token": "whoop", "tier": 1, "regions": ["Boston", "London", "Dublin"]},
+    {"name": "Oyster", "token": "oyster", "tier": 1, "regions": ["Remote Worldwide"]},
+    {"name": "Webflow", "token": "webflow", "tier": 1, "regions": ["Remote", "San Francisco"]},
+    {"name": "Sentry", "token": "sentry", "tier": 1, "regions": ["San Francisco", "Vienna", "Toronto"]},
+    {"name": "Replit", "token": "replit", "tier": 1, "regions": ["San Francisco", "Remote"]},
+    {"name": "ClickUp", "token": "clickup", "tier": 1, "regions": ["San Diego", "Remote"]},
+    {"name": "Zapier", "token": "zapier", "tier": 1, "regions": ["Remote Worldwide"]}
+  ],
+  "linkedin_guest_queries": [
+    {"keywords": "Product Management Intern", "location": "Singapore"},
+    {"keywords": "Product Intern", "location": "Singapore"},
+    {"keywords": "Business Operations Intern", "location": "Singapore"},
+    {"keywords": "Product Intern", "location": "Tokyo"},
+    {"keywords": "Business Operations Intern", "location": "Dubai"},
+    {"keywords": "Product Intern", "location": "Dubai"},
+    {"keywords": "Product Intern", "location": "Amsterdam"},
+    {"keywords": "Product Management Intern", "location": "Remote"},
+    {"keywords": "Growth Marketing Intern", "location": "Remote"},
+    {"keywords": "Product Design Intern", "location": "Singapore"},
+    {"keywords": "Product Design Intern", "location": "Remote"}
+  ],
   "curated_github_sources": [
     {
       "name": "Jobright Product Management & APM",

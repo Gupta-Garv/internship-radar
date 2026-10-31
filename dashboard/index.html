@@ -1016,19 +1016,19 @@
     <!-- Ledger Metric Strip -->
     <div class="ledger-strip">
       <div class="ledger-stat">
-        <span class="stat-num" id="metric-total">345</span>
+        <span class="stat-num" id="metric-total">392</span>
         <span class="stat-label">Non-Tech Internships</span>
       </div>
       <div class="ledger-stat">
-        <span class="stat-num" id="metric-tier1" style="color:var(--status-green);">7</span>
+        <span class="stat-num" id="metric-tier1" style="color:var(--status-green);">19</span>
         <span class="stat-label">Tier 1 Fits (&gt;88%)</span>
       </div>
       <div class="ledger-stat">
-        <span class="stat-num" id="metric-visa" style="color:#34d399;">16</span>
+        <span class="stat-num" id="metric-visa" style="color:#34d399;">41</span>
         <span class="stat-label">🛂 Visa / Relo Sponsored</span>
       </div>
       <div class="ledger-stat">
-        <span class="stat-num" id="metric-hubs" style="color:var(--status-blue);">8</span>
+        <span class="stat-num" id="metric-hubs" style="color:var(--status-blue);">34</span>
         <span class="stat-label">Europe, Singapore &amp; Remote</span>
       </div>
       <div class="ledger-stat">
@@ -1053,6 +1053,7 @@
       <div class="filter-group" id="filter-sorting">
         <span class="filter-eyebrow">Sort:</span>
         <button class="pill-filter active" data-sort="latest">⚡ Latest Published First (Default)</button>
+        <button class="pill-filter" data-sort="pay">💰 Highest Pay First</button>
         <button class="pill-filter" data-sort="potential">🎯 Most Potential (Highest Fit %)</button>
         <button class="pill-filter" data-sort="new">✨ Just Discovered</button>
         <button class="pill-filter" data-sort="alpha">🏢 Company A–Z</button>
@@ -1062,6 +1063,7 @@
       <div class="filter-group" id="filter-facets">
         <span class="filter-eyebrow">Quick Focus:</span>
         <button class="pill-filter active" data-facet="all">All Postings</button>
+        <button class="pill-filter" data-facet="pay">💰 Pay Disclosed Only</button>
         <button class="pill-filter" data-facet="visa">🛂 Visa / Relocation Sponsored Only</button>
         <button class="pill-filter" data-facet="tier1">⭐ Tier 1 (&gt;88% High Potential)</button>
         <button class="pill-filter" data-facet="fresh">⚡ Fresh (&lt; 72 Hours)</button>
@@ -1101,7 +1103,7 @@
     <!-- Active Filter Counter & Order Indicator -->
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; font-family:var(--font-mono); font-size:11px; color:var(--text-muted); padding:0 4px;">
       <div>
-        Showing <strong id="filter-active-count" style="color:var(--text-primary);">345</strong> of <span id="filter-total-count">345</span> internships
+        Showing <strong id="filter-active-count" style="color:var(--text-primary);">392</strong> of <span id="filter-total-count">392</span> internships
       </div>
       <div id="filter-sort-label" style="color:var(--text-dim);">
         Order: Latest Published on top
@@ -1611,6 +1613,16 @@
       <span class="score-chip tier1" id="ins-score">Match Score</span>
     </div>
 
+    <!-- Compensation & Pay -->
+    <div class="inspector-section-label">💰 Compensation &amp; Pay</div>
+    <div class="pitch-copy-box" style="margin-bottom:20px; background:rgba(52,211,153,0.05); border:1px solid rgba(52,211,153,0.22);">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+        <span style="font-weight:600; font-size:13px; color:#34d399;" id="ins-pay-display">Pay Rate</span>
+        <span class="score-chip" style="background:rgba(52,211,153,0.15); color:#34d399;" id="ins-pay-badge">Status</span>
+      </div>
+      <div class="pitch-text-content" style="color:#d1d5db; font-size:12px; margin-bottom:0;" id="ins-pay-note">Salary details...</div>
+    </div>
+
     <!-- Visa & Relocation Policy -->
     <div class="inspector-section-label">🛂 Visa & Relocation Intelligence</div>
     <div class="pitch-copy-box" style="margin-bottom:20px; background:rgba(52,211,153,0.05); border:1px solid rgba(52,211,153,0.22);">
@@ -1727,7 +1739,9 @@
 
       // Facet filter
       let matchFacet = true;
-      if (activeFacet === 'visa') {
+      if (activeFacet === 'pay') {
+        matchFacet = j.pay_info && j.pay_info.is_disclosed;
+      } else if (activeFacet === 'visa') {
         matchFacet = j.visa_info && j.visa_info.is_sponsored;
       } else if (activeFacet === 'tier1') {
         matchFacet = j.match_score >= 88;
@@ -1745,6 +1759,11 @@
       if (activeSort === 'latest') {
         // Latest published timestamp first
         return (b.timestamp || 0) - (a.timestamp || 0) || (b.match_score - a.match_score);
+      } else if (activeSort === 'pay') {
+        // Highest compensation ($ / month equivalent) on top
+        const payA = (a.pay_info && a.pay_info.pay_monthly_usd) || 0;
+        const payB = (b.pay_info && b.pay_info.pay_monthly_usd) || 0;
+        return (payB - payA) || (b.match_score - a.match_score) || ((b.timestamp || 0) - (a.timestamp || 0));
       } else if (activeSort === 'potential') {
         // Highest match score first
         return (b.match_score - a.match_score) || (b.timestamp || 0) - (a.timestamp || 0);
@@ -1769,6 +1788,7 @@
     if (sortLabelElem) {
       const sortNames = {
         'latest': 'Latest Published on top',
+        'pay': 'Highest Compensation ($ / mo) on top',
         'potential': 'Most Potential (Highest Match %) on top',
         'new': 'Just Discovered on top',
         'alpha': 'Alphabetical (A–Z)'
@@ -1790,6 +1810,9 @@
       const visaBadge = j.visa_info && j.visa_info.is_sponsored 
         ? `<span class="score-chip" style="background:rgba(52,211,153,0.12); color:#34d399; border:1px solid rgba(52,211,153,0.3);">${j.visa_info.badge}</span>` 
         : '';
+      const payBadge = j.pay_info && j.pay_info.is_disclosed 
+        ? `<span class="score-chip" style="background:rgba(52,211,153,0.14); color:#34d399; border:1px solid rgba(52,211,153,0.3); font-weight:600;">💰 ${j.pay_info.pay_display}</span>` 
+        : `<span class="score-chip" style="background:rgba(255,255,255,0.03); color:var(--text-dim); border:1px solid rgba(255,255,255,0.06);">💰 Pay: Not mentioned</span>`;
 
       return `
         <div class="card-tray-wrapper" onclick="openInspector('${j.id}')">
@@ -1804,6 +1827,7 @@
                   </div>
                 </div>
                 <div style="display:flex; gap:5px; align-items:center; flex-wrap:wrap;">
+                  ${payBadge}
                   ${visaBadge}
                   ${isFresh ? '<span class="score-chip" style="background:rgba(251,191,36,0.12); color:#fbbf24; border:1px solid rgba(251,191,36,0.3);">⚡ FRESH</span>' : ''}
                   <span class="score-chip ${isTier1 ? 'tier1' : 'tier2'}">★ ${j.match_score}%</span>
@@ -1846,6 +1870,13 @@
     document.getElementById('ins-score').innerText = `★ ${job.match_score}% Match`;
     document.getElementById('ins-pitch').innerText = job.recruiter_pitch;
     document.getElementById('ins-apply-link').href = job.url;
+
+    // Compensation & Pay Info
+    const pay = job.pay_info || { pay_display: 'Not mentioned', is_disclosed: false, note: 'Compensation is not publicly disclosed in the posting.' };
+    document.getElementById('ins-pay-display').innerText = pay.pay_display;
+    document.getElementById('ins-pay-badge').innerText = pay.is_disclosed ? 'Publicly Disclosed' : 'Not Mentioned';
+    document.getElementById('ins-pay-badge').style.color = pay.is_disclosed ? '#34d399' : 'var(--text-dim)';
+    document.getElementById('ins-pay-note').innerText = pay.note || (pay.is_disclosed ? `Estimated monthly rate: ${pay.pay_display}` : 'Compensation is not publicly disclosed in this job description. Verify during initial HR screen.');
 
     // Visa Policy Info
     const visa = job.visa_info || { tier: 'Standard', badge: '📍 Self-Check', note: 'Policy not explicitly specified.' };

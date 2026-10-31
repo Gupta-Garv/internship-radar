@@ -1,4 +1,5 @@
 import re
+import html
 import hashlib
 import requests
 import concurrent.futures
@@ -16,6 +17,8 @@ NEGATIVE_KEYWORDS = [
 ]
 
 INTERN_PATTERN = re.compile(r'\b(intern|internship|co-op|coop|apm|fellow|fellowship|summer analyst)\b', re.IGNORECASE)
+
+USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
 
 def generate_job_id(company, title, location):
     raw = f"{company.strip().lower()}_{title.strip().lower()}_{str(location).strip().lower()}"
@@ -40,9 +43,10 @@ def fetch_greenhouse_board(board_info):
     token = board_info["token"]
     jobs = []
     
-    url = f"https://boards-api.greenhouse.io/v1/boards/{token}/jobs"
+    # Use content=true to extract embedded salary/compensation text
+    url = f"https://boards-api.greenhouse.io/v1/boards/{token}/jobs?content=true"
     try:
-        r = requests.get(url, timeout=4)
+        r = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=6)
         if r.status_code == 200:
             data = r.json()
             for j in data.get("jobs", []):
@@ -65,6 +69,8 @@ def fetch_greenhouse_board(board_info):
                         except Exception:
                             pass
                     
+                    raw_content = html.unescape(j.get("content", ""))
+                    
                     jobs.append({
                         "id": job_id,
                         "company": company,
@@ -74,9 +80,10 @@ def fetch_greenhouse_board(board_info):
                         "source": "Greenhouse Direct ATS",
                         "timestamp": ts,
                         "date_posted": date_display,
-                        "raw_department": j.get("departments", [{}])[0].get("name", "") if j.get("departments") else ""
+                        "raw_department": j.get("departments", [{}])[0].get("name", "") if j.get("departments") else "",
+                        "salary_raw": raw_content[:4000]
                     })
-    except Exception as e:
+    except Exception:
         pass
     return jobs
 
@@ -87,7 +94,7 @@ def fetch_lever_board(board_info):
     
     url = f"https://api.lever.co/v0/postings/{token}?mode=json"
     try:
-        r = requests.get(url, timeout=4)
+        r = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=6)
         if r.status_code == 200:
             postings = r.json()
             for p in postings:
@@ -109,6 +116,8 @@ def fetch_lever_board(board_info):
                         except Exception:
                             pass
                             
+                    raw_desc = (p.get("descriptionPlain", "") + " " + p.get("additionalPlain", ""))
+                    
                     jobs.append({
                         "id": job_id,
                         "company": company,
@@ -118,9 +127,114 @@ def fetch_lever_board(board_info):
                         "source": "Lever Direct ATS",
                         "timestamp": ts,
                         "date_posted": date_display,
-                        "raw_department": p.get("categories", {}).get("department", "")
+                        "raw_department": p.get("categories", {}).get("department", ""),
+                        "salary_raw": raw_desc[:4000]
                     })
-    except Exception as e:
+    except Exception:
+        pass
+    return jobs
+
+def fetch_ashby_board(board_info):
+    company = board_info["name"]
+    token = board_info["token"]
+    jobs = []
+    
+    url = f"https://api.ashbyhq.com/posting-api/job-board/{token}"
+    try:
+        r = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=6)
+        if r.status_code == 200:
+            data = r.json()
+            for j in data.get("jobs", []):
+                title = j.get("title", "")
+                if is_non_tech_internship(title):
+                    loc_name = j.get("location") or "Remote / Unspecified"
+                    job_url = j.get("jobUrl") or j.get("applyUrl") or ""
+                    job_id = generate_job_id(company, title, loc_name)
+                    
+                    # Parse publishedAt timestamp
+                    pub_raw = j.get("publishedAt")
+                    ts = int(datetime.now().timestamp())
+                    date_display = datetime.now().strftime("%b %d, %Y")
+                    if pub_raw:
+                        try:
+                            clean_iso = pub_raw.replace("Z", "+00:00")
+                            dt = datetime.fromisoformat(clean_iso)
+                            ts = int(dt.timestamp())
+                            date_display = dt.strftime("%b %d, %Y")
+                        except Exception:
+                            pass
+                            
+                    desc_plain = j.get("descriptionPlain", "")
+                    
+                    jobs.append({
+                        "id": job_id,
+                        "company": company,
+                        "title": title,
+                        "location": loc_name,
+                        "url": job_url,
+                        "source": "Ashby Direct ATS",
+                        "timestamp": ts,
+                        "date_posted": date_display,
+                        "raw_department": j.get("department") or j.get("team") or "Product / Business",
+                        "salary_raw": desc_plain[:4000]
+                    })
+    except Exception:
+        pass
+    return jobs
+
+def fetch_linkedin_guest(query_info):
+    keywords = query_info.get("keywords", "product intern")
+    location = query_info.get("location", "Singapore")
+    jobs = []
+    
+    url = "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search"
+    params = {
+        "keywords": keywords,
+        "location": location,
+        "f_TPR": "r86400",  # past 24 hours only
+        "f_E": "1"          # internship level
+    }
+    
+    try:
+        r = requests.get(url, params=params, headers={"User-Agent": USER_AGENT}, timeout=7)
+        if r.status_code == 200:
+            # Parse card blocks using regex
+            card_chunks = re.findall(r'<div[^>]*base-card[^>]*>([\s\S]*?)<\/li>', r.text)
+            now = datetime.now()
+            ts = int(now.timestamp())
+            date_display = now.strftime("%b %d")
+            
+            for chunk in card_chunks:
+                title_m = re.search(r'<h3[^>]*base-search-card__title[^>]*>([^<]+)<\/h3>', chunk)
+                comp_m = re.search(r'<h4[^>]*base-search-card__subtitle[^>]*>[\s\S]*?<a[^>]*>([^<]+)<\/a>', chunk)
+                if not comp_m:
+                    comp_m = re.search(r'<h4[^>]*base-search-card__subtitle[^>]*>([^<]+)<\/h4>', chunk)
+                loc_m = re.search(r'<span[^>]*job-search-card__location[^>]*>([^<]+)<\/span>', chunk)
+                link_m = re.search(r'<a[^>]*base-card__full-link[^>]*href=\"([^\"]+)\"', chunk)
+                salary_m = re.search(r'<span[^>]*job-search-card__salary-info[^>]*>([^<]+)<\/span>', chunk)
+                
+                if title_m and link_m:
+                    title = title_m.group(1).strip()
+                    company = comp_m.group(1).strip() if comp_m else "Global Firm"
+                    loc_name = loc_m.group(1).strip() if loc_m else location
+                    job_url = link_m.group(1).split("?")[0]  # clean tracking params
+                    salary_raw = salary_m.group(1).strip() if salary_m else ""
+                    
+                    if is_non_tech_internship(title):
+                        job_id = generate_job_id(company, title, loc_name)
+                        jobs.append({
+                            "id": job_id,
+                            "company": company,
+                            "title": title,
+                            "location": loc_name,
+                            "url": job_url,
+                            "source": "LinkedIn (Past 24h)",
+                            "timestamp": ts,
+                            "date_posted": f"⚡ {date_display}",
+                            "raw_department": "General Business",
+                            "salary_raw": salary_raw
+                        })
+    except Exception:
         pass
     return jobs
 
@@ -131,7 +245,7 @@ def fetch_github_markdown_table(source_info):
     jobs = []
     
     try:
-        r = requests.get(url, timeout=5)
+        r = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=6)
         if r.status_code == 200:
             lines = r.text.split("\n")
             for line in lines:
@@ -190,9 +304,10 @@ def fetch_github_markdown_table(source_info):
                             "source": name,
                             "timestamp": ts,
                             "date_posted": date_display,
-                            "raw_department": default_cat
+                            "raw_department": default_cat,
+                            "salary_raw": line
                         })
-    except Exception as e:
+    except Exception:
         pass
     return jobs
 
@@ -203,15 +318,23 @@ def run_harvest(config):
     gh_boards = config.get("greenhouse_boards", [])
     # 2. Lever
     lever_boards = config.get("lever_boards", [])
-    # 3. Curated GitHub
+    # 3. Ashby
+    ashby_boards = config.get("ashby_boards", [])
+    # 4. LinkedIn Guest
+    linkedin_queries = config.get("linkedin_guest_queries", [])
+    # 5. Curated GitHub
     github_sources = config.get("curated_github_sources", [])
     
-    with concurrent.futures.ThreadPoolExecutor(max_workers=12) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=14) as executor:
         futures = []
         for b in gh_boards:
             futures.append(executor.submit(fetch_greenhouse_board, b))
         for b in lever_boards:
             futures.append(executor.submit(fetch_lever_board, b))
+        for a in ashby_boards:
+            futures.append(executor.submit(fetch_ashby_board, a))
+        for l in linkedin_queries:
+            futures.append(executor.submit(fetch_linkedin_guest, l))
         for g in github_sources:
             futures.append(executor.submit(fetch_github_markdown_table, g))
             
@@ -227,4 +350,3 @@ def run_harvest(config):
             unique_jobs[j["id"]] = j
             
     return list(unique_jobs.values())
-

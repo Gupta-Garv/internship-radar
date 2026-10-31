@@ -278,11 +278,91 @@ def generate_recruiter_pitch(job, profile, category):
     else:
         return f"Hi! I'm applying for the {title} position at {comp}. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at {comp}. Portfolio: garvgupta.app"
 
+def evaluate_compensation(job):
+    raw = job.get("salary_raw", "")
+    title = job.get("title", "")
+    text = f"{title} {raw}"
+    
+    if not raw and not title:
+        return {
+            "pay_display": "Not mentioned",
+            "pay_monthly_usd": 0,
+            "is_disclosed": False,
+            "note": "Compensation is not publicly disclosed in the posting."
+        }
+        
+    # 1. Hourly rate: e.g. $40 - $60 / hr, $45/hour, $50/hr
+    m_hour = re.search(r'(\$|€|£|₹|SGD|AED|CAD|AUD)?\s*(\d{2,3})(?:\s*(?:-|to)\s*(\$|€|£|₹|SGD|AED|CAD|AUD)?\s*(\d{2,3}))?\s*(?:/|\bper\b)?\s*(?:hour|hr)\b', text, re.I)
+    if not m_hour:
+        m_hour = re.search(r'(?:hourly\s+(?:rate|pay|compensation)\s+(?:of|is|:)?\s*)(\$|€|£|₹|SGD|AED|CAD|AUD)?\s*(\d{2,3})', text, re.I)
+    if m_hour:
+        curr = m_hour.group(1) or "$"
+        min_v = int(m_hour.group(2))
+        max_v = int(m_hour.group(4)) if (len(m_hour.groups()) >= 4 and m_hour.group(4)) else min_v
+        avg_v = (min_v + max_v) / 2
+        mult = 1.0
+        if curr in ["£", "€"]: mult = 1.15
+        elif curr == "SGD": mult = 0.75
+        elif curr in ["AUD", "CAD"]: mult = 0.7
+        elif curr == "₹": mult = 0.012
+        monthly_usd = int(avg_v * 160 * mult)
+        display = f"{curr}{min_v} - {curr}{max_v}/hr" if min_v != max_v else f"{curr}{min_v}/hr"
+        return {
+            "pay_display": display,
+            "pay_monthly_usd": monthly_usd,
+            "is_disclosed": True,
+            "note": f"Disclosed hourly rate (~${monthly_usd:,}/mo full-time equivalent)."
+        }
+
+    # 2. Monthly rate / Stipend: "monthly ... $12,500" or "$12,500 / month" or "$12,500/mo"
+    m_month = re.search(r'monthly\b[^\d$€£₹]{0,40}(\$|€|£|₹|SGD|AED)?\s*(\d{1,2}(?:,\d{3})+|\d{4,5})', text, re.I)
+    if not m_month:
+        m_month = re.search(r'(\$|€|£|₹|SGD|AED|CAD|AUD)?\s*(\d{1,2}(?:,\d{3})+|\d{4,5})\s*(?:USD|EUR|GBP|SGD|AED)?\s*(?:(?:/|\bper\b)\s*(?:month|mo)\b|\bmonthly\b)', text, re.I)
+    if m_month:
+        curr = m_month.group(1) or "$"
+        val = int(m_month.group(2).replace(",", ""))
+        if val >= 500:
+            mult = 1.0
+            if curr in ["£", "€"]: mult = 1.15
+            elif curr == "SGD": mult = 0.75
+            elif curr in ["AUD", "CAD"]: mult = 0.7
+            elif curr == "₹": mult = 0.012
+            monthly_usd = int(val * mult)
+            return {
+                "pay_display": f"{curr}{val:,}/mo",
+                "pay_monthly_usd": monthly_usd,
+                "is_disclosed": True,
+                "note": f"Disclosed monthly stipend/salary (~${monthly_usd:,} USD/mo)."
+            }
+
+    # 3. Annual salary: e.g. $80,000 - $100,000 / year
+    m_annual = re.search(r'(\$|€|£|₹|SGD|AED|CAD|AUD)?\s*(\d{2,3}(?:,\d{3})+)\s*(?:-|to)\s*(\$|€|£|₹)?\s*(\d{2,3}(?:,\d{3})+)\s*(?:/|\bper\b)?\s*(?:year|yr|annum)\b', text, re.I)
+    if m_annual:
+        curr = m_annual.group(1) or "$"
+        min_v = int(m_annual.group(2).replace(",", ""))
+        max_v = int(m_annual.group(4).replace(",", ""))
+        avg_v = (min_v + max_v) / 2
+        monthly_usd = int(avg_v / 12)
+        return {
+            "pay_display": f"{curr}{min_v//1000}k - {curr}{max_v//1000}k/yr",
+            "pay_monthly_usd": monthly_usd,
+            "is_disclosed": True,
+            "note": f"Disclosed annual compensation rate (~${monthly_usd:,}/mo equivalent)."
+        }
+
+    return {
+        "pay_display": "Not mentioned",
+        "pay_monthly_usd": 0,
+        "is_disclosed": False,
+        "note": "Compensation is not publicly disclosed in the posting."
+    }
+
 def score_job(job, profile):
     title = job["title"]
     category = categorize_role(title, job.get("raw_department", ""))
     loc_eval = evaluate_location(job["location"], title)
     visa_eval = evaluate_visa_sponsorship(job, loc_eval)
+    pay_eval = evaluate_compensation(job)
     
     # Base category weights based on Garv's strengths
     cat_weights = {
@@ -317,5 +397,6 @@ def score_job(job, profile):
         "tier": tier,
         "location_info": loc_eval,
         "visa_info": visa_eval,
+        "pay_info": pay_eval,
         "recruiter_pitch": pitch
     }
