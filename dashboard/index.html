@@ -509,6 +509,39 @@
       opacity: 0.9;
     }
 
+    .card-action-btn {
+      font-family: var(--font-sans);
+      font-size: 11px;
+      font-weight: 500;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.15s ease;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+    }
+
+    .card-action-btn:hover {
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+    }
+
+    .card-action-btn.btn-applied {
+      color: #34d399;
+      background: rgba(52, 211, 153, 0.08);
+      border-color: rgba(52, 211, 153, 0.28);
+    }
+
+    .card-action-btn.btn-applied:hover {
+      background: rgba(52, 211, 153, 0.22);
+      border-color: rgba(52, 211, 153, 0.5);
+      color: #fff;
+    }
+
     /* ==========================================================================
        SLIDE-OVER INSPECTOR DRAWER (CULT UI SIDE-PANEL)
        ========================================================================== */
@@ -1195,7 +1228,8 @@
       <!-- Quick Potential & Freshness Facets -->
       <div class="filter-group" id="filter-facets">
         <span class="filter-eyebrow">Quick Focus:</span>
-        <button class="pill-filter active" data-facet="all">All Postings</button>
+        <button class="pill-filter active" data-facet="all">All Untracked</button>
+        <button class="pill-filter" data-facet="tracked">📋 Tracked &amp; Applied</button>
         <button class="pill-filter" data-facet="pay">💰 Pay Disclosed Only</button>
         <button class="pill-filter" data-facet="visa">🛂 Visa / Relocation Sponsored Only</button>
         <button class="pill-filter" data-facet="tier1">⭐ Tier 1 (&gt;88% High Potential)</button>
@@ -1793,19 +1827,33 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
       </button>
     </div>
 
-    <!-- Status Selector & Direct Link -->
-    <div class="inspector-section-label">Application Pipeline Status</div>
-    <div style="display:flex; gap:10px; margin-bottom:28px;">
-      <select id="ins-status-select" class="search-box" style="width:160px; padding:7px 12px; border-radius:9999px;">
-        <option value="to_apply">📌 To Apply</option>
-        <option value="saved">⭐ Saved</option>
-        <option value="applied">📨 Applied</option>
-        <option value="interviewing">🎯 Interviewing</option>
-        <option value="offer">🏆 Offer</option>
-      </select>
-      <a href="#" id="ins-apply-link" target="_blank" rel="noopener noreferrer" class="pill-cta-ink" style="padding:8px 20px;">
-        Direct Apply ↗
-      </a>
+    <!-- Pipeline Actions & Status -->
+    <div class="inspector-section-label">Pipeline Actions &amp; Status</div>
+    <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:28px;">
+      <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+        <button class="pill-cta-ink" style="background:#34d399; color:#064e3b; font-weight:600; padding:8px 18px; border:none; cursor:pointer;" onclick="markActiveJobStatus('applied')">
+          ✓ Mark as Applied &amp; Move to Pipeline
+        </button>
+        <button class="card-action-btn" style="padding:7px 14px; font-size:12px;" onclick="markActiveJobStatus('to_apply')">
+          📌 Save to Pipeline (To Apply)
+        </button>
+      </div>
+
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:10px 14px; background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); border-radius:12px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:12px; color:var(--text-muted);">Pipeline Stage:</span>
+          <select id="ins-status-select" class="search-box" style="width:auto; padding:5px 12px; border-radius:9999px; font-size:12px;">
+            <option value="untracked">⚪ Untracked (On Radar)</option>
+            <option value="applied">📨 Applied (In Pipeline)</option>
+            <option value="to_apply">📌 To Apply (In Pipeline)</option>
+            <option value="interviewing">🎯 Interviewing (In Pipeline)</option>
+            <option value="offer">🏆 Offer (In Pipeline)</option>
+          </select>
+        </div>
+        <a href="#" id="ins-apply-link" target="_blank" rel="noopener noreferrer" class="pill-cta-ink" style="padding:7px 16px; font-size:12px;">
+          Direct Apply ↗
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -1934,14 +1982,14 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
   }
 
   function updateLedgerMetrics() {
-    const total = allJobs.length;
+    const untracked = allJobs.filter(j => !userStatus[j.id] || userStatus[j.id] === 'untracked').length;
     const tier1 = allJobs.filter(j => j.match_score >= 88).length;
     const visaCount = allJobs.filter(j => j.visa_info && j.visa_info.is_sponsored).length;
-    const tracked = Object.values(userStatus).length;
+    const tracked = Object.keys(userStatus).filter(id => userStatus[id] && userStatus[id] !== 'untracked').length;
     const hackCount = allHackathons.length;
     const hackCapital = allHackathons.reduce((acc, h) => acc + (h.prize_usd || 0), 0);
 
-    document.getElementById('metric-total').innerText = total;
+    document.getElementById('metric-total').innerText = untracked;
     document.getElementById('metric-tier1').innerText = tier1;
     const metricVisa = document.getElementById('metric-visa');
     if (metricVisa) metricVisa.innerText = visaCount;
@@ -1956,10 +2004,54 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
     }
     document.getElementById('metric-tracked').innerText = tracked;
 
-    document.getElementById('dock-count-radar').innerText = total;
+    document.getElementById('dock-count-radar').innerText = untracked;
     document.getElementById('dock-count-pipeline').innerText = tracked;
     const dockHack = document.getElementById('dock-count-hackathons');
     if (dockHack) dockHack.innerText = hackCount;
+  }
+
+  // Mark Job Status (Move to pipeline or restore to radar)
+  function markJobStatus(jobId, status) {
+    const job = allJobs.find(j => j.id === jobId);
+    const compName = job ? job.company : 'Job';
+
+    if (status === 'untracked') {
+      delete userStatus[jobId];
+    } else {
+      userStatus[jobId] = status;
+    }
+    localStorage.setItem('garv_job_status', JSON.stringify(userStatus));
+
+    updateLedgerMetrics();
+    renderRadar();
+    renderKanban();
+
+    if (currentActiveJobId === jobId) {
+      const select = document.getElementById('ins-status-select');
+      if (select) select.value = status;
+    }
+
+    const stageLabels = {
+      'applied': 'Applied 📨',
+      'to_apply': 'To Apply 📌',
+      'interviewing': 'Interviewing 🎯',
+      'offer': 'Offer 🏆',
+      'untracked': 'Radar Discovery ↩️'
+    };
+
+    if (status === 'untracked') {
+      showToast(`↩️ ${compName} restored to Radar discovery`);
+    } else {
+      showToast(`✓ ${compName} moved to Pipeline (${stageLabels[status] || status})`);
+    }
+  }
+
+  function markActiveJobStatus(status) {
+    if (!currentActiveJobId) {
+      showToast('No active job selected');
+      return;
+    }
+    markJobStatus(currentActiveJobId, status);
   }
 
   // Render Catalog (Page 1) with Dynamic Sorting & Facet Filters
@@ -1974,6 +2066,14 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
 
     // 1. Filter
     let filtered = allJobs.filter(j => {
+      const isTracked = !!(userStatus[j.id] && userStatus[j.id] !== 'untracked');
+
+      if (activeFacet === 'tracked') {
+        if (!isTracked) return false;
+      } else {
+        if (isTracked) return false;
+      }
+
       const matchSearch = j.company.toLowerCase().includes(searchVal) || 
                           j.title.toLowerCase().includes(searchVal) ||
                           j.location.toLowerCase().includes(searchVal);
@@ -2025,7 +2125,8 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
     const countElem = document.getElementById('filter-active-count');
     if (countElem) countElem.innerText = filtered.length;
     const totalElem = document.getElementById('filter-total-count');
-    if (totalElem) totalElem.innerText = allJobs.length;
+    const untrackedTotal = allJobs.filter(j => !userStatus[j.id] || userStatus[j.id] === 'untracked').length;
+    if (totalElem) totalElem.innerText = (activeFacet === 'tracked') ? Object.keys(userStatus).filter(id => userStatus[id] && userStatus[id] !== 'untracked').length : untrackedTotal;
 
     const sortLabelElem = document.getElementById('filter-sort-label');
     if (sortLabelElem) {
@@ -2041,7 +2142,10 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
 
     const container = document.getElementById('radar-catalog');
     if (filtered.length === 0) {
-      container.innerHTML = '<div style="grid-column:1/-1; padding:60px; text-align:center; color:var(--text-muted); font-size:13px;">No internships match your active filters. Try broadening your criteria.</div>';
+      const emptyMsg = (activeFacet === 'tracked') 
+        ? 'No applications in your pipeline yet. Mark jobs as applied on the Radar to track them here.' 
+        : 'No unapplied internships match your active filters. Try broadening your criteria or view Tracked & Applied.';
+      container.innerHTML = `<div style="grid-column:1/-1; padding:60px; text-align:center; color:var(--text-muted); font-size:13px;">${emptyMsg}</div>`;
       return;
     }
 
@@ -2056,6 +2160,7 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
       const payBadge = j.pay_info && j.pay_info.is_disclosed 
         ? `<span class="score-chip" style="background:rgba(52,211,153,0.14); color:#34d399; border:1px solid rgba(52,211,153,0.3); font-weight:600;">💰 ${j.pay_info.pay_display}</span>` 
         : `<span class="score-chip" style="background:rgba(255,255,255,0.03); color:var(--text-dim); border:1px solid rgba(255,255,255,0.06);">💰 Pay: Not mentioned</span>`;
+      const isTrackedCard = !!(userStatus[j.id] && userStatus[j.id] !== 'untracked');
 
       return `
         <div class="card-tray-wrapper" onclick="openInspector('${j.id}')">
@@ -2089,10 +2194,26 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
             </div>
 
             <div class="card-hairline-footer">
-              <span class="view-affordance">Inspect & Pitch →</span>
-              <a href="${j.url}" target="_blank" rel="noopener noreferrer" class="pill-cta-ink" onclick="event.stopPropagation()">
-                Apply ↗
-              </a>
+              <div style="display:flex; align-items:center; gap:6px;">
+                ${isTrackedCard ? `
+                  <button class="card-action-btn" title="Restore to Radar discovery catalog" onclick="event.stopPropagation(); markJobStatus('${j.id}', 'untracked');">
+                    ↩️ Back to Radar
+                  </button>
+                ` : `
+                  <button class="card-action-btn btn-applied" title="Mark applied and move to Pipeline" onclick="event.stopPropagation(); markJobStatus('${j.id}', 'applied');">
+                    ✓ Mark Applied
+                  </button>
+                  <button class="card-action-btn" title="Save to Pipeline to apply later" onclick="event.stopPropagation(); markJobStatus('${j.id}', 'to_apply');">
+                    📌 Pipeline
+                  </button>
+                `}
+              </div>
+              <div style="display:flex; align-items:center; gap:8px;">
+                <span class="view-affordance">Inspect →</span>
+                <a href="${j.url}" target="_blank" rel="noopener noreferrer" class="pill-cta-ink" onclick="event.stopPropagation()">
+                  Apply ↗
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -2128,12 +2249,9 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
     document.getElementById('ins-visa-note').innerText = visa.note || 'Contact recruiter to verify visa sponsorship.';
 
     const select = document.getElementById('ins-status-select');
-    select.value = userStatus[jobId] || 'to_apply';
+    select.value = userStatus[jobId] || 'untracked';
     select.onchange = (e) => {
-      userStatus[jobId] = e.target.value;
-      localStorage.setItem('garv_job_status', JSON.stringify(userStatus));
-      updateLedgerMetrics();
-      showToast('Status updated');
+      markJobStatus(jobId, e.target.value);
     };
 
     document.getElementById('inspector-overlay').classList.add('open');
@@ -2161,11 +2279,28 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
         counts[st]++;
         cols[st].innerHTML += `
           <div class="kanban-item-card" onclick="openInspector('${j.id}')">
-            <div style="font-weight:500; color:#fff; font-size:13px; margin-bottom:4px;">${j.company}</div>
-            <div style="font-size:12px; color:var(--text-muted); line-height:1.35; margin-bottom:8px;">${j.title}</div>
-            <div style="display:flex; justify-content:space-between; align-items:center; font-family:var(--font-mono); font-size:10px;">
-              <span style="color:var(--status-blue);">★ ${j.match_score}%</span>
-              <span style="color:var(--text-dim);">${j.date_posted}</span>
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:4px;">
+              <div style="font-weight:600; color:#fff; font-size:13px;">${j.company}</div>
+              <span class="score-chip ${j.match_score >= 88 ? 'tier1' : 'tier2'}" style="font-size:10px; padding:2px 6px;">★ ${j.match_score}%</span>
+            </div>
+            <div style="font-size:12px; color:var(--text-muted); line-height:1.35; margin-bottom:10px;">${j.title}</div>
+            
+            <div style="display:flex; justify-content:space-between; align-items:center; font-family:var(--font-mono); font-size:10px; color:var(--text-dim); margin-bottom:10px; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:6px;">
+              <span>${j.location_info ? j.location_info.badge : j.location}</span>
+              <span>📅 ${j.date_posted}</span>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center; gap:6px;" onclick="event.stopPropagation();">
+              <select class="search-box" style="width:auto; padding:3px 8px; border-radius:9999px; font-size:10px; background:rgba(0,0,0,0.4);" onchange="markJobStatus('${j.id}', this.value)">
+                <option value="to_apply" ${st === 'to_apply' ? 'selected' : ''}>📌 To Apply</option>
+                <option value="applied" ${st === 'applied' ? 'selected' : ''}>📨 Applied</option>
+                <option value="interviewing" ${st === 'interviewing' ? 'selected' : ''}>🎯 Interview</option>
+                <option value="offer" ${st === 'offer' ? 'selected' : ''}>🏆 Offer</option>
+                <option value="untracked">↩️ Back to Radar</option>
+              </select>
+              <a href="${j.url}" target="_blank" rel="noopener noreferrer" class="pill-cta-ink" style="padding:4px 10px; font-size:10px;">
+                Apply ↗
+              </a>
             </div>
           </div>
         `;
@@ -2175,7 +2310,7 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
     Object.keys(counts).forEach(k => {
       document.getElementById(`k-count-${k}`).innerText = counts[k];
       if (counts[k] === 0) {
-        cols[k].innerHTML = '<div style="font-size:11px; color:var(--text-dim); text-align:center; padding:20px;">Empty</div>';
+        cols[k].innerHTML = '<div style="font-size:11px; color:var(--text-dim); text-align:center; padding:20px;">No applications in this stage</div>';
       }
     });
   }
