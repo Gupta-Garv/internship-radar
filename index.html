@@ -333,6 +333,69 @@
     }
 
     /* ==========================================================================
+       RADAR MARKET SCOPE TABS (INTERNATIONAL VS INDIA)
+       ========================================================================== */
+    .radar-scope-bar {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--card-tray);
+      border: 1px solid var(--border-subtle);
+      border-radius: 9999px;
+      padding: 5px;
+      margin-bottom: 18px;
+      box-shadow: var(--shadow-soft-sm);
+      max-width: 100%;
+      overflow-x: auto;
+    }
+
+    .scope-tab {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 7px 18px;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .scope-tab:hover {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .scope-tab.active {
+      background: var(--ink);
+      color: var(--ink-inverse);
+      font-weight: 600;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    }
+
+    .scope-tab .scope-badge {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 600;
+      padding: 1px 7px;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .scope-tab.active .scope-badge {
+      background: rgba(0, 0, 0, 0.15);
+      color: var(--ink-inverse);
+    }
+
+    /* ==========================================================================
        CATALOG: BLOCK & PATTERN CARDS (CULT UI + LEDGER)
        ========================================================================== */
     .catalog-grid {
@@ -1457,6 +1520,25 @@
        ========================================================================== -->
     <section id="view-radar" class="ledger-page-view active">
 
+      <!-- Market Scope Segmented Tabs (International vs India) -->
+      <div class="radar-scope-bar" id="radar-scope-tabs">
+        <button class="scope-tab active" data-market="international" id="tab-scope-international">
+          <span class="scope-icon">🌍</span>
+          <span class="scope-label">International &amp; Overseas</span>
+          <span class="scope-badge" id="scope-count-intl">0</span>
+        </button>
+        <button class="scope-tab" data-market="india" id="tab-scope-india">
+          <span class="scope-icon">🇮🇳</span>
+          <span class="scope-label">India Postings Only</span>
+          <span class="scope-badge" id="scope-count-india">0</span>
+        </button>
+        <button class="scope-tab" data-market="all" id="tab-scope-all">
+          <span class="scope-icon">🌐</span>
+          <span class="scope-label">All Locations</span>
+          <span class="scope-badge" id="scope-count-all">0</span>
+        </button>
+      </div>
+
       <!-- Filter & Search Tray -->
       <div class="filter-tray">
         <div class="search-row">
@@ -2362,11 +2444,20 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
   <script>
     let allJobs = [];
     let allHackathons = [];
+    let currentRadarMarket = 'international';
     let currentHackSort = 'urgent';
     let currentHackPlatform = 'all';
     let currentHackPrizeType = 'all';
     let userStatus = JSON.parse(localStorage.getItem('garv_job_status') || '{}');
     let currentActiveJobId = null;
+
+    function isJobIndia(j) {
+      if (!j) return false;
+      const reg = (j.location_info && j.location_info.region) || '';
+      if (reg.toLowerCase() === 'india') return true;
+      const loc = (j.location || '').toLowerCase();
+      return /\b(india|bengaluru|bangalore|gurugram|gurgaon|hyderabad|mumbai|pune|delhi|noida|chennai|ahmedabad|kolkata)\b/i.test(loc);
+    }
 
     function escapeHtml(str) {
       if (!str) return '';
@@ -2452,6 +2543,17 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
       if (dockHack) dockHack.innerText = hackCount;
       const dockTrash = document.getElementById('dock-count-trash');
       if (dockTrash) dockTrash.innerText = trashedCount;
+
+      const untrackedJobs = allJobs.filter(j => !userStatus[j.id] || userStatus[j.id] === 'untracked');
+      const intlCount = untrackedJobs.filter(j => !isJobIndia(j)).length;
+      const indiaCount = untrackedJobs.filter(j => isJobIndia(j)).length;
+
+      const badgeIntl = document.getElementById('scope-count-intl');
+      if (badgeIntl) badgeIntl.innerText = intlCount;
+      const badgeIndia = document.getElementById('scope-count-india');
+      if (badgeIndia) badgeIndia.innerText = indiaCount;
+      const badgeAll = document.getElementById('scope-count-all');
+      if (badgeAll) badgeAll.innerText = untracked;
     }
 
     // Mark Job Status (Move to pipeline, trash, or restore to radar)
@@ -2561,6 +2663,11 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
         matchFacet = j.source && j.source.includes('Direct ATS');
       }
 
+      // Market filter (International vs India vs All)
+      const isIndia = isJobIndia(j);
+      if (currentRadarMarket === 'india' && !isIndia) return false;
+      if (currentRadarMarket === 'international' && isIndia) return false;
+
       return matchSearch && matchCat && matchReg && matchFacet;
     });
 
@@ -2591,6 +2698,22 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
     const untrackedTotal = allJobs.filter(j => !userStatus[j.id] || userStatus[j.id] === 'untracked').length;
     if (totalElem) totalElem.innerText = (activeFacet === 'tracked') ? Object.keys(userStatus).filter(id => userStatus[id] && userStatus[id] !== 'untracked').length : untrackedTotal;
 
+    // Update Market Scope Badges
+    const activeMarketPool = allJobs.filter(j => {
+      const st = userStatus[j.id];
+      if (st === 'trashed') return false;
+      return (activeFacet === 'tracked') ? (st && st !== 'untracked') : (!st || st === 'untracked');
+    });
+    const intlCount = activeMarketPool.filter(j => !isJobIndia(j)).length;
+    const indiaCount = activeMarketPool.filter(j => isJobIndia(j)).length;
+
+    const badgeIntl = document.getElementById('scope-count-intl');
+    if (badgeIntl) badgeIntl.innerText = intlCount;
+    const badgeIndia = document.getElementById('scope-count-india');
+    if (badgeIndia) badgeIndia.innerText = indiaCount;
+    const badgeAll = document.getElementById('scope-count-all');
+    if (badgeAll) badgeAll.innerText = activeMarketPool.length;
+
     const sortLabelElem = document.getElementById('filter-sort-label');
     if (sortLabelElem) {
       const sortNames = {
@@ -2605,9 +2728,14 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
 
     const container = document.getElementById('radar-catalog');
     if (filtered.length === 0) {
-      const emptyMsg = (activeFacet === 'tracked') 
-        ? 'No applications in your pipeline yet. Mark jobs as applied on the Radar to track them here.' 
-        : 'No unapplied internships match your active filters. Try broadening your criteria or view Tracked & Applied.';
+      let emptyMsg = 'No unapplied internships match your active filters. Try broadening your criteria or view Tracked & Applied.';
+      if (activeFacet === 'tracked') {
+        emptyMsg = 'No applications in your pipeline yet. Mark jobs as applied on the Radar to track them here.';
+      } else if (currentRadarMarket === 'india') {
+        emptyMsg = 'No domestic India internships match your active filters. Try broadening your search or resetting track filters.';
+      } else if (currentRadarMarket === 'international') {
+        emptyMsg = 'No international internships match your active filters. Try broadening your criteria or resetting hub filters.';
+      }
       container.innerHTML = `<div style="grid-column:1/-1; padding:60px; text-align:center; color:var(--text-muted); font-size:13px;">${emptyMsg}</div>`;
       return;
     }
@@ -3191,6 +3319,48 @@ STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
       btn.addEventListener('click', (e) => {
         document.querySelectorAll('#filter-regions .pill-filter').forEach(b => b.classList.remove('active'));
         e.target.classList.add('active');
+        const reg = e.target.dataset.reg;
+        if (reg === 'India') {
+          currentRadarMarket = 'india';
+          document.querySelectorAll('#radar-scope-tabs .scope-tab').forEach(b => {
+            b.classList.toggle('active', b.dataset.market === 'india');
+          });
+        } else if (reg !== 'all') {
+          if (currentRadarMarket === 'india') {
+            currentRadarMarket = 'international';
+            document.querySelectorAll('#radar-scope-tabs .scope-tab').forEach(b => {
+              b.classList.toggle('active', b.dataset.market === 'international');
+            });
+          }
+        }
+        renderRadar();
+      });
+    });
+
+    // Radar Market Scope Tabs (International vs India vs All)
+    document.querySelectorAll('#radar-scope-tabs .scope-tab').forEach(tab => {
+      tab.addEventListener('click', (e) => {
+        const btn = e.target.closest('.scope-tab');
+        if (!btn) return;
+        document.querySelectorAll('#radar-scope-tabs .scope-tab').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentRadarMarket = btn.dataset.market;
+
+        // Reset region filter if conflicting
+        if (currentRadarMarket === 'india') {
+          const activeRegBtn = document.querySelector('#filter-regions .pill-filter.active');
+          if (activeRegBtn && activeRegBtn.dataset.reg !== 'all' && activeRegBtn.dataset.reg !== 'India') {
+            document.querySelectorAll('#filter-regions .pill-filter').forEach(b => b.classList.remove('active'));
+            document.querySelector('#filter-regions .pill-filter[data-reg="all"]')?.classList.add('active');
+          }
+        } else if (currentRadarMarket === 'international') {
+          const activeRegBtn = document.querySelector('#filter-regions .pill-filter.active');
+          if (activeRegBtn && activeRegBtn.dataset.reg === 'India') {
+            document.querySelectorAll('#filter-regions .pill-filter').forEach(b => b.classList.remove('active'));
+            document.querySelector('#filter-regions .pill-filter[data-reg="all"]')?.classList.add('active');
+          }
+        }
+
         renderRadar();
       });
     });

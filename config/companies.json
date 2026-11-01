@@ -20,13 +20,17 @@
     {"name": "Robinhood", "token": "robinhood", "tier": 1, "regions": ["Remote", "Europe"]},
     {"name": "Twilio", "token": "twilio", "tier": 1, "regions": ["Dublin", "Singapore", "Remote"]},
     {"name": "Razorpay", "token": "razorpay", "tier": 1, "regions": ["India", "Southeast Asia"]},
-    {"name": "MongoDB", "token": "mongodb", "tier": 1, "regions": ["India", "Dublin", "Singapore", "Sydney"]}
+    {"name": "MongoDB", "token": "mongodb", "tier": 1, "regions": ["India", "Dublin", "Singapore", "Sydney"]},
+    {"name": "InMobi", "token": "inmobi", "tier": 1, "regions": ["India", "Bangalore", "Singapore"]},
+    {"name": "Groww", "token": "groww", "tier": 1, "regions": ["India", "Bangalore"]}
   ],
   "lever_boards": [
     {"name": "Spotify", "token": "spotify", "tier": 1, "regions": ["Sweden", "UK", "US", "Remote"]},
     {"name": "Netflix", "token": "netflix", "tier": 1, "regions": ["Netherlands", "US", "Singapore"]},
     {"name": "Palantir", "token": "palantir", "tier": 1, "regions": ["UK", "US", "UAE"]},
-    {"name": "Lyft", "token": "lyft", "tier": 1, "regions": ["US", "Canada", "Europe"]}
+    {"name": "Lyft", "token": "lyft", "tier": 1, "regions": ["US", "Canada", "Europe"]},
+    {"name": "CRED", "token": "cred", "tier": 1, "regions": ["India", "Bangalore"]},
+    {"name": "Meesho", "token": "meesho", "tier": 1, "regions": ["India", "Bangalore"]}
   ],
   "ashby_boards": [
     {"name": "Ramp", "token": "ramp", "tier": 1, "regions": ["New York", "London", "Remote"]},
@@ -61,7 +65,15 @@
     {"keywords": "Product Management Intern", "location": "Remote"},
     {"keywords": "Growth Marketing Intern", "location": "Remote"},
     {"keywords": "Product Design Intern", "location": "Singapore"},
-    {"keywords": "Product Design Intern", "location": "Remote"}
+    {"keywords": "Product Design Intern", "location": "Remote"},
+    {"keywords": "Product Management Intern", "location": "India"},
+    {"keywords": "Product Builder Intern", "location": "India"},
+    {"keywords": "Product Intern", "location": "Gurgaon"},
+    {"keywords": "Business Operations Intern", "location": "India"},
+    {"keywords": "Growth Marketing Intern", "location": "India"},
+    {"keywords": "Product Design Intern", "location": "India"},
+    {"keywords": "Founder Office Intern", "location": "India"},
+    {"keywords": "Strategy Intern", "location": "Bengaluru"}
   ],
   "curated_github_sources": [
     {
