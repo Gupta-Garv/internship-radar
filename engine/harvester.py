@@ -202,6 +202,14 @@ def is_non_tech_internship(title, text="", url="", location="", company=""):
         if not re.search(r'\b(visa sponsorship|international applicants welcome|j-1)\b', text.lower()):
             return False
 
+    # 11. Reject explicit unpaid or non-paid listings
+    if re.search(r'\b(unpaid|non[- ]?paid|no stipend|zero stipend|voluntary)\b', full_text):
+        return False
+
+    # 12. Reject generic outbound tele-sales, BDA calling, and non-operator labor
+    if re.search(r'\b(business development associate|bda|telecaller|telecalling|telesales|cold call|inside sales associate|lead generation executive|counter sales|door to door sales|school evaluation|preschool|mechanical design|cad engineer)\b', lower_title):
+        return False
+
     return True
 
 def fetch_greenhouse_board(board_info):
@@ -348,13 +356,17 @@ def fetch_ashby_board(board_info):
 def fetch_linkedin_guest(query_info):
     keywords = query_info.get("keywords", "product intern")
     location = query_info.get("location", "Singapore")
+    f_tpr = query_info.get("f_tpr")
+    if not f_tpr:
+        loc_l = location.lower()
+        f_tpr = "r604800" if ("india" in loc_l or "bengaluru" in loc_l or "gurgaon" in loc_l) else "r86400"
     jobs = []
     
     url = "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search"
     params = {
         "keywords": keywords,
         "location": location,
-        "f_TPR": "r86400",  # past 24 hours only
+        "f_TPR": f_tpr,
         "f_E": "1"          # internship level
     }
     

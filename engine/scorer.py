@@ -20,7 +20,7 @@ def evaluate_location(loc_str, title_str=""):
     combined = (loc_str + " " + title_str).lower()
     
     # 1. India (Domestic base)
-    if re.search(r'\b(india|bengaluru|bangalore|gurugram|gurgaon|hyderabad|mumbai|pune|delhi|noida)\b', combined):
+    if re.search(r'\b(india|bengaluru|bangalore|gurugram|gurgaon|hyderabad|mumbai|pune|delhi|noida|chennai|kolkata|ahmedabad|jaipur|kochi|chandigarh|indore)\b', combined):
         return {"region": "India", "score": 1.0, "visa_note": "Domestic (Zero visa friction)", "badge": "🇮🇳 India"}
         
     # 2. Remote / Worldwide
@@ -287,14 +287,63 @@ def evaluate_compensation(job):
         return {
             "pay_display": "Not mentioned",
             "pay_monthly_usd": 0,
+            "pay_monthly_inr": 0,
             "is_disclosed": False,
+            "is_unpaid": False,
             "note": "Compensation is not publicly disclosed in the posting."
         }
         
-    # 1. Hourly rate: e.g. $40 - $60 / hr, $45/hour, $50/hr
-    m_hour = re.search(r'(\$|€|£|₹|SGD|AED|CAD|AUD)?\s*(\d{2,3})(?:\s*(?:-|to)\s*(\$|€|£|₹|SGD|AED|CAD|AUD)?\s*(\d{2,3}))?\s*(?:/|\bper\b)?\s*(?:hour|hr)\b', text, re.I)
+    # Check explicit unpaid / non-paid
+    if re.search(r'\b(unpaid|non[- ]?paid|no stipend|zero stipend|voluntary)\b', text, re.I):
+        return {
+            "pay_display": "Unpaid / Voluntary",
+            "pay_monthly_usd": 0,
+            "pay_monthly_inr": 0,
+            "is_disclosed": True,
+            "is_unpaid": True,
+            "note": "Explicitly listed as unpaid or zero stipend."
+        }
+
+    # 1. Indian 'k' style stipends: e.g. 15k - 25k / mo, 20k/month, ₹20k/mo, INR 25k, Rs. 20k
+    m_ink = re.search(r'(?:(?:stipend|pay|salary|inr|rs\.?|₹)\s*:?\s*)?(\d{1,2})\s*k(?:\s*(?:-|to)\s*(\d{1,2})\s*k)?\s*(?:(?:/|\bper\b)\s*(?:month|mo)\b|\bmonthly\b|\bstipend\b)?', text, re.I)
+    if m_ink and any(s in text.lower() for s in ['k/mo', 'k/month', 'per month', 'stipend', 'inr', 'rs', '₹']):
+        min_k = int(m_ink.group(1))
+        max_k = int(m_ink.group(2)) if m_ink.group(2) else min_k
+        if 5 <= min_k <= 200:
+            avg_inr = int(((min_k + max_k) / 2) * 1000)
+            usd = int(avg_inr / 84)
+            display = f"₹{min_k}k - ₹{max_k}k/mo" if min_k != max_k else f"₹{min_k}k/mo"
+            return {
+                "pay_display": display,
+                "pay_monthly_usd": usd,
+                "pay_monthly_inr": avg_inr,
+                "is_disclosed": True,
+                "is_unpaid": False,
+                "note": f"Disclosed stipend of {display} (~${usd} USD/mo)."
+            }
+
+    # 2. Indian Rupee full digits: ₹20,000 / month, INR 25,000, Rs. 15,000 to 20,000
+    m_inr = re.search(r'(?:₹|inr|rs\.?)\s*(\d{1,2}(?:,\d{3})+|\d{4,6})(?:\s*(?:-|to)\s*(?:₹|inr|rs\.?)?\s*(\d{1,2}(?:,\d{3})+|\d{4,6}))?', text, re.I)
+    if m_inr:
+        v1 = int(m_inr.group(1).replace(",", ""))
+        v2 = int(m_inr.group(2).replace(",", "")) if m_inr.group(2) else v1
+        avg_inr = int((v1 + v2) / 2)
+        if 3000 <= avg_inr <= 500000:
+            usd = int(avg_inr / 84)
+            display = f"₹{v1:,} - ₹{v2:,}/mo" if v1 != v2 else f"₹{v1:,}/mo"
+            return {
+                "pay_display": display,
+                "pay_monthly_usd": usd,
+                "pay_monthly_inr": avg_inr,
+                "is_disclosed": True,
+                "is_unpaid": False,
+                "note": f"Disclosed stipend of {display} (~${usd} USD/mo)."
+            }
+
+    # 3. Hourly rate: e.g. $40 - $60 / hr, $45/hour, $50/hr
+    m_hour = re.search(r'(\$|€|£|SGD|AED|CAD|AUD)?\s*(\d{2,3})(?:\s*(?:-|to)\s*(\$|€|£|SGD|AED|CAD|AUD)?\s*(\d{2,3}))?\s*(?:/|\bper\b)?\s*(?:hour|hr)\b', text, re.I)
     if not m_hour:
-        m_hour = re.search(r'(?:hourly\s+(?:rate|pay|compensation)\s+(?:of|is|:)?\s*)(\$|€|£|₹|SGD|AED|CAD|AUD)?\s*(\d{2,3})', text, re.I)
+        m_hour = re.search(r'(?:hourly\s+(?:rate|pay|compensation)\s+(?:of|is|:)?\s*)(\$|€|£|SGD|AED|CAD|AUD)?\s*(\d{2,3})', text, re.I)
     if m_hour:
         curr = m_hour.group(1) or "$"
         min_v = int(m_hour.group(2))
@@ -304,39 +353,38 @@ def evaluate_compensation(job):
         if curr in ["£", "€"]: mult = 1.15
         elif curr == "SGD": mult = 0.75
         elif curr in ["AUD", "CAD"]: mult = 0.7
-        elif curr == "₹": mult = 0.012
         monthly_usd = int(avg_v * 160 * mult)
         display = f"{curr}{min_v} - {curr}{max_v}/hr" if min_v != max_v else f"{curr}{min_v}/hr"
         return {
             "pay_display": display,
             "pay_monthly_usd": monthly_usd,
+            "pay_monthly_inr": int(monthly_usd * 84),
             "is_disclosed": True,
+            "is_unpaid": False,
             "note": f"Disclosed hourly rate (~${monthly_usd:,}/mo full-time equivalent)."
         }
 
-    # 2. Monthly rate / Stipend: "monthly ... $12,500" or "$12,500 / month" or "$12,500/mo"
-    m_month = re.search(r'monthly\b[^\d$€£₹]{0,40}(\$|€|£|₹|SGD|AED)?\s*(\d{1,2}(?:,\d{3})+|\d{4,5})', text, re.I)
-    if not m_month:
-        m_month = re.search(r'(\$|€|£|₹|SGD|AED|CAD|AUD)?\s*(\d{1,2}(?:,\d{3})+|\d{4,5})\s*(?:USD|EUR|GBP|SGD|AED)?\s*(?:(?:/|\bper\b)\s*(?:month|mo)\b|\bmonthly\b)', text, re.I)
+    # 4. Global Monthly rate: e.g. $8,000 / month, $10,000/mo
+    m_month = re.search(r'(\$|€|£|SGD|AED|CAD|AUD)\s*(\d{1,2}(?:,\d{3})+|\d{4,5})\s*(?:(?:/|\bper\b)\s*(?:month|mo)\b|\bmonthly\b)', text, re.I)
     if m_month:
-        curr = m_month.group(1) or "$"
+        curr = m_month.group(1)
         val = int(m_month.group(2).replace(",", ""))
-        if val >= 500:
-            mult = 1.0
-            if curr in ["£", "€"]: mult = 1.15
-            elif curr == "SGD": mult = 0.75
-            elif curr in ["AUD", "CAD"]: mult = 0.7
-            elif curr == "₹": mult = 0.012
-            monthly_usd = int(val * mult)
-            return {
-                "pay_display": f"{curr}{val:,}/mo",
-                "pay_monthly_usd": monthly_usd,
-                "is_disclosed": True,
-                "note": f"Disclosed monthly stipend/salary (~${monthly_usd:,} USD/mo)."
-            }
+        mult = 1.0
+        if curr in ["£", "€"]: mult = 1.15
+        elif curr == "SGD": mult = 0.75
+        elif curr in ["AUD", "CAD"]: mult = 0.7
+        monthly_usd = int(val * mult)
+        return {
+            "pay_display": f"{curr}{val:,}/mo",
+            "pay_monthly_usd": monthly_usd,
+            "pay_monthly_inr": int(monthly_usd * 84),
+            "is_disclosed": True,
+            "is_unpaid": False,
+            "note": f"Disclosed monthly stipend/salary (~${monthly_usd:,} USD/mo)."
+        }
 
-    # 3. Annual salary: e.g. $80,000 - $100,000 / year
-    m_annual = re.search(r'(\$|€|£|₹|SGD|AED|CAD|AUD)?\s*(\d{2,3}(?:,\d{3})+)\s*(?:-|to)\s*(\$|€|£|₹)?\s*(\d{2,3}(?:,\d{3})+)\s*(?:/|\bper\b)?\s*(?:year|yr|annum)\b', text, re.I)
+    # 5. Annual salary: e.g. $80,000 - $100,000 / year
+    m_annual = re.search(r'(\$|€|£|SGD|AED|CAD|AUD)?\s*(\d{2,3}(?:,\d{3})+)\s*(?:-|to)\s*(\$|€|£)?\s*(\d{2,3}(?:,\d{3})+)\s*(?:/|\bper\b)?\s*(?:year|yr|annum)\b', text, re.I)
     if m_annual:
         curr = m_annual.group(1) or "$"
         min_v = int(m_annual.group(2).replace(",", ""))
@@ -346,6 +394,7 @@ def evaluate_compensation(job):
         return {
             "pay_display": f"{curr}{min_v//1000}k - {curr}{max_v//1000}k/yr",
             "pay_monthly_usd": monthly_usd,
+            "pay_monthly_inr": int(monthly_usd * 84),
             "is_disclosed": True,
             "note": f"Disclosed annual compensation rate (~${monthly_usd:,}/mo equivalent)."
         }
@@ -353,9 +402,88 @@ def evaluate_compensation(job):
     return {
         "pay_display": "Not mentioned",
         "pay_monthly_usd": 0,
+        "pay_monthly_inr": 0,
         "is_disclosed": False,
+        "is_unpaid": False,
         "note": "Compensation is not publicly disclosed in the posting."
     }
+
+DISQUALIFIED_INDIA_ROLES = re.compile(
+    r'\b(business development associate|bda|telecaller|telecalling|telesales|cold call|calling|inside sales associate|lead generation executive|field sales|door to door|counter sales|retail sales associate|seo link builder|back office|data entry|typist|account executive intern|mechanical design|cad engineer|factory|school evaluation|preschool|broker|real estate agent)\b',
+    re.IGNORECASE
+)
+
+WELL_KNOWN_INDIA_COMPANIES = {
+    # Top Consumer Tech & Unicorns
+    'swiggy', 'zomato', 'blinkit', 'zepto', 'cred', 'meesho', 'groww', 'inmobi',
+    'glance', 'razorpay', 'zerodha', 'phonepe', 'urban company', 'nykaa',
+    'ather', 'ather energy', 'ola', 'ola electric', 'krutrim', 'flipkart', 'myntra',
+    'cleartrip', 'postman', 'browserstack', 'hasura', 'freshworks', 'zoho',
+    'paytm', 'one97', 'bharatpe', 'pine labs', 'delhivery', 'shadowfax', 'porter',
+    'rapido', 'makemytrip', 'goibibo', 'licious', 'spinny', 'cars24', 'moglix',
+    'udaan', 'mamaearth', 'honasa', 'cult.fit', 'curefoods', 'rebel foods', 'faasos',
+    'pocket fm', 'pratilipi', 'kuku fm', 'physicswallah', 'unacademy', 'vedantu',
+    'upstox', 'angel one', 'coindcx', 'coinswitch', 'fi money', 'jupiter', 'slice',
+    'onecard', 'indmoney', 'jar', 'plum', 'fampay', 'navi', 'khatabook', 'dukaan',
+    'apna', 'sharechat', 'moj', 'dailyhunt', 'verse', 'dream11', 'mpl', 'gameskraft',
+    'nazara', 'boat', 'noise', 'fire-boltt', 'pepperfry', 'livspace', 'homelane',
+    'wakefit', 'bluestone', 'caratlane', 'lenskart', 'sugar cosmetics', 'purplle',
+    'minimalist', 'foxtale', 'bewakoof', 'snitch', 'the souled store', 'pristyn care',
+    'pharmeasy', 'tata 1mg', 'medibuddy', 'healthifyme', 'blusmart', 'yulu',
+    'exotel', 'gupshup', 'yellow.ai', 'sprinklr', 'chargebee', 'kissflow',
+    'darwinbox', 'leena ai', 'keka', 'clevertap', 'moengage', 'webengage',
+    'tata digital', 'tata neu', 'tata', 'reliance', 'jio', 'airtel', 'info edge',
+    'naukri', 'spyne', 'magna international', 'siemens', 'bosch', 'target',
+    'walmart', 'walmart global tech',
+    
+    # Global Tech MNCs & Elite Advisory Firms with Major Hubs in India
+    'google', 'microsoft', 'amazon', 'apple', 'meta', 'uber', 'adobe', 'salesforce',
+    'cisco', 'oracle', 'sap', 'atlassian', 'linkedin', 'paypal', 'stripe', 'databricks',
+    'snowflake', 'servicenow', 'intuit', 'autodesk', 'philips', 'ge', 'samsung',
+    'sony', 'intel', 'qualcomm', 'nvidia', 'amd', 'texas instruments', 'goldman sachs',
+    'morgan stanley', 'jpmorgan', 'jpmorgan chase', 'american express', 'visa',
+    'mastercard', 'mckinsey', 'bcg', 'bain', 'kearney', 'pwc', 'ey', 'deloitte',
+    'kpmg', 'bloomberg', 'accenture', 'capgemini', 'cognizant', 'infosys', 'wipro',
+    'tcs', 'hcl tech'
+}
+
+def is_valid_india_opportunity(job, category, loc_eval, pay_eval):
+    # 1. Must match Garv's resume tracks (No General Business or stray categories)
+    if category not in ["Product / APM", "BizOps & Strategy", "Growth & Marketing", "Design & UX"]:
+        return False
+
+    title = job.get("title", "")
+    comp = job.get("company", "")
+    full_text = f"{title} {comp} {job.get('salary_raw', '')}"
+
+    # 2. Strict rejection of generic telecalling / BDA outbound sales / physical design / labor
+    if DISQUALIFIED_INDIA_ROLES.search(full_text):
+        return False
+
+    # 3. Strict rejection of explicit unpaid internships
+    if pay_eval.get("is_unpaid"):
+        return False
+
+    # 4. Condition A: Really well-known marquee company in India
+    comp_clean = comp.strip().lower()
+    is_well_known = any(
+        re.search(r'\b' + re.escape(c) + r'\b', comp_clean)
+        for c in WELL_KNOWN_INDIA_COMPANIES
+    )
+
+    # 5. Condition B: Stipend mentioned clearly and >= 15-20k a month
+    pay_inr = pay_eval.get("pay_monthly_inr", 0)
+    if pay_inr == 0 and pay_eval.get("pay_monthly_usd", 0) > 0:
+        pay_inr = pay_eval.get("pay_monthly_usd", 0) * 84
+
+    has_valid_stipend = (
+        pay_eval.get("is_disclosed", False) and 
+        not pay_eval.get("is_unpaid", False) and 
+        pay_inr >= 15000
+    )
+
+    # Must satisfy EITHER Condition A OR Condition B
+    return is_well_known or has_valid_stipend
 
 def score_job(job, profile):
     from engine.harvester import requires_foreign_language, is_non_tech_internship
@@ -379,6 +507,13 @@ def score_job(job, profile):
     loc_eval = evaluate_location(job["location"], title)
     visa_eval = evaluate_visa_sponsorship(job, loc_eval)
     pay_eval = evaluate_compensation(job)
+    
+    # Strict India Quality & Stipend Rule:
+    # For India postings only pull internships that match Garv's resume AND are EITHER
+    # a really well-known company OR have stipend clearly mentioned >= 15-20k/month
+    if loc_eval["region"] == "India":
+        if not is_valid_india_opportunity(job, category, loc_eval, pay_eval):
+            return None
     
     # Base category weights based on Garv's strengths
     cat_weights = {

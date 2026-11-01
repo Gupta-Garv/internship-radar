@@ -2459,6 +2459,65 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
       return /\b(india|bengaluru|bangalore|gurugram|gurgaon|hyderabad|mumbai|pune|delhi|noida|chennai|ahmedabad|kolkata)\b/i.test(loc);
     }
 
+    const WELL_KNOWN_INDIA_COMPANIES = [
+      'swiggy', 'zomato', 'blinkit', 'zepto', 'cred', 'meesho', 'groww', 'inmobi',
+      'glance', 'razorpay', 'zerodha', 'phonepe', 'urban company', 'nykaa',
+      'ather', 'ather energy', 'ola', 'ola electric', 'krutrim', 'flipkart', 'myntra',
+      'cleartrip', 'postman', 'browserstack', 'hasura', 'freshworks', 'zoho',
+      'paytm', 'one97', 'bharatpe', 'pine labs', 'delhivery', 'shadowfax', 'porter',
+      'rapido', 'makemytrip', 'goibibo', 'licious', 'spinny', 'cars24', 'moglix',
+      'udaan', 'mamaearth', 'honasa', 'cult.fit', 'curefoods', 'rebel foods', 'faasos',
+      'pocket fm', 'pratilipi', 'kuku fm', 'physicswallah', 'unacademy', 'vedantu',
+      'upstox', 'angel one', 'coindcx', 'coinswitch', 'fi money', 'jupiter', 'slice',
+      'onecard', 'indmoney', 'jar', 'plum', 'fampay', 'navi', 'khatabook', 'dukaan',
+      'apna', 'sharechat', 'moj', 'dailyhunt', 'verse', 'dream11', 'mpl', 'gameskraft',
+      'nazara', 'boat', 'noise', 'fire-boltt', 'pepperfry', 'livspace', 'homelane',
+      'wakefit', 'bluestone', 'caratlane', 'lenskart', 'sugar cosmetics', 'purplle',
+      'minimalist', 'foxtale', 'bewakoof', 'snitch', 'the souled store', 'pristyn care',
+      'pharmeasy', 'tata 1mg', 'medibuddy', 'healthifyme', 'blusmart', 'yulu',
+      'exotel', 'gupshup', 'yellow.ai', 'sprinklr', 'chargebee', 'kissflow',
+      'darwinbox', 'leena ai', 'keka', 'clevertap', 'moengage', 'webengage',
+      'tata digital', 'tata neu', 'tata', 'reliance', 'jio', 'airtel', 'info edge',
+      'naukri', 'spyne', 'magna international', 'siemens', 'bosch', 'target',
+      'walmart', 'walmart global tech', 'google', 'microsoft', 'amazon', 'apple',
+      'meta', 'uber', 'adobe', 'salesforce', 'cisco', 'oracle', 'sap', 'atlassian',
+      'linkedin', 'paypal', 'stripe', 'databricks', 'snowflake', 'servicenow',
+      'intuit', 'autodesk', 'philips', 'ge', 'samsung', 'sony', 'intel', 'qualcomm',
+      'nvidia', 'amd', 'texas instruments', 'goldman sachs', 'morgan stanley',
+      'jpmorgan', 'jpmorgan chase', 'american express', 'visa', 'mastercard',
+      'mckinsey', 'bcg', 'bain', 'kearney', 'pwc', 'ey', 'deloitte', 'kpmg',
+      'bloomberg', 'accenture', 'capgemini', 'cognizant', 'infosys', 'wipro',
+      'tcs', 'hcl tech'
+    ];
+
+    function isWellKnownIndiaCompany(comp) {
+      if (!comp) return false;
+      const lower = comp.toLowerCase();
+      return WELL_KNOWN_INDIA_COMPANIES.some(c => new RegExp(`\\b${c}\\b`, 'i').test(lower));
+    }
+
+    function isValidIndiaJob(j) {
+      if (!isJobIndia(j)) return true;
+      
+      const allowedCategories = ['Product / APM', 'BizOps & Strategy', 'Growth & Marketing', 'Design & UX'];
+      if (!allowedCategories.includes(j.category)) return false;
+
+      const text = `${j.title} ${j.company} ${j.salary_raw || ''}`.toLowerCase();
+      if (/\b(business development associate|bda|telecaller|telecalling|telesales|cold call|calling|inside sales associate|lead generation executive|field sales|door to door|counter sales|retail sales associate|seo link builder|back office|data entry|typist|account executive intern|mechanical design|cad engineer|factory|school evaluation|preschool|broker|real estate agent)\b/i.test(text)) {
+        return false;
+      }
+
+      if (j.pay_info && (j.pay_info.is_unpaid || /\b(unpaid|non[- ]?paid|no stipend|zero stipend|voluntary)\b/i.test(text))) {
+        return false;
+      }
+
+      const isKnown = isWellKnownIndiaCompany(j.company);
+      const payInr = (j.pay_info && j.pay_info.pay_monthly_inr) || ((j.pay_info && j.pay_info.pay_monthly_usd) ? j.pay_info.pay_monthly_usd * 84 : 0);
+      const hasValidStipend = j.pay_info && j.pay_info.is_disclosed && !j.pay_info.is_unpaid && payInr >= 15000;
+
+      return isKnown || hasValidStipend;
+    }
+
     function escapeHtml(str) {
       if (!str) return '';
       return String(str)
@@ -2544,7 +2603,7 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
       const dockTrash = document.getElementById('dock-count-trash');
       if (dockTrash) dockTrash.innerText = trashedCount;
 
-      const untrackedJobs = allJobs.filter(j => !userStatus[j.id] || userStatus[j.id] === 'untracked');
+      const untrackedJobs = allJobs.filter(j => (!userStatus[j.id] || userStatus[j.id] === 'untracked') && isValidIndiaJob(j));
       const intlCount = untrackedJobs.filter(j => !isJobIndia(j)).length;
       const indiaCount = untrackedJobs.filter(j => isJobIndia(j)).length;
 
@@ -2553,7 +2612,7 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
       const badgeIndia = document.getElementById('scope-count-india');
       if (badgeIndia) badgeIndia.innerText = indiaCount;
       const badgeAll = document.getElementById('scope-count-all');
-      if (badgeAll) badgeAll.innerText = untracked;
+      if (badgeAll) badgeAll.innerText = untrackedJobs.length;
     }
 
     // Mark Job Status (Move to pipeline, trash, or restore to radar)
@@ -2665,6 +2724,7 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
 
       // Market filter (International vs India vs All)
       const isIndia = isJobIndia(j);
+      if (isIndia && !isValidIndiaJob(j)) return false;
       if (currentRadarMarket === 'india' && !isIndia) return false;
       if (currentRadarMarket === 'international' && isIndia) return false;
 
@@ -2695,14 +2755,17 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
     const countElem = document.getElementById('filter-active-count');
     if (countElem) countElem.innerText = filtered.length;
     const totalElem = document.getElementById('filter-total-count');
-    const untrackedTotal = allJobs.filter(j => !userStatus[j.id] || userStatus[j.id] === 'untracked').length;
+    const untrackedTotal = allJobs.filter(j => (!userStatus[j.id] || userStatus[j.id] === 'untracked') && isValidIndiaJob(j)).length;
     if (totalElem) totalElem.innerText = (activeFacet === 'tracked') ? Object.keys(userStatus).filter(id => userStatus[id] && userStatus[id] !== 'untracked').length : untrackedTotal;
 
     // Update Market Scope Badges
     const activeMarketPool = allJobs.filter(j => {
       const st = userStatus[j.id];
       if (st === 'trashed') return false;
-      return (activeFacet === 'tracked') ? (st && st !== 'untracked') : (!st || st === 'untracked');
+      const matchTracked = (activeFacet === 'tracked') ? (st && st !== 'untracked') : (!st || st === 'untracked');
+      if (!matchTracked) return false;
+      if (isJobIndia(j) && !isValidIndiaJob(j)) return false;
+      return true;
     });
     const intlCount = activeMarketPool.filter(j => !isJobIndia(j)).length;
     const indiaCount = activeMarketPool.filter(j => isJobIndia(j)).length;
@@ -2732,7 +2795,7 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
       if (activeFacet === 'tracked') {
         emptyMsg = 'No applications in your pipeline yet. Mark jobs as applied on the Radar to track them here.';
       } else if (currentRadarMarket === 'india') {
-        emptyMsg = 'No domestic India internships match your active filters. Try broadening your search or resetting track filters.';
+        emptyMsg = 'No domestic India internships match your active filters. (Only verified well-known tech companies or stipends ≥ ₹15k–₹20k/month are shown).';
       } else if (currentRadarMarket === 'international') {
         emptyMsg = 'No international internships match your active filters. Try broadening your criteria or resetting hub filters.';
       }
