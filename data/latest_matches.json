@@ -1,48 +1,12 @@
 [
   {
-    "id": "09017b989fb2ede229117f1d9dd89f43",
-    "company": "TikTok",
-    "title": "AI Product Manager Intern (TikTok Live-Revenue) - 2027 Start",
-    "location": "Sydney, New South Wales, Australia",
-    "url": "https://au.linkedin.com/jobs/view/ai-product-manager-intern-tiktok-live-revenue-2027-start-at-tiktok-4467883348",
+    "id": "bcd6e0fbf61ad1a1847e5a224a0af92c",
+    "company": "Maven Labs",
+    "title": "Digital Marketing Intern",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/digital-marketing-intern-at-maven-labs-4485198848",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
-    "date_posted": "\u26a1 Nov 01",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "Product / APM",
-    "match_score": 96,
-    "tier": "Tier 1 (High Conversion)",
-    "location_info": {
-      "region": "Australia / NZ",
-      "score": 0.98,
-      "visa_note": "Safe, multicultural, large Indian diaspora (Canva, Atlassian)",
-      "badge": "\ud83c\udde6\ud83c\uddfa Australia / NZ"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Australia / NZ: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw TikTok's AI Product Manager Intern (TikTok Live-Revenue) - 2027 Start opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to TikTok's product team. My portfolio: garvgupta.app",
-    "is_new": true
-  },
-  {
-    "id": "79d5bb13c658ea0c3c7245a4d3c15d49",
-    "company": "ViralChilly: Create | Grow | Learn",
-    "title": "Performance Marketing Intern Internship in Jaipur",
-    "location": "Jaipur, Rajasthan, India",
-    "url": "https://in.linkedin.com/jobs/view/performance-marketing-intern-internship-in-jaipur-at-viralchilly-create-grow-learn-4485925328",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533027,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -67,23 +31,128 @@
       "is_disclosed": false,
       "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! Excited by ViralChilly: Create | Grow | Learn's Performance Marketing Intern Internship in Jaipur role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "recruiter_pitch": "Hi! Excited by Maven Labs's Digital Marketing Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
     "is_new": true
   },
   {
-    "id": "ab2049cff1be2660ab675b471996aff4",
-    "company": "Hospitaliti",
-    "title": "Food &amp; Beverage Intern",
-    "location": "Dubai, Dubai, United Arab Emirates",
-    "url": "https://ae.linkedin.com/jobs/view/food-beverage-intern-at-hospitaliti-4485171898",
+    "id": "2b621964ab7771b85a159af386a0c2f5",
+    "company": "Epic",
+    "title": "User Experience Design Intern",
+    "location": "Minneapolis, MN",
+    "url": "https://www.linkedin.com/jobs/view/user-experience-design-intern-at-epic-4466657093",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533027,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
+    "category": "Design & UX",
+    "match_score": 77,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "International",
+      "score": 0.88,
+      "visa_note": "Open international location",
+      "badge": "\ud83c\udf0d Global"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Saw Epic's User Experience Design Intern post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
+    "is_new": true
+  },
+  {
+    "id": "13a7f7432a379adafcf1b3b1c2956e17",
+    "company": "Epic",
+    "title": "User Experience Design Intern",
+    "location": "Indianapolis, IN",
+    "url": "https://www.linkedin.com/jobs/view/user-experience-design-intern-at-epic-4466650236",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793533027,
+    "date_posted": "\u26a1 Nov 01",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "Design & UX",
+    "match_score": 77,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "International",
+      "score": 0.88,
+      "visa_note": "Open international location",
+      "badge": "\ud83c\udf0d Global"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Saw Epic's User Experience Design Intern post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
+    "is_new": true
+  },
+  {
+    "id": "362386a1a104555f8a850907f6d8812b",
+    "company": "Vertiv",
+    "title": "UX Design Intern (Summer 2027)",
+    "location": "Westerville, OH",
+    "url": "https://www.linkedin.com/jobs/view/ux-design-intern-summer-2027-at-vertiv-4469254129",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793533027,
+    "date_posted": "\u26a1 Nov 01",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "Design & UX",
+    "match_score": 63,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Saw Vertiv's UX Design Intern (Summer 2027) post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
+    "is_new": true
+  },
+  {
+    "id": "1f62989970cda82b7e54bd749edd6565",
+    "company": "TikTok",
+    "title": "Content Ecosystem Strategy Intern (TikTok LIVE) - 2027 Start",
+    "location": "Dubai, Dubai, United Arab Emirates",
+    "url": "https://ae.linkedin.com/jobs/view/content-ecosystem-strategy-intern-tiktok-live-2027-start-at-tiktok-4458968994",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793533026,
+    "date_posted": "\u26a1 Nov 01",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "BizOps & Strategy",
+    "match_score": 95,
+    "tier": "Tier 1 (High Conversion)",
     "location_info": {
       "region": "UAE / Middle East",
       "score": 1.0,
@@ -103,17 +172,17 @@
       "is_disclosed": false,
       "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! I'm applying for the Food &amp; Beverage Intern position at Hospitaliti. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Hospitaliti. Portfolio: garvgupta.app",
+    "recruiter_pitch": "Hi! I noticed the Content Ecosystem Strategy Intern (TikTok LIVE) - 2027 Start opening at TikTok. I currently run operations & full P&L for a 10,000+ student education brand (AnybodyCanBake) with 5-7 team members alongside my degree at IIM Bangalore. Would love to bring proven execution and problem-solving to TikTok.",
     "is_new": true
   },
   {
-    "id": "358642c8f67b938ba9e068ec6281f991",
-    "company": "Singtel",
-    "title": "People Operations Intern (Jan 2027 intake) #GeneralInternship",
+    "id": "10e80e0b41821fb3d82fe5f17ad25ae0",
+    "company": "TikTok",
+    "title": "FMCG Strategic Account Intern (TikTok Shop - Singapore) - 2027 Start",
     "location": "Singapore, Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/people-operations-intern-jan-2027-intake-%23generalinternship-at-singtel-4449488740",
+    "url": "https://sg.linkedin.com/jobs/view/fmcg-strategic-account-intern-tiktok-shop-singapore-2027-start-at-tiktok-4467867631",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -139,34 +208,35 @@
       "is_disclosed": false,
       "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! I'm applying for the People Operations Intern (Jan 2027 intake) #GeneralInternship position at Singtel. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Singtel. Portfolio: garvgupta.app",
+    "recruiter_pitch": "Hi! I'm applying for the FMCG Strategic Account Intern (TikTok Shop - Singapore) - 2027 Start position at TikTok. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at TikTok. Portfolio: garvgupta.app",
     "is_new": true
   },
   {
-    "id": "429bf80e9e46d5b7d10eeb65daf268c0",
-    "company": "Bending Spoons",
-    "title": "Product manager, summer intern",
-    "location": "London, England, United Kingdom",
-    "url": "https://uk.linkedin.com/jobs/view/product-manager-summer-intern-at-bending-spoons-4485131724",
+    "id": "c2e10343eaea3daa884064062fae7ce6",
+    "company": "Micron Technology",
+    "title": "Intern, Probe Process Control",
+    "location": "Singapore, Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/intern-probe-process-control-at-micron-technology-4467859513",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
-    "category": "Product / APM",
-    "match_score": 74,
-    "tier": "Tier 3 (Stretch)",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
     "location_info": {
-      "region": "UK",
-      "score": 0.78,
-      "visa_note": "Strict visa sponsorship thresholds (Temporary Work GAE required)",
-      "badge": "\ud83c\uddec\ud83c\udde7 UK"
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
     },
     "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
     },
     "pay_info": {
       "pay_display": "Not mentioned",
@@ -174,17 +244,89 @@
       "is_disclosed": false,
       "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! I saw Bending Spoons's Product manager, summer intern opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Bending Spoons's product team. My portfolio: garvgupta.app",
+    "recruiter_pitch": "Hi! I'm applying for the Intern, Probe Process Control position at Micron Technology. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Micron Technology. Portfolio: garvgupta.app",
     "is_new": true
   },
   {
-    "id": "75a0b76f4043b3317a5a5c5fd40ba862",
-    "company": "T-Mobile",
-    "title": "Summer 2027 Associate Technical Product Manager Internship",
-    "location": "Frisco, TX",
-    "url": "https://www.linkedin.com/jobs/view/summer-2027-associate-technical-product-manager-internship-at-t-mobile-4484912259",
+    "id": "b54b6c2f87d9b016cdcc16aedb4de250",
+    "company": "BoF Careers",
+    "title": "PRADA Merchandising Intern",
+    "location": "Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/prada-merchandising-intern-at-bof-careers-4485184243",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
+    "date_posted": "\u26a1 Nov 01",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the PRADA Merchandising Intern position at BoF Careers. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at BoF Careers. Portfolio: garvgupta.app",
+    "is_new": true
+  },
+  {
+    "id": "7b9c8c11fffb57495c2519d7e0953832",
+    "company": "Marina Bay Sands",
+    "title": "Intern, IT Performance Management and Analytics",
+    "location": "Singapore, Singapore",
+    "url": "https://sg.linkedin.com/jobs/view/intern-it-performance-management-and-analytics-at-marina-bay-sands-4469132624",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793533026,
+    "date_posted": "\u26a1 Nov 01",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "General Business",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "Singapore",
+      "score": 1.0,
+      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
+      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Immigrant-Friendly Hub",
+      "badge": "\ud83e\udd1d Visa Welcoming Hub",
+      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "boost": 2
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I'm applying for the Intern, IT Performance Management and Analytics position at Marina Bay Sands. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Marina Bay Sands. Portfolio: garvgupta.app",
+    "is_new": true
+  },
+  {
+    "id": "ce95a5c429510547fb1eb1304a8db9a8",
+    "company": "Clearwater Analytics",
+    "title": "Product Management Intern",
+    "location": "New York, NY",
+    "url": "https://www.linkedin.com/jobs/view/product-management-intern-at-clearwater-analytics-4466914891",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793533026,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -209,20 +351,55 @@
       "is_disclosed": false,
       "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! I saw T-Mobile's Summer 2027 Associate Technical Product Manager Internship opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to T-Mobile's product team. My portfolio: garvgupta.app",
+    "recruiter_pitch": "Hi! I saw Clearwater Analytics's Product Management Intern opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Clearwater Analytics's product team. My portfolio: garvgupta.app",
     "is_new": true
   },
   {
-    "id": "523e8ef794883dfbba1632722a1ab91d",
-    "company": "Autter",
-    "title": "Marketing Intern",
+    "id": "de969ee216572d5608e53bbb2704fd30",
+    "company": "Publicis Sapient",
+    "title": "Product Manager Intern (Class of 2028)",
+    "location": "Boston, MA",
+    "url": "https://www.linkedin.com/jobs/view/product-manager-intern-class-of-2028-at-publicis-sapient-4466957557",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793533026,
+    "date_posted": "\u26a1 Nov 01",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "Product / APM",
+    "match_score": 69,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw Publicis Sapient's Product Manager Intern (Class of 2028) opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Publicis Sapient's product team. My portfolio: garvgupta.app",
+    "is_new": true
+  },
+  {
+    "id": "043c57fea2a0d6d29e398aa71e6c71f3",
+    "company": "LYNA\u00ae",
+    "title": "Influencer Marketing - Internship",
     "location": "United States",
-    "url": "https://jobright.ai/jobs/info/6ae69899d7424a2a828efb58?utm_campaign=1065&utm_source=git",
+    "url": "https://jobright.ai/jobs/info/6ae6ed91c3139b475b5bda40?utm_campaign=1065&utm_source=git",
     "source": "Jobright Growth & Marketing",
-    "timestamp": 1793404800,
-    "date_posted": "Oct 31",
+    "timestamp": 1793491200,
+    "date_posted": "Nov 01",
     "raw_department": "Growth & Marketing",
-    "salary_raw": "| **[Autter](https://www.autter.dev/)** | **[Marketing Intern](https://jobright.ai/jobs/info/6ae69899d7424a2a828efb58?utm_campaign=1065&utm_source=git)** | United States | Remote | Oct 31 |",
+    "salary_raw": "| **[LYNA\u00ae](https://lynahealth.app/)** | **[Influencer Marketing - Internship](https://jobright.ai/jobs/info/6ae6ed91c3139b475b5bda40?utm_campaign=1065&utm_source=git)** | United States | Remote | Nov 01 |",
     "category": "Growth & Marketing",
     "match_score": 65,
     "tier": "Tier 3 (Stretch)",
@@ -244,20 +421,20 @@
       "is_disclosed": false,
       "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! Excited by Autter's Marketing Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "recruiter_pitch": "Hi! Excited by LYNA\u00ae's Influencer Marketing - Internship role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
     "is_new": true
   },
   {
-    "id": "5b66bf7e54e3e5fee171adcb106563bf",
-    "company": "The Global Institute for Health and Human Rights",
-    "title": "Digital Marketing Intern, Accounts",
-    "location": "Hudson, OH, United States",
-    "url": "https://jobright.ai/jobs/info/6ae6967cfb2cd420ace60e14?utm_campaign=1065&utm_source=git",
+    "id": "df6fb5a6281276997e1749d84330233b",
+    "company": "Northwell Health",
+    "title": "Development and Fundraising Internship",
+    "location": "New Hyde Park, NY, United States",
+    "url": "https://jobright.ai/jobs/info/6ae6c864fb2cd420ace615e8?utm_campaign=1065&utm_source=git",
     "source": "Jobright Growth & Marketing",
     "timestamp": 1793404800,
     "date_posted": "Oct 31",
     "raw_department": "Growth & Marketing",
-    "salary_raw": "| **[The Global Institute for Health and Human Rights](http://www.albany.edu/gihhr/)** | **[Digital Marketing Intern, Accounts](https://jobright.ai/jobs/info/6ae6967cfb2cd420ace60e14?utm_campaign=1065&utm_source=git)** | Hudson, OH, United States | Hybrid | Oct 31 |",
+    "salary_raw": "| **[Northwell Health](https://www.northwell.edu/)** | **[Development and Fundraising Internship](https://jobright.ai/jobs/info/6ae6c864fb2cd420ace615e8?utm_campaign=1065&utm_source=git)** | New Hyde Park, NY, United States | Hybrid | Oct 31 |",
     "category": "Growth & Marketing",
     "match_score": 65,
     "tier": "Tier 3 (Stretch)",
@@ -279,20 +456,20 @@
       "is_disclosed": false,
       "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! Excited by The Global Institute for Health and Human Rights's Digital Marketing Intern, Accounts role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "recruiter_pitch": "Hi! Excited by Northwell Health's Development and Fundraising Internship role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
     "is_new": true
   },
   {
-    "id": "4e1c4bd0c8ed733aa7b46b5cac20e2e7",
-    "company": "ejobs Finland",
-    "title": "Social Media Intern",
-    "location": "Miami, FL, United States",
-    "url": "https://jobright.ai/jobs/info/6ae68e7ec3139b475b5bcd9e?utm_campaign=1065&utm_source=git",
+    "id": "6e696a49d19eae1f2b95d9dd0a698002",
+    "company": "Golden Coast Social Club",
+    "title": "Community Marketing & Events Intern",
+    "location": "South Orange County, California, United States",
+    "url": "https://jobright.ai/jobs/info/6ae69fed77c09cb3bd4b61c4?utm_campaign=1065&utm_source=git",
     "source": "Jobright Growth & Marketing",
     "timestamp": 1793404800,
     "date_posted": "Oct 31",
     "raw_department": "Growth & Marketing",
-    "salary_raw": "| **[ejobs Finland](http://www.ejobs.fi/)** | **[Social Media Intern](https://jobright.ai/jobs/info/6ae68e7ec3139b475b5bcd9e?utm_campaign=1065&utm_source=git)** | Miami, FL, United States | Hybrid | Oct 31 |",
+    "salary_raw": "| **[Golden Coast Social Club](https://www.linkedin.com/company/144047167)** | **[Community Marketing & Events Intern](https://jobright.ai/jobs/info/6ae69fed77c09cb3bd4b61c4?utm_campaign=1065&utm_source=git)** | South Orange County, California, United States | Remote | Oct 31 |",
     "category": "Growth & Marketing",
     "match_score": 65,
     "tier": "Tier 3 (Stretch)",
@@ -314,20 +491,20 @@
       "is_disclosed": false,
       "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! Excited by ejobs Finland's Social Media Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "recruiter_pitch": "Hi! Excited by Golden Coast Social Club's Community Marketing & Events Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
     "is_new": true
   },
   {
-    "id": "f93ea964df8ac571ed94891d552bd1a0",
-    "company": "ai.moms",
-    "title": "Brand Partnerships Intern",
-    "location": "NY, United States",
-    "url": "https://jobright.ai/jobs/info/6ae68566eab1f96730983ab5?utm_campaign=1065&utm_source=git",
+    "id": "eb44d740446ec5ed41ca7bcb98178a9c",
+    "company": "University of Utah Financial Services",
+    "title": "OCHE Intern",
+    "location": "Salt Lake City, UT, United States",
+    "url": "https://jobright.ai/jobs/info/6ae6de9fc3139b475b5bd943?utm_campaign=1065&utm_source=git",
     "source": "Jobright Growth & Marketing",
     "timestamp": 1793404800,
     "date_posted": "Oct 31",
     "raw_department": "Growth & Marketing",
-    "salary_raw": "| **[ai.moms](https://aimoms.ai/)** | **[Brand Partnerships Intern](https://jobright.ai/jobs/info/6ae68566eab1f96730983ab5?utm_campaign=1065&utm_source=git)** | NY, United States | Remote | Oct 31 |",
+    "salary_raw": "| **[University of Utah Financial Services](https://financialservices.utah.edu)** | **[OCHE Intern](https://jobright.ai/jobs/info/6ae6de9fc3139b475b5bd943?utm_campaign=1065&utm_source=git)** | Salt Lake City, UT, United States | Hybrid | Oct 31 |",
     "category": "Growth & Marketing",
     "match_score": 65,
     "tier": "Tier 3 (Stretch)",
@@ -349,20 +526,20 @@
       "is_disclosed": false,
       "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! Excited by ai.moms's Brand Partnerships Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "recruiter_pitch": "Hi! Excited by University of Utah Financial Services's OCHE Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
     "is_new": true
   },
   {
-    "id": "ca8da0c1ce5a075917b861cf6969b8b4",
-    "company": "Gift",
-    "title": "Community Engagement Intern",
-    "location": "Los Angeles, CA, United States",
-    "url": "https://jobright.ai/jobs/info/6ae67da0d7424a2a828ef808?utm_campaign=1065&utm_source=git",
+    "id": "d8efa3a4186849a8e56cb70e6d1b153b",
+    "company": "Revisit App",
+    "title": "Social Media Marketing Intern - College",
+    "location": "Los Angeles metropolitan area, United States",
+    "url": "https://jobright.ai/jobs/info/6ae6304feab1f96730983177?utm_campaign=1065&utm_source=git",
     "source": "Jobright Growth & Marketing",
     "timestamp": 1793404800,
     "date_posted": "Oct 31",
     "raw_department": "Growth & Marketing",
-    "salary_raw": "| **[Gift](https://www.shine.gift)** | **[Community Engagement Intern](https://jobright.ai/jobs/info/6ae67da0d7424a2a828ef808?utm_campaign=1065&utm_source=git)** | Los Angeles, CA, United States | Remote | Oct 31 |",
+    "salary_raw": "| **[Revisit App](www.revisitmobileapp.com)** | **[Social Media Marketing Intern - College](https://jobright.ai/jobs/info/6ae6304feab1f96730983177?utm_campaign=1065&utm_source=git)** | Los Angeles metropolitan area, United States | Hybrid | Oct 31 |",
     "category": "Growth & Marketing",
     "match_score": 65,
     "tier": "Tier 3 (Stretch)",
@@ -384,55 +561,20 @@
       "is_disclosed": false,
       "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! Excited by Gift's Community Engagement Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "recruiter_pitch": "Hi! Excited by Revisit App's Social Media Marketing Intern - College role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
     "is_new": true
   },
   {
-    "id": "eb2aef885959a8fe53b2966d945b2525",
-    "company": "Electro",
-    "title": "Social Media & Creator Partnerships Intern",
+    "id": "bcc30f121699eae48d5c8e2b2c4b6832",
+    "company": "Tech Lance Pvt Ltd",
+    "title": "UI/UX Intern",
     "location": "United States",
-    "url": "https://jobright.ai/jobs/info/6ae65fa2d45dc30fb7d38e9d?utm_campaign=1065&utm_source=git",
-    "source": "Jobright Growth & Marketing",
-    "timestamp": 1793404800,
-    "date_posted": "Oct 31",
-    "raw_department": "Growth & Marketing",
-    "salary_raw": "| **[Electro](electrogum.com)** | **[Social Media & Creator Partnerships Intern](https://jobright.ai/jobs/info/6ae65fa2d45dc30fb7d38e9d?utm_campaign=1065&utm_source=git)** | United States | Remote | Oct 31 |",
-    "category": "Growth & Marketing",
-    "match_score": 65,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! Excited by Electro's Social Media & Creator Partnerships Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
-    "is_new": true
-  },
-  {
-    "id": "023a366f3bca31d1af39e9c6b191b4b4",
-    "company": "2toLead",
-    "title": "Design Intern",
-    "location": "Canada",
-    "url": "https://jobright.ai/jobs/info/6ae668d677c09cb3bd4b5c45?utm_campaign=1049&utm_source=git",
+    "url": "https://jobright.ai/jobs/info/6ae6b56ad45dc30fb7d397e3?utm_campaign=1049&utm_source=git",
     "source": "Jobright Product & UX Design",
     "timestamp": 1793404800,
     "date_posted": "Oct 31",
     "raw_department": "Design & UX",
-    "salary_raw": "| **[2toLead](http://www.2tolead.com)** | **[Design Intern](https://jobright.ai/jobs/info/6ae668d677c09cb3bd4b5c45?utm_campaign=1049&utm_source=git)** | Canada | Remote | Oct 31 |",
+    "salary_raw": "| **[Tech Lance Pvt Ltd](https://techlancepvt.com)** | **[UI/UX Intern](https://jobright.ai/jobs/info/6ae6b56ad45dc30fb7d397e3?utm_campaign=1049&utm_source=git)** | United States | Remote | Oct 31 |",
     "category": "Design & UX",
     "match_score": 63,
     "tier": "Tier 3 (Stretch)",
@@ -454,42 +596,7 @@
       "is_disclosed": false,
       "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! Saw 2toLead's Design Intern post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
-    "is_new": true
-  },
-  {
-    "id": "7f5b94acb4e0a65d9cddb7694b3935f4",
-    "company": "Chesapeake Utilities Corporation",
-    "title": "Creative Services Internship - Summer 2027",
-    "location": "Dover, DE, United States",
-    "url": "https://jobright.ai/jobs/info/6aadc45b3dbb1f8967cef767?utm_campaign=1049&utm_source=git",
-    "source": "Jobright Product & UX Design",
-    "timestamp": 1793404800,
-    "date_posted": "Oct 31",
-    "raw_department": "Design & UX",
-    "salary_raw": "| **[Chesapeake Utilities Corporation](http://chpk.com)** | **[Creative Services Internship - Summer 2027](https://jobright.ai/jobs/info/6aadc45b3dbb1f8967cef767?utm_campaign=1049&utm_source=git)** | Dover, DE, United States | Hybrid | Oct 31 |",
-    "category": "Design & UX",
-    "match_score": 63,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! Saw Chesapeake Utilities Corporation's Creative Services Internship - Summer 2027 post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
+    "recruiter_pitch": "Hi! Saw Tech Lance Pvt Ltd's UI/UX Intern post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
     "is_new": true
   },
   {
@@ -499,7 +606,7 @@
     "location": "Singapore, Singapore",
     "url": "https://sg.linkedin.com/jobs/view/intern-ecommerce-seo-cro-at-marina-bay-sands-4469142046",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533027,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -529,31 +636,100 @@
     "is_new": false
   },
   {
-    "id": "e586c9db32a6023dbe3b97811ff99d75",
-    "company": "Singtel",
-    "title": "Smart Building Innovation &amp; Experience Intern",
-    "location": "Singapore, Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/smart-building-innovation-experience-intern-at-singtel-4460326552",
+    "id": "79d5bb13c658ea0c3c7245a4d3c15d49",
+    "company": "ViralChilly: Create | Grow | Learn",
+    "title": "Performance Marketing Intern Internship in Jaipur",
+    "location": "Jaipur, Rajasthan, India",
+    "url": "https://in.linkedin.com/jobs/view/performance-marketing-intern-internship-in-jaipur-at-viralchilly-create-grow-learn-4485925328",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533027,
+    "date_posted": "\u26a1 Nov 01",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "Growth & Marketing",
+    "match_score": 91,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "India",
+      "score": 1.0,
+      "visa_note": "Domestic (Zero visa friction)",
+      "badge": "\ud83c\uddee\ud83c\uddf3 India"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Excited by ViralChilly: Create | Grow | Learn's Performance Marketing Intern Internship in Jaipur role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": false
+  },
+  {
+    "id": "7869d634a5d203885c8bf8f19c636ec6",
+    "company": "Learning Group Academy",
+    "title": "Digital Marketing Specialist \u2013 Internship with Full-Time Opportunity",
+    "location": "Rabat, Rabat-Sal\u00e9-K\u00e9nitra, Morocco",
+    "url": "https://ma.linkedin.com/jobs/view/digital-marketing-specialist-%E2%80%93-internship-with-full-time-opportunity-at-learning-group-academy-4479090378",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793533027,
+    "date_posted": "\u26a1 Nov 01",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "Growth & Marketing",
+    "match_score": 80,
+    "tier": "Tier 2 (Strong Fit)",
+    "location_info": {
+      "region": "International",
+      "score": 0.88,
+      "visa_note": "Open international location",
+      "badge": "\ud83c\udf0d Global"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Excited by Learning Group Academy's Digital Marketing Specialist \u2013 Internship with Full-Time Opportunity role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": false
+  },
+  {
+    "id": "d5e5b23a2692d0a0e9fffc7af1deb51a",
+    "company": "Garmin",
+    "title": "Product Designer Intern",
+    "location": "Olathe, KS",
+    "url": "https://www.linkedin.com/jobs/view/product-designer-intern-at-garmin-4468850425",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793533027,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
     "category": "Design & UX",
-    "match_score": 90,
-    "tier": "Tier 1 (High Conversion)",
+    "match_score": 77,
+    "tier": "Tier 3 (Stretch)",
     "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+      "region": "International",
+      "score": 0.88,
+      "visa_note": "Open international location",
+      "badge": "\ud83c\udf0d Global"
     },
     "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
     },
     "pay_info": {
       "pay_display": "Not mentioned",
@@ -561,35 +737,34 @@
       "is_disclosed": false,
       "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! Saw Singtel's Smart Building Innovation &amp; Experience Intern post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
+    "recruiter_pitch": "Hi! Saw Garmin's Product Designer Intern post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
     "is_new": false
   },
   {
-    "id": "3333669ff10d527fe9b8fc1448717a00",
-    "company": "KPMG Singapore",
-    "title": "Advisory - Consulting, Financial Services Technology | Off-Cycle Internship (Jan 2027 to June 2027)",
-    "location": "Singapore, Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/advisory-consulting-financial-services-technology-off-cycle-internship-jan-2027-to-june-2027-at-kpmg-singapore-4460590693",
+    "id": "9543a94b593a0d6c08dd1327c0cafa64",
+    "company": "DICK'S Sporting Goods",
+    "title": "Product Design (UX) - Summer 2027 Corporate Internship",
+    "location": "Coraopolis, PA",
+    "url": "https://www.linkedin.com/jobs/view/product-design-ux-summer-2027-corporate-internship-at-dick-s-sporting-goods-4475226934",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533027,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
-    "category": "Finance & Analytics",
-    "match_score": 84,
-    "tier": "Tier 2 (Strong Fit)",
+    "category": "Design & UX",
+    "match_score": 63,
+    "tier": "Tier 3 (Stretch)",
     "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
     },
     "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
     },
     "pay_info": {
       "pay_display": "Not mentioned",
@@ -597,7 +772,42 @@
       "is_disclosed": false,
       "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! I'm applying for the Advisory - Consulting, Financial Services Technology | Off-Cycle Internship (Jan 2027 to June 2027) position at KPMG Singapore. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at KPMG Singapore. Portfolio: garvgupta.app",
+    "recruiter_pitch": "Hi! Saw DICK'S Sporting Goods's Product Design (UX) - Summer 2027 Corporate Internship post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "af67df18f64ed9504c9421afbc8c4be0",
+    "company": "SharkNinja",
+    "title": "Product Development, Design &amp; Consumer Insights Intern Opportunities",
+    "location": "Needham, MA",
+    "url": "https://www.linkedin.com/jobs/view/product-development-design-consumer-insights-intern-opportunities-at-sharkninja-4469169766",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1793533027,
+    "date_posted": "\u26a1 Nov 01",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "Design & UX",
+    "match_score": 63,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Saw SharkNinja's Product Development, Design &amp; Consumer Insights Intern Opportunities post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
     "is_new": false
   },
   {
@@ -607,7 +817,7 @@
     "location": "Singapore, Singapore",
     "url": "https://sg.linkedin.com/jobs/view/intern-accounting-and-finance-services-at-keppel-ltd-4458000753",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -637,48 +847,13 @@
     "is_new": false
   },
   {
-    "id": "fe1704384755969ee6b9660d09acd87a",
-    "company": "T-Mobile",
-    "title": "Summer 2027 Assoc Product Manager Internship",
-    "location": "Overland Park, KS",
-    "url": "https://www.linkedin.com/jobs/view/summer-2027-assoc-product-manager-internship-at-t-mobile-4485254608",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
-    "date_posted": "\u26a1 Nov 01",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "Product / APM",
-    "match_score": 84,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "International",
-      "score": 0.88,
-      "visa_note": "Open international location",
-      "badge": "\ud83c\udf0d Global"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw T-Mobile's Summer 2027 Assoc Product Manager Internship opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to T-Mobile's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
     "id": "7d85df6c6fe700ac272eb6c79adff338",
     "company": "STMicroelectronics",
     "title": "Intern, GOBM pricing &amp; BOS &amp; PRPO",
     "location": "Singapore, Singapore",
     "url": "https://sg.linkedin.com/jobs/view/intern-gobm-pricing-bos-prpo-at-stmicroelectronics-4448783253",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -708,49 +883,13 @@
     "is_new": false
   },
   {
-    "id": "146691f8659db4df4b00ba630609d25c",
-    "company": "ASM",
-    "title": "[2027 Internship] Singapore",
-    "location": "Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/2027-internship-singapore-at-asm-4477837753",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
-    "date_posted": "\u26a1 Nov 01",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the [2027 Internship] Singapore position at ASM. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at ASM. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
     "id": "240d3ad7fff0c76070b99637d3926414",
     "company": "OCBC",
     "title": "Internship: Group Operations &amp; Technology, Group Engineering \u2013 Wealth [January - May 2026]",
     "location": "Singapore, Singapore",
     "url": "https://sg.linkedin.com/jobs/view/internship-group-operations-technology-group-engineering-%E2%80%93-wealth-january-may-2026-at-ocbc-4469119466",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -786,7 +925,7 @@
     "location": "Singapore, Singapore",
     "url": "https://sg.linkedin.com/jobs/view/shipping-intern-at-koch-4458098023",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -822,7 +961,7 @@
     "location": "Singapore, Singapore",
     "url": "https://sg.linkedin.com/jobs/view/internship-global-commercial-banking-enterprise-banking-eb-services-dec26-to-may27-at-ocbc-4468656111",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -858,7 +997,7 @@
     "location": "Singapore, Singapore",
     "url": "https://sg.linkedin.com/jobs/view/internship-group-operations-technology-group-engineering-%E2%80%93-loan-origination-january-may-2026-at-ocbc-4469135115",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -888,13 +1027,13 @@
     "is_new": false
   },
   {
-    "id": "232db73174e03215a96e837b7f2b5d51",
-    "company": "KPMG Singapore",
-    "title": "Mid-Year Internship 2026 (Aug - Dec 2026), Consulting, Organisation Transformation",
-    "location": "Singapore, Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/mid-year-internship-2026-aug-dec-2026-consulting-organisation-transformation-at-kpmg-singapore-4448727868",
+    "id": "ab2049cff1be2660ab675b471996aff4",
+    "company": "Hospitaliti",
+    "title": "Food &amp; Beverage Intern",
+    "location": "Dubai, Dubai, United Arab Emirates",
+    "url": "https://ae.linkedin.com/jobs/view/food-beverage-intern-at-hospitaliti-4485171898",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -902,16 +1041,16 @@
     "match_score": 80,
     "tier": "Tier 2 (Strong Fit)",
     "location_info": {
-      "region": "Singapore",
+      "region": "UAE / Middle East",
       "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
+      "visa_note": "Very welcoming to Indians, 0% tax, rapid visa issuance",
+      "badge": "\ud83c\udde6\ud83c\uddea UAE (Dubai)"
     },
     "visa_info": {
       "is_sponsored": true,
       "tier": "Immigrant-Friendly Hub",
       "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
+      "note": "Located in UAE / Middle East: active bilateral intern/orientation visa schemes available for Indian students.",
       "boost": 2
     },
     "pay_info": {
@@ -920,78 +1059,7 @@
       "is_disclosed": false,
       "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! I'm applying for the Mid-Year Internship 2026 (Aug - Dec 2026), Consulting, Organisation Transformation position at KPMG Singapore. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at KPMG Singapore. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "bc8a197390910fab30f9f2bc997d153c",
-    "company": "Cummins Asia Pacific",
-    "title": "QA Intern",
-    "location": "Singapore, Singapore",
-    "url": "https://sg.linkedin.com/jobs/view/qa-intern-at-cummins-asia-pacific-4467857163",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
-    "date_posted": "\u26a1 Nov 01",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "General Business",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "Singapore",
-      "score": 1.0,
-      "visa_note": "World #1 safety index, massive Indian expat community, top corporate stipends",
-      "badge": "\ud83c\uddf8\ud83c\uddec Singapore"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Immigrant-Friendly Hub",
-      "badge": "\ud83e\udd1d Visa Welcoming Hub",
-      "note": "Located in Singapore: active bilateral intern/orientation visa schemes available for Indian students.",
-      "boost": 2
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I'm applying for the QA Intern position at Cummins Asia Pacific. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Cummins Asia Pacific. Portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "7869d634a5d203885c8bf8f19c636ec6",
-    "company": "Learning Group Academy",
-    "title": "Digital Marketing Specialist \u2013 Internship with Full-Time Opportunity",
-    "location": "Rabat, Rabat-Sal\u00e9-K\u00e9nitra, Morocco",
-    "url": "https://ma.linkedin.com/jobs/view/digital-marketing-specialist-%E2%80%93-internship-with-full-time-opportunity-at-learning-group-academy-4479090378",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
-    "date_posted": "\u26a1 Nov 01",
-    "raw_department": "General Business",
-    "salary_raw": "",
-    "category": "Growth & Marketing",
-    "match_score": 80,
-    "tier": "Tier 2 (Strong Fit)",
-    "location_info": {
-      "region": "International",
-      "score": 0.88,
-      "visa_note": "Open international location",
-      "badge": "\ud83c\udf0d Global"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! Excited by Learning Group Academy's Digital Marketing Specialist \u2013 Internship with Full-Time Opportunity role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "recruiter_pitch": "Hi! I'm applying for the Food &amp; Beverage Intern position at Hospitaliti. As an IIM Bangalore entrepreneurship student and operator running a 10,000-student brand, I'm passionate about high-impact execution at Hospitaliti. Portfolio: garvgupta.app",
     "is_new": false
   },
   {
@@ -1001,7 +1069,7 @@
     "location": "Boston, Massachusetts",
     "url": "https://jobs.ashbyhq.com/whoop/c1b719e5-6023-407a-a736-233ac032414b",
     "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\ud83d\udfe2 Open",
     "raw_department": "Product / APM",
     "salary_raw": "| WHOOP | Product Designer Co-Op, Growth | Boston, Massachusetts | Spring 2027 | \ud83d\udfe2 Open | https://jobs.ashbyhq.com/whoop/c1b719e5-6023-407a-a736-233ac032414b |",
@@ -1036,7 +1104,7 @@
     "location": "Boston, Massachusetts",
     "url": "https://jobs.ashbyhq.com/whoop/41e12685-fa28-4902-aba6-1d3e7e470a7b",
     "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\ud83d\udfe2 Open",
     "raw_department": "Product / APM",
     "salary_raw": "| WHOOP | Product Operations Co-op | Boston, Massachusetts | Spring 2027 | \ud83d\udfe2 Open | https://jobs.ashbyhq.com/whoop/41e12685-fa28-4902-aba6-1d3e7e470a7b |",
@@ -1071,7 +1139,7 @@
     "location": "Boston, Massachusetts",
     "url": "https://jobs.ashbyhq.com/whoop/09c888d5-3a2a-4d48-9e44-f28709611a06",
     "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\ud83d\udfe2 Open",
     "raw_department": "Product / APM",
     "salary_raw": "| WHOOP | Program Management Co-Op | Boston, Massachusetts | Spring 2027 | \ud83d\udfe2 Open | https://jobs.ashbyhq.com/whoop/09c888d5-3a2a-4d48-9e44-f28709611a06 |",
@@ -1106,7 +1174,7 @@
     "location": "Austin, Texas",
     "url": "https://careers.amd.com/careers-home/jobs/92880",
     "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\ud83d\udfe2 Open",
     "raw_department": "Product / APM",
     "salary_raw": "| AMD | 2027 Undergrad Program Management Intern/Co-op | Austin, Texas | Spring/Summer 2027,Summer 2027,Summer/Fall 2027 | \ud83d\udfe2 Open | https://careers.amd.com/careers-home/jobs/92880 |",
@@ -1141,7 +1209,7 @@
     "location": "New York, NY, United States; Dallas, TX, United States",
     "url": "https://higher.gs.com/roles/182389",
     "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\ud83d\udfe2 Open",
     "raw_department": "Product / APM",
     "salary_raw": "| Goldman Sachs | 2027  Americas  New York City Area AWM Product Management  Summer Analyst | New York, NY, United States; Dallas, TX, United States | Summer 2027 | \ud83d\udfe2 Open | CAME OUT August 25th: https://higher.gs.com/roles/182389 |",
@@ -1176,7 +1244,7 @@
     "location": "LOWELL; DURHAM; San Jose; Austin, Texas; North Carolina; Massachusetts; California; United States",
     "url": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=128508&source=WEB_Intern_NA",
     "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\ud83d\udfe2 Open",
     "raw_department": "Product / APM",
     "salary_raw": "| IBM | Product Manager Spring Co-op 2027 | LOWELL; DURHAM; San Jose; Austin, Texas; North Carolina; Massachusetts; California; United States | Spring 2027 | \ud83d\udfe2 Open | https://careers.ibm.com/en_US/careers/JobDetail?jobId=128508&source=WEB_Intern_NA |",
@@ -1211,7 +1279,7 @@
     "location": "LOWELL; DURHAM; San Jose; Austin, Texas; North Carolina; Massachusetts; California; United States",
     "url": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=128509&source=WEB_Search_NA",
     "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\ud83d\udfe2 Open",
     "raw_department": "Product / APM",
     "salary_raw": "| IBM | Product Manager Intern 2027 | LOWELL; DURHAM; San Jose; Austin, Texas; North Carolina; Massachusetts; California; United States | Summer 2027 | \ud83d\udfe2 Open | https://careers.ibm.com/en_US/careers/JobDetail?jobId=128509&source=WEB_Search_NA |",
@@ -1246,7 +1314,7 @@
     "location": "United States, Washington, Redmond",
     "url": "https://apply.careers.microsoft.com/careers/job/1970393556953113?domain=microsoft.com&hl=en",
     "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\ud83d\udfe2 Open",
     "raw_department": "Product / APM",
     "salary_raw": "| Microsoft | Product Manager: Internship Opportunities | United States, Washington, Redmond | Summer 2027 | \ud83d\udfe2 Open | https://apply.careers.microsoft.com/careers/job/1970393556953113?domain=microsoft.com&hl=en |",
@@ -1281,7 +1349,7 @@
     "location": "United States, Washington, Redmond",
     "url": "https://apply.careers.microsoft.com/careers/job/1970393556953114?domain=microsoft.com&hl=en",
     "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\ud83d\udfe2 Open",
     "raw_department": "Product / APM",
     "salary_raw": "| Microsoft | Technical Program Manager: Internship Opportunities | United States, Washington, Redmond | Summer 2027 | \ud83d\udfe2 Open | https://apply.careers.microsoft.com/careers/job/1970393556953114?domain=microsoft.com&hl=en |",
@@ -1316,7 +1384,7 @@
     "location": "Austin, TX",
     "url": "https://www.tesla.com/en_AE/careers/search/job/internship-program-manager-north-america-service-program-project-management-fall-2026-271874",
     "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\ud83d\udfe2 Open",
     "raw_department": "Product / APM",
     "salary_raw": "| Tesla | Internship, Program Manager, North America Service Program & Project Management (Fall 2026) - Sales & Customer Support | Austin, TX | Fall 2026 | \ud83d\udfe2 Open | https://www.tesla.com/en_AE/careers/search/job/internship-program-manager-north-america-service-program-project-management-fall-2026-271874 |",
@@ -1351,7 +1419,7 @@
     "location": "Austin, TX",
     "url": "https://www.tesla.com/en_AE/careers/search/job/internship-program-manager-north-america-service-program-project-management-fall-2026-271875",
     "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\ud83d\udfe2 Open",
     "raw_department": "Product / APM",
     "salary_raw": "| Tesla | Internship, Program Manager, North America Service Program & Project Management (Fall 2026) - Vehicle Service | Austin, TX | Fall 2026 | \ud83d\udfe2 Open | https://www.tesla.com/en_AE/careers/search/job/internship-program-manager-north-america-service-program-project-management-fall-2026-271875 |",
@@ -1386,7 +1454,7 @@
     "location": "McLean, Virginia; Richmond, Virginia; Plano, Texas; New York, New York; Chicago, Illinois",
     "url": "https://www.capitalonecareers.com/job/mclean/business-analyst-intern-summer-2027/31238/99109660512",
     "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\u203c\ufe0fClosing Soon\u203c\ufe0f They only take applications minimum 5 days!",
     "raw_department": "Product / APM",
     "salary_raw": "| Capital One | Business Analyst Intern - Summer 2027 | McLean, Virginia; Richmond, Virginia; Plano, Texas; New York, New York; Chicago, Illinois | Summer 2027 | \u203c\ufe0fClosing Soon\u203c\ufe0f They only take applications minimum 5 days! | https://www.capitalonecareers.com/job/mclean/business-analyst-intern-summer-2027/31238/99109660512 |",
@@ -1421,7 +1489,7 @@
     "location": "San Francisco, California",
     "url": "https://www.salesforce.com/company/careers/jobs/JR348039/summer-2027-intern-associate-product-manager-apm/",
     "source": "Abby Bravo PM Recruiting Hub",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\ud83d\udd34 Closed",
     "raw_department": "Product / APM",
     "salary_raw": "| salesforce | Summer 2027 Intern - Associate Product Manager (APM) | San Francisco, California | Summer 2027 | \ud83d\udd34 Closed | https://www.salesforce.com/company/careers/jobs/JR348039/summer-2027-intern-associate-product-manager-apm/ |",
@@ -1456,7 +1524,7 @@
     "location": "New York, NY",
     "url": "https://www.linkedin.com/jobs/view/product-management-intern-winter-2027-at-gemini-4468024089",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -1491,7 +1559,7 @@
     "location": "Coraopolis, PA",
     "url": "https://www.linkedin.com/jobs/view/product-management-summer-2027-corporate-internship-at-dick-s-sporting-goods-4475228898",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -1526,7 +1594,7 @@
     "location": "Chicago, IL",
     "url": "https://www.linkedin.com/jobs/view/software-product-management-intern-at-sagesure-4478001273",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -1561,7 +1629,7 @@
     "location": "Jersey City, NJ",
     "url": "https://www.linkedin.com/jobs/view/software-product-management-intern-at-sagesure-4478003245",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -1596,7 +1664,7 @@
     "location": "Delaware, OH",
     "url": "https://www.linkedin.com/jobs/view/energy-storage-product-management-intern-summer-2027-at-vertiv-4477872525",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1793504931,
+    "timestamp": 1793533026,
     "date_posted": "\u26a1 Nov 01",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -1660,41 +1728,6 @@
     "is_new": false
   },
   {
-    "id": "00a43728d9bf86708c33bbf576bf922d",
-    "company": "SAP",
-    "title": "[SAP iXp Intern - Product Management, Agile Delivery & PI\u00a0Planning [Newtown Square, PA]](https://jobright.ai/jobs/info/6abbeaf43217d1d13329bd2a?utmcampaign=1047&utmsource=git)",
-    "location": "Newtown Square, Pennsylvania, United States",
-    "url": "https://www.sap.com",
-    "source": "Jobright Product Management & APM",
-    "timestamp": 1793404800,
-    "date_posted": "Oct 31",
-    "raw_department": "Product / APM",
-    "salary_raw": "| **[SAP](https://www.sap.com)** | **[SAP iXp Intern - Product Management, Agile Delivery & PI\u00a0Planning [Newtown Square, PA]](https://jobright.ai/jobs/info/6abbeaf43217d1d13329bd2a?utm_campaign=1047&utm_source=git)** | Newtown Square, Pennsylvania, United States | Hybrid | Oct 31 |",
-    "category": "Product / APM",
-    "match_score": 69,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw SAP's [SAP iXp Intern - Product Management, Agile Delivery & PI\u00a0Planning [Newtown Square, PA]](https://jobright.ai/jobs/info/6abbeaf43217d1d13329bd2a?utmcampaign=1047&utmsource=git) opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to SAP's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
     "id": "8ce92c65661dd939b6979fd682776c84",
     "company": "SAP",
     "title": "SAP iXp Intern - AI Product Management",
@@ -1704,7 +1737,7 @@
     "timestamp": 1793404800,
     "date_posted": "Oct 31",
     "raw_department": "Product / APM",
-    "salary_raw": "| \u21b3 | **[SAP iXp Intern - AI Product Management](https://jobright.ai/jobs/info/6ae524a777c09cb3bd4b2215?utm_campaign=1047&utm_source=git)** | New York, NY, United States | Hybrid | Oct 31 |",
+    "salary_raw": "| **[SAP](https://www.sap.com)** | **[SAP iXp Intern - AI Product Management](https://jobright.ai/jobs/info/6ae524a777c09cb3bd4b2215?utm_campaign=1047&utm_source=git)** | New York, NY, United States | Hybrid | Oct 31 |",
     "category": "Product / APM",
     "match_score": 69,
     "tier": "Tier 3 (Stretch)",
@@ -1765,6 +1798,41 @@
     "is_new": false
   },
   {
+    "id": "00a43728d9bf86708c33bbf576bf922d",
+    "company": "SAP",
+    "title": "[SAP iXp Intern - Product Management, Agile Delivery & PI\u00a0Planning [Newtown Square, PA]](https://jobright.ai/jobs/info/6abbeaf43217d1d13329bd2a?utmcampaign=1047&utmsource=git)",
+    "location": "Newtown Square, Pennsylvania, United States",
+    "url": "https://jobright.ai/jobs/info/6abbeaf43217d1d13329bd2a?utm_campaign=1047&utm_source=git",
+    "source": "Jobright Product Management & APM",
+    "timestamp": 1793404800,
+    "date_posted": "Oct 31",
+    "raw_department": "Product / APM",
+    "salary_raw": "| \u21b3 | **[SAP iXp Intern - Product Management, Agile Delivery & PI\u00a0Planning [Newtown Square, PA]](https://jobright.ai/jobs/info/6abbeaf43217d1d13329bd2a?utm_campaign=1047&utm_source=git)** | Newtown Square, Pennsylvania, United States | Hybrid | Oct 31 |",
+    "category": "Product / APM",
+    "match_score": 69,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw SAP's [SAP iXp Intern - Product Management, Agile Delivery & PI\u00a0Planning [Newtown Square, PA]](https://jobright.ai/jobs/info/6abbeaf43217d1d13329bd2a?utmcampaign=1047&utmsource=git) opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to SAP's product team. My portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
     "id": "a36a845d1cb11bd622973cf8c8a4a950",
     "company": "IBM",
     "title": "Product Manager Intern 2027",
@@ -1800,41 +1868,6 @@
     "is_new": false
   },
   {
-    "id": "ceb0170a3ebef5604c26e49f694abb39",
-    "company": "IBM",
-    "title": "Product Manager Intern 2027 - POUGHKEEPSIE",
-    "location": "Poughkeepsie, NY, United States",
-    "url": "https://jobright.ai/jobs/info/6ae20c0feb7e8f715a609793?utm_campaign=1047&utm_source=git",
-    "source": "Jobright Product Management & APM",
-    "timestamp": 1793404800,
-    "date_posted": "Oct 31",
-    "raw_department": "Product / APM",
-    "salary_raw": "| **[IBM](http://www.ibm.com)** | **[Product Manager Intern 2027 - POUGHKEEPSIE](https://jobright.ai/jobs/info/6ae20c0feb7e8f715a609793?utm_campaign=1047&utm_source=git)** | Poughkeepsie, NY, United States | Hybrid | Oct 31 |",
-    "category": "Product / APM",
-    "match_score": 69,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw IBM's Product Manager Intern 2027 - POUGHKEEPSIE opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to IBM's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
     "id": "f286981d7278d2e388700f13ce5ceff2",
     "company": "IBM",
     "title": "Product Manager Spring Co-op 2027",
@@ -1844,7 +1877,7 @@
     "timestamp": 1793404800,
     "date_posted": "Oct 31",
     "raw_department": "Product / APM",
-    "salary_raw": "| \u21b3 | **[Product Manager Spring Co-op 2027](https://jobright.ai/jobs/info/6adfe4d7065c4e77efafca1f?utm_campaign=1047&utm_source=git)** | Durham, NC, United States | Hybrid | Oct 31 |",
+    "salary_raw": "| **[IBM](http://www.ibm.com)** | **[Product Manager Spring Co-op 2027](https://jobright.ai/jobs/info/6adfe4d7065c4e77efafca1f?utm_campaign=1047&utm_source=git)** | Durham, NC, United States | Hybrid | Oct 31 |",
     "category": "Product / APM",
     "match_score": 69,
     "tier": "Tier 3 (Stretch)",
@@ -1867,6 +1900,41 @@
       "note": "Compensation is not publicly disclosed in the posting."
     },
     "recruiter_pitch": "Hi! I saw IBM's Product Manager Spring Co-op 2027 opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to IBM's product team. My portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "ceb0170a3ebef5604c26e49f694abb39",
+    "company": "IBM",
+    "title": "Product Manager Intern 2027 - POUGHKEEPSIE",
+    "location": "Poughkeepsie, NY, United States",
+    "url": "https://jobright.ai/jobs/info/6ae20c0feb7e8f715a609793?utm_campaign=1047&utm_source=git",
+    "source": "Jobright Product Management & APM",
+    "timestamp": 1793404800,
+    "date_posted": "Oct 31",
+    "raw_department": "Product / APM",
+    "salary_raw": "| \u21b3 | **[Product Manager Intern 2027 - POUGHKEEPSIE](https://jobright.ai/jobs/info/6ae20c0feb7e8f715a609793?utm_campaign=1047&utm_source=git)** | Poughkeepsie, NY, United States | Hybrid | Oct 31 |",
+    "category": "Product / APM",
+    "match_score": 69,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw IBM's Product Manager Intern 2027 - POUGHKEEPSIE opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to IBM's product team. My portfolio: garvgupta.app",
     "is_new": false
   },
   {
@@ -1975,6 +2043,41 @@
     "is_new": false
   },
   {
+    "id": "c51ff792da46d90e3f9e3c5b24cc0a61",
+    "company": "Children's Hospital Colorado",
+    "title": "Marketing Strategy Intern",
+    "location": "Aurora, CO, United States",
+    "url": "https://jobright.ai/jobs/info/6ac94d67af788e6ad3b5adc9?utm_campaign=1065&utm_source=git",
+    "source": "Jobright Growth & Marketing",
+    "timestamp": 1793404800,
+    "date_posted": "Oct 31",
+    "raw_department": "Growth & Marketing",
+    "salary_raw": "| **[Children's Hospital Colorado](https://www.childrenscolorado.org)** | **[Marketing Strategy Intern](https://jobright.ai/jobs/info/6ac94d67af788e6ad3b5adc9?utm_campaign=1065&utm_source=git)** | Aurora, CO, United States | Hybrid | Oct 31 |",
+    "category": "BizOps & Strategy",
+    "match_score": 66,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I noticed the Marketing Strategy Intern opening at Children's Hospital Colorado. I currently run operations & full P&L for a 10,000+ student education brand (AnybodyCanBake) with 5-7 team members alongside my degree at IIM Bangalore. Would love to bring proven execution and problem-solving to Children's Hospital Colorado.",
+    "is_new": false
+  },
+  {
     "id": "8d424022a8254b644d0c8d30749245c3",
     "company": "Mundial Partners",
     "title": "Creative Strategy Intern, Brand Experiences",
@@ -2010,18 +2113,18 @@
     "is_new": false
   },
   {
-    "id": "c51ff792da46d90e3f9e3c5b24cc0a61",
-    "company": "Children's Hospital Colorado",
-    "title": "Marketing Strategy Intern",
-    "location": "Aurora, CO, United States",
-    "url": "https://jobright.ai/jobs/info/6ac98ea4c3a8af9c54a0b1ef?utm_campaign=1065&utm_source=git",
+    "id": "523e8ef794883dfbba1632722a1ab91d",
+    "company": "Autter",
+    "title": "Marketing Intern",
+    "location": "United States",
+    "url": "https://jobright.ai/jobs/info/6ae69899d7424a2a828efb58?utm_campaign=1065&utm_source=git",
     "source": "Jobright Growth & Marketing",
     "timestamp": 1793404800,
     "date_posted": "Oct 31",
     "raw_department": "Growth & Marketing",
-    "salary_raw": "| **[Children's Hospital Colorado](https://www.childrenscolorado.org)** | **[Marketing Strategy Intern](https://jobright.ai/jobs/info/6ac98ea4c3a8af9c54a0b1ef?utm_campaign=1065&utm_source=git)** | Aurora, CO, United States | Hybrid | Oct 31 |",
-    "category": "BizOps & Strategy",
-    "match_score": 66,
+    "salary_raw": "| **[Autter](https://www.autter.dev/)** | **[Marketing Intern](https://jobright.ai/jobs/info/6ae69899d7424a2a828efb58?utm_campaign=1065&utm_source=git)** | United States | Remote | Oct 31 |",
+    "category": "Growth & Marketing",
+    "match_score": 65,
     "tier": "Tier 3 (Stretch)",
     "location_info": {
       "region": "US / Canada",
@@ -2041,7 +2144,182 @@
       "is_disclosed": false,
       "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! I noticed the Marketing Strategy Intern opening at Children's Hospital Colorado. I currently run operations & full P&L for a 10,000+ student education brand (AnybodyCanBake) with 5-7 team members alongside my degree at IIM Bangalore. Would love to bring proven execution and problem-solving to Children's Hospital Colorado.",
+    "recruiter_pitch": "Hi! Excited by Autter's Marketing Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": false
+  },
+  {
+    "id": "5b66bf7e54e3e5fee171adcb106563bf",
+    "company": "The Global Institute for Health and Human Rights",
+    "title": "Digital Marketing Intern, Accounts",
+    "location": "Hudson, OH, United States",
+    "url": "https://jobright.ai/jobs/info/6ae6967cfb2cd420ace60e14?utm_campaign=1065&utm_source=git",
+    "source": "Jobright Growth & Marketing",
+    "timestamp": 1793404800,
+    "date_posted": "Oct 31",
+    "raw_department": "Growth & Marketing",
+    "salary_raw": "| **[The Global Institute for Health and Human Rights](http://www.albany.edu/gihhr/)** | **[Digital Marketing Intern, Accounts](https://jobright.ai/jobs/info/6ae6967cfb2cd420ace60e14?utm_campaign=1065&utm_source=git)** | Hudson, OH, United States | Hybrid | Oct 31 |",
+    "category": "Growth & Marketing",
+    "match_score": 65,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Excited by The Global Institute for Health and Human Rights's Digital Marketing Intern, Accounts role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": false
+  },
+  {
+    "id": "4e1c4bd0c8ed733aa7b46b5cac20e2e7",
+    "company": "ejobs Finland",
+    "title": "Social Media Intern",
+    "location": "Miami, FL, United States",
+    "url": "https://jobright.ai/jobs/info/6ae68e7ec3139b475b5bcd9e?utm_campaign=1065&utm_source=git",
+    "source": "Jobright Growth & Marketing",
+    "timestamp": 1793404800,
+    "date_posted": "Oct 31",
+    "raw_department": "Growth & Marketing",
+    "salary_raw": "| **[ejobs Finland](http://www.ejobs.fi/)** | **[Social Media Intern](https://jobright.ai/jobs/info/6ae68e7ec3139b475b5bcd9e?utm_campaign=1065&utm_source=git)** | Miami, FL, United States | Hybrid | Oct 31 |",
+    "category": "Growth & Marketing",
+    "match_score": 65,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Excited by ejobs Finland's Social Media Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": false
+  },
+  {
+    "id": "f93ea964df8ac571ed94891d552bd1a0",
+    "company": "ai.moms",
+    "title": "Brand Partnerships Intern",
+    "location": "NY, United States",
+    "url": "https://jobright.ai/jobs/info/6ae68566eab1f96730983ab5?utm_campaign=1065&utm_source=git",
+    "source": "Jobright Growth & Marketing",
+    "timestamp": 1793404800,
+    "date_posted": "Oct 31",
+    "raw_department": "Growth & Marketing",
+    "salary_raw": "| **[ai.moms](https://aimoms.ai/)** | **[Brand Partnerships Intern](https://jobright.ai/jobs/info/6ae68566eab1f96730983ab5?utm_campaign=1065&utm_source=git)** | NY, United States | Remote | Oct 31 |",
+    "category": "Growth & Marketing",
+    "match_score": 65,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Excited by ai.moms's Brand Partnerships Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": false
+  },
+  {
+    "id": "ca8da0c1ce5a075917b861cf6969b8b4",
+    "company": "Gift",
+    "title": "Community Engagement Intern",
+    "location": "Los Angeles, CA, United States",
+    "url": "https://jobright.ai/jobs/info/6ae67da0d7424a2a828ef808?utm_campaign=1065&utm_source=git",
+    "source": "Jobright Growth & Marketing",
+    "timestamp": 1793404800,
+    "date_posted": "Oct 31",
+    "raw_department": "Growth & Marketing",
+    "salary_raw": "| **[Gift](https://www.shine.gift)** | **[Community Engagement Intern](https://jobright.ai/jobs/info/6ae67da0d7424a2a828ef808?utm_campaign=1065&utm_source=git)** | Los Angeles, CA, United States | Remote | Oct 31 |",
+    "category": "Growth & Marketing",
+    "match_score": 65,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Excited by Gift's Community Engagement Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": false
+  },
+  {
+    "id": "eb2aef885959a8fe53b2966d945b2525",
+    "company": "Electro",
+    "title": "Social Media & Creator Partnerships Intern",
+    "location": "United States",
+    "url": "https://jobright.ai/jobs/info/6ae65fa2d45dc30fb7d38e9d?utm_campaign=1065&utm_source=git",
+    "source": "Jobright Growth & Marketing",
+    "timestamp": 1793404800,
+    "date_posted": "Oct 31",
+    "raw_department": "Growth & Marketing",
+    "salary_raw": "| **[Electro](electrogum.com)** | **[Social Media & Creator Partnerships Intern](https://jobright.ai/jobs/info/6ae65fa2d45dc30fb7d38e9d?utm_campaign=1065&utm_source=git)** | United States | Remote | Oct 31 |",
+    "category": "Growth & Marketing",
+    "match_score": 65,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Excited by Electro's Social Media & Creator Partnerships Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
     "is_new": false
   },
   {
@@ -2675,6 +2953,41 @@
     "is_new": false
   },
   {
+    "id": "023a366f3bca31d1af39e9c6b191b4b4",
+    "company": "2toLead",
+    "title": "Design Intern",
+    "location": "Canada",
+    "url": "https://jobright.ai/jobs/info/6ae668d677c09cb3bd4b5c45?utm_campaign=1049&utm_source=git",
+    "source": "Jobright Product & UX Design",
+    "timestamp": 1793404800,
+    "date_posted": "Oct 31",
+    "raw_department": "Design & UX",
+    "salary_raw": "| **[2toLead](http://www.2tolead.com)** | **[Design Intern](https://jobright.ai/jobs/info/6ae668d677c09cb3bd4b5c45?utm_campaign=1049&utm_source=git)** | Canada | Remote | Oct 31 |",
+    "category": "Design & UX",
+    "match_score": 63,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Saw 2toLead's Design Intern post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
     "id": "ca28a906e696061d455f436ca479de60",
     "company": "The Options Clearing Corporation (OCC)",
     "title": "Year-Round Intern - CX",
@@ -2707,6 +3020,41 @@
       "note": "Compensation is not publicly disclosed in the posting."
     },
     "recruiter_pitch": "Hi! Saw The Options Clearing Corporation (OCC)'s Year-Round Intern - CX post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "7f5b94acb4e0a65d9cddb7694b3935f4",
+    "company": "Chesapeake Utilities Corporation",
+    "title": "Creative Services Internship - Summer 2027",
+    "location": "Dover, DE, United States",
+    "url": "https://jobright.ai/jobs/info/6aadc45b3dbb1f8967cef767?utm_campaign=1049&utm_source=git",
+    "source": "Jobright Product & UX Design",
+    "timestamp": 1793404800,
+    "date_posted": "Oct 31",
+    "raw_department": "Design & UX",
+    "salary_raw": "| **[Chesapeake Utilities Corporation](http://chpk.com)** | **[Creative Services Internship - Summer 2027](https://jobright.ai/jobs/info/6aadc45b3dbb1f8967cef767?utm_campaign=1049&utm_source=git)** | Dover, DE, United States | Hybrid | Oct 31 |",
+    "category": "Design & UX",
+    "match_score": 63,
+    "tier": "Tier 3 (Stretch)",
+    "location_info": {
+      "region": "US / Canada",
+      "score": 0.72,
+      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
+      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "is_disclosed": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Saw Chesapeake Utilities Corporation's Creative Services Internship - Summer 2027 post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
     "is_new": false
   },
   {
@@ -2955,41 +3303,6 @@
     "is_new": false
   },
   {
-    "id": "c93af7a63c00634d355b6243b4856d20",
-    "company": "The New York Times",
-    "title": "Advertising Business Operations & Enablement Operations Intern",
-    "location": "New York, NY, United States",
-    "url": "https://jobright.ai/jobs/info/6ae4e146d45dc30fb7d3327d?utm_campaign=1065&utm_source=git",
-    "source": "Jobright Growth & Marketing",
-    "timestamp": 1793318400,
-    "date_posted": "Oct 30",
-    "raw_department": "Growth & Marketing",
-    "salary_raw": "| \u21b3 | **[Advertising Business Operations & Enablement Operations Intern](https://jobright.ai/jobs/info/6ae4e146d45dc30fb7d3327d?utm_campaign=1065&utm_source=git)** | New York, NY, United States | Hybrid | Oct 30 |",
-    "category": "BizOps & Strategy",
-    "match_score": 66,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I noticed the Advertising Business Operations & Enablement Operations Intern opening at The New York Times. I currently run operations & full P&L for a 10,000+ student education brand (AnybodyCanBake) with 5-7 team members alongside my degree at IIM Bangalore. Would love to bring proven execution and problem-solving to The New York Times.",
-    "is_new": false
-  },
-  {
     "id": "046f7c874f4d1b466f29f55d13034e6e",
     "company": "Kiewit",
     "title": "Communication Coordinator Co-op - Winter 2027 (8 months) Job Details / Kiewit",
@@ -3057,216 +3370,6 @@
       "note": "Compensation is not publicly disclosed in the posting."
     },
     "recruiter_pitch": "Hi! Excited by The New York Times's Communications Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
-    "is_new": false
-  },
-  {
-    "id": "6a08cd356ba704bfab695788f6b8f3ec",
-    "company": "Umbrex",
-    "title": "Digital Marketing Intern",
-    "location": "Astoria, NY, United States",
-    "url": "https://jobright.ai/jobs/info/6ae55260fb2cd420ace5e00b?utm_campaign=1065&utm_source=git",
-    "source": "Jobright Growth & Marketing",
-    "timestamp": 1793318400,
-    "date_posted": "Oct 30",
-    "raw_department": "Growth & Marketing",
-    "salary_raw": "| **[Umbrex](http://www.umbrex.com)** | **[Digital Marketing Intern](https://jobright.ai/jobs/info/6ae55260fb2cd420ace5e00b?utm_campaign=1065&utm_source=git)** | Astoria, NY, United States | Hybrid | Oct 30 |",
-    "category": "Growth & Marketing",
-    "match_score": 65,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! Excited by Umbrex's Digital Marketing Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
-    "is_new": false
-  },
-  {
-    "id": "da6064ec319c6356d3eddcac9d213cb1",
-    "company": "The New York Times",
-    "title": "Advertising Revenue Operations Intern",
-    "location": "New York, NY, United States",
-    "url": "https://jobright.ai/jobs/info/6ae4e147c3139b475b5b6d4b?utm_campaign=1065&utm_source=git",
-    "source": "Jobright Growth & Marketing",
-    "timestamp": 1793318400,
-    "date_posted": "Oct 30",
-    "raw_department": "Growth & Marketing",
-    "salary_raw": "| **[The New York Times](https://www.nytco.com/)** | **[Advertising Revenue Operations Intern](https://jobright.ai/jobs/info/6ae4e147c3139b475b5b6d4b?utm_campaign=1065&utm_source=git)** | New York, NY, United States | Hybrid | Oct 30 |",
-    "category": "Growth & Marketing",
-    "match_score": 65,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! Excited by The New York Times's Advertising Revenue Operations Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
-    "is_new": false
-  },
-  {
-    "id": "e2909badf8388fc9663eaa44ca596b3e",
-    "company": "The New York Times",
-    "title": "Audience Team Intern, NYT Wirecutter",
-    "location": "New York, NY, United States",
-    "url": "https://jobright.ai/jobs/info/6ae4e148d45dc30fb7d3327f?utm_campaign=1065&utm_source=git",
-    "source": "Jobright Growth & Marketing",
-    "timestamp": 1793318400,
-    "date_posted": "Oct 30",
-    "raw_department": "Growth & Marketing",
-    "salary_raw": "| \u21b3 | **[Audience Team Intern, NYT Wirecutter](https://jobright.ai/jobs/info/6ae4e148d45dc30fb7d3327f?utm_campaign=1065&utm_source=git)** | New York, NY, United States | Hybrid | Oct 30 |",
-    "category": "Growth & Marketing",
-    "match_score": 65,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! Excited by The New York Times's Audience Team Intern, NYT Wirecutter role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
-    "is_new": false
-  },
-  {
-    "id": "61f77e42300c3ec5d118c7ea1fc7a32e",
-    "company": "Preloom",
-    "title": "Digital Marketing Intern (Current Students Only)",
-    "location": "Toronto, ON, Canada",
-    "url": "https://jobright.ai/jobs/info/6ae52cd9eab1f967309803a4?utm_campaign=1065&utm_source=git",
-    "source": "Jobright Growth & Marketing",
-    "timestamp": 1793318400,
-    "date_posted": "Oct 30",
-    "raw_department": "Growth & Marketing",
-    "salary_raw": "| **[Preloom](https://www.preloom.com)** | **[Digital Marketing Intern (Current Students Only)](https://jobright.ai/jobs/info/6ae52cd9eab1f967309803a4?utm_campaign=1065&utm_source=git)** | Toronto, ON, Canada | Remote | Oct 30 |",
-    "category": "Growth & Marketing",
-    "match_score": 65,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! Excited by Preloom's Digital Marketing Intern (Current Students Only) role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
-    "is_new": false
-  },
-  {
-    "id": "bbb4bcf66046fb55668c7093c182e0ca",
-    "company": "Power Digital Marketing",
-    "title": "PPC Intern, Spring 2027",
-    "location": "United States",
-    "url": "https://jobright.ai/jobs/info/6ae5096877c09cb3bd4b1575?utm_campaign=1065&utm_source=git",
-    "source": "Jobright Growth & Marketing",
-    "timestamp": 1793318400,
-    "date_posted": "Oct 30",
-    "raw_department": "Growth & Marketing",
-    "salary_raw": "| **[Power Digital Marketing](https://powerdigitalmarketing.com)** | **[PPC Intern, Spring 2027](https://jobright.ai/jobs/info/6ae5096877c09cb3bd4b1575?utm_campaign=1065&utm_source=git)** | United States | Remote | Oct 30 |",
-    "category": "Growth & Marketing",
-    "match_score": 65,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! Excited by Power Digital Marketing's PPC Intern, Spring 2027 role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
-    "is_new": false
-  },
-  {
-    "id": "3115e0a70a24b956a3021f3c7d789d83",
-    "company": "Grow Financial Federal Credit Union",
-    "title": "Internal Communication Intern- Spring 2027",
-    "location": "Alabama, United States",
-    "url": "https://jobright.ai/jobs/info/6ae51025d45dc30fb7d34ea1?utm_campaign=1065&utm_source=git",
-    "source": "Jobright Growth & Marketing",
-    "timestamp": 1793318400,
-    "date_posted": "Oct 30",
-    "raw_department": "Growth & Marketing",
-    "salary_raw": "| **[Grow Financial Federal Credit Union](http://www.growfinancial.org)** | **[Internal Communication Intern- Spring 2027](https://jobright.ai/jobs/info/6ae51025d45dc30fb7d34ea1?utm_campaign=1065&utm_source=git)** | Alabama, United States | Remote | Oct 30 |",
-    "category": "Growth & Marketing",
-    "match_score": 65,
-    "tier": "Tier 3 (Stretch)",
-    "location_info": {
-      "region": "US / Canada",
-      "score": 0.72,
-      "visa_note": "Requires J-1 sponsor or US/Canada work authorization",
-      "badge": "\ud83c\uddfa\ud83c\uddf8 US / Canada"
-    },
-    "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "is_disclosed": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! Excited by Grow Financial Federal Credit Union's Internal Communication Intern- Spring 2027 role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
     "is_new": false
   },
   {
@@ -3550,16 +3653,16 @@
     "is_new": false
   },
   {
-    "id": "0f71907e7503b15654c2a1c229a886f9",
+    "id": "551c0611a8792b44124dfb14ff33501c",
     "company": "STV",
     "title": "Architecture Intern - Summer 2027",
-    "location": "Washington, District of Columbia, United States",
-    "url": "https://jobright.ai/jobs/info/6acfe225c9f40bec907fe996?utm_campaign=1049&utm_source=git",
+    "location": "San Francisco, CA, United States",
+    "url": "https://jobright.ai/jobs/info/6ae4a7ccd45dc30fb7d30e40?utm_campaign=1049&utm_source=git",
     "source": "Jobright Product & UX Design",
     "timestamp": 1793318400,
     "date_posted": "Oct 30",
     "raw_department": "Design & UX",
-    "salary_raw": "| \u21b3 | **[Architecture Intern - Summer 2027](https://jobright.ai/jobs/info/6acfe225c9f40bec907fe996?utm_campaign=1049&utm_source=git)** | Washington, District of Columbia, United States | Hybrid | Oct 30 |",
+    "salary_raw": "| \u21b3 | **[Architecture Intern - Summer 2027](https://jobright.ai/jobs/info/6ae4a7ccd45dc30fb7d30e40?utm_campaign=1049&utm_source=git)** | San Francisco, CA, United States | Hybrid | Oct 30 |",
     "category": "Design & UX",
     "match_score": 63,
     "tier": "Tier 3 (Stretch)",
@@ -3585,16 +3688,16 @@
     "is_new": false
   },
   {
-    "id": "551c0611a8792b44124dfb14ff33501c",
+    "id": "0f71907e7503b15654c2a1c229a886f9",
     "company": "STV",
     "title": "Architecture Intern - Summer 2027",
-    "location": "San Francisco, CA, United States",
-    "url": "https://jobright.ai/jobs/info/6ae4a7ccd45dc30fb7d30e40?utm_campaign=1049&utm_source=git",
+    "location": "Washington, District of Columbia, United States",
+    "url": "https://jobright.ai/jobs/info/6acfe225c9f40bec907fe996?utm_campaign=1049&utm_source=git",
     "source": "Jobright Product & UX Design",
     "timestamp": 1793318400,
     "date_posted": "Oct 30",
     "raw_department": "Design & UX",
-    "salary_raw": "| \u21b3 | **[Architecture Intern - Summer 2027](https://jobright.ai/jobs/info/6ae4a7ccd45dc30fb7d30e40?utm_campaign=1049&utm_source=git)** | San Francisco, CA, United States | Hybrid | Oct 30 |",
+    "salary_raw": "| \u21b3 | **[Architecture Intern - Summer 2027](https://jobright.ai/jobs/info/6acfe225c9f40bec907fe996?utm_campaign=1049&utm_source=git)** | Washington, District of Columbia, United States | Hybrid | Oct 30 |",
     "category": "Design & UX",
     "match_score": 63,
     "tier": "Tier 3 (Stretch)",
