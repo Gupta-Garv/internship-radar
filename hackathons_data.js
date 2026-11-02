@@ -147,7 +147,7 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
-    "id": "devpost_62165",
+    "id": "devpost_60670",
     "title": "DSH Hacks V2 ($100k+ in prizes!)",
     "organizer": "Devpost Sponsor",
     "platform": "Devpost",
@@ -497,7 +497,7 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
-    "id": "devpost_73061",
+    "id": "devpost_50428",
     "title": "Codex x TwitchCon Hackathon",
     "organizer": "Devpost Sponsor",
     "platform": "Devpost",
@@ -641,7 +641,7 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
-    "id": "devpost_25486",
+    "id": "devpost_23221",
     "title": "YouCam API Skin AI & eCommerce VTO Hackathon",
     "organizer": "Devpost Sponsor",
     "platform": "Devpost",

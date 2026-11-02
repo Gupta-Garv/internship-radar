@@ -421,7 +421,7 @@ def evaluate_compensation(job):
     }
 
 DISQUALIFIED_INDIA_ROLES = re.compile(
-    r'\b(business development associate|bda|telecaller|telecalling|telesales|cold call|calling|inside sales associate|lead generation executive|field sales|door to door|counter sales|retail sales associate|seo link builder|back office|data entry|typist|account executive intern|mechanical design|cad engineer|factory|school evaluation|preschool|broker|real estate agent)\b',
+    r'\b(business development associate|bda|telecaller|telecalling|telesales|cold call|calling|inside sales associate|lead generation executive|lead management|client acquisition|customer acquisition|field sales|door to door|counter sales|retail sales associate|seo link builder|back office|data entry|typist|account executive intern|mechanical design|cad engineer|factory|school evaluation|preschool|broker|real estate agent|counselor|counsellor|tele counsellor|enrollment advisor|admissions counselor|academic counselor|customer service|customer support|client support|helpdesk|tele calling|sales & counseling|sales intern|sales executive|sales associate|business development \(sales\)|b2b sales|b2c sales|outbound|delegate acquisition)\b',
     re.IGNORECASE
 )
 
@@ -490,13 +490,17 @@ def is_valid_india_opportunity(job, category, loc_eval, pay_eval):
     if pay_inr == 0 and pay_eval.get("pay_monthly_usd", 0) > 0:
         pay_inr = pay_eval.get("pay_monthly_usd", 0) * 84
 
+    # If stipend is disclosed, it MUST be >= 15,000 INR/month (reject low-ball <15k stipends even at large brands)
+    if pay_eval.get("is_disclosed", False) and pay_inr < 15000:
+        return False
+
     has_valid_stipend = (
         pay_eval.get("is_disclosed", False) and 
         not pay_eval.get("is_unpaid", False) and 
         pay_inr >= 15000
     )
 
-    # Must satisfy EITHER Condition A OR Condition B
+    # Must satisfy EITHER Condition A (well-known marquee company) OR Condition B (verified stipend >= 15k-20k/mo)
     return is_well_known or has_valid_stipend
 
 def score_job(job, profile):

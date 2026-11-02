@@ -121,5 +121,31 @@
       "url": "https://raw.githubusercontent.com/abbybravo/PM-Recruiting-Hub/main/README.md",
       "category": "Product / APM"
     }
+  ],
+  "internshala_sources": [
+    {
+      "category": "Product / APM",
+      "url": "https://internshala.com/internships/product-management-internship/"
+    },
+    {
+      "category": "BizOps & Strategy",
+      "url": "https://internshala.com/internships/operations-internship/"
+    },
+    {
+      "category": "BizOps & Strategy",
+      "url": "https://internshala.com/internships/strategy-internship/"
+    },
+    {
+      "category": "Finance & Analytics",
+      "url": "https://internshala.com/internships/business-analytics-internship/"
+    },
+    {
+      "category": "Design & UX",
+      "url": "https://internshala.com/internships/ui-ux-design-internship/"
+    },
+    {
+      "category": "Growth & Marketing",
+      "url": "https://internshala.com/internships/digital-marketing-internship/"
+    }
   ]
 }

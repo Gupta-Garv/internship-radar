@@ -153,8 +153,9 @@ def is_non_tech_internship(title, text="", url="", location="", company=""):
     lower_title = title.lower()
     full_text = f"{title} {company} {location} {text}".lower()
 
-    # 1. Must match intern pattern
-    if not INTERN_PATTERN.search(lower_title):
+    # 1. Must match intern pattern in title, or be on a dedicated internship platform (e.g. Internshala)
+    is_intern = bool(INTERN_PATTERN.search(lower_title) or '/internship/' in url.lower())
+    if not is_intern:
         return False
 
     # 2. Reject MBA, PhD, and Graduate-only degree restrictions
@@ -491,6 +492,64 @@ def fetch_github_markdown_table(source_info):
         pass
     return jobs
 
+def fetch_internshala(source_info):
+    url = source_info.get("url")
+    default_cat = source_info.get("category", "General Business")
+    jobs = []
+    
+    headers = {
+        "User-Agent": USER_AGENT,
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9"
+    }
+    
+    try:
+        r = requests.get(url, headers=headers, timeout=6)
+        if r.status_code == 200:
+            chunks = r.text.split('class="container-fluid individual_internship')[1:]
+            now = datetime.now()
+            ts = int(now.timestamp())
+            date_display = now.strftime("%b %d")
+            
+            for c in chunks:
+                title_m = re.search(r'<a[^>]*class="job-title-href"[^>]*>([^<]+)</a>', c)
+                comp_m = re.search(r'<p class="company-name">\s*([^<]+)\s*</p>', c)
+                loc_m = re.search(r'<div class="row-1-item locations">[\s\S]*?<span>([\s\S]*?)</span>', c)
+                stipend_m = re.search(r'<span class=[\'"]stipend[\'"]>([\s\S]*?)</span>', c)
+                link_m = re.search(r'<a[^>]*class="job-title-href"[^>]*href="([^"]+)"', c) or re.search(r'data-href=[\'"]([^\'"]+)[\'"]', c)
+                
+                if title_m and comp_m and link_m:
+                    raw_title = title_m.group(1).strip()
+                    company = comp_m.group(1).strip()
+                    job_url = "https://internshala.com" + link_m.group(1).strip()
+                    loc_raw = re.sub(r'<[^>]+>|\s+', ' ', loc_m.group(1)).strip() if loc_m else 'India'
+                    stipend = re.sub(r'\s+', ' ', stipend_m.group(1)).strip() if stipend_m else ''
+                    
+                    if "home" in loc_raw.lower():
+                        clean_loc = "Remote (India)"
+                    else:
+                        clean_loc = f"{loc_raw}, India"
+                        
+                    display_title = raw_title if "intern" in raw_title.lower() else f"{raw_title} Intern"
+                    
+                    if is_non_tech_internship(display_title, f"{display_title} {company} {stipend}", job_url, clean_loc, company):
+                        job_id = generate_job_id(company, display_title, clean_loc)
+                        jobs.append({
+                            "id": job_id,
+                            "company": company,
+                            "title": display_title,
+                            "location": clean_loc,
+                            "url": job_url,
+                            "source": "Internshala (Verified Stipend)",
+                            "timestamp": ts,
+                            "date_posted": f"⚡ {date_display}",
+                            "raw_department": default_cat,
+                            "salary_raw": stipend
+                        })
+    except Exception:
+        pass
+    return jobs
+
 def run_harvest(config):
     all_jobs = []
     
@@ -504,8 +563,10 @@ def run_harvest(config):
     linkedin_queries = config.get("linkedin_guest_queries", [])
     # 5. Curated GitHub
     github_sources = config.get("curated_github_sources", [])
+    # 6. Internshala Verified Sources (India)
+    internshala_sources = config.get("internshala_sources", [])
     
-    with concurrent.futures.ThreadPoolExecutor(max_workers=14) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=16) as executor:
         futures = []
         for b in gh_boards:
             futures.append(executor.submit(fetch_greenhouse_board, b))
@@ -517,6 +578,8 @@ def run_harvest(config):
             futures.append(executor.submit(fetch_linkedin_guest, l))
         for g in github_sources:
             futures.append(executor.submit(fetch_github_markdown_table, g))
+        for s in internshala_sources:
+            futures.append(executor.submit(fetch_internshala, s))
             
         for f in concurrent.futures.as_completed(futures):
             res = f.result()

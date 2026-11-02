@@ -2456,7 +2456,7 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
       const reg = (j.location_info && j.location_info.region) || '';
       if (reg.toLowerCase() === 'india') return true;
       const loc = (j.location || '').toLowerCase();
-      return /\b(india|bengaluru|bangalore|gurugram|gurgaon|hyderabad|mumbai|pune|delhi|noida|chennai|ahmedabad|kolkata)\b/i.test(loc);
+      return /\b(india|bengaluru|bangalore|gurugram|gurgaon|hyderabad|secunderabad|mumbai|thane|pune|delhi|noida|chennai|ahmedabad|kolkata|jaipur|kochi|indore|chandigarh)\b/i.test(loc) || loc.includes('remote (india)') || loc.includes('remote india');
     }
 
     const WELL_KNOWN_INDIA_COMPANIES = [
@@ -2505,7 +2505,7 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
       if (!allowedCategories.includes(j.category)) return false;
 
       const text = `${j.title} ${j.company} ${j.salary_raw || ''}`.toLowerCase();
-      if (/\b(business development associate|bda|telecaller|telecalling|telesales|cold call|calling|inside sales associate|lead generation executive|field sales|door to door|counter sales|retail sales associate|seo link builder|back office|data entry|typist|account executive intern|mechanical design|cad engineer|factory|school evaluation|preschool|broker|real estate agent)\b/i.test(text)) {
+      if (/\b(business development associate|bda|telecaller|telecalling|telesales|cold call|calling|inside sales associate|lead generation executive|lead management|client acquisition|customer acquisition|field sales|door to door|counter sales|retail sales associate|seo link builder|back office|data entry|typist|account executive intern|mechanical design|cad engineer|factory|school evaluation|preschool|broker|real estate agent|counselor|counsellor|tele counsellor|enrollment advisor|admissions counselor|academic counselor|customer service|customer support|client support|helpdesk|tele calling|sales & counseling|sales intern|sales executive|sales associate|business development \(sales\)|b2b sales|b2c sales|outbound|delegate acquisition)\b/i.test(text)) {
         return false;
       }
 
@@ -2515,6 +2515,12 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
 
       const isKnown = isWellKnownIndiaCompany(j.company);
       const payInr = (j.pay_info && j.pay_info.pay_monthly_inr) || ((j.pay_info && j.pay_info.pay_monthly_usd) ? j.pay_info.pay_monthly_usd * 84 : 0);
+      
+      // If stipend is disclosed, it must be >= 15k INR/month
+      if (j.pay_info && j.pay_info.is_disclosed && payInr < 15000) {
+        return false;
+      }
+
       const hasValidStipend = j.pay_info && j.pay_info.is_disclosed && !j.pay_info.is_unpaid && payInr >= 15000;
 
       return isKnown || hasValidStipend;
