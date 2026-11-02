@@ -86,7 +86,14 @@
     {"keywords": "Product Intern", "location": "Gurgaon"},
     {"keywords": "BizOps Strategy Intern", "location": "Bengaluru"},
     {"keywords": "Stipend 25000 intern", "location": "India"},
-    {"keywords": "Stipend 20000 intern", "location": "India"}
+    {"keywords": "Stipend 20000 intern", "location": "India"},
+    {"keywords": "BCG intern", "location": "India"},
+    {"keywords": "McKinsey intern", "location": "India"},
+    {"keywords": "Bain intern", "location": "India"},
+    {"keywords": "Razorpay intern", "location": "India"},
+    {"keywords": "Postman intern", "location": "India"},
+    {"keywords": "Product Analyst Intern", "location": "India"},
+    {"keywords": "Operations Intern", "location": "Bengaluru"}
   ],
   "curated_github_sources": [
     {

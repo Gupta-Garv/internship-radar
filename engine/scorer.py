@@ -1,17 +1,29 @@
 import re
 
 def categorize_role(title, dept=""):
-    t = title.lower() + " " + dept.lower()
+    t = (title + " " + dept).lower()
     
-    if any(k in t for k in ['product manager', 'product management', 'apm', 'product intern', 'product operations', 'product strategy']):
+    # 1. Product / APM track (Product Manager, APM, Product Ops, Product Analyst, Product Builder, etc.)
+    if re.search(r'\b(product|apm|associate product manager|product manager|product management|product ops|product operations|product analyst|product associate|product builder|product lead|product strategy|product fellow|product fellowship)\b', t):
+        # Exclude pure design/UX roles from APM track
+        if re.search(r'\b(product design|product designer|ui\b|ux\b|user experience|ui/ux)\b', t):
+            return "Design & UX"
         return "Product / APM"
-    if any(k in t for k in ['business operations', 'strategy', 'chief of staff', 'founder', 'business analyst', 'operations lead', 'program management', 'project management']):
-        return "BizOps & Strategy"
-    if any(k in t for k in ['marketing', 'growth', 'gtm', 'content', 'brand', 'seo', 'social media', 'communications']):
-        return "Growth & Marketing"
-    if any(k in t for k in ['design', 'ui', 'ux', 'product designer', 'experience designer']):
+
+    # 2. Design & UX track
+    if re.search(r'\b(design|designer|ui\b|ux\b|user experience|ui/ux|visual design|interaction design)\b', t):
         return "Design & UX"
-    if any(k in t for k in ['finance', 'investment', 'ventures', 'financial', 'audit']):
+
+    # 3. BizOps & Strategy track (Operations, Founder's Office, Chief of Staff, Strategy, Business Analyst)
+    if re.search(r'\b(bizops|business operations|operations|strategy|chief of staff|founder|founder\'s office|founders office|founder\'s associate|founders associate|business analyst|program manag|project manag|general management|management trainee)\b', t):
+        return "BizOps & Strategy"
+
+    # 4. Growth & Marketing track
+    if re.search(r'\b(marketing|growth|gtm|go-to-market|content|brand|seo\b|social media|performance marketing|digital marketing|communications|demand gen)\b', t):
+        return "Growth & Marketing"
+
+    # 5. Finance & Analytics track
+    if re.search(r'\b(finance|financial|investment|venture|analytics|bi analyst|data analyst|commercial)\b', t):
         return "Finance & Analytics"
         
     return "General Business"
@@ -434,7 +446,9 @@ WELL_KNOWN_INDIA_COMPANIES = {
     'darwinbox', 'leena ai', 'keka', 'clevertap', 'moengage', 'webengage',
     'tata digital', 'tata neu', 'tata', 'reliance', 'jio', 'airtel', 'info edge',
     'naukri', 'spyne', 'magna international', 'siemens', 'bosch', 'target',
-    'walmart', 'walmart global tech',
+    'walmart', 'walmart global tech', 'appsforbharat', 'galaxeye', 'care.fi',
+    'appx', 'toplyne', 'classplus', 'cuemath', 'loco', 'winzo', 'motorola',
+    'motorola solutions', 'amber', 'amberstudent',
     
     # Global Tech MNCs & Elite Advisory Firms with Major Hubs in India
     'google', 'microsoft', 'amazon', 'apple', 'meta', 'uber', 'adobe', 'salesforce',
@@ -448,8 +462,8 @@ WELL_KNOWN_INDIA_COMPANIES = {
 }
 
 def is_valid_india_opportunity(job, category, loc_eval, pay_eval):
-    # 1. Must match Garv's resume tracks (No General Business or stray categories)
-    if category not in ["Product / APM", "BizOps & Strategy", "Growth & Marketing", "Design & UX"]:
+    # 1. Must match Garv's resume tracks (Product / APM, BizOps & Strategy, Growth & Marketing, Design & UX, Finance & Analytics)
+    if category not in ["Product / APM", "BizOps & Strategy", "Growth & Marketing", "Design & UX", "Finance & Analytics"]:
         return False
 
     title = job.get("title", "")
