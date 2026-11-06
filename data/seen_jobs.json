@@ -14170,5 +14170,431 @@
     "company": "Aditya Birla Fashion & Retail Limited (ABFRL)",
     "title": "Human Resources (HR) Intern",
     "score": 82
+  },
+  "ba251cc576b153e93c3724762dd83507": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Stripe",
+    "title": "Controllership Intern",
+    "score": 48
+  },
+  "d4f3a3bfd1a1f2e64989d960402b746e": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "PRISM+",
+    "title": "Intern, Strategic Projects and Marketing",
+    "score": 93
+  },
+  "651d3e854702ca2f6e0708def36d060c": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Point72",
+    "title": "2027 MI Data Research Intern",
+    "score": 80
+  },
+  "cd4eee9092dccf5456f0c8abd8e77ca0": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Amazon",
+    "title": "2027 Program Manager Intern",
+    "score": 80
+  },
+  "b519acc7a2833aff65aeaccad34502e7": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Emirates",
+    "title": "Discover Emirates Group Internship Programme",
+    "score": 80
+  },
+  "35019b768177bd02a21bad86ea50bc31": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "BNESIM",
+    "title": "AI Data Analytics Intern",
+    "score": 84
+  },
+  "dbf69c3716d76436b4e6299098377c0a": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Greenstone",
+    "title": "Accounting Intern",
+    "score": 80
+  },
+  "3a4cc548eb441f20bcced7297cc0f49d": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Ematic Solutions",
+    "title": "Performance Marketing Intern",
+    "score": 80
+  },
+  "6995d41663a43e90cd4fb8af40c4ca2d": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "OCBC",
+    "title": "Internship: Global Markets, Business Management Unit/First Line of Defence Support &amp; Programs [Jan - Jun 2027]",
+    "score": 80
+  },
+  "597ca1ec2894a50f8374378ffec4cca3": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Temasek",
+    "title": "AI &amp; Automation Intern, Procurement (Jan - Jun 2027)",
+    "score": 80
+  },
+  "0c0ef05444fb337a11085fe2168163bc": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "IBM",
+    "title": "Product Manager Intern 2027",
+    "score": 69
+  },
+  "98978b7fe61561f6778b65af14f135d6": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "IBM",
+    "title": "Product Manager Intern 2027",
+    "score": 69
+  },
+  "fca4f17d3fdce4cf65a257dc1a5d4e1f": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Invesco",
+    "title": "Early Career Intern - Digital Product Management",
+    "score": 69
+  },
+  "58c6b178a4379d67685e1fb3c42cea9e": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Tinder",
+    "title": "Product Design Intern",
+    "score": 63
+  },
+  "64e3107e2956baef1de59b232cd1cb65": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Duke Energy Corporation",
+    "title": "UX Design Internship \u2013 Summer 2027",
+    "score": 63
+  },
+  "05c625d6c87adacd18f3260f16d95a46": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "GE HealthCare",
+    "title": "Financial Management Program Intern",
+    "score": 82
+  },
+  "f9c37127d781c4d8d7d04f323fc69c04": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Shure",
+    "title": "Design Research Intern",
+    "score": 63
+  },
+  "e0feb91c44ae4144db96dea0e8311b76": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Skydio",
+    "title": "UX Product Design Intern - Winter 2027",
+    "score": 63
+  },
+  "721044841e6d0a11a14004bf47210ef2": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Children's Hospital Colorado",
+    "title": "Graphic Design Intern",
+    "score": 63
+  },
+  "307ca6e3d9c5eda5186820010d4a8b24": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "David Yurman",
+    "title": "Design Operations Intern",
+    "score": 63
+  },
+  "db1587eaa7896eaa2e36dbcb61b14919": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Jacobs",
+    "title": "Architecture Intern - Summer 2027 (FED/DFW)",
+    "score": 63
+  },
+  "84bfbdb48301225b0bc2f500420f77a2": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Tinder",
+    "title": "User Experience Research Intern",
+    "score": 63
+  },
+  "9a13bc40ec6369b6b682d443888cc4b5": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Rutgers University Foundation",
+    "title": "Graphic Design Intern",
+    "score": 63
+  },
+  "aa887a4a8acaa866af2aae33f980f83a": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Match",
+    "title": "Product Design Intern",
+    "score": 63
+  },
+  "e5b81654768cfd1d1c6774f6651ac033": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Match",
+    "title": "User Experience Research Intern",
+    "score": 63
+  },
+  "e11f47334644b3c8489ab899916512d1": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Tinder",
+    "title": "Product Design Intern",
+    "score": 63
+  },
+  "3c84642809e27bb053e80df6c4229073": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Docusign",
+    "title": "Product Manager Intern",
+    "score": 69
+  },
+  "fbf58bf7e0db750d5ef7a3e3a9f59235": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Shure",
+    "title": "Global Product Management Data Intern",
+    "score": 69
+  },
+  "a3e1522f44c3c59095877e6b5c6eac88": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "IBM",
+    "title": "Product Manager Intern 2027",
+    "score": 69
+  },
+  "ea13540011ad0b0b70a27573e038362a": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "IBM",
+    "title": "Product Manager Intern 2027",
+    "score": 69
+  },
+  "12eaef3328b09af3528966cf885faf38": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "TikTok",
+    "title": "Data Science Intern (TikTok Product) - 2027 Summer",
+    "score": 84
+  },
+  "5bac6ecb827f4ce8e6d3f4009cb3f33d": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "DwyerOmega",
+    "title": "Product Content Automation Intern",
+    "score": 69
+  },
+  "73fc3b32ce316daafb38beb561d34b97": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "SPX Technologies",
+    "title": "Product Management Intern Job Details / our team",
+    "score": 69
+  },
+  "69e9971ad0acce77762c228fa6953344": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Genmab",
+    "title": "Patient and Consumer Experience Marketing, Head & Neck Intern",
+    "score": 65
+  },
+  "9d22e44b3f4830dcd103446369ec874f": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Def-Logix, Inc.",
+    "title": "Marketing & Sales Intern (Part-Time)",
+    "score": 65
+  },
+  "2fee246376c49705a280b04f1726279c": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Backlinkgen",
+    "title": "Online Internet : Marketing Intern",
+    "score": 65
+  },
+  "44bc074906e424b1d21b2b33a95d5be8": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Boehringer Ingelheim",
+    "title": "Sales & Marketing Intern - ILD & Lung",
+    "score": 65
+  },
+  "6b41a214a7f5f7c6cf780e29ba842fa4": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Parkland Corporation",
+    "title": "Intern - Retail Merchandising \u2013 January 2027 (4, 8, or 12-Month Term)",
+    "score": 65
+  },
+  "3ddbbb165e3dbd5158ce3d53f7965004": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Bombardier",
+    "title": "Intern, Aftermarket Marketing (Winter 2027)",
+    "score": 65
+  },
+  "91e252d247da038ed4a7c9214919b7bb": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Shure",
+    "title": "Global Marketing Intern \u2013 ShureCloud & Customer Value Streams",
+    "score": 65
+  },
+  "b32c01a18cfcd4914a393c9c0dccee0d": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Def-Logix, Inc.",
+    "title": "Marketing & Sales Intern",
+    "score": 65
+  },
+  "78f1c25defa0a87c1dbfc9776c53f82b": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "NBCUniversal",
+    "title": "Hayu Marketing Intern",
+    "score": 65
+  },
+  "e48dfe973164d425f787ca04bda503e0": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Shure",
+    "title": "Global Media Relations Intern",
+    "score": 65
+  },
+  "ffddc15e06e2d3016c82670659b1c7db": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Parkland Corporation",
+    "title": "Intern - Retail Merchandising \u2013 January 2027 (4, 8, or 12-Month Term)",
+    "score": 65
+  },
+  "e2b9e492d3e8b26abb2caa240dba7557": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "ITC Holdings Corp.",
+    "title": "Intern-Community Relations/Marketing & Communications",
+    "score": 65
+  },
+  "edd29758d3ca71a39cd1e7b7b940566b": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "EQ Bank",
+    "title": "Intern - Acquisition Strategy, Winter 2027",
+    "score": 66
+  },
+  "1f4992b3db98bef1421cbc99bd93e3df": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "American Rivers",
+    "title": "Digital Communications Intern (Spring 2027)\u00a0",
+    "score": 65
+  },
+  "b954b8d9fb1195c53becd367217e3af4": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "SouthState Bank",
+    "title": "Summer 2027 Marketing and Communications Banking Intern (Remote)",
+    "score": 95
+  },
+  "0a04e082f1009410d43f80cd2aced2a2": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Constellation",
+    "title": "2027 Summer Digital Marketing Intern (Baltimore, MD)",
+    "score": 65
+  },
+  "a51a48b76ab9f774505a068980855135": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Definity",
+    "title": "Digital Marketing - Winter 2027 Co-op/Intern",
+    "score": 65
+  },
+  "915fbfc5c084e8ccd7ef6d5ef493178f": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Method Communications",
+    "title": "Graduate Associate, Public Relations (Paid Internship)",
+    "score": 65
+  },
+  "065ef141bc76cdf4d8c75b5dc21e89e8": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Method Communications",
+    "title": "Graduate Associate, Public Relations (Paid Internship)",
+    "score": 65
+  },
+  "50d31205b5bf772902d8800043f6a7ad": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Tinder",
+    "title": "Product Marketing Intern",
+    "score": 69
+  },
+  "68cc3c6c3013cac8d00d7f57485df667": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Tinder",
+    "title": "Social Marketing Intern",
+    "score": 65
+  },
+  "da97d5d2e9c9ed28861c86198b9c01cc": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Modern Currency PR",
+    "title": "Winter/Spring PR Internship (Hospitality + Tourism) / January \u2013 May 2027",
+    "score": 65
+  },
+  "ecb1996cb22c6a5b6a9cf9ee910e8a69": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Match",
+    "title": "Product Marketing Intern",
+    "score": 69
+  },
+  "d88a79f647b05213bbc76cbdae143240": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Match",
+    "title": "Social Marketing Intern",
+    "score": 65
+  },
+  "4cebe18c204820bb8c64a74337cbeffc": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Electro",
+    "title": "NIL Athlete Partnerships & Brand Marketing Intern",
+    "score": 65
+  },
+  "ad79d8719abd5c9560ab945f8904c781": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "American Friends Service Committee",
+    "title": "Digital Content Intern",
+    "score": 65
+  },
+  "ec6508ce70ce2d1352841d0a78d6d155": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "ai.moms",
+    "title": "Social Media Intern",
+    "score": 65
+  },
+  "cd9a84c9556b5891730d7a0414e7f9fa": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "New York Life",
+    "title": "2027 Group Benefit Solutions (GBS) SS&M - Marketing Summer Intern - TN",
+    "score": 65
+  },
+  "9f5b91dd1a49b99d1bdcbbbd8a171daf": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Data Robotics",
+    "title": "Market Research Intern (Remote)",
+    "score": 95
+  },
+  "962e9237ab2bb903a1692afc32d1e284": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Alzheimer's Association - Orange County Chapter",
+    "title": "Marketing and Communications Paid Internship",
+    "score": 65
+  },
+  "45f81381e536b43c2aa78ec4f12bc13a": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Ericsson",
+    "title": "Marketing & Events Intern",
+    "score": 65
+  },
+  "0c7b79cb05f3572f7e1d9ab984577ac5": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Ericsson",
+    "title": "Marketing and Communications Intern",
+    "score": 65
+  },
+  "3b88e670d1d529b29e56d71ff845d897": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Barnes & Thornburg LLP",
+    "title": "2027 BT RISE Internship - Communications and Marketing Intern",
+    "score": 80
+  },
+  "cecb20baf90d8919d96db2c15634ee28": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Fund for the Public Interest",
+    "title": "Marketing Internship, Environment Illinois",
+    "score": 65
+  },
+  "934b0843e0421b947ea9ee8487222e59": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Austin PBS",
+    "title": "Spring 2027 Internship / Community Engagement",
+    "score": 65
+  },
+  "41c232a37d7134fd104ccac45ab0e2ef": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Austin PBS",
+    "title": "Spring 2027 Internship/ Texas PBS Marketing & Media",
+    "score": 65
+  },
+  "e538374d80b116f249ab93ee1053dab2": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "Careers360",
+    "title": "Marketing Intern",
+    "score": 91
+  },
+  "881f58208876b15e6ccb0035c17a4aee": {
+    "first_seen": "2026-11-06T20:40:49.906631",
+    "company": "HiWi Forex Services Limited",
+    "title": "SEO, AEO & GEO ( Full Time) Intern",
+    "score": 91
   }
 }
