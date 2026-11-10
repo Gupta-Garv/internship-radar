@@ -16132,5 +16132,437 @@
     "company": "Athena School Of Management",
     "title": "Human Resources (HR) Intern",
     "score": 82
+  },
+  "9ab6732c6c6dd9c973302c3bb599f7d2": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Celonis",
+    "title": "Summernaut Program - AI & Management Consulting (Value Engineering) Summer Intern",
+    "score": 48
+  },
+  "9f14619ba4d300f28fe518e28cbe9d26": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "DP World",
+    "title": "Intern, Resilience",
+    "score": 80
+  },
+  "72372af81989118ca07cf7f6ce6cfee6": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Boucheron",
+    "title": "BOUCHERON - Commercial Assistant Franchise internship",
+    "score": 84
+  },
+  "69e51b23a724320108721643d2f0d8cf": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Singlife",
+    "title": "Intern, Savings",
+    "score": 80
+  },
+  "8624a5ee9a770d5b9b7fbf72e1d34389": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "AIA Singapore",
+    "title": "AIA Corporate Internship 2027",
+    "score": 80
+  },
+  "c9a88685b75da605a3dacf64b354fbd3": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "GE HealthCare",
+    "title": "Growth Strategy Intern, AKA",
+    "score": 95
+  },
+  "4598cbe61f95c839d258eca78a3c4040": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "NEU Battery Materials",
+    "title": "Founders' Office - Strategy Intern",
+    "score": 95
+  },
+  "340aeb965e0410096369b4bac00f19af": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "IMDA",
+    "title": "[IMDA Internship Programme 2027] Building an AI-Native Knowledge Platform: From Current-State Implementation to Future-State Architecture (January - June)",
+    "score": 80
+  },
+  "a531d6785521cd1f52629e363d916a26": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "PanelPlace International Pte Ltd",
+    "title": "BUSINESS OPERATIONS INTERN",
+    "score": 95
+  },
+  "c484213a36c35a394c49ce8d4cd3df3d": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "TikTok",
+    "title": "Strategy Operations Project Intern (TikTok LIVE - Platform Trust and Ecosystem - Agency Governance) - 2027 Start",
+    "score": 95
+  },
+  "4d71e4220797d018bc962f5955893b12": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "PhillipCapital",
+    "title": "Intern, Operations",
+    "score": 95
+  },
+  "3f00c1c87f6f4f5dbc5bd4b85c2df399": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "figment",
+    "title": "Operations Intern",
+    "score": 95
+  },
+  "e13fd44d5c536da0447b81edaf5d9461": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Singlife",
+    "title": "Intern, Distribution Operations",
+    "score": 95
+  },
+  "2057d4660fa63624550051b21d0d4bf6": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "tesa",
+    "title": "SEA Supply Chain Intern (m/f/d)",
+    "score": 80
+  },
+  "4cbacfc7c1e2edaa25f94d0a447b1799": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Johnson Controls",
+    "title": "Intern, Project Development Analyst",
+    "score": 80
+  },
+  "3daa0751a4555a05e3eda6a050993b80": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Johnson Controls",
+    "title": "Intern, Design &amp; Estimation Engineering",
+    "score": 90
+  },
+  "c1dea96817215955fd3fe1952a5456a1": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "ACCSS Digital Pte Ltd",
+    "title": "Creative Designer I Intern",
+    "score": 90
+  },
+  "68d2f031b5e62d989ad9d7bcc7c67225": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "GuestReady",
+    "title": "Operations Intern",
+    "score": 95
+  },
+  "d3f929fa1661b1722fad762f9d2f10eb": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "GUEST READY",
+    "title": "Operations Intern",
+    "score": 95
+  },
+  "d3b9e8bcc47839a334adcec66e2ada12": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Everllence",
+    "title": "Purchasing \u2013 Internship (Location - Dubai)",
+    "score": 80
+  },
+  "79a4dc52e54c6ac05520c91032479b03": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Sheraton Grand Hotel, Dubai",
+    "title": "Human Resources Intern",
+    "score": 80
+  },
+  "c1ec4f0914fc512b947d50ba5ba413cb": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "FALCON GAME STUDIO",
+    "title": "[F02] User Acquisition Intern  (App | 6\u20138M + Bonus)\n1\n30/11/2026",
+    "score": 68
+  },
+  "1fe8afa9a1df9c36d938bf6928791fd2": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Databricks",
+    "title": "Product Management Intern (Summer 2027)",
+    "score": 59
+  },
+  "558f7d4423e5a96bc5597c4cee3b8271": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Databricks",
+    "title": "Product Management Intern (Summer 2027)",
+    "score": 59
+  },
+  "4019a0f7a9def07eee8e627c1b312545": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "UL Solutions",
+    "title": "2027 Summer Intern: Product Management Intern",
+    "score": 69
+  },
+  "453959408c5666c197e44170ce8a6c95": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Zurn Elkay Water Solutions",
+    "title": "Product Management Intern - Summer 2027",
+    "score": 69
+  },
+  "429bf80e9e46d5b7d10eeb65daf268c0": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Bending Spoons",
+    "title": "Product manager, summer intern",
+    "score": 74
+  },
+  "c4f4d4b552ab04a1522c37c5c2510781": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Databricks",
+    "title": "Product Design Intern (2027 Start)",
+    "score": 53
+  },
+  "3e61464cab6d66986982be04ac5952e0": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Databricks",
+    "title": "Product Design Intern (2027 Start)",
+    "score": 53
+  },
+  "2bc3d789dcabc7b865d1d4e4bfd268ab": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Aether Field",
+    "title": "Digital Product Designer Intern",
+    "score": 77
+  },
+  "183f7784e0c640149fd04590a971e6b3": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "IBM",
+    "title": "Content Designer (Artificial Intelligence) Intern 2027",
+    "score": 63
+  },
+  "b5e9e6b112db57eff48f3815cb9c8053": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "DMS International",
+    "title": "UI/UX Design Intern",
+    "score": 63
+  },
+  "025acd5816a622b2e1010ab4d72fb16f": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "GAI Consultants, Inc.",
+    "title": "Landscape Designer Intern",
+    "score": 63
+  },
+  "08e0e6774405463be55aeb4a87171d08": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "GAI Consultants, Inc.",
+    "title": "Landscape Designer Intern",
+    "score": 63
+  },
+  "96a5df87fb45261af6eac19017aab86c": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Amplify",
+    "title": "Summer 2027: Product Design Intern",
+    "score": 63
+  },
+  "da9dc9a8e7d06a7da34f02eeb7ca9abf": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "UL Solutions",
+    "title": "2027 Summer Intern: Product Management Intern",
+    "score": 69
+  },
+  "edd2bb6e4c9dfe5c3fe8fd9d96df0be1": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Amplify",
+    "title": "Summer 2027: Product Management Intern",
+    "score": 69
+  },
+  "763e3551b9a3e0682c68ae9f85baef1d": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Alliance for American Leadership (A4AL)",
+    "title": "Social Media Intern (Volunteer)",
+    "score": 65
+  },
+  "84a6e3bf8e8bf13d38d5f398744069ab": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Electro",
+    "title": "NIL Athlete Relations & Social Media Intern",
+    "score": 65
+  },
+  "55e18dd0eb30ff2ba43558293a8351fb": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Uproar by Moburst",
+    "title": "Public Relations Intern",
+    "score": 65
+  },
+  "1dd5aa780c0751bb787713a7d5d70e17": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Genmab",
+    "title": "Field & Marketing Operations Intern",
+    "score": 66
+  },
+  "a3c851bb2c9e2d296e2656c947114aee": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Genmab",
+    "title": "Marketing Intern, HCP Education & Engagement",
+    "score": 65
+  },
+  "4ce81c0639f505b181ed43d3c84218f2": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "David Yurman",
+    "title": "Social Media Intern",
+    "score": 65
+  },
+  "658314d9f4a4ab1e6628d3f7a9f9f8e5": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Genmab",
+    "title": "Omnichannel Strategy Intern",
+    "score": 66
+  },
+  "5c847cbc6a73e8140710e090a45ddc8a": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Zebra Technologies",
+    "title": "2027 Summer Internship (US) - Marketing Insights",
+    "score": 65
+  },
+  "c036d8865f64640cdcf4d13e21e7090a": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Zebra Technologies",
+    "title": "2027 Summer Internship (US) - Channel Marketing",
+    "score": 65
+  },
+  "e436637458dee9eaf4839c8a66c0fc24": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Societe Generale",
+    "title": "Internship - Market Analysis and Certification",
+    "score": 65
+  },
+  "f69f002f4e55dd4549565a83529b183c": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "La-Z-Boy Incorporated",
+    "title": "Communications Intern",
+    "score": 65
+  },
+  "e1c6af6c040d47cc4a90a4bf4e36dd19": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "United States Golf Association (USGA)",
+    "title": "Championship Communications Intern",
+    "score": 65
+  },
+  "6e33352da2a51c690afc6c03769569a7": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Amplify",
+    "title": "Summer 2027: Marketing Intern",
+    "score": 65
+  },
+  "4be249dda02a697c648f1f41eb84fb2a": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "United States Golf Association (USGA)",
+    "title": "Social Media and Content Intern",
+    "score": 65
+  },
+  "6d0254f152ac057d496e7c0dfcb6ab5f": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "GEICO",
+    "title": "Marketing Intern",
+    "score": 65
+  },
+  "c0a4516c940cf578c8a7fc75cbe299cf": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Pivara Trebjesa",
+    "title": "Marketing Intern Job Details / Molson Coors",
+    "score": 65
+  },
+  "e37b51e0f20a9db7c0a3da28a553501a": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Inseparable",
+    "title": "Communications Intern",
+    "score": 65
+  },
+  "d162bdbde6e4bfa721bd22655f539e1a": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Opportunity Finance Network",
+    "title": "COMMUNICATIONS AND MARKETING INTERN",
+    "score": 65
+  },
+  "8c106f2a8057f78853e62c818f7ac031": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "KeyBank",
+    "title": "2027 Summer Real Estate Capital Internship - New York City CMG",
+    "score": 65
+  },
+  "3c31c5d04ef359812a322eb5769f64b8": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Veeam Software",
+    "title": "Field Marketing Intern - Summer 2027",
+    "score": 65
+  },
+  "11c0f52c04fbb6d16b7c40308898e944": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Beli",
+    "title": "Growth Intern - School Year",
+    "score": 65
+  },
+  "75fdfd15d12cb8291ef22a552703d983": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Kroolo",
+    "title": "Growth Marketing GTM Intern (based in San Francisco)",
+    "score": 65
+  },
+  "52d3dd06d763632883fe3068e9b70e75": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "TrustWILL",
+    "title": "Market & Competitive Research Intern (1-Month Project, Remote)",
+    "score": 95
+  },
+  "bdcbfc3f3da744ec142f87bceca2cb37": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Cleveland Clinic",
+    "title": "Digital Marketing Intern",
+    "score": 65
+  },
+  "5ed0d540986d61353c0c1fc58edac2a7": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "ONE BCG - ONE Business Consulting Group",
+    "title": "financial analyst intern.",
+    "score": 82
+  },
+  "beb1fe43557aa958a347f6e70c0481c1": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Accredian",
+    "title": "Content Writing Intern",
+    "score": 96
+  },
+  "9b75b03994c7ce54bcd0253f4fc22077": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Flipspaces",
+    "title": "Business Excellence Intern",
+    "score": 93
+  },
+  "325cef3a0911041e63eb540842e3d30e": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Suvihim Innovations Private Limited",
+    "title": "Business Strategy Intern",
+    "score": 93
+  },
+  "6dfb1be76705c20c5b30bc0259a2ff32": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Piinaacle International",
+    "title": "Content & E-Commerce Management Intern",
+    "score": 88
+  },
+  "8efbb98d22d86b9edeab35efa53b846b": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "DMI Finance Private Limited",
+    "title": "Product Design Intern",
+    "score": 88
+  },
+  "c02ea42ec878c3d6f397f2ac661415f7": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Dynamic Agri & Foodbiz Consultants Private Limited",
+    "title": "Business Consultant Intern",
+    "score": 93
+  },
+  "984d2764636edb37d149480d243d24ae": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Renan Partners",
+    "title": "Data Operations Associate Intern",
+    "score": 93
+  },
+  "98b0bcb3189d9b0601a6d27c431f8511": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Clarynt Technologies",
+    "title": "Associate Consultant Intern",
+    "score": 93
+  },
+  "249b390a9bc5e8a94dc52c4942666ec7": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "Intuitor Softtech Services Private Limited",
+    "title": "L1 Support Intern",
+    "score": 93
+  },
+  "c99fab37e13c32cab4f3190b69d25afb": {
+    "first_seen": "2026-11-10T17:25:01.232631",
+    "company": "AEC TRADEFAIRS",
+    "title": "Marketing Intern",
+    "score": 91
   }
 }
