@@ -17152,5 +17152,425 @@
     "company": "GM GROUP",
     "title": "Business Development (Sales) Intern",
     "score": 82
+  },
+  "4efeaabfe962b4a41b5ec704ef9229b1": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Celonis",
+    "title": "Field Marketing Intern",
+    "score": 57
+  },
+  "55bf8ca4061d5a49066456e551acb5cf": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Airbnb",
+    "title": "Advanced Analytics Intern",
+    "score": 61
+  },
+  "27785488af389d54595dad1fa3166e39": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Airbnb",
+    "title": "Sales Development Intern, Services, France",
+    "score": 56
+  },
+  "ab1c7ef84df8e018699562a311751d40": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Airbnb",
+    "title": "Sales Development Intern, Services, Italy",
+    "score": 70
+  },
+  "3287414d8f6d8344e99206c3b9a3212f": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Airbnb",
+    "title": "Sales Development Intern, Services, Spain",
+    "score": 76
+  },
+  "0e1c1d9b47fcbe2889cce0f65ef43230": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "OCBC",
+    "title": "Internship: Global Markets, Equities \u2013 Digital Platforms [Jan 2027 to Jun 2027]",
+    "score": 80
+  },
+  "e55c4d64ad52f565c4ad1599d438b89d": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "DHL Supply Chain",
+    "title": "Intern - Global Sector Development",
+    "score": 80
+  },
+  "9aca1454f085472d100619ce3c6d0e81": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "PwC Singapore",
+    "title": "Global Technology Solutions - Business Solutions (ServiceNow) Off-Cycle Internship (Jan - Jun 27)",
+    "score": 80
+  },
+  "f1dbb75a55d4e53db2da238fd4152d98": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Ingram Micro",
+    "title": "Marketing Intern",
+    "score": 93
+  },
+  "9e1c34642438aad36273e470c9137944": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Imprint Studio",
+    "title": "Sales Intern",
+    "score": 80
+  },
+  "e122eeb97f68317a788df7677813f83f": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Coty",
+    "title": "Market Planning Intern",
+    "score": 80
+  },
+  "de3c7d101e4f48bc7362e6b525319767": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Carousell Group",
+    "title": "Operations Intern",
+    "score": 95
+  },
+  "94f0076e6290e9e91711538322583617": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Syfe",
+    "title": "Operations Intern (Dec 2026 Start) - Singapore",
+    "score": 95
+  },
+  "e51bf50f6997d2b8386200981110c60b": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "BW Offshore",
+    "title": "Intern, Enterprise Business Process Management",
+    "score": 80
+  },
+  "495d3bf128003178bc17425249b7baef": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Keppel (Infrastructure Division)",
+    "title": "[Keppel Internship Programme 2027] Intern (Jan - May 2027)",
+    "score": 80
+  },
+  "165ca3fd52e0dbcda90c2999e4758f19": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "UL Solutions",
+    "title": "2027 Summer Intern: Product Management Intern",
+    "score": 69
+  },
+  "bda892dda57e1ce0512302c09d21701c": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "aimexy",
+    "title": "Performance Marketing Intern",
+    "score": 80
+  },
+  "7db8e4ccf7a02891bb64b42b8c289e89": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Intrepid Asia",
+    "title": "Performance Marketing Intern",
+    "score": 80
+  },
+  "3a79955ae8cee2c03df699f4afc2f997": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "aimexy",
+    "title": "Performance Marketing Intern",
+    "score": 80
+  },
+  "90bfd93eeda9c8b41ef0af5bb002f7d7": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Vontier",
+    "title": "Intern - Product Owner (Summer 2027)",
+    "score": 69
+  },
+  "72bc7f2e7c1f3acc906a9d244d2b380b": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Vontier",
+    "title": "Intern - Product Strategy (Summer 2027)",
+    "score": 69
+  },
+  "c378d6c4ad4f5f2f9aecb2bac8ddecd0": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "TikTok",
+    "title": "Methodology Project Intern (TikTok Shop - US Operation) - 2026 Start (BS/MS)",
+    "score": 69
+  },
+  "159ecfef880d5b4720cb9f2634e71bf7": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Great American Insurance Group",
+    "title": "Technical Product Management Intern - Summer 2027",
+    "score": 69
+  },
+  "8d8992efcc5ab43ade99b7255b97aacc": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "FNBO",
+    "title": "Intern, Banking Product",
+    "score": 69
+  },
+  "8d96b9fdb20aed2a170d37bf53e86133": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Fusion100 LLC",
+    "title": "Campus Relations Intern",
+    "score": 65
+  },
+  "b2225753470be28665b73b189f027a04": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "State Farm",
+    "title": "Summer 2027 Intern - Marketing - Direct Market Planning & Execution",
+    "score": 65
+  },
+  "fec656825b7583ee7d5d3571bfd6a159": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "MedPro Group",
+    "title": "Intern - Marketing - Communications",
+    "score": 65
+  },
+  "178bea8f8bddab6077c98df48bc3d682": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Siebert Financial",
+    "title": "Sports Marketing Intern",
+    "score": 65
+  },
+  "3d612d3d6dae8d5ed2eb8cb636570635": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Ingredion Incorporated",
+    "title": "Marketing Communications Intern",
+    "score": 65
+  },
+  "77540b3bed14e9b42ff865e20ec98c8c": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "McGough",
+    "title": "Internship/Co-op, Marketing",
+    "score": 65
+  },
+  "cb30fc958258bad3c0e9dea7ea72756c": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "BDO Canada",
+    "title": "Co-op/Intern or New Grad, Digital Marketing - January 2027",
+    "score": 65
+  },
+  "1941aa546ff9a5270ee0b8b49d4d6b50": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "VOX ATL",
+    "title": "Social Media & Communications Near-Peer Intern",
+    "score": 65
+  },
+  "1e4cd5e61f081e0cc75d0bbdf24b0ee8": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "VOX ATL",
+    "title": "Social Media & Communications Teen Intern",
+    "score": 65
+  },
+  "8f63436aad6b28f34ff14604ce0ec6b5": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Walker Sands",
+    "title": "Public Relations Intern",
+    "score": 65
+  },
+  "04385e633f6e22b850ba33a5401da015": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Walker Sands",
+    "title": "Social Media Intern",
+    "score": 65
+  },
+  "4155c0ade3f708e3da33485383e75c00": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Walker Sands",
+    "title": "Public Relations Intern",
+    "score": 65
+  },
+  "17f693efbdcdbc0d494a799b798d2a5d": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "CP Skin Health Group",
+    "title": "Global Marketing Intern",
+    "score": 65
+  },
+  "892c3ebb4252c7637a024b51e0137d86": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Performance Software Corporation",
+    "title": "Marketing Specialist Internship",
+    "score": 65
+  },
+  "996c4ad056bb952399fcbd4942b6dbb6": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "United Way of the Midlands",
+    "title": "Marketing Intern",
+    "score": 65
+  },
+  "feff222a35085130f54b8e15f402fe3f": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Canyon Entertainment Group",
+    "title": "Social Media Internship",
+    "score": 65
+  },
+  "bafa837d18abec0d73d3dff983ec587a": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Bridge Nine Records",
+    "title": "Social Media & Content Intern",
+    "score": 65
+  },
+  "1abd7e0b2bf56555a0e49d96fa51e585": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "UL Solutions",
+    "title": "2027 Summer Intern: Marketing Intern",
+    "score": 65
+  },
+  "23e3cad2e1407e7310d86c8cd236049b": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "JPS Composite Materials",
+    "title": "Marketing Intern",
+    "score": 65
+  },
+  "9b068e96a22cd1abbf2bf297409e66dd": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Electro",
+    "title": "College Athlete Relations Intern",
+    "score": 65
+  },
+  "5c2ea9ed2ea439e118e154c9cb660953": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Canon Financial Services, Inc.",
+    "title": "Public Relations and Corporate Social Responsibility, Co-Op",
+    "score": 65
+  },
+  "198fc8f7bc5dd780371b3b7660375be6": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "exacare ai",
+    "title": "Growth and Marketing Intern (Summer 2027)",
+    "score": 65
+  },
+  "a01ad8e95cba01dea43833dcdf92074d": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Hype Events",
+    "title": "Marketing Intern",
+    "score": 65
+  },
+  "893ba3f234b6268ea0b795a274034906": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Zebra Technologies",
+    "title": "2027 Summer Internship (US) - Marketing Technology",
+    "score": 65
+  },
+  "84c6efe08bb5bd658d9c4df94104dd11": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "TikTok",
+    "title": "Marketing Program Management Project Intern (TikTok Shop- Operations) - 2026 Start (BS/MS)",
+    "score": 66
+  },
+  "86ee417e9af95d83bc02beafadd615a7": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "TikTok",
+    "title": "Category Management Project Intern (TikTok Shop - US Operation) - 2026 Start (BS/MS)",
+    "score": 65
+  },
+  "d74d4b7ae7d3aa3077805e402b369d6c": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "TikTok",
+    "title": "Campaign Project Intern (TikTok Shop - US Operation) - 2026 Start (BS/MS)",
+    "score": 65
+  },
+  "8f995d369b424a3fed7cc8e6c16d6b92": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "dataing",
+    "title": "TIk Tok Intern",
+    "score": 63
+  },
+  "602d1ca8ec573d9903defdf95ce27c15": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Zillow",
+    "title": "Product Design Intern",
+    "score": 63
+  },
+  "05e7e79edf46d0205baabea5c47c32b0": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "The Revels Group",
+    "title": "The Revels Group \u201cImpact Player\u201d Music Internship Program: Spring 2027- Apply now!",
+    "score": 63
+  },
+  "c0ecb44af7be95e9dca788266ea30b43": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Fossil Group, Inc.",
+    "title": "Graphic Design Intern",
+    "score": 63
+  },
+  "4cecab0fca8a21a4a379621af9495275": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "TikTok",
+    "title": "Product Design Intern (Monetization Ads) - 2027 Summer",
+    "score": 77
+  },
+  "c3716f60235d64b5913d26b9841758b7": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Consumers Energy",
+    "title": "Intern/Co-Op-UX Designer",
+    "score": 63
+  },
+  "0dd28789d6864a3a675f15cb76eaa176": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Ramaastra Aerospace And Defence",
+    "title": "Founders Office Intern",
+    "score": 93
+  },
+  "3271c0d259e49a31ee430ca8ded44cbe": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Gharpayy",
+    "title": "Property Manager Intern",
+    "score": 93
+  },
+  "8359d4e48ffdb192b5b588338b27c90e": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Gharpayy",
+    "title": "Tour Conversion Manager Intern",
+    "score": 93
+  },
+  "5f73f8cdd496f48394d9ae071ba7a9b3": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Gharpayy",
+    "title": "Growth Operator - New Zones Intern",
+    "score": 93
+  },
+  "0249a8faf87de6291fa7fc0fa9a0ad0e": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Times Internet Limited",
+    "title": "Program Management Intern",
+    "score": 93
+  },
+  "4aef322cfe8eca8f55716f0afda7b694": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Scaler",
+    "title": "Program And Operations Intern",
+    "score": 93
+  },
+  "df6651a3a2a86128883f3df90ba12202": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Foodstories Private Limited",
+    "title": "Graphic Design Intern",
+    "score": 88
+  },
+  "644979d68fcc538dc47180361b435559": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "EDU SHIKSHAVERTEX PRIVATE LIMITED",
+    "title": "Digital Marketing Intern",
+    "score": 91
+  },
+  "013fa0fab3c7b39a3eed42e4f496efde": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "EDU SHIKSHAVERTEX PRIVATE LIMITED",
+    "title": "Influencer Marketing Intern",
+    "score": 91
+  },
+  "e8156e7becff7925ded94652ab1c3c21": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "EDU SHIKSHAVERTEX PRIVATE LIMITED",
+    "title": "Email Marketing Intern",
+    "score": 91
+  },
+  "f30bc1dca5b68ddd4f7cb4455b5022bf": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "Doctors Foodstore",
+    "title": "Influencer Outreach Associate Intern",
+    "score": 91
+  },
+  "fc73a752e26c8afdf69378caa2bbf373": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "EDU SHIKSHAVERTEX PRIVATE LIMITED",
+    "title": "Lead Generation Intern",
+    "score": 91
+  },
+  "974130157bc4cb58c634b0ca6f05b762": {
+    "first_seen": "2026-11-11T21:42:13.721673",
+    "company": "EDU SHIKSHAVERTEX PRIVATE LIMITED",
+    "title": "Community Management Intern",
+    "score": 91
   }
 }
