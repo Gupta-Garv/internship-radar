@@ -1,7 +1,282 @@
 window.RADAR_HACKATHONS_DATA = [
   {
+    "id": "xhack_xr_ab1db73e8529",
+    "title": "4 Web3 hackathons with cash prizes open for builders",
+    "platform": "X (Twitter) Live",
+    "organizer": "@Promise1web3",
+    "url": "https://hackathons.solana.com/hackathons/perps-and-prediction-markets",
+    "x_post_url": "https://x.com/Promise1web3/status/2122924910586605665",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 10000,
+    "prize_pool": "$10,000",
+    "prize_badge": "$10k+ in prizes | Open to India/",
+    "prize_type": "ai_subs",
+    "non_cash_perks": [
+      "Check Solana perps/prediction markets hackathon by Dec 5",
+      "Participate in CMC API hackathon for $10k prizes",
+      "Explore Meta Earth harbor track"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Varies by hackathon",
+    "brief": "Four active web3 hackathons available: 1) Solana perps and prediction markets with $100k main track + $1k bounties (deadline Dec 5), 2) CMC API hackathon with $10k prizes + free API plan (Nov 18 to Dec 9), 3) Meta Earth harbor for apps/games/tools, 4) Additional Solana hackathon links.",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global builders",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "Four active web3 hackathons available: 1) Solana perps and prediction markets with $100k main track + $1k bounties (deadline Dec 5), 2) CMC API hackathon with $10k prizes + free API plan (Nov 18 to Dec 9), 3) Meta Earth harbor for apps/games/tools, 4) Additional Solana hackathon links.",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: 4 Web3 hackathons with cash prizes open for builders. Context: Four active web3 hackathons available: 1) Solana perps and prediction markets with $100k main track + $1k bounties (deadline Dec 5), 2) CMC API hackathon with $10k prizes + free API plan (Nov 18 to Dec 9), 3) Meta Earth harbor for apps/games/tools, 4) Additional Solana hackathon links."
+    }
+  },
+  {
+    "id": "xhack_xr_88a1484a6351",
+    "title": "FMSG AI agent hackathon with $5,003 cash prize",
+    "platform": "X (Twitter) Live",
+    "organizer": "@fmsgai",
+    "url": "https://fmsg.ai/hackathon#register",
+    "x_post_url": "https://x.com/fmsgai/status/2122920990007316788",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 5003,
+    "prize_pool": "$5,003",
+    "prize_badge": "$5,003 cash prize | AI agent com",
+    "prize_type": "cash",
+    "non_cash_perks": [
+      "Register at fmsg.ai/hackathon",
+      "Compete to solve the AI agent puzzle for $5,003 prize",
+      "Try if you have tokens to participate"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "28 Nov deadline",
+    "brief": "AI agent competition hackathon where participants compete to solve a puzzle. First to solve wins $5,003 cash prize. Open to builders with tokens to try.",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "AI agent competition hackathon where participants compete to solve a puzzle. First to solve wins $5,003 cash prize. Open to builders with tokens to try.",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: FMSG AI agent hackathon with $5,003 cash prize. Context: AI agent competition hackathon where participants compete to solve a puzzle. First to solve wins $5,003 cash prize. Open to builders with tokens to try."
+    }
+  },
+  {
+    "id": "xhack_xr_e0b15276ff5e",
+    "title": "Nasiko \u00d7 ElevenLabs TALK-N-OPS AI Buildathon",
+    "platform": "X (Twitter) Live",
+    "organizer": "@nasikolabs",
+    "url": "https://luma.com/nasiko-kn7b",
+    "x_post_url": "https://x.com/nasikolabs/status/2122912976068108734",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 30000,
+    "prize_pool": "$30,000",
+    "prize_badge": "\u20b930,000 prize pool | Hands-on me",
+    "prize_type": "cash",
+    "non_cash_perks": [
+      "Register for the TALK-N-OPS AI-BUILDATHON",
+      "Build with a team and get mentorship",
+      "Compete for \u20b930,000 prize pool"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "28 November 2026",
+    "brief": "Day-long AI buildathon hosted by Nasiko and ElevenLabs to turn AI ideas into working applications. Features team building, hands-on mentorship, and a \u20b930,000 prize pool. Event on 28 November 2026.",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India based (venue TBA)",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "Day-long AI buildathon hosted by Nasiko and ElevenLabs to turn AI ideas into working applications. Features team building, hands-on mentorship, and a \u20b930,000 prize pool. Event on 28 November 2026.",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: Nasiko \u00d7 ElevenLabs TALK-N-OPS AI Buildathon. Context: Day-long AI buildathon hosted by Nasiko and ElevenLabs to turn AI ideas into working applications. Features team building, hands-on mentorship, and a \u20b930,000 prize pool. Event on 28 November 2026."
+    }
+  },
+  {
+    "id": "xhack_xr_5552f2f7b88c",
+    "title": "\ud83c\udfaf\ud83c\udfaf\ud83c\udfafPI NETWORK NEWS: Pi Ecosystem Summit Begins Today!",
+    "platform": "X (Twitter) Live",
+    "organizer": "@jojo102102",
+    "url": "https://minepi.com/blog/ecosystem-summit-begins/",
+    "x_post_url": "https://x.com/jojo102102/status/2122890586562965715",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 0,
+    "prize_pool": "Hackathon",
+    "prize_badge": "Hackathon",
+    "prize_type": "cash",
+    "non_cash_perks": [
+      "Open the direct post link to verify live status and latest replies",
+      "Follow the claim or registration link before the window closes"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Time Sensitive",
+    "brief": "\ud83c\udfaf\ud83c\udfaf\ud83c\udfafPI NETWORK NEWS: Pi Ecosystem Summit Begins Today! Pi Ecosystem Summit Day 1: Developer Platform, Ecosystem Initiatives & Showcases PCT source : Pi Network\u2019s first-ever Ecosystem Summit begins today! Over th",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "\ud83c\udfaf\ud83c\udfaf\ud83c\udfafPI NETWORK NEWS: Pi Ecosystem Summit Begins Today! Pi Ecosystem Summit Day 1: Developer Platform, Ecosystem Initiatives & Showcases PCT source : Pi Network\u2019s first-ever Ecosystem Summit begins today! Over th",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: \ud83c\udfaf\ud83c\udfaf\ud83c\udfafPI NETWORK NEWS: Pi Ecosystem Summit Begins Today!. Context: \ud83c\udfaf\ud83c\udfaf\ud83c\udfafPI NETWORK NEWS: Pi Ecosystem Summit Begins Today! Pi Ecosystem Summit Day 1: Developer Platform, Ecosystem Initiatives & Showcases PCT source : Pi Network\u2019s first-ever Ecosystem Summit begins today! Over th"
+    }
+  },
+  {
+    "id": "xhack_xr_cb379d3e41af",
+    "title": "Day 13 of the 30 Days Build with AI Challenge",
+    "platform": "X (Twitter) Live",
+    "organizer": "@0x_beni_",
+    "url": "https://t.co/umsX8X1wrL",
+    "x_post_url": "https://x.com/0x_beni_/status/2122887912513585218",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 0,
+    "prize_pool": "Hackathon",
+    "prize_badge": "Hackathon",
+    "prize_type": "cash",
+    "non_cash_perks": [
+      "Open the direct post link to verify live status and latest replies",
+      "Follow the claim or registration link before the window closes"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Time Sensitive",
+    "brief": "Day 13 of the 30 Days Build with AI Challenge I shipped Kova for the NEAR Hackathon which had over 2000 submissions One thing I also noticed was the conversations from people participating in the hackathon espe",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "Day 13 of the 30 Days Build with AI Challenge I shipped Kova for the NEAR Hackathon which had over 2000 submissions One thing I also noticed was the conversations from people participating in the hackathon espe",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: Day 13 of the 30 Days Build with AI Challenge. Context: Day 13 of the 30 Days Build with AI Challenge I shipped Kova for the NEAR Hackathon which had over 2000 submissions One thing I also noticed was the conversations from people participating in the hackathon espe"
+    }
+  },
+  {
+    "id": "xhack_xr_2abcb5eea9a5",
+    "title": "web3 hackathons still open with some pretty serious prize pools:",
+    "platform": "X (Twitter) Live",
+    "organizer": "@RoundtableSpace",
+    "url": "https://hackathons.solana.com",
+    "x_post_url": "https://x.com/RoundtableSpace/status/2122808245651984430",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 101000,
+    "prize_pool": "$101,000",
+    "prize_badge": "$101,000\n",
+    "prize_type": "cash",
+    "non_cash_perks": [
+      "Open the direct post link to verify live status and latest replies",
+      "Follow the claim or registration link before the window closes"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Active Now",
+    "brief": "web3 hackathons still open with some pretty serious prize pools: 1. perps + prediction markets on solana \u2192 reward: $101,000 \u2192 build: perps or prediction markets on solana \u2192 deadline: dec 5, 2026 \u2192 2. base stock",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "web3 hackathons still open with some pretty serious prize pools: 1. perps + prediction markets on solana \u2192 reward: $101,000 \u2192 build: perps or prediction markets on solana \u2192 deadline: dec 5, 2026 \u2192 2. base stock",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: web3 hackathons still open with some pretty serious prize pools:. Context: web3 hackathons still open with some pretty serious prize pools: 1. perps + prediction markets on solana \u2192 reward: $101,000 \u2192 build: perps or prediction markets on solana \u2192 deadline: dec 5, 2026 \u2192 2. base stock"
+    }
+  },
+  {
+    "id": "xhack_xr_9f74186059f1",
+    "title": "MarketingMaxxing with $100K:",
+    "platform": "X (Twitter) Live",
+    "organizer": "@HyperSalesman",
+    "url": "http://Loops.so",
+    "x_post_url": "https://x.com/HyperSalesman/status/2122790742817165326",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 100000,
+    "prize_pool": "$100,000",
+    "prize_badge": "FREE \u2022 $100K",
+    "prize_type": "gadgets",
+    "non_cash_perks": [
+      "Open the direct post link to verify live status and latest replies",
+      "Follow the claim or registration link before the window closes"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Active Now",
+    "brief": "MarketingMaxxing with $100K: $0: Cold WhatsApp $0: Cold calling $0: Open loops[.]so on every MacBook in the Apple store $0: YouTube channel $0: Podcasting $0: LinkedIn + X content $0: Change my LinkedIn headlin",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "MarketingMaxxing with $100K: $0: Cold WhatsApp $0: Cold calling $0: Open loops[.]so on every MacBook in the Apple store $0: YouTube channel $0: Podcasting $0: LinkedIn + X content $0: Change my LinkedIn headlin",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: MarketingMaxxing with $100K:. Context: MarketingMaxxing with $100K: $0: Cold WhatsApp $0: Cold calling $0: Open loops[.]so on every MacBook in the Apple store $0: YouTube channel $0: Podcasting $0: LinkedIn + X content $0: Change my LinkedIn headlin"
+    }
+  },
+  {
+    "id": "xhack_xr_13d4698f2920",
+    "title": "\ud83d\ude80 WHAT IS THE PI ECOSYSTEM SUMMIT REALLY ALL ABOUT?",
+    "platform": "X (Twitter) Live",
+    "organizer": "@kizzyking020",
+    "url": "https://x.com/kizzyking020/status/2122696256258473988",
+    "x_post_url": "https://x.com/kizzyking020/status/2122696256258473988",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 200000,
+    "prize_pool": "$200,000",
+    "prize_badge": "$200,000 ",
+    "prize_type": "cash",
+    "non_cash_perks": [
+      "Open the direct post link to verify live status and latest replies",
+      "Follow the claim or registration link before the window closes"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Active Now",
+    "brief": "\ud83d\ude80 WHAT IS THE PI ECOSYSTEM SUMMIT REALLY ALL ABOUT? Follow @kizzyking020 for real crypto updates The first-ever Pi Ecosystem Summit, taking place November 17\u201319, 2026, is more than just another event. It repres",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "\ud83d\ude80 WHAT IS THE PI ECOSYSTEM SUMMIT REALLY ALL ABOUT? Follow @kizzyking020 for real crypto updates The first-ever Pi Ecosystem Summit, taking place November 17\u201319, 2026, is more than just another event. It repres",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: \ud83d\ude80 WHAT IS THE PI ECOSYSTEM SUMMIT REALLY ALL ABOUT?. Context: \ud83d\ude80 WHAT IS THE PI ECOSYSTEM SUMMIT REALLY ALL ABOUT? Follow @kizzyking020 for real crypto updates The first-ever Pi Ecosystem Summit, taking place November 17\u201319, 2026, is more than just another event. It repres"
+    }
+  },
+  {
     "id": "xhack_xr_dd9c36f5bcc0",
-    "title": "Boat Hackathon",
+    "title": "Boat Hackathon: Active Build Competition",
     "platform": "X (Twitter) Live",
     "organizer": "hn/sugabush",
     "url": "https://boathackathon.com/",
@@ -9,16 +284,16 @@ window.RADAR_HACKATHONS_DATA = [
     "is_from_x": true,
     "source_label": "HN LIVE",
     "prize_usd": 0,
-    "prize_pool": "Hackathon",
-    "prize_badge": "Hackathon",
+    "prize_pool": "Build Competition",
+    "prize_badge": "Build Competition",
     "prize_type": "cash",
     "non_cash_perks": [
-      "Open the direct post link to verify live status and latest replies",
-      "Follow the claim or registration link before the window closes"
+      "Visit boathackathon.com for full details",
+      "Check eligibility and registration requirements"
     ],
     "deadline_iso": "2026-11-28T23:59:59Z",
-    "deadline_display": "Active Now",
-    "brief": "Boat Hackathon",
+    "deadline_display": "Check Site",
+    "brief": "An active hackathon or build competition at boathackathon.com. Details on prizes and requirements should be verified on the official site, but hackathons with real prizes are kept for builder opportunities.",
     "recommended_stack": "Cursor + Claude / Gemini + Next.js",
     "vibe_coder_score": "\ud835\udd4f Early Discovery",
     "eligibility": "India & Global",
@@ -29,13 +304,149 @@ window.RADAR_HACKATHONS_DATA = [
     ],
     "strategy": {
       "winning_angle": "Spotted early via HN LIVE. Move fast while submission volume is still low.",
-      "idea": "Boat Hackathon",
-      "scaffold_prompt": "Build a clean, demo-ready MVP for: Boat Hackathon. Context: Boat Hackathon"
+      "idea": "An active hackathon or build competition at boathackathon.com. Details on prizes and requirements should be verified on the official site, but hackathons with real prizes are kept for builder opportunities.",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: Boat Hackathon: Active Build Competition. Context: An active hackathon or build competition at boathackathon.com. Details on prizes and requirements should be verified on the official site, but hackathons with real prizes are kept for builder opportunities."
+    }
+  },
+  {
+    "id": "xhack_xr_965530a5fb58",
+    "title": "OPPORTUNITY\u203c\ufe0f: Build a business in 30 days. Make the most profit. Win $100,000.",
+    "platform": "X (Twitter) Live",
+    "organizer": "@kseniam0s",
+    "url": "http://ship-or-die.com/100k-hackathon",
+    "x_post_url": "https://x.com/kseniam0s/status/2122677076071227869",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 100000,
+    "prize_pool": "$100,000",
+    "prize_badge": "FREE \u2022 $100,000",
+    "prize_type": "ai_subs",
+    "non_cash_perks": [
+      "Open the direct post link to verify live status and latest replies",
+      "Follow the claim or registration link before the window closes"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Active Now",
+    "brief": "OPPORTUNITY\u203c\ufe0f: Build a business in 30 days. Make the most profit. Win $100,000. This is the $100K Hackathon from @higgsfield_ai and Marc Lou (@marclou), the serial solo founder who made $3M from 36 startups. Wh",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "OPPORTUNITY\u203c\ufe0f: Build a business in 30 days. Make the most profit. Win $100,000. This is the $100K Hackathon from @higgsfield_ai and Marc Lou (@marclou), the serial solo founder who made $3M from 36 startups. Wh",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: OPPORTUNITY\u203c\ufe0f: Build a business in 30 days. Make the most profit. Win $100,000.. Context: OPPORTUNITY\u203c\ufe0f: Build a business in 30 days. Make the most profit. Win $100,000. This is the $100K Hackathon from @higgsfield_ai and Marc Lou (@marclou), the serial solo founder who made $3M from 36 startups. Wh"
+    }
+  },
+  {
+    "id": "xhack_xr_43a4750efbd8",
+    "title": "\u20b91,00,000 lakh cash prize, $1,000 in Sarvam AI credits, and a Keychron keyboard for e",
+    "platform": "X (Twitter) Live",
+    "organizer": "@WeMakeDevs",
+    "url": "https://luma.com/festivehacks",
+    "x_post_url": "https://x.com/WeMakeDevs/status/2122663417844773146",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 1000,
+    "prize_pool": "$1,000",
+    "prize_badge": "\u20b91,00,000 ",
+    "prize_type": "ai_subs",
+    "non_cash_perks": [
+      "Open the direct post link to verify live status and latest replies",
+      "Follow the claim or registration link before the window closes"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Active Now",
+    "brief": "\u20b91,00,000 lakh cash prize, $1,000 in Sarvam AI credits, and a Keychron keyboard for every team member. That's the second-place prize at Festive Hacks. Build something people will actually use this festive seaso",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "\u20b91,00,000 lakh cash prize, $1,000 in Sarvam AI credits, and a Keychron keyboard for every team member. That's the second-place prize at Festive Hacks. Build something people will actually use this festive seaso",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: \u20b91,00,000 lakh cash prize, $1,000 in Sarvam AI credits, and a Keychron keyboard for e. Context: \u20b91,00,000 lakh cash prize, $1,000 in Sarvam AI credits, and a Keychron keyboard for every team member. That's the second-place prize at Festive Hacks. Build something people will actually use this festive seaso"
+    }
+  },
+  {
+    "id": "xhack_xr_59c987af288c",
+    "title": "2 days ago we have organized our second Leyr buildathon. 60 ppl showed up - crazy, gi",
+    "platform": "X (Twitter) Live",
+    "organizer": "@litwinowski",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSdGTy8jGU1PmV71baj71kehZzc0JGOB1smxh9X1aXjlvZ24_A/viewform",
+    "x_post_url": "https://x.com/litwinowski/status/2122643031559987645",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 0,
+    "prize_pool": "Hackathon",
+    "prize_badge": "Hackathon",
+    "prize_type": "cash",
+    "non_cash_perks": [
+      "Open the direct post link to verify live status and latest replies",
+      "Follow the claim or registration link before the window closes"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Active Now",
+    "brief": "2 days ago we have organized our second Leyr buildathon. 60 ppl showed up - crazy, given we have just started building our community! we also got 2 founders who have actually built and scaled their EHRs in Swed",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "2 days ago we have organized our second Leyr buildathon. 60 ppl showed up - crazy, given we have just started building our community! we also got 2 founders who have actually built and scaled their EHRs in Swed",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: 2 days ago we have organized our second Leyr buildathon. 60 ppl showed up - crazy, gi. Context: 2 days ago we have organized our second Leyr buildathon. 60 ppl showed up - crazy, given we have just started building our community! we also got 2 founders who have actually built and scaled their EHRs in Swed"
+    }
+  },
+  {
+    "id": "xhack_xr_050b1579f848",
+    "title": "@hbr_pbc and @GoogleDeepMind are hosting the world's first Robot Use Agent (RUA) hack",
+    "platform": "X (Twitter) Live",
+    "organizer": "@hbr_pbc",
+    "url": "https://x.com/hbr_pbc/status/2122613141079015574",
+    "x_post_url": "https://x.com/hbr_pbc/status/2122613141079015574",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 2500,
+    "prize_pool": "$2,500",
+    "prize_badge": "FREE \u2022 $2,500 ",
+    "prize_type": "cash",
+    "non_cash_perks": [
+      "Open the direct post link to verify live status and latest replies",
+      "Follow the claim or registration link before the window closes"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Active Now",
+    "brief": "@hbr_pbc and @GoogleDeepMind are hosting the world's first Robot Use Agent (RUA) hackathon with Gemini 4 Carbon, right here in Singapore. The most creative hacks stand a chance to win cash prizes, and the robot",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "@hbr_pbc and @GoogleDeepMind are hosting the world's first Robot Use Agent (RUA) hackathon with Gemini 4 Carbon, right here in Singapore. The most creative hacks stand a chance to win cash prizes, and the robot",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: @hbr_pbc and @GoogleDeepMind are hosting the world's first Robot Use Agent (RUA) hack. Context: @hbr_pbc and @GoogleDeepMind are hosting the world's first Robot Use Agent (RUA) hackathon with Gemini 4 Carbon, right here in Singapore. The most creative hacks stand a chance to win cash prizes, and the robot"
     }
   },
   {
     "id": "xhack_xr_22e42f3c443a",
-    "title": "Registrations open for ESA XR Hackathon 2027",
+    "title": "ESA XR Hackathon 2027: Registrations Open",
     "platform": "X (Twitter) Live",
     "organizer": "hn/MiliasGeiger",
     "url": "https://xr.esa.int/hackathon/#home",
@@ -43,16 +454,16 @@ window.RADAR_HACKATHONS_DATA = [
     "is_from_x": true,
     "source_label": "HN LIVE",
     "prize_usd": 0,
-    "prize_pool": "Hackathon",
-    "prize_badge": "Hackathon",
+    "prize_pool": "XR Hackathon",
+    "prize_badge": "XR Hackathon",
     "prize_type": "cash",
     "non_cash_perks": [
-      "Open the direct post link to verify live status and latest replies",
-      "Follow the claim or registration link before the window closes"
+      "Visit xr.esa.int/hackathon for full details",
+      "Check eligibility and register before deadline"
     ],
     "deadline_iso": "2026-11-28T23:59:59Z",
-    "deadline_display": "Active Now",
-    "brief": "Registrations open for ESA XR Hackathon 2027",
+    "deadline_display": "Check Site",
+    "brief": "Registrations are open for the ESA XR Hackathon 2027. A space-related hackathon focusing on Extended Reality technologies. Open to builders globally with real prizes typically offered in ESA competitions.",
     "recommended_stack": "Cursor + Claude / Gemini + Next.js",
     "vibe_coder_score": "\ud835\udd4f Early Discovery",
     "eligibility": "India & Global",
@@ -63,19 +474,121 @@ window.RADAR_HACKATHONS_DATA = [
     ],
     "strategy": {
       "winning_angle": "Spotted early via HN LIVE. Move fast while submission volume is still low.",
-      "idea": "Registrations open for ESA XR Hackathon 2027",
-      "scaffold_prompt": "Build a clean, demo-ready MVP for: Registrations open for ESA XR Hackathon 2027. Context: Registrations open for ESA XR Hackathon 2027"
+      "idea": "Registrations are open for the ESA XR Hackathon 2027. A space-related hackathon focusing on Extended Reality technologies. Open to builders globally with real prizes typically offered in ESA competitions.",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: ESA XR Hackathon 2027: Registrations Open. Context: Registrations are open for the ESA XR Hackathon 2027. A space-related hackathon focusing on Extended Reality technologies. Open to builders globally with real prizes typically offered in ESA competitions."
     }
   },
   {
-    "id": "xhack_xr_46de7520f940",
-    "title": "Show HN: Furnish \u2013 AI-powered home design with editable 2D plans and 3D views",
+    "id": "xhack_xr_059e07811da4",
+    "title": "What happens when you give 75 hackers, 15 teams, and a supercomputing cluster 47 hour",
     "platform": "X (Twitter) Live",
-    "organizer": "hn/joystonm",
-    "url": "https://github.com/Joystonm/furnish/",
-    "x_post_url": "https://news.ycombinator.com/item?id=50517210",
+    "organizer": "@drivecapital",
+    "url": "https://x.com/drivecapital/status/2122343549723390069",
+    "x_post_url": "https://x.com/drivecapital/status/2122343549723390069",
     "is_from_x": true,
-    "source_label": "HN LIVE",
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 0,
+    "prize_pool": "Hackathon",
+    "prize_badge": "Hackathon",
+    "prize_type": "ai_subs",
+    "non_cash_perks": [
+      "Open the direct post link to verify live status and latest replies",
+      "Follow the claim or registration link before the window closes"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Active Now",
+    "brief": "What happens when you give 75 hackers, 15 teams, and a supercomputing cluster 47 hours to build something extraordinary? This weekend, Drive Capital's Chicago office became a playground for some of the brightes",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "What happens when you give 75 hackers, 15 teams, and a supercomputing cluster 47 hours to build something extraordinary? This weekend, Drive Capital's Chicago office became a playground for some of the brightes",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: What happens when you give 75 hackers, 15 teams, and a supercomputing cluster 47 hour. Context: What happens when you give 75 hackers, 15 teams, and a supercomputing cluster 47 hours to build something extraordinary? This weekend, Drive Capital's Chicago office became a playground for some of the brightes"
+    }
+  },
+  {
+    "id": "xhack_xr_9ffe99f4ff06",
+    "title": "Over $1,000,000 in hackathon prizes, and every deadline is this week.",
+    "platform": "X (Twitter) Live",
+    "organizer": "@HackListHQ",
+    "url": "https://x.com/HackListHQ/status/2122318144958005650",
+    "x_post_url": "https://x.com/HackListHQ/status/2122318144958005650",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 1000000,
+    "prize_pool": "$1,000,000",
+    "prize_badge": "FREE \u2022 $1,000,000 ",
+    "prize_type": "cash",
+    "non_cash_perks": [
+      "Open the direct post link to verify live status and latest replies",
+      "Follow the claim or registration link before the window closes"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Active Now",
+    "brief": "Over $1,000,000 in hackathon prizes, and every deadline is this week. Here are 9 of the biggest ones closing soon \ud83d\udc47 \u27a4 Meta VR Start Developer Competition 2026 by @Meta Deadline: November 18, 2026 | Prize Pool: ",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "Over $1,000,000 in hackathon prizes, and every deadline is this week. Here are 9 of the biggest ones closing soon \ud83d\udc47 \u27a4 Meta VR Start Developer Competition 2026 by @Meta Deadline: November 18, 2026 | Prize Pool: ",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: Over $1,000,000 in hackathon prizes, and every deadline is this week.. Context: Over $1,000,000 in hackathon prizes, and every deadline is this week. Here are 9 of the biggest ones closing soon \ud83d\udc47 \u27a4 Meta VR Start Developer Competition 2026 by @Meta Deadline: November 18, 2026 | Prize Pool: "
+    }
+  },
+  {
+    "id": "xhack_xr_b30377e35ab8",
+    "title": "\ud83d\ude80 Post-Quantum Hackathon is LIVE! \u26a1",
+    "platform": "X (Twitter) Live",
+    "organizer": "@x_fan149",
+    "url": "https://build.qorechain.io",
+    "x_post_url": "https://x.com/x_fan149/status/2122305632178929903",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 20000,
+    "prize_pool": "$20,000",
+    "prize_badge": "$20,000 ",
+    "prize_type": "ai_subs",
+    "non_cash_perks": [
+      "Open the direct post link to verify live status and latest replies",
+      "Follow the claim or registration link before the window closes"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Active Now",
+    "brief": "\ud83d\ude80 Post-Quantum Hackathon is LIVE! \u26a1 Build Before Q-Day \u2014 a 4-week global hackathon for developers ready to build the quantum-resistant future. \ud83d\udcb0 $20,000 prize pool \ud83c\udfc6 60 prizes \ud83e\uddd1\u200d\ud83d\udcbb Beginner \u2192 protocol level \ud83c\udf0d So",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "\ud83d\ude80 Post-Quantum Hackathon is LIVE! \u26a1 Build Before Q-Day \u2014 a 4-week global hackathon for developers ready to build the quantum-resistant future. \ud83d\udcb0 $20,000 prize pool \ud83c\udfc6 60 prizes \ud83e\uddd1\u200d\ud83d\udcbb Beginner \u2192 protocol level \ud83c\udf0d So",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: \ud83d\ude80 Post-Quantum Hackathon is LIVE! \u26a1. Context: \ud83d\ude80 Post-Quantum Hackathon is LIVE! \u26a1 Build Before Q-Day \u2014 a 4-week global hackathon for developers ready to build the quantum-resistant future. \ud83d\udcb0 $20,000 prize pool \ud83c\udfc6 60 prizes \ud83e\uddd1\u200d\ud83d\udcbb Beginner \u2192 protocol level \ud83c\udf0d So"
+    }
+  },
+  {
+    "id": "xhack_xr_9416792a0b56",
+    "title": "@ladicodez Since we're sharing, I participated in my first global hackathon this week",
+    "platform": "X (Twitter) Live",
+    "organizer": "@Abdmalik_codez",
+    "url": "https://www.linkedin.com/posts/abdul-malik-aleem-593774342_hackglobal2026-studylensai-polarisschooloftechnology-ugcPost-7528021221637001216-kQc0/?utm_source=share&utm_medium=member_android&rcm=ACoAAFXmCT8BILQx4ntxxyKPpRIfFEb8k5ZwVGI",
+    "x_post_url": "https://x.com/Abdmalik_codez/status/2122262957581029638",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
     "prize_usd": 0,
     "prize_pool": "Hackathon",
     "prize_badge": "Hackathon",
@@ -86,7 +599,7 @@ window.RADAR_HACKATHONS_DATA = [
     ],
     "deadline_iso": "2026-11-28T23:59:59Z",
     "deadline_display": "Active Now",
-    "brief": "Show HN: Furnish \u2013 AI-powered home design with editable 2D plans and 3D views I built Furnish for the Kane CLI Hackathon.<p>It&#x27;s an AI-powered home design studio where you can generate editable floor plans",
+    "brief": "@ladicodez Since we're sharing, I participated in my first global hackathon this weekend and it was a sweet and rocky experience\ud83d\ude02\ud83e\udd72 More about it here:",
     "recommended_stack": "Cursor + Claude / Gemini + Next.js",
     "vibe_coder_score": "\ud835\udd4f Early Discovery",
     "eligibility": "India & Global",
@@ -96,20 +609,20 @@ window.RADAR_HACKATHONS_DATA = [
       "Hackathon"
     ],
     "strategy": {
-      "winning_angle": "Spotted early via HN LIVE. Move fast while submission volume is still low.",
-      "idea": "Show HN: Furnish \u2013 AI-powered home design with editable 2D plans and 3D views I built Furnish for the Kane CLI Hackathon.<p>It&#x27;s an AI-powered home design studio where you can generate editable floor plans",
-      "scaffold_prompt": "Build a clean, demo-ready MVP for: Show HN: Furnish \u2013 AI-powered home design with editable 2D plans and 3D views. Context: Show HN: Furnish \u2013 AI-powered home design with editable 2D plans and 3D views I built Furnish for the Kane CLI Hackathon.<p>It&#x27;s an AI-powered home design studio where you can generate editable floor plans"
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "@ladicodez Since we're sharing, I participated in my first global hackathon this weekend and it was a sweet and rocky experience\ud83d\ude02\ud83e\udd72 More about it here:",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: @ladicodez Since we're sharing, I participated in my first global hackathon this week. Context: @ladicodez Since we're sharing, I participated in my first global hackathon this weekend and it was a sweet and rocky experience\ud83d\ude02\ud83e\udd72 More about it here:"
     }
   },
   {
-    "id": "xhack_xr_1e169aa2f6b3",
-    "title": "Edited on Meta Hackathon",
+    "id": "xhack_xr_a99d3327d98e",
+    "title": "What a busy weekend for builders in Tokyo! \ud83c\uddef\ud83c\uddf5",
     "platform": "X (Twitter) Live",
-    "organizer": "hn/LeoBuildss",
-    "url": "https://tryhivecontent.com/edited",
-    "x_post_url": "https://news.ycombinator.com/item?id=50506124",
+    "organizer": "@daytonaio",
+    "url": "https://x.com/daytonaio/status/2121992231338807401",
+    "x_post_url": "https://x.com/daytonaio/status/2121992231338807401",
     "is_from_x": true,
-    "source_label": "HN LIVE",
+    "source_label": "\ud835\udd4f LIVE",
     "prize_usd": 0,
     "prize_pool": "Hackathon",
     "prize_badge": "Hackathon",
@@ -120,7 +633,7 @@ window.RADAR_HACKATHONS_DATA = [
     ],
     "deadline_iso": "2026-11-28T23:59:59Z",
     "deadline_display": "Active Now",
-    "brief": "Edited on Meta Hackathon",
+    "brief": "What a busy weekend for builders in Tokyo! \ud83c\uddef\ud83c\uddf5 Today, we hosted our @daytonaio HackSprint with @theaibuilders and @nosana_ai, and on Saturday, we sponsored the Agent Forge AI Hackathon. Thanks to everyone who jo",
     "recommended_stack": "Cursor + Claude / Gemini + Next.js",
     "vibe_coder_score": "\ud835\udd4f Early Discovery",
     "eligibility": "India & Global",
@@ -130,31 +643,167 @@ window.RADAR_HACKATHONS_DATA = [
       "Hackathon"
     ],
     "strategy": {
-      "winning_angle": "Spotted early via HN LIVE. Move fast while submission volume is still low.",
-      "idea": "Edited on Meta Hackathon",
-      "scaffold_prompt": "Build a clean, demo-ready MVP for: Edited on Meta Hackathon. Context: Edited on Meta Hackathon"
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "What a busy weekend for builders in Tokyo! \ud83c\uddef\ud83c\uddf5 Today, we hosted our @daytonaio HackSprint with @theaibuilders and @nosana_ai, and on Saturday, we sponsored the Agent Forge AI Hackathon. Thanks to everyone who jo",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: What a busy weekend for builders in Tokyo! \ud83c\uddef\ud83c\uddf5. Context: What a busy weekend for builders in Tokyo! \ud83c\uddef\ud83c\uddf5 Today, we hosted our @daytonaio HackSprint with @theaibuilders and @nosana_ai, and on Saturday, we sponsored the Agent Forge AI Hackathon. Thanks to everyone who jo"
+    }
+  },
+  {
+    "id": "xhack_xr_b1f6369c1f31",
+    "title": "$3,825 AI Agent Bounty Competition Live on MakeFun AI",
+    "platform": "X (Twitter) Live",
+    "organizer": "@vibeman_0",
+    "url": "http://make.fun",
+    "x_post_url": "https://x.com/vibeman_0/status/2121886952215515392",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 3825,
+    "prize_pool": "$3,825",
+    "prize_badge": "$3,825 Prize Pool | USDC Prizes",
+    "prize_type": "cash",
+    "non_cash_perks": [
+      "Visit make.fun to explore live bounties",
+      "Send your AI agent (Claude, Grok, etc.) to compete in active coding competitions"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Limited Time",
+    "brief": "MakeFun AI is hosting live coding competitions where AI agents and humans compete to build software. Multiple bounties are live with thousands of dollars in USDC prizes locked in onchain escrow on Solana. Winners claim USDC directly from escrow to their wallets. First live bounty is for Three.js.",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "MakeFun AI is hosting live coding competitions where AI agents and humans compete to build software. Multiple bounties are live with thousands of dollars in USDC prizes locked in onchain escrow on Solana. Winners claim USDC directly from escrow to their wallets. First live bounty is for Three.js.",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: $3,825 AI Agent Bounty Competition Live on MakeFun AI. Context: MakeFun AI is hosting live coding competitions where AI agents and humans compete to build software. Multiple bounties are live with thousands of dollars in USDC prizes locked in onchain escrow on Solana. Winners claim USDC directly from escrow to their wallets. First live bounty is for Three.js."
+    }
+  },
+  {
+    "id": "xhack_xr_4324ec6b53f3",
+    "title": "BCH Blaze 2026, Dev3pack Global Hackathon 2026, IXH26 Italian XRPL Hackathon & QIE Hackathon 3.",
+    "platform": "X (Twitter) Live",
+    "organizer": "@orihimexweb3",
+    "url": "https://bchblaze.cash/",
+    "x_post_url": "https://x.com/orihimexweb3/status/2121582508034887762",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 0,
+    "prize_pool": "$8K-$17K Rewards",
+    "prize_badge": "$8K-$17K Rewards",
+    "prize_type": "ai_subs",
+    "non_cash_perks": [
+      "Visit links for each hackathon to check eligibility and deadlines.",
+      "Prioritize online hackathons (BCH Blaze, Dev3pack) if remote building is preferred."
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Varies",
+    "brief": "Five active web3 hackathons with rewards ranging from $8K to $17K. BCH Blaze and Dev3pack are online; IXH26 is in-person Bari; QIE requires mainnet live product. Deadlines and criteria vary.",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global (varies by hack",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "Five active web3 hackathons with rewards ranging from $8K to $17K. BCH Blaze and Dev3pack are online; IXH26 is in-person Bari; QIE requires mainnet live product. Deadlines and criteria vary.",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: BCH Blaze 2026, Dev3pack Global Hackathon 2026, IXH26 Italian XRPL Hackathon & QIE Hackathon 3.. Context: Five active web3 hackathons with rewards ranging from $8K to $17K. BCH Blaze and Dev3pack are online; IXH26 is in-person Bari; QIE requires mainnet live product. Deadlines and criteria vary."
+    }
+  },
+  {
+    "id": "xhack_xr_2278444288d8",
+    "title": "PayPal AI Hackathon 2026 - Vireo Chime Negotiator Open Source",
+    "platform": "X (Twitter) Live",
+    "organizer": "@thisabetsantos",
+    "url": "https://github.com/stunrazor/vireo-chime-negotiator",
+    "x_post_url": "https://x.com/thisabetsantos/status/2121453686794936397",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 0,
+    "prize_pool": "Open Source | AI Agents",
+    "prize_badge": "Open Source | AI Agents",
+    "prize_type": "ai_subs",
+    "non_cash_perks": [
+      "Review the open source negotiation engine and payment gate on GitHub.",
+      "Consider contributing or building upon the agentic commerce concept."
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Hackathon 2026",
+    "brief": "Open source AGPL project built for the PayPal AI Hackathon 2026. Bounded AI agents haggle over price, delivery & warranty within human-set guardrails. Payment-initiation event on PayPal Sandbox.",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "Open source AGPL project built for the PayPal AI Hackathon 2026. Bounded AI agents haggle over price, delivery & warranty within human-set guardrails. Payment-initiation event on PayPal Sandbox.",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: PayPal AI Hackathon 2026 - Vireo Chime Negotiator Open Source. Context: Open source AGPL project built for the PayPal AI Hackathon 2026. Bounded AI agents haggle over price, delivery & warranty within human-set guardrails. Payment-initiation event on PayPal Sandbox."
+    }
+  },
+  {
+    "id": "xhack_xr_59657a12e16d",
+    "title": "Dev3pack Global Hackathon & Meteora Builder Opportunities",
+    "platform": "X (Twitter) Live",
+    "organizer": "@MeteoraEco",
+    "url": "http://hack.dev3pack.xyz",
+    "x_post_url": "https://x.com/MeteoraEco/status/2121215354789593553",
+    "is_from_x": true,
+    "source_label": "\ud835\udd4f LIVE",
+    "prize_usd": 0,
+    "prize_pool": "10k+ Prize | Bridge Accelerator",
+    "prize_badge": "10k+ Prize | Bridge Accelerator",
+    "prize_type": "fast_track",
+    "non_cash_perks": [
+      "Apply for Dev3pack Global Hackathon by Nov 27 if a university student or can join local build station.",
+      "Explore other builder opportunities mentioned (incubator, Colosseum)."
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Nov 27-29",
+    "brief": "Dev3pack Global Hackathon: 3 days for university students, online or local build station, Nov 27-29. 10k+ for best app overall. Top teams invited to bridge accelerator. Also mentions incubator cohort 6 (NYC) and Colosseum eternal.",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global (University stu",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
+      "idea": "Dev3pack Global Hackathon: 3 days for university students, online or local build station, Nov 27-29. 10k+ for best app overall. Top teams invited to bridge accelerator. Also mentions incubator cohort 6 (NYC) and Colosseum eternal.",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: Dev3pack Global Hackathon & Meteora Builder Opportunities. Context: Dev3pack Global Hackathon: 3 days for university students, online or local build station, Nov 27-29. 10k+ for best app overall. Top teams invited to bridge accelerator. Also mentions incubator cohort 6 (NYC) and Colosseum eternal."
     }
   },
   {
     "id": "xhack_xr_5602ba6b0ff1",
-    "title": "TimeNet challenge: An online hackathon for time-series AI",
+    "title": "TimeNet challenge: Online hackathon for time-series AI",
     "platform": "X (Twitter) Live",
     "organizer": "hn/masquare",
     "url": "https://challenge.timenet.ai",
     "x_post_url": "https://news.ycombinator.com/item?id=50480931",
     "is_from_x": true,
     "source_label": "HN LIVE",
-    "prize_usd": 0,
-    "prize_pool": "Hackathon",
-    "prize_badge": "Hackathon",
+    "prize_usd": 500,
+    "prize_pool": "$500",
+    "prize_badge": "Prizes up to $1k+",
     "prize_type": "cash",
     "non_cash_perks": [
-      "Open the direct post link to verify live status and latest replies",
-      "Follow the claim or registration link before the window closes"
+      "Visit the TimeNet challenge website linked above",
+      "Review submission requirements and time-series AI task definitions"
     ],
     "deadline_iso": "2026-11-28T23:59:59Z",
-    "deadline_display": "Active Now",
-    "brief": "TimeNet challenge: An online hackathon for time-series AI",
+    "deadline_display": "Check website for deadline",
+    "brief": "An online hackathon focused specifically on time-series AI challenges. Open to global builders looking to compete in a niche but growing AI subdomain with real prizes.",
     "recommended_stack": "Cursor + Claude / Gemini + Next.js",
     "vibe_coder_score": "\ud835\udd4f Early Discovery",
     "eligibility": "India & Global",
@@ -165,13 +814,13 @@ window.RADAR_HACKATHONS_DATA = [
     ],
     "strategy": {
       "winning_angle": "Spotted early via HN LIVE. Move fast while submission volume is still low.",
-      "idea": "TimeNet challenge: An online hackathon for time-series AI",
-      "scaffold_prompt": "Build a clean, demo-ready MVP for: TimeNet challenge: An online hackathon for time-series AI. Context: TimeNet challenge: An online hackathon for time-series AI"
+      "idea": "An online hackathon focused specifically on time-series AI challenges. Open to global builders looking to compete in a niche but growing AI subdomain with real prizes.",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: TimeNet challenge: Online hackathon for time-series AI. Context: An online hackathon focused specifically on time-series AI challenges. Open to global builders looking to compete in a niche but growing AI subdomain with real prizes."
     }
   },
   {
     "id": "xhack_xr_a425369ae785",
-    "title": "Show HN: MetaArena \u2013 Compare & Rank 5,353 Meta Global AI Hackathon Projects",
+    "title": "Meta Global AI Hackathon - $1M prize pool results",
     "platform": "X (Twitter) Live",
     "organizer": "hn/ohong",
     "url": "https://meta-hackathon.com/",
@@ -180,15 +829,15 @@ window.RADAR_HACKATHONS_DATA = [
     "source_label": "HN LIVE",
     "prize_usd": 1000000,
     "prize_pool": "$1,000,000",
-    "prize_badge": "$1M",
+    "prize_badge": "$1M prize pool",
     "prize_type": "ai_subs",
     "non_cash_perks": [
-      "Open the direct post link to verify live status and latest replies",
-      "Follow the claim or registration link before the window closes"
+      "Visit meta-hackathon.com to explore winning projects",
+      "Check if post-hackathon build support or mentorship is available"
     ],
     "deadline_iso": "2026-11-28T23:59:59Z",
-    "deadline_display": "Active Now",
-    "brief": "Show HN: MetaArena \u2013 Compare & Rank 5,353 Meta Global AI Hackathon Projects Hey HN! Recently Meta wrapped up their Global Developer Hackathon (<a href=\"https:&#x2F;&#x2F;dev.meta.ai&#x2F;events&#x2F;global-hack",
+    "deadline_display": "Past event - check for futur",
+    "brief": "Meta's recent Global Developer Hackathon concluded with $1M prize pool. 34K applied, 20K accepted, 5K+ projects submitted. AI ranking was used to manage the massive volume. Great opportunity to see top-tier projects and potentially access post-hackathon resources.",
     "recommended_stack": "Cursor + Claude / Gemini + Next.js",
     "vibe_coder_score": "\ud835\udd4f Early Discovery",
     "eligibility": "India & Global",
@@ -199,8 +848,8 @@ window.RADAR_HACKATHONS_DATA = [
     ],
     "strategy": {
       "winning_angle": "Spotted early via HN LIVE. Move fast while submission volume is still low.",
-      "idea": "Show HN: MetaArena \u2013 Compare & Rank 5,353 Meta Global AI Hackathon Projects Hey HN! Recently Meta wrapped up their Global Developer Hackathon (<a href=\"https:&#x2F;&#x2F;dev.meta.ai&#x2F;events&#x2F;global-hack",
-      "scaffold_prompt": "Build a clean, demo-ready MVP for: Show HN: MetaArena \u2013 Compare & Rank 5,353 Meta Global AI Hackathon Projects. Context: Show HN: MetaArena \u2013 Compare & Rank 5,353 Meta Global AI Hackathon Projects Hey HN! Recently Meta wrapped up their Global Developer Hackathon (<a href=\"https:&#x2F;&#x2F;dev.meta.ai&#x2F;events&#x2F;global-hack"
+      "idea": "Meta's recent Global Developer Hackathon concluded with $1M prize pool. 34K applied, 20K accepted, 5K+ projects submitted. AI ranking was used to manage the massive volume. Great opportunity to see top-tier projects and potentially access post-hackathon resources.",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: Meta Global AI Hackathon - $1M prize pool results. Context: Meta's recent Global Developer Hackathon concluded with $1M prize pool. 34K applied, 20K accepted, 5K+ projects submitted. AI ranking was used to manage the massive volume. Great opportunity to see top-tier projects and potentially access post-hackathon resources."
     }
   },
   {

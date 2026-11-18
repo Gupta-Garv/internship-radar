@@ -21,7 +21,7 @@ HACKATHONS_JSON = os.path.join(DATA_DIR, "hackathons.json")
 
 NVIDIA_URL = "https://integrate.api.nvidia.com/v1/chat/completions"
 DEFAULT_NVIDIA_KEY = "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"
-DEFAULT_NIM_MODEL = "mistralai/mistral-large-4-1t-a52b"
+DEFAULT_NIM_MODEL = "nvidia/nemotron-3.5-lightning-30b-a3b"
 
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
 
@@ -258,7 +258,7 @@ def fetch_exa_tweets(exa_queries_by_cat, hours_back=48):
             payload = {
                 "query": query,
                 "type": "auto",
-                "category": "tweet",
+                "includeDomains": ["x.com", "twitter.com"],
                 "numResults": 8,
                 "startPublishedDate": start_iso,
                 "contents": {"text": {"maxCharacters": 900}},
@@ -706,8 +706,10 @@ def classify_batch_with_nim(batch_items):
             {"role": "system", "content": BATCH_SYSTEM_PROMPT},
             {"role": "user", "content": json.dumps(compact_input, ensure_ascii=False)},
         ],
-        "temperature": 0.15,
-        "max_tokens": 2200,
+        "temperature": 0.1,
+        "max_tokens": 2600,
+        "response_format": {"type": "json_object"},
+        "chat_template_kwargs": {"enable_thinking": False},
     }
 
     try:
@@ -731,7 +733,10 @@ def classify_batch_with_nim(batch_items):
         if not m:
             return [x for x in (heuristic_evaluate(it) for it in batch_items) if x]
 
-        parsed = json.loads(m.group(0))
+        raw_json = m.group(0)
+        # Auto-repair occasional trailing commas before closing } or ]
+        raw_json = re.sub(r',\s*([\}\]])', r'\1', raw_json)
+        parsed = json.loads(raw_json, strict=False)
         kept = []
         valid_cats = {
             "ai_alpha", "gaming_general", "gaming_fortnite", "x_hackathons",
@@ -911,7 +916,7 @@ def run_x_radar(lane="full"):
 
     # 2. Tier 2: Exa.ai Free Tier ($10/mo, category="tweet")
     # Run always if configured (booster + automatic failover if burner cookie expires!)
-    exa_items, exa_status = fetch_exa_tweets(exa_queries, hours_back=48)
+    exa_items, exa_status = fetch_exa_tweets(exa_queries, hours_back=168)
     print(f"• Tier 2 (Exa 𝕏 Free API): {len(exa_items)} raw tweets [status: {exa_status}]")
     raw_items.extend(exa_items)
 
