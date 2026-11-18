@@ -169,11 +169,13 @@ async def _fetch_via_twscrape(queries_by_cat, accounts, max_per_query=12):
             pass
 
     results = []
+    since_date = (datetime.now(timezone.utc) - timedelta(days=3)).strftime("%Y-%m-%d")
     for cat, queries in queries_by_cat.items():
         for q in queries:
+            dated_q = f"{q} since:{since_date}" if "since:" not in q else q
             try:
                 count = 0
-                async for tw in api.search(q, limit=max_per_query, kv={"product": "Latest"}):
+                async for tw in api.search(dated_q, limit=max_per_query, kv={"product": "Latest"}):
                     text = getattr(tw, "rawContent", "") or ""
                     tw_id = str(getattr(tw, "id", ""))
                     user = getattr(tw, "user", None)
@@ -561,44 +563,44 @@ def prefilter_candidates(raw_items, spam_patterns, seen_ids):
 # =============================================================================
 # LAYER 2: BATCHED NVIDIA NIM CLASSIFIER & EXTRACTOR (2-4 calls per sweep!)
 # =============================================================================
-BATCH_SYSTEM_PROMPT = """You are Garv Gupta's personal X & real-time opportunity intelligence analyst.
+BATCH_SYSTEM_PROMPT = """You are Garv Gupta's ruthless, high-agency X intelligence filter. Your #1 job is to REJECT 75-85% of raw posts and ONLY keep genuinely rare, time-limited, high-value drops that normal Google searches miss.
+
 Garv's profile:
-- Undergraduate at IIM Bangalore (BBA Digital & Business Entrepreneurship).
-- High-agency AI builder, product/growth/BizOps operator, UI/UX designer, hackathon winner (2nd of 8,424 in Baidu Global AI Hackathon), and PC gamer (plays Fortnite).
-- Location & Eligibility: Based in India; speaks English & Hindi only. Eligible for India-based, Global/Worldwide, Remote, or Visa-sponsored roles/opportunities.
+- Undergrad at IIM Bangalore, AI builder (2nd of 8,424 in Baidu Global AI Hackathon), Product/Growth/Design operator, and PC gamer (plays Fortnite).
+- Based in India; speaks English & Hindi only. Eligible for India, Global/Worldwide, Remote, or Visa-sponsored drops.
 
-Your job: Given a JSON list of raw posts, ruthlessly filter out noise/fluff/clickbait/scams/US-only-ineligible posts and keep ONLY genuinely useful, actionable, high-signal drops.
+STRICT QUALITY GATES (REJECT EVERYTHING THAT FAILS THESE):
+1. "ai_alpha": ONLY Tier-1 AI platforms (Claude/Anthropic, ChatGPT/OpenAI, Gemini/Google Ultra/Google One, Cursor, Perplexity, Windsurf, Replit, Lovable, Bolt, v0/Vercel, ElevenLabs, Midjourney, Grok/xAI, Figma, Notion, GitHub Copilot, AWS/GCP/Azure credits). MUST be an actionable limited-time deal, free Pro subscription, student/developer credit drop, promo code, pricing drop, or active workaround Garv can actually claim. STRICTLY REJECT: generic AI news/opinions, unknown small/shitty indie AI wrappers, tutorials, and "50 AI prompts" threads.
+2. "gaming_general": ONLY AAA, AA, or widely acclaimed major games (normally $15+, major studios or iconic titles on Steam/Epic/GOG/PlayStation/Xbox) that are 100% free to claim for a limited time or historic deals. STRICTLY REJECT: unknown $1 indie shovelware, mobile gacha codes, DLC-only items, and random giveaways.
+3. "gaming_fortnite": ONLY high-signal actionable Fortnite intel: free skins/cosmetics/quests, verified leaks (HYPEX/ShiinaBR/iFireMonkey), major Item Shop rare returns/token drops, or cash cups/tournaments. STRICTLY REJECT: memes, random gameplay clips, or complaints.
+4. "x_hackathons": ONLY Tier-1 / High-Stakes Hackathons ($5,000+ cash pool OR MacBook/iPhone/Pro-Sub/YC Fast-Track prizes OR officially hosted by OpenAI, Anthropic, Google, NVIDIA, Cursor, Vercel, Supabase, ElevenLabs, YC, a16z, Mistral, Meta, Stripe). STRICTLY REJECT: low-level student club hackathons, <$5k local events, and shady Web3/meme-coin contests.
+5. "money_earning": ONLY high-paying ($25+/hr or $100+/task) real earning opportunities suited to a sharp college builder (new/active AI training & RLHF platforms like Mercor, Outlier, Alignerr, Micro1, Scale, or paid product research studies) eligible in India or globally. STRICTLY REJECT: generic "make money" threads, news articles, crypto/trading, and low-pay surveys.
+6. "money_internships": ONLY paid Product, APM, BizOps, Founder's Office, Growth, Marketing, Analytics, or UI/UX Design internships from real founders, YC/VC startups, or top brands (India or Remote/Visa-friendly). STRICTLY REJECT: unpaid roles (unless Fortune 500), pure mechanical/C++/hardware SWE, and cold sales/BDA.
+7. "vibe_bounties": ONLY $500+ prizes or Pro-plan/hardware design/vibe-coding contests from major tools (Cursor, v0, Lovable, Bolt, Framer, Figma, Replit, Vercel).
+8. "grants_credits": ONLY real student/builder micro-grants ($500-$10k non-dilutive like Emergent Ventures, 1517, Bagel Fund, Merge Club) or $1k+ free AI/cloud compute credits open to India/Global builders. REJECT journalism/unrelated fellowships.
 
-Valid categories (pick exactly one per kept item):
-- "ai_alpha": Limited-time AI promos, free Pro tiers, massive price drops, student offers, free API credit drops, notable newly launched free AI tools/models, beta invites.
-- "gaming_general": Limited-time 100% free games to claim/keep (Epic, Steam, GOG, Prime), free beta keys, major gaming giveaways/deals.
-- "gaming_fortnite": Fortnite item shop updates/leaks, free skins/cosmetics/quests, Fortnite tournaments/cups, notable patch drops.
-- "x_hackathons": Active hackathons or buildathons with real prizes (cash, MacBooks/gadgets, Claude/Cursor/API subscriptions, YC fast-tracks) open to India/Global builders.
-- "money_earning": Legit, high-paying earning opportunities suited to a smart university builder (new AI training/RLHF platforms like Mercor/Outlier/Alignerr, high-paying user research studies, product bounties) available in India or globally. Reject generic spam or low-pay survey junk.
-- "money_internships": Founders or startups hiring for Product, BizOps, Founder's Office, Growth, Marketing, Analytics, or UI/UX interns. MUST be paid (unless Fortune 500 / elite marquee brand like Google/OpenAI/YC) and open to India or Remote/Visa-sponsored. Reject pure SWE/C++/hardware and cold-calling sales.
-- "vibe_bounties": Short-term (24h-7d) UI/UX design challenges, remixathons, or vibe-coding bounties (Figma, Framer, v0, Cursor, Lovable, Bolt, Replit) with cash or top-tier prizes.
-- "grants_credits": Student micro-grants ($500-$10k non-dilutive like Emergent Ventures, 1517, Merge Club, Bagel Fund), fellowships, or free cloud/AI compute credit drops ($1k-$25k).
+Also REJECT anything that appears already patched/expired, spammy, engagement-bait, or not actionable.
+Only keep items that score >= 80 on genuine value and actionability.
 
-Return ONLY a valid JSON object with key "items" containing an array of objects for EVERY input index:
+Return ONLY valid JSON with key "items" containing an array for EVERY input index:
 {
   "items": [
     {
       "idx": 0,
       "keep": true,
       "category": "ai_alpha",
-      "headline": "Short punchy title (max 75 chars, no clickbait)",
-      "summary": "Crisp 1-2 sentence explanation of what this is and why it matters right now. No em dashes.",
-      "action_steps": ["Step 1", "Step 2"],
-      "value_badge": "Short pill e.g. FREE Claim | $10k Pool | $50/hr Remote | Free Skin",
+      "headline": "Short punchy title naming the exact Tier-1 brand & offer (max 75 chars)",
+      "summary": "Crisp 1-2 sentence explanation of the exact offer/hack/opportunity and why it matters right now. No em dashes.",
+      "action_steps": ["Exact step 1 to claim/apply", "Exact step 2"],
+      "value_badge": "Short pill e.g. FREE 1-Yr Pro | $50k Pool | $60-$120/hr | AAA FREE",
       "eligibility": "India & Global",
-      "signal_score": 88,
+      "signal_score": 90,
       "is_urgent": true,
       "prize_usd_est": 0,
       "deadline_display": "Limited Time"
     }
   ]
-}
-If an item is low-quality, irrelevant, expired, spam, clickbait, or ineligible for India/Global, set "keep": false."""
+}"""
 
 
 def heuristic_evaluate(item):
@@ -683,8 +685,10 @@ def heuristic_evaluate(item):
     }
 
 
-def classify_batch_with_nim(batch_items):
-    """Send 12-15 items in a single NVIDIA NIM call to stay far below the 40 RPM cap."""
+def classify_batch_with_nim(batch_items, allow_split_retry=True):
+    """Send 8 items in a single NVIDIA NIM call with strict JSON validation (zero unvetted trash leakage)."""
+    if not batch_items:
+        return []
     api_key = os.environ.get("NVIDIA_API_KEY", "").strip() or DEFAULT_NVIDIA_KEY
     model = os.environ.get("NVIDIA_X_MODEL", DEFAULT_NIM_MODEL).strip()
 
@@ -707,7 +711,7 @@ def classify_batch_with_nim(batch_items):
             {"role": "user", "content": json.dumps(compact_input, ensure_ascii=False)},
         ],
         "temperature": 0.1,
-        "max_tokens": 2600,
+        "max_tokens": 2200,
         "response_format": {"type": "json_object"},
         "chat_template_kwargs": {"enable_thinking": False},
     }
@@ -720,21 +724,19 @@ def classify_batch_with_nim(batch_items):
                 "Content-Type": "application/json",
             },
             json=payload,
-            timeout=35,
+            timeout=25,
         )
         if r.status_code != 200:
-            print(f"  [nim] HTTP {r.status_code}, using heuristic fallback for batch.")
-            return [x for x in (heuristic_evaluate(it) for it in batch_items) if x]
+            print(f"  [nim] HTTP {r.status_code} on batch of {len(batch_items)}")
+            return []
 
-        content = r.json()["choices"][0]["message"]["content"].strip()
-        # Strip markdown fences if present
+        content = (r.json()["choices"][0]["message"].get("content") or "").strip()
         content = re.sub(r'^```(?:json)?\s*|\s*```$', '', content, flags=re.MULTILINE).strip()
         m = re.search(r'\{[\s\S]*\}', content)
         if not m:
-            return [x for x in (heuristic_evaluate(it) for it in batch_items) if x]
+            raise ValueError("No JSON object found in NIM output")
 
         raw_json = m.group(0)
-        # Auto-repair occasional trailing commas before closing } or ]
         raw_json = re.sub(r',\s*([\}\]])', r'\1', raw_json)
         parsed = json.loads(raw_json, strict=False)
         kept = []
@@ -751,8 +753,9 @@ def classify_batch_with_nim(batch_items):
                 continue
             base = batch_items[idx]
             cat = row.get("category") if row.get("category") in valid_cats else base.get("category_hint", "ai_alpha")
-            score = int(row.get("signal_score") or 75)
-            if score < 65:
+            score = int(row.get("signal_score") or 0)
+            # Enforce ruthless >= 80 quality floor
+            if score < 80:
                 continue
 
             summary = str(row.get("summary") or base.get("title", "")).replace("—", ", ").replace("–", "-")
@@ -769,15 +772,18 @@ def classify_batch_with_nim(batch_items):
                 "action_steps": [str(s)[:140] for s in steps[:3]],
                 "value_badge": str(row.get("value_badge") or "Live Drop")[:32],
                 "eligibility": str(row.get("eligibility") or "India & Global")[:30],
-                "signal_score": min(99, max(65, score)),
+                "signal_score": min(99, max(80, score)),
                 "is_urgent": bool(row.get("is_urgent", False)),
                 "prize_usd_est": int(row.get("prize_usd_est") or 0),
                 "deadline_display": str(row.get("deadline_display") or "Active Now")[:28],
             })
         return kept
     except Exception as e:
-        print(f"  [nim] batch error ({str(e)[:90]}), using heuristic fallback.")
-        return [x for x in (heuristic_evaluate(it) for it in batch_items) if x]
+        print(f"  [nim] batch error ({str(e)[:80]})")
+        if allow_split_retry and len(batch_items) > 3:
+            mid = len(batch_items) // 2
+            return classify_batch_with_nim(batch_items[:mid], allow_split_retry=False) + classify_batch_with_nim(batch_items[mid:], allow_split_retry=False)
+        return []
 
 
 # =============================================================================
@@ -920,16 +926,13 @@ def run_x_radar(lane="full"):
     print(f"• Tier 2 (Exa 𝕏 Free API): {len(exa_items)} raw tweets [status: {exa_status}]")
     raw_items.extend(exa_items)
 
-    # 3. Tier 3: Zero-Auth Always-On Live Feeds (GamerPower, Epic India, Fortnite-API, HN Algolia)
-    gp_items = fetch_gamerpower_freebies(active_cats)
+    # 3. Tier 3: Zero-Auth High-Signal Official APIs ONLY (Epic India AAA Freebies + Fortnite Official BR)
+    # GamerPower shovelware and generic HN Show HN removed to guarantee Tier-1 signal quality
     epic_items = fetch_epic_free_games(active_cats)
     fn_items = fetch_fortnite_live(active_cats)
-    hn_items = fetch_hn_live(active_cats)
-    print(f"• Tier 3 (Zero-Auth Live APIs): {len(gp_items)} Free Games + {len(epic_items)} Epic + {len(fn_items)} Fortnite + {len(hn_items)} HN")
-    raw_items.extend(gp_items)
+    print(f"• Tier 3 (Official Zero-Auth APIs): {len(epic_items)} Epic + {len(fn_items)} Fortnite")
     raw_items.extend(epic_items)
     raw_items.extend(fn_items)
-    raw_items.extend(hn_items)
 
     # Layer 1: Zero-cost Python spam killer & guardrails
     candidates = prefilter_candidates(raw_items, config.get("spam_patterns", []), seen_map)
@@ -948,9 +951,9 @@ def run_x_radar(lane="full"):
 
     print(f"• After Layer-1 Spam Filter: {len(candidates)} total ({len(to_classify)} net-new to classify)")
 
-    # Layer 2: Batched NVIDIA NIM Scoring (14 items per call = tiny RPM usage)
+    # Layer 2: Batched NVIDIA NIM Scoring (8 items per call for 100% JSON accuracy & zero trash leakage)
     classified_new = []
-    batch_size = 14
+    batch_size = 8
     api_calls = 0
     for i in range(0, len(to_classify), batch_size):
         batch = to_classify[i:i + batch_size]
@@ -958,16 +961,16 @@ def run_x_radar(lane="full"):
         kept = classify_batch_with_nim(batch)
         classified_new.extend(kept)
         if i + batch_size < len(to_classify):
-            time.sleep(1.5)
+            time.sleep(1.0)
 
-    print(f"• Layer-2 Batched NIM Calls: {api_calls} calls -> kept {len(classified_new)} high-signal drops")
+    print(f"• Layer-2 Batched NIM Calls: {api_calls} calls -> kept {len(classified_new)} elite drops (dropped {len(to_classify) - len(classified_new)} low-signal items)")
 
-    # Merge newly classified + existing fresh items (keep rolling 7-day window, max 160 items)
+    # Merge newly classified + existing fresh items + deduplicate near-identical headlines
     now_ts = int(time.time())
     merged_map = {}
     for it in prev_items:
         if isinstance(it, dict) and it.get("id"):
-            if now_ts - int(it.get("timestamp", now_ts)) <= 7 * 86400:
+            if now_ts - int(it.get("timestamp", now_ts)) <= 7 * 86400 and it.get("signal_score", 0) >= 80:
                 it["is_new"] = False
                 merged_map[it["id"]] = it
     for it in reused_items:
@@ -981,10 +984,20 @@ def run_x_radar(lane="full"):
             "headline": it.get("headline", "")[:80],
         }
 
-    final_items = list(merged_map.values())
-    # Sort: urgent & freshest first, then highest signal
-    final_items.sort(key=lambda x: (x.get("timestamp", 0), x.get("signal_score", 0)), reverse=True)
-    final_items = final_items[:160]
+    # Semantic near-duplicate collapse (prevents 5 tweets about the exact same drop)
+    raw_final = sorted(merged_map.values(), key=lambda x: (x.get("signal_score", 0), x.get("likes", 0), x.get("timestamp", 0)), reverse=True)
+    final_items = []
+    seen_topic_keys = set()
+    for it in raw_final:
+        words = [w for w in re.sub(r'[^a-z0-9 ]', ' ', it.get("headline", "").lower()).split() if len(w) > 2 and w not in ("the", "for", "free", "with", "now", "claim", "limited", "time", "new")]
+        topic_key = f"{it.get('category')}|" + "_".join(words[:3])
+        if len(words) >= 3 and topic_key in seen_topic_keys:
+            continue
+        seen_topic_keys.add(topic_key)
+        final_items.append(it)
+
+    final_items.sort(key=lambda x: (x.get("is_urgent", False), x.get("timestamp", 0), x.get("signal_score", 0)), reverse=True)
+    final_items = final_items[:80]
 
     # Sync X hackathons into main Hackathons tab
     synced_hacks = sync_x_hackathons_to_main(final_items)

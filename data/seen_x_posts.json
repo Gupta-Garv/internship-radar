@@ -1,582 +1,197 @@
 {
-  "xr_7341316095fd": {
-    "first_seen": "2026-11-18T07:42:27.211706+00:00",
+  "xr_a5d624bd20fb": {
+    "first_seen": "2026-11-18T10:37:51.112630+00:00",
     "category": "ai_alpha",
-    "headline": "Google has updated Gemini 4 Hydrogen's access tiers!"
+    "headline": "Oracle Cloud & Google Cloud Free VPS Credits"
   },
-  "xr_4dce3a15f89a": {
-    "first_seen": "2026-11-18T07:42:27.213454+00:00",
+  "xr_f38c1644376d": {
+    "first_seen": "2026-11-18T10:37:51.114257+00:00",
     "category": "ai_alpha",
-    "headline": "Google AI Ultra is a $0/month plan??"
+    "headline": "Microsoft MAI Code 2 & MAI Cyber 2 Flash Launch at Ignite"
   },
-  "xr_9b55ea23c6fb": {
-    "first_seen": "2026-11-18T07:42:27.213464+00:00",
-    "category": "ai_alpha",
-    "headline": "2 years ago ucla sent me a cease and desist after my project hit 40,000 users."
-  },
-  "xr_d6762aa228ee": {
-    "first_seen": "2026-11-18T07:42:27.213480+00:00",
-    "category": "ai_alpha",
-    "headline": "\ud83d\udea8 Claude just changed the game."
-  },
-  "xr_e8061000835e": {
-    "first_seen": "2026-11-18T07:42:27.213485+00:00",
-    "category": "ai_alpha",
-    "headline": "Angelo 2.0 is out!!!"
-  },
-  "xr_c973eacbbea9": {
-    "first_seen": "2026-11-18T07:42:27.213505+00:00",
-    "category": "ai_alpha",
-    "headline": "I launched my first paid product 2 days ago."
-  },
-  "xr_d52cd4f7bb30": {
-    "first_seen": "2026-11-18T07:42:27.213509+00:00",
-    "category": "ai_alpha",
-    "headline": "Fensory presents an interesting concept: allowing AI (such as Claude or ChatGPT)"
-  },
-  "xr_2db839f43eee": {
-    "first_seen": "2026-11-18T07:42:27.213520+00:00",
-    "category": "ai_alpha",
-    "headline": "\ud83d\udea8 Google AI Ultra FREE for 12 months? A bug or a hidden promotion?"
-  },
-  "xr_6086eb5870d2": {
-    "first_seen": "2026-11-18T07:42:27.213533+00:00",
-    "category": "ai_alpha",
-    "headline": "He realized most typing is not articles. It is telling AI what to do. Long promp"
-  },
-  "xr_7295279f6c0d": {
-    "first_seen": "2026-11-18T07:42:27.213547+00:00",
-    "category": "ai_alpha",
-    "headline": "My quick takeaways from today's AI news, for people who don't code:"
-  },
-  "xr_e771cba69231": {
-    "first_seen": "2026-11-18T07:42:27.213565+00:00",
-    "category": "ai_alpha",
-    "headline": "CLAUDE FABLE 5.2 FOR FREE? \ud83d\udd25"
-  },
-  "xr_d95ff7b0333a": {
-    "first_seen": "2026-11-18T07:42:27.213578+00:00",
-    "category": "ai_alpha",
-    "headline": "Visual Focus is now Optic."
-  },
-  "xr_6df00a5a92bd": {
-    "first_seen": "2026-11-18T07:42:27.213592+00:00",
-    "category": "ai_alpha",
-    "headline": "I am still in the business of providing you\u2019ll endless opportunities. And here i"
-  },
-  "xr_02b499691629": {
-    "first_seen": "2026-11-18T07:42:27.213609+00:00",
-    "category": "ai_alpha",
-    "headline": "HY4 FLASH WEIGHTS JUST DROPPED!!"
-  },
-  "xr_83cff290da93": {
-    "first_seen": "2026-11-18T07:42:27.213613+00:00",
-    "category": "ai_alpha",
-    "headline": "Agentaus 1: 220B parameter model ranked #43 globally"
-  },
-  "xr_70351596cd0c": {
-    "first_seen": "2026-11-18T07:42:27.213616+00:00",
-    "category": "ai_alpha",
-    "headline": "Qoder credit multipliers dropped for Auto/Fast/Efficient tiers"
-  },
-  "xr_fd212432f4f0": {
-    "first_seen": "2026-11-18T07:42:27.213620+00:00",
-    "category": "ai_alpha",
-    "headline": "QwenWork: Black Friday promotional assets generator"
-  },
-  "xr_ab1db73e8529": {
-    "first_seen": "2026-11-18T07:42:27.213624+00:00",
+  "xr_1c75a0e4c17c": {
+    "first_seen": "2026-11-18T10:37:51.115596+00:00",
     "category": "x_hackathons",
-    "headline": "4 Web3 hackathons with cash prizes open for builders"
+    "headline": "$100K Ship or Die Hackathon by Higgsfield"
   },
-  "xr_88a1484a6351": {
-    "first_seen": "2026-11-18T07:42:27.213627+00:00",
+  "xr_22dc3e3e43d0": {
+    "first_seen": "2026-11-18T10:37:51.115652+00:00",
     "category": "x_hackathons",
-    "headline": "FMSG AI agent hackathon with $5,003 cash prize"
-  },
-  "xr_e0b15276ff5e": {
-    "first_seen": "2026-11-18T07:42:27.213631+00:00",
-    "category": "x_hackathons",
-    "headline": "Nasiko \u00d7 ElevenLabs TALK-N-OPS AI Buildathon"
-  },
-  "xr_5552f2f7b88c": {
-    "first_seen": "2026-11-18T07:42:27.213634+00:00",
-    "category": "x_hackathons",
-    "headline": "\ud83c\udfaf\ud83c\udfaf\ud83c\udfafPI NETWORK NEWS: Pi Ecosystem Summit Begins Today!"
-  },
-  "xr_cb379d3e41af": {
-    "first_seen": "2026-11-18T07:42:27.213638+00:00",
-    "category": "x_hackathons",
-    "headline": "Day 13 of the 30 Days Build with AI Challenge"
-  },
-  "xr_9f74186059f1": {
-    "first_seen": "2026-11-18T07:42:27.213642+00:00",
-    "category": "x_hackathons",
-    "headline": "MarketingMaxxing with $100K:"
-  },
-  "xr_13d4698f2920": {
-    "first_seen": "2026-11-18T07:42:27.213645+00:00",
-    "category": "x_hackathons",
-    "headline": "\ud83d\ude80 WHAT IS THE PI ECOSYSTEM SUMMIT REALLY ALL ABOUT?"
+    "headline": "YC Cyber Hackathon with Guaranteed Interview"
   },
   "xr_965530a5fb58": {
-    "first_seen": "2026-11-18T07:42:27.213648+00:00",
+    "first_seen": "2026-11-18T10:37:51.115656+00:00",
     "category": "x_hackathons",
-    "headline": "OPPORTUNITY\u203c\ufe0f: Build a business in 30 days. Make the most profit. Win $100,000."
+    "headline": "$100K Profit-Driven Hackathon"
   },
-  "xr_43a4750efbd8": {
-    "first_seen": "2026-11-18T07:42:27.213652+00:00",
+  "xr_36600c70d747": {
+    "first_seen": "2026-11-18T10:37:51.115918+00:00",
     "category": "x_hackathons",
-    "headline": "\u20b91,00,000 lakh cash prize, $1,000 in Sarvam AI credits, and a Keychron keyboard "
+    "headline": "ElevenLabs Creator Plan Hackathon with $50K+ Pool"
   },
-  "xr_59c987af288c": {
-    "first_seen": "2026-11-18T07:42:27.213656+00:00",
+  "xr_6a18d5de133c": {
+    "first_seen": "2026-11-18T10:37:51.115923+00:00",
     "category": "x_hackathons",
-    "headline": "2 days ago we have organized our second Leyr buildathon. 60 ppl showed up - craz"
-  },
-  "xr_050b1579f848": {
-    "first_seen": "2026-11-18T07:42:27.213659+00:00",
-    "category": "x_hackathons",
-    "headline": "@hbr_pbc and @GoogleDeepMind are hosting the world's first Robot Use Agent (RUA)"
-  },
-  "xr_2abcb5eea9a5": {
-    "first_seen": "2026-11-18T07:42:27.213662+00:00",
-    "category": "x_hackathons",
-    "headline": "web3 hackathons still open with some pretty serious prize pools:"
-  },
-  "xr_059e07811da4": {
-    "first_seen": "2026-11-18T07:42:27.213665+00:00",
-    "category": "x_hackathons",
-    "headline": "What happens when you give 75 hackers, 15 teams, and a supercomputing cluster 47"
-  },
-  "xr_9ffe99f4ff06": {
-    "first_seen": "2026-11-18T07:42:27.213669+00:00",
-    "category": "x_hackathons",
-    "headline": "Over $1,000,000 in hackathon prizes, and every deadline is this week."
-  },
-  "xr_b30377e35ab8": {
-    "first_seen": "2026-11-18T07:42:27.213683+00:00",
-    "category": "x_hackathons",
-    "headline": "\ud83d\ude80 Post-Quantum Hackathon is LIVE! \u26a1"
-  },
-  "xr_9416792a0b56": {
-    "first_seen": "2026-11-18T07:42:27.213687+00:00",
-    "category": "x_hackathons",
-    "headline": "@ladicodez Since we're sharing, I participated in my first global hackathon this"
-  },
-  "xr_a99d3327d98e": {
-    "first_seen": "2026-11-18T07:42:27.213690+00:00",
-    "category": "x_hackathons",
-    "headline": "What a busy weekend for builders in Tokyo! \ud83c\uddef\ud83c\uddf5"
-  },
-  "xr_4324ec6b53f3": {
-    "first_seen": "2026-11-18T07:42:27.213715+00:00",
-    "category": "x_hackathons",
-    "headline": "BCH Blaze 2026, Dev3pack Global Hackathon 2026, IXH26 Italian XRPL Hackathon & Q"
-  },
-  "xr_2278444288d8": {
-    "first_seen": "2026-11-18T07:42:27.213718+00:00",
-    "category": "x_hackathons",
-    "headline": "PayPal AI Hackathon 2026 - Vireo Chime Negotiator Open Source"
-  },
-  "xr_59657a12e16d": {
-    "first_seen": "2026-11-18T07:42:27.213722+00:00",
-    "category": "x_hackathons",
-    "headline": "Dev3pack Global Hackathon & Meteora Builder Opportunities"
+    "headline": "$100K Ship or Die Hackathon - $100K Cash Pool"
   },
   "xr_6896ee5bf2cf": {
-    "first_seen": "2026-11-18T07:42:27.213725+00:00",
-    "category": "money_internships",
-    "headline": "Breakout.co Hiring - Full Time Remote Roles (Research, Writing, Strategy, Video "
-  },
-  "xr_e0f675e38aec": {
-    "first_seen": "2026-11-18T07:42:27.213729+00:00",
-    "category": "money_internships",
-    "headline": "FlexiSAF Edusoft AI Native UI/UX Design Intern"
-  },
-  "xr_d1a28bbca139": {
-    "first_seen": "2026-11-18T07:42:27.213732+00:00",
-    "category": "money_internships",
-    "headline": "MedixDeck Product Design Intern"
+    "first_seen": "2026-11-18T10:37:51.115925+00:00",
+    "category": "money_earning",
+    "headline": "Breakout Co Hiring - Full Time Remote Roles"
   },
   "xr_91a2165e1584": {
-    "first_seen": "2026-11-18T07:42:27.213735+00:00",
+    "first_seen": "2026-11-18T10:37:51.115926+00:00",
     "category": "money_internships",
-    "headline": "OpenSecAI Growth Intern - Paid Remote Flexible Hours"
-  },
-  "xr_67a31972d572": {
-    "first_seen": "2026-11-18T07:42:27.213738+00:00",
-    "category": "money_internships",
-    "headline": "Flic AI Filmmaking Platform - Paid Roles (Creative, Growth, AI Filmmaking)"
-  },
-  "xr_ac6b5f20ce6d": {
-    "first_seen": "2026-11-18T07:42:27.213743+00:00",
-    "category": "money_internships",
-    "headline": "Mridul - AI Content & Growth Intern (Remote)"
-  },
-  "xr_e72314cc25c9": {
-    "first_seen": "2026-11-18T07:42:27.213748+00:00",
-    "category": "money_internships",
-    "headline": "i\u2019m looking for a founder\u2019s office role at a deeptech or ai company."
-  },
-  "xr_3d6eed3c9065": {
-    "first_seen": "2026-11-18T07:42:27.213751+00:00",
-    "category": "money_internships",
-    "headline": "I\u2019m looking for a founder\u2019s office role at a Deeptech or AI company. Here\u2019s my s"
+    "headline": "Growth Intern at OpenSec AI - Paid Remote"
   },
   "xr_b360aca0defe": {
-    "first_seen": "2026-11-18T07:42:27.213754+00:00",
+    "first_seen": "2026-11-18T10:37:51.115928+00:00",
     "category": "money_internships",
-    "headline": "It\u2019s that time of the year :)"
+    "headline": "Growth Intern at StimulerApp - INR 50K/mo"
   },
-  "xr_0a47215ce899": {
-    "first_seen": "2026-11-18T07:42:27.213767+00:00",
+  "xr_28a837314c17": {
+    "first_seen": "2026-11-18T10:37:51.116086+00:00",
     "category": "money_internships",
-    "headline": "Company: Google"
+    "headline": "Google Forward Deployed Engineer Intern \u2013 2027 Batch"
   },
-  "xr_b7837065153f": {
-    "first_seen": "2026-11-18T07:42:27.213771+00:00",
+  "xr_1310f9564cce": {
+    "first_seen": "2026-11-18T10:37:51.116091+00:00",
     "category": "money_internships",
-    "headline": "hiring intern at my company"
+    "headline": "Vahan AI AI Engineering Intern - Bangalore"
   },
-  "xr_6ea5b4df3c67": {
-    "first_seen": "2026-11-18T07:42:27.213775+00:00",
-    "category": "money_internships",
-    "headline": "\ud83d\udce2IQVIA Internship 2026\ud83d\udea8"
-  },
-  "xr_13abc5d1020d": {
-    "first_seen": "2026-11-18T07:42:27.213782+00:00",
-    "category": "money_internships",
-    "headline": "Hiring Intern | Abstrabit"
-  },
-  "xr_38134933919e": {
-    "first_seen": "2026-11-18T07:42:27.213786+00:00",
-    "category": "money_internships",
-    "headline": "Hiring Intern | Abstrabit"
-  },
-  "xr_4b38a8f96a6b": {
-    "first_seen": "2026-11-18T07:42:27.213789+00:00",
-    "category": "money_internships",
-    "headline": "Collinear is hiring intern"
-  },
-  "xr_a10aec56b6fe": {
-    "first_seen": "2026-11-18T07:42:27.213793+00:00",
-    "category": "money_internships",
-    "headline": "*URGENT HIRING: Intern \u2013 NYSC*"
-  },
-  "xr_033fd0739b9a": {
-    "first_seen": "2026-11-18T07:42:27.213803+00:00",
-    "category": "money_internships",
-    "headline": "\ud83d\udea8 HIRING: Intern VA \u2013 Compliance \ud83d\udcbc"
-  },
-  "xr_d41278b914d6": {
-    "first_seen": "2026-11-18T07:42:27.213807+00:00",
-    "category": "money_internships",
-    "headline": "\ud83d\udcbb Hiring: Intern - Backend - CoinDCX"
-  },
-  "xr_1d9140b6bba7": {
-    "first_seen": "2026-11-18T07:42:27.213811+00:00",
-    "category": "money_internships",
-    "headline": "\ud83d\ude80 Hiring: Intern - Financial Intelligence 4U, LLC"
-  },
-  "xr_5de9b09c0dd1": {
-    "first_seen": "2026-11-18T07:42:27.213814+00:00",
-    "category": "money_internships",
-    "headline": "#hiring intern"
-  },
-  "xr_b7de433dac45": {
-    "first_seen": "2026-11-18T07:42:27.213818+00:00",
-    "category": "money_internships",
-    "headline": "Mopid Hiring DevOps + Backend Intern in Bengaluru"
-  },
-  "xr_921db2d4a14e": {
-    "first_seen": "2026-11-18T07:42:27.213821+00:00",
+  "xr_8ff923073544": {
+    "first_seen": "2026-11-18T10:37:51.116093+00:00",
     "category": "money_earning",
-    "headline": "AI Trainer/Data Annotator - $8-$12/hr Remote"
-  },
-  "xr_c6e2ed200e27": {
-    "first_seen": "2026-11-18T07:42:27.213831+00:00",
-    "category": "money_earning",
-    "headline": "Top AI Training Platforms for Domain Experts"
-  },
-  "xr_baf98e54193c": {
-    "first_seen": "2026-11-18T07:42:27.213835+00:00",
-    "category": "money_earning",
-    "headline": "Mercor Remote Professionals Role - $60-$120/hr"
-  },
-  "xr_00ca72f0f384": {
-    "first_seen": "2026-11-18T07:42:27.213839+00:00",
-    "category": "money_earning",
-    "headline": "I came across an interesting use case for agent commerce while exploring a new c"
-  },
-  "xr_7b16f17c289f": {
-    "first_seen": "2026-11-18T07:42:27.213842+00:00",
-    "category": "money_earning",
-    "headline": "\ud83d\udea8 101 people were hired for this role this month alone."
-  },
-  "xr_484129d94478": {
-    "first_seen": "2026-11-18T07:42:27.213845+00:00",
-    "category": "money_earning",
-    "headline": "My AI agent just earned its first $3!"
-  },
-  "xr_352c88e8e940": {
-    "first_seen": "2026-11-18T07:42:27.213849+00:00",
-    "category": "money_earning",
-    "headline": "Over time, the Indian economy has steadily moved away from its dependence on agr"
-  },
-  "xr_9aa3bc484d40": {
-    "first_seen": "2026-11-18T07:42:27.213852+00:00",
-    "category": "money_earning",
-    "headline": "Good morning Web3 champions \u2600\ufe0f"
-  },
-  "xr_f7f24e23edd3": {
-    "first_seen": "2026-11-18T07:42:27.213855+00:00",
-    "category": "money_earning",
-    "headline": "Explore the latest Maya Protocol updates, including the Maya Masks claiming list"
+    "headline": "X Outlier: Free AI data labeling platform"
   },
   "xr_42a3090b8f52": {
-    "first_seen": "2026-11-18T07:42:27.213858+00:00",
+    "first_seen": "2026-11-18T10:37:51.116094+00:00",
     "category": "money_earning",
-    "headline": "@_jasonwei @mercor Mercor Research is hiring! https://t.co/D6KLQiGwMc"
+    "headline": "Mercor Research hiring for AI training roles"
   },
   "xr_631527c064ca": {
-    "first_seen": "2026-11-18T07:42:27.213861+00:00",
+    "first_seen": "2026-11-18T10:37:51.116875+00:00",
     "category": "gaming_general",
-    "headline": "\ud83c\udfd7\ufe0f\"Contractor: The Clean Up Part II\"\ud83c\udfd7\ufe0f is FREE on Epic Games to keep FOREVER for"
+    "headline": "Contractor: The Clean Up Part II FREE on Epic Games Store"
   },
-  "xr_0f3d5a597869": {
-    "first_seen": "2026-11-18T07:42:27.213867+00:00",
+  "xr_edd0dacf1deb": {
+    "first_seen": "2026-11-18T10:37:51.116881+00:00",
     "category": "gaming_general",
-    "headline": "3 weeks later and the numbers just keep climbing \ud83d\udd1d"
+    "headline": "Knightica Free on Epic Games Store"
   },
-  "xr_1d5452b750e6": {
-    "first_seen": "2026-11-18T07:42:27.213870+00:00",
+  "xr_712572e0afd3": {
+    "first_seen": "2026-11-18T10:37:51.116883+00:00",
     "category": "gaming_general",
-    "headline": "@Dexerto So just, delete GTA VI"
+    "headline": "Good Morning Human FREE on Epic until 11/9/2026"
   },
-  "xr_2608b644196d": {
-    "first_seen": "2026-11-18T07:42:27.213873+00:00",
+  "xr_c137334cff9c": {
+    "first_seen": "2026-11-18T10:37:51.116885+00:00",
     "category": "gaming_general",
-    "headline": "\ud83e\ude90 Colonial Authority is calling!"
+    "headline": "Sorry We're Closed FREE on Epic until Nov 5th"
   },
-  "xr_eda7fccca1d9": {
-    "first_seen": "2026-11-18T07:42:27.213876+00:00",
+  "xr_088449dcdc1a": {
+    "first_seen": "2026-11-18T10:37:51.116886+00:00",
     "category": "gaming_general",
-    "headline": "@Grishakof I don't think you're allowed to share that info. You sign a stack of "
+    "headline": "Mafia Hotel FREE on Epic until Nov 1st"
   },
-  "xr_3da3801006a9": {
-    "first_seen": "2026-11-18T07:42:27.213879+00:00",
+  "xr_0e3763482311": {
+    "first_seen": "2026-11-18T10:37:51.116888+00:00",
     "category": "gaming_general",
-    "headline": "Plenty of opinions on this, and to each their own. But here\u2019s how I see it: poin"
+    "headline": "Asleep Act 1 FREE on Steam"
   },
-  "xr_db4c0f05bfe8": {
-    "first_seen": "2026-11-18T07:42:27.213883+00:00",
+  "xr_f89000ae8434": {
+    "first_seen": "2026-11-18T10:37:51.116889+00:00",
     "category": "gaming_general",
-    "headline": "Free Weekly Game Giveaway: Doppelganger by LeaF"
+    "headline": "Hexologic FREE on Steam"
   },
-  "xr_1263a1704a58": {
-    "first_seen": "2026-11-18T07:42:27.213887+00:00",
-    "category": "gaming_general",
-    "headline": "Free Steam Playtest: HIVEROT"
-  },
-  "xr_21ddc84f337d": {
-    "first_seen": "2026-11-18T07:42:27.213890+00:00",
-    "category": "gaming_general",
-    "headline": "Free Steam Game: Zenko: A Fox's Tale"
-  },
-  "xr_b334965b2934": {
-    "first_seen": "2026-11-18T07:42:27.213893+00:00",
-    "category": "gaming_general",
-    "headline": "Free on Steam: MuddyStream"
-  },
-  "xr_1c6d96af9332": {
-    "first_seen": "2026-11-18T07:42:27.213898+00:00",
+  "xr_00c00aa5a516": {
+    "first_seen": "2026-11-18T10:37:51.116892+00:00",
     "category": "gaming_fortnite",
-    "headline": "Fortnite Item Shop Today - Check Daily Deals"
+    "headline": "Naruto Skins Back in Fortnite Item Shop"
   },
-  "xr_dc8df3f3918a": {
-    "first_seen": "2026-11-18T07:42:27.213902+00:00",
+  "xr_ca5d91697aea": {
+    "first_seen": "2026-11-18T10:37:51.116894+00:00",
     "category": "gaming_fortnite",
-    "headline": "Fortnite Item Shop - Wednesday Nov 18, 2026"
+    "headline": "LEAKED Fortnite Shop Tonight"
   },
-  "xr_84a950a9eed2": {
-    "first_seen": "2026-11-18T07:42:27.213905+00:00",
+  "xr_3103878dd47c": {
+    "first_seen": "2026-11-18T10:37:51.116896+00:00",
     "category": "gaming_fortnite",
-    "headline": "Fortnite Daily Item Shop - Nov 18, 2026"
+    "headline": "Fortnite Shop Sections Update Tonight"
   },
-  "xr_b1f6369c1f31": {
-    "first_seen": "2026-11-18T07:42:27.213908+00:00",
+  "xr_b3c15e94b4a6": {
+    "first_seen": "2026-11-18T10:37:51.116897+00:00",
+    "category": "gaming_fortnite",
+    "headline": "JURASSIC PARK x JEEP WRANGLER RETURNS TO ITEM SHOP"
+  },
+  "xr_3acc0d2f6a99": {
+    "first_seen": "2026-11-18T10:37:51.116899+00:00",
+    "category": "gaming_fortnite",
+    "headline": "SCOTT PILGRIM EMOTE ADDS LOVE POP-UP TEXT"
+  },
+  "xr_83cab8e4527a": {
+    "first_seen": "2026-11-18T10:37:51.116900+00:00",
+    "category": "gaming_fortnite",
+    "headline": "KAJU NO. 8, THE ODYSSEY, MADISON BEER RETURN TO ITEM SHOP"
+  },
+  "xr_d5b37910b6ba": {
+    "first_seen": "2026-11-18T10:37:51.116902+00:00",
+    "category": "gaming_fortnite",
+    "headline": "MULTIPLE COLLAB SKINS RETURN TO ITEM SHOP"
+  },
+  "xr_b68bd9420334": {
+    "first_seen": "2026-11-18T10:37:51.116903+00:00",
+    "category": "gaming_fortnite",
+    "headline": "KAIJU NO. 8 RETURNS AFTER NEAR 1 YEAR ABSENCE"
+  },
+  "xr_cec2f68e0488": {
+    "first_seen": "2026-11-18T10:37:51.116904+00:00",
+    "category": "gaming_fortnite",
+    "headline": "MADISON BEER & HIGH STAKES SUMMER RETURN TO ITEM SHOP"
+  },
+  "xr_fed31cbe259d": {
+    "first_seen": "2026-11-18T10:37:51.116905+00:00",
+    "category": "grants_credits",
+    "headline": "a16z speedrun Insiders program early access"
+  },
+  "xr_6a4d496b9c4a": {
+    "first_seen": "2026-11-18T10:37:51.116906+00:00",
     "category": "x_hackathons",
-    "headline": "$3,825 AI Agent Bounty Competition Live on MakeFun AI"
+    "headline": "a16z Speedrun SR008 - $1M Partner Credits & $10M+ Startup Investments"
   },
-  "xr_1cd85b88de88": {
-    "first_seen": "2026-11-18T07:42:27.213911+00:00",
+  "xr_72d92a6e14bb": {
+    "first_seen": "2026-11-18T10:37:51.116907+00:00",
     "category": "grants_credits",
-    "headline": "Knight-Wallace Journalism Fellowship - $90k Stipend"
-  },
-  "xr_fc61ea223e10": {
-    "first_seen": "2026-11-18T07:42:27.213914+00:00",
-    "category": "grants_credits",
-    "headline": "Digispace Africa Research Fellowship 2027"
-  },
-  "xr_1c22e0e29f80": {
-    "first_seen": "2026-11-18T07:42:27.213917+00:00",
-    "category": "grants_credits",
-    "headline": "ISNCON 2026 Travel Grants for Presenters"
-  },
-  "xr_7656acab656d": {
-    "first_seen": "2026-11-18T07:42:27.213926+00:00",
-    "category": "gaming_general",
-    "headline": "Contractor: The Clean Up Part 2 - Free on Epic Games Store"
-  },
-  "xr_5f74417e449c": {
-    "first_seen": "2026-11-18T07:42:27.213930+00:00",
-    "category": "gaming_general",
-    "headline": "Knightica - Free on Epic Games Store, Android, iOS"
-  },
-  "xr_d8e5be8bc2bc": {
-    "first_seen": "2026-11-18T07:42:27.213934+00:00",
-    "category": "gaming_general",
-    "headline": "RUNZ Playtest Steam Key Giveaway (N/A -> FREE)"
-  },
-  "xr_ad3a571cdcc4": {
-    "first_seen": "2026-11-18T07:42:27.213937+00:00",
-    "category": "gaming_general",
-    "headline": "Dead by Daylight 100k Bloodpoints Key Giveaway (N/A -> FREE)"
-  },
-  "xr_c62d24ecdfe7": {
-    "first_seen": "2026-11-18T07:42:27.213960+00:00",
-    "category": "gaming_general",
-    "headline": "My Darkest Witch (IndieGala) Giveaway ($4.99 -> FREE)"
-  },
-  "xr_0455182212f5": {
-    "first_seen": "2026-11-18T07:42:27.213964+00:00",
-    "category": "gaming_general",
-    "headline": "Hunting Simulator 3 - Classic American Hunter Pack (Steam) Giveaway ($4.99 -> FR"
-  },
-  "xr_6add40b84a25": {
-    "first_seen": "2026-11-18T07:42:27.213967+00:00",
-    "category": "gaming_general",
-    "headline": "Free itch.io Games Bundle ($384.00 -> FREE)"
-  },
-  "xr_69de408f2ba1": {
-    "first_seen": "2026-11-18T07:42:27.213970+00:00",
-    "category": "gaming_general",
-    "headline": "ANCIENT EVIL (IndieGala) Giveaway ($4.99 -> FREE)"
-  },
-  "xr_f7bfab3a3b11": {
-    "first_seen": "2026-11-18T07:42:27.213973+00:00",
-    "category": "gaming_general",
-    "headline": "Last Room (IndieGala) Giveaway ($29.99 -> FREE)"
-  },
-  "xr_0d6218431862": {
-    "first_seen": "2026-11-18T07:42:27.213976+00:00",
-    "category": "gaming_general",
-    "headline": "Fathom Reach Playtest Steam Key Giveaway (N/A -> FREE)"
-  },
-  "xr_8ac279bc858d": {
-    "first_seen": "2026-11-18T07:42:27.213979+00:00",
-    "category": "gaming_general",
-    "headline": "Everwind AW-51 Pack Steam Key Giveaway (N/A -> FREE)"
-  },
-  "xr_4c0b2b27b993": {
-    "first_seen": "2026-11-18T07:42:27.213982+00:00",
-    "category": "gaming_general",
-    "headline": "Scallywags Playtest Steam Key Giveaway (N/A -> FREE)"
-  },
-  "xr_3dee2b44bae1": {
-    "first_seen": "2026-11-18T07:42:27.213985+00:00",
-    "category": "gaming_general",
-    "headline": "The Witcher 3: Wild Hunt Remastered - Scarlet Crest Armor Giveaway (N/A -> FREE)"
+    "headline": "Massive Tier-1 Student & Builder Credits Bundle"
   },
   "xr_234a1d946a8d": {
-    "first_seen": "2026-11-18T07:42:27.213988+00:00",
+    "first_seen": "2026-11-18T10:37:51.116909+00:00",
     "category": "gaming_general",
-    "headline": "Epic Free: Ghostrunner 2 (Starts 2026-12-10)"
+    "headline": "Epic Games: Ghostrunner 2 FREE Claim"
   },
   "xr_b4d94dd325f7": {
-    "first_seen": "2026-11-18T07:42:27.213992+00:00",
+    "first_seen": "2026-11-18T10:37:51.116910+00:00",
     "category": "gaming_general",
-    "headline": "Epic Free: LISA: The Definitive Edition (Starts 2026-12-10)"
+    "headline": "Epic Games: LISA: The Definitive Edition FREE Claim"
   },
   "xr_9f7169279a50": {
-    "first_seen": "2026-11-18T07:42:27.213995+00:00",
+    "first_seen": "2026-11-18T10:37:51.116911+00:00",
     "category": "gaming_general",
-    "headline": "Epic Free: Mark of the Deep (Starts 2026-11-19)"
+    "headline": "Epic Games: Mark of the Deep Free Claim"
   },
   "xr_8aaea98370ca": {
-    "first_seen": "2026-11-18T07:42:27.213998+00:00",
+    "first_seen": "2026-11-18T10:37:51.116912+00:00",
     "category": "gaming_general",
-    "headline": "Epic Games Store: Monument Valley Free Claim"
+    "headline": "Epic Games: Monument Valley Free Claim"
   },
   "xr_a01b4529d4a0": {
-    "first_seen": "2026-11-18T07:42:27.214001+00:00",
+    "first_seen": "2026-11-18T10:37:51.116913+00:00",
     "category": "gaming_general",
-    "headline": "Epic Games Store: TerraScape Free Claim"
+    "headline": "Epic Games: TerraScape Free Claim"
   },
   "xr_22d31c1b2425": {
-    "first_seen": "2026-11-18T07:42:27.214005+00:00",
+    "first_seen": "2026-11-18T10:37:51.116915+00:00",
     "category": "gaming_general",
-    "headline": "Epic Games Store: Knightica Free Claim"
-  },
-  "xr_a0c57d97b835": {
-    "first_seen": "2026-11-18T07:42:27.214008+00:00",
-    "category": "gaming_fortnite",
-    "headline": "Fortnite Item Shop: Devil Fruits Live Drop"
-  },
-  "xr_3ff19f0524c7": {
-    "first_seen": "2026-11-18T07:42:27.214020+00:00",
-    "category": "ai_alpha",
-    "headline": "Director's Lookbook: AI Image, Video & Music Prompt Tool"
-  },
-  "xr_04f0fa64eafb": {
-    "first_seen": "2026-11-18T07:42:27.214024+00:00",
-    "category": "ai_alpha",
-    "headline": "mdkit: Dropbox for AI Skill Files"
-  },
-  "xr_25b3adc0b082": {
-    "first_seen": "2026-11-18T07:42:27.214027+00:00",
-    "category": "ai_alpha",
-    "headline": "Infoboxing: Wikipedia Article Guessing Game"
-  },
-  "xr_9da854e094b9": {
-    "first_seen": "2026-11-18T07:42:27.214030+00:00",
-    "category": "ai_alpha",
-    "headline": "Variety of Chess Games: AI-Powered Web App"
-  },
-  "xr_f5749a81c777": {
-    "first_seen": "2026-11-18T07:42:27.214033+00:00",
-    "category": "ai_alpha",
-    "headline": "Whiz.pub: AI-Native Blogging Platform"
-  },
-  "xr_02eb9d37768d": {
-    "first_seen": "2026-11-18T07:42:27.214036+00:00",
-    "category": "ai_alpha",
-    "headline": "Free AI Agent Lab: Two-Agent Debate System"
-  },
-  "xr_308e46526f77": {
-    "first_seen": "2026-11-18T07:42:27.214040+00:00",
-    "category": "ai_alpha",
-    "headline": "Faros Desktop: AI Usage Visualization App"
-  },
-  "xr_dd9c36f5bcc0": {
-    "first_seen": "2026-11-18T07:42:27.214043+00:00",
-    "category": "x_hackathons",
-    "headline": "Boat Hackathon: Active Build Competition"
-  },
-  "xr_22e42f3c443a": {
-    "first_seen": "2026-11-18T07:42:27.214048+00:00",
-    "category": "x_hackathons",
-    "headline": "ESA XR Hackathon 2027: Registrations Open"
-  },
-  "xr_5602ba6b0ff1": {
-    "first_seen": "2026-11-18T07:42:27.214051+00:00",
-    "category": "x_hackathons",
-    "headline": "TimeNet challenge: Online hackathon for time-series AI"
-  },
-  "xr_a425369ae785": {
-    "first_seen": "2026-11-18T07:42:27.214054+00:00",
-    "category": "x_hackathons",
-    "headline": "Meta Global AI Hackathon - $1M prize pool results"
+    "headline": "Epic Games: Knightica Free Claim"
   }
 }
