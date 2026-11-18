@@ -1346,6 +1346,219 @@
       margin-top: auto;
     }
 
+    /* Distinct Cyan/Blue Styling for X-Sourced Hackathons inside Main Hackathons Tab */
+    .hackathon-tray.from-x {
+      background: linear-gradient(145deg, rgba(14, 165, 233, 0.16), rgba(56, 189, 248, 0.06)) !important;
+      border: 1px solid rgba(56, 189, 248, 0.35);
+    }
+
+    .hackathon-card.from-x {
+      background: linear-gradient(180deg, rgba(12, 22, 36, 0.96), var(--card-sheet)) !important;
+      box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.25), 0 8px 24px rgba(14, 165, 233, 0.12);
+    }
+
+    .x-exclusive-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(56, 189, 248, 0.16);
+      border: 1px solid rgba(56, 189, 248, 0.45);
+      color: #38bdf8;
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      padding: 2px 7px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    /* ==========================================================================
+       PAGE 5: X INTELLIGENCE RADAR (24/7 FULL-HYBRID SIGNAL ENGINE)
+       ========================================================================== */
+    .x-engine-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .x-engine-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      color: var(--text-muted);
+    }
+
+    .x-engine-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #64748b;
+    }
+
+    .x-engine-dot.live {
+      background: #34d399;
+      box-shadow: 0 0 8px rgba(52, 211, 153, 0.7);
+    }
+
+    .x-engine-dot.standby {
+      background: #fbbf24;
+    }
+
+    .x-sub-tabs-row {
+      display: none;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed rgba(255, 255, 255, 0.08);
+      flex-wrap: wrap;
+    }
+
+    .x-sub-tabs-row.visible {
+      display: flex;
+    }
+
+    .x-radar-card {
+      background: var(--card-sheet);
+      border-radius: 1.25rem;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      box-sizing: border-box;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: box-shadow 0.15s ease, border-color 0.15s ease;
+    }
+
+    .x-radar-card.urgent-signal {
+      border-color: rgba(56, 189, 248, 0.32);
+      box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.15), 0 6px 20px rgba(14, 165, 233, 0.08);
+    }
+
+    .x-card-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .x-source-badge {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 3px 8px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      background: rgba(56, 189, 248, 0.14);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      color: #38bdf8;
+      white-space: nowrap;
+    }
+
+    .x-source-badge.community {
+      background: rgba(168, 85, 247, 0.14);
+      border-color: rgba(168, 85, 247, 0.32);
+      color: #c084fc;
+    }
+
+    .x-value-pill {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 6px;
+      background: rgba(52, 211, 153, 0.12);
+      border: 1px solid rgba(52, 211, 153, 0.3);
+      color: #34d399;
+      white-space: nowrap;
+      max-width: 170px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .x-card-headline {
+      font-size: 15.5px;
+      font-weight: 500;
+      line-height: 1.38;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin: 0 0 8px 0;
+    }
+
+    .x-card-meta-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      color: var(--text-dim);
+      margin-bottom: 12px;
+    }
+
+    .x-card-summary {
+      font-size: 12.5px;
+      line-height: 1.55;
+      color: var(--text-muted);
+      margin: 0 0 12px 0;
+    }
+
+    .x-steps-box {
+      background: rgba(255, 255, 255, 0.025);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 10px;
+      padding: 10px 12px;
+      margin-bottom: 12px;
+    }
+
+    .x-steps-label {
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: #38bdf8;
+      margin-bottom: 6px;
+    }
+
+    .x-step-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      font-size: 11.5px;
+      line-height: 1.45;
+      color: #d4d4d8;
+      margin-bottom: 4px;
+    }
+
+    .x-step-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .x-card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      margin-top: auto;
+      flex-wrap: wrap;
+    }
+
     @media print {
       body {
         background: #ffffff !important;
@@ -1364,6 +1577,7 @@
       #view-radar,
       #view-pipeline,
       #view-hackathons,
+      #view-xradar,
       #view-dna,
       #inspector-overlay,
       #strategy-overlay,
@@ -1458,6 +1672,11 @@
           <span>🏆 Hackathons</span>
           <span class="dock-badge" id="dock-count-hackathons"
             style="background:rgba(251,191,36,0.18); color:#fbbf24;">16</span>
+        </button>
+        <button class="dock-pill" onclick="navigateLedger('xradar')">
+          <span>𝕏 Radar</span>
+          <span class="dock-badge" id="dock-count-xradar"
+            style="background:rgba(56,189,248,0.18); color:#38bdf8;">0</span>
         </button>
         <button class="dock-pill" onclick="navigateLedger('trash')">
           <span>🗑️ Trash</span>
@@ -2133,6 +2352,7 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
           <div class="filter-group" id="hackathon-platforms">
             <span class="filter-eyebrow" style="min-width:76px; display:inline-block;">Platform:</span>
             <button class="pill-filter active" data-platform="all">All Sources</button>
+            <button class="pill-filter" data-platform="x_live" style="border-color:rgba(56,189,248,0.35); color:#38bdf8;">𝕏 From X Live</button>
             <button class="pill-filter" data-platform="devpost">Devpost</button>
             <button class="pill-filter" data-platform="flagship">Big Tech (Google/Apple/Meta)</button>
             <button class="pill-filter" data-platform="ailabs">AI Labs &amp; YC</button>
@@ -2144,6 +2364,120 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
       <!-- Hackathons Grid -->
       <div class="catalog-grid" id="hackathons-catalog-grid">
         <!-- Populated dynamically by renderHackathons() -->
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       PAGE 5: X INTELLIGENCE RADAR (24/7 FULL-HYBRID SIGNAL ENGINE)
+       ========================================================================== -->
+    <section id="view-xradar" class="ledger-page-view">
+      <div style="margin-bottom: 26px;">
+        <div class="trust-chip" style="margin-bottom:12px;">
+          <div class="trust-indicator" style="background:#38bdf8; box-shadow:0 0 10px rgba(56,189,248,0.65);"></div>
+          <span class="trust-text" style="color:#7dd3fc;">Full-Hybrid $0 Signal Engine // 𝕏 Live Burners &bull; Exa 𝕏 &bull; Live Free Feeds</span>
+        </div>
+        <h2
+          style="font-size:32px; font-weight:450; letter-spacing:-0.04em; margin-bottom:10px; color:var(--text-primary);">
+          Personal 𝕏 Radar, <span class="pixel-phrase" style="color:#38bdf8;">real-time</span>.
+        </h2>
+        <p style="color:var(--text-muted); font-size:15px; line-height:1.6; max-width:860px; margin-bottom:18px;">
+          <span style="color:var(--text-primary); font-weight:500;">Your private early-mover feed across AI deals, gaming/Fortnite drops, X-native hackathons, stealth internships, earning platforms, bounties, and grants.</span>
+          Every card links straight to the source post and claim URL, filtered by AI for India/Global eligibility with zero spam.
+        </p>
+
+        <!-- Live Engine Health & Sweep Status -->
+        <div class="x-engine-bar" id="xradar-engine-bar">
+          <div class="x-engine-chip">
+            <span class="x-engine-dot" id="x-dot-xlive"></span>
+            <span id="x-status-xlive">𝕏 Burners: Standby</span>
+          </div>
+          <div class="x-engine-chip">
+            <span class="x-engine-dot" id="x-dot-exa"></span>
+            <span id="x-status-exa">Exa 𝕏 Free: Standby</span>
+          </div>
+          <div class="x-engine-chip">
+            <span class="x-engine-dot live" id="x-dot-live"></span>
+            <span>Zero-Auth Feeds: Live</span>
+          </div>
+          <div class="x-engine-chip">
+            <span class="x-engine-dot" id="x-dot-tg"></span>
+            <span id="x-status-tg">Telegram Alerts: Standby</span>
+          </div>
+          <div class="x-engine-chip" style="margin-left:auto;">
+            <span>⏱ Last Sweep: <strong id="x-last-sweep" style="color:#fff;">--</strong></span>
+          </div>
+        </div>
+
+        <!-- Metrics Row -->
+        <div class="metrics-grid" style="margin-bottom: 22px;">
+          <div class="metric-card">
+            <div class="metric-label">ACTIVE SIGNALS</div>
+            <div class="metric-value" id="x-stat-total">0</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label">URGENT / TIME-SENSITIVE</div>
+            <div class="metric-value" id="x-stat-urgent" style="color:#38bdf8;">0</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label">X HACKATHONS SYNCED</div>
+            <div class="metric-value" id="x-stat-hacks" style="color:#fbbf24;">0</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label">AI ALPHA &amp; MONEY</div>
+            <div class="metric-value" id="x-stat-alpha" style="color:#34d399;">0</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- X Radar Filter Tray -->
+      <div class="filter-tray" style="margin-bottom:24px;">
+        <div class="filter-row" style="margin-bottom:14px;">
+          <input type="text" id="xradar-search-input" class="search-input"
+            placeholder="Search AI deals, Fortnite, hackathons, Claude credits, Mercor, founders hiring..." />
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <!-- Primary Category Tabs -->
+          <div class="filter-group" id="xradar-category-tabs">
+            <span class="filter-eyebrow" style="min-width:76px; display:inline-block;">Feed:</span>
+            <button class="pill-filter active" data-xcat="all">All Signals</button>
+            <button class="pill-filter" data-xcat="ai_alpha">🤖 AI Alpha &amp; Deals</button>
+            <button class="pill-filter" data-xcat="gaming">🎮 Gaming</button>
+            <button class="pill-filter" data-xcat="x_hackathons">🏆 X Hackathons</button>
+            <button class="pill-filter" data-xcat="money">💸 Money &amp; Stealth Jobs</button>
+            <button class="pill-filter" data-xcat="vibe_bounties">🎨 Vibe-Code Bounties</button>
+            <button class="pill-filter" data-xcat="grants_credits">🚀 Grants &amp; Credits</button>
+          </div>
+
+          <!-- Nested Sub-Tabs: Gaming (General vs Fortnite) -->
+          <div class="x-sub-tabs-row" id="xradar-subtabs-gaming">
+            <span class="filter-eyebrow" style="min-width:76px; display:inline-block; color:#a78bfa;">Gaming Sub:</span>
+            <button class="pill-filter active" data-xsub="gaming_all">All Gaming</button>
+            <button class="pill-filter" data-xsub="gaming_general">🕹️ General Gaming (Free Claims)</button>
+            <button class="pill-filter" data-xsub="gaming_fortnite">🪂 Fortnite (Shop / Drops / Leaks)</button>
+          </div>
+
+          <!-- Nested Sub-Tabs: Money (Legit Earning vs Stealth Internships) -->
+          <div class="x-sub-tabs-row" id="xradar-subtabs-money">
+            <span class="filter-eyebrow" style="min-width:76px; display:inline-block; color:#34d399;">Money Sub:</span>
+            <button class="pill-filter active" data-xsub="money_all">All Money &amp; Jobs</button>
+            <button class="pill-filter" data-xsub="money_earning">💰 Legit Earning &amp; AI Training</button>
+            <button class="pill-filter" data-xsub="money_internships">⚡ Stealth X Internships</button>
+          </div>
+
+          <!-- Sort & Urgency Row -->
+          <div class="filter-group" id="xradar-sort-tabs">
+            <span class="filter-eyebrow" style="min-width:76px; display:inline-block;">Sort:</span>
+            <button class="pill-filter active" data-xsort="newest">🕒 Newest First</button>
+            <button class="pill-filter" data-xsort="score">⭐ Highest Signal</button>
+            <button class="pill-filter" data-xsort="urgent">🔥 Urgent Drops Only</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- X Radar Cards Grid -->
+      <div class="catalog-grid" id="xradar-catalog-grid">
+        <!-- Populated dynamically by renderXRadar() -->
       </div>
     </section>
 
@@ -2438,16 +2772,24 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
     <span>✓</span> Copied to clipboard
   </div>
 
-  <!-- Jobs & Hackathons Data -->
+  <!-- Jobs, Hackathons & X Radar Data -->
   <script src="jobs_data.js"></script>
   <script src="hackathons_data.js"></script>
+  <script src="x_radar_data.js"></script>
   <script>
     let allJobs = [];
     let allHackathons = [];
+    let allXSignals = [];
+    let xRadarMeta = null;
     let currentRadarMarket = 'international';
     let currentHackSort = 'urgent';
     let currentHackPlatform = 'all';
     let currentHackPrizeType = 'all';
+    let currentXCat = 'all';
+    let currentXSubGaming = 'gaming_all';
+    let currentXSubMoney = 'money_all';
+    let currentXSort = 'newest';
+    let trashedXIds = JSON.parse(localStorage.getItem('garv_trashed_x_ids') || '[]');
     let userStatus = JSON.parse(localStorage.getItem('garv_job_status') || '{}');
     let currentActiveJobId = null;
 
@@ -2553,12 +2895,13 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
 
       const mainHero = document.getElementById('main-ledger-hero');
       if (mainHero) {
-        mainHero.style.display = (pageId === 'hackathons' || pageId === 'trash') ? 'none' : 'block';
+        mainHero.style.display = (pageId === 'hackathons' || pageId === 'trash' || pageId === 'xradar') ? 'none' : 'block';
       }
 
       if (pageId === 'pipeline') renderKanban();
       if (pageId === 'studio') generateStudioPitches();
       if (pageId === 'hackathons') renderHackathons();
+      if (pageId === 'xradar') renderXRadar();
       if (pageId === 'trash') renderTrashCompartment();
       try {
         history.replaceState(null, null, '#' + pageId);
@@ -2574,13 +2917,20 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
       if (window.RADAR_HACKATHONS_DATA && window.RADAR_HACKATHONS_DATA.length > 0) {
         allHackathons = window.RADAR_HACKATHONS_DATA;
       }
+      if (window.RADAR_X_DATA && window.RADAR_X_DATA.length > 0) {
+        allXSignals = window.RADAR_X_DATA;
+      }
+      if (window.RADAR_X_META) {
+        xRadarMeta = window.RADAR_X_META;
+      }
       renderRadar();
       renderHackathons();
+      renderXRadar();
       startCountdownTicker();
       updateLedgerMetrics();
 
       const hash = window.location.hash.replace('#view-', '').replace('#', '');
-      if (hash && ['radar', 'pipeline', 'studio', 'hackathons', 'dna', 'trash'].includes(hash)) {
+      if (hash && ['radar', 'pipeline', 'studio', 'hackathons', 'xradar', 'dna', 'trash'].includes(hash)) {
         navigateLedger(hash);
       }
     }
@@ -2608,6 +2958,11 @@ Databricks moves with that same builder velocity at global scale. I&#39;d love t
       if (dockPipeline) dockPipeline.innerText = pipelineCount;
       const dockHack = document.getElementById('dock-count-hackathons');
       if (dockHack) dockHack.innerText = hackCount;
+      const dockXRadar = document.getElementById('dock-count-xradar');
+      if (dockXRadar) {
+        const activeXCount = allXSignals.filter(x => !trashedXIds.includes(x.id)).length;
+        dockXRadar.innerText = activeXCount;
+      }
       const dockTrash = document.getElementById('dock-count-trash');
       if (dockTrash) dockTrash.innerText = trashedCount;
 
@@ -3519,7 +3874,9 @@ STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
         }
 
         let matchPlatform = true;
-        if (currentHackPlatform === 'devpost') {
+        if (currentHackPlatform === 'x_live') {
+          matchPlatform = Boolean(h.is_from_x);
+        } else if (currentHackPlatform === 'devpost') {
           matchPlatform = h.platform.toLowerCase().includes('devpost');
         } else if (currentHackPlatform === 'flagship') {
           matchPlatform = h.platform.toLowerCase().includes('google') ||
@@ -3644,13 +4001,24 @@ STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
           </div>
         ` : '';
 
+        const isFromX = Boolean(h.is_from_x);
+        const xBadgeHtml = isFromX ? `<span class="x-exclusive-pill">𝕏 FROM X LIVE</span>` : '';
+        const xPostBtnHtml = (isFromX && h.x_post_url) ? `
+          <a href="${escapeHtml(h.x_post_url)}" target="_blank" rel="noopener noreferrer" class="pill-cta-muted" style="padding:6px 12px; font-size:11.5px; font-weight:600; border-radius:999px; background:rgba(56,189,248,0.12); border:1px solid rgba(56,189,248,0.35); color:#38bdf8; text-decoration:none; display:inline-flex; align-items:center; gap:4px;">
+            𝕏 Post ↗
+          </a>
+        ` : '';
+
         return `
-        <div class="card-tray-wrapper hackathon-tray">
-          <div class="hackathon-card">
+        <div class="card-tray-wrapper hackathon-tray ${isFromX ? 'from-x' : ''}">
+          <div class="hackathon-card ${isFromX ? 'from-x' : ''}">
             <div class="hackathon-card-body">
               <!-- Eyebrow Row: Platform on left, Short Capital Pill on right -->
               <div class="hackathon-eyebrow-row">
-                <div class="company-ats-label">${escapeHtml(h.platform.toUpperCase())} // ${escapeHtml(h.organizer.toUpperCase())}</div>
+                <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                  ${xBadgeHtml}
+                  <div class="company-ats-label">${escapeHtml(h.platform.toUpperCase())} // ${escapeHtml(h.organizer.toUpperCase())}</div>
+                </div>
                 <div class="hackathon-prize-hero">${capitalPillText}</div>
               </div>
 
@@ -3695,11 +4063,14 @@ STRICT HUMAN OPERATOR VOICE RULES (IMMUTABLE):
             </div>
 
             <!-- Action Footer Pinned to Bottom -->
-            <div class="hackathon-card-footer">
-              <button class="pill-cta-muted" style="padding:6px 14px; font-size:12px; font-weight:500; border-radius:999px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); color:#fff; cursor:pointer;" onclick="openHackathonStrategy('${h.id}')">
-                💡 Vibe Strategy
-              </button>
-              <a href="${escapeHtml(h.url)}" target="_blank" rel="noopener noreferrer" class="pill-cta-ink" style="padding:7px 16px; font-size:12px; font-weight:500; border-radius:999px; background:#fff; color:#000; text-decoration:none; display:inline-flex; align-items:center; gap:4px;">
+            <div class="hackathon-card-footer" style="gap:6px; flex-wrap:wrap;">
+              <div style="display:flex; gap:6px; align-items:center;">
+                <button class="pill-cta-muted" style="padding:6px 14px; font-size:12px; font-weight:500; border-radius:999px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); color:#fff; cursor:pointer;" onclick="openHackathonStrategy('${h.id}')">
+                  💡 Vibe Strategy
+                </button>
+                ${xPostBtnHtml}
+              </div>
+              <a href="${escapeHtml(h.url)}" target="_blank" rel="noopener noreferrer" class="pill-cta-ink" style="padding:7px 16px; font-size:12px; font-weight:500; border-radius:999px; background:${isFromX ? '#38bdf8' : '#fff'}; color:#000; text-decoration:none; display:inline-flex; align-items:center; gap:4px;">
                 Register &amp; Submit ↗
               </a>
             </div>
@@ -3812,6 +4183,261 @@ Task:
         target.classList.add('active');
         currentHackPlatform = target.dataset.platform;
         renderHackathons();
+      });
+    });
+
+    // ==========================================================================
+    // X INTELLIGENCE RADAR ENGINE (FULL-HYBRID $0 SIGNAL FEED)
+    // ==========================================================================
+    function formatRelativeAge(tsSec) {
+      if (!tsSec) return 'Live';
+      const diffSec = Math.max(0, Math.floor(Date.now() / 1000) - tsSec);
+      if (diffSec < 60) return `${diffSec}s ago`;
+      const mins = Math.floor(diffSec / 60);
+      if (mins < 60) return `${mins}m ago`;
+      const hrs = Math.floor(mins / 60);
+      if (hrs < 48) return `${hrs}h ago`;
+      const days = Math.floor(hrs / 24);
+      return `${days}d ago`;
+    }
+
+    function getXCategoryLabel(cat) {
+      const map = {
+        ai_alpha: '🤖 AI Alpha',
+        gaming_general: '🕹️ Free Game',
+        gaming_fortnite: '🪂 Fortnite',
+        x_hackathons: '🏆 X Hackathon',
+        money_earning: '💰 Earning',
+        money_internships: '⚡ X Intern',
+        vibe_bounties: '🎨 Vibe Bounty',
+        grants_credits: '🚀 Grant / Credits'
+      };
+      return map[cat] || '𝕏 Signal';
+    }
+
+    function trashXSignal(itemId) {
+      if (!trashedXIds.includes(itemId)) {
+        trashedXIds.push(itemId);
+        localStorage.setItem('garv_trashed_x_ids', JSON.stringify(trashedXIds));
+      }
+      renderXRadar();
+      updateLedgerMetrics();
+      showToast('Signal dismissed from 𝕏 Radar');
+    }
+
+    function updateXEngineStatusBar() {
+      if (!xRadarMeta) return;
+      const eng = xRadarMeta.engines || {};
+
+      const setDot = (dotId, textId, label, status) => {
+        const dot = document.getElementById(dotId);
+        const txt = document.getElementById(textId);
+        if (!dot || !txt) return;
+        dot.classList.remove('live', 'standby');
+        if (status === 'active') {
+          dot.classList.add('live');
+          txt.innerText = `${label}: Live`;
+        } else if (status === 'not_configured') {
+          dot.classList.add('standby');
+          txt.innerText = `${label}: Add Key`;
+        } else {
+          dot.classList.add('standby');
+          txt.innerText = `${label}: Failover`;
+        }
+      };
+
+      setDot('x-dot-xlive', 'x-status-xlive', '𝕏 Burners', eng.x_live);
+      setDot('x-dot-exa', 'x-status-exa', 'Exa 𝕏 Free', eng.exa_x);
+      setDot('x-dot-tg', 'x-status-tg', 'Telegram Alerts', eng.telegram_alerts);
+
+      const sweepEl = document.getElementById('x-last-sweep');
+      if (sweepEl && xRadarMeta.last_sweep_display) {
+        sweepEl.innerText = xRadarMeta.last_sweep_display;
+      }
+    }
+
+    function renderXRadar() {
+      updateXEngineStatusBar();
+
+      // Show/hide nested sub-tabs for Gaming & Money
+      const subGaming = document.getElementById('xradar-subtabs-gaming');
+      const subMoney = document.getElementById('xradar-subtabs-money');
+      if (subGaming) subGaming.classList.toggle('visible', currentXCat === 'gaming');
+      if (subMoney) subMoney.classList.toggle('visible', currentXCat === 'money');
+
+      const searchVal = (document.getElementById('xradar-search-input')?.value || '').toLowerCase().trim();
+      const livePool = allXSignals.filter(x => !trashedXIds.includes(x.id));
+
+      // Metrics
+      const statTotal = document.getElementById('x-stat-total');
+      if (statTotal) statTotal.innerText = livePool.length;
+      const statUrgent = document.getElementById('x-stat-urgent');
+      if (statUrgent) statUrgent.innerText = livePool.filter(x => x.is_urgent).length;
+      const statHacks = document.getElementById('x-stat-hacks');
+      if (statHacks) statHacks.innerText = livePool.filter(x => x.category === 'x_hackathons' || x.category === 'vibe_bounties').length;
+      const statAlpha = document.getElementById('x-stat-alpha');
+      if (statAlpha) statAlpha.innerText = livePool.filter(x => ['ai_alpha', 'money_earning', 'money_internships', 'grants_credits'].includes(x.category)).length;
+
+      let filtered = livePool.filter(item => {
+        if (currentXCat === 'gaming') {
+          if (currentXSubGaming === 'gaming_general' && item.category !== 'gaming_general') return false;
+          if (currentXSubGaming === 'gaming_fortnite' && item.category !== 'gaming_fortnite') return false;
+          if (currentXSubGaming === 'gaming_all' && !['gaming_general', 'gaming_fortnite'].includes(item.category)) return false;
+        } else if (currentXCat === 'money') {
+          if (currentXSubMoney === 'money_earning' && item.category !== 'money_earning') return false;
+          if (currentXSubMoney === 'money_internships' && item.category !== 'money_internships') return false;
+          if (currentXSubMoney === 'money_all' && !['money_earning', 'money_internships'].includes(item.category)) return false;
+        } else if (currentXCat !== 'all') {
+          if (item.category !== currentXCat) return false;
+        }
+
+        if (currentXSort === 'urgent' && !item.is_urgent) return false;
+
+        if (searchVal) {
+          const blob = `${item.headline} ${item.summary} ${item.author} ${item.value_badge} ${item.category} ${item.source_label}`.toLowerCase();
+          if (!blob.includes(searchVal)) return false;
+        }
+        return true;
+      });
+
+      filtered.sort((a, b) => {
+        if (currentXSort === 'score') {
+          return (b.signal_score || 0) - (a.signal_score || 0) || (b.timestamp || 0) - (a.timestamp || 0);
+        }
+        return (b.timestamp || 0) - (a.timestamp || 0) || (b.signal_score || 0) - (a.signal_score || 0);
+      });
+
+      const grid = document.getElementById('xradar-catalog-grid');
+      if (!grid) return;
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px;">
+            <div style="font-size: 32px; margin-bottom: 12px;">📡</div>
+            <h3 style="font-size: 16px; font-weight: 500; color: #fff; margin-bottom: 6px;">No signals in this feed yet</h3>
+            <p style="color: var(--text-dim); font-size: 13px; max-width:520px; margin:0 auto;">
+              Add your free burner X cookies (X_AUTH_TOKEN + X_CT0) or Exa.ai free API key to GitHub Secrets to unlock live 30-min X sweeps across this category.
+            </p>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(item => {
+        const isXSource = (item.source_label || '').includes('𝕏') || (item.post_url || '').includes('x.com') || (item.post_url || '').includes('twitter.com');
+        const ageStr = formatRelativeAge(item.timestamp);
+        const steps = Array.isArray(item.action_steps) ? item.action_steps.slice(0, 3) : [];
+        const hasDistinctExternal = item.external_url && item.external_url !== item.post_url;
+        const postBtnLabel = isXSource ? 'View on 𝕏 ↗' : 'Source Post ↗';
+
+        return `
+          <div class="card-tray-wrapper">
+            <div class="x-radar-card ${item.is_urgent ? 'urgent-signal' : ''}">
+              <div>
+                <div class="x-card-top-row">
+                  <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                    <span class="x-source-badge ${isXSource ? '' : 'community'}">${escapeHtml(item.source_label || 'LIVE')}</span>
+                    <span class="pixel-tag-chip">${getXCategoryLabel(item.category)}</span>
+                    ${item.is_urgent ? `<span class="pixel-tag-chip" style="color:#fbbf24; border-color:rgba(251,191,36,0.35);">🔥 URGENT</span>` : ''}
+                  </div>
+                  <div class="x-value-pill" title="${escapeHtml(item.value_badge || '')}">${escapeHtml(item.value_badge || 'Live Drop')}</div>
+                </div>
+
+                <h3 class="x-card-headline">${escapeHtml(item.headline)}</h3>
+
+                <div class="x-card-meta-line">
+                  <span>${escapeHtml(item.author || 'live_feed')}</span>
+                  <span>&bull;</span>
+                  <span>🕒 ${ageStr}</span>
+                  <span>&bull;</span>
+                  <span style="color:#34d399;">🌏 ${escapeHtml(item.eligibility || 'India & Global')}</span>
+                  <span>&bull;</span>
+                  <span>Signal ${item.signal_score || 80}%</span>
+                </div>
+
+                <p class="x-card-summary">${escapeHtml(item.summary)}</p>
+
+                ${steps.length > 0 ? `
+                  <div class="x-steps-box">
+                    <div class="x-steps-label">⚡ QUICK CLAIM / ACTION STEPS</div>
+                    ${steps.map((s, idx) => `
+                      <div class="x-step-row">
+                        <span style="color:#38bdf8; font-family:var(--font-mono); font-size:10.5px;">${idx + 1}.</span>
+                        <span>${escapeHtml(s)}</span>
+                      </div>
+                    `).join('')}
+                  </div>
+                ` : ''}
+              </div>
+
+              <div class="x-card-footer">
+                <button onclick="trashXSignal('${item.id}')" title="Dismiss signal"
+                  style="padding:6px 10px; font-size:11.5px; border-radius:999px; background:rgba(244,63,94,0.08); border:1px solid rgba(244,63,94,0.22); color:#fb7185; cursor:pointer;">
+                  🗑️ Trash
+                </button>
+                <div style="display:flex; gap:6px; align-items:center; flex-wrap:wrap;">
+                  ${hasDistinctExternal ? `
+                    <a href="${escapeHtml(item.external_url)}" target="_blank" rel="noopener noreferrer"
+                      style="padding:6px 13px; font-size:11.5px; font-weight:500; border-radius:999px; background:rgba(52,211,153,0.12); border:1px solid rgba(52,211,153,0.35); color:#34d399; text-decoration:none;">
+                      Claim / Apply ↗
+                    </a>
+                  ` : ''}
+                  <a href="${escapeHtml(item.post_url)}" target="_blank" rel="noopener noreferrer"
+                    style="padding:6px 14px; font-size:11.5px; font-weight:600; border-radius:999px; background:${isXSource ? '#38bdf8' : '#ffffff'}; color:#000000; text-decoration:none;">
+                    ${postBtnLabel}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // X Radar Event Listeners
+    document.getElementById('xradar-search-input')?.addEventListener('input', renderXRadar);
+
+    document.querySelectorAll('#xradar-category-tabs .pill-filter').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const target = e.target.closest('.pill-filter');
+        if (!target) return;
+        document.querySelectorAll('#xradar-category-tabs .pill-filter').forEach(b => b.classList.remove('active'));
+        target.classList.add('active');
+        currentXCat = target.dataset.xcat;
+        renderXRadar();
+      });
+    });
+
+    document.querySelectorAll('#xradar-subtabs-gaming .pill-filter').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const target = e.target.closest('.pill-filter');
+        if (!target) return;
+        document.querySelectorAll('#xradar-subtabs-gaming .pill-filter').forEach(b => b.classList.remove('active'));
+        target.classList.add('active');
+        currentXSubGaming = target.dataset.xsub;
+        renderXRadar();
+      });
+    });
+
+    document.querySelectorAll('#xradar-subtabs-money .pill-filter').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const target = e.target.closest('.pill-filter');
+        if (!target) return;
+        document.querySelectorAll('#xradar-subtabs-money .pill-filter').forEach(b => b.classList.remove('active'));
+        target.classList.add('active');
+        currentXSubMoney = target.dataset.xsub;
+        renderXRadar();
+      });
+    });
+
+    document.querySelectorAll('#xradar-sort-tabs .pill-filter').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const target = e.target.closest('.pill-filter');
+        if (!target) return;
+        document.querySelectorAll('#xradar-sort-tabs .pill-filter').forEach(b => b.classList.remove('active'));
+        target.classList.add('active');
+        currentXSort = target.dataset.xsort;
+        renderXRadar();
       });
     });
 

@@ -1,0 +1,148 @@
+{
+  "lanes": {
+    "fast": [
+      "ai_alpha",
+      "x_hackathons",
+      "money_internships",
+      "vibe_bounties"
+    ],
+    "standard": [
+      "gaming_general",
+      "gaming_fortnite",
+      "money_earning",
+      "grants_credits"
+    ]
+  },
+  "x_queries": {
+    "ai_alpha": [
+      "(\"free for\" OR \"100% off\" OR \"free pro\" OR \"free credits\" OR \"free tier\" OR \"student offer\" OR \"promo code\") (\"Claude\" OR \"ChatGPT\" OR \"Gemini\" OR \"Cursor\" OR \"Perplexity\" OR \"OpenAI\" OR \"Anthropic\" OR \"Mistral\" OR \"Google AI\") -is:retweet lang:en min_faves:5",
+      "(\"limited time\" OR \"claim now\" OR \"just dropped\" OR \"free API\") (\"AI\" OR \"LLM\" OR \"GPU\" OR \"credits\" OR \"Pro subscription\") -is:retweet -airdrop -crypto lang:en min_faves:8"
+    ],
+    "x_hackathons": [
+      "(\"hackathon\" OR \"buildathon\") (\"prize\" OR \"$\" OR \"MacBook\" OR \"credits\" OR \"Pro\") (\"register\" OR \"submit\" OR \"apply\" OR \"join\") -is:retweet lang:en min_faves:3",
+      "(\"AI hackathon\" OR \"vibe coding hackathon\" OR \"global hackathon\") (\"open\" OR \"live\" OR \"weekend\" OR \"48h\") -is:retweet lang:en min_faves:3"
+    ],
+    "money_internships": [
+      "(\"hiring\" OR \"looking for\") (\"product intern\" OR \"founder's office\" OR \"founders office\" OR \"growth intern\" OR \"bizops intern\" OR \"design intern\") (\"DM\" OR \"resume\" OR \"apply\") -is:retweet -unpaid lang:en min_faves:2",
+      "(\"hiring intern\" OR \"cracked intern\") (\"India\" OR \"Bangalore\" OR \"Bengaluru\" OR \"remote\" OR \"YC\" OR \"startup\") (\"paid\" OR \"stipend\" OR \"DM\") -is:retweet -unpaid lang:en min_faves:2"
+    ],
+    "money_earning": [
+      "(\"AI training\" OR \"RLHF\" OR \"data annotation\" OR \"paid study\" OR \"user research\") (\"$/hr\" OR \"$50\" OR \"$100\" OR \"$200\" OR \"hiring\" OR \"remote\") -is:retweet -crypto -airdrop lang:en min_faves:5",
+      "(\"Mercor\" OR \"Outlier\" OR \"Alignerr\" OR \"Scale AI\" OR \"bounty\") (\"paying\" OR \"earn\" OR \"India\" OR \"remote\" OR \"hiring\") -is:retweet -crypto lang:en min_faves:4"
+    ],
+    "gaming_general": [
+      "(\"free to keep\" OR \"100% off\" OR \"free on Steam\" OR \"free on Epic\" OR \"claim free\") (\"game\" OR \"Steam\" OR \"Epic Games\" OR \"Prime Gaming\" OR \"GOG\") -is:retweet lang:en min_faves:10"
+    ],
+    "gaming_fortnite": [
+      "(\"Fortnite\") (\"item shop\" OR \"free skin\" OR \"free cosmetic\" OR \"free reward\" OR \"quest\" OR \"cup\" OR \"tournament\" OR \"leak\") -is:retweet lang:en min_faves:15"
+    ],
+    "vibe_bounties": [
+      "(\"bounty\" OR \"remixathon\" OR \"challenge\" OR \"competition\") (\"Cursor\" OR \"v0\" OR \"Lovable\" OR \"Bolt\" OR \"Framer\" OR \"Figma\" OR \"Replit\" OR \"Claude\") (\"$\" OR \"prize\" OR \"win\") -is:retweet lang:en min_faves:4"
+    ],
+    "grants_credits": [
+      "(\"microgrant\" OR \"micro-grant\" OR \"fellowship\" OR \"grant\" OR \"compute credits\") (\"students\" OR \"builders\" OR \"founders\" OR \"young\" OR \"apply\") (\"$\" OR \"open\" OR \"deadline\") -is:retweet lang:en min_faves:5"
+    ]
+  },
+  "exa_queries": {
+    "ai_alpha": "limited time free AI subscription promo code student discount or free API credits Claude Gemini Cursor OpenAI Perplexity",
+    "x_hackathons": "new online AI hackathon or buildathon open for registration with cash prizes hardware or AI credits",
+    "money_internships": "startup founder hiring paid product growth design or founders office intern remote or India DM resume",
+    "money_earning": "new remote AI training RLHF platform or paid product user testing study paying high rates globally or India",
+    "gaming_general": "limited time 100% free game to claim and keep on Steam Epic Games Store or GOG right now",
+    "gaming_fortnite": "Fortnite free skin cosmetic drop item shop news or upcoming tournament cup announcement",
+    "vibe_bounties": "UI UX design challenge or vibe coding bounty competition with cash prizes from Figma Framer v0 Cursor Lovable Replit",
+    "grants_credits": "microgrant fellowship or free AI cloud compute credits for student builders and young founders open to apply"
+  },
+  "reddit_feeds": [
+    {
+      "subreddit": "FreeGameFindings",
+      "category": "gaming_general",
+      "lane": "standard",
+      "sort": "new",
+      "limit": 12
+    },
+    {
+      "subreddit": "FortniteLeaks",
+      "category": "gaming_fortnite",
+      "lane": "standard",
+      "sort": "new",
+      "limit": 10
+    },
+    {
+      "subreddit": "FortNiteBR",
+      "category": "gaming_fortnite",
+      "lane": "standard",
+      "sort": "hot",
+      "limit": 10
+    },
+    {
+      "subreddit": "LocalLLaMA",
+      "category": "ai_alpha",
+      "lane": "fast",
+      "sort": "hot",
+      "limit": 12
+    },
+    {
+      "subreddit": "ClaudeAI",
+      "category": "ai_alpha",
+      "lane": "fast",
+      "sort": "hot",
+      "limit": 10
+    },
+    {
+      "subreddit": "OpenAI",
+      "category": "ai_alpha",
+      "lane": "fast",
+      "sort": "hot",
+      "limit": 10
+    },
+    {
+      "subreddit": "GeminiAI",
+      "category": "ai_alpha",
+      "lane": "fast",
+      "sort": "hot",
+      "limit": 10
+    },
+    {
+      "subreddit": "beermoneyglobal",
+      "category": "money_earning",
+      "lane": "standard",
+      "sort": "hot",
+      "limit": 12
+    },
+    {
+      "subreddit": "hackathons",
+      "category": "x_hackathons",
+      "lane": "fast",
+      "sort": "new",
+      "limit": 10
+    },
+    {
+      "subreddit": "startups",
+      "category": "grants_credits",
+      "lane": "standard",
+      "sort": "hot",
+      "limit": 8
+    }
+  ],
+  "spam_patterns": [
+    "comment ['\"]?[a-z0-9]+['\"]? (and|to) (get|receive|i'll|ill)",
+    "like (\\+|and) (rt|retweet|repost)",
+    "follow (me )?(\\+|and) (reply|comment|dm|rt)",
+    "drop a ['\"]?[a-z0-9]+['\"]? (below|in the comments)",
+    "check (my )?link in bio",
+    "crypto airdrop",
+    "memecoin",
+    "token presale",
+    "pump\\.fun",
+    "guaranteed profits",
+    "send me a dm for promo",
+    "onlyfans",
+    "betting tips",
+    "forex signals",
+    "casinos",
+    "unpaid internship",
+    "no stipend",
+    "unpaid role"
+  ]
+}

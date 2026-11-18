@@ -5,4 +5,8 @@ data/sweep.log
 data/sweep_error.log
 .idea/
 .vscode/
+.env
+data/.twscrape_pool.db*
+*.db-journal
+
 

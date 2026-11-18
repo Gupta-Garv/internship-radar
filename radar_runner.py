@@ -18,6 +18,7 @@ from engine.notifier import process_alerts, send_macos_notification
 from engine.cv_generator import generate_tailored_cv, export_html_to_pdf
 from engine.qa_generator import generate_human_qa_answer
 from engine.hackathon_scout import scout_all_hackathons
+from engine.x_radar import run_x_radar
 
 CONFIG_FILE = os.path.join(BASE_DIR, "config", "companies.json")
 PROFILE_FILE = os.path.join(BASE_DIR, "profile", "garv_gupta_profile.json")
@@ -53,6 +54,9 @@ def run_scan():
 
     print("🏆 Scouting active high-prize hackathons & developer challenges...")
     scouted_hacks = scout_all_hackathons()
+
+    print("𝕏 Running Full-Hybrid X Intelligence & Live Signal Sweep...")
+    run_x_radar(lane="full")
 
     tier1_jobs = [j for j in scored_jobs if j["match_score"] >= 88]
     safe_hubs = ["China / HK / TW", "Japan", "Singapore", "UAE / Middle East", "Germany", "Netherlands", "Ireland", "Nordics / Swiss", "Australia / NZ", "Remote", "Southern / Central Europe"]
@@ -244,6 +248,9 @@ if __name__ == "__main__":
         print("Sent test notification.")
     elif cmd == "hackathons":
         scout_all_hackathons()
+    elif cmd in ["x-scan", "xradar"]:
+        lane = "fast" if "--fast" in sys.argv else "full"
+        run_x_radar(lane=lane)
     else:
-        print("Usage: python3 radar_runner.py [scan|serve|cv|qa|hackathons|trash|test-alert]")
+        print("Usage: python3 radar_runner.py [scan|x-scan|serve|cv|qa|hackathons|trash|test-alert]")
 

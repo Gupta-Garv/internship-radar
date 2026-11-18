@@ -1,5 +1,209 @@
 window.RADAR_HACKATHONS_DATA = [
   {
+    "id": "xhack_xr_dd9c36f5bcc0",
+    "title": "Boat Hackathon",
+    "platform": "X (Twitter) Live",
+    "organizer": "hn/sugabush",
+    "url": "https://boathackathon.com/",
+    "x_post_url": "https://news.ycombinator.com/item?id=50530978",
+    "is_from_x": true,
+    "source_label": "HN LIVE",
+    "prize_usd": 0,
+    "prize_pool": "Hackathon",
+    "prize_badge": "Hackathon",
+    "prize_type": "cash",
+    "non_cash_perks": [
+      "Open the direct post link to verify live status and latest replies",
+      "Follow the claim or registration link before the window closes"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Active Now",
+    "brief": "Boat Hackathon",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via HN LIVE. Move fast while submission volume is still low.",
+      "idea": "Boat Hackathon",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: Boat Hackathon. Context: Boat Hackathon"
+    }
+  },
+  {
+    "id": "xhack_xr_22e42f3c443a",
+    "title": "Registrations open for ESA XR Hackathon 2027",
+    "platform": "X (Twitter) Live",
+    "organizer": "hn/MiliasGeiger",
+    "url": "https://xr.esa.int/hackathon/#home",
+    "x_post_url": "https://news.ycombinator.com/item?id=50519669",
+    "is_from_x": true,
+    "source_label": "HN LIVE",
+    "prize_usd": 0,
+    "prize_pool": "Hackathon",
+    "prize_badge": "Hackathon",
+    "prize_type": "cash",
+    "non_cash_perks": [
+      "Open the direct post link to verify live status and latest replies",
+      "Follow the claim or registration link before the window closes"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Active Now",
+    "brief": "Registrations open for ESA XR Hackathon 2027",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via HN LIVE. Move fast while submission volume is still low.",
+      "idea": "Registrations open for ESA XR Hackathon 2027",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: Registrations open for ESA XR Hackathon 2027. Context: Registrations open for ESA XR Hackathon 2027"
+    }
+  },
+  {
+    "id": "xhack_xr_46de7520f940",
+    "title": "Show HN: Furnish \u2013 AI-powered home design with editable 2D plans and 3D views",
+    "platform": "X (Twitter) Live",
+    "organizer": "hn/joystonm",
+    "url": "https://github.com/Joystonm/furnish/",
+    "x_post_url": "https://news.ycombinator.com/item?id=50517210",
+    "is_from_x": true,
+    "source_label": "HN LIVE",
+    "prize_usd": 0,
+    "prize_pool": "Hackathon",
+    "prize_badge": "Hackathon",
+    "prize_type": "cash",
+    "non_cash_perks": [
+      "Open the direct post link to verify live status and latest replies",
+      "Follow the claim or registration link before the window closes"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Active Now",
+    "brief": "Show HN: Furnish \u2013 AI-powered home design with editable 2D plans and 3D views I built Furnish for the Kane CLI Hackathon.<p>It&#x27;s an AI-powered home design studio where you can generate editable floor plans",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via HN LIVE. Move fast while submission volume is still low.",
+      "idea": "Show HN: Furnish \u2013 AI-powered home design with editable 2D plans and 3D views I built Furnish for the Kane CLI Hackathon.<p>It&#x27;s an AI-powered home design studio where you can generate editable floor plans",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: Show HN: Furnish \u2013 AI-powered home design with editable 2D plans and 3D views. Context: Show HN: Furnish \u2013 AI-powered home design with editable 2D plans and 3D views I built Furnish for the Kane CLI Hackathon.<p>It&#x27;s an AI-powered home design studio where you can generate editable floor plans"
+    }
+  },
+  {
+    "id": "xhack_xr_1e169aa2f6b3",
+    "title": "Edited on Meta Hackathon",
+    "platform": "X (Twitter) Live",
+    "organizer": "hn/LeoBuildss",
+    "url": "https://tryhivecontent.com/edited",
+    "x_post_url": "https://news.ycombinator.com/item?id=50506124",
+    "is_from_x": true,
+    "source_label": "HN LIVE",
+    "prize_usd": 0,
+    "prize_pool": "Hackathon",
+    "prize_badge": "Hackathon",
+    "prize_type": "cash",
+    "non_cash_perks": [
+      "Open the direct post link to verify live status and latest replies",
+      "Follow the claim or registration link before the window closes"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Active Now",
+    "brief": "Edited on Meta Hackathon",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via HN LIVE. Move fast while submission volume is still low.",
+      "idea": "Edited on Meta Hackathon",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: Edited on Meta Hackathon. Context: Edited on Meta Hackathon"
+    }
+  },
+  {
+    "id": "xhack_xr_5602ba6b0ff1",
+    "title": "TimeNet challenge: An online hackathon for time-series AI",
+    "platform": "X (Twitter) Live",
+    "organizer": "hn/masquare",
+    "url": "https://challenge.timenet.ai",
+    "x_post_url": "https://news.ycombinator.com/item?id=50480931",
+    "is_from_x": true,
+    "source_label": "HN LIVE",
+    "prize_usd": 0,
+    "prize_pool": "Hackathon",
+    "prize_badge": "Hackathon",
+    "prize_type": "cash",
+    "non_cash_perks": [
+      "Open the direct post link to verify live status and latest replies",
+      "Follow the claim or registration link before the window closes"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Active Now",
+    "brief": "TimeNet challenge: An online hackathon for time-series AI",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via HN LIVE. Move fast while submission volume is still low.",
+      "idea": "TimeNet challenge: An online hackathon for time-series AI",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: TimeNet challenge: An online hackathon for time-series AI. Context: TimeNet challenge: An online hackathon for time-series AI"
+    }
+  },
+  {
+    "id": "xhack_xr_a425369ae785",
+    "title": "Show HN: MetaArena \u2013 Compare & Rank 5,353 Meta Global AI Hackathon Projects",
+    "platform": "X (Twitter) Live",
+    "organizer": "hn/ohong",
+    "url": "https://meta-hackathon.com/",
+    "x_post_url": "https://news.ycombinator.com/item?id=50464559",
+    "is_from_x": true,
+    "source_label": "HN LIVE",
+    "prize_usd": 1000000,
+    "prize_pool": "$1,000,000",
+    "prize_badge": "$1M",
+    "prize_type": "ai_subs",
+    "non_cash_perks": [
+      "Open the direct post link to verify live status and latest replies",
+      "Follow the claim or registration link before the window closes"
+    ],
+    "deadline_iso": "2026-11-28T23:59:59Z",
+    "deadline_display": "Active Now",
+    "brief": "Show HN: MetaArena \u2013 Compare & Rank 5,353 Meta Global AI Hackathon Projects Hey HN! Recently Meta wrapped up their Global Developer Hackathon (<a href=\"https:&#x2F;&#x2F;dev.meta.ai&#x2F;events&#x2F;global-hack",
+    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
+    "vibe_coder_score": "\ud835\udd4f Early Discovery",
+    "eligibility": "India & Global",
+    "tags": [
+      "X Exclusive",
+      "Early Signal",
+      "Hackathon"
+    ],
+    "strategy": {
+      "winning_angle": "Spotted early via HN LIVE. Move fast while submission volume is still low.",
+      "idea": "Show HN: MetaArena \u2013 Compare & Rank 5,353 Meta Global AI Hackathon Projects Hey HN! Recently Meta wrapped up their Global Developer Hackathon (<a href=\"https:&#x2F;&#x2F;dev.meta.ai&#x2F;events&#x2F;global-hack",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: Show HN: MetaArena \u2013 Compare & Rank 5,353 Meta Global AI Hackathon Projects. Context: Show HN: MetaArena \u2013 Compare & Rank 5,353 Meta Global AI Hackathon Projects Hey HN! Recently Meta wrapped up their Global Developer Hackathon (<a href=\"https:&#x2F;&#x2F;dev.meta.ai&#x2F;events&#x2F;global-hack"
+    }
+  },
+  {
     "id": "google_gemini_competition",
     "title": "Google Gemini API Developer Competition",
     "organizer": "Google DeepMind & Google Cloud",
@@ -147,33 +351,6 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
-    "id": "devpost_60670",
-    "title": "DSH Hacks V2 ($100k+ in prizes!)",
-    "organizer": "Devpost Sponsor",
-    "platform": "Devpost",
-    "prize_pool": "$100,000",
-    "prize_usd": 100000,
-    "prize_type": "cash",
-    "prize_badge": "\ud83c\udfc6 $100,000 Cash Pool",
-    "non_cash_perks": [
-      "Direct Cash Awards",
-      "Devpost Winner Recognition"
-    ],
-    "deadline_iso": "2026-11-15T23:59:59Z",
-    "deadline_display": "Nov 15, 2026",
-    "url": "https://dsh-hacks-v2.devpost.com/",
-    "eligibility": "Worldwide Open & India Eligible",
-    "vibe_coder_score": "95% Vibe Coder Friendly",
-    "brief": "Online competition on Devpost with $100,000 in cash and sponsor prizes. Themes include Beginner Friendly, Low/No Code, Open Ended.",
-    "recommended_stack": "Next.js + LLM API + Tailwind + Vercel",
-    "strategy": "Rapid prototyping edge: build a working Next.js web application deployed to Vercel with a 90-second demo video highlighting real user problem resolution.",
-    "tags": [
-      "Beginner Friendly",
-      "Low/No Code",
-      "Open Ended"
-    ]
-  },
-  {
     "id": "paypal_ai_2026",
     "title": "PayPal AI Global Hackathon",
     "organizer": "PayPal Developer",
@@ -287,6 +464,33 @@ window.RADAR_HACKATHONS_DATA = [
       "Quadratic Voting",
       "Web Tooling",
       "Grants"
+    ]
+  },
+  {
+    "id": "devpost_24713",
+    "title": "QNX Global Hackathon",
+    "organizer": "Devpost Sponsor",
+    "platform": "Devpost",
+    "prize_pool": "$50,000",
+    "prize_usd": 50000,
+    "prize_type": "cash",
+    "prize_badge": "\ud83c\udfc6 $50,000 Cash Pool",
+    "non_cash_perks": [
+      "Direct Cash Awards",
+      "Devpost Winner Recognition"
+    ],
+    "deadline_iso": "2026-12-15T23:59:59Z",
+    "deadline_display": "Dec 15, 2026",
+    "url": "https://qnx.devpost.com/",
+    "eligibility": "Worldwide Open & India Eligible",
+    "vibe_coder_score": "95% Vibe Coder Friendly",
+    "brief": "Build a rapid AI-powered application competing for $50,000 in IoT, Machine Learning/AI. Ideal for vibe coders to prototype a complete user journey with Claude/OpenAI APIs and a clean web UI.",
+    "recommended_stack": "Next.js + LLM API + Tailwind + Vercel",
+    "strategy": "Rapid prototyping edge: build a working Next.js web application deployed to Vercel with a 90-second demo video highlighting real user problem resolution.",
+    "tags": [
+      "IoT",
+      "Machine Learning/AI",
+      "Open Ended"
     ]
   },
   {
@@ -409,6 +613,32 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
+    "id": "devpost_35575",
+    "title": "Reddit\u2019s Game of the Day Hackathon",
+    "organizer": "Devpost Sponsor",
+    "platform": "Devpost",
+    "prize_pool": "$35,000",
+    "prize_usd": 35000,
+    "prize_type": "cash",
+    "prize_badge": "\ud83c\udfc6 $35,000 Cash Pool",
+    "non_cash_perks": [
+      "Direct Cash Awards",
+      "Devpost Winner Recognition"
+    ],
+    "deadline_iso": "2026-12-08T23:59:59Z",
+    "deadline_display": "Dec 08, 2026",
+    "url": "https://redditgameofday2026.devpost.com/",
+    "eligibility": "Worldwide Open & India Eligible",
+    "vibe_coder_score": "95% Vibe Coder Friendly",
+    "brief": "Online competition on Devpost with $35,000 in cash and sponsor prizes. Themes include Beginner Friendly, Gaming.",
+    "recommended_stack": "Next.js + LLM API + Tailwind + Vercel",
+    "strategy": "Rapid prototyping edge: build a working Next.js web application deployed to Vercel with a 90-second demo video highlighting real user problem resolution.",
+    "tags": [
+      "Beginner Friendly",
+      "Gaming"
+    ]
+  },
+  {
     "id": "mistral_worldwide_sprint",
     "title": "Mistral AI Global Agent Sprint",
     "organizer": "Mistral AI",
@@ -435,6 +665,33 @@ window.RADAR_HACKATHONS_DATA = [
       "Function Calling",
       "Product MVP",
       "Reasoning"
+    ]
+  },
+  {
+    "id": "devpost_79949",
+    "title": "#BuildHybridAI 2026",
+    "organizer": "Devpost Sponsor",
+    "platform": "Devpost",
+    "prize_pool": "$30,000",
+    "prize_usd": 30000,
+    "prize_type": "cash",
+    "prize_badge": "\ud83c\udfc6 $30,000 Cash Pool",
+    "non_cash_perks": [
+      "Direct Cash Awards",
+      "Devpost Winner Recognition"
+    ],
+    "deadline_iso": "2026-12-01T23:59:59Z",
+    "deadline_display": "30, 2026",
+    "url": "https://firebasehybridaihackathon.devpost.com/",
+    "eligibility": "Worldwide Open & India Eligible",
+    "vibe_coder_score": "95% Vibe Coder Friendly",
+    "brief": "Build a rapid AI-powered application competing for $30,000 in Machine Learning/AI, Mobile. Ideal for vibe coders to prototype a complete user journey with Claude/OpenAI APIs and a clean web UI.",
+    "recommended_stack": "Next.js + LLM API + Tailwind + Vercel",
+    "strategy": "Rapid prototyping edge: build a working Next.js web application deployed to Vercel with a 90-second demo video highlighting real user problem resolution.",
+    "tags": [
+      "Machine Learning/AI",
+      "Mobile",
+      "Web"
     ]
   },
   {
@@ -497,8 +754,8 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
-    "id": "devpost_50428",
-    "title": "Codex x TwitchCon Hackathon",
+    "id": "devpost_68366",
+    "title": "Deck the Pixels",
     "organizer": "Devpost Sponsor",
     "platform": "Devpost",
     "prize_pool": "$25,000",
@@ -509,18 +766,18 @@ window.RADAR_HACKATHONS_DATA = [
       "Direct Cash Awards",
       "Devpost Winner Recognition"
     ],
-    "deadline_iso": "2026-11-02T23:59:59Z",
-    "deadline_display": "Nov 02, 2026",
-    "url": "https://twitchcon-codex.devpost.com/",
+    "deadline_iso": "2026-12-07T23:59:59Z",
+    "deadline_display": "Dec 07, 2026",
+    "url": "https://deckthepixels.devpost.com/",
     "eligibility": "Worldwide Open & India Eligible",
     "vibe_coder_score": "95% Vibe Coder Friendly",
-    "brief": "Build a rapid AI-powered application competing for $25,000 in Communication, Gaming. Ideal for vibe coders to prototype a complete user journey with Claude/OpenAI APIs and a clean web UI.",
+    "brief": "Build a rapid AI-powered application competing for $25,000 in Design, Machine Learning/AI. Ideal for vibe coders to prototype a complete user journey with Claude/OpenAI APIs and a clean web UI.",
     "recommended_stack": "Next.js + LLM API + Tailwind + Vercel",
     "strategy": "Rapid prototyping edge: build a working Next.js web application deployed to Vercel with a 90-second demo video highlighting real user problem resolution.",
     "tags": [
-      "Communication",
-      "Gaming",
-      "Machine Learning/AI"
+      "Design",
+      "Machine Learning/AI",
+      "Low/No Code"
     ]
   },
   {
@@ -641,30 +898,57 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
-    "id": "devpost_23221",
-    "title": "YouCam API Skin AI & eCommerce VTO Hackathon",
+    "id": "devpost_9196",
+    "title": "Open Agentic Web Challenge",
     "organizer": "Devpost Sponsor",
     "platform": "Devpost",
-    "prize_pool": "$6,000",
-    "prize_usd": 6000,
+    "prize_pool": "$10,000",
+    "prize_usd": 10000,
     "prize_type": "cash",
-    "prize_badge": "\ud83c\udfc6 $6,000 Cash Pool",
+    "prize_badge": "\ud83c\udfc6 $10,000 Cash Pool",
     "non_cash_perks": [
       "Direct Cash Awards",
       "Devpost Winner Recognition"
     ],
-    "deadline_iso": "2026-11-02T23:59:59Z",
-    "deadline_display": "Nov 02, 2026",
-    "url": "https://youcam-api-skin-ai-ecommerce.devpost.com/",
+    "deadline_iso": "2027-01-11T23:59:59Z",
+    "deadline_display": "Jan 11, 2027",
+    "url": "https://cognizant-agenticweb.devpost.com/",
     "eligibility": "Worldwide Open & India Eligible",
     "vibe_coder_score": "95% Vibe Coder Friendly",
-    "brief": "Build a rapid AI-powered application competing for $6,000 in AR/VR, E-commerce/Retail. Ideal for vibe coders to prototype a complete user journey with Claude/OpenAI APIs and a clean web UI.",
+    "brief": "Build a rapid AI-powered application competing for $10,000 in Machine Learning/AI, Web. Ideal for vibe coders to prototype a complete user journey with Claude/OpenAI APIs and a clean web UI.",
     "recommended_stack": "Next.js + LLM API + Tailwind + Vercel",
     "strategy": "Rapid prototyping edge: build a working Next.js web application deployed to Vercel with a 90-second demo video highlighting real user problem resolution.",
     "tags": [
-      "AR/VR",
-      "E-commerce/Retail",
-      "Machine Learning/AI"
+      "Machine Learning/AI",
+      "Web",
+      "Social Good"
+    ]
+  },
+  {
+    "id": "devpost_21397",
+    "title": "Arbiter Hacks V1",
+    "organizer": "Devpost Sponsor",
+    "platform": "Devpost",
+    "prize_pool": "$7,800",
+    "prize_usd": 7800,
+    "prize_type": "cash",
+    "prize_badge": "\ud83c\udfc6 $7,800 Cash Pool",
+    "non_cash_perks": [
+      "Direct Cash Awards",
+      "Devpost Winner Recognition"
+    ],
+    "deadline_iso": "2026-12-21T23:59:59Z",
+    "deadline_display": "Dec 21, 2026",
+    "url": "https://arbiter-hacks-v1.devpost.com/",
+    "eligibility": "Worldwide Open & India Eligible",
+    "vibe_coder_score": "95% Vibe Coder Friendly",
+    "brief": "Build a rapid AI-powered application competing for $7,800 in Beginner Friendly, Machine Learning/AI. Ideal for vibe coders to prototype a complete user journey with Claude/OpenAI APIs and a clean web UI.",
+    "recommended_stack": "Next.js + LLM API + Tailwind + Vercel",
+    "strategy": "Rapid prototyping edge: build a working Next.js web application deployed to Vercel with a 90-second demo video highlighting real user problem resolution.",
+    "tags": [
+      "Beginner Friendly",
+      "Machine Learning/AI",
+      "Open Ended"
     ]
   }
 ];
