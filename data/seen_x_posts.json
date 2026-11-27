@@ -10,9 +10,9 @@
     "headline": "Microsoft MAI Code 2 & MAI Cyber 2 Flash Launch at Ignite"
   },
   "xr_1c75a0e4c17c": {
-    "first_seen": "2026-11-18T10:37:51.115596+00:00",
+    "first_seen": "2026-11-18T10:50:42.025735+00:00",
     "category": "x_hackathons",
-    "headline": "$100K Ship or Die Hackathon by Higgsfield"
+    "headline": "$100K Hackathon with $100K Prize Pool"
   },
   "xr_22dc3e3e43d0": {
     "first_seen": "2026-11-18T10:37:51.115652+00:00",
@@ -55,9 +55,9 @@
     "headline": "Google Forward Deployed Engineer Intern \u2013 2027 Batch"
   },
   "xr_1310f9564cce": {
-    "first_seen": "2026-11-18T10:37:51.116091+00:00",
+    "first_seen": "2026-11-19T09:16:22.772379+00:00",
     "category": "money_internships",
-    "headline": "Vahan AI AI Engineering Intern - Bangalore"
+    "headline": "Vahan AI AI Engineering Internship Bangalore"
   },
   "xr_8ff923073544": {
     "first_seen": "2026-11-18T10:37:51.116093+00:00",
@@ -165,27 +165,27 @@
     "headline": "Massive Tier-1 Student & Builder Credits Bundle"
   },
   "xr_234a1d946a8d": {
-    "first_seen": "2026-11-18T10:37:51.116909+00:00",
+    "first_seen": "2026-11-23T06:04:39.456225+00:00",
     "category": "gaming_general",
-    "headline": "Epic Games: Ghostrunner 2 FREE Claim"
+    "headline": "Epic Games: Ghostrunner 2 Free Claim"
   },
   "xr_b4d94dd325f7": {
-    "first_seen": "2026-11-18T10:37:51.116910+00:00",
+    "first_seen": "2026-11-23T06:04:39.456311+00:00",
     "category": "gaming_general",
-    "headline": "Epic Games: LISA: The Definitive Edition FREE Claim"
+    "headline": "Epic Games: LISA: The Definitive Edition Free"
   },
   "xr_9f7169279a50": {
-    "first_seen": "2026-11-18T10:37:51.116911+00:00",
+    "first_seen": "2026-11-23T06:04:39.456339+00:00",
     "category": "gaming_general",
     "headline": "Epic Games: Mark of the Deep Free Claim"
   },
   "xr_8aaea98370ca": {
-    "first_seen": "2026-11-18T10:37:51.116912+00:00",
+    "first_seen": "2026-11-23T06:04:39.456350+00:00",
     "category": "gaming_general",
-    "headline": "Epic Games: Monument Valley Free Claim"
+    "headline": "Epic Games: Monument Valley Free"
   },
   "xr_a01b4529d4a0": {
-    "first_seen": "2026-11-18T10:37:51.116913+00:00",
+    "first_seen": "2026-11-23T06:04:39.456359+00:00",
     "category": "gaming_general",
     "headline": "Epic Games: TerraScape Free Claim"
   },
@@ -193,5 +193,645 @@
     "first_seen": "2026-11-18T10:37:51.116915+00:00",
     "category": "gaming_general",
     "headline": "Epic Games: Knightica Free Claim"
+  },
+  "xr_8dd69e3e4cbd": {
+    "first_seen": "2026-11-18T10:50:42.025388+00:00",
+    "category": "ai_alpha",
+    "headline": "Craft: Open-source design skills for Claude Code, Cursor & Agents"
+  },
+  "xr_a217883c2547": {
+    "first_seen": "2026-11-18T10:50:42.025711+00:00",
+    "category": "ai_alpha",
+    "headline": "Grok Bot: 20 Free GitHub Repos Powered Content Engine"
+  },
+  "xr_6492b68df783": {
+    "first_seen": "2026-11-18T10:50:42.025758+00:00",
+    "category": "money_earning",
+    "headline": "Mercor: Hourly AI Expert Contracts $30+/hr"
+  },
+  "xr_433af56a40c5": {
+    "first_seen": "2026-11-18T10:50:42.025763+00:00",
+    "category": "gaming_general",
+    "headline": "Red Dead Redemption $19.99 at Best Buy + Free Switch 2 upgrade pack"
+  },
+  "xr_173bfae95f99": {
+    "first_seen": "2026-11-18T10:50:42.025771+00:00",
+    "category": "grants_credits",
+    "headline": "Student Developer Credits Bundle - Gemini Pro to Cursor Pro"
+  },
+  "xr_216594c12fc2": {
+    "first_seen": "2026-11-18T10:50:42.025780+00:00",
+    "category": "grants_credits",
+    "headline": "Nansen API Early Access - $20 Credits for Builders"
+  },
+  "xr_dae672eb6ade": {
+    "first_seen": "2026-11-18T10:50:42.025784+00:00",
+    "category": "grants_credits",
+    "headline": "Free Tier-1 AI & Dev Credits for Students"
+  },
+  "xr_cf22c6f89eba": {
+    "first_seen": "2026-11-18T17:28:37.164389+00:00",
+    "category": "ai_alpha",
+    "headline": "Switch Rooms: Unified Multi-Agent Workspace"
+  },
+  "xr_b794f3a8e7a2": {
+    "first_seen": "2026-11-18T17:28:37.164484+00:00",
+    "category": "ai_alpha",
+    "headline": "Switch Buddy: Zero-Setup Multi-Agent Rooms"
+  },
+  "xr_27761360e34a": {
+    "first_seen": "2026-11-18T17:28:37.164522+00:00",
+    "category": "ai_alpha",
+    "headline": "Switch Buddy Solves Context Switching"
+  },
+  "xr_489fefde86d5": {
+    "first_seen": "2026-11-18T17:28:37.164538+00:00",
+    "category": "ai_alpha",
+    "headline": "Claude Code - Tier-1 AI Platform Deal"
+  },
+  "xr_8b204ec11838": {
+    "first_seen": "2026-11-18T17:28:37.164551+00:00",
+    "category": "ai_alpha",
+    "headline": "Claude Code Free Skill - Blender Integration"
+  },
+  "xr_fd182b4233f9": {
+    "first_seen": "2026-11-18T17:28:37.164559+00:00",
+    "category": "ai_alpha",
+    "headline": "Magnific AI: Sharpen blurry images with AI detail restoration"
+  },
+  "xr_c60788601c7a": {
+    "first_seen": "2026-11-18T17:28:37.164568+00:00",
+    "category": "ai_alpha",
+    "headline": "NVIDIA Model Router: Free intelligent model selection for AI prompts"
+  },
+  "xr_b98c44b7b3e8": {
+    "first_seen": "2026-11-18T17:28:37.164576+00:00",
+    "category": "ai_alpha",
+    "headline": "30 \"Illegal-Looking\" Websites: Legal AI Tools Directory"
+  },
+  "xr_96ced33fd2a2": {
+    "first_seen": "2026-11-18T17:28:37.164584+00:00",
+    "category": "ai_alpha",
+    "headline": "Mem0: Run 300 Grok bots for $0.02/week - Cost optimization guide"
+  },
+  "xr_dc2de9d91cde": {
+    "first_seen": "2026-11-18T17:28:37.164592+00:00",
+    "category": "x_hackathons",
+    "headline": "Binance Wallet x BNB Chain Agent ID Hackathon: $60k USDC Pool"
+  },
+  "xr_ab1db73e8529": {
+    "first_seen": "2026-11-18T17:28:37.164600+00:00",
+    "category": "x_hackathons",
+    "headline": "Solana Perps & Prediction Markets Hackathon"
+  },
+  "xr_2abcb5eea9a5": {
+    "first_seen": "2026-11-18T17:28:37.164609+00:00",
+    "category": "x_hackathons",
+    "headline": "Tier-1 Web3 Hackathon Series"
+  },
+  "xr_e9a79948cf78": {
+    "first_seen": "2026-11-18T17:28:37.164619+00:00",
+    "category": "money_internships",
+    "headline": "UI/UX Design Intern - Remote"
+  },
+  "xr_e1a5a4c1d880": {
+    "first_seen": "2026-11-18T17:28:37.164626+00:00",
+    "category": "money_earning",
+    "headline": "Mercor Writer Role: $80-90/hr Remote"
+  },
+  "xr_fb366961cfab": {
+    "first_seen": "2026-11-18T17:28:37.164634+00:00",
+    "category": "money_earning",
+    "headline": "Mercor Project Dawn: $95/hr Writer Opportunity"
+  },
+  "xr_68df223df17d": {
+    "first_seen": "2026-11-18T17:28:37.164642+00:00",
+    "category": "gaming_fortnite",
+    "headline": "KIRIKO & WIDOWMAKER FORTNITE SKINS DROP FRIDAY"
+  },
+  "xr_5f5654d26a99": {
+    "first_seen": "2026-11-18T17:28:37.164651+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Overwatch x Fortnite Bundle Drops Friday - Pirate Token Hunt Active"
+  },
+  "xr_e60347f2e169": {
+    "first_seen": "2026-11-18T17:28:37.164659+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Overwatch x Fortnite Bundle - Nov 20 Item Shop Release"
+  },
+  "xr_0562d8b492ac": {
+    "first_seen": "2026-11-19T09:16:22.772184+00:00",
+    "category": "ai_alpha",
+    "headline": "CapCut 90% off first month + AI video workflow guide"
+  },
+  "xr_6bd88ce8f553": {
+    "first_seen": "2026-11-19T09:16:22.772282+00:00",
+    "category": "ai_alpha",
+    "headline": "Ava XYZ Control Plane for AI Agents"
+  },
+  "xr_6fc0a842c051": {
+    "first_seen": "2026-11-19T09:16:22.772304+00:00",
+    "category": "x_hackathons",
+    "headline": "YC Startups x ElevenLabs Hackathon Waterloo"
+  },
+  "xr_731c8970501e": {
+    "first_seen": "2026-11-19T09:16:22.772342+00:00",
+    "category": "x_hackathons",
+    "headline": "Pico Space Program: Build with AI Competition"
+  },
+  "xr_a3807d59e023": {
+    "first_seen": "2026-11-19T09:16:22.772369+00:00",
+    "category": "x_hackathons",
+    "headline": "$100K Hackathon Day 3 Update"
+  },
+  "xr_cc6c885305fa": {
+    "first_seen": "2026-11-19T09:16:22.772404+00:00",
+    "category": "money_earning",
+    "headline": "Micro1 AI Image Evaluation Hiring $21-35/hr"
+  },
+  "xr_8bb58fd347a4": {
+    "first_seen": "2026-11-19T09:16:22.772424+00:00",
+    "category": "money_earning",
+    "headline": "Micro1 Remote Video Recorder Positions $13-15/hr"
+  },
+  "xr_8656fe9177cd": {
+    "first_seen": "2026-11-19T09:16:22.772435+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Fortnite Shop Schedule Week of Nov 18-24"
+  },
+  "xr_fb48cb76e00e": {
+    "first_seen": "2026-11-19T09:16:22.772444+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Fortnite x Overwatch Collab Wave 2: Kiriko & Widowmaker"
+  },
+  "xr_97289959194b": {
+    "first_seen": "2026-11-19T09:16:22.772453+00:00",
+    "category": "gaming_fortnite",
+    "headline": "FASTEST PIRATE TOKEN METHOD: Respawn Rumble Farming"
+  },
+  "xr_d5ce66042ebd": {
+    "first_seen": "2026-11-19T09:16:22.772462+00:00",
+    "category": "gaming_fortnite",
+    "headline": "FREE Pirate Shop Access Token & All Rewards in Respawn Rumble"
+  },
+  "xr_572133c653b6": {
+    "first_seen": "2026-11-19T09:16:22.772470+00:00",
+    "category": "vibe_bounties",
+    "headline": "Anthropic IPO Blitz Trading Competition on Polymarket Perps"
+  },
+  "xr_5abae4631a05": {
+    "first_seen": "2026-11-19T09:16:22.772479+00:00",
+    "category": "grants_credits",
+    "headline": "Student Developer Bundle: $1k+ Cloud & AI Credits"
+  },
+  "xr_a0c57d97b835": {
+    "first_seen": "2026-11-19T09:16:22.772487+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Fortnite Devil Fruits Live Drop Across the Island"
+  },
+  "xr_8a019fe7c445": {
+    "first_seen": "2026-11-19T20:07:19.438789+00:00",
+    "category": "ai_alpha",
+    "headline": "Afterglow Themes: Living scenes for Claude Code desktop"
+  },
+  "xr_3cf46fe70ef9": {
+    "first_seen": "2026-11-19T20:07:19.438885+00:00",
+    "category": "ai_alpha",
+    "headline": "Gemini Computer Use: Mac automation without mouse hijack"
+  },
+  "xr_e3fd46673f53": {
+    "first_seen": "2026-11-19T20:07:19.438900+00:00",
+    "category": "ai_alpha",
+    "headline": "Perplexity Teammates: AI agents on iOS and Android"
+  },
+  "xr_773e29b41ac3": {
+    "first_seen": "2026-11-19T20:07:19.438911+00:00",
+    "category": "ai_alpha",
+    "headline": "Grok Bot Hunts Free Dyson/KitchenAid/Robot Vacuum Repairs"
+  },
+  "xr_22d89975e4da": {
+    "first_seen": "2026-11-19T20:07:19.438923+00:00",
+    "category": "ai_alpha",
+    "headline": "Perplexity Decider-v1.3 & Flash Free on OpenRouter"
+  },
+  "xr_e4aea00c091b": {
+    "first_seen": "2026-11-19T20:07:19.438932+00:00",
+    "category": "ai_alpha",
+    "headline": "Cognee: Open Source Company Ontology Builder"
+  },
+  "xr_5a248d6f2286": {
+    "first_seen": "2026-11-19T20:07:19.438942+00:00",
+    "category": "ai_alpha",
+    "headline": "Resolve AI Primary On-call: 3 Free Months"
+  },
+  "xr_20a4c760079c": {
+    "first_seen": "2026-11-19T20:07:19.438964+00:00",
+    "category": "x_hackathons",
+    "headline": "Supabase Builder Day Hackathon - Global"
+  },
+  "xr_6bc956ddba90": {
+    "first_seen": "2026-11-19T20:07:19.438981+00:00",
+    "category": "x_hackathons",
+    "headline": "Solana University Hackathon $15K+ Cash + AI Credits"
+  },
+  "xr_dc351c6e321b": {
+    "first_seen": "2026-11-19T20:07:19.438990+00:00",
+    "category": "x_hackathons",
+    "headline": "Supabase Hackathon with Open-Source Backend"
+  },
+  "xr_fc09a4654c52": {
+    "first_seen": "2026-11-19T20:07:19.439000+00:00",
+    "category": "x_hackathons",
+    "headline": "WeMakeDevs Flagsmith Experimentation Hackathon"
+  },
+  "xr_91c947b04ead": {
+    "first_seen": "2026-11-19T20:07:19.439009+00:00",
+    "category": "money_earning",
+    "headline": "Mercor Generalist Role - $35/hr AI Training"
+  },
+  "xr_ce00073bebbf": {
+    "first_seen": "2026-11-19T20:07:19.439019+00:00",
+    "category": "money_earning",
+    "headline": "Mercor Vision Testing Role - $35/hr"
+  },
+  "xr_dbebaf6f3f2d": {
+    "first_seen": "2026-11-19T20:07:19.439029+00:00",
+    "category": "money_earning",
+    "headline": "Mercor $35/hr Generalist Role - Instant Update"
+  },
+  "xr_779f5c22b4da": {
+    "first_seen": "2026-11-19T20:07:19.439039+00:00",
+    "category": "money_earning",
+    "headline": "Mercor pays $35/hr for AI test creation from personal photos"
+  },
+  "xr_7ca44e3d47f1": {
+    "first_seen": "2026-11-19T20:07:19.439051+00:00",
+    "category": "money_earning",
+    "headline": "16 AI remote platforms ranked by earning potential"
+  },
+  "xr_9ac4d09fb032": {
+    "first_seen": "2026-11-19T20:07:19.439060+00:00",
+    "category": "gaming_general",
+    "headline": "Free titles on Prime Gaming/Amazon Luna"
+  },
+  "xr_7ffddf24d871": {
+    "first_seen": "2026-11-19T20:07:19.439082+00:00",
+    "category": "gaming_general",
+    "headline": "Mark of the Deep free on Epic Games Store"
+  },
+  "xr_12e6b5ddb5b0": {
+    "first_seen": "2026-11-19T20:07:19.439092+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Widowmaker Cup Tournament Tomorrow - Free Outfit for Top Performers"
+  },
+  "xr_350dbd48cb46": {
+    "first_seen": "2026-11-19T20:07:19.439101+00:00",
+    "category": "vibe_bounties",
+    "headline": "Anthropic Futures Trading Challenge on Bitget - $50K USDT Pool"
+  },
+  "xr_ba60f08e25df": {
+    "first_seen": "2026-11-19T20:07:19.439110+00:00",
+    "category": "grants_credits",
+    "headline": "12 Global Hackathons with $1M+ in Prizes & Compute Credits"
+  },
+  "xr_ac9877c53d92": {
+    "first_seen": "2026-11-19T20:07:19.439119+00:00",
+    "category": "grants_credits",
+    "headline": "$42M Sentient Foundation Grants for Open AI Builders"
+  },
+  "xr_80bc2d224edd": {
+    "first_seen": "2026-11-19T20:07:19.439128+00:00",
+    "category": "grants_credits",
+    "headline": "590+ Student Free Deals Aggregated - AI Models, Cloud, Developer Tools"
+  },
+  "xr_3f066004b963": {
+    "first_seen": "2026-11-19T20:07:19.439136+00:00",
+    "category": "x_hackathons",
+    "headline": "Edmonton Hackathon Host Seeking Sponsors"
+  },
+  "xr_55909f277d3a": {
+    "first_seen": "2026-11-20T11:00:13.893789+00:00",
+    "category": "ai_alpha",
+    "headline": "Times Square Billboard: 50 BLR Tweets + $100 Claude Credits"
+  },
+  "xr_850354d47747": {
+    "first_seen": "2026-11-20T11:00:13.893881+00:00",
+    "category": "ai_alpha",
+    "headline": "Gemini 4 Neon + Parallel Subagent Workflow for Complex Tasks"
+  },
+  "xr_033ab95b003e": {
+    "first_seen": "2026-11-20T11:00:13.893905+00:00",
+    "category": "x_hackathons",
+    "headline": "Abridge Hackathon SF 2027 with OpenAI & a16z"
+  },
+  "xr_89e6e5941b18": {
+    "first_seen": "2026-11-20T11:00:13.893919+00:00",
+    "category": "x_hackathons",
+    "headline": "PICO Space Program: Build with AI Competition"
+  },
+  "xr_f92b5c6f7d9e": {
+    "first_seen": "2026-11-20T11:00:13.893942+00:00",
+    "category": "money_earning",
+    "headline": "micro1 AI Engineer Internship - $50-$100/hr Remote"
+  },
+  "xr_0803e52804cc": {
+    "first_seen": "2026-11-20T11:00:13.893958+00:00",
+    "category": "money_earning",
+    "headline": "High-Paying AI Founder Roles - $50-$100/hr Remote"
+  },
+  "xr_a38047c076e2": {
+    "first_seen": "2026-11-20T11:00:13.893967+00:00",
+    "category": "money_earning",
+    "headline": "Mercor: $35/hr AI Training Tasks - Photos & Questions"
+  },
+  "xr_03de4476fd51": {
+    "first_seen": "2026-11-20T11:00:13.893975+00:00",
+    "category": "gaming_fortnite",
+    "headline": "One Piece x Rocket League rewards transfer to Fortnite"
+  },
+  "xr_e48b16eda924": {
+    "first_seen": "2026-11-20T11:00:13.894012+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Fortnite Shop Update TONIGHT - Kim Kardashian & Cowboy Bebop Return"
+  },
+  "xr_60cf668772a3": {
+    "first_seen": "2026-11-20T11:00:13.894027+00:00",
+    "category": "gaming_fortnite",
+    "headline": "HYPEX Confirms Fortnite Shop Tonight - Major Returns"
+  },
+  "xr_176207540f48": {
+    "first_seen": "2026-11-20T11:00:13.894037+00:00",
+    "category": "vibe_bounties",
+    "headline": "ANTHROPIC Futures Trading Challenge on Bitget"
+  },
+  "xr_088c140c2db5": {
+    "first_seen": "2026-11-20T11:00:13.894054+00:00",
+    "category": "vibe_bounties",
+    "headline": "Anthropic Perps Trading Competition $40K Pool"
+  },
+  "xr_70d8beb64d33": {
+    "first_seen": "2026-11-20T11:00:13.894060+00:00",
+    "category": "gaming_general",
+    "headline": "Epic Games Free: Bread and Fred"
+  },
+  "xr_a53525e32a3d": {
+    "first_seen": "2026-11-20T11:00:13.894075+00:00",
+    "category": "gaming_general",
+    "headline": "Epic Games Free: Eternal Threads"
+  },
+  "xr_645e601532b8": {
+    "first_seen": "2026-11-21T06:38:41.685098+00:00",
+    "category": "ai_alpha",
+    "headline": "Microsoft AI agents beat Codex/Claude on disaster mapping with 7.5x fewer tokens"
+  },
+  "xr_3cf1bae5f0de": {
+    "first_seen": "2026-11-21T06:38:41.685267+00:00",
+    "category": "ai_alpha",
+    "headline": "Oxylabs Web API MCP enables AI assistants with web access"
+  },
+  "xr_406b99e41347": {
+    "first_seen": "2026-11-22T10:18:57.693644+00:00",
+    "category": "x_hackathons",
+    "headline": "Agentic Markets Hackathon $50K+ Pool"
+  },
+  "xr_7af1568d1dd3": {
+    "first_seen": "2026-11-21T16:00:34.519293+00:00",
+    "category": "x_hackathons",
+    "headline": "QNX 8.0 Global Hackathon: $50K Pool Across 5 Tracks"
+  },
+  "xr_8595381a1f95": {
+    "first_seen": "2026-11-21T16:00:34.519317+00:00",
+    "category": "x_hackathons",
+    "headline": "Dev3pack Global Hackathon: $15K+ Pool + India Track"
+  },
+  "xr_cb0e4d7eb5a8": {
+    "first_seen": "2026-11-21T06:38:41.685354+00:00",
+    "category": "x_hackathons",
+    "headline": "X Layer TapeOut Hackathon - $100K USDT Pool"
+  },
+  "xr_feb6a0054a1d": {
+    "first_seen": "2026-11-21T16:00:34.519357+00:00",
+    "category": "money_internships",
+    "headline": "AI Product Manager Intern - Bangalore"
+  },
+  "xr_30d21691c6e4": {
+    "first_seen": "2026-11-21T16:00:34.519368+00:00",
+    "category": "money_internships",
+    "headline": "AI SaaS Startup Roles - Remote India"
+  },
+  "xr_f03e6d5bc4fc": {
+    "first_seen": "2026-11-22T10:18:57.693745+00:00",
+    "category": "money_internships",
+    "headline": "Engineering Intern - Applied AI Agents @ Karvo"
+  },
+  "xr_2faaed87d15f": {
+    "first_seen": "2026-11-21T06:38:41.685395+00:00",
+    "category": "money_earning",
+    "headline": "Mercor: $50+/hr AI training roles for builders"
+  },
+  "xr_0461f21e3cdd": {
+    "first_seen": "2026-11-21T06:38:41.685404+00:00",
+    "category": "money_earning",
+    "headline": "Mercor Sales & Marketing Expert Role $60-70/hr Remote"
+  },
+  "xr_fcc0f431e1a7": {
+    "first_seen": "2026-11-21T06:38:41.685420+00:00",
+    "category": "money_earning",
+    "headline": "Kestrel AI Training Jobs Full Scale"
+  },
+  "xr_ef61fa16cd68": {
+    "first_seen": "2026-11-21T06:38:41.685429+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Metro Station Shake It Emote Fortnite"
+  },
+  "xr_2f27693d79fe": {
+    "first_seen": "2026-11-21T06:38:41.685450+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Widowmaker & Kiriko 2,400 VB Bundle Fortnite"
+  },
+  "xr_f87038a06cd6": {
+    "first_seen": "2026-11-21T06:38:41.685467+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Kiriko & Widowmaker Fortnite Emote Drop"
+  },
+  "xr_c8ebfdfde498": {
+    "first_seen": "2026-11-21T06:38:41.685475+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Metro Station Shake It Emote Fortnite Item Shop"
+  },
+  "xr_0922d49076bb": {
+    "first_seen": "2026-11-21T06:38:41.685483+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Overwatch x Fortnite Wave 2: Widowmaker & Kiriko Item Shop"
+  },
+  "xr_16e338e8cdff": {
+    "first_seen": "2026-11-21T06:38:41.685498+00:00",
+    "category": "money_internships",
+    "headline": "Founding Designer at YC-Backed AI Video Editor in Bengaluru"
+  },
+  "xr_e8b9517facaa": {
+    "first_seen": "2026-11-21T06:38:41.685505+00:00",
+    "category": "x_hackathons",
+    "headline": "Abridge Healthcare Hackathon with $5K+ Pool & Tier-1 Partners"
+  },
+  "xr_5fe2e6c51cae": {
+    "first_seen": "2026-11-22T10:18:57.693868+00:00",
+    "category": "gaming_general",
+    "headline": "Epic Games: Firestone \u2013 Idle Clicker Online RPG FREE CLAIM"
+  },
+  "xr_436c0dd7a4f3": {
+    "first_seen": "2026-11-21T16:00:34.517741+00:00",
+    "category": "ai_alpha",
+    "headline": "Anthropic Claude Code 12-Step Blueprint PDF"
+  },
+  "xr_4fdad7436c67": {
+    "first_seen": "2026-11-21T16:00:34.519136+00:00",
+    "category": "ai_alpha",
+    "headline": "Anthropic Engineer Shows Graph-Based Self-Improving Claude Code"
+  },
+  "xr_c3e67fc20f23": {
+    "first_seen": "2026-11-21T16:00:34.519171+00:00",
+    "category": "ai_alpha",
+    "headline": "Anthropic Agent Memory Paper - 6-Part Strategy"
+  },
+  "xr_79454334d1d7": {
+    "first_seen": "2026-11-21T16:00:34.519183+00:00",
+    "category": "ai_alpha",
+    "headline": "8-Hour Straight Claude Code Agent Harness"
+  },
+  "xr_e5b1243d9d12": {
+    "first_seen": "2026-11-21T16:00:34.519203+00:00",
+    "category": "ai_alpha",
+    "headline": "Spotify engineers share Claude Code setup cutting token usage 90%"
+  },
+  "xr_d6b48cccb5ef": {
+    "first_seen": "2026-11-21T16:00:34.519222+00:00",
+    "category": "ai_alpha",
+    "headline": "Gemini 4 Neon 19-page agentic loops PDF dropped"
+  },
+  "xr_4d8a2cd42f3e": {
+    "first_seen": "2026-11-21T16:00:34.519240+00:00",
+    "category": "ai_alpha",
+    "headline": "Opus 5.5 generates full music player in 13 seconds"
+  },
+  "xr_b1b741ad2652": {
+    "first_seen": "2026-11-21T16:00:34.519248+00:00",
+    "category": "ai_alpha",
+    "headline": "146 FREE GROK BOTS ON ONE BOARD ONE CLICK"
+  },
+  "xr_965475aa4c69": {
+    "first_seen": "2026-11-21T16:00:34.519257+00:00",
+    "category": "ai_alpha",
+    "headline": "Unusual Whales API inside AI Assistants"
+  },
+  "xr_99ba6fa892a3": {
+    "first_seen": "2026-11-21T16:00:34.519266+00:00",
+    "category": "x_hackathons",
+    "headline": "DeepMind + YC Robotics Hackathon: SO-101 Arms + Gemini 4 Carbon"
+  },
+  "xr_02425d454089": {
+    "first_seen": "2026-11-21T16:00:34.519330+00:00",
+    "category": "x_hackathons",
+    "headline": "Dev3pack Global Hackathon + MagicBlock Solana Blitz"
+  },
+  "xr_5bba27dab679": {
+    "first_seen": "2026-11-21T16:00:34.519339+00:00",
+    "category": "money_internships",
+    "headline": "Growth Intern at MyJobb.ai"
+  },
+  "xr_15b1cfa96663": {
+    "first_seen": "2026-11-22T10:18:57.693726+00:00",
+    "category": "money_internships",
+    "headline": "AI Product Manager Intern @ Bangalore - \u20b940k/mo"
+  },
+  "xr_a5bd7f247f74": {
+    "first_seen": "2026-11-21T16:00:34.519379+00:00",
+    "category": "money_earning",
+    "headline": "Micro1 Mathematics Experts: $60-$120/hr openings"
+  },
+  "xr_1462237e4e1d": {
+    "first_seen": "2026-11-21T16:00:34.519388+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Fortnite Shop Update TONIGHT - Overwatch & Ice Spice returning"
+  },
+  "xr_a38eaf210f52": {
+    "first_seen": "2026-11-21T16:00:34.519400+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Fortnite x Overwatch Wave 2 - Widowmaker & Kiriko in Item Shop"
+  },
+  "xr_6c873b5a899f": {
+    "first_seen": "2026-11-21T16:00:34.519410+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Fortnite 'Relocating' Screen Bug Affects All Players"
+  },
+  "xr_9011ecfce59b": {
+    "first_seen": "2026-11-22T10:18:57.692305+00:00",
+    "category": "ai_alpha",
+    "headline": "FreeModel: Free AI API with 29 models"
+  },
+  "xr_7566dddfbb8e": {
+    "first_seen": "2026-11-22T10:18:57.693590+00:00",
+    "category": "ai_alpha",
+    "headline": "FREE $200 IN AI CREDITS FOR STUDENTS"
+  },
+  "xr_fe04296f7a3c": {
+    "first_seen": "2026-11-22T10:18:57.693628+00:00",
+    "category": "ai_alpha",
+    "headline": "Wiro.ai: $200 Free AI Credits for Students (12 Months, No Card)"
+  },
+  "xr_0cc9f0b2c2cb": {
+    "first_seen": "2026-11-22T10:18:57.693757+00:00",
+    "category": "money_earning",
+    "headline": "AI Training Platforms Hiring - Outlier/Alignerr etc"
+  },
+  "xr_a860a34ea107": {
+    "first_seen": "2026-11-22T10:18:57.693768+00:00",
+    "category": "money_earning",
+    "headline": "Mercor Monthly Lucky Draw: Five $100 Prizes"
+  },
+  "xr_d9d7c15fb5e6": {
+    "first_seen": "2026-11-22T10:18:57.693776+00:00",
+    "category": "money_earning",
+    "headline": "Mercor Language & Audio Experts: $35-$50/hr AI Training"
+  },
+  "xr_d111a442770b": {
+    "first_seen": "2026-11-22T10:18:57.693810+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Pirate Token & Gold Drops Buffed - Next 2 Hours"
+  },
+  "xr_db7a99f5990a": {
+    "first_seen": "2026-11-22T10:18:57.693822+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Fortnite Shop Update Tonight - Major Cosmetics Returning"
+  },
+  "xr_7e0a3e94cd7f": {
+    "first_seen": "2026-11-22T10:18:57.693835+00:00",
+    "category": "gaming_fortnite",
+    "headline": "HYPEX Confirms Pirate Token Boost Tonight"
+  },
+  "xr_6cf2fcba3e66": {
+    "first_seen": "2026-11-22T10:18:57.693858+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Pirate Token Boost Active - 7.5x Skin Multiplier"
+  },
+  "xr_44f6d19bf559": {
+    "first_seen": "2026-11-24T07:44:57.828611+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Fortnite Golden Week + Community Day Loot Drop"
+  },
+  "xr_ab4fc37105b4": {
+    "first_seen": "2026-11-26T02:56:30.219055+00:00",
+    "category": "gaming_general",
+    "headline": "Epic Games Store: Luftrausers Free Claim"
+  },
+  "xr_30c59834230c": {
+    "first_seen": "2026-11-25T13:18:41.944109+00:00",
+    "category": "gaming_general",
+    "headline": "Epic Games Store: Castlevania Anniversary Collection FREE"
+  },
+  "xr_f3bd8ef8b932": {
+    "first_seen": "2026-11-26T02:56:30.219143+00:00",
+    "category": "gaming_fortnite",
+    "headline": "Fortnite Scott Pilgrim Cup Live Event"
   }
 }

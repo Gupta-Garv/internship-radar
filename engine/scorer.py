@@ -532,6 +532,13 @@ def score_job(job, profile):
     if loc_eval["region"] == "India":
         if not is_valid_india_opportunity(job, category, loc_eval, pay_eval):
             return None
+
+    # Strict Overseas On-Site / Hybrid Visa Sponsorship Rule:
+    # If the role is outside India and not remote, it MUST have verified visa sponsorship!
+    # User rule: "do not scan for onsite roles that are out of india and do not provide visa sponsorship."
+    if loc_eval["region"] != "India" and loc_eval["region"] != "Remote":
+        if not visa_eval.get("is_sponsored", False):
+            return None
     
     # Base category weights based on Garv's strengths
     cat_weights = {

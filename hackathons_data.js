@@ -1,127 +1,24 @@
 window.RADAR_HACKATHONS_DATA = [
   {
-    "id": "xhack_xr_22dc3e3e43d0",
-    "title": "YC Cyber Hackathon with Guaranteed Interview",
-    "platform": "X (Twitter) Live",
-    "organizer": "@FabraixHQ",
-    "url": "https://events.ycombinator.com/break-something-people-want",
-    "x_post_url": "https://x.com/FabraixHQ/status/2122694551768850661",
-    "is_from_x": true,
-    "source_label": "\ud835\udd4f LIVE",
-    "prize_usd": 0,
-    "prize_pool": "YC Interview",
-    "prize_badge": "YC Interview",
-    "prize_type": "fast_track",
-    "non_cash_perks": [
-      "Register for the Nov 28 London event at https://events.ycombinator.com/break-something-people-want",
-      "Prepare vulnerability hunting and build tools for the 10AM-6PM session"
-    ],
-    "deadline_iso": "2026-11-28T23:59:59Z",
-    "deadline_display": "Nov 28",
-    "brief": "One-day cybersecurity hackathon on Nov 28 in London. Winners get guaranteed YC interview + internship at YC startup. Co-hosted with OpenAI, PostHog, and Latto AI. Actionable for builders seeking high-stakes exposure.",
-    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
-    "vibe_coder_score": "\ud835\udd4f Early Discovery",
-    "eligibility": "India & Global (Remote/Visa-fr",
-    "tags": [
-      "X Exclusive",
-      "Early Signal",
-      "Hackathon"
-    ],
-    "strategy": {
-      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
-      "idea": "One-day cybersecurity hackathon on Nov 28 in London. Winners get guaranteed YC interview + internship at YC startup. Co-hosted with OpenAI, PostHog, and Latto AI. Actionable for builders seeking high-stakes exposure.",
-      "scaffold_prompt": "Build a clean, demo-ready MVP for: YC Cyber Hackathon with Guaranteed Interview. Context: One-day cybersecurity hackathon on Nov 28 in London. Winners get guaranteed YC interview + internship at YC startup. Co-hosted with OpenAI, PostHog, and Latto AI. Actionable for builders seeking high-stakes exposure."
-    }
-  },
-  {
-    "id": "xhack_xr_965530a5fb58",
-    "title": "$100K Profit-Driven Hackathon",
-    "platform": "X (Twitter) Live",
-    "organizer": "@kseniam0s",
-    "url": "http://ship-or-die.com/100k-hackathon",
-    "x_post_url": "https://x.com/kseniam0s/status/2122677076071227869",
-    "is_from_x": true,
-    "source_label": "\ud835\udd4f LIVE",
-    "prize_usd": 100000,
-    "prize_pool": "$100,000",
-    "prize_badge": "$100K Pool",
-    "prize_type": "ai_subs",
-    "non_cash_perks": [
-      "Apply at http://ship-or-die.com/100k-hackathon",
-      "Build a digital product from scratch optimized for profit calculation"
-    ],
-    "deadline_iso": "2026-11-28T23:59:59Z",
-    "deadline_display": "Dec 16",
-    "brief": "Build a business in 30 days (Nov 16-Dec 16) winning $100k based on profit metrics. From @higgsfield_ai and Marc Lou. Software/web/mobile apps eligible. No courses/agencies. Verified profit tracking.",
-    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
-    "vibe_coder_score": "\ud835\udd4f Early Discovery",
-    "eligibility": "India & Global",
-    "tags": [
-      "X Exclusive",
-      "Early Signal",
-      "Hackathon"
-    ],
-    "strategy": {
-      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
-      "idea": "Build a business in 30 days (Nov 16-Dec 16) winning $100k based on profit metrics. From @higgsfield_ai and Marc Lou. Software/web/mobile apps eligible. No courses/agencies. Verified profit tracking.",
-      "scaffold_prompt": "Build a clean, demo-ready MVP for: $100K Profit-Driven Hackathon. Context: Build a business in 30 days (Nov 16-Dec 16) winning $100k based on profit metrics. From @higgsfield_ai and Marc Lou. Software/web/mobile apps eligible. No courses/agencies. Verified profit tracking."
-    }
-  },
-  {
-    "id": "xhack_xr_36600c70d747",
-    "title": "ElevenLabs Creator Plan Hackathon with $50K+ Pool",
-    "platform": "X (Twitter) Live",
-    "organizer": "@dev3pack",
-    "url": "https://hack.dev3pack.xyz/",
-    "x_post_url": "https://x.com/dev3pack/status/2122645940175794562",
-    "is_from_x": true,
-    "source_label": "\ud835\udd4f LIVE",
-    "prize_usd": 50000,
-    "prize_pool": "$50,000",
-    "prize_badge": "$50K+ Prize Pool",
-    "prize_type": "ai_subs",
-    "non_cash_perks": [
-      "Visit hack.dev3pack.xyz to register",
-      "Build voice AI project using ElevenLabs API",
-      "Submit project before deadline for prize eligibility"
-    ],
-    "deadline_iso": "2026-11-28T23:59:59Z",
-    "deadline_display": "Limited Time",
-    "brief": "ElevenLabs hosts a creator-focused hackathon building voice agents and conversational AI experiences. Offers significant prizes including ElevenLabs credits and Pro plans for top builders.",
-    "recommended_stack": "Cursor + Claude / Gemini + Next.js",
-    "vibe_coder_score": "\ud835\udd4f Early Discovery",
-    "eligibility": "India & Global",
-    "tags": [
-      "X Exclusive",
-      "Early Signal",
-      "Hackathon"
-    ],
-    "strategy": {
-      "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
-      "idea": "ElevenLabs hosts a creator-focused hackathon building voice agents and conversational AI experiences. Offers significant prizes including ElevenLabs credits and Pro plans for top builders.",
-      "scaffold_prompt": "Build a clean, demo-ready MVP for: ElevenLabs Creator Plan Hackathon with $50K+ Pool. Context: ElevenLabs hosts a creator-focused hackathon building voice agents and conversational AI experiences. Offers significant prizes including ElevenLabs credits and Pro plans for top builders."
-    }
-  },
-  {
-    "id": "xhack_xr_6a4d496b9c4a",
-    "title": "a16z Speedrun SR008 - $1M Partner Credits & $10M+ Startup Investments",
+    "id": "xhack_xr_99ba6fa892a3",
+    "title": "DeepMind + YC Robotics Hackathon: SO-101 Arms + Gemini 4 Carbon",
     "platform": "X (Twitter) Live",
     "organizer": "@suraj_sharma14",
-    "url": "http://speedrun.a16z.com/apply",
-    "x_post_url": "https://x.com/suraj_sharma14/status/2122623279693279707",
+    "url": "https://hebbianrobotics.com/hackathon/",
+    "x_post_url": "https://x.com/suraj_sharma14/status/2124072831017484494",
     "is_from_x": true,
     "source_label": "\ud835\udd4f LIVE",
-    "prize_usd": 0,
-    "prize_pool": "$1M Partner Credits | $10M+ Inve",
-    "prize_badge": "$1M Partner Credits | $10M+ Inve",
-    "prize_type": "ai_subs",
+    "prize_usd": 2500,
+    "prize_pool": "$2,500",
+    "prize_badge": "$2,500 + M6 Mac Mini Pool",
+    "prize_type": "fast_track",
     "non_cash_perks": [
-      "Apply at speedrun.a16z.com/apply",
-      "Ensure startup has $10M+ traction for best consideration"
+      "Register at hebbianrobotics.com/hackathon",
+      "Build a robot use agent using SO-101 arm and Gemini 4 Carbon"
     ],
-    "deadline_iso": "2026-11-28T23:59:59Z",
-    "deadline_display": "Rolling Applications",
-    "brief": "a16z's flagship startup accelerator SR008 is open for applications. Selected founders receive up to $1M in partner credits, dedicated operator support (talent, GTM, visa, HR), and access to 1,000+ elite founders. Cohort starts early 2027. Rolling applications accepted globally.",
+    "deadline_iso": "2026-12-07T23:59:59Z",
+    "deadline_display": "Limited Time",
+    "brief": "World's first hackathon for robot use agents. Every team receives an SO-101 robot arm, early access to Gemini 4 Carbon, and builds real-world AI control. Top prize $2,500 + M6 Mac Mini. Roles with DeepMind/Google Cloud/YC teams on the line.",
     "recommended_stack": "Cursor + Claude / Gemini + Next.js",
     "vibe_coder_score": "\ud835\udd4f Early Discovery",
     "eligibility": "India & Global",
@@ -132,31 +29,30 @@ window.RADAR_HACKATHONS_DATA = [
     ],
     "strategy": {
       "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
-      "idea": "a16z's flagship startup accelerator SR008 is open for applications. Selected founders receive up to $1M in partner credits, dedicated operator support (talent, GTM, visa, HR), and access to 1,000+ elite founders. Cohort starts early 2027. Rolling applications accepted globally.",
-      "scaffold_prompt": "Build a clean, demo-ready MVP for: a16z Speedrun SR008 - $1M Partner Credits & $10M+ Startup Investments. Context: a16z's flagship startup accelerator SR008 is open for applications. Selected founders receive up to $1M in partner credits, dedicated operator support (talent, GTM, visa, HR), and access to 1,000+ elite founders. Cohort starts early 2027. Rolling applications accepted globally."
+      "idea": "World's first hackathon for robot use agents. Every team receives an SO-101 robot arm, early access to Gemini 4 Carbon, and builds real-world AI control. Top prize $2,500 + M6 Mac Mini. Roles with DeepMind/Google Cloud/YC teams on the line.",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: DeepMind + YC Robotics Hackathon: SO-101 Arms + Gemini 4 Carbon. Context: World's first hackathon for robot use agents. Every team receives an SO-101 robot arm, early access to Gemini 4 Carbon, and builds real-world AI control. Top prize $2,500 + M6 Mac Mini. Roles with DeepMind/Google Cloud/YC teams on the line."
     }
   },
   {
-    "id": "xhack_xr_6a18d5de133c",
-    "title": "$100K Ship or Die Hackathon - $100K Cash Pool",
+    "id": "xhack_xr_7af1568d1dd3",
+    "title": "QNX 8.0 Global Hackathon: $50K Pool Across 5 Tracks",
     "platform": "X (Twitter) Live",
-    "organizer": "@realjolinx07",
-    "url": "https://ship-or-die.com/100k-hackathon",
-    "x_post_url": "https://x.com/realjolinx07/status/2122596737105686782",
+    "organizer": "@HackListHQ",
+    "url": "https://hacklist.io/hackathon/979e7b95-12f2-4176-9a39-571e552337bc",
+    "x_post_url": "https://x.com/HackListHQ/status/2123808590196813942",
     "is_from_x": true,
     "source_label": "\ud835\udd4f LIVE",
-    "prize_usd": 100000,
-    "prize_pool": "$100,000",
-    "prize_badge": "$100K Cash Pool",
-    "prize_type": "ai_subs",
+    "prize_usd": 10000,
+    "prize_pool": "$10,000",
+    "prize_badge": "$10K Grand + $4K Category Prizes",
+    "prize_type": "cash",
     "non_cash_perks": [
-      "Sign up free at ship-or-die.com",
-      "Complete profile and sign rules",
-      "Build profitable business track traffic/revenue with TrustMRR"
+      "Fork the QNX 8.0 SDK",
+      "Build project in one of 5 categories and push to public repo with open-source license"
     ],
-    "deadline_iso": "2026-11-28T23:59:59Z",
-    "deadline_display": "Dec 16",
-    "brief": "30-day hackathon with 3,492 builders competing for $100,000 in cash prizes. Top 3 most profitable startups win significant rewards. Free to enter with December 16 deadline.",
+    "deadline_iso": "2026-12-07T23:59:59Z",
+    "deadline_display": "Limited Time",
+    "brief": "Build apps, drivers, libraries or tools targeting QNX 8.0. Categories include robotics/medical, automotive/mobility, low-level software, developer tooling, and open-source ports. Grand prize $10K, category winners $4K each.",
     "recommended_stack": "Cursor + Claude / Gemini + Next.js",
     "vibe_coder_score": "\ud835\udd4f Early Discovery",
     "eligibility": "India & Global",
@@ -167,8 +63,8 @@ window.RADAR_HACKATHONS_DATA = [
     ],
     "strategy": {
       "winning_angle": "Spotted early via \ud835\udd4f LIVE. Move fast while submission volume is still low.",
-      "idea": "30-day hackathon with 3,492 builders competing for $100,000 in cash prizes. Top 3 most profitable startups win significant rewards. Free to enter with December 16 deadline.",
-      "scaffold_prompt": "Build a clean, demo-ready MVP for: $100K Ship or Die Hackathon - $100K Cash Pool. Context: 30-day hackathon with 3,492 builders competing for $100,000 in cash prizes. Top 3 most profitable startups win significant rewards. Free to enter with December 16 deadline."
+      "idea": "Build apps, drivers, libraries or tools targeting QNX 8.0. Categories include robotics/medical, automotive/mobility, low-level software, developer tooling, and open-source ports. Grand prize $10K, category winners $4K each.",
+      "scaffold_prompt": "Build a clean, demo-ready MVP for: QNX 8.0 Global Hackathon: $50K Pool Across 5 Tracks. Context: Build apps, drivers, libraries or tools targeting QNX 8.0. Categories include robotics/medical, automotive/mobility, low-level software, developer tooling, and open-source ports. Grand prize $10K, category winners $4K each."
     }
   },
   {
@@ -348,6 +244,33 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
+    "id": "devpost_29973",
+    "title": "AWS MSP AI Hackathon",
+    "organizer": "Devpost Sponsor",
+    "platform": "Devpost",
+    "prize_pool": "$64,000",
+    "prize_usd": 64000,
+    "prize_type": "cash",
+    "prize_badge": "\ud83c\udfc6 $64,000 Cash Pool",
+    "non_cash_perks": [
+      "Direct Cash Awards",
+      "Devpost Winner Recognition"
+    ],
+    "deadline_iso": "2026-12-11T23:59:59Z",
+    "deadline_display": "Dec 11, 2026",
+    "url": "https://aws-agentic-msp.devpost.com/",
+    "eligibility": "Worldwide Open & India Eligible",
+    "vibe_coder_score": "95% Vibe Coder Friendly",
+    "brief": "Build a rapid AI-powered application competing for $64,000 in Machine Learning/AI, Productivity. Ideal for vibe coders to prototype a complete user journey with Claude/OpenAI APIs and a clean web UI.",
+    "recommended_stack": "Next.js + LLM API + Tailwind + Vercel",
+    "strategy": "Rapid prototyping edge: build a working Next.js web application deployed to Vercel with a 90-second demo video highlighting real user problem resolution.",
+    "tags": [
+      "Machine Learning/AI",
+      "Productivity",
+      "Web"
+    ]
+  },
+  {
     "id": "anthropic_claude_builder_2026",
     "title": "Anthropic Claude Builder Challenge 2026",
     "organizer": "Anthropic",
@@ -435,7 +358,7 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
-    "id": "devpost_24713",
+    "id": "devpost_93834",
     "title": "QNX Global Hackathon",
     "organizer": "Devpost Sponsor",
     "platform": "Devpost",
@@ -581,7 +504,7 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
-    "id": "devpost_35575",
+    "id": "devpost_85442",
     "title": "Reddit\u2019s Game of the Day Hackathon",
     "organizer": "Devpost Sponsor",
     "platform": "Devpost",
@@ -636,7 +559,7 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
-    "id": "devpost_79949",
+    "id": "devpost_27754",
     "title": "#BuildHybridAI 2026",
     "organizer": "Devpost Sponsor",
     "platform": "Devpost",
@@ -722,7 +645,7 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
-    "id": "devpost_68366",
+    "id": "devpost_27927",
     "title": "Deck the Pixels",
     "organizer": "Devpost Sponsor",
     "platform": "Devpost",
@@ -746,6 +669,33 @@ window.RADAR_HACKATHONS_DATA = [
       "Design",
       "Machine Learning/AI",
       "Low/No Code"
+    ]
+  },
+  {
+    "id": "devpost_76007",
+    "title": "Cloud9 x JetBrains: Sky's The Limit Hackathon 2026",
+    "organizer": "Devpost Sponsor",
+    "platform": "Devpost",
+    "prize_pool": "$25,000",
+    "prize_usd": 25000,
+    "prize_type": "cash",
+    "prize_badge": "\ud83c\udfc6 $25,000 Cash Pool",
+    "non_cash_perks": [
+      "Direct Cash Awards",
+      "Devpost Winner Recognition"
+    ],
+    "deadline_iso": "2027-01-12T23:59:59Z",
+    "deadline_display": "Jan 12, 2027",
+    "url": "https://cloud9.devpost.com/",
+    "eligibility": "Worldwide Open & India Eligible",
+    "vibe_coder_score": "95% Vibe Coder Friendly",
+    "brief": "Build a rapid AI-powered application competing for $25,000 in Databases, Gaming. Ideal for vibe coders to prototype a complete user journey with Claude/OpenAI APIs and a clean web UI.",
+    "recommended_stack": "Next.js + LLM API + Tailwind + Vercel",
+    "strategy": "Rapid prototyping edge: build a working Next.js web application deployed to Vercel with a 90-second demo video highlighting real user problem resolution.",
+    "tags": [
+      "Databases",
+      "Gaming",
+      "Machine Learning/AI"
     ]
   },
   {
@@ -866,7 +816,7 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
-    "id": "devpost_9196",
+    "id": "devpost_42154",
     "title": "Open Agentic Web Challenge",
     "organizer": "Devpost Sponsor",
     "platform": "Devpost",
@@ -890,33 +840,6 @@ window.RADAR_HACKATHONS_DATA = [
       "Machine Learning/AI",
       "Web",
       "Social Good"
-    ]
-  },
-  {
-    "id": "devpost_21397",
-    "title": "Arbiter Hacks V1",
-    "organizer": "Devpost Sponsor",
-    "platform": "Devpost",
-    "prize_pool": "$7,800",
-    "prize_usd": 7800,
-    "prize_type": "cash",
-    "prize_badge": "\ud83c\udfc6 $7,800 Cash Pool",
-    "non_cash_perks": [
-      "Direct Cash Awards",
-      "Devpost Winner Recognition"
-    ],
-    "deadline_iso": "2026-12-21T23:59:59Z",
-    "deadline_display": "Dec 21, 2026",
-    "url": "https://arbiter-hacks-v1.devpost.com/",
-    "eligibility": "Worldwide Open & India Eligible",
-    "vibe_coder_score": "95% Vibe Coder Friendly",
-    "brief": "Build a rapid AI-powered application competing for $7,800 in Beginner Friendly, Machine Learning/AI. Ideal for vibe coders to prototype a complete user journey with Claude/OpenAI APIs and a clean web UI.",
-    "recommended_stack": "Next.js + LLM API + Tailwind + Vercel",
-    "strategy": "Rapid prototyping edge: build a working Next.js web application deployed to Vercel with a 90-second demo video highlighting real user problem resolution.",
-    "tags": [
-      "Beginner Friendly",
-      "Machine Learning/AI",
-      "Open Ended"
     ]
   }
 ];

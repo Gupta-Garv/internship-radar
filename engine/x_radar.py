@@ -175,7 +175,12 @@ async def _fetch_via_twscrape(queries_by_cat, accounts, max_per_query=12):
             dated_q = f"{q} since:{since_date}" if "since:" not in q else q
             try:
                 count = 0
-                async for tw in api.search(dated_q, limit=max_per_query, kv={"product": "Latest"}):
+                search_gen = api.search(dated_q, limit=max_per_query, kv={"product": "Latest"})
+                while count < max_per_query:
+                    try:
+                        tw = await asyncio.wait_for(search_gen.__anext__(), timeout=4.0)
+                    except (StopAsyncIteration, asyncio.TimeoutError, Exception):
+                        break
                     text = getattr(tw, "rawContent", "") or ""
                     tw_id = str(getattr(tw, "id", ""))
                     user = getattr(tw, "user", None)
@@ -224,14 +229,19 @@ async def _fetch_via_twscrape(queries_by_cat, accounts, max_per_query=12):
 
 
 def fetch_x_live(queries_by_cat, accounts):
-    """Run Tier 1 live X search using burner cookie pool."""
+    """Run Tier 1 live X search using burner cookie pool with strict 15s timeout."""
     if not accounts:
         return [], "not_configured"
     try:
         import twscrape  # noqa: F401
-        items = asyncio.run(_fetch_via_twscrape(queries_by_cat, accounts))
+        async def _run_with_timeout():
+            return await asyncio.wait_for(_fetch_via_twscrape(queries_by_cat, accounts), timeout=15.0)
+        items = asyncio.run(_run_with_timeout())
         status = "active" if items else "cookie_expired_or_empty"
         return items, status
+    except (asyncio.TimeoutError, TimeoutError):
+        print("  [x_live] timed out waiting for burner queue, failing over to Tier 2 Exa.ai.")
+        return [], "rate_limited_or_queued"
     except ImportError:
         return [], "twscrape_not_installed"
     except Exception as e:

@@ -153,61 +153,100 @@ def is_non_tech_internship(title, text="", url="", location="", company=""):
     lower_title = title.lower()
     full_text = f"{title} {company} {location} {text}".lower()
 
-    # 1. Must match intern pattern in title, or be on a dedicated internship platform (e.g. Internshala)
-    is_intern = bool(INTERN_PATTERN.search(lower_title) or '/internship/' in url.lower())
-    if not is_intern:
+    # 1. Must match target operator / intern pattern in title, or be early-career/entry level
+    is_early_career = bool(
+        INTERN_PATTERN.search(lower_title) or 
+        re.search(r'\b(intern|internship|co-op|coop|apm|associate|fellow|fellowship|entry[- ]level|junior|trainee|apprentice|special projects)\b', lower_title)
+    )
+    if not is_early_career:
         return False
 
-    # 2. Reject MBA, PhD, and Graduate-only degree restrictions
+    # 2. Strict target track enforcement (APM, Founder\'s Office, BizOps, Growth, Marketing, Product Design)
+    TARGET_ROLE_PATTERNS = re.compile(
+        r'\b(product|apm|associate product manager|founder|chief of staff|bizops|business operations|operations|strategy|growth|marketing|gtm|go-to-market|brand|social media|content|ui\b|ux\b|design|designer|product analyst|business analyst|commercial|fellow|fellowship|special projects)\b',
+        re.IGNORECASE
+    )
+    if not TARGET_ROLE_PATTERNS.search(lower_title):
+        return False
+
+    # 3. Reject MBA, PhD, and Graduate-only degree restrictions
     if DEGREE_RESTRICTION_REGEX.search(lower_title) or DEGREE_RESTRICTION_REGEX.search(text[:600]):
         return False
 
-    # 3. Reject physical / non-digital / hardware design
+    # 4. Strict Experience Cap: Reject roles requiring 2+ years of full-time experience
+    exp_match = re.search(r'\b([2-9]|\d{2})\+?\s*(?:years?|yrs?)(?:\s+of)?\s+(?:full[- ]time\s+)?experience\b', full_text)
+    if exp_match:
+        if not re.search(r'\b(?:0\s*[-–to]\s*[12]|1\s*[-–to]\s*2|under\s*2|<=\s*2)\s*(?:years?|yrs?)\b', full_text):
+            return False
+
+    # 5. Reject physical / non-digital / hardware design
     if PHYSICAL_DESIGN_REGEX.search(lower_title):
         return False
 
-    # 4. Reject engineering / hardware / data engineering / reliability keywords
+    # 6. Reject engineering / hardware / data engineering / reliability keywords
     for neg in NEGATIVE_KEYWORDS:
         if neg in lower_title:
             return False
 
-    # 5. Reject foreign LinkedIn domains (es., fr., de., it., etc.)
-    if url and FOREIGN_DOMAINS_REGEX.search(url):
+    # 7. Strict Coding & Technical Knowledge Gate (with AI Exception)
+    # Reject coding languages, software development, medical, law
+    HARD_CODING_PATTERNS = re.compile(
+        r'\b(proficiency in (?:c\+\+|java|rust|golang|c#|swift|kotlin)|must know (?:c\+\+|java|rust|golang)|experience with (?:c\+\+|java|rust|golang|microservices|distributed systems|kernel|embedded c)|deep learning research|training llms from scratch|pytorch architecture|medical degree|license to practice law|bar admission|clinical trial)\b',
+        re.IGNORECASE
+    )
+    if HARD_CODING_PATTERNS.search(full_text):
         return False
 
-    # 6. Reject foreign market terms
+    # 8. Reject foreign LinkedIn domains and foreign market terms
+    if url and FOREIGN_DOMAINS_REGEX.search(url):
+        return False
     if FOREIGN_MARKET_TERMS_REGEX.search(full_text):
         return False
 
-    # 7. Check foreign language text density
+    # 9. Check foreign language text density
     sp_cnt = len(re.findall(r'\b(para|con|por|como|del|las|los|requisitos|experiencia|renting)\b', full_text))
     fr_cnt = len(re.findall(r'\b(pour|dans|avec|les|des|missions|profil)\b', full_text))
     de_cnt = len(re.findall(r'\b(und|fuer|für|mit|wir|uns|aufgaben|bewerbung)\b', full_text))
     if sp_cnt >= 3 or fr_cnt >= 3 or de_cnt >= 3:
         return False
 
-    # 8. Must NOT require a 3rd language (Garv only speaks English and Hindi)
+    # 10. Must NOT require a 3rd language (Garv only speaks English and Hindi)
     if requires_foreign_language(title, text):
         return False
 
-    # 9. Reject Citizenship / Security clearance / local term-time restrictions
+    # 11. Reject Citizenship / Security clearance / local term-time restrictions
     if CITIZENSHIP_RESTRICTION_REGEX.search(full_text):
         return False
 
-    # 10. Reject US Local On-Site at non-sponsoring regional firms (Requires US CPT/OPT work auth)
-    is_us = bool(re.search(r'\b(united states|usa|us)\b', location.lower()) or US_NON_SPONSOR_STATES.search(location.lower()))
-    is_onsite = bool(re.search(r'\b(on site|onsite|in-person|in person)\b', text.lower()) or 'on site' in text.lower())
-    is_remote = bool(re.search(r'\b(remote|work from home|anywhere)\b', location.lower()))
-    if is_us and is_onsite and not is_remote:
-        # Require explicit visa sponsorship mention for US on-site roles
-        if not re.search(r'\b(visa sponsorship|international applicants welcome|j-1)\b', text.lower()):
+    # 12. Strict Location & Overseas Visa Sponsorship Gate:
+    # India: Allowed without visa sponsorship (Domestic).
+    # Remote Global: Allowed without visa sponsorship (can work from India).
+    # Onsite/Hybrid Abroad (outside India): MUST have explicit visa sponsorship!
+    loc_lower = location.lower()
+    is_india = bool(re.search(r'\b(india|bengaluru|bangalore|mumbai|delhi|gurgaon|gurugram|hyderabad|pune|noida|chennai|kolkata|ahmedabad|jaipur)\b', loc_lower))
+    is_hybrid = bool(re.search(r'\b(hybrid|onsite & remote|in[- ]office)\b', full_text))
+    is_pure_remote = (
+        bool(re.search(r'\b(remote worldwide|worldwide remote|work from anywhere|anywhere in the world|global remote|remote - anywhere)\b', loc_lower)) or
+        (bool(re.search(r'\b(remote|telecommute|work from home)\b', loc_lower)) and not is_hybrid and not re.search(r'\b(us only|u\.s\. only|united states only|uk only|europe only|canada only|must reside in|must be based in)\b', full_text))
+    )
+
+    if not is_india and not is_pure_remote:
+        # Must have verified visa sponsorship!
+        has_visa_sponsorship = bool(
+            re.search(r'\b(visa sponsorship|will sponsor|sponsorship available|relocation package|relocation support|corporate housing|j-1 sponsor|international applicants welcome|work visa)\b', text.lower())
+            or (company.lower() in ['coupang', 'mercari'] and re.search(r'\b(tokyo|seoul|japan)\b', loc_lower))
+            or (company.lower() in ['databricks'] and re.search(r'\b(amsterdam|berlin)\b', loc_lower))
+            or (company.lower() in ['careem'] and re.search(r'\b(dubai|uae)\b', loc_lower))
+        )
+        no_visa_keywords = bool(re.search(r'\b(no visa sponsorship|cannot sponsor|will not sponsor|without (?:company )?sponsorship|authorized to work in (?:the )?(?:us|uk|eu|canada|singapore|australia) without (?:need for )?sponsorship|must have (?:valid )?work authorization|no relocation)\b', text.lower()))
+        if no_visa_keywords or not has_visa_sponsorship:
             return False
 
-    # 11. Reject explicit unpaid or non-paid listings
+    # 13. Reject explicit unpaid or non-paid listings
     if re.search(r'\b(unpaid|non[- ]?paid|no stipend|zero stipend|voluntary)\b', full_text):
         return False
 
-    # 12. Reject generic outbound tele-sales, BDA calling, and non-operator labor
+    # 14. Reject generic outbound tele-sales, BDA calling, and non-operator labor
     if re.search(r'\b(business development associate|bda|telecaller|telecalling|telesales|cold call|inside sales associate|lead generation executive|counter sales|door to door sales|school evaluation|preschool|mechanical design|cad engineer)\b', lower_title):
         return False
 
@@ -492,59 +531,112 @@ def fetch_github_markdown_table(source_info):
         pass
     return jobs
 
-def fetch_internshala(source_info):
-    url = source_info.get("url")
-    default_cat = source_info.get("category", "General Business")
+def fetch_hackernews_hiring():
     jobs = []
-    
-    headers = {
-        "User-Agent": USER_AGENT,
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.9"
-    }
-    
+    headers = {"User-Agent": USER_AGENT}
     try:
-        r = requests.get(url, headers=headers, timeout=6)
+        r = requests.get('https://hacker-news.firebaseio.com/v0/user/whoishiring.json', headers=headers, timeout=5)
+        if r.status_code != 200:
+            return jobs
+        submitted = r.json().get('submitted', [])
+        target_item_id = None
+        for item_id in submitted[:3]:
+            item = requests.get(f'https://hacker-news.firebaseio.com/v0/item/{item_id}.json', headers=headers, timeout=5).json()
+            if 'who is hiring' in item.get('title', '').lower():
+                target_item_id = item_id
+                break
+        if not target_item_id:
+            return jobs
+
+        thread = requests.get(f'https://hacker-news.firebaseio.com/v0/item/{target_item_id}.json', headers=headers, timeout=5).json()
+        kids = thread.get('kids', [])[:80]
+
+        def fetch_comment(kid_id):
+            try:
+                c = requests.get(f'https://hacker-news.firebaseio.com/v0/item/{kid_id}.json', headers=headers, timeout=4).json()
+                raw_text = c.get('text', '')
+                if not raw_text:
+                    return None
+                clean_text = html.unescape(re.sub(r'<[^>]+>', ' ', raw_text))
+                lines = [l.strip() for l in clean_text.split('\n') if l.strip()]
+                if not lines:
+                    return None
+                header = lines[0]
+                parts = [p.strip() for p in header.split('|')]
+                if len(parts) >= 2:
+                    comp = parts[0]
+                    role_or_loc = parts[1]
+                    loc = parts[2] if len(parts) > 2 else "Remote / Unspecified"
+                    title = role_or_loc
+                    url = f"https://news.ycombinator.com/item?id={kid_id}"
+                    links = re.findall(r'https?://[^\s<>"]+', clean_text)
+                    if links:
+                        url = links[0]
+
+                    if is_non_tech_internship(title, clean_text, url, loc, comp):
+                        job_id = generate_job_id(comp, title, loc)
+                        now = datetime.now()
+                        return {
+                            "id": job_id,
+                            "company": comp,
+                            "title": title,
+                            "location": loc,
+                            "url": url,
+                            "source": "YC Hacker News Who is Hiring",
+                            "timestamp": int(now.timestamp()),
+                            "date_posted": now.strftime("%b %d"),
+                            "raw_department": "Founder / Operator",
+                            "salary_raw": clean_text[:200]
+                        }
+            except Exception:
+                return None
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=12) as executor:
+            results = executor.map(fetch_comment, kids)
+            for res in results:
+                if res:
+                    jobs.append(res)
+    except Exception:
+        pass
+    return jobs
+
+def fetch_remoteok():
+    jobs = []
+    headers = {"User-Agent": USER_AGENT}
+    try:
+        r = requests.get('https://remoteok.com/api', headers=headers, timeout=6)
         if r.status_code == 200:
-            chunks = r.text.split('class="container-fluid individual_internship')[1:]
+            data = r.json()
+            target_tags = {'marketing', 'growth', 'product', 'design', 'operations', 'bizops', 'intern', 'junior', 'entry level', 'community'}
             now = datetime.now()
             ts = int(now.timestamp())
-            date_display = now.strftime("%b %d")
-            
-            for c in chunks:
-                title_m = re.search(r'<a[^>]*class="job-title-href"[^>]*>([^<]+)</a>', c)
-                comp_m = re.search(r'<p class="company-name">\s*([^<]+)\s*</p>', c)
-                loc_m = re.search(r'<div class="row-1-item locations">[\s\S]*?<span>([\s\S]*?)</span>', c)
-                stipend_m = re.search(r'<span class=[\'"]stipend[\'"]>([\s\S]*?)</span>', c)
-                link_m = re.search(r'<a[^>]*class="job-title-href"[^>]*href="([^"]+)"', c) or re.search(r'data-href=[\'"]([^\'"]+)[\'"]', c)
-                
-                if title_m and comp_m and link_m:
-                    raw_title = title_m.group(1).strip()
-                    company = comp_m.group(1).strip()
-                    job_url = "https://internshala.com" + link_m.group(1).strip()
-                    loc_raw = re.sub(r'<[^>]+>|\s+', ' ', loc_m.group(1)).strip() if loc_m else 'India'
-                    stipend = re.sub(r'\s+', ' ', stipend_m.group(1)).strip() if stipend_m else ''
-                    
-                    if "home" in loc_raw.lower():
-                        clean_loc = "Remote (India)"
-                    else:
-                        clean_loc = f"{loc_raw}, India"
-                        
-                    display_title = raw_title if "intern" in raw_title.lower() else f"{raw_title} Intern"
-                    
-                    if is_non_tech_internship(display_title, f"{display_title} {company} {stipend}", job_url, clean_loc, company):
-                        job_id = generate_job_id(company, display_title, clean_loc)
+            for item in data[1:]:
+                tags = set([t.lower() for t in item.get('tags', [])])
+                pos = item.get('position', '')
+                lower_pos = pos.lower()
+                desc = item.get('description', '')
+                loc = item.get('location', 'Remote Worldwide')
+                comp = item.get('company', '')
+                url = item.get('url', '')
+
+                # Filter out senior/management roles
+                if any(k in lower_pos for k in ['director', 'vp', 'head of', 'senior', 'sr.', 'principal', 'staff', 'lead ']):
+                    continue
+
+                if tags.intersection(target_tags) or any(t in lower_pos for t in ['product', 'marketing', 'growth', 'design', 'operations', 'bizops', 'founder']):
+                    if is_non_tech_internship(pos, desc, url, loc, comp):
+                        job_id = generate_job_id(comp, pos, loc)
                         jobs.append({
                             "id": job_id,
-                            "company": company,
-                            "title": display_title,
-                            "location": clean_loc,
-                            "url": job_url,
-                            "source": "Internshala (Verified Stipend)",
+                            "company": comp,
+                            "title": pos,
+                            "location": loc or "Remote Worldwide",
+                            "url": url,
+                            "source": "RemoteOK Verified Startups",
                             "timestamp": ts,
-                            "date_posted": f"⚡ {date_display}",
-                            "raw_department": default_cat,
-                            "salary_raw": stipend
+                            "date_posted": now.strftime("%b %d"),
+                            "raw_department": "Remote Operator",
+                            "salary_raw": desc[:200]
                         })
     except Exception:
         pass
@@ -552,7 +644,7 @@ def fetch_internshala(source_info):
 
 def run_harvest(config):
     all_jobs = []
-    
+
     # 1. Greenhouse
     gh_boards = config.get("greenhouse_boards", [])
     # 2. Lever
@@ -563,9 +655,7 @@ def run_harvest(config):
     linkedin_queries = config.get("linkedin_guest_queries", [])
     # 5. Curated GitHub
     github_sources = config.get("curated_github_sources", [])
-    # 6. Internshala Verified Sources (India)
-    internshala_sources = config.get("internshala_sources", [])
-    
+
     with concurrent.futures.ThreadPoolExecutor(max_workers=16) as executor:
         futures = []
         for b in gh_boards:
@@ -578,18 +668,21 @@ def run_harvest(config):
             futures.append(executor.submit(fetch_linkedin_guest, l))
         for g in github_sources:
             futures.append(executor.submit(fetch_github_markdown_table, g))
-        for s in internshala_sources:
-            futures.append(executor.submit(fetch_internshala, s))
-            
+
+        # 6. Hacker News Who is Hiring
+        futures.append(executor.submit(fetch_hackernews_hiring))
+        # 7. RemoteOK
+        futures.append(executor.submit(fetch_remoteok))
+
         for f in concurrent.futures.as_completed(futures):
             res = f.result()
             if res:
                 all_jobs.extend(res)
-                
+
     # Deduplicate by ID
     unique_jobs = {}
     for j in all_jobs:
         if j["id"] not in unique_jobs:
             unique_jobs[j["id"]] = j
-            
+
     return list(unique_jobs.values())

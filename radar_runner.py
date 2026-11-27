@@ -56,7 +56,7 @@ def run_scan():
     scouted_hacks = scout_all_hackathons()
 
     print("𝕏 Running Full-Hybrid X Intelligence & Live Signal Sweep...")
-    run_x_radar(lane="full")
+    run_x_radar(lane="fast")
 
     tier1_jobs = [j for j in scored_jobs if j["match_score"] >= 88]
     safe_hubs = ["China / HK / TW", "Japan", "Singapore", "UAE / Middle East", "Germany", "Netherlands", "Ireland", "Nordics / Swiss", "Australia / NZ", "Remote", "Southern / Central Europe"]
