@@ -1,17 +1,169 @@
 [
   {
-    "id": "abed82f77962ad642a91e7bf088e5d2a",
-    "company": "Upstox",
-    "title": "Product Intern - CX",
-    "location": "Bangalore Urban, Karnataka, India",
-    "url": "https://in.linkedin.com/jobs/view/product-intern-cx-at-upstox-4493810606",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1795791370,
-    "date_posted": "\u26a1 Nov 27",
-    "raw_department": "General Business",
-    "salary_raw": "",
+    "id": "26604f628e15d033b6df6068f6b363a0",
+    "company": "Zscaler",
+    "title": "Associate Product Sales Account Executive",
+    "location": "Remote Worldwide",
+    "url": "https://weworkremotely.com/remote-jobs/zscaler-associate-product-sales-account-executive",
+    "source": "WeWorkRemotely",
+    "timestamp": 1795793705,
+    "date_posted": "Nov 27",
+    "raw_department": "Marketing",
+    "salary_raw": "\n\n \n   Headquarters:  Remote - USA\n \n\n  Zscaler (NASDAQ: ZS) accelerates digital transformation so customers can be more agile, efficient, resilient, and secure. The Zscaler Zero Trust Exchange platfo",
     "category": "Product / APM",
-    "match_score": 96,
+    "match_score": 99,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "Remote",
+      "score": 1.0,
+      "visa_note": "Global Remote (Work from anywhere in India / USD or EUR)",
+      "badge": "\ud83c\udf10 Remote Global"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "No Visa Needed (Remote)",
+      "badge": "\ud83c\udf10 Remote (Zero Visa Friction)",
+      "note": "100% remote worldwide. Work from India, get paid in USD or EUR with zero immigration requirements.",
+      "boost": 4
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "pay_monthly_inr": 0,
+      "is_disclosed": false,
+      "is_unpaid": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw Zscaler's Associate Product Sales Account Executive opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Zscaler's product team. My portfolio: garvgupta.app",
+    "is_new": true
+  },
+  {
+    "id": "637424891684bff9079b163728d48532",
+    "company": "FamFluence",
+    "title": "Influencer Marketing Internship (Winter/Spring 2027)",
+    "location": "Remote Worldwide",
+    "url": "https://weworkremotely.com/remote-jobs/famfluence-influencer-marketing-internship-winter-spring-2027",
+    "source": "WeWorkRemotely",
+    "timestamp": 1795793705,
+    "date_posted": "Nov 27",
+    "raw_department": "Marketing",
+    "salary_raw": " \n\n \n   Headquarters:  Austin, Texas, United States\n      URL:   https://famfluence.com/ \n \n\n       About the job              FamFluence Talent Management , a leading creator/influencer management ag",
+    "category": "Growth & Marketing",
+    "match_score": 95,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "Remote",
+      "score": 1.0,
+      "visa_note": "Global Remote (Work from anywhere in India / USD or EUR)",
+      "badge": "\ud83c\udf10 Remote Global"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "No Visa Needed (Remote)",
+      "badge": "\ud83c\udf10 Remote (Zero Visa Friction)",
+      "note": "100% remote worldwide. Work from India, get paid in USD or EUR with zero immigration requirements.",
+      "boost": 4
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "pay_monthly_inr": 0,
+      "is_disclosed": false,
+      "is_unpaid": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Excited by FamFluence's Influencer Marketing Internship (Winter/Spring 2027) role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": true
+  },
+  {
+    "id": "051f5781b3664c8d21a0ee9e7f506fb6",
+    "company": "Global Graduate Trainee, Marketing",
+    "title": "Global Graduate Trainee, Marketing",
+    "location": "Remote Worldwide",
+    "url": "https://jobs.techstars.com/companies/boxes-4-0-devices-2/jobs/100518820-global-graduate-trainee-marketing#content",
+    "source": "Techstars Portfolio",
+    "timestamp": 1795793705,
+    "date_posted": "Nov 27",
+    "raw_department": "VC Portfolio",
+    "salary_raw": "Global Graduate Trainee, Marketing | BOxES 4.0 Devices | Location: | Kuala Lumpur, Malaysia | Posted: | 5 days | Pre Seed | Internship | Business/Productivity Software | Computer | Computers and Elect",
+    "category": "Growth & Marketing",
+    "match_score": 95,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "Remote",
+      "score": 1.0,
+      "visa_note": "Global Remote (Work from anywhere in India / USD or EUR)",
+      "badge": "\ud83c\udf10 Remote Global"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "No Visa Needed (Remote)",
+      "badge": "\ud83c\udf10 Remote (Zero Visa Friction)",
+      "note": "100% remote worldwide. Work from India, get paid in USD or EUR with zero immigration requirements.",
+      "boost": 4
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "pay_monthly_inr": 0,
+      "is_disclosed": false,
+      "is_unpaid": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Excited by Global Graduate Trainee, Marketing's Global Graduate Trainee, Marketing role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": true
+  },
+  {
+    "id": "0731bac298b9bc23d4900ceebdf80610",
+    "company": "Associate Manager, Marketing Finance",
+    "title": "Associate Manager, Marketing Finance",
+    "location": "Remote Worldwide",
+    "url": "https://jobs.techstars.com/companies/boxes-4-0-devices-2/jobs/100223140-associate-manager-marketing-finance#content",
+    "source": "Techstars Portfolio",
+    "timestamp": 1795793705,
+    "date_posted": "Nov 27",
+    "raw_department": "VC Portfolio",
+    "salary_raw": "Associate Manager, Marketing Finance | BOxES 4.0 Devices | Location: | San Isidro, Buenos Aires Province, Argentina | Posted: | 8 days | Pre Seed | Associate | Business/Productivity Software | Compute",
+    "category": "Growth & Marketing",
+    "match_score": 95,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "Remote",
+      "score": 1.0,
+      "visa_note": "Global Remote (Work from anywhere in India / USD or EUR)",
+      "badge": "\ud83c\udf10 Remote Global"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "No Visa Needed (Remote)",
+      "badge": "\ud83c\udf10 Remote (Zero Visa Friction)",
+      "note": "100% remote worldwide. Work from India, get paid in USD or EUR with zero immigration requirements.",
+      "boost": 4
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "pay_monthly_inr": 0,
+      "is_disclosed": false,
+      "is_unpaid": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Excited by Associate Manager, Marketing Finance's Associate Manager, Marketing Finance role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": true
+  },
+  {
+    "id": "4cb9133df469150e22ad939c43841f84",
+    "company": "Flick",
+    "title": "Brand & Motion Design Intern",
+    "location": "Remote",
+    "url": "https://www.ycombinator.com/companies/flick/jobs/Dfvekvd-brand-motion-design-intern",
+    "source": "YC Work at a Startup",
+    "timestamp": 1795793707,
+    "date_posted": "Nov 27",
+    "raw_department": "Design",
+    "salary_raw": "Internship",
+    "category": "Design & UX",
+    "match_score": 92,
     "tier": "Tier 1 (High Conversion)",
     "location_info": {
       "region": "Remote",
@@ -35,44 +187,45 @@
       "note": "Compensation is not publicly disclosed in the posting."
     },
     "recruiter_pitch": "Hi! Saw Flick's Brand & Motion Design Intern post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
-    "is_new": true
+    "is_new": false
   },
   {
-    "id": "d532b6ba5e90bffaddb025ad2f2213aa",
-    "company": "Groww",
-    "title": "Content Intern",
-    "location": "Bengaluru, Karnataka, India",
-    "url": "https://in.linkedin.com/jobs/view/content-intern-at-groww-4495024403",
-    "source": "LinkedIn (Past 24h)",
-    "timestamp": 1795791370,
-    "date_posted": "\u26a1 Nov 27",
-    "raw_department": "General Business",
-    "salary_raw": "",
+    "id": "113bbca932ef6a9330d3a86ab9f5c5fa",
+    "company": "Educato",
+    "title": "UGC Campaign Manager - Entry level marketing role (experience as a UGC highly desierable)",
+    "location": "Remote",
+    "url": "https://www.ycombinator.com/companies/educato/jobs/wx7a1VE-ugc-campaign-manager-entry-level-marketing-role-experience-as-a-ugc-highly-desierable",
+    "source": "YC Work at a Startup",
+    "timestamp": 1795793706,
+    "date_posted": "Nov 27",
+    "raw_department": "Marketing",
+    "salary_raw": "Contract",
     "category": "Growth & Marketing",
-    "match_score": 91,
+    "match_score": 95,
     "tier": "Tier 1 (High Conversion)",
     "location_info": {
-      "region": "India",
+      "region": "Remote",
       "score": 1.0,
-      "visa_note": "Domestic (Zero visa friction)",
-      "badge": "\ud83c\uddee\ud83c\uddf3 India"
+      "visa_note": "Global Remote (Work from anywhere in India / USD or EUR)",
+      "badge": "\ud83c\udf10 Remote Global"
     },
     "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+      "is_sponsored": true,
+      "tier": "No Visa Needed (Remote)",
+      "badge": "\ud83c\udf10 Remote (Zero Visa Friction)",
+      "note": "100% remote worldwide. Work from India, get paid in USD or EUR with zero immigration requirements.",
+      "boost": 4
     },
     "pay_info": {
-      "pay_display": "\u20b960,000/mo",
-      "pay_monthly_usd": 714,
-      "pay_monthly_inr": 60000,
-      "is_disclosed": true,
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "pay_monthly_inr": 0,
+      "is_disclosed": false,
       "is_unpaid": false,
-      "note": "Disclosed stipend of \u20b960,000/mo (~$714 USD/mo)."
+      "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! Excited by Wellfound Verified Startup's Intern - Marketing role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
-    "is_new": true
+    "recruiter_pitch": "Hi! Excited by Educato's UGC Campaign Manager - Entry level marketing role (experience as a UGC highly desierable) role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": false
   },
   {
     "id": "901ea0b8a5256b9502ac72493cbdfe87",
@@ -81,7 +234,7 @@
     "location": "Remote, United States",
     "url": "https://jobs.a16z.com/jobs/alleviate-health/30c31d7e-d76a-46e3-9cc9-a55d55e22683--operations-associate",
     "source": "a16z Portfolio",
-    "timestamp": 1795793618,
+    "timestamp": 1795793705,
     "date_posted": "Nov 27",
     "raw_department": "VC Portfolio",
     "salary_raw": "Talkiatry | Senior Manager, Clinical Operations - Operational Excellence | $120K \u2013 $165K \u2022 Offers Bonus | \u00b7 | Remote, United States | \u00b7 | Posted 17 days ago | Bio + Health | \u00b7 | Series D | \u00b7 | 501\u20131,0",
@@ -110,21 +263,58 @@
       "note": "Disclosed stipend of \u20b920k/mo (~$238 USD/mo)."
     },
     "recruiter_pitch": "Hi! I noticed the Operations Associate opening at Talkiatry. I currently run operations & full P&L for a 10,000+ student education brand (AnybodyCanBake) with 5-7 team members alongside my degree at IIM Bangalore. Would love to bring proven execution and problem-solving to Talkiatry.",
-    "is_new": true
+    "is_new": false
   },
   {
-    "id": "b507901196a4e2173b914510eb157f91",
-    "company": "Operations Intern (Summer 2027)",
-    "title": "Operations Intern (Summer 2027)",
-    "location": "Remote",
-    "url": "https://jobs.techstars.com/companies/scout-2/jobs/100357673-operations-intern-summer-2027#content",
+    "id": "abed82f77962ad642a91e7bf088e5d2a",
+    "company": "Upstox",
+    "title": "Product Intern - CX",
+    "location": "Bangalore Urban, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/product-intern-cx-at-upstox-4493810606",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1795793705,
+    "date_posted": "\u26a1 Nov 27",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "Product / APM",
+    "match_score": 96,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "India",
+      "score": 1.0,
+      "visa_note": "Domestic (Zero visa friction)",
+      "badge": "\ud83c\uddee\ud83c\uddf3 India"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "pay_monthly_inr": 0,
+      "is_disclosed": false,
+      "is_unpaid": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! I saw Upstox's Product Intern - CX opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Upstox's product team. My portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "70bc26c1a98790a82bbc3a76412d8134",
+    "company": "Associate Manager, Marketing Commercialization (Home Cleaning)",
+    "title": "Associate Manager, Marketing Commercialization (Home Cleaning)",
+    "location": "Remote Worldwide",
+    "url": "https://jobs.techstars.com/companies/boxes-4-0-devices-2/jobs/100816693-associate-manager-marketing-commercialization-home-cleaning#content",
     "source": "Techstars Portfolio",
-    "timestamp": 1795793618,
+    "timestamp": 1795793705,
     "date_posted": "Nov 27",
     "raw_department": "VC Portfolio",
-    "salary_raw": "Operations Intern (Summer 2027) | Scout | Location: | Reston, VA, USA | ; | Remote | Compensation: | USD 30-30 / hour | Posted: | 7 days | Series A | Internship | Aerospace | Aerospace & Defense | Aut",
-    "category": "BizOps & Strategy",
-    "match_score": 97,
+    "salary_raw": "Associate Manager, Marketing Commercialization (Home Cleaning) | BOxES 4.0 Devices | Location: | Kuala Lumpur, Malaysia | Posted: | 1 day | Pre Seed | Associate | Business/Productivity Software | Comp",
+    "category": "Growth & Marketing",
+    "match_score": 95,
     "tier": "Tier 1 (High Conversion)",
     "location_info": {
       "region": "Remote",
@@ -140,15 +330,15 @@
       "boost": 4
     },
     "pay_info": {
-      "pay_display": "$30/hr",
-      "pay_monthly_usd": 4800,
-      "pay_monthly_inr": 403200,
-      "is_disclosed": true,
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "pay_monthly_inr": 0,
+      "is_disclosed": false,
       "is_unpaid": false,
-      "note": "Disclosed hourly rate (~$4,800/mo full-time equivalent)."
+      "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! I noticed the Operations Intern (Summer 2027) opening at Operations Intern (Summer 2027). I currently run operations & full P&L for a 10,000+ student education brand (AnybodyCanBake) with 5-7 team members alongside my degree at IIM Bangalore. Would love to bring proven execution and problem-solving to Operations Intern (Summer 2027).",
-    "is_new": true
+    "recruiter_pitch": "Hi! Excited by Associate Manager, Marketing Commercialization (Home Cleaning)'s Associate Manager, Marketing Commercialization (Home Cleaning) role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": false
   },
   {
     "id": "4a77da2a95c7456728373772e1587527",
@@ -157,7 +347,7 @@
     "location": "Remote Worldwide",
     "url": "https://jobs.techstars.com/companies/packworks-2/jobs/100572405-partner-marketing-intern#content",
     "source": "Techstars Portfolio",
-    "timestamp": 1795793618,
+    "timestamp": 1795793705,
     "date_posted": "Nov 27",
     "raw_department": "VC Portfolio",
     "salary_raw": "Partner Marketing - Intern | Packworks | Location: | Paris, France | Posted: | 4 days | Pre Seed | Internship | Application Software | B2B | Business/Productivity Software | Commerce and Shopping | Co",
@@ -185,7 +375,233 @@
       "is_unpaid": false,
       "note": "Compensation is not publicly disclosed in the posting."
     },
+    "recruiter_pitch": "Hi! Excited by Partner Marketing - Intern's Partner Marketing - Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": false
+  },
+  {
+    "id": "222d97feb0857aea76bb2a44de9c5f5d",
+    "company": "Intern, Marketing",
+    "title": "Intern, Marketing",
+    "location": "Remote Worldwide",
+    "url": "https://jobs.techstars.com/companies/boxes-4-0-devices-2/jobs/100408844-intern-marketing#content",
+    "source": "Techstars Portfolio",
+    "timestamp": 1795793705,
+    "date_posted": "Nov 27",
+    "raw_department": "VC Portfolio",
+    "salary_raw": "Intern, Marketing | BOxES 4.0 Devices | Location: | Arese, Metropolitan City of Milan, Italy | Compensation: | EUR 1k-1k / month | Posted: | 6 days | Pre Seed | Internship | Business/Productivity Soft",
+    "category": "Growth & Marketing",
+    "match_score": 95,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "Remote",
+      "score": 1.0,
+      "visa_note": "Global Remote (Work from anywhere in India / USD or EUR)",
+      "badge": "\ud83c\udf10 Remote Global"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "No Visa Needed (Remote)",
+      "badge": "\ud83c\udf10 Remote (Zero Visa Friction)",
+      "note": "100% remote worldwide. Work from India, get paid in USD or EUR with zero immigration requirements.",
+      "boost": 4
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "pay_monthly_inr": 0,
+      "is_disclosed": false,
+      "is_unpaid": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Excited by Intern, Marketing's Intern, Marketing role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": false
+  },
+  {
+    "id": "2d40d25a46d979376ded2fccd7db383b",
+    "company": "Marketing Intern",
+    "title": "Marketing Intern",
+    "location": "Remote",
+    "url": "https://jobs.techstars.com/companies/nukleas-2/jobs/100069675-marketing-intern#content",
+    "source": "Techstars Portfolio",
+    "timestamp": 1795793705,
+    "date_posted": "Nov 27",
+    "raw_department": "VC Portfolio",
+    "salary_raw": "Marketing Intern | Nukleas | Location: | Sterling, VA, USA | ; | Remote | Posted: | 10 days | Pre Seed | Internship | Analytics | Artificial Intelligence (AI) | Billing | Business Intelligence | Data ",
+    "category": "Growth & Marketing",
+    "match_score": 95,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "Remote",
+      "score": 1.0,
+      "visa_note": "Global Remote (Work from anywhere in India / USD or EUR)",
+      "badge": "\ud83c\udf10 Remote Global"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "No Visa Needed (Remote)",
+      "badge": "\ud83c\udf10 Remote (Zero Visa Friction)",
+      "note": "100% remote worldwide. Work from India, get paid in USD or EUR with zero immigration requirements.",
+      "boost": 4
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "pay_monthly_inr": 0,
+      "is_disclosed": false,
+      "is_unpaid": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Excited by Marketing Intern's Marketing Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": false
+  },
+  {
+    "id": "65f258acf587a781bdcbe07033a07bf3",
+    "company": "Stripe",
+    "title": "Design Intern",
+    "location": "San Francisco, CA, US; Remote, US",
+    "url": "https://jobs.a16z.com/jobs/base-power-company/5edd4bd5-ed18-4bb6-bad4-ab67d95f00bd--design-intern",
+    "source": "a16z Portfolio",
+    "timestamp": 1795793705,
+    "date_posted": "Nov 27",
+    "raw_department": "VC Portfolio",
+    "salary_raw": "Stripe | Product Designer, Design Systems | Spain | \u00b7 | Posted 2 months ago | Fintech | \u00b7 | Series I | \u00b7 | 5,000\u201310,000 employees | Apply | Interested | Felix Pago | Senior Product Designer: Design Sy",
+    "category": "Design & UX",
+    "match_score": 92,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "Remote",
+      "score": 1.0,
+      "visa_note": "Global Remote (Work from anywhere in India / USD or EUR)",
+      "badge": "\ud83c\udf10 Remote Global"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Verified Visa Assistance",
+      "badge": "\ud83d\udec2 Visa Assisted",
+      "note": "Corporate relocation assistance and visa processing for Singapore and Dublin hubs.",
+      "boost": 4
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "pay_monthly_inr": 0,
+      "is_disclosed": false,
+      "is_unpaid": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Saw Stripe's Design Intern post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "5219b0d021dc1a61c2b3588708a1959e",
+    "company": "Stripe",
+    "title": "Product Design Intern",
+    "location": "San Francisco, CA, US; Remote, US",
+    "url": "https://jobs.a16z.com/jobs/stripe/8332681--product-design-intern",
+    "source": "a16z Portfolio",
+    "timestamp": 1795793705,
+    "date_posted": "Nov 27",
+    "raw_department": "VC Portfolio",
+    "salary_raw": "Stripe | Product Designer, Design Systems | Spain | \u00b7 | Posted 2 months ago | Fintech | \u00b7 | Series I | \u00b7 | 5,000\u201310,000 employees | Apply | Interested | Felix Pago | Senior Product Designer: Design Sy",
+    "category": "Design & UX",
+    "match_score": 92,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "Remote",
+      "score": 1.0,
+      "visa_note": "Global Remote (Work from anywhere in India / USD or EUR)",
+      "badge": "\ud83c\udf10 Remote Global"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "Verified Visa Assistance",
+      "badge": "\ud83d\udec2 Visa Assisted",
+      "note": "Corporate relocation assistance and visa processing for Singapore and Dublin hubs.",
+      "boost": 4
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "pay_monthly_inr": 0,
+      "is_disclosed": false,
+      "is_unpaid": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
+    "recruiter_pitch": "Hi! Saw Stripe's Product Design Intern post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
+    "is_new": false
+  },
+  {
+    "id": "d532b6ba5e90bffaddb025ad2f2213aa",
+    "company": "Groww",
+    "title": "Content Intern",
+    "location": "Bengaluru, Karnataka, India",
+    "url": "https://in.linkedin.com/jobs/view/content-intern-at-groww-4495024403",
+    "source": "LinkedIn (Past 24h)",
+    "timestamp": 1795793705,
+    "date_posted": "\u26a1 Nov 27",
+    "raw_department": "General Business",
+    "salary_raw": "",
+    "category": "Growth & Marketing",
+    "match_score": 91,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "India",
+      "score": 1.0,
+      "visa_note": "Domestic (Zero visa friction)",
+      "badge": "\ud83c\uddee\ud83c\uddf3 India"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "Not mentioned",
+      "pay_monthly_usd": 0,
+      "pay_monthly_inr": 0,
+      "is_disclosed": false,
+      "is_unpaid": false,
+      "note": "Compensation is not publicly disclosed in the posting."
+    },
     "recruiter_pitch": "Hi! Excited by Groww's Content Intern role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": false
+  },
+  {
+    "id": "3e9faedef271cce019f1ce88da892ebe",
+    "company": "Wellfound Verified Startup",
+    "title": "Intern - Marketing",
+    "location": "Ahmedabad",
+    "url": "https://wellfound.com/jobs/5101761-intern-marketing",
+    "source": "Wellfound (AngelList)",
+    "timestamp": 1795793705,
+    "date_posted": "Nov 27",
+    "raw_department": "Startup Operator",
+    "salary_raw": "\u20b960,000 \u2013 \u20b91.2L \u2022 No equity",
+    "category": "Growth & Marketing",
+    "match_score": 91,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "India",
+      "score": 1.0,
+      "visa_note": "Domestic (Zero visa friction)",
+      "badge": "\ud83c\uddee\ud83c\uddf3 India"
+    },
+    "visa_info": {
+      "is_sponsored": false,
+      "tier": "Standard / Unspecified",
+      "badge": "\ud83d\udccd Self-Check Visa",
+      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "\u20b960,000/mo",
+      "pay_monthly_usd": 714,
+      "pay_monthly_inr": 60000,
+      "is_disclosed": true,
+      "is_unpaid": false,
+      "note": "Disclosed stipend of \u20b960,000/mo (~$714 USD/mo)."
+    },
+    "recruiter_pitch": "Hi! Excited by Wellfound Verified Startup's Intern - Marketing role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
     "is_new": false
   },
   {
@@ -195,7 +611,7 @@
     "location": "Gurugram, Haryana, India",
     "url": "https://in.linkedin.com/jobs/view/product-management-intern-at-indmoney-4495582689",
     "source": "LinkedIn (Past 24h)",
-    "timestamp": 1795791369,
+    "timestamp": 1795793704,
     "date_posted": "\u26a1 Nov 27",
     "raw_department": "General Business",
     "salary_raw": "",
@@ -223,82 +639,6 @@
       "note": "Compensation is not publicly disclosed in the posting."
     },
     "recruiter_pitch": "Hi! I saw INDmoney's Product Management Intern opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to INDmoney's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "05b16addb8d096ce655db6e14f6d73f1",
-    "company": "Databricks",
-    "title": "Product Management Intern (2027) - Amsterdam",
-    "location": "Amsterdam, Netherlands",
-    "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8133715002",
-    "source": "Greenhouse Direct ATS",
-    "timestamp": 1795124859,
-    "date_posted": "Nov 19, 2026",
-    "raw_department": "University Recruiting - Product",
-    "salary_raw": "<p>P-1452</p>\n<p>At Databricks, we are passionate about helping data teams solve the world's toughest problems \u2014 from making the next mode of transportation a reality to accelerating the development of medical breakthroughs. We do this by building and running the world's best data and AI infrastructure platform so our customers can use deep data insights to improve their business.</p>\n<p>As a Product<strong> </strong>Management<strong> </strong>Intern,<strong> </strong>you will<strong> </strong>join a<strong> </strong>team that works diligently to understand and solve our customers' most challenging problems<strong>. </strong>You will learn how to be a successful PM at a high-growth enterprise technology company that operates at the<strong> </strong>important<strong> </strong>intersection of data and AI.&nbsp;You will have a dedicated mentor and will join our 2027 intern cohort where you'll connect with product managers, engineers, designers, account teams, other interns, and leaders from across the company.</p>\n<p>This is a 12 week paid summer internship program in either Amsterdam, Berlin and Belgrade.</p>\n<p><strong>The impact you will have:</strong></p>\n<ul>\n<li>Work with a team to build features for the Databricks platform</li>\n<li>Manage your project end-to-end, including design, code, and feedback</li>\n<li>Learn about building a platform that scales quickly while maintaining quality and security</li>\n</ul>\n<p><strong>What we look for:</strong></p>\n<ul>\n<li>Pursuing a degree in computer science or related engineering subject</li>\n<li>You have some experience with SQL and/or Python</li>\n<li>You use analytical skills to make data-driven decisions (e.g. analyze product usage)</li>\n<li>You can make complex topics simple and clearly communicate nuance to partners (engineers, customers, field, etc.) in both written and verbal form</li>\n<li>You are excited to solve ambiguous problems with a collaborative team</li>\n</ul><div class=\"content-conclusion\"><p><strong>About Databricks</strong></p>\n<p><span style=\"font-family: arial, sans-serif;\">Databricks is the Data and AI company. More than 20,000 organizations worldwide \u2014 including adidas, AT&amp;T, Bayer, Block, Mastercard, Rivian, Unilever, and 70% of the Fortune 500 \u2014 rely on the Databricks Data + AI Platform to build and scale data and AI apps, analytics and agents. Headquartered in San Francisco with 30+ offices around the globe, Databricks offers a unified platform that includes Genie, Lakebase, Agent Bricks, Lakeflow, Lakehouse, and Unity Catalog. To learn more, follow Databricks on <a href=\"https://www.linkedin.com/company/databricks\">LinkedIn</a>, <a href=\"https://x.com/databricks\">X</a>, <a href=\"https://www.youtube.com/@Databricks\">YouTube</a>, and <a href=\"https://www.instagram.com/databricksinc/?hl=en\">Instagram</a>.<br><br><strong>Benefits<br><br></strong></span>At Databricks, we strive to provide comprehensive benefits and perks that meet the needs of all of our employees. For specific details on the benefits offered in your region click <a href=\"https://docs.google.com/document/d/154un3e8Xav4BceOSlcYFZRGEuQI54xMxVydRwQn54eQ/edit?usp=sharing\">here</a>.<br><br></p>\n<p><strong>Our Commitment to Diversity and Inclusion</strong></p>\n<p>At Databricks, we are committed to fostering a diverse and inclusive culture where everyone can excel. We take great care to ensure that our hiring practices are inclusive and meet equal employment opportunity standards. Individuals looking for employment at Databricks are considered without regard to age, color, disability, ethnicity, family or marital status, gender identity or expression, language, national origin, physical and mental ability, political affiliation, race, religion, sexual orientation, socio-economic status, veteran status, and other protected characteristics.</p>\n<p><strong>Compliance</strong></p>\n<p><strong><span style=\"font-weight: 400;\">If access to export-controlled technology or source code is required for perform",
-    "category": "Product / APM",
-    "match_score": 99,
-    "tier": "Tier 1 (High Conversion)",
-    "location_info": {
-      "region": "Netherlands",
-      "score": 0.98,
-      "visa_note": "95%+ English fluency, Zoekjaar orientation visa for global grads",
-      "badge": "\ud83c\uddf3\ud83c\uddf1 Netherlands"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Verified Visa Assistance",
-      "badge": "\ud83d\udec2 Visa Sponsored",
-      "note": "Provides work authorization and visa support for international interns in Amsterdam & Berlin.",
-      "boost": 4
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "pay_monthly_inr": 0,
-      "is_disclosed": false,
-      "is_unpaid": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw Databricks's Product Management Intern (2027) - Amsterdam opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Databricks's product team. My portfolio: garvgupta.app",
-    "is_new": false
-  },
-  {
-    "id": "2080452fea6b457d1a4d0b179374404e",
-    "company": "Databricks",
-    "title": "Product Management Intern (2027) - Berlin",
-    "location": "Berlin, Germany",
-    "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8145776002",
-    "source": "Greenhouse Direct ATS",
-    "timestamp": 1795124859,
-    "date_posted": "Nov 19, 2026",
-    "raw_department": "University Recruiting - Product",
-    "salary_raw": "<p>P-1452</p>\n<p>At Databricks, we are passionate about helping data teams solve the world's toughest problems \u2014 from making the next mode of transportation a reality to accelerating the development of medical breakthroughs. We do this by building and running the world's best data and AI infrastructure platform so our customers can use deep data insights to improve their business.</p>\n<p>As a Product<strong> </strong>Management<strong> </strong>Intern,<strong> </strong>you will<strong> </strong>join a<strong> </strong>team that works diligently to understand and solve our customers' most challenging problems<strong>. </strong>You will learn how to be a successful PM at a high-growth enterprise technology company that operates at the<strong> </strong>important<strong> </strong>intersection of data and AI.&nbsp;You will have a dedicated mentor and will join our 2027 intern cohort where you'll connect with product managers, engineers, designers, account teams, other interns, and leaders from across the company.</p>\n<p>This is a 12 week paid summer internship program in either Amsterdam, Berlin and Belgrade.</p>\n<p><strong>The impact you will have:</strong></p>\n<ul>\n<li>Work with a team to build features for the Databricks platform</li>\n<li>Manage your project end-to-end, including design, code, and feedback</li>\n<li>Learn about building a platform that scales quickly while maintaining quality and security</li>\n</ul>\n<p><strong>What we look for:</strong></p>\n<ul>\n<li>Pursuing a degree in computer science or related engineering subject</li>\n<li>You have some experience with SQL and/or Python</li>\n<li>You use analytical skills to make data-driven decisions (e.g. analyze product usage)</li>\n<li>You can make complex topics simple and clearly communicate nuance to partners (engineers, customers, field, etc.) in both written and verbal form</li>\n<li>You are excited to solve ambiguous problems with a collaborative team</li>\n</ul><div class=\"content-conclusion\"><p><strong>About Databricks</strong></p>\n<p><span style=\"font-family: arial, sans-serif;\">Databricks is the Data and AI company. More than 20,000 organizations worldwide \u2014 including adidas, AT&amp;T, Bayer, Block, Mastercard, Rivian, Unilever, and 70% of the Fortune 500 \u2014 rely on the Databricks Data + AI Platform to build and scale data and AI apps, analytics and agents. Headquartered in San Francisco with 30+ offices around the globe, Databricks offers a unified platform that includes Genie, Lakebase, Agent Bricks, Lakeflow, Lakehouse, and Unity Catalog. To learn more, follow Databricks on <a href=\"https://www.linkedin.com/company/databricks\">LinkedIn</a>, <a href=\"https://x.com/databricks\">X</a>, <a href=\"https://www.youtube.com/@Databricks\">YouTube</a>, and <a href=\"https://www.instagram.com/databricksinc/?hl=en\">Instagram</a>.<br><br><strong>Benefits<br><br></strong></span>At Databricks, we strive to provide comprehensive benefits and perks that meet the needs of all of our employees. For specific details on the benefits offered in your region click <a href=\"https://docs.google.com/document/d/154un3e8Xav4BceOSlcYFZRGEuQI54xMxVydRwQn54eQ/edit?usp=sharing\">here</a>.<br><br></p>\n<p><strong>Our Commitment to Diversity and Inclusion</strong></p>\n<p>At Databricks, we are committed to fostering a diverse and inclusive culture where everyone can excel. We take great care to ensure that our hiring practices are inclusive and meet equal employment opportunity standards. Individuals looking for employment at Databricks are considered without regard to age, color, disability, ethnicity, family or marital status, gender identity or expression, language, national origin, physical and mental ability, political affiliation, race, religion, sexual orientation, socio-economic status, veteran status, and other protected characteristics.</p>\n<p><strong>Compliance</strong></p>\n<p><strong><span style=\"font-weight: 400;\">If access to export-controlled technology or source code is required for perform",
-    "category": "Product / APM",
-    "match_score": 99,
-    "tier": "Tier 1 (High Conversion)",
-    "location_info": {
-      "region": "Germany",
-      "score": 0.98,
-      "visa_note": "Opportunity Card & Student visas, English tech startups, welcoming climate",
-      "badge": "\ud83c\udde9\ud83c\uddea Germany"
-    },
-    "visa_info": {
-      "is_sponsored": true,
-      "tier": "Verified Visa Assistance",
-      "badge": "\ud83d\udec2 Visa Sponsored",
-      "note": "Provides work authorization and visa support for international interns in Amsterdam & Berlin.",
-      "boost": 4
-    },
-    "pay_info": {
-      "pay_display": "Not mentioned",
-      "pay_monthly_usd": 0,
-      "pay_monthly_inr": 0,
-      "is_disclosed": false,
-      "is_unpaid": false,
-      "note": "Compensation is not publicly disclosed in the posting."
-    },
-    "recruiter_pitch": "Hi! I saw Databricks's Product Management Intern (2027) - Berlin opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Databricks's product team. My portfolio: garvgupta.app",
     "is_new": false
   },
   {
