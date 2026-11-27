@@ -13,18 +13,9 @@ from engine.harvester import (
     requires_foreign_language
 )
 
-def run_verification_loop():
-    matches_file = os.path.join(BASE_DIR, "data", "latest_matches.json")
-    if not os.path.exists(matches_file):
-        print("No matches file found to verify.")
-        return 100.0, []
-
-    with open(matches_file, "r") as f:
-        jobs = json.load(f)
-
+def audit_jobs(jobs):
     if not jobs:
-        print("No jobs currently in feed to verify.")
-        return 100.0, []
+        return 100.0, [], []
 
     verified_jobs = []
     disqualified = []
@@ -107,6 +98,24 @@ def run_verification_loop():
             print(f"  ❌ {j.get('company')} — {j.get('title')} ({j.get('location')})")
             for r in item["reasons"]:
                 print(f"     • {r}")
+    print("=" * 60)
+
+    return accuracy_rate, verified_jobs, disqualified
+
+def run_verification_loop():
+    matches_file = os.path.join(BASE_DIR, "data", "latest_matches.json")
+    if not os.path.exists(matches_file):
+        print("No matches file found to verify.")
+        return 100.0, []
+
+    with open(matches_file, "r") as f:
+        jobs = json.load(f)
+
+    if not jobs:
+        print("No jobs currently in feed to verify.")
+        return 100.0, []
+
+    accuracy_rate, verified_jobs, disqualified = audit_jobs(jobs)
 
     # Write cleaned verified list back to database
     with open(matches_file, "w") as f:
@@ -118,7 +127,6 @@ def run_verification_loop():
     with open(os.path.join(BASE_DIR, "jobs_data.js"), "w") as f:
         f.write(js_code)
 
-    print("=" * 60)
     return accuracy_rate, verified_jobs
 
 if __name__ == "__main__":

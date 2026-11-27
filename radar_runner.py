@@ -49,12 +49,12 @@ def run_scan():
             j.update(score_data)
             scored_jobs.append(j)
 
+    print("🛡️ Executing 100% Candidate-Fit Quality & Verification Audit...")
+    from engine.verify_radar import audit_jobs
+    accuracy, scored_jobs, disqualified = audit_jobs(scored_jobs)
+
     print("🔔 Processing net-new alerts and desktop notifications...")
     new_alerts = process_alerts(scored_jobs)
-
-    print("🛡️ Executing 100% Candidate-Fit Quality & Verification Audit...")
-    from engine.verify_radar import run_verification_loop
-    accuracy, scored_jobs = run_verification_loop()
 
     print("🏆 Scouting active high-prize hackathons & developer challenges...")
     scouted_hacks = scout_all_hackathons()
