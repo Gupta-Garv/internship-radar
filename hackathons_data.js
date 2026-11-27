@@ -244,7 +244,7 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
-    "id": "devpost_29973",
+    "id": "devpost_93023",
     "title": "AWS MSP AI Hackathon",
     "organizer": "Devpost Sponsor",
     "platform": "Devpost",
@@ -358,7 +358,7 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
-    "id": "devpost_93834",
+    "id": "devpost_20168",
     "title": "QNX Global Hackathon",
     "organizer": "Devpost Sponsor",
     "platform": "Devpost",
@@ -504,7 +504,7 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
-    "id": "devpost_85442",
+    "id": "devpost_46320",
     "title": "Reddit\u2019s Game of the Day Hackathon",
     "organizer": "Devpost Sponsor",
     "platform": "Devpost",
@@ -559,7 +559,7 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
-    "id": "devpost_27754",
+    "id": "devpost_29814",
     "title": "#BuildHybridAI 2026",
     "organizer": "Devpost Sponsor",
     "platform": "Devpost",
@@ -645,7 +645,7 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
-    "id": "devpost_27927",
+    "id": "devpost_52293",
     "title": "Deck the Pixels",
     "organizer": "Devpost Sponsor",
     "platform": "Devpost",
@@ -672,7 +672,7 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
-    "id": "devpost_76007",
+    "id": "devpost_16766",
     "title": "Cloud9 x JetBrains: Sky's The Limit Hackathon 2026",
     "organizer": "Devpost Sponsor",
     "platform": "Devpost",
@@ -816,7 +816,7 @@ window.RADAR_HACKATHONS_DATA = [
     ]
   },
   {
-    "id": "devpost_42154",
+    "id": "devpost_68358",
     "title": "Open Agentic Web Challenge",
     "organizer": "Devpost Sponsor",
     "platform": "Devpost",
