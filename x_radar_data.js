@@ -1120,8 +1120,8 @@ window.RADAR_X_DATA = [
   }
 ];
 window.RADAR_X_META = {
-  "last_sweep_iso": "2026-11-27T14:42:24.443955+00:00",
-  "last_sweep_display": "Nov 27, 08:12 PM",
+  "last_sweep_iso": "2026-11-27T14:55:31.541552+00:00",
+  "last_sweep_display": "Nov 27, 08:25 PM",
   "lane": "fast",
   "total_signals": 36,
   "new_in_sweep": 0,
