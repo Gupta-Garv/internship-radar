@@ -1,9 +1,12 @@
 import re
 import html
+import json
 import hashlib
 import requests
 import concurrent.futures
+import xml.etree.ElementTree as ET
 from datetime import datetime
+from bs4 import BeautifulSoup
 
 NEGATIVE_KEYWORDS = [
     'software engineer', 'software development', 'software developer',
@@ -17,7 +20,8 @@ NEGATIVE_KEYWORDS = [
     'security engineer', 'internal audit', 'data engineer',
     'marketing engineer', 'reliability engineer', 'systems engineer',
     'packaging engineer', 'manufacturing engineer', 'civil engineer',
-    'mechanical engineer', 'chemical engineer', 'product development engineering'
+    'mechanical engineer', 'chemical engineer', 'product development engineering',
+    'technical product manager', 'technical pm', 'technical apm', 'technical program manager', 'tpm'
 ]
 
 # Non-digital / Physical design roles to strictly disqualify
@@ -29,6 +33,20 @@ PHYSICAL_DESIGN_REGEX = re.compile(
 # Degree & Enrollment restrictions (Garv is an Undergrad BBA student, NOT an MBA or PhD candidate)
 DEGREE_RESTRICTION_REGEX = re.compile(
     r'\b(mba|phd|ph\.d\.|doctoral|postdoc|graduate student|graduated internship|graduate internship|master\'s only|masters only|ms only|postgraduate)\b',
+    re.IGNORECASE
+)
+
+# CS & Engineering degree restrictions (Garv is an Undergrad BBA DBE student, NOT an engineering or CS student)
+CS_ENGINEERING_DEGREE_REGEX = re.compile(
+    r'\b(?:degree|pursuing a degree|bs|ba|ms|bachelor\'?s?|b\.?tech|b\.?e\.?|master\'?s?)\s+(?:in|of)\s+(?:computer science|computer engineering|software engineering|data science|information technology|electrical engineering|mechanical engineering|stem field|related technical field|related engineering subject)\b|'
+    r'\b(?:computer science degree|cs degree|engineering degree|stem degree required)\b',
+    re.IGNORECASE
+)
+
+# Hard coding & programming language requirements (Garv is a non-technical operator/APM, NOT a coder)
+HARD_CODING_PATTERNS = re.compile(
+    r'\b(?:experience with|proficiency in|proficient with|proficient in|knowledge of|hands[- ]on with|skills in|strong understanding of)\s+(?:sql|python|r\b|java\b|c\+\+|c#|rust|golang|ruby|php|javascript|typescript|react|node|swift|kotlin|c\b)\b|'
+    r'\b(?:sql and/or python|python and/or sql|python or sql|sql or python|experience in sql|experience in python|write code|writing code|production code|coding skills|programming skills|query data using sql|writing sql queries|build data pipelines|etl pipelines|microservices|distributed systems|kernel|embedded c|deep learning research|training llms from scratch|pytorch architecture|medical degree|license to practice law|bar admission|clinical trial)\b',
     re.IGNORECASE
 )
 
@@ -173,6 +191,10 @@ def is_non_tech_internship(title, text="", url="", location="", company=""):
     if DEGREE_RESTRICTION_REGEX.search(lower_title) or DEGREE_RESTRICTION_REGEX.search(text[:600]):
         return False
 
+    # 3b. Reject Computer Science, Engineering, and STEM degree requirements (Garv is BBA DBE, non-CS)
+    if CS_ENGINEERING_DEGREE_REGEX.search(full_text):
+        return False
+
     # 4. Strict Experience Cap: Reject roles requiring 2+ years of full-time experience
     exp_match = re.search(r'\b([2-9]|\d{2})\+?\s*(?:years?|yrs?)(?:\s+of)?\s+(?:full[- ]time\s+)?experience\b', full_text)
     if exp_match:
@@ -188,12 +210,8 @@ def is_non_tech_internship(title, text="", url="", location="", company=""):
         if neg in lower_title:
             return False
 
-    # 7. Strict Coding & Technical Knowledge Gate (with AI Exception)
-    # Reject coding languages, software development, medical, law
-    HARD_CODING_PATTERNS = re.compile(
-        r'\b(proficiency in (?:c\+\+|java|rust|golang|c#|swift|kotlin)|must know (?:c\+\+|java|rust|golang)|experience with (?:c\+\+|java|rust|golang|microservices|distributed systems|kernel|embedded c)|deep learning research|training llms from scratch|pytorch architecture|medical degree|license to practice law|bar admission|clinical trial)\b',
-        re.IGNORECASE
-    )
+    # 7. Strict Coding & Programming Knowledge Gate (with AI Exception)
+    # Reject SQL, Python, Java, C++, programming requirements, medical, law
     if HARD_CODING_PATTERNS.search(full_text):
         return False
 
@@ -642,6 +660,227 @@ def fetch_remoteok():
         pass
     return jobs
 
+def fetch_yc_jobs():
+    jobs = []
+    headers = {"User-Agent": USER_AGENT}
+    roles = ["product", "operations", "marketing", "design"]
+    for role in roles:
+        try:
+            url = f"https://www.ycombinator.com/jobs/role/{role}"
+            r = requests.get(url, headers=headers, timeout=6)
+            if r.status_code != 200:
+                continue
+            for l in r.text.split("\n"):
+                if "data-page=" in l:
+                    m = re.search(r'data-page=\"(.*?)\"', l)
+                    if m:
+                        raw_json = html.unescape(m.group(1))
+                        try:
+                            d = json.loads(raw_json)
+                        except Exception:
+                            break
+                        postings = d.get("props", {}).get("jobPostings", [])
+                        now = datetime.now()
+                        ts = int(now.timestamp())
+                        for p in postings:
+                            title = p.get("title", "")
+                            comp = p.get("companyName", "")
+                            loc = p.get("location", "Remote")
+                            rel_url = p.get("url") or ""
+                            job_url = f"https://www.ycombinator.com{rel_url}" if rel_url.startswith("/") else (p.get("applyUrl") or rel_url)
+                            skills_str = " ".join(p.get("skills", []))
+                            visa_info = str(p.get("visa", ""))
+                            desc = f"{title} {comp} {loc} {p.get('type', '')} {skills_str} visa:{visa_info}"
+
+                            if is_non_tech_internship(title, desc, job_url, loc, comp):
+                                job_id = generate_job_id(comp, title, loc)
+                                jobs.append({
+                                    "id": job_id,
+                                    "company": comp,
+                                    "title": title,
+                                    "location": loc,
+                                    "url": job_url,
+                                    "source": "YC Work at a Startup",
+                                    "timestamp": ts,
+                                    "date_posted": now.strftime("%b %d"),
+                                    "raw_department": role.capitalize(),
+                                    "salary_raw": p.get("type", "Internship / Full-time")
+                                })
+                    break
+        except Exception:
+            pass
+    return jobs
+
+def fetch_vc_portfolio_jobs():
+    jobs = []
+    headers = {"User-Agent": USER_AGENT}
+    vc_targets = [
+        ("a16z Portfolio", "https://jobs.a16z.com/jobs?q="),
+        ("Techstars Portfolio", "https://jobs.techstars.com/jobs?q=")
+    ]
+    queries = ["intern", "product", "marketing", "operations", "design", "associate"]
+    now = datetime.now()
+    ts = int(now.timestamp())
+
+    for vc_name, base_url in vc_targets:
+        for q in queries:
+            try:
+                r = requests.get(base_url + q, headers=headers, timeout=5)
+                if r.status_code != 200:
+                    continue
+                soup = BeautifulSoup(r.text, "html.parser")
+                for a in soup.find_all("a", href=True):
+                    href = a["href"]
+                    if ("/jobs/" in href and "--" in href) or ("/companies/" in href and "/jobs/" in href):
+                        title = a.get_text(strip=True)
+                        if not title or len(title) < 3 or title in ["Apply", "Interested", "View job"]:
+                            continue
+
+                        parent = a.find_parent("div")
+                        for _ in range(4):
+                            if parent and len(parent.get_text()) > 80:
+                                break
+                            if parent and parent.parent:
+                                parent = parent.parent
+
+                        card_text = parent.get_text(separator=" | ", strip=True) if parent else title
+                        parts = [p.strip() for p in card_text.split("|") if p.strip()]
+                        comp = parts[0] if parts else "Portfolio Startup"
+                        loc = "Remote Worldwide"
+                        for p in parts:
+                            if any(k in p.lower() for k in ["india", "delhi", "bengaluru", "bangalore", "mumbai", "remote", "united states", "san francisco", "new york", "london", "singapore"]):
+                                loc = p
+                                break
+
+                        full_url = href if href.startswith("http") else ("https://" + base_url.split("/")[2] + href)
+
+                        if is_non_tech_internship(title, card_text, full_url, loc, comp):
+                            job_id = generate_job_id(comp, title, loc)
+                            jobs.append({
+                                "id": job_id,
+                                "company": comp,
+                                "title": title,
+                                "location": loc,
+                                "url": full_url,
+                                "source": vc_name,
+                                "timestamp": ts,
+                                "date_posted": now.strftime("%b %d"),
+                                "raw_department": "VC Portfolio",
+                                "salary_raw": card_text[:200]
+                            })
+            except Exception:
+                pass
+    return jobs
+
+def fetch_wellfound_jobs():
+    jobs = []
+    headers = {"User-Agent": USER_AGENT}
+    routes = [
+        "https://wellfound.com/role/l/product-manager/india",
+        "https://wellfound.com/role/l/product-intern/india",
+        "https://wellfound.com/role/l/marketing/india",
+        "https://wellfound.com/role/l/designer/india",
+        "https://wellfound.com/role/l/operations/india",
+        "https://wellfound.com/role/l/product-intern/remote",
+        "https://wellfound.com/role/l/marketing-intern/remote"
+    ]
+    now = datetime.now()
+    ts = int(now.timestamp())
+
+    for url in routes:
+        try:
+            r = requests.get(url, headers=headers, timeout=5)
+            if r.status_code != 200:
+                continue
+            m = re.search(r'<script id=\"__NEXT_DATA__\"[^>]*>(.*?)</script>', r.text)
+            if m:
+                data = json.loads(m.group(1))
+                apollo = data.get("props", {}).get("pageProps", {}).get("apolloState", {}).get("data", {})
+                for k, v in apollo.items():
+                    if "JobListing" in k and v.get("title"):
+                        title = v.get("title")
+                        years_min = v.get("yearsExperienceMin") or 0
+                        if years_min > 2:
+                            continue
+                        locs = v.get("locationNames", [])
+                        loc = ", ".join(locs) if locs else "India"
+                        slug = v.get("slug", "")
+                        job_id_num = v.get("id", "")
+                        comp = "Wellfound Verified Startup"
+                        job_url = f"https://wellfound.com/jobs/{job_id_num}-{slug}" if job_id_num else url
+                        desc = v.get("description", "")
+                        comp_salary = v.get("compensation", "")
+
+                        if is_non_tech_internship(title, f"{desc} {comp_salary}", job_url, loc, comp):
+                            job_id = generate_job_id(comp, title, loc)
+                            jobs.append({
+                                "id": job_id,
+                                "company": comp,
+                                "title": title,
+                                "location": loc,
+                                "url": job_url,
+                                "source": "Wellfound (AngelList)",
+                                "timestamp": ts,
+                                "date_posted": now.strftime("%b %d"),
+                                "raw_department": "Startup Operator",
+                                "salary_raw": comp_salary or desc[:200]
+                            })
+        except Exception:
+            pass
+    return jobs
+
+def fetch_weworkremotely():
+    jobs = []
+    headers = {"User-Agent": USER_AGENT}
+    wwr_feeds = [
+        ("Product", "https://weworkremotely.com/categories/remote-product-jobs.rss"),
+        ("Marketing", "https://weworkremotely.com/categories/remote-sales-and-marketing-jobs.rss"),
+        ("Operations", "https://weworkremotely.com/categories/remote-management-and-finance-jobs.rss")
+    ]
+    now = datetime.now()
+    ts = int(now.timestamp())
+
+    for cat, feed_url in wwr_feeds:
+        try:
+            r = requests.get(feed_url, headers=headers, timeout=5)
+            if r.status_code == 200:
+                root = ET.fromstring(r.content)
+                for item in root.findall(".//item")[:40]:
+                    title_elem = item.find("title")
+                    link_elem = item.find("link")
+                    desc_elem = item.find("description")
+                    if title_elem is None or link_elem is None:
+                        continue
+                    full_title = title_elem.text or ""
+                    if ":" in full_title:
+                        comp, title = full_title.split(":", 1)
+                        comp = comp.strip()
+                        title = title.strip()
+                    else:
+                        comp = "Remote Startup"
+                        title = full_title.strip()
+                    job_url = link_elem.text or ""
+                    desc = desc_elem.text if desc_elem is not None else ""
+                    clean_desc = html.unescape(re.sub(r"<[^>]+>", " ", desc))
+                    loc = "Remote Worldwide"
+                    if is_non_tech_internship(title, clean_desc, job_url, loc, comp):
+                        job_id = generate_job_id(comp, title, loc)
+                        jobs.append({
+                            "id": job_id,
+                            "company": comp,
+                            "title": title,
+                            "location": loc,
+                            "url": job_url,
+                            "source": "WeWorkRemotely",
+                            "timestamp": ts,
+                            "date_posted": now.strftime("%b %d"),
+                            "raw_department": cat,
+                            "salary_raw": clean_desc[:200]
+                        })
+        except Exception:
+            pass
+    return jobs
+
 def run_harvest(config):
     all_jobs = []
 
@@ -656,7 +895,7 @@ def run_harvest(config):
     # 5. Curated GitHub
     github_sources = config.get("curated_github_sources", [])
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=16) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=18) as executor:
         futures = []
         for b in gh_boards:
             futures.append(executor.submit(fetch_greenhouse_board, b))
@@ -673,6 +912,14 @@ def run_harvest(config):
         futures.append(executor.submit(fetch_hackernews_hiring))
         # 7. RemoteOK
         futures.append(executor.submit(fetch_remoteok))
+        # 8. Y Combinator Official Jobs Portal
+        futures.append(executor.submit(fetch_yc_jobs))
+        # 9. Top VC Portfolio Job Boards (a16z, Techstars)
+        futures.append(executor.submit(fetch_vc_portfolio_jobs))
+        # 10. Wellfound (AngelList Talent)
+        futures.append(executor.submit(fetch_wellfound_jobs))
+        # 11. We Work Remotely (WWR)
+        futures.append(executor.submit(fetch_weworkremotely))
 
         for f in concurrent.futures.as_completed(futures):
             res = f.result()

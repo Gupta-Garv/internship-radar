@@ -52,6 +52,10 @@ def run_scan():
     print("🔔 Processing net-new alerts and desktop notifications...")
     new_alerts = process_alerts(scored_jobs)
 
+    print("🛡️ Executing 100% Candidate-Fit Quality & Verification Audit...")
+    from engine.verify_radar import run_verification_loop
+    accuracy, scored_jobs = run_verification_loop()
+
     print("🏆 Scouting active high-prize hackathons & developer challenges...")
     scouted_hacks = scout_all_hackathons()
 

@@ -14,16 +14,17 @@
     "match_score": 96,
     "tier": "Tier 1 (High Conversion)",
     "location_info": {
-      "region": "India",
+      "region": "Remote",
       "score": 1.0,
-      "visa_note": "Domestic (Zero visa friction)",
-      "badge": "\ud83c\uddee\ud83c\uddf3 India"
+      "visa_note": "Global Remote (Work from anywhere in India / USD or EUR)",
+      "badge": "\ud83c\udf10 Remote Global"
     },
     "visa_info": {
-      "is_sponsored": false,
-      "tier": "Standard / Unspecified",
-      "badge": "\ud83d\udccd Self-Check Visa",
-      "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+      "is_sponsored": true,
+      "tier": "No Visa Needed (Remote)",
+      "badge": "\ud83c\udf10 Remote (Zero Visa Friction)",
+      "note": "100% remote worldwide. Work from India, get paid in USD or EUR with zero immigration requirements.",
+      "boost": 4
     },
     "pay_info": {
       "pay_display": "Not mentioned",
@@ -33,8 +34,8 @@
       "is_unpaid": false,
       "note": "Compensation is not publicly disclosed in the posting."
     },
-    "recruiter_pitch": "Hi! I saw Upstox's Product Intern - CX opening. As an IIM Bangalore student who shipped a full AI MVP solo in 48 hours and placed 2nd globally among 8,400+ participants in Baidu's AI hackathon ($6.5k prize), I'd love to bring this execution speed to Upstox's product team. My portfolio: garvgupta.app",
-    "is_new": false
+    "recruiter_pitch": "Hi! Saw Flick's Brand & Motion Design Intern post. Having placed Top 10 in two global UI/UX build competitions (Zo Computers & Anything.com), I bridge user empathy, rapid Figma prototyping, and AI product understanding. Portfolio: garvgupta.app",
+    "is_new": true
   },
   {
     "id": "d532b6ba5e90bffaddb025ad2f2213aa",
@@ -61,6 +62,120 @@
       "tier": "Standard / Unspecified",
       "badge": "\ud83d\udccd Self-Check Visa",
       "note": "Visa sponsorship policy not explicitly specified; check during initial recruiter phone screener."
+    },
+    "pay_info": {
+      "pay_display": "\u20b960,000/mo",
+      "pay_monthly_usd": 714,
+      "pay_monthly_inr": 60000,
+      "is_disclosed": true,
+      "is_unpaid": false,
+      "note": "Disclosed stipend of \u20b960,000/mo (~$714 USD/mo)."
+    },
+    "recruiter_pitch": "Hi! Excited by Wellfound Verified Startup's Intern - Marketing role. Having built an organic audience of 200,000+ LinkedIn impressions and 80k+ IG views around AI and execution, I combine creative storytelling with quantitative funnel and SEO tracking to drive real GTM impact.",
+    "is_new": true
+  },
+  {
+    "id": "901ea0b8a5256b9502ac72493cbdfe87",
+    "company": "Talkiatry",
+    "title": "Operations Associate",
+    "location": "Remote, United States",
+    "url": "https://jobs.a16z.com/jobs/alleviate-health/30c31d7e-d76a-46e3-9cc9-a55d55e22683--operations-associate",
+    "source": "a16z Portfolio",
+    "timestamp": 1795793618,
+    "date_posted": "Nov 27",
+    "raw_department": "VC Portfolio",
+    "salary_raw": "Talkiatry | Senior Manager, Clinical Operations - Operational Excellence | $120K \u2013 $165K \u2022 Offers Bonus | \u00b7 | Remote, United States | \u00b7 | Posted 17 days ago | Bio + Health | \u00b7 | Series D | \u00b7 | 501\u20131,0",
+    "category": "BizOps & Strategy",
+    "match_score": 97,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "Remote",
+      "score": 1.0,
+      "visa_note": "Global Remote (Work from anywhere in India / USD or EUR)",
+      "badge": "\ud83c\udf10 Remote Global"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "No Visa Needed (Remote)",
+      "badge": "\ud83c\udf10 Remote (Zero Visa Friction)",
+      "note": "100% remote worldwide. Work from India, get paid in USD or EUR with zero immigration requirements.",
+      "boost": 4
+    },
+    "pay_info": {
+      "pay_display": "\u20b920k/mo",
+      "pay_monthly_usd": 238,
+      "pay_monthly_inr": 20000,
+      "is_disclosed": true,
+      "is_unpaid": false,
+      "note": "Disclosed stipend of \u20b920k/mo (~$238 USD/mo)."
+    },
+    "recruiter_pitch": "Hi! I noticed the Operations Associate opening at Talkiatry. I currently run operations & full P&L for a 10,000+ student education brand (AnybodyCanBake) with 5-7 team members alongside my degree at IIM Bangalore. Would love to bring proven execution and problem-solving to Talkiatry.",
+    "is_new": true
+  },
+  {
+    "id": "b507901196a4e2173b914510eb157f91",
+    "company": "Operations Intern (Summer 2027)",
+    "title": "Operations Intern (Summer 2027)",
+    "location": "Remote",
+    "url": "https://jobs.techstars.com/companies/scout-2/jobs/100357673-operations-intern-summer-2027#content",
+    "source": "Techstars Portfolio",
+    "timestamp": 1795793618,
+    "date_posted": "Nov 27",
+    "raw_department": "VC Portfolio",
+    "salary_raw": "Operations Intern (Summer 2027) | Scout | Location: | Reston, VA, USA | ; | Remote | Compensation: | USD 30-30 / hour | Posted: | 7 days | Series A | Internship | Aerospace | Aerospace & Defense | Aut",
+    "category": "BizOps & Strategy",
+    "match_score": 97,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "Remote",
+      "score": 1.0,
+      "visa_note": "Global Remote (Work from anywhere in India / USD or EUR)",
+      "badge": "\ud83c\udf10 Remote Global"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "No Visa Needed (Remote)",
+      "badge": "\ud83c\udf10 Remote (Zero Visa Friction)",
+      "note": "100% remote worldwide. Work from India, get paid in USD or EUR with zero immigration requirements.",
+      "boost": 4
+    },
+    "pay_info": {
+      "pay_display": "$30/hr",
+      "pay_monthly_usd": 4800,
+      "pay_monthly_inr": 403200,
+      "is_disclosed": true,
+      "is_unpaid": false,
+      "note": "Disclosed hourly rate (~$4,800/mo full-time equivalent)."
+    },
+    "recruiter_pitch": "Hi! I noticed the Operations Intern (Summer 2027) opening at Operations Intern (Summer 2027). I currently run operations & full P&L for a 10,000+ student education brand (AnybodyCanBake) with 5-7 team members alongside my degree at IIM Bangalore. Would love to bring proven execution and problem-solving to Operations Intern (Summer 2027).",
+    "is_new": true
+  },
+  {
+    "id": "4a77da2a95c7456728373772e1587527",
+    "company": "Partner Marketing - Intern",
+    "title": "Partner Marketing - Intern",
+    "location": "Remote Worldwide",
+    "url": "https://jobs.techstars.com/companies/packworks-2/jobs/100572405-partner-marketing-intern#content",
+    "source": "Techstars Portfolio",
+    "timestamp": 1795793618,
+    "date_posted": "Nov 27",
+    "raw_department": "VC Portfolio",
+    "salary_raw": "Partner Marketing - Intern | Packworks | Location: | Paris, France | Posted: | 4 days | Pre Seed | Internship | Application Software | B2B | Business/Productivity Software | Commerce and Shopping | Co",
+    "category": "Growth & Marketing",
+    "match_score": 95,
+    "tier": "Tier 1 (High Conversion)",
+    "location_info": {
+      "region": "Remote",
+      "score": 1.0,
+      "visa_note": "Global Remote (Work from anywhere in India / USD or EUR)",
+      "badge": "\ud83c\udf10 Remote Global"
+    },
+    "visa_info": {
+      "is_sponsored": true,
+      "tier": "No Visa Needed (Remote)",
+      "badge": "\ud83c\udf10 Remote (Zero Visa Friction)",
+      "note": "100% remote worldwide. Work from India, get paid in USD or EUR with zero immigration requirements.",
+      "boost": 4
     },
     "pay_info": {
       "pay_display": "Not mentioned",
